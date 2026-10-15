@@ -1,43 +1,9 @@
 begrip: Beleidsnota
+vak: bedrijf/passief
 onderwerpen:
 - besluitvorming
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: de gemeenteraad stelt beleid vast, zoals participatiebeleid (VNG-implementatiehandleiding, bijlage 2); de wet spreekt van gemeentelijk beleid (Gemeentewet art. 150 lid 1).'
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente bereidt haar beleid voor, voert het uit en evalueert het, en betrekt daarbij ingezetenen en belanghebbenden (Gemeentewet art. 150 lid 1).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als vastgelegd beleid; geen onderdeel van één ander begrip (Gemeentewet art. 150 lid 1).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: gemeentelijk beleid komt in elk onderwerp voor en wordt op dezelfde manier voorbereid (Gemeentewet art. 150).'
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per onderwerp een eigen beleid, zoals het participatiebeleid (VNG-implementatiehandleiding, bijlage 2).
@@ -51,11 +17,9 @@ kenmerken:
     - 2024-vng-implementatiehandleiding-model-participatieverordening
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: Bij inspraak legt Uitvoeren uniforme openbare voorbereidingsprocedure het ontwerp ter inzage (Gemeentewet art. 150 lid 2; Awb art. 3:11); de raad stelt het beleid vast (VNG-implementatiehandleiding, bijlage 2).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
+    naar:
+    - betrekken-inwoners-bij-beleid
+    - uitvoeren-uniforme-openbare-voorbereidingsprocedure
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -71,11 +35,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder object in deze wiki.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
   generiek:
     waarde: ja
     onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp waarvoor de gemeente beleid vaststelt.
@@ -99,11 +58,15 @@ gemma:
 specialisaties:
 - naam: Participatiebeleid
   omschrijving: Beleid van de gemeenteraad met de uitgangspunten voor participatie, waarnaar de participatieverordening en het plan voor inwonersparticipatie kunnen verwijzen (VNG-implementatiehandleiding, bijlage 2; var. 1 art. 3). Geen eigen pagina.
-status: goedgekeurd
+bronnen:
+- 2026-rijk-gemeentewet-wettekst
+- 2024-vng-implementatiehandleiding-model-participatieverordening
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 32
+    regel: 29
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -111,7 +74,7 @@ beslist:
     data_object: nee
     objectniveau: generiek
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
   - 2024-vng-implementatiehandleiding-model-participatieverordening

@@ -1,51 +1,7 @@
 begrip: GGD
+vak: bedrijf/actief-intern
+hoofdkenmerk: samenwerkingsverband
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare afkorting van de gemeentelijke gezondheidsdienst (Wpg art. 14).
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Structurele relatie: de colleges stellen de GGD via een gemeenschappelijke regeling in en houden haar in stand (Wpg art. 14); mede-eigenaar en opdrachtgever.'
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Wordt in geen ander onderwerp beoordeeld; adviseert in de lijkbezorging bij een besmet lijk (Wlb art. 22a).
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag: nee
-  handelende_partij:
-    waarde: ja
-    onderbouwing: Organisatie die activiteiten uitvoert, onder leiding van een directeur publieke gezondheid (art. 14 lid 3).
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  hoedanigheid: nee
-  samenwerkingsverband:
-    waarde: ja
-    onderbouwing: Ingesteld door de colleges van de gemeenten in een regio samen (art. 14 lid 1).
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Bestaat los van de adviestaak bij een besmet lijk.
@@ -58,10 +14,8 @@ kenmerken:
     - 2026-rijk-wet-publieke-gezondheid-wettekst
   vervult_een_rol:
     waarde: ja
-    onderbouwing: 'Vervult de rol Adviseur: adviseert de burgemeester over maatregelen bij een besmet lijk (Wlb art. 22a) en het college bij besluiten met belangrijke gevolgen voor de publieke gezondheid (Wpg art. 16).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    naar:
+    - adviseur
   soort_partij:
     waarde: ja
     onderbouwing: Elke gemeente is via een gemeenschappelijke regeling aangesloten bij een GGD (Wpg art. 14); een soort partij, geen individuele GGD.
@@ -79,14 +33,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Komt voor in de lijkbezorging en de publieke gezondheid, niet in veel onderwerpen.
 definitie: Gezondheidsdienst die de colleges van de gemeenten in een regio via een gemeenschappelijke regeling instellen en in stand houden voor de publieke gezondheid.
 beschrijving:
 - De colleges van burgemeester en wethouders van de gemeenten in een regio stellen de gemeentelijke gezondheidsdienst via een gemeenschappelijke regeling in en houden haar in stand (Wet publieke gezondheid art. 14 lid 1); de regeling stelt een openbaar lichaam in, zodat de GGD eigen rechtspersoonlijkheid heeft (art. 14 lid 2). De gemeenten zijn zo mede-eigenaar en opdrachtgever. De GGD staat onder leiding van een directeur publieke gezondheid (art. 14 lid 3).
@@ -111,18 +57,23 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: ketenpartners
-status: goedgekeurd
+besluiten:
+- datum: '2026-10-15'
+  besluit: 'Hoofdkenmerk samenwerkingsverband: de GGD is altijd een samenwerkingsverband van gemeenten, met eigen rechtspersoon (Actor); in sommige processen treedt zij op als handelende partij, via de rol die zij vervult (Adviseur). Los van verantwoordelijkheid mag daarom ook bij een samenwerkingsverband.'
+  gevolg: verwerkt
+  zekerheid: kennis
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Samenwerkingsverband met eigen rechtspersoon (kern ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 9
+    typeregel: 8
   bronnen:
   - 2026-rijk-wet-publieke-gezondheid-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

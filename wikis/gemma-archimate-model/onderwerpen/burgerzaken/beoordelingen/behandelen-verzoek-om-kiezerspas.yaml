@@ -1,66 +1,17 @@
 begrip: Behandelen verzoek om kiezerspas
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Kiezerspas: UPL-product (nr. 208) en wetsbegrip (Kieswet art. K 1, K 4).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-kieswet-bwbr0004627
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De kiezer richt het verzoek aan de burgemeester, die de kiezerspas uitreikt of verzendt (Kieswet art. K 3, K 4).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: bedrijfsproces onder Beheren stempassen.'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Per verzoek doorlopen (Kieswet art. K 3, K 4).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: 'Kiezer: richt het verzoek aan de burgemeester (Kieswet art. K 3).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - kiezer
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Registreert de kiezerspas, een specialisatie van de stempas, en beëindigt de stempas, die ongeldig wordt (Kieswet art. K 4, J 7a lid 2 onder a).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - stempas
   aanleiding:
     waarde: ja
     onderbouwing: Het schriftelijke of mondelinge verzoek van de kiezer (Kieswet art. K 3).
@@ -83,9 +34,8 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: Draagt bij aan Beheren stempassen.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - beheren-stempassen
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het verzoek tot de uitgereikte of verzonden kiezerspas.
@@ -99,23 +49,14 @@ kenmerken:
     onderbouwing: De bron noemt geen besluit; de kiezerspas is het bewijs dat aan het verzoek is voldaan (Kieswet art. K 4).
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Kiezerspas (UPL nr. 208).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - kiezerspas
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aanvraag product.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 kernobject: stempas
 afnemer: extern
 definitie: Het behandelen van het verzoek van een kiezer om in een stembureau naar keuze te stemmen, tot uitreiking van een kiezerspas.
@@ -145,11 +86,13 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: UPL nr. 208
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -157,7 +100,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627

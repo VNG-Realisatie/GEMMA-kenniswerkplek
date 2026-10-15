@@ -1,55 +1,22 @@
 begrip: Ketenpartner
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - kern
 - lijkbezorging
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: GEMMA kent de rol Ketenpartner en de doelgroep Ketenpartners; de officier van justitie is ketenpartner in de lijkbezorging (art. 10, 12).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Structurele, wettelijke rol in een keten met de gemeente (art. 10, 12, 17).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen verantwoordelijkheid in een keten.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Generieke GEMMA-rol die in elk onderwerp kan gelden; nu in lijkbezorging en burgerzaken: thuisonderwerp Kern, want geen thematisch gedeeld onderwerp past (regel Thuishoren).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De verantwoordelijkheid van een andere organisatie voor haar deel van een keten.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Bezorgen stoffelijk overschot: de officier van justitie geeft de verklaring van geen bezwaar af en stemt in met een vervroegde uitvaart (art. 12, 17).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - bezorgen-stoffelijk-overschot
+    - stellen-andere-termijn
+    - schouwen-stoffelijk-overschot
+    - beheren-nederlanderschap
+    - afgeven-verklaring-omtrent-het-gedrag
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -62,14 +29,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere rol in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf de generieke GEMMA-rol (zie de GEMMA-match), geen specialisatie van een generiek GEMMA-element.
 definitie: Verantwoordelijkheid van een andere organisatie voor haar deel van een keten die zij met de gemeente uitvoert.
 per_onderwerp:
   lijkbezorging:
@@ -122,18 +81,18 @@ relaties:
   vindplaats: art. 30, 36, 37; Utrecht regel 59
 beschrijving:
 - Een ketenpartner is een andere organisatie die een eigen deel van een keten uitvoert, vanuit een eigen wettelijke taak, en niet als klant of alleen als adviseur. GEMMA kent de rol Ketenpartner in de procesarchitectuur en de doelgroep Ketenpartners.
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605

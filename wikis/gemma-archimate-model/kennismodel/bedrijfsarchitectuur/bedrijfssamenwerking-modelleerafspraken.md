@@ -8,7 +8,7 @@ titel: Bedrijfssamenwerking — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Business Collaboration* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `bedrijfssamenwerking`
+*Business Collaboration* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/actief-intern` · paginatype `bedrijfssamenwerking`
 
 | Afspraak | Inhoud |
 |---|---|

@@ -1,77 +1,17 @@
 begrip: Vervallen verklaren grafrecht
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar in verordening en model ('vervallen verklaren van grafrechten').
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college verklaart het recht vervallen (Groningen art. 20 lid 2).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Beslisser (college) en Houder van de begraafplaats (verklaring van verwaarlozing) (Groningen art. 20; art. 28 lid 4).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - beslisser
+    - houder-van-de-begraafplaats
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Beëindigt het grafrecht (art. 28 lid 6; Groningen art. 20).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - grafrecht
+    - beschikking
   aanleiding:
     waarde: ja
     onderbouwing: Verwaarlozing van het graf, wanbetaling, verzuim of het uitblijven van overschrijving binnen de termijn na overlijden van de rechthebbende (art. 28 lid 4; Groningen art. 18 lid 4, 20 lid 2).
@@ -97,10 +37,8 @@ kenmerken:
     - 2010-vng-model-beheersverordening-begraafplaatsen
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Beheren grafrechten: het einde van het grafrecht (art. 28 lid 4–7; Groningen art. 20).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - beheren-grafrechten
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, ambtshalve, van de verwaarlozing, wanbetaling of het verzuim tot het vervallen grafrecht.
@@ -120,21 +58,11 @@ kenmerken:
     onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces levert.
   leidt_tot_gebeurtenis:
     waarde: ja
-    onderbouwing: Verval van het grafrecht (art. 28 lid 6; Groningen art. 20).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - verval-van-het-grafrecht
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -172,11 +100,11 @@ onderwerpen:
 - lijkbezorging
 kernobject: grafrecht
 afnemer: extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -184,7 +112,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

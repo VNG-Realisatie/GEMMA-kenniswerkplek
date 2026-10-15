@@ -2,7 +2,7 @@
 id: wet-op-de-nederlandse-identiteitskaart
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Wet op de Nederlandse identiteitskaart
 onderwerpen:
 - burgerzaken
@@ -21,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling wet-op-de-nederlandse-identiteitskaart.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -52,19 +52,15 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de wet over de identiteitskaart (BWBR0052951, art. 55). [Wet op de Nederlandse identiteitskaart](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft de burgemeester de bevoegdheid tot het in ontvangst nemen van de aanvraag, verstrekking, uitreiking, weigering en inhouding van de identiteitskaart (art. 15, 25, 27, 28, 35). [Wet op de Nederlandse identiteitskaart](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Wet op de Nederlandse identiteitskaart](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Wet op de Nederlandse identiteitskaart](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, een concreet benoemde regeling als geheel (BWBR0052951). [Wet op de Nederlandse identiteitskaart](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijkswet (Stb. 2026/180). [Wet op de Nederlandse identiteitskaart](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht sinds 2026-10-01; hoofdstuk III en IV en art. 12 vervallen per 01-03-2027. [Wet op de Nederlandse identiteitskaart](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, art. 11, 15 en 25 (aanspraak, aanvraag en verstrekking), 27 (uitreiking), 7, 19 en 30 (vermissing en verval), 35 tot en met 39 (inhouding): grondslag van de dienst Identiteitskaart en, voor de identiteitskaart, van Behandelen aanvraag reisdocument, Uitreiken reisdocument, Verwerken vermissing reisdocument en Inhouden reisdocument. [Wet op de Nederlandse identiteitskaart](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Wet op de Nederlandse identiteitskaart](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Identiteitskaart](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/identiteitskaart.md), [Behandelen aanvraag reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Verwerken vermissing reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md), [Inhouden reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Paspoortwet](paspoortwet.md). |
 
 ### Relaties
 

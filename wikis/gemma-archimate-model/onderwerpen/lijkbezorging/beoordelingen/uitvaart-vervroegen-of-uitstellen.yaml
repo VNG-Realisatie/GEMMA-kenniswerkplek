@@ -1,58 +1,6 @@
 begrip: Uitvaart vervroegen of uitstellen
+vak: bedrijf/gedrag-extern
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar (RVO: ''uitvaart vervroegen'', ''uitvaart uitstellen'').'
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester stelt een andere termijn (art. 17).
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Prestatie die de gemeente aanbiedt: toestemming om eerder of later te begraven of cremeren (RVO).'
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een vergunning voor een andere termijn (art. 17; RVO).
@@ -66,20 +14,11 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: 'Het bedrijfsproces Stellen andere termijn: de burgemeester stelt de andere termijn (art. 17).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - stellen-andere-termijn
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere dienst in deze wiki.
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -108,18 +47,20 @@ onderwerpen:
 - lijkbezorging
 domein: Publieksdiensten
 afnemer: extern
-status: goedgekeurd
+bronnen:
+- 2026-rvo-aangifte-en-akte-van-overlijden
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

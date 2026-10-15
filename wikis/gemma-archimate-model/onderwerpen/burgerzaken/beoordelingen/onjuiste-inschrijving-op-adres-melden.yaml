@@ -1,57 +1,8 @@
 begrip: Onjuiste inschrijving op adres melden
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product van de gemeente Utrecht (Onjuiste inschrijving op uw adres: melding doen).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente kan na de melding een adresonderzoek starten (Utrecht). Het college houdt het adres ambtshalve juist en onderzoekt een mogelijk onjuiste inschrijving (Wet BRP art. 2.20 lid 2, 2.22, 2.26); de melding van een bewoner staat niet in de wet, wel in de Circulaire adresonderzoek (§ 4.7, de melder).
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een prestatie die de gemeente op melding van een bewoner levert (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een adresonderzoek en, na onderzoek, een juiste inschrijving op het adres (Utrecht).
@@ -69,10 +20,8 @@ kenmerken:
     - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Uitvoeren adresonderzoek (Utrecht; Circulaire adresonderzoek).
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-    - 2023-rvig-circulaire-adresonderzoek-brp
+    naar:
+    - uitvoeren-adresonderzoek
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -81,9 +30,6 @@ kenmerken:
     onderbouwing: Een eigen product van de gemeente (Utrecht); geen bredere dienst in deze wiki.
     bronnen:
     - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het melden dat iemand op het eigen adres staat ingeschreven die er niet woont, of dat een briefadreshouder niet bereikbaar is.
 beschrijving:
 - De melding is gratis, via een online formulier of aan de balie; met hetzelfde formulier kan een adresonderzoek worden gestopt. Het onderzoek duurt weken tot maanden (Utrecht).
@@ -97,18 +43,22 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+- 2026-rijk-wet-brp-bwbr0033715
+- 2023-rvig-circulaire-adresonderzoek-brp
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   - 2026-rijk-wet-brp-bwbr0033715

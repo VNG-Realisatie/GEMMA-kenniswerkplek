@@ -1,66 +1,18 @@
 begrip: Behandelen verzoek om volmacht
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Stemmen bij volmacht (Kieswet hoofdstuk L); UPL-product volmachtbewijs verkiezingen (nr. 453).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester beslist op het verzoek en maakt bij inwilliging een volmachtbewijs op (Kieswet art. L 8, L 11).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: bedrijfsproces onder Beheren stempassen.'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Per verzoekschrift doorlopen (Kieswet art. L 8, L 11).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: 'Beslisser: de burgemeester beslist (Kieswet art. L 11); Kiezer: dient het verzoekschrift in en wijst een gemachtigde aan (art. L 8).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - beslisser
+    - kiezer
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Beëindigt de stempas van de volmachtgever, die ongeldig wordt als er een volmachtbewijs voor is afgegeven (Kieswet art. J 7a lid 2 onder a, L 11).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - stempas
   aanleiding:
     waarde: ja
     onderbouwing: Het verzoekschrift van de kiezer op een formulier, met de verklaring van de gemachtigde (Kieswet art. L 8).
@@ -83,9 +35,8 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: Draagt bij aan Beheren stempassen.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - beheren-stempassen
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het verzoekschrift tot het volmachtbewijs of de afwijzing.
@@ -101,23 +52,14 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Volmachtbewijs verkiezingen (UPL nr. 453).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - volmachtbewijs-verkiezingen
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 kernobject: stempas
 afnemer: extern
 definitie: Het behandelen van het schriftelijke verzoek van een kiezer om bij volmacht te stemmen, tot inwilliging met een volmachtbewijs of afwijzing.
@@ -144,11 +86,11 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: UPL nr. 453
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -156,7 +98,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   - 2025-vng-upl-producten-en-diensten-extern

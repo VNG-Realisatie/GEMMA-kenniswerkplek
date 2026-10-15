@@ -1,55 +1,12 @@
 begrip: Register van begraven lijken
+vak: bedrijf/passief
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ziet of doet hierover iets.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
   waarneembare_vorm:
     waarde: ja
     onderbouwing: De vorm waarin de gegevens van graven en begraven lijken worden bijgehouden (art. 27; Groningen art. 30).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -65,7 +22,7 @@ onderwerpen:
 beslist:
   uitkomst:
     soort: geen_pagina
-    regel: 19
+    regel: 16
     toelichting: Waarneembare vorm
     archimate_type: representation
     voorleggen: false

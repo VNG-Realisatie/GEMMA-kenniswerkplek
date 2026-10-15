@@ -2,7 +2,7 @@
 id: schriftelijke-klacht
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Schriftelijke klacht
 onderwerpen:
 - besluitvorming
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling schriftelijke-klacht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -60,18 +60,15 @@ Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: bedrijfslaag, passief (Bedrijfsobject, Afspraak, Representatie (geen pagina)). **Hoofdkenmerk**: ding. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbaar: een klacht schriftelijk indienen; de wet spreekt van schriftelijke klacht en klaagschrift (Awb art. 9:2, 9:4). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het gemeentelijke bestuursorgaan ontvangt de schriftelijke klacht, behandelt haar en publiceert de klachten jaarlijks (art. 9:6, 9:12a). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als de klacht die schriftelijk wordt ingediend, met eigen eisen aan de inhoud (art. 9:4 lid 2). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij besluitvorming: de Awb regelt de schriftelijke klacht voor elk bestuursorgaan (afdeling 9.1.2). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elke schriftelijke klacht heeft een indiener, een dagtekening en een gedraging waarover geklaagd wordt (art. 9:4 lid 2). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, wordt ingediend, ontvangen en bevestigd, behandeld of niet in behandeling genomen, afgehandeld en jaarlijks gepubliceerd (art. 9:6, 9:8, 9:11, 9:12a). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, behandelen klacht ontvangt en behandelt de schriftelijke klacht (art. 9:6, 9:12a). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder object in deze wiki. [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Behandelen klacht](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-klacht.md). |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, komt met dezelfde betekenis voor in elk onderwerp, voor elk bestuursorgaan (art. 9:1, 9:4). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 
 ### Relaties

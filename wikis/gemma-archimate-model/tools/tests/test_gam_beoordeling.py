@@ -5,7 +5,7 @@ import yaml
 import beoordeling as cli
 import beslissen
 import archimate_export
-from gam_hulp import KENMERKEN_BO, WIKI
+from gam_hulp import KENMERKEN_BO, VELDEN_BO, WIKI
 from llmwiki import beoordeling
 
 
@@ -23,7 +23,7 @@ def wiki(archimate_repo):
         encoding="utf-8")
     for bid, naam, extra in [("aanvraag", "Aanvraag", {"synoniemen": [{"naam": "Verzoek", "context": "Awb"}]}),
                              ("aanvraag-reisdocument", "Aanvraag reisdocument", {}), ("besluit", "Besluit", {})]:
-        data = {"begrip": naam, "onderwerpen": ["demo"], "kenmerken": _kenmerken(), "definitie": f"Definitie {naam}.",
+        data = {"begrip": naam, "onderwerpen": ["demo"], **VELDEN_BO, "kenmerken": _kenmerken(), "definitie": f"Definitie {naam}.",
                 **extra, "beslist": {"uitkomst": {"soort": "element", "archimate_type": "business-object"}}, "status": "review"}
         beoordeling.schrijf(wiki / "onderwerpen" / "demo" / "beoordelingen" / f"{bid}.yaml", data)
     return wiki
@@ -114,10 +114,9 @@ def test_zoek_vindt_elk_begrip_van_de_wiki():
 def test_regel_naar_antwoord():
     assert cli.regel_naar_antwoord("x", "ja — Want art. 1 [2024-wet-a, id-123]") == {
         "waarde": "ja", "onderbouwing": "Want art. 1", "bronnen": ["2024-wet-a"], "gemma_relatie": ["id-123"]}
-    assert cli.regel_naar_antwoord("x", "nee") == "nee"
     assert cli.regel_naar_antwoord("x", "nee - Feitelijk handelen [zie boven]") == {
         "waarde": "nee", "onderbouwing": "Feitelijk handelen [zie boven]"}
-    for fout in ("misschien", "ja", "ja [2024-wet-a]"):
+    for fout in ("misschien", "ja", "nee", "ja [2024-wet-a]"):
         with pytest.raises(cli.Fout):
             cli.regel_naar_antwoord("x", fout)
 
@@ -126,15 +125,15 @@ def test_normaliseer_schrijfvorm_en_nee_buiten_het_pad(wiki):
     pad = wiki / "onderwerpen" / "demo" / "beoordelingen" / "aanvraag.yaml"
     data = beoordeling.laad(pad)
     data["kenmerken"]["herkenbaar"] = "ja — Komt in de Awb voor [2024-wet-a]"
-    data["kenmerken"]["gedrag"] = "nee"
+    data["kenmerken"]["afspraak"] = "nee — Geen overeenkomst"
     data["kenmerken"]["eigen_besluit"]["bronnen"] = ["2024-wet-a"]  # buiten het pad, met bron: blijft
     beoordeling.schrijf(pad, data)
     uit = cli.normaliseer(wiki, ["aanvraag"])
     assert uit[0].startswith("aanvraag: genormaliseerd (") and uit[-1] == "Draai tools/beslissen.py."
     kenmerken = beoordeling.laad(pad)["kenmerken"]
     assert kenmerken["herkenbaar"] == {"waarde": "ja", "onderbouwing": "Komt in de Awb voor", "bronnen": ["2024-wet-a"]}
-    assert kenmerken["gedrag"] == "nee" and "eigen_besluit" in kenmerken
-    assert "per_keer_doorlopen" not in kenmerken and "afspraak" in kenmerken  # buiten het pad weg, op het pad blijft
+    assert kenmerken["afspraak"] == {"waarde": "nee", "onderbouwing": "Geen overeenkomst"} and "eigen_besluit" in kenmerken
+    assert "klant_tot_klant" not in kenmerken and "afspraak" in kenmerken  # buiten het pad weg, op het pad blijft
     assert list(kenmerken) == [s for s in cli.bepaal_type.SLEUTELS if s in kenmerken]
     assert cli.normaliseer(wiki, ["aanvraag"]) == ["Niets te normaliseren."]
     del kenmerken["afspraak"]
@@ -146,10 +145,10 @@ def test_normaliseer_schrijfvorm_en_nee_buiten_het_pad(wiki):
 
 def test_zet_kenmerk_in_schrijfvorm(wiki):
     cli.normaliseer(wiki, ["besluit"])
-    cli.zet(wiki, "besluit", "kenmerken.gedrag", "nee")
+    with pytest.raises(cli.Fout):
+        cli.zet(wiki, "besluit", "kenmerken.afspraak", "nee")   # een nee heeft een onderbouwing
     cli.zet(wiki, "besluit", "kenmerken.afspraak", "nee — Een eenzijdig besluit")
     kenmerken = beoordeling.laad(wiki / "onderwerpen" / "demo" / "beoordelingen" / "besluit.yaml")["kenmerken"]
-    assert kenmerken["gedrag"] == "nee"
     assert kenmerken["afspraak"] == {"waarde": "nee", "onderbouwing": "Een eenzijdig besluit"}
 
 
@@ -182,14 +181,16 @@ def test_sjabloon_dienst_met_nieuw_proces_komt_door_beslissen(archimate_repo):
                          taakveld="0 Bestuur en Ondersteuning", beleidsdomein="Besluitvorming", domein="Bestuur",
                          proces_naam="Voeren verweer in beroep", toegang="raadplegen")
     # het kernobject moet bestaan
-    bo = {"begrip": "Besluit", "onderwerpen": ["demo"], "kenmerken": _kenmerken(), "definitie": "Besluit.",
+    bo = {"begrip": "Besluit", "onderwerpen": ["demo"], **VELDEN_BO, "kenmerken": _kenmerken(), "definitie": "Besluit.",
           "beslist": {"uitkomst": {"soort": "element", "archimate_type": "business-object"}}, "status": "review"}
     beoordeling.schrijf(wiki / "onderwerpen" / "demo" / "beoordelingen" / "besluit.yaml", bo)
     uit = cli.sjabloon(wiki, "upl-dienst", p)
     assert uit[0].startswith("beroep: klaargezet") and uit[1].startswith("voeren-verweer-in-beroep: klaargezet")
     dienst = beoordeling.laad(wiki / "onderwerpen" / "demo" / "beoordelingen" / "beroep.yaml")
     assert "status" not in dienst and "beslist" not in dienst
-    assert dienst["kenmerken"]["aangeboden_gedrag"]["bronnen"] == ["2026-overheid-gemeentewet"]
+    assert dienst["vak"] == "bedrijf/gedrag-extern" and dienst["bronnen"] == ["2026-overheid-gemeentewet"]
+    assert dienst["kenmerken"]["gerealiseerd_door"] == {"waarde": "ja", "naar": ["voeren-verweer-in-beroep"]}
+    assert dienst["kenmerken"]["afnemer"]["bronnen"] == ["2026-overheid-gemeentewet"]
     res = beslissen.beslissen(wiki, schrijven=False)
     assert any("beroep: nog een TODO" in f for f in res.fouten)          # de onderbouwing is verplicht
     assert not any("kenmerken" in f and "pad" in f for f in res.fouten)
@@ -207,7 +208,7 @@ def test_sjabloon_bestaand_proces_krijgt_realisatie_en_bestaande_beoordeling_bli
 
     for bid in ("besluit", "behandelen"):
         beoordeling.schrijf(wiki / "onderwerpen" / "demo" / "beoordelingen" / f"{bid}.yaml",
-                            {"begrip": bid, "onderwerpen": ["demo"], "kenmerken": _kenmerken()})
+                            {"begrip": bid, "onderwerpen": ["demo"], **VELDEN_BO, "kenmerken": _kenmerken()})
     p = sjablonen.Params("beschikking-aanvragen", "Beschikking aanvragen", "demo", "besluit", ["2026-overheid-gemeentewet"],
                          proces="behandelen")
     uit = cli.sjabloon(wiki, "upl-dienst", p)

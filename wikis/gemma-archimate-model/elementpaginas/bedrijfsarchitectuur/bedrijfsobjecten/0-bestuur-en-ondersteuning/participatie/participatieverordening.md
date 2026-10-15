@@ -2,7 +2,7 @@
 id: participatieverordening
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Participatieverordening
 onderwerpen:
 - participatie
@@ -26,7 +26,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling participatieverordening.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
 
 ## Betekenis
 
@@ -61,17 +65,15 @@ Bedrijfsobject. Uitkomst van de beslistabel: Passief (kern ja, 2/2).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+**Vak**: bedrijfslaag, passief (Bedrijfsobject, Afspraak, Representatie (geen pagina)). **Hoofdkenmerk**: ding. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de raad stelt een verordening vast over het betrekken van ingezetenen en belanghebbenden bij beleid (art. 150 lid 1); gangbaar heet zij participatieverordening. [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de raad stelt haar vast. [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als verordening van de gemeente. [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij participatie: de verordening van art. 150 Gemeentewet. [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elke gemeente heeft haar eigen verordening, met de citeertitel Participatieverordening [naam gemeente, jaartal] (var. 1 art. [14] lid 2). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, vastgesteld door de raad, in werking op een datum, en ingetrokken als een nieuwe verordening haar vervangt, met overgangsrecht (var. 1 art. [13]–[14]). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, de gemeenteraad stelt haar vast (art. 150 lid 1); het bestuursorgaan raadpleegt haar bij elke inwonersparticipatie (plan, inspraak, eindverslag) en bij elk verzoek om toepassing van het uitdaagrecht (indieningseisen, afwijzingsgronden, termijnen, afspraken). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Behandelen verzoek uitdaagrecht](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md), [Betrekken inwoners bij beleid](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md). |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, specialisatie van Regeling die de gemeente anders behandelt; elke gemeente moet haar vaststellen, met door de wet voorgeschreven inhoud (regels over het betrekken bij voorbereiding, uitvoering en evaluatie van beleid, voorwaarden voor het uitdaagrecht), en de processen van participatie volgen haar regels (art. 150 lid 1–3). Keten Regeling → Participatieverordening. [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 
 ### Relaties

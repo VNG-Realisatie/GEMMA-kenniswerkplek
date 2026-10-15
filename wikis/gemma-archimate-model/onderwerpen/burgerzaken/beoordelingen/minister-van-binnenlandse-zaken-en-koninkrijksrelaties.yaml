@@ -1,47 +1,9 @@
 begrip: Minister van Binnenlandse Zaken en Koninkrijksrelaties
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Onze Minister in de Paspoortwet (art. 1 onder l); de uitvoering ligt bij de RvIG (HUP Signalering).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-signalering-verstrekking-reisdocument
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Wettelijke meld- en informatieplicht in beide richtingen: de minister deelt de burgemeester signaleringen mee, de burgemeester meldt weigering, vervallenverklaring, inhouding en niet ingeleverde vervallen documenten; de gemeente is het Rijk de kosten van reisdocumenten verschuldigd (Paspoortwet art. 7 lid 1, 25 lid 4, 45 lid 3, 54 lid 5; Paspoortbesluit art. 6.1).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: het gedrag met de gemeente ligt in Beheren reisdocumenten.'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gedrag: nee
-  handelende_partij:
-    waarde: ja
-    onderbouwing: 'Een bestuursorgaan dat activiteiten uitvoert: laat de reisdocumenten maken en houdt de registers bij (Paspoortwet art. 2 lid 3, 4a, 4c, 25).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Bestaat los van deze taak; de minister heeft ook taken in de BRP.
@@ -67,14 +29,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 synoniemen:
 - naam: Onze Minister
   context: wet
@@ -85,10 +39,14 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Rijkskant (plak 4): geen eigen actor; het Rijk is de actor (GEMMA-actor Rijk) die Ketenpartner vervult, en de minister van BZK met de RvIG staat in de beschrijving van Rijk. Bevestigt het besluit van 2026-10-07 met de verduidelijkte betekenis van soort partij: een afzonderlijk ministerie is geen eigen actor.'
   gevolg: afwijzen
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rvig-hup-signalering-verstrekking-reisdocument
+- 2026-rijk-paspoortbesluit-bwbr0044308
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 22
+    regel: 19
     toelichting: Eis ontbreekt voor Actor
     archimate_type: business-actor
     voorleggen: true
@@ -96,7 +54,7 @@ beslist:
     - 'soort partij: nee'
     data_object: nee
     generiek: false
-    typeregel: 11
+    typeregel: 9
   voor_te_leggen:
   - 'soort partij: nee'
   bronnen:

@@ -19,7 +19,9 @@ De AI schrijft alleen het oordeel. Type, status, letterlijke modelvelden, pagina
 **Sjabloon.** Een UPL-product dat een extern gedrag aanbiedt en door een bedrijfsproces met een kernobject wordt gerealiseerd, zet je klaar met `uv run python tools/beoordeling.py sjabloon upl-dienst <id> --naam … --onderwerp … --kernobject <id> --bron <bron-id> (--proces <id> | --proces-naam …) [--upl-nr … --taakveld … --beleidsdomein … --domein … --toegang raadplegen|registreren]`. Met `--proces` krijgt een bestaand proces alleen de relatie realisatie; met `--proces-naam` komt er een nieuw proces bij. Het sjabloon zet de structuur en de bronnen, geen inhoud: elke `TODO` vervang je door de onderbouwing uit de bronnen (`toon <id>`, `zet <id> <veld> <waarde>`), of je past het kenmerk aan als het geval afwijkt. `beslissen.py` meldt een fout zolang er een TODO staat.
 
 1. **Wat al besloten is.** Een besluit met zekerheid `kennis` volg je als regel; wijk je af van een besluit met `logica` of `indruk`, zet dat dan met de reden in `vragen:` (regel Navragen). Een bestaande beoordeling bekijk je compact met `uv run python tools/beoordeling.py toon <id> --oordeel`.
-2. **Kenmerken van het type.** `uv run python tools/bepaal_type.py vragen <id>` geeft de vragen van fase B. Schrijf één regel per kenmerk, net als in fase A, maar nu met een onderbouwing bij elke nee. Draai daarna `uv run python tools/beoordeling.py normaliseer <id>`. Let op:
+2. **Kenmerken van het type.** `uv run python tools/bepaal_type.py vragen <id>` geeft de vragen van fase B. Schrijf één regel per kenmerk, net als in fase A, met een onderbouwing bij elke nee. Draai daarna `uv run python tools/beoordeling.py normaliseer <id>`. Let op:
+   - Een relationeel kenmerk (†) met ja noemt zijn tegenpartij: `toegewezen_partij: {waarde: ja, naar: [houder-van-de-begraafplaats]}`; leg de relatie vast (stap 5), haar bron geldt voor het kenmerk. Is de tegenpartij (nog) geen element: onderbouwing, bron en `naar: [{naam: …, type: …}]`.
+   - *Zelfstandige specialisatie* (standaard ja) en *generiek* (standaard nee) alleen bij een afwijking.
    - *zelfstandige specialisatie*: kijk eerst naar boven, naar de generalisaties in de wiki, in het GGM (`tools/ggm.py generalisaties`) en in GEMMA (`tools/gemma.py zoek`), en noteer de keten (Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Kies het hoogste niveau dat domeinexperts herkennen; bedenk nooit een kunstmatige verzamelnaam. Bij nee is `genoemd_begrip` het bredere begrip (`references/hierarchie.md`).
    - *gebruikt objecten* en *wordt bewerkt*: noem de handeling uit de vaste reeks ([kennismodel](../../../kennismodel/README.md), Relatietypen).
    - Het procesniveau, het objectniveau en de velden van het type (zie Velden; ook `deelprocessen`) volgen de modelleerafspraken van het type; *soort partij* die van Actor. Bij *generiek* (gebeurtenis, rol, dienst, bedrijfsproces) vul je `gemma_generiek` in: een specialisatie van een GEMMA-element met een exacte match. Ontbreekt dat element, meld het dan als voorstel aan GEMMA.
@@ -37,9 +39,12 @@ Eén bestand per begrip. Elke tekst staat op één regel, en meer alinea's zijn 
 
 ```yaml
 begrip: Begraafplaats
+vak: bedrijf/passief                           # fase A
 onderwerpen: [lijkbezorging]
+bronnen: [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen]
 kenmerken:                                     # één regel per kenmerk; normaliseer maakt er de opgeslagen vorm van
-  herkenbaar: ja — Gangbaar begrip (Groningen art. 1). [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen]
+  levenscyclus: ja — Aangelegd en gesloten (Groningen art. 3). [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen]
+  wordt_bewerkt: {waarde: ja, naar: [beheren-begraafplaatsen]}
 definitie: Terrein waar lijken worden begraven en urnen worden bijgezet.          # één zin, ≤160 tekens
 beschrijving:
   - Elke gemeente heeft ten minste één gemeentelijke begraafplaats (2026-rijk-wet-op-de-lijkbezorging-wettekst, art. 33).

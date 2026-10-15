@@ -1,67 +1,21 @@
 begrip: Behandelen verzoek uitdaagrecht
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - participatie
 kernobject: verzoek-uitdaagrecht
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Overheidsparticipatie en het uitdaagrecht: inwoners of maatschappelijke partijen verzoeken de gemeente een taak over te nemen of een initiatief te ondersteunen (art. 150 lid 3; var. 1 art. 6–9, var. 2 art. 11–14).'
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college ontvangt het verzoek, het bevoegde orgaan beslist erop en legt afspraken vast (var. 1 art. 6–9).
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen procedure van verzoek, beslissing, afspraken en evaluatie.
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij participatie (art. 150 lid 3).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: Het behandelen van een verzoek.
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Per verzoek van indiening tot beslissing en afspraken (var. 1 art. 6–9).
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: 'Indiener: dient het verzoek bij het college in en maakt bij toewijzing afspraken over de uitvoering. Beslisser: het bevoegde bestuursorgaan (raad, college of burgemeester) reageert op het verzoek en wijst het toe of af. Het college ontvangt alle verzoeken en zendt ze door (var. 1 art. 6, [8], [9]; var. 2 art. [11], [13], [14]).'
-    bronnen:
-    - 2024-vng-model-participatieverordening
+    naar:
+    - beslisser
+    - indiener
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Neemt het Verzoek uitdaagrecht in ontvangst, vraagt zo nodig aanvullende informatie op en wijst het toe of af, en legt bij toewijzing de Afspraak over uitvoering vast (var. 1 art. 6 lid 5, [8], [9]; var. 2 art. [11] lid 5, [13], [14]).
-    bronnen:
-    - 2024-vng-model-participatieverordening
+    naar:
+    - verzoek-uitdaagrecht
+    - afspraak-over-uitvoering
+    - participatieverordening
   aanleiding:
     waarde: ja
     onderbouwing: Het verzoek dat inwoners of maatschappelijke partijen bij het college indienen (var. 1 art. 6 lid 1; var. 2 art. [11] lid 1).
@@ -108,14 +62,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur, alleen een facultatief formulier (var. 1 art. 6 lid 4).
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces van hetzelfde type in de bronnen. Een specialisatie van Behandelen aanvraag beschikking zou het pas zijn als het verzoek een aanvraag in de zin van de Awb is; de bronnen spreken van een verzoek waarop het bestuursorgaan reageert (var. 1 art. [8]; vraag bij Verzoek uitdaagrecht).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in participatie voor.
 synoniemen:
 - naam: Overheidsparticipatie
   context: beleid, variant 2, breder dan het uitdaagrecht
@@ -193,11 +139,14 @@ relaties:
   bronnen:
   - 2024-vng-model-participatieverordening
   vindplaats: var. 1 art. 6–[9]; var. 2 art. [11]–[14]
-status: goedgekeurd
+bronnen:
+- 2026-rijk-gemeentewet-wettekst
+- 2024-vng-implementatiehandleiding-model-participatieverordening
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 28
+    regel: 25
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -205,7 +154,7 @@ beslist:
     data_object: nee
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
   - 2024-vng-implementatiehandleiding-model-participatieverordening

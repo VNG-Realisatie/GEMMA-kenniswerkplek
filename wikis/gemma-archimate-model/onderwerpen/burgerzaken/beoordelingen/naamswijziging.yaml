@@ -1,60 +1,9 @@
 begrip: Naamswijziging
+vak: bedrijf/gedrag-intern
+soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: het wijzigen van voornaam of achternaam (HUP Naamswijziging en naamgebruik; Utrecht Voornaam of achternaam veranderen).'
-    bronnen:
-    - 2026-rvig-hup-naamswijziging-en-naamgebruik
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Na goedkeuring neemt de gemeente de nieuwe naam op, eerst op de geboorteakte, daarna in de BRP (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-naamswijziging-en-naamgebruik
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-naamswijziging-en-naamgebruik
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gebeurt.
-    bronnen:
-    - 2026-rvig-hup-naamswijziging-en-naamgebruik
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering:
-    waarde: ja
-    onderbouwing: Het besluit van de Koning of de beschikking van de rechtbank verandert de naam op één moment (BW 1 art. 4, 7; HUP Vaststelling geslachtsnaam).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rvig-hup-vaststelling-geslachtsnaam
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   komt_herhaald_voor:
     waarde: ja
     onderbouwing: Gebeurt bij veel personen, elk jaar opnieuw.
@@ -63,22 +12,11 @@ kenmerken:
     - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
   leidt_tot_gedrag:
     waarde: ja
-    onderbouwing: Start het toevoegen van de latere vermelding aan de geboorteakte en de verwerking in de BRP (Utrecht; HUP Wijziging geslachtsnaam).
-    bronnen:
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-    - 2026-rvig-hup-wijziging-geslachtsnaam
+    naar:
+    - toevoegen-latere-vermelding
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-naamswijziging-en-naamgebruik
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het wijzigen van de voornaam door de rechtbank of van de geslachtsnaam bij koninklijk besluit.
 beschrijving:
 - 'Een voornaam laat men wijzigen bij de rechtbank, een achternaam via Justis bij koninklijk besluit; de gemeente beslist er niet over maar neemt de nieuwe naam op (BW 1 art. 4 lid 4, 7; Utrecht). Een geldig Nederlands reisdocument vervalt bij een naamswijziging van rechtswege (HUP Erkenning). Het naamgebruik is iets anders: de keuze welke achternaam de overheid gebruikt (BW 1 art. 9).'
@@ -109,20 +47,25 @@ relaties:
   vindplaats: Paspoortwet art. 47 lid 1 onder e; HUP Van rechtswege vervallen
 bronnen:
 - 2026-rvig-hup-wijziging-voornaam
+- 2026-rvig-hup-naamswijziging-en-naamgebruik
+- 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rvig-hup-vaststelling-geslachtsnaam
+- 2026-rvig-hup-wijziging-geslachtsnaam
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rvig-hup-wijziging-voornaam
   - 2026-rvig-hup-naamswijziging-en-naamgebruik

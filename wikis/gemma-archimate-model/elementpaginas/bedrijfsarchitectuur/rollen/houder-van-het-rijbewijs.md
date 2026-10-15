@@ -2,7 +2,7 @@
 id: houder-van-het-rijbewijs
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Houder van het rijbewijs
 onderwerpen:
 - burgerzaken
@@ -27,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling houder-van-het-rijbewijs.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -63,18 +63,14 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: hoedanigheid. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip aanvrager en houder van een rijbewijs (Reglement rijbewijzen art. 27, 33; Wegenverkeerswet 1994 art. 119); Utrecht spreekt van aanvragen en ophalen. [Wegenverkeerswet 1994](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, vraagt het rijbewijs bij de gemeente aan, haalt het op, geeft vermissing door en levert het oude rijbewijs in (Reglement rijbewijzen art. 27, 33; Wegenverkeerswet 1994 art. 119 lid 2 en 4; Utrecht). [Wegenverkeerswet 1994](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Wegenverkeerswet 1994](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: het meeste gedrag van de rol ligt in Beheren rijbewijzen (regel Thuishoren). [Wegenverkeerswet 1994](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **hoedanigheid**: Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? | Ja, de hoedanigheid van degene aan wie een rijbewijs is of wordt afgegeven, met eigen plichten: persoonlijk verschijnen, het eerdere rijbewijs overleggen en inleveren, vermissing melden (Wegenverkeerswet 1994 art. 111 lid 2, 119 lid 2 en 4; Reglement rijbewijzen art. 27, 33). [Wegenverkeerswet 1994](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, toegewezen aan Behandelen aanvraag rijbewijs (vraagt aan), Behandelen aanvraag omwisseling buitenlands rijbewijs (levert het buitenlandse rijbewijs in), Uitreiken rijbewijs (haalt op en levert in) en Verwerken vermissing rijbewijs (geeft door) (Reglement rijbewijzen art. 27, 109; Wegenverkeerswet 1994 art. 119; Utrecht). [Wegenverkeerswet 1994](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md), [Utrecht Rijbewijs buitenland omwisselen](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen.md) |
+| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, met [Behandelen aanvraag rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md), [Behandelen aanvraag omwisseling buitenlands rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Verwerken vermissing rijbewijs](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md). |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, per rijbewijs één houder (Wegenverkeerswet 1994 art. 118a, 119). [Wegenverkeerswet 1994](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Wegenverkeerswet 1994](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 
 ### Relaties
 

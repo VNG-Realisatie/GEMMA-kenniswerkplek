@@ -1,43 +1,8 @@
 begrip: Stempas
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip en UPL-product: ten minste veertien dagen voor de stemming ontvangt elke kiezer een stempas (Kieswet art. J 7; UPL nr. 397).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester stelt de gegevens vast, verstrekt de stempas, vervangt haar op verzoek en houdt het register van ongeldige stempassen bij (Kieswet art. J 7, J 7a, J 8).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een document met een eigen volgnummer en levensloop per kiezer en verkiezing (Kieswet art. J 7, J 7a).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: kernobject van Beheren stempassen (UPL taakveld 0.2).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elke stempas heeft een volgnummer (Kieswet art. J 7 lid 2).
@@ -50,9 +15,11 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: 'Beheren stempassen registreert, vervangt en beëindigt haar: de burgemeester verstrekt de stempas, reikt een nieuwe uit en neemt een ongeldige stempas op in het register (Kieswet art. J 7, J 7a, J 8).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - behandelen-verzoek-om-kiezerspas
+    - behandelen-verzoek-om-volmacht
+    - beheren-stempassen
+    - verstrekken-stempas
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -74,14 +41,6 @@ kenmerken:
     onderbouwing: Gepersonaliseerd uit de gegevens van de geregistreerde kiezers, met een register van ongeldige stempassen (Kieswet art. J 7 lid 1, J 7a).
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki; de vervangende stempas en de kiezerspas zijn zijn specialisaties (Kieswet art. J 8, K 4).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Persoonlijk document waarmee een kiezer bij een verkiezing kan stemmen, toegezonden door de gemeente waar hij als kiezer is geregistreerd.
 beschrijving:
 - Daags na de kandidaatstelling stelt de burgemeester de gegevens vast van de kiezers die op die dag in de gemeente als kiezer zijn geregistreerd; ten minste veertien dagen voor de stemming ontvangt elke kiezer een stempas met een volgnummer, naar een model van de minister (Kieswet art. J 7). Wie zijn stempas kwijt is of niet heeft ontvangen, krijgt op een schriftelijk of mondeling verzoek met een kopie van een identiteitsbewijs een nieuwe (art. J 8).
@@ -114,11 +73,14 @@ relaties:
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7 lid 1-2
-status: goedgekeurd
+bronnen:
+- 2026-rijk-kieswet-bwbr0004627
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 35
+    regel: 32
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -126,8 +88,10 @@ beslist:
     data_object: ja
     objectniveau: kernobject
     generiek: false
-    typeregel: 21
+    typeregel: 18
   voor_te_leggen:
+  - gegevensobject zonder sterke GGM-match
+  open:
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627

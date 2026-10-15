@@ -2,7 +2,7 @@
 id: gemeente
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Gemeente
 onderwerpen:
 - bestuur-en-organisatie
@@ -26,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeente.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -68,20 +68,16 @@ Actor. Uitkomst van de beslistabel: Handelende partij (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 49 zijn nee.
+**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: handelende partij. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbaar; de wet spreekt van 'de gemeente' (Wlb art. 22, 33). [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md), [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente zelf. [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md), [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md), [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md), [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **handelende partij**: Is het een organisatie, afdeling of persoon die activiteiten kan uitvoeren? | Ja, een rechtspersoon die via haar organen handelt (BW 2 art. 1; Gemeentewet art. 6). [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md), [Gemeentewet](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 | **los van verantwoordelijkheid**: Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | Ja, blijft bestaan als een rol wegvalt en vervult meer rollen: houder van de begraafplaats, het crematorium en een plaats van bijzetting, en kostendrager (art. 22, 33). [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen rechtspersoon**: Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | Ja, gemeenten bezitten rechtspersoonlijkheid (BW 2 art. 1). [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md) |
-| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, houder van de begraafplaats (art. 33, 39 lid 2), Houder van het crematorium (art. 51), Houder van een plaats van bijzetting (art. 62) en Kostendrager (art. 22). [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, met [Houder van de begraafplaats](../rollen/houder-van-de-begraafplaats.md), [Houder van het crematorium](../rollen/houder-van-het-crematorium.md), [Houder van een plaats van bijzetting](../rollen/houder-van-een-plaats-van-bijzetting.md), [Kostendrager](../rollen/kostendrager.md), [Bijhoudingsgemeente](../rollen/bijhoudingsgemeente.md), [RNI-loket](../rollen/rni-loket.md). |
 | **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, elke gemeente; een soort partij, geen individuele gemeente. [Gemeentewet](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder element in deze wiki. [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md), [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, komt in elk onderwerp voor: de gemeente als partij (Gemeentewet art. 6). [Gemeentewet](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 
 ### Relaties

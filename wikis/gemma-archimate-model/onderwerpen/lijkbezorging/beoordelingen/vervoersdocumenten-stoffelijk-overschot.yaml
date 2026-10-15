@@ -1,4 +1,5 @@
 begrip: Vervoersdocumenten stoffelijk overschot
+vak: bedrijf/gedrag-extern
 homoniemen:
 - begrip: Laissez-passer voor lijken
   betekenis: Het document van de burgemeester waarmee een stoffelijk overschot ongehinderd naar een verdragsstaat van de Overeenkomst van Straatsburg wordt vervoerd (Besluit op de lijkbezorging art. 11 lid 1)
@@ -7,55 +8,6 @@ homoniemen:
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 445); het laissez-passer voor lijken is een wettelijk begrip (Besluit op de lijkbezorging art. 11).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester van de gemeente waar de akte van overlijden is ingeschreven, geeft het laissez-passer af (Besluit op de lijkbezorging art. 11 lid 1).
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandig product in de UPL, niet een onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij de lijkbezorging.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente aanbiedt: het document waarmee een stoffelijk overschot ongehinderd naar het buitenland wordt vervoerd (Besluit op de lijkbezorging art. 11).'
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een laissez-passer voor lijken (Besluit op de lijkbezorging art. 11 lid 1).
@@ -69,20 +21,11 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Afgeven laissez-passer (Besluit op de lijkbezorging art. 11).
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    naar:
+    - afgeven-laissez-passer
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere dienst in deze wiki of in het GEMMA-model.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Het document van de gemeente waarmee een stoffelijk overschot ongehinderd naar het buitenland wordt vervoerd.
 beschrijving:
 - Vervoer naar een staat die partij is bij de Overeenkomst van Straatsburg gaat ongehinderd met een laissez-passer voor lijken van de burgemeester van de gemeente waar de akte van overlijden is ingeschreven (Besluit op de lijkbezorging art. 11 lid 1). Voor vervoer over land naar België of Luxemburg volstaat het verlof tot begraving of crematie (art. 11 lid 3). Bij binnenkomst wordt het document aan de douane overgelegd (art. 11 lid 5).
@@ -110,18 +53,20 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rvo-aangifte-en-akte-van-overlijden
   vindplaats: UPL nr. 445; RVO, Zie ook
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst

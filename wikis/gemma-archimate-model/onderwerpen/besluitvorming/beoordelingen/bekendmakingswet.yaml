@@ -1,45 +1,8 @@
 begrip: Bekendmakingswet
+vak: motivatie
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Concreet benoemde wet (BWBR0004287).
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Geeft het college de plicht een gemeenteblad uit te geven, en elk gemeentelijk bestuursorgaan de plicht zijn regelingen en besluiten zonder geadresseerden daarin bekend te maken (art. 2 lid 2, 6, 12).
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: de wet regelt de bekendmaking van regelingen en besluiten, in elk onderwerp.'
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde wet als geheel (BWBR0004287).
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -55,15 +18,8 @@ kenmerken:
     - 2026-rijk-bekendmakingswet-wettekst
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 2 lid 2 en 6: het gemeenteblad en de bekendmaking van algemeen verbindende voorschriften (UPL nr. 48, bekendmaking algemeen verbindend voorschrift).'
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder beleidskader in deze wiki; de wet staat op zichzelf.
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
+    naar:
+    - bekendmaking-algemeen-verbindend-voorschrift
   generiek:
     waarde: ja
     onderbouwing: Geldt met dezelfde betekenis in elk onderwerp waarin de gemeente regelingen of besluiten bekendmaakt.
@@ -86,18 +42,21 @@ relaties:
   bronnen:
   - 2026-rijk-bekendmakingswet-wettekst
   vindplaats: art. 2 lid 2, 6, 8
-status: goedgekeurd
+bronnen:
+- 2026-rijk-bekendmakingswet-wettekst
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-bekendmakingswet-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

@@ -2,7 +2,7 @@
 id: klager
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Klager
 onderwerpen:
 - besluitvorming
@@ -19,7 +19,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling klager.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -43,17 +43,13 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 53 zijn nee.
+**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: hoedanigheid. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsterm (Awb art. 9:4–9:12) en gangbaar: wie een klacht indient. [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente behandelt de klacht en hoort de klager (art. 9:2, 9:10). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als hoedanigheid tegenover een bestuursorgaan, los van een besluit; het is geen belanghebbende, want ieder mag klagen, ook over een gedraging jegens een ander (art. 9:1). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij besluitvorming: het begrip komt uit de Awb en geldt voor elk bestuursorgaan (hoofdstuk 9). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **hoedanigheid**: Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? | Ja, de hoedanigheid waarin een persoon of organisatie een klacht indient over een gedraging van een bestuursorgaan (art. 9:1, 9:4). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, toegewezen aan Behandelen klacht: dient de klacht in, wordt gehoord en krijgt het oordeel (art. 9:4, 9:10, 9:12). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder element in deze wiki; Belanghebbende past niet, want een klager hoeft geen belang bij een besluit te hebben. [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, met [Behandelen klacht](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-klacht.md). |
 
 ### Relaties
 

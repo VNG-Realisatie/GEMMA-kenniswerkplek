@@ -1,58 +1,29 @@
 begrip: Bijhoudingsgemeente
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de HUP (Intergemeentelijke adreswijziging, Emigratie, Wijzigen BSN).
-    bronnen:
-    - 2026-rvig-hup-intergemeentelijke-adreswijziging
-    - 2026-rvig-hup-emigratie
-    - 2026-rvig-hup-wijzigen-bsn
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Een verantwoordelijkheid van de gemeente zelf (HUP Achtergronden).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-    - 2026-rvig-hup-intergemeentelijke-adreswijziging
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-    - 2026-rvig-hup-intergemeentelijke-adreswijziging
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De verantwoordelijkheid voor de bijhouding van de persoonslijsten van de ingezetenen met een adres in de gemeente (HUP Achtergronden).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: Een verantwoordelijkheid; de partij die haar vervult kan ook andere rollen hebben.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Bijhouden persoonsgegevens en zijn bedrijfsprocessen (HUP Achtergronden; HUP Intergemeentelijke adreswijziging).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-    - 2026-rvig-hup-intergemeentelijke-adreswijziging
+    naar:
+    - bijhouden-persoonsgegevens
+    - inschrijven-ingezetene
+    - verwerken-adreswijziging
+    - verwerken-emigratie
+    - inschrijven-op-briefadres
+    - uitvoeren-adresonderzoek
+    - behandelen-verzoek-om-geheimhouding
+    - verstrekken-persoonsgegevens
+    - verstrekken-overzicht-gegevensverstrekkingen
+    - behandelen-verzoek-om-correctie
+    - behandelen-verzoek-om-verwijdering-van-gegevens
+    - wijzigen-identificatienummers
+    - wijzigen-naamgebruik
+    - verwerken-buitenlands-document
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -65,15 +36,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere rol in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-    - 2026-rvig-hup-intergemeentelijke-adreswijziging
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Verantwoordelijkheid van een gemeente voor de bijhouding van de gegevens van de ingezetenen die er hun adres hebben.
 beschrijving:
 - Het college van de gemeente waar een ingezetene zijn adres heeft, is verantwoordelijk voor de bijhouding van zijn gegevens (HUP Achtergronden). Bij een verhuizing naar een andere gemeente wordt die de nieuwe bijhoudingsgemeente; na emigratie blijft de laatste bijhoudingsgemeente verantwoordelijk voor rechtsfeiten van voor de emigratie (HUP Intergemeentelijke adreswijziging; HUP Emigratie).
@@ -193,18 +155,22 @@ relaties:
   - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
   - 2026-rvig-hup-overlijden-buitenland
   vindplaats: 'Utrecht: Voorwaarden, Na uw afspraak; HUP regel 33'
-status: goedgekeurd
+bronnen:
+- 2026-rvig-hup-intergemeentelijke-adreswijziging
+- 2026-rvig-hup-emigratie
+- 2026-rvig-hup-wijzigen-bsn
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rvig-hup-intergemeentelijke-adreswijziging
   - 2026-rvig-hup-emigratie

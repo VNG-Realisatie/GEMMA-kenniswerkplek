@@ -1,42 +1,8 @@
 begrip: Verzoek uitdaagrecht
+vak: bedrijf/passief
 onderwerpen:
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Verzoek bij het college om een taak over te nemen of een initiatief te ondersteunen, met indieningsvereisten (var. 1 art. 6, var. 2 art. 11).
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-    - 2026-rijk-gemeentewet-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college ontvangt en beoordeelt het verzoek.
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als verzoek van een indiener.
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij participatie.
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elk verzoek heeft een indiener en omschrijft de taak of de gewenste overheidsparticipatie, de reden en het beoogde resultaat (var. 1 art. 6 lid 2; var. 2 art. [11] lid 2).
@@ -49,9 +15,8 @@ kenmerken:
     - 2024-vng-model-participatieverordening
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: 'Behandelen verzoek uitdaagrecht bewerkt het: het college neemt het in ontvangst, kan aanvullende informatie opvragen en zendt het door; het bevoegde bestuursorgaan wijst het toe of af (var. 1 art. 6 lid 5, [8]; var. 2 art. [11] lid 5, [13]).'
-    bronnen:
-    - 2024-vng-model-participatieverordening
+    naar:
+    - behandelen-verzoek-uitdaagrecht
   afspraak:
     waarde: nee
     onderbouwing: Een eenzijdig verzoek.
@@ -73,9 +38,6 @@ kenmerken:
     bronnen:
     - 2024-vng-model-participatieverordening
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in participatie voor.
 synoniemen:
 - naam: Verzoek toepassing uitdaagrecht
   context: beleid, variant 1
@@ -101,11 +63,14 @@ besluiten:
   besluit: 'Geen specialisatie van Aanvraag, en Indiener geen specialisatie van Belanghebbende: geen bron noemt de reactie op het verzoek een besluit, en art. 150 lid 3 Gemeentewet vraagt geen rechtstreeks belang. Opnieuw toetsen als rechtspraak of een handreiking de reactie als besluit kwalificeert.'
   gevolg: verwerkt
   zekerheid: logica
-status: goedgekeurd
+bronnen:
+- 2024-vng-implementatiehandleiding-model-participatieverordening
+- 2026-rijk-gemeentewet-wettekst
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 35
+    regel: 32
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -113,7 +78,7 @@ beslist:
     data_object: nee
     objectniveau: kernobject
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2026-rijk-gemeentewet-wettekst

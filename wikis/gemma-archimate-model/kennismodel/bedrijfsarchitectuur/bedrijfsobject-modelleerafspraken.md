@@ -8,14 +8,14 @@ titel: Bedrijfsobject — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Business Object* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `bedrijfsobject`
+*Business Object* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/passief` · paginatype `bedrijfsobject`
 
 | Afspraak | Inhoud |
 |---|---|
 | Definitie | Een concept dat binnen een bepaald domein wordt gebruikt en betekenis heeft. (GEMMA) |
 | In Over GEMMA | ja (Bedrijfsobject) |
 | Duiding | Een ding waar de gemeente mee werkt: het wordt geregistreerd, bijgewerkt of geraadpleegd door gemeentelijk gedrag. De soort regeling (Regeling) is ook een bedrijfsobject. |
-| Herken je aan | geen aard (een ding); *afspraak* en *waarneembare vorm* nee. Moet ja: *wordt bewerkt* (kernrelatie); hoogstens 1 nee: *onderscheidbare exemplaren*, *levenscyclus*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *ding*; *afspraak* en *waarneembare vorm* nee. Moet ja: *wordt bewerkt* (kernrelatie); hoogstens 1 nee: *onderscheidbare exemplaren*, *levenscyclus*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfsproces ─toegang→ Bedrijfsobject; Bedrijfsfunctie ─toegang→ Bedrijfsobject; Bedrijfsinteractie ─toegang→ Bedrijfsobject |
 | Niveaus | kernobject: het object waarvan één levensloopproces de hele levensloop omvat · subobject: een deel van een kernobject, met een eigen bedrijfsproces · generiek object: dezelfde betekenis in veel onderwerpen; domeinspecialisaties krijgen geen pagina en staan in relaties met `via` · onderdeel zonder eigen proces, en invoer die een andere partij maakt: geen pagina |
 | Eigenschappen | `taakveld`: het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling · `beleidsdomein`: het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling · `ggm`: de match met het GGM: entiteit, sterkte en onderbouwing · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `data_object`: annotatie: het begrip wordt als gegevensstructuur geautomatiseerd verwerkt |

@@ -1,77 +1,17 @@
 begrip: Inschrijven levenloos geboren kind
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wet BRP art. 2.56a: op verzoek van een ouder worden gegevens van een levenloos geboren kind opgenomen; UPL nr. 90; Utrecht.'
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college beslist op het verzoek en neemt de gegevens op in de BRP (Wet BRP art. 2.56a, 2.60; HUP Geboorte).
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2026-rvig-hup-geboorte
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Bijhoudingsgemeente en Beslisser (college); een Ouder verzoekt (Wet BRP art. 2.56a; HUP Geboorte).
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2026-rvig-hup-geboorte
+    naar:
+    - ouder
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Registreert de gegevens van het levenloos geboren kind bij de ingeschreven persoon van de ouder (HUP Geboorte).
-    bronnen:
-    - 2026-rvig-hup-geboorte
+    naar:
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Een verzoek van een ouder, met formulier, online met DigiD of aan de balie (Utrecht).
@@ -96,9 +36,8 @@ kenmerken:
     - 2026-rijk-wet-brp-bwbr0033715
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie bij de ingeschreven persoon (HUP Geboorte).'
-    bronnen:
-    - 2026-rvig-hup-geboorte
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het verzoek tot de opname op de persoonslijst of de weigering.
@@ -116,25 +55,14 @@ kenmerken:
     - 2026-rvig-hup-geboorte
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst BRP-inschrijving niet in leven zijnd kind (UPL nr. 90).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - brp-inschrijving-niet-in-leven-zijnd-kind
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het beslissen op het verzoek van een ouder om de gegevens van een levenloos geboren kind in de basisregistratie personen op te nemen.
 beschrijving:
 - Een levenloos geboren kind wordt alleen op verzoek van een ouder in de BRP opgenomen; een kind dat kort heeft geleefd wordt automatisch ingeschreven (HUP Geboorte; Utrecht). Het weigeren van de opname is een besluit in de zin van de Awb (Wet BRP art. 2.60; HUP Geboorte).
@@ -163,11 +91,14 @@ relaties:
   vindplaats: UPL nr. 90
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-brp-bwbr0033715
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -175,7 +106,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern

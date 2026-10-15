@@ -1,60 +1,26 @@
 begrip: Ambtenaar van de burgerlijke stand
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wetsterm (art. 11–14).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Gemeentelijke ambtenaar.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De bevoegdheid om akten van de burgerlijke stand op te maken en het verlof tot begraving of crematie af te geven.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan de functie Lijkbezorging: geeft het verlof tot begraving of crematie af (art. 11, 12). In de burgerlijke stand toegewezen aan Bijhouden burgerlijke stand en zijn bedrijfsprocessen (BW 1 art. 16a).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - verlenen-verlof-tot-begraving-of-crematie
+    - bijhouden-burgerlijke-stand
+    - opmaken-akte-van-overlijden
+    - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
+    - opmaken-geboorteakte
+    - opmaken-akte-levenloos-geboren-kind
+    - opmaken-akte-van-erkenning
+    - toevoegen-latere-vermelding
+    - opmaken-akte-van-naamskeuze
+    - wijzigen-geslachtsvermelding
+    - voltrekken-huwelijk
+    - registreren-partnerschap
+    - inschrijven-ontbinding-huwelijk-of-partnerschap
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -67,15 +33,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Ambtenaar die bevoegd is akten van de burgerlijke stand op te maken.
 beschrijving:
 - De ambtenaar van de burgerlijke stand maakt de akten van de burgerlijke stand op, waaronder de akte van overlijden na aangifte bij de gemeente waar iemand is overleden (Wet op de lijkbezorging art. 13, 14; Ondernemersplein).
@@ -188,18 +145,21 @@ doelgroep: gemeente
 specialisaties:
 - naam: Buitengewoon ambtenaar van de burgerlijke stand
   omschrijving: Ambtenaar met een beperkter takenpakket, zoals het voltrekken van huwelijken en registreren van partnerschappen; ook voor één dag aangewezen op verzoek van het bruidspaar (BW 1 art. 16, 16a lid 2). Geen eigen pagina.
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rvo-aangifte-en-akte-van-overlijden
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden

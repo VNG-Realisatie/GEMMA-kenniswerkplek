@@ -1,34 +1,9 @@
 begrip: Kostenverhaal lijkbezorging
+hoofdkenmerk: gedrag
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ziet of doet hierover iets.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: 'Onderdeel van Verzorgen gemeentebegrafenis: Stap in Verzorgen gemeentebegrafenis (art. 22).'
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 toelichting: 'Onderdeel van Verzorgen gemeentebegrafenis: Stap in Verzorgen gemeentebegrafenis (art. 22).'
 genoemd_begrip: Verzorgen gemeentebegrafenis
 onderwerpen:
@@ -45,3 +20,5 @@ beslist:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst

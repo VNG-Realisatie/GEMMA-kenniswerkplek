@@ -1,46 +1,9 @@
 begrip: Verklaring van toestemming
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Behandelen aanvraag reisdocument
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip (Paspoortwet art. 34); Utrecht: toestemming van ouder(s) of gezaghebber(s).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt de verklaring in ontvangst bij de aanvraag voor een minderjarige (Paspoortwet art. 34; Utrecht).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per aanvraag en per gezaghebber een verklaring (Paspoortwet art. 34).
@@ -75,15 +38,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 synoniemen:
 - naam: Toestemmingsverklaring
   context: beleid
@@ -91,14 +45,14 @@ toelichting: 'Invoer van een andere partij: de ouder of andere gezaghebber geeft
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 33
+    regel: 30
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
     data_object: nee
     genoemd_begrip: Behandelen aanvraag reisdocument
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

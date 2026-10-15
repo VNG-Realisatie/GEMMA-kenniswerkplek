@@ -1,49 +1,9 @@
 begrip: Immigratie- en Naturalisatiedienst
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbare naam in de praktijk: de IND beoordeelt de naturalisatieaanvraag en levert de verblijfstitelgegevens (Utrecht; HUP Verblijfstitel).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-    - 2026-rvig-hup-verblijfstitel
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Structurele relatie met de gemeente: ontvangt het naturalisatieverzoek met het advies van de burgemeester en beslist namens de minister, en levert de verblijfstitels voor de BRP (Besluit art. 37, 38; Utrecht; HUP Verblijfstitel).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-    - 2026-rvig-hup-verblijfstitel
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandige organisatie.
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Genoemd in de bronnen van burgerzaken (naturalisatie, verblijfstitel).
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-    - 2026-rvig-hup-verblijfstitel
-  gedrag: nee
-  handelende_partij:
-    waarde: ja
-    onderbouwing: 'Een organisatie die activiteiten uitvoert: beoordelen en beslissen (Utrecht).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Bestaat los van deze taak en voert ook andere taken uit (verblijfstitels; HUP Verblijfstitel).
@@ -70,14 +30,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Voorgelegd, samen met de minister van BZK: de IND beslist namens de minister van Justitie en Veiligheid over naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38: Onze Minister; Utrecht: de IND) en levert de verblijfstitels voor de BRP (HUP Verblijfstitel), maar is één organisatie en geen soort partij. Zolang de redacteur niet anders beslist: geen element; de rol Ketenpartner is toegewezen aan Beheren Nederlanderschap en de IND staat in de beschrijvingen.'
 synoniemen:
 - naam: IND
@@ -88,10 +40,12 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Rijkskant (plak 4): geen eigen actor; het Rijk is de actor (GEMMA-actor Rijk) die Ketenpartner vervult, en de minister van Justitie en Veiligheid met de IND staat in de beschrijving van Rijk.'
   gevolg: afwijzen
+bronnen:
+- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 22
+    regel: 19
     toelichting: Eis ontbreekt voor Actor
     archimate_type: business-actor
     voorleggen: true
@@ -99,7 +53,7 @@ beslist:
     - 'soort partij: nee'
     data_object: nee
     generiek: false
-    typeregel: 11
+    typeregel: 9
   voor_te_leggen:
   - 'soort partij: nee'
   bronnen:

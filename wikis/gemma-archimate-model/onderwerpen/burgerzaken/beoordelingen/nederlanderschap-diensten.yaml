@@ -1,55 +1,9 @@
 begrip: Nederlanderschap diensten
+vak: bedrijf/gedrag-intern
+soort_gedrag: gegroepeerd_gedrag
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het behandelen van optieverklaringen en naturalisatieverzoeken is een eigen taak van de burgemeester (Besluit verkrijging en verlies Nederlanderschap art. 2, 63). GEMMA-bedrijfsfunctie Nederlanderschap diensten, onder Producten- en dienstenrealisatie publieksdiensten.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit art. 2, 63).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: 'Een eigen taak van de burgemeester, los van één ander begrip: optieverklaringen en naturalisatieverzoeken in ontvangst nemen en uittreksels van naturalisatiebesluiten uitreiken (Besluit verkrijging en verlies Nederlanderschap art. 2).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: bedient Beheren Nederlanderschap.'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Een groep van activiteiten: het in ontvangst nemen van optieverklaringen en naturalisatieverzoeken en het uitreiken van uittreksels van naturalisatiebesluiten (Besluit verkrijging en verlies Nederlanderschap art. 2).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag:
-    waarde: ja
-    onderbouwing: Doorlopende groepering van de dienstverlening rond het Nederlanderschap, op grond van dezelfde kennis van de Rijkswet en het Besluit, zonder eigen volgorde (GEMMA).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: nee
     onderbouwing: De bron wijst geen rol aan de functie toe; de rollen hangen aan de processen.
@@ -65,9 +19,8 @@ kenmerken:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   bedient_gedrag:
     waarde: ja
-    onderbouwing: Bedient Beheren Nederlanderschap (Besluit art. 2, 7, 33, 63).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    naar:
+    - beheren-nederlanderschap
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onder Producten- en dienstenrealisatie publieksdiensten (GEMMA).
@@ -81,9 +34,6 @@ kenmerken:
     onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; GEMMA-functie op het niveau van het onderwerp.
     gemma_relatie:
     - id-21417578-47f0-4f78-a4ba-50b4ee134815
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 domein: Publieksdiensten
 definitie: Het behandelen van aanvragen van de Nederlandse nationaliteit of het verkrijgen van bewijs daarvan.
 beschrijving:
@@ -141,18 +91,18 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 62 (GEMMA-domein Publieksdiensten)
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: 'Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *toegewezen partij*)'
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2025-vng-upl-producten-en-diensten-extern

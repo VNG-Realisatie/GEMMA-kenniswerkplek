@@ -299,6 +299,24 @@ def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], 
             res.fouten.append(f"{bid}: deelproces '{dp['begrip']}' is geen beoordeling van een deelproces zonder pagina")
 
 
+def _controleer_naar(bid: str, data: dict, alle: dict[str, dict], res: Resultaat) -> None:
+    """Een relationeel kenmerk noemt zijn tegenpartij (`naar`): een id is een beoordeling, en de relatie die het
+    kenmerk uitwerkt, bestaat; zonder relatie steunt het kenmerk op een eigen bron (een potentiële relatie: signaal)."""
+    for s, a in bepaal_type.antwoorden(data).items():
+        for ander in bepaal_type.naar_ids(a):
+            if ander not in alle:
+                res.fouten.append(f"{bid}: kenmerk {bepaal_type.NAAM[s]} noemt '{ander}', dat geen beoordeling heeft; "
+                                  "noem naam en type als de tegenpartij (nog) geen element is")
+            elif not bepaal_type.relaties_bij(bid, s, ander, alle):
+                _, soorten, _ = bepaal_type.RELATIONEEL[s]
+                tekst = (f"{bid}: kenmerk {bepaal_type.NAAM[s]} noemt '{ander}', maar er is geen relatie "
+                         f"{' of '.join(soorten)} tussen beide")
+                if a.get("bronnen"):
+                    res.waarschuwingen.append(f"{tekst}: een potentiële relatie; leg haar vast (regel Beslistabel beslist)")
+                else:
+                    res.fouten.append(f"{tekst}, en het kenmerk heeft geen eigen bron (regel Elke claim een bron)")
+
+
 def _controleer_gemma_relaties(ctx: Context, bid: str, data: dict, alle: dict[str, dict], res: Resultaat) -> None:
     """Een kenmerk of relatie die steunt op de plek in een GEMMA-indeling (`gemma_relatie`) in plaats van op een bron:
     de GEMMA-relatie moet in het model staan, tussen de gematchte elementen (regel Elke claim een bron)."""
@@ -590,6 +608,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     res.fouten += [f"{f}" for f in bepaal_type.indeling({b: d for b, (_, d) in alle.items()}, uitkomsten)]
 
     nieuw: dict[str, dict] = {}
+    alle_data = {b: d for b, (_, d) in alle.items()}
     for bid, (pad, data) in alle.items():
         uitkomst = uitkomsten[bid]
         if uitkomst is None:
@@ -607,9 +626,14 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             res.waarschuwingen.append(f"{bid}: {', '.join(modelbronnen)} is een model, matchdoel en geen bron; noem bij "
                                       "het kenmerk of de relatie de bron van de bewering (regel Bronvoorrang)")
         zonder_bron = [bepaal_type.NAAM[s] for s, a in bepaal_type.antwoorden(data).items()
-                       if a["waarde"] == "ja" and not a.get("bronnen") and not a.get("gemma_relatie")]
+                       if a["waarde"] == "ja" and not a.get("bronnen") and not a.get("gemma_relatie")
+                       and not bepaal_type.steunt_op_relatie(bid, s, a, alle_data)]
         if zonder_bron:
             res.fouten.append(f"{bid}: kenmerk 'ja' zonder bron: {', '.join(zonder_bron)} (regel Elke claim een bron)")
+        _controleer_naar(bid, data, alle_data, res)
+        if not bronnen and uitkomst["soort"] != "synoniem" \
+                and bepaal_type.voorbij_poort(bepaal_type.waarden(data), bepaal_type.extra_velden(data)):
+            res.fouten.append(f"{bid}: de poort is doorlopen zonder bron in de beoordeling (regel Elke claim een bron)")
         if pad.parent.parent.name != gam_gemeen.thuis(data):
             res.fouten.append(f"{bid}: het thuisonderwerp is '{gam_gemeen.thuis(data)}' (het eerste in onderwerpen) en de "
                               f"beoordeling staat in de map van '{pad.parent.parent.name}' (regel Thuishoren)")

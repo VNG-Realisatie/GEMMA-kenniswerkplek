@@ -1,57 +1,16 @@
 begrip: Aanvrager van de verklaring omtrent het gedrag
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip: degene omtrent wiens gedrag een verklaring wordt gevraagd, of zijn vertegenwoordiger (Wet justitiële en strafvorderlijke gegevens art. 33); Utrecht spreekt van de aanvrager van de VOG.'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Dient de aanvraag in bij de gemeente, met het formulier van de werkgever en een identiteitsbewijs, en betaalt (Wet justitiële en strafvorderlijke gegevens art. 30, 33; Utrecht).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: het meeste gedrag van de rol ligt in Afgeven verklaring omtrent het gedrag (regel Thuishoren).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: 'De hoedanigheid van degene omtrent wiens gedrag een verklaring wordt gevraagd, met eigen plichten: de aanvraag indienen met opgave van het doel en het risico, en de kosten betalen (Wet justitiële en strafvorderlijke gegevens art. 32, 33, 39; Utrecht).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: 'Een hoedanigheid, geen partij: de persoon zelf is de ingeschreven persoon.'
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Behandelen aanvraag verklaring omtrent het gedrag (dient de aanvraag in, art. 33; Utrecht).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+    naar:
+    - behandelen-aanvraag-verklaring-omtrent-het-gedrag
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per aanvraag één aanvrager (Wet justitiële en strafvorderlijke gegevens art. 33).
@@ -66,14 +25,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Hoedanigheid van degene omtrent wiens gedrag een verklaring omtrent het gedrag wordt gevraagd en die de aanvraag indient.
 beschrijving:
 - De wet kent de aanvrager, degene omtrent wiens gedrag de verklaring wordt gevraagd, of een vertegenwoordiger van de rechtspersoon (Wet justitiële en strafvorderlijke gegevens art. 33). De aanvraag bevat de voornamen, de geboortedatum en het doel, en de aanvrager of degene te wiens behoeve de verklaring wordt gevraagd, geeft het risico voor de samenleving op (art. 32). In de praktijk heeft vaak een werkgever of een andere organisatie het aanvraagformulier ingevuld; de aanvrager zelf dient in en betaalt (Utrecht).
@@ -99,18 +50,18 @@ relaties:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
   vindplaats: art. 30, 33; Utrecht regel 37-53
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog

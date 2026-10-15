@@ -2,7 +2,7 @@
 id: algemene-wet-bestuursrecht
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Algemene wet bestuursrecht
 onderwerpen:
 - besluitvorming
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling algemene-wet-bestuursrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -62,19 +62,15 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, concreet benoemde wet, gangbaar als Awb (BWBR0005537). [Awb](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft elk bestuursorgaan van de gemeente algemene regels en plichten bij het voorbereiden en nemen van besluiten: beslissen op een aanvraag binnen een termijn, de uniforme openbare voorbereidingsprocedure, bezwaar en klachten behandelen (art. 1:1, 3:10, 4:13, 7:1, 9:1). [Awb](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Awb](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij besluitvorming: de wet regelt het handelen van bestuursorganen bij besluiten, in elk onderwerp. [Awb](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, een concreet benoemde wet als geheel (BWBR0005537). [Awb](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijkswet. [Awb](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht, opgehaald op 2026-09-30. [Awb](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, grondslag voor de UPL-diensten Zienswijze (art. 3:15, afdeling 3.4, de uniforme openbare voorbereidingsprocedure), Bekendmaking (art. 3:40), Beschikking aanvragen (art. 1:3, afdeling 4.1), Dwangsom bij niet tijdig beslissen (art. 4:17), Nadeelcompensatie (art. 4:126), Bezwaar (art. 7:1), Beroep (art. 8:1) en Klacht (art. 9:1); de UPL noemt de Awb ook als grondslag van subsidie (art. 4:21), bestuurlijke boete (art. 5:40) en spoedeisende bestuursdwang (art. 5:31), die bij andere onderwerpen horen. [Awb](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki; de wet staat op zichzelf. [Awb](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Zienswijze](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/zienswijze.md), [Bezwaar](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/bezwaar.md), [Klacht](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/klacht.md), [Beroep](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/beroep.md), [Bekendmaking](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/bekendmaking.md), [Dwangsom bij niet tijdig beslissen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/dwangsom-bij-niet-tijdig-beslissen.md), [Nadeelcompensatie](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/nadeelcompensatie.md), [Beschikking aanvragen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/beschikking-aanvragen.md). |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, geldt met dezelfde betekenis in elk onderwerp waarin de gemeente besluiten neemt. [Awb](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 
 ### Relaties

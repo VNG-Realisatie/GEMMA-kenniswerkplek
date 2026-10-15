@@ -1,72 +1,18 @@
 begrip: Bekendmaken besluit
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wettelijke stap na elk besluit (Awb afdeling 3.6; Bekendmakingswet); GEMMA kent haar als procesbouwsteen en deelproces Bekendmaken.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-bekendmakingswet-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het gemeentelijke bestuursorgaan maakt zijn besluiten en regelingen bekend; het college geeft het gemeenteblad uit (Awb art. 3:41, 3:42; Bekendmakingswet art. 2 lid 2, 6).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-bekendmakingswet-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandig proces met eigen regels dat op elk besluit volgt, niet een stap van één ander begrip (art. 3:40–3:45).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: elk besluit en elke regeling wordt zo bekendgemaakt (Awb afdeling 3.6).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Iets wat gedaan wordt: een besluit bekendmaken.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: 'Wordt per besluit van begin tot eind doorlopen: toezenden of plaatsen in het gemeenteblad, mededeling aan wie een zienswijze gaf, kennisgeving van de terinzagelegging (Awb art. 3:41–3:44; Bekendmakingswet art. 6, 12).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-bekendmakingswet-wettekst
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: nee
-    onderbouwing: Een procedure, beschreven naar hoe het besluit wordt bekendgemaakt; wat de afnemer krijgt zijn de diensten Bekendmaking en Bekendmaking algemeen verbindend voorschrift.
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Beslisser (het bestuursorgaan dat het besluit nam, maakt het bekend en doet mededeling) (Awb art. 3:41–3:43; Bekendmakingswet art. 6).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-bekendmakingswet-wettekst
+    naar:
+    - beslisser
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Verstrekt het besluit door toezending of plaatsing in het gemeenteblad, en een regeling door plaatsing in het gemeenteblad (Awb art. 3:41, 3:42; Bekendmakingswet art. 6).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-bekendmakingswet-wettekst
+    naar:
+    - besluit
+    - regeling
   aanleiding:
     waarde: ja
     onderbouwing: Een genomen besluit of vastgestelde regeling, die pas na bekendmaking in werking treedt (Awb art. 3:40; Bekendmakingswet art. 8).
@@ -108,25 +54,15 @@ kenmerken:
     onderbouwing: Maakt een besluit bekend dat al genomen is; neemt zelf geen besluit.
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de diensten Bekendmaking (UPL nr. 47) en Bekendmaking algemeen verbindend voorschrift (UPL nr. 48).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-bekendmakingswet-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - bekendmaking
+    - bekendmaking-algemeen-verbindend-voorschrift
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: De inwerkingtreding volgt uit de bekendmaking, maar is in de bronnen geen benoemde gebeurtenis die een ander proces start.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf het generieke proces voor de bekendmaking van elk besluit; de GEMMA-procesbouwsteen Bekendmaken besluit vergunningaanvraag is een smallere toepassing, geen generiek element waarvan dit een specialisatie is.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -186,11 +122,11 @@ relaties:
   bronnen:
   - 2026-rijk-bekendmakingswet-wettekst
   vindplaats: art. 6, 8
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -198,7 +134,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-bekendmakingswet-wettekst

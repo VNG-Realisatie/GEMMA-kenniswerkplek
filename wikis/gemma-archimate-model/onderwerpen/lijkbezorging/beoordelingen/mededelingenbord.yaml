@@ -1,67 +1,12 @@
 begrip: Mededelingenbord
+vak: bedrijf/actief-extern
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente maakt er voornemens bekend (Groningen art. 27).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt:
-    waarde: ja
-    onderbouwing: Communicatiekanaal waarlangs de gemeente rechthebbenden en belanghebbenden met onbekend adres bereikt (Groningen art. 27 lid 1; VNG-modelverordening art. 24; Wlb art. 28 lid 3).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: Dient voor mededelingen (ruiming, verwaarlozing, verstrijken termijn), niet voor het afnemen van een dienst.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder kanaal.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  generiek:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
 toelichting: 'Geen element: bekendmaking bij het graf en op het mededelingenbord bij de ingang ontsluit geen dienst. Kanalen vormen één centrale set.'
 onderwerpen:
 - lijkbezorging
@@ -69,10 +14,14 @@ besluiten:
 - datum: '2026-10-01'
   besluit: 'Geen element: ontsluit geen gemeentelijke dienst; input voor de centrale kanalenset.'
   gevolg: afwijzen
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2010-vng-model-beheersverordening-begraafplaatsen
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 22
+    regel: 19
     toelichting: Kernrelatie ontbreekt voor Kanaal
     archimate_type: business-interface
     voorleggen: true
@@ -80,7 +29,7 @@ beslist:
     - 'ontsluit een dienst: nee'
     data_object: nee
     generiek: false
-    typeregel: 14
+    typeregel: 12
   voor_te_leggen:
   - 'ontsluit een dienst: nee'
   bronnen:

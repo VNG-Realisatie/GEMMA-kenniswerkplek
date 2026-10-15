@@ -1,47 +1,9 @@
 begrip: Maatschappelijke partij
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 onderwerpen:
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Partij met een actieve bijdrage aan de samenleving in de gemeente: verenigingen, stichtingen, buurtcomités (var. 1 art. 1; art. 150 lid 3).'
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-    - 2026-rijk-gemeentewet-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Kan onder voorwaarden van de verordening gemeentelijke taken uitvoeren (art. 150 lid 3).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als organisatie.
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij participatie.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  gedrag: nee
-  handelende_partij:
-    waarde: ja
-    onderbouwing: Een organisatie die een verzoek indient en een taak uitvoert.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Verenigingen, stichtingen en buurtcomités bestaan los van participatie; zij kunnen ook andere rollen vervullen, zoals indiener van een verzoek.
@@ -56,24 +18,15 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder actor in deze wiki.
-    bronnen:
-    - 2024-vng-model-participatieverordening
   vervult_een_rol:
     waarde: ja
-    onderbouwing: Vervult de rol Indiener; maatschappelijke partijen kunnen bij het college een verzoek om toepassing van het uitdaagrecht of om overheidsparticipatie indienen (var. 1 art. 6 lid 1, var. 2 art. [11] lid 1).
-    bronnen:
-    - 2024-vng-model-participatieverordening
+    naar:
+    - indiener
   soort_partij:
     waarde: ja
     onderbouwing: In elke gemeente kunnen maatschappelijke partijen gemeentelijke taken uitvoeren onder de voorwaarden van de verordening (art. 150 lid 3).
     bronnen:
     - 2026-rijk-gemeentewet-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in participatie voor.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -96,18 +49,21 @@ per_onderwerp:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen actor voor maatschappelijke organisaties; MaatschappelijkeActiviteit (RSGB) is een ander begrip, de activiteit van een onderneming of rechtspersoon in het Handelsregister. Nieuw voor GEMMA.
-status: goedgekeurd
+bronnen:
+- 2024-vng-implementatiehandleiding-model-participatieverordening
+- 2026-rijk-gemeentewet-wettekst
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Handelende partij (kern ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 11
+    typeregel: 9
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2026-rijk-gemeentewet-wettekst

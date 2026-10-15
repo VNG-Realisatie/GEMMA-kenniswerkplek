@@ -3,35 +3,9 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Behandelen naturalisatieverzoek
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het besluit tot verlening van het Nederlanderschap, waarvan de betrokkene een uittreksel krijgt (Besluit art. 1 onder d, 38, 60b).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester van de woonplaats reikt het uittreksel uit (Besluit art. 2, 60b).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: Wordt alleen als uittreksel uitgereikt in Houden naturalisatieceremonie; het besluit zelf neemt de Koning op voordracht van de minister (Rijkswet art. 7; Besluit art. 38, 60b).
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij burgerzaken.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 toelichting: 'Onderdeel, geen pagina: het besluit tot verlening van het Nederlanderschap is een Koninklijk besluit op voordracht van de minister van Justitie en Veiligheid; de minister zendt de uittreksels aan de burgemeester van de woonplaats, die ze uitreikt in Houden naturalisatieceremonie (Rijkswet op het Nederlanderschap art. 7; Besluit verkrijging en verlies Nederlanderschap art. 38, 60b). De gemeente maakt het niet zelf.'
 beslist:
   uitkomst:
@@ -45,3 +19,5 @@ beslist:
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605

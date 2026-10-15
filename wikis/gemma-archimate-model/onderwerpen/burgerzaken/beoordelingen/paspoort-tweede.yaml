@@ -1,70 +1,8 @@
 begrip: Paspoort tweede
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 330); Utrecht noemt het tweede paspoort.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester neemt de aanvraag in ontvangst en verstrekt het reisdocument (Paspoortwet art. 26, 40).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een afgebakende prestatie die de gemeente aanbiedt, beschreven vanuit de aanvrager.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De aanvrager krijgt een tweede paspoort uitgereikt en blijft houder van het eerste.
@@ -88,12 +26,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Behandelen aanvraag reisdocument.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+    naar:
+    - behandelen-aanvraag-reisdocument
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -102,9 +36,6 @@ kenmerken:
     onderbouwing: De UPL noemt het als eigen product.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het aanvragen van een tweede paspoort naast het eerste, voor wie moet reizen terwijl het eerste voor een visum bij een buitenlandse vertegenwoordiging ligt.
 beschrijving:
 - Op verzoek van een houder van een nationaal paspoort die aantoont dat hij achtereenvolgens verschillende landen moet bezoeken of regelmatig dringend moet reizen terwijl zijn paspoort voor visering bij een buitenlandse vertegenwoordiging ligt; de burgemeester beslist op het verzoek (Paspoortwet art. 30; Paspoortbesluit art. 2.14, 2.15, 3.1, 4.1). Strengere voorwaarden dan een gewoon paspoort (Utrecht). Grondslag art. 30 Paspoortwet (UPL nr. 330).
@@ -118,18 +49,18 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-paspoortwet-bwbr0005212

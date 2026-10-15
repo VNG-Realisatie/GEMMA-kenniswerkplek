@@ -1,63 +1,7 @@
 begrip: Onderhouden graf
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar; de verordening spreekt van onderhoud aan graven door de gemeente.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-vng-retributies
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente voert het onderhoud uit (Groningen art. 23; VNG-modelverordening art. 20).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-vng-retributies
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-vng-retributies
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-vng-retributies
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: Gemeente; de Rechthebbende op het graf verzoekt erom (Groningen art. 23).
@@ -65,9 +9,8 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Werkt de grafbedekking bij en legt het verschuldigde recht vast (Groningen art. 23, 24).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - heffing
   aanleiding:
     waarde: ja
     onderbouwing: Schriftelijk verzoek van de rechthebbende, of op sommige begraafplaatsen altijd (Groningen art. 23 lid 1).
@@ -109,23 +52,14 @@ kenmerken:
     onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Grafonderhoud (Groningen art. 23).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - grafonderhoud
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -166,7 +100,7 @@ status: afgewezen
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -174,7 +108,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen

@@ -1,65 +1,18 @@
 begrip: Verlenen vergunning bijzonder crematorium
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wettelijke vergunning voor het vestigen, uitbreiden of wijzigen van een bijzonder crematorium (art. 53).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college verleent de vergunning (art. 53).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, met een eigen besluit, openbare kennisgeving en beroep (art. 53–55).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per aanvraag doorlopen, van kennisgeving tot besluit (art. 53, 54).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Beslisser (college) (art. 53); de houder van het bijzonder crematorium vraagt aan (art. 52).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beslisser
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Legt de vergunning vast en werkt het crematorium bij (art. 53).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - vergunning
+    - crematorium
   aanleiding:
     waarde: ja
     onderbouwing: Een aanvraag om vergunning voor het vestigen, uitbreiden of wijzigen van een bijzonder crematorium (art. 53).
@@ -82,9 +35,8 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Beheren crematoria: het begin of de wijziging van een bijzonder crematorium (art. 53).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beheren-crematoria
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de aanvraag tot de vergunning.
@@ -107,14 +59,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki of in het GEMMA-model.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Het verlenen van de vergunning voor het vestigen, uitbreiden of wijzigen van een crematorium van een particuliere houder.
 beschrijving:
 - Het vestigen, uitbreiden of wijzigen van een bijzonder crematorium behoeft een vergunning van het college (Wet op de lijkbezorging art. 53). Een vergunning voor vestiging wordt pas verleend nadat het college het voornemen ten minste dertig dagen tevoren openbaar heeft gemaakt (art. 54). Belanghebbenden kunnen in beroep bij gedeputeerde staten (art. 55).
@@ -141,11 +85,11 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 53
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -153,7 +97,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving

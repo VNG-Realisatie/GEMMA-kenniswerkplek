@@ -1,59 +1,8 @@
 begrip: Asverstrooiing
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 32); incidentele asverstrooiing is gangbaar in APV en beheersverordening (APV Groningen art. 5:26; Groningen art. 21).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college verleent ontheffing van het verbod buiten de begraafplaats en toestemming op de begraafplaats (APV Groningen art. 5:27 lid 3; Groningen art. 21 lid 1–2).
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandig product in de UPL, niet een onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij de lijkbezorging.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente aan de nabestaande aanbiedt: toestemming om as te verstrooien op een plek waar dat zonder toestemming verboden is (APV Groningen art. 5:27 lid 3; Groningen art. 21).'
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een ontheffing van het verbod of een toestemming om op een aangewezen plek te verstrooien (APV Groningen art. 5:27 lid 3; Groningen art. 21 lid 2).
@@ -68,21 +17,12 @@ kenmerken:
     - 2025-groningen-algemene-plaatselijke-verordening
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: 'De functie Exploiteren van begraafplaatsen, zonder eigen proces: een UPL-product zonder landelijke wettelijke grondslag wordt niet uitgewerkt in processen (regel Wettelijke grondslag).'
-    bronnen:
-    - 2023-vng-model-apv
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - exploiteren-van-begraafplaatsen
+    - verlenen-toestemming-asverstrooiing
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere dienst in deze wiki of in het GEMMA-model.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Toestemming van de gemeente om as te verstrooien op een plek waar dat zonder toestemming niet mag.
 beschrijving:
 - Buiten de begraafplaats is asverstrooiing vrij, behalve op de plaatsen die de APV verbiedt en bij hinder of overlast; het college kan op verzoek van de nabestaande die zorgdraagt voor de asbus bij bijzondere omstandigheden ontheffing verlenen, behalve voor begraafplaatsen, crematoriumterreinen, schoolpleinen en kinderspeelplaatsen (APV Groningen art. 5:27, 5:28). Op de gemeentelijke begraafplaats is verstrooien verboden zonder toestemming van het college, op een aangewezen plek en onder toezicht van een medewerker van de begraafplaats (Groningen art. 21).
@@ -104,18 +44,20 @@ relaties:
   - 2023-vng-model-apv
   - 2025-groningen-algemene-plaatselijke-verordening
   vindplaats: Model-APV art. 5:36 lid 3; Groningen art. 5:27 lid 3
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2025-groningen-algemene-plaatselijke-verordening

@@ -2,7 +2,7 @@
 id: aanvrager-van-de-verklaring-omtrent-het-gedrag
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Aanvrager van de verklaring omtrent het gedrag
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling aanvrager-van-de-verklaring-omtrent-het-gedrag.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -61,18 +61,14 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: hoedanigheid. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip: degene omtrent wiens gedrag een verklaring wordt gevraagd, of zijn vertegenwoordiger (Wet justitiële en strafvorderlijke gegevens art. 33); Utrecht spreekt van de aanvrager van de VOG. [Wet justitiële en strafvorderlijke gegevens](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [Utrecht VOG aanvragen](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, dient de aanvraag in bij de gemeente, met het formulier van de werkgever en een identiteitsbewijs, en betaalt (Wet justitiële en strafvorderlijke gegevens art. 30, 33; Utrecht). [Wet justitiële en strafvorderlijke gegevens](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [Utrecht VOG aanvragen](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Wet justitiële en strafvorderlijke gegevens](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: het meeste gedrag van de rol ligt in Afgeven verklaring omtrent het gedrag (regel Thuishoren). [Wet justitiële en strafvorderlijke gegevens](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
-| **hoedanigheid**: Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? | Ja, de hoedanigheid van degene omtrent wiens gedrag een verklaring wordt gevraagd, met eigen plichten: de aanvraag indienen met opgave van het doel en het risico, en de kosten betalen (Wet justitiële en strafvorderlijke gegevens art. 32, 33, 39; Utrecht). [Wet justitiële en strafvorderlijke gegevens](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [Utrecht VOG aanvragen](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) |
-| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, toegewezen aan Behandelen aanvraag verklaring omtrent het gedrag (dient de aanvraag in, art. 33; Utrecht). [Wet justitiële en strafvorderlijke gegevens](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [Utrecht VOG aanvragen](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) |
+| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, met [Behandelen aanvraag verklaring omtrent het gedrag](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-verklaring-omtrent-het-gedrag.md). |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, per aanvraag één aanvrager (Wet justitiële en strafvorderlijke gegevens art. 33). [Wet justitiële en strafvorderlijke gegevens](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Wet justitiële en strafvorderlijke gegevens](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
 
 ### Relaties
 

@@ -1,69 +1,18 @@
 begrip: Behandelen aanvraag verklaring omtrent het gedrag
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: De VOG aanvragen bij de gemeente (Utrecht); de aanvraag en de doorzending zijn geregeld in de wet (Wet justitiële en strafvorderlijke gegevens art. 30).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester neemt de aanvraag in ontvangst, onderzoekt de volledigheid en de identiteit en zendt haar door aan de minister (Wet justitiële en strafvorderlijke gegevens art. 30).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen gemeentelijk deel van de aanvraag, met een eigen taak en vergoeding (Wet justitiële en strafvorderlijke gegevens art. 30, 39).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Bedrijfsproces onder Afgeven verklaring omtrent het gedrag in burgerzaken.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per aanvraag van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: De Aanvrager van de verklaring omtrent het gedrag dient de aanvraag in en betaalt (Wet justitiële en strafvorderlijke gegevens art. 33; Utrecht).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+    naar:
+    - aanvrager-van-de-verklaring-omtrent-het-gedrag
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Registreert de aanvraag voor de verklaring (Wet justitiële en strafvorderlijke gegevens art. 30, 32); toetst de inschrijving in de basisregistratie personen en de identiteit (art. 30).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    naar:
+    - verklaring-omtrent-het-gedrag
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag, online of aan de balie op afspraak (Wet justitiële en strafvorderlijke gegevens art. 30; Utrecht).
@@ -88,10 +37,8 @@ kenmerken:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Een bedrijfsproces binnen het levensloopproces Afgeven verklaring omtrent het gedrag: het deel dat de gemeente voor de minister uitvoert, in het orkestratiemodel (art. 30, 35-37; IK 27).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-vng-gemma-impact-ketensamenwerking
+    naar:
+    - afgeven-verklaring-omtrent-het-gedrag
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de aanvraag tot de doorgezonden aanvraag, het deel van de gemeente.
@@ -110,24 +57,14 @@ kenmerken:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Verklaring omtrent gedrag aanvragen (UPL nr. 434).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+    naar:
+    - verklaring-omtrent-gedrag-aanvragen
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het in ontvangst nemen van een VOG-aanvraag, het controleren van de volledigheid en de identiteit en het doorzenden ervan naar de minister.
 beschrijving:
 - De aanvrager die als ingezetene in de gemeente staat, dient de aanvraag van een natuurlijk persoon in bij de burgemeester, online met een scan van het formulier van de werkgever of aan de balie op afspraak met dat formulier en een identiteitsbewijs, en betaalt direct (Wet justitiële en strafvorderlijke gegevens art. 30, 32, 33; Utrecht). De burgemeester onderzoekt de volledigheid van de gegevens, verschaft zich zekerheid over de identiteit en zendt de aanvraag terstond door aan de minister; de gemeente is de minister een vergoeding verschuldigd voor aanvragen die bij haar zijn ingediend (art. 30 lid 2 en 4, 39).
@@ -169,11 +106,15 @@ relaties:
 gemma_generiek:
   id: id-874c14bc-24ec-409a-9d68-56d7c4f18eb7
   onderbouwing: 'De gemeente voert de ontvangst en het onderzoek van de aanvraag uit voor de minister, die over de verklaring beslist (art. 30, 37): een dienst aan een ketenpartner, zoals GEMMA Leveren dienst aan derden beschrijft (''een (deel)proces dat aan de gemeente is uitbesteed'').'
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+- 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+- 2026-vng-gemma-impact-ketensamenwerking
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -181,7 +122,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog

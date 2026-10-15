@@ -1,80 +1,23 @@
 begrip: Ruimen graf
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wettelijk 'ruimen van graven' (art. 31); gangbaar 'ruiming'.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ruimt graven op de gemeentelijke begraafplaats (Groningen art. 27).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Houder van de begraafplaats (geeft last, art. 31), beheerder (ziet toe, Groningen art. 27), houder van een plaats van bijzetting (asbussen, art. 66).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - belanghebbende
+    - houder-van-de-begraafplaats
+    - houder-van-een-plaats-van-bijzetting
+    - rechthebbende-op-het-graf
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Werkt het graf en de urn bij (art. 31, 66; Groningen art. 27).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - graf
+    - urn
   aanleiding:
     waarde: ja
-    onderbouwing: Verval van het grafrecht of het verstrijken van de termijn van uitgifte (Groningen art. 20 lid 4, 27).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - verval-van-het-grafrecht
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een geruimd graf; resten herbegraven, as verstrooid (art. 31 lid 3; Groningen art. 27 lid 3).
@@ -94,10 +37,8 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Beheren graven: het einde van de levensloop van het graf (art. 31; Groningen art. 27).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - beheren-graven
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, ambtshalve, van het verval van het grafrecht of het einde van de termijn tot het geruimde graf.
@@ -119,14 +60,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -162,11 +95,11 @@ onderwerpen:
 - lijkbezorging
 kernobject: graf
 afnemer: extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -174,7 +107,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

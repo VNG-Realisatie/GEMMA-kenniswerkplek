@@ -2,7 +2,7 @@
 id: nederlanderschap-diensten
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: review
 naam: Nederlanderschap diensten
 onderwerpen:
 - burgerzaken
@@ -28,7 +28,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling nederlanderschap-diensten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -61,19 +61,15 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 49 zijn nee.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: gegroepeerd gedrag. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, het behandelen van optieverklaringen en naturalisatieverzoeken is een eigen taak van de burgemeester (Besluit verkrijging en verlies Nederlanderschap art. 2, 63). GEMMA-bedrijfsfunctie Nederlanderschap diensten, onder Producten- en dienstenrealisatie publieksdiensten. [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit art. 2, 63). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen taak van de burgemeester, los van één ander begrip: optieverklaringen en naturalisatieverzoeken in ontvangst nemen en uittreksels van naturalisatiebesluiten uitreiken (Besluit verkrijging en verlies Nederlanderschap art. 2). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: bedient Beheren Nederlanderschap. [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: het in ontvangst nemen van optieverklaringen en naturalisatieverzoeken en het uitreiken van uittreksels van naturalisatiebesluiten (Besluit verkrijging en verlies Nederlanderschap art. 2). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, doorlopende groepering van de dienstverlening rond het Nederlanderschap, op grond van dezelfde kennis van de Rijkswet en het Besluit, zonder eigen volgorde (GEMMA). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, registreert en beëindigt het Nederlanderschap en raadpleegt de ingeschreven persoon (Besluit art. 9, 11, 60a, 63). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, de taak volgt uit de wet en blijft bij een andere organisatie of werkwijze (Besluit art. 2). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient Beheren Nederlanderschap (Besluit art. 2, 7, 33, 63). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
+| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, met [Beheren Nederlanderschap](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-nederlanderschap.md). |
 | **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onder Producten- en dienstenrealisatie publieksdiensten (GEMMA). (GEMMA id-21417578-47f0-4f78-a4ba-50b4ee134815) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki; GEMMA-functie op het niveau van het onderwerp. (GEMMA id-21417578-47f0-4f78-a4ba-50b4ee134815) |
 

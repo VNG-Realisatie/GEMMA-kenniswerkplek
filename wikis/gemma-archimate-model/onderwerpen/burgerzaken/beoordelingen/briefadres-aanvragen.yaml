@@ -1,64 +1,8 @@
 begrip: Briefadres aanvragen
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 85, briefadres); gangbaar als aanvraag briefadres (NVVB Beleidsregel briefadres).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-nvvb-beleidsregel-briefadres
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente beoordeelt de aanvraag (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-nvvb-beleidsregel-briefadres
-    - 2026-rvig-hup-verblijfplaats
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-nvvb-beleidsregel-briefadres
-    - 2026-rvig-hup-verblijfplaats
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-nvvb-beleidsregel-briefadres
-    - 2026-rvig-hup-verblijfplaats
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een prestatie die de gemeente op verzoek of aangifte aan de afnemer levert, beschreven vanuit de afnemer (UPL nr. 85).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-nvvb-beleidsregel-briefadres
-    - 2026-rvig-hup-verblijfplaats
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een inschrijving op een briefadres (HUP Verblijfplaats).
@@ -78,9 +22,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Inschrijven op briefadres (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
+    naar:
+    - inschrijven-op-briefadres
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -89,9 +32,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (UPL nr. 85); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het aanvragen van een inschrijving op een briefadres door iemand die geen woonadres heeft.
 beschrijving:
 - Wie geen woonadres heeft, vraagt een briefadres aan; daarvoor is een briefadresgever nodig die schriftelijk instemt (HUP Verblijfplaats). De NVVB-modelregeling kent een vragenformulier voor de aanvraag en een verklaring van toestemming (NVVB Beleidsregel briefadres). Grondslag is art. 2.23 Wet BRP; de aanvraag kan digitaal (UPL nr. 85).
@@ -126,18 +66,21 @@ besluiten:
 - datum: '2026-10-07'
   besluit: De dienst heet Briefadres aanvragen, met briefadres (UPL nr. 85) als synoniem; homoniem van het bedrijfsobject Briefadres (precedent Uitvaart vervroegen of uitstellen).
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-nvvb-beleidsregel-briefadres
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-nvvb-beleidsregel-briefadres

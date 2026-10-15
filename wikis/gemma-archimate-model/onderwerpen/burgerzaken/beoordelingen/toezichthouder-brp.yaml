@@ -1,53 +1,16 @@
 begrip: Toezichthouder BRP
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Term uit de Circulaire adresonderzoek (4.4, 4.5).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Benoemd door het college, ook als extern onbezoldigd ambtenaar (Circulaire adresonderzoek 4.5).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De verantwoordelijkheid om bij een adresonderzoek inlichtingen te vragen en een huisbezoek af te leggen (Circulaire adresonderzoek 4.4, 4.5).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: Een verantwoordelijkheid; de partij die haar vervult kan ook andere rollen hebben.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Uitvoeren adresonderzoek (Circulaire adresonderzoek 4.5).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
+    naar:
+    - uitvoeren-adresonderzoek
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -60,14 +23,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere rol in deze wiki.
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Verantwoordelijkheid voor het toezicht op de juistheid van de inschrijving in de basisregistratie personen, onder meer met een huisbezoek.
 beschrijving:
 - De toezichthouder BRP heeft de bevoegdheid inlichtingen op te vragen en legt bij een adresonderzoek huisbezoeken af; het college kan ook externen tot onbezoldigd ambtenaar en toezichthouder benoemen (Circulaire adresonderzoek 4.4, 4.5).
@@ -87,18 +42,18 @@ relaties:
   - 2023-rvig-circulaire-adresonderzoek-brp
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: 4.5; Wet BRP art. 4.2
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
   - 2026-rijk-wet-brp-bwbr0033715

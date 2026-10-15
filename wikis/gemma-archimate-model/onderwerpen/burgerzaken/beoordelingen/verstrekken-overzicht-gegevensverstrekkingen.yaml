@@ -1,71 +1,17 @@
 begrip: Verstrekken overzicht gegevensverstrekkingen
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: Overzicht gegevensverstrekkingen BRP (Utrecht; UPL nr. 92).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente stuurt het overzicht met een begeleidende brief (Utrecht Persoonsgegevens bekijken).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-    - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-    - 2025-vng-upl-producten-en-diensten-extern
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: 'Bijhoudingsgemeente (Utrecht: alleen voor wie in de gemeente staat ingeschreven).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+    naar:
+    - bijhoudingsgemeente
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: 'Raadpleegt de vastgelegde verstrekkingen over de ingeschreven persoon (Utrecht; LO BRP 1.5.2: POM).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
+    naar:
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Verzoek van de ingeschrevene (Utrecht).
@@ -90,9 +36,8 @@ kenmerken:
     - 2026-rijk-besluit-brp-bwbr0034306
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: de burger inzicht geven in de verstrekking van zijn gegevens (Utrecht).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het verzoek tot het overzicht.
@@ -106,23 +51,14 @@ kenmerken:
     onderbouwing: Tegen het ontvangen overzicht is geen bezwaar mogelijk (Utrecht); de bronnen noemen geen besluit.
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst BRP-inzagerecht gegevensverstrekking (UPL nr. 92).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - brp-inzagerecht-gegevensverstrekking
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het op verzoek leveren van een overzicht aan een ingeschrevene van welke gegevens over hem aan wie zijn verstrekt.
 beschrijving:
 - Wie in de gemeente staat ingeschreven, kan een overzicht vragen van de persoonsgegevens die uit de BRP zijn verstrekt en wanneer; het Ministerie van BZK levert de gegevens (vanaf 6 januari 2013), de gemeente stuurt het overzicht met een begeleidende brief per beveiligde e-mail of aangetekende post (Utrecht Persoonsgegevens bekijken). Het overzicht wordt gemaakt met de ProtocolleringsOverzichtModule (LO BRP 1.5.2).
@@ -149,11 +85,15 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
   vindplaats: UPL nr. 92
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+- 2025-vng-upl-producten-en-diensten-extern
+- 2025-rvig-logisch-ontwerp-brp-2025q1
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -161,7 +101,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
   - 2025-vng-upl-producten-en-diensten-extern

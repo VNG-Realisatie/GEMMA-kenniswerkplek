@@ -1,39 +1,15 @@
 begrip: Rechtbank Den Haag
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Stelt op verzoek vast of iemand het Nederlanderschap bezit en behandelt het beroep tegen een geweigerde bevestiging van het verlies (Rijkswet art. 17; Utrecht).
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
   gemeentelijk:
     waarde: nee
     onderbouwing: Beslist per geval en op verzoek, als rechter; geen structurele samenwerking met de gemeente (precedent Gedeputeerde staten).
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandige partij.
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Genoemd in de bronnen van burgerzaken.
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  handelende_partij:
-    waarde: ja
-    onderbouwing: Een orgaan dat activiteiten uitvoert.
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Bestaat los van deze taak.
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki.
     bronnen:
     - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
 toelichting: 'Buiten scope: een rechter die per geval en op verzoek beslist (vaststelling van het Nederlanderschap, beroep tegen een weigering), geen structurele relatie met de gemeente (regel Gemeentelijk perspectief; precedent Gedeputeerde staten). Genoemd in de beschrijvingen van Nederlanderschap en Behandelen verklaring van afstand.'
@@ -57,3 +33,6 @@ beslist:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+- 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen

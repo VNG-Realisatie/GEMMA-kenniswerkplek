@@ -1,77 +1,24 @@
 begrip: Toevoegen latere vermelding
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: De ambtenaar voegt latere vermeldingen toe aan akten (BW 1 art. 20; Besluit burgerlijke stand art. 15-17, 53).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Taak van de ambtenaar van de burgerlijke stand van de gemeente waar de akte berust (BW 1 art. 20).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Ambtenaar van de burgerlijke stand (BW 1 art. 20).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - ambtenaar-van-de-burgerlijke-stand
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Bijwerkt de akte van de burgerlijke stand met een latere vermelding (BW 1 art. 20).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
-    onderbouwing: 'Een rechterlijke uitspraak of besluit dat de staat van een persoon verandert: adoptie, ontkenning of vaststelling van ouderschap, wijziging van voornaam of geslachtsnaam, vernietiging van een erkenning (BW 1 art. 20; Besluit burgerlijke stand art. 53; HUP Adoptie).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-    - 2026-rvig-hup-adoptie
+    naar:
+    - adoptie
+    - naamswijziging
+    - ontkenning-ouderschap
+    - vaststelling-ouderschap
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een latere vermelding op de akte, maandelijks doorgestuurd naar de centrale bewaarplaats (Besluit burgerlijke stand art. 31).
@@ -91,9 +38,8 @@ kenmerken:
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één mutatie van een bestaande akte.'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - bijhouden-burgerlijke-stand
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de uitspraak of het besluit dat de staat verandert tot de latere vermelding.
@@ -109,24 +55,15 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de diensten waarbij de gemeente een uitspraak of besluit verwerkt, zoals Achternaamwijziging en Voornaamwijziging (UPL nr. 5, 460).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - achternaamwijziging
+    - voornaamwijziging
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het toevoegen van een rechterlijke uitspraak of een besluit over de staat van een persoon aan een akte als latere vermelding.
 beschrijving:
 - 'Een latere vermelding legt een verandering vast die na het opmaken van de akte is ontstaan: een adoptie of herroeping daarvan, een ontkenning of gerechtelijke vaststelling van het ouderschap, een vernietigde erkenning, of een wijziging van de voornaam (rechtbank) of geslachtsnaam (Koning) (BW 1 art. 4, 7, 20; Besluit burgerlijke stand art. 53, 54; HUP Adoptie; HUP Vaststelling ouderschap). De gemeente waar de akte berust, voegt de vermelding toe; de woongemeente verwerkt de wijziging in de BRP.'
@@ -166,13 +103,14 @@ relaties:
 bronnen:
 - 2026-rvig-hup-vaststelling-ouderschap
 - 2026-rvig-hup-ontkenning-ouderschap
+- 2026-rijk-burgerlijk-wetboek-boek-1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -180,7 +118,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rvig-hup-vaststelling-ouderschap
   - 2026-rvig-hup-ontkenning-ouderschap

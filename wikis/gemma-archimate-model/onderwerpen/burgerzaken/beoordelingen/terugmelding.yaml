@@ -1,43 +1,9 @@
 begrip: Terugmelding
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Uitvoeren adresonderzoek
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar in de BRP (Circulaire adresonderzoek par. 2; HUP Proceduregegevens).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-    - 2026-rvig-hup-proceduregegevens
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De bijhoudingsgemeente ontvangt de terugmelding en reageert binnen vijf werkdagen (HUP Proceduregegevens).
-    bronnen:
-    - 2026-rvig-hup-proceduregegevens
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen melding met een termijn (HUP Proceduregegevens).
-    bronnen:
-    - 2026-rvig-hup-proceduregegevens
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij de BRP.
-    bronnen:
-    - 2026-rvig-hup-proceduregegevens
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per melding in het TMV-portaal (HUP Proceduregegevens).
@@ -70,26 +36,20 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Invoer van een andere partij: een afnemer meldt via de terugmeldvoorziening gerede twijfel aan een gegeven. Geen pagina; aanleiding voor Onderzoeken persoonsgegevens en Uitvoeren adresonderzoek.'
+bronnen:
+- 2023-rvig-circulaire-adresonderzoek-brp
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 33
+    regel: 30
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
     data_object: nee
     genoemd_begrip: Uitvoeren adresonderzoek
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
   - 2026-rvig-hup-proceduregegevens

@@ -1,55 +1,9 @@
 begrip: Bevolkingsadministratie bijhouding
+vak: bedrijf/gedrag-intern
+soort_gedrag: gegroepeerd_gedrag
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'De bijhouding van de BRP is een eigen taak: het college houdt de BRP bij voor zijn ingezetenen (HUP Achtergronden). GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten.'
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college houdt de BRP bij voor zijn ingezetenen (HUP Achtergronden).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Een groep van activiteiten: het college houdt de persoonsgegevens in de basisregistratie bij (Wet BRP art. 1.4 lid 1).'
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag:
-    waarde: ja
-    onderbouwing: Groepeert de bijhouding van de BRP en de dienstverlening daarover op grond van dezelfde kennis en bevoegdheid (medewerker BRP namens het college); geen eigen volgorde of doorlooptijd (HUP Algemeen).
-    bronnen:
-    - 2026-rvig-hup-algemeen
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: Bijhoudingsgemeente (HUP Achtergronden).
@@ -67,9 +21,8 @@ kenmerken:
     - 2026-rvig-hup-achtergronden-en-begrippen
   bedient_gedrag:
     waarde: ja
-    onderbouwing: Bedient Bijhouden persoonsgegevens (HUP Algemeen).
-    bronnen:
-    - 2026-rvig-hup-algemeen
+    naar:
+    - bijhouden-persoonsgegevens
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
@@ -83,9 +36,6 @@ kenmerken:
     onderbouwing: Geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar.
     gemma_relatie:
     - id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het uitvoeren van taken om de basisregistratie personen actueel en betrouwbaar te houden.
 beschrijving:
 - De functie omvat de bijhouding van de BRP (inschrijving, adreswijziging, emigratie, adresonderzoek, correctie) en de diensten die daaruit voortkomen, zoals uittreksels, geheimhouding en de verhuismelding (HUP Achtergronden; UPL).
@@ -231,18 +181,21 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 89 (GEMMA-domein Publieksdiensten)
-status: goedgekeurd
+bronnen:
+- 2026-rvig-hup-achtergronden-en-begrippen
+- 2026-rijk-wet-brp-bwbr0033715
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-rijk-wet-brp-bwbr0033715

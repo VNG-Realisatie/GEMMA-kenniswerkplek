@@ -1,53 +1,16 @@
 begrip: Optant
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wetsbegrip voor wie een optieverklaring aflegt (Besluit art. 1 onder c, 3, 7).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Legt de optieverklaring af bij de burgemeester en ontvangt van hem de bevestiging (Besluit art. 7, 60a).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen hoedanigheid, niet een onderdeel van één ander begrip.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: de rol voert gedrag uit in Beheren Nederlanderschap.'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De hoedanigheid van degene die door optie Nederlander wil worden (Besluit art. 3, 6).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: Een hoedanigheid; de persoon bestaat los ervan, de rol niet.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Behandelen optieverklaring en Houden naturalisatieceremonie (Besluit art. 3, 60a).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    naar:
+    - behandelen-optieverklaring
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -60,14 +23,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van degene die een optieverklaring aflegt om Nederlander te worden.
 beschrijving:
@@ -85,18 +40,18 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 3, 6, 7; art. 60a lid 2 en 4
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   herkomst: rijksregelgeving

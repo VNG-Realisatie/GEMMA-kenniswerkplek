@@ -1,44 +1,12 @@
 begrip: Definitief aan het verkeer onttrekken
+hoofdkenmerk: gedrag
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Inhouden reisdocument
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wetsbegrip (Paspoortwet art. 1 onder j, 57; Paspoortbesluit art. 7.1).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester is als tot verstrekking bevoegde autoriteit bevoegd (Paspoortwet art. 57).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: De laatste stap van Inhouden reisdocument, en van Uitreiken reisdocument voor ingeleverde of niet opgehaalde documenten (Paspoortwet art. 42 lid 4, 54 lid 3; Paspoortbesluit art. 7.1).
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
 toelichting: 'Processtap zonder pagina: het vernietigen, of onbruikbaar maken en teruggeven, van een ingeleverd, ingehouden, vervallen verklaard, niet opgehaald of gevonden reisdocument (Paspoortwet art. 1 onder j, 42 lid 4, 54 lid 3; Paspoortbesluit art. 7.1). Vermeld bij Inhouden reisdocument en Uitreiken reisdocument.'
 beslist:
   uitkomst:
@@ -53,3 +21,6 @@ beslist:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-paspoortbesluit-bwbr0044308
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-paspoortbesluit-bwbr0044308

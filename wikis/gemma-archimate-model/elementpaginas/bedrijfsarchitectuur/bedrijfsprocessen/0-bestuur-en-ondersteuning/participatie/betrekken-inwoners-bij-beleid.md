@@ -2,7 +2,7 @@
 id: betrekken-inwoners-bij-beleid
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Betrekken inwoners bij beleid
 onderwerpen:
 - participatie
@@ -27,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling betrekken-inwoners-bij-beleid.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -74,25 +74,20 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 45 zijn nee.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: per keer doorlopen. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, inwonersparticipatie: het op initiatief van de gemeente betrekken van inwoners bij voorbereiding, uitvoering of evaluatie van beleid (bijlage 1; art. 150 lid 1). [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md), [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het bestuursorgaan beslist of participatie plaatsvindt, stelt het plan op en maakt het eindverslag openbaar (var. 1 art. 2, 3, 5). [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen traject met plan vooraf en eindverslag achteraf, niet een stap van één ander proces. [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij participatie. [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, het betrekken van inwoners bij beleid. [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **per keer doorlopen**: Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? | Ja, per beleidsvoornemen van besluit tot participatie, via het plan, tot het eindverslag (var. 1 art. 2–5). [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, beslisser: het bevoegde bestuursorgaan (raad, college of burgemeester) besluit over zijn eigen beleid of inwonersparticipatie plaatsvindt, stelt plan en eindverslag op; het college bij voorbereiding van een raadsbesluit (var. 1 art. 2 lid 1, 3 lid 3, 5 lid 3). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
-| **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, registreert het participatieplan en het eindverslag en maakt ze openbaar (var. 1 art. 3 lid 1, 5 lid 1). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Beslisser](../../../rollen/beslisser.md). |
+| **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, met [Participatieplan](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieplan.md), [Beleidsnota](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsnota.md), [Participatieverordening](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieverordening.md). |
 | **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, het besluit van het bestuursorgaan dat over zijn beleid inwonersparticipatie plaatsvindt, voorafgaand aan de voorbereiding, uitvoering of evaluatie van dat beleid (var. 1 art. 2 lid 1, 3 lid 1). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, het openbare eindverslag met proces, uitkomsten, een onderbouwde reactie en een evaluatie (var. 1 art. 5; var. 2 art. [10]). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elk beleid waarover een bestuursorgaan inwonersparticipatie laat plaatsvinden (var. 1 art. 2 lid 1). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, art. 150 lid 1 en 2 (verordening, inspraak via afdeling 3.4 Awb); in de VNG-modelverordening plan, inspraak en eindverslag met termijnen (var. 1 art. 3–5; var. 2 art. [7]–[10]). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **klant tot klant**: Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? | Ja, van het besluit dat inwonersparticipatie plaatsvindt tot het openbare eindverslag (var. 1 art. 2 lid 1, 5 lid 1). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? | Ja, omvat de hele levensloop van één participatieplan, van opstellen en openbaar maken vóór de participatie tot het eindverslag na afloop (var. 1 art. 3, 5; var. 2 art. [7], [10]). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in de wiki; Participatie (var. 2 art. 1) is het onderwerp zelf en geen element. [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 
 ### Relaties
 

@@ -1,41 +1,8 @@
 begrip: Formulier
+vak: bedrijf/passief
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: het aanvraagformulier (Awb art. 4:4).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het bestuursorgaan stelt het formulier vast (art. 4:4 lid 1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat als vastgesteld formulier, los van één aanvraag (art. 4:4).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij besluitvorming (Awb art. 4:4).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -49,7 +16,7 @@ toelichting: 'Representatie van de aanvraag, geen pagina: het bestuursorgaan kan
 beslist:
   uitkomst:
     soort: geen_pagina
-    regel: 19
+    regel: 16
     toelichting: Waarneembare vorm
     archimate_type: representation
     voorleggen: false

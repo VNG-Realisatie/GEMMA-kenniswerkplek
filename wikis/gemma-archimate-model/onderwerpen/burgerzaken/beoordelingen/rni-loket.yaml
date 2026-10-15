@@ -1,63 +1,17 @@
 begrip: RNI-loket
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term (HUP Achtergronden; Utrecht RNI; NVVB Schema).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-    - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Een gemeente die als RNI-loket is aangewezen, schrijft in en verstrekt gegevens over niet-ingezetenen (Utrecht RNI; NVVB Schema). De gemeente voert zo een taak van de minister uit (Wet BRP art. 2.64, 2.67 lid 3; Besluit BRP art. 36); 19 gemeenten zijn RNI-loket (Nederland Wereldwijd RNI).
-    bronnen:
-    - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2026-rijk-besluit-brp-bwbr0034306
-    - 2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: 'De verantwoordelijkheid om niet-ingezetenen in de RNI in te schrijven en gegevens over hen te verstrekken (NVVB Schema: het college van het RNI-loket is bevoegd).'
-    bronnen:
-    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-    - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: Een verantwoordelijkheid; de partij die haar vervult kan ook andere rollen hebben.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Inschrijven niet-ingezetene en Verstrekken persoonsgegevens (Utrecht RNI; NVVB Schema).
-    bronnen:
-    - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    naar:
+    - inschrijven-niet-ingezetene
+    - verstrekken-persoonsgegevens
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -70,15 +24,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere rol in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Verantwoordelijkheid van een daartoe aangewezen gemeente om personen in de registratie niet-ingezetenen in te schrijven en hun gegevens te verstrekken.
 beschrijving:
 - Niet elke gemeente is RNI-loket; wie niet bij een loket terecht kan, gaat naar een ander loket (Utrecht RNI). Het college van het RNI-loket is bevoegd schriftelijk gegevens over niet-ingezetenen te verstrekken; andere gemeenten sturen zulke verzoeken door (NVVB Schema). De minister van BZK is verantwoordelijk voor de RNI (HUP Achtergronden). Het RNI-loket is een verantwoordelijkheid, geen kanaal.
@@ -104,18 +49,25 @@ relaties:
   - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: Niet-ingezetenen; Wet BRP art. 2.79, 3.19 lid 2
-status: goedgekeurd
+bronnen:
+- 2026-rvig-hup-achtergronden-en-begrippen
+- 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
+- 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+- 2026-rijk-wet-brp-bwbr0033715
+- 2026-rijk-besluit-brp-bwbr0034306
+- 2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rvig-hup-achtergronden-en-begrippen
   - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven

@@ -1,63 +1,18 @@
 begrip: Houder van het rijbewijs
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wetsbegrip aanvrager en houder van een rijbewijs (Reglement rijbewijzen art. 27, 33; Wegenverkeerswet 1994 art. 119); Utrecht spreekt van aanvragen en ophalen.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Vraagt het rijbewijs bij de gemeente aan, haalt het op, geeft vermissing door en levert het oude rijbewijs in (Reglement rijbewijzen art. 27, 33; Wegenverkeerswet 1994 art. 119 lid 2 en 4; Utrecht).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: het meeste gedrag van de rol ligt in Beheren rijbewijzen (regel Thuishoren).'
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: 'De hoedanigheid van degene aan wie een rijbewijs is of wordt afgegeven, met eigen plichten: persoonlijk verschijnen, het eerdere rijbewijs overleggen en inleveren, vermissing melden (Wegenverkeerswet 1994 art. 111 lid 2, 119 lid 2 en 4; Reglement rijbewijzen art. 27, 33).'
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: 'Een hoedanigheid, geen partij: de persoon zelf is de ingeschreven persoon.'
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Behandelen aanvraag rijbewijs (vraagt aan), Behandelen aanvraag omwisseling buitenlands rijbewijs (levert het buitenlandse rijbewijs in), Uitreiken rijbewijs (haalt op en levert in) en Verwerken vermissing rijbewijs (geeft door) (Reglement rijbewijzen art. 27, 109; Wegenverkeerswet 1994 art. 119; Utrecht).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+    naar:
+    - behandelen-aanvraag-rijbewijs
+    - behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
+    - verwerken-vermissing-rijbewijs
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per rijbewijs één houder (Wegenverkeerswet 1994 art. 118a, 119).
@@ -72,14 +27,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Hoedanigheid van degene aan wie een rijbewijs is of wordt afgegeven en die het aanvraagt, ophaalt, vermissing meldt en inlevert.
 beschrijving:
 - 'Het Reglement rijbewijzen spreekt van de aanvrager, de Wegenverkeerswet 1994 van de houder van een rijbewijs. In de gemeentelijke praktijk is het dezelfde persoon in opeenvolgende fasen: hij vraagt aan met een identiteitsbewijs en een pasfoto, haalt het nieuwe rijbewijs persoonlijk op, levert het oude in, geeft een vermissing door en levert een teruggevonden rijbewijs in (Reglement rijbewijzen art. 27, 33; Wegenverkeerswet 1994 art. 111 lid 2, 119 lid 2 en 4; Utrecht).'
@@ -128,18 +75,18 @@ relaties:
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 119 lid 4
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074

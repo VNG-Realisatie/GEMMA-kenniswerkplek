@@ -1,51 +1,7 @@
 begrip: Rijk
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: de rijksoverheid; in de wetten handelt het Rijk via Onze Minister (Paspoortwet art. 1 onder l, art. 2 lid 3–4; Wet BRP art. 1.4 lid 2; Besluit verkrijging en verlies Nederlanderschap art. 37). GEMMA-actor Rijk.'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Structurele, wettelijke relatie met elke gemeente: de minister van Justitie en Veiligheid beslist over het naturalisatieverzoek dat de burgemeester met advies toezendt (Besluit verkrijging en verlies Nederlanderschap art. 37), de minister van BZK houdt de niet-ingezetenen bij in de BRP en laat de reisdocumenten maken (Wet BRP art. 1.4 lid 2; Paspoortwet art. 2 lid 3).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: 'Bestaat zelfstandig: de Staat der Nederlanden als bestuurslaag, met eigen organen.'
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2026-rijk-bw2-rechtspersonen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Generiek: het Rijk is partij in meer onderwerpen; thuis in Bestuur en organisatie, zoals Gemeente (regel Thuishoren).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gedrag:
-    waarde: nee
-    onderbouwing: Een partij, geen gedrag.
-  handelende_partij:
-    waarde: ja
-    onderbouwing: 'Een partij die activiteiten uitvoert: beslist over naturalisatie, houdt registers bij en laat documenten maken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Paspoortwet art. 2 lid 3).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-rijk-paspoortwet-bwbr0005212
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Bestaat los van elke verantwoordelijkheid in burgerzaken, met eigen taken op vele terreinen.
@@ -58,9 +14,8 @@ kenmerken:
     - 2026-rijk-bw2-rechtspersonen
   vervult_een_rol:
     waarde: ja
-    onderbouwing: 'Ketenpartner in Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    naar:
+    - ketenpartner
   soort_partij:
     waarde: ja
     onderbouwing: De bestuurslaag als geheel, waarmee elke gemeente in dezelfde rol te maken heeft; zo ook Provincie en Waterschap. Afzonderlijke ministeries en rijksdiensten zijn geen eigen actor.
@@ -78,14 +33,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: 'Geen bredere actor: de Staat staat in de wet als eigen rechtspersoon naast de provincies, de gemeenten en de waterschappen (BW Boek 2 art. 1 lid 1).'
-    bronnen:
-    - 2026-rijk-bw2-rechtspersonen
-  generiek:
-    waarde: nee
-    onderbouwing: 'Een partij voor alle onderwerpen, net als Gemeente, maar geen variant van een generiek GEMMA-element: het is zelf de GEMMA-actor.'
 onderwerpen:
 - bestuur-en-organisatie
 - burgerzaken
@@ -107,18 +54,22 @@ relaties:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 37, 38; Wjsg art. 30, 37
-status: goedgekeurd
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-wet-brp-bwbr0033715
+- 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Handelende partij (kern ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 11
+    typeregel: 9
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-wet-brp-bwbr0033715

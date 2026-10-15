@@ -2,22 +2,6 @@ begrip: Terinzagelegging
 onderwerpen:
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het ter inzage leggen van ontwerp en stukken (art. 3:11).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het bestuursorgaan legt ter inzage.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: Deelstap Ter inzage leggen ontwerp van Uitvoeren uniforme openbare voorbereidingsprocedure (art. 3:11).
@@ -35,3 +19,5 @@ beslist:
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst

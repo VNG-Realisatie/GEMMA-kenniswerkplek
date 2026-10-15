@@ -3,37 +3,9 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Behandelen aanvraag reisdocument
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip: het verzoek tot verstrekking van een reisdocument of tot wijziging van de gegevens erin (Paspoortwet art. 1 onder a); gangbaar aan de balie (Utrecht).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester neemt de aanvraag in ontvangst (Paspoortwet art. 26).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: 'Bestaat niet los van Behandelen aanvraag reisdocument: het verzoek waarmee dat bedrijfsproces begint, met de gegevens die de aanvrager daarbij verstrekt (Paspoortwet art. 1 onder a, 27, 28).'
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
 toelichting: 'Onderdeel, geen pagina: het verzoek waarmee Behandelen aanvraag reisdocument begint, ook voor de wijziging van gegevens in een reisdocument (Paspoortwet art. 1 onder a, 43). De aanvraagstukken bewaart de verstrekkende gemeente in het paspoortdossier (HUP Uitreiking). Een algemeen bedrijfsobject Aanvraag kan later in Besluitvorming worden beoordeeld.'
 beslist:
   uitkomst:
@@ -48,3 +20,6 @@ beslist:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

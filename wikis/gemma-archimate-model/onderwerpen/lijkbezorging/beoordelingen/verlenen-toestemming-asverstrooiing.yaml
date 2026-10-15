@@ -1,60 +1,9 @@
 begrip: Verlenen toestemming asverstrooiing
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: ontheffing en toestemming voor incidentele asverstrooiing (APV Groningen art. 5:27 lid 3; Groningen art. 21).'
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college verleent de ontheffing of de toestemming (APV Groningen art. 5:27 lid 3; Groningen art. 21 lid 1).
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, met een eigen besluit.
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij de lijkbezorging.
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Per verzoek van de nabestaande, van verzoek tot besluit (APV Groningen art. 5:27 lid 3).
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: Beslisser (college) en Nabestaande, die het verzoek doet (APV Groningen art. 5:27 lid 3).
@@ -62,9 +11,9 @@ kenmerken:
     - 2025-groningen-algemene-plaatselijke-verordening
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Legt de toestemming asverstrooiing vast en betreft de urn waaruit de as wordt verstrooid (APV Groningen art. 5:27 lid 3, 5:28 lid 2).
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
+    naar:
+    - vergunning
+    - urn
   aanleiding:
     waarde: ja
     onderbouwing: Een verzoek van de nabestaande die zorgdraagt voor de asbus (APV Groningen art. 5:27 lid 3).
@@ -111,25 +60,14 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Asverstrooiing (UPL nr. 32).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2025-groningen-algemene-plaatselijke-verordening
+    naar:
+    - asverstrooiing
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een besluit, niet in een benoemde toestandsverandering.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki; het cluster Behandelen vergunningaanvragen lijkbezorging groepeert, het specialiseert niet.
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Het beslissen op een verzoek om as te verstrooien op een plek waar dat zonder toestemming verboden is.
 beschrijving:
 - Buiten de begraafplaats verleent het college op verzoek van de nabestaande die zorgdraagt voor de asbus bij bijzondere omstandigheden ontheffing van het verbod op de plaatsen uit de APV (APV Groningen art. 5:27 lid 3). Op de gemeentelijke begraafplaats geeft het college toestemming voor verstrooiing op een aangewezen plek (Groningen art. 21 lid 1–2). Beslisser is het college.
@@ -175,7 +113,7 @@ status: afgewezen
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -183,7 +121,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-groningen-algemene-plaatselijke-verordening
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

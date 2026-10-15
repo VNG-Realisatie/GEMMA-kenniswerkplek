@@ -1,57 +1,14 @@
 begrip: Adviseur
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Rol uit GEMMA; de wet spreekt van advies van de GGD (Wlb art. 22a, Wpg art. 16).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Adviseert de gemeentelijke bestuursorganen.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De verantwoordelijkheid om de beslisser vooraf advies te geven.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan Treffen maatregel bij besmet stoffelijk overschot: de GGD adviseert de burgemeester (Wlb art. 22a).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
+    naar:
+    - treffen-maatregel-bij-besmet-stoffelijk-overschot
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -64,15 +21,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf de generieke GEMMA-rol (zie de GEMMA-match), geen specialisatie van een generiek GEMMA-element.
 definitie: Verantwoordelijkheid voor het geven van advies aan wie een besluit neemt.
 beschrijving:
 - Een adviseur geeft een bestuursorgaan vooraf advies over een besluit. De wet bepaalt wanneer advies nodig is, bijvoorbeeld het advies van de GGD aan de burgemeester bij een besmet stoffelijk overschot (Wet op de lijkbezorging art. 22a) of aan het college bij besluiten met belangrijke gevolgen voor de publieke gezondheid (Wet publieke gezondheid art. 16).
@@ -91,18 +39,21 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: ketenpartners
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rijk-wet-publieke-gezondheid-wettekst
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-wet-publieke-gezondheid-wettekst

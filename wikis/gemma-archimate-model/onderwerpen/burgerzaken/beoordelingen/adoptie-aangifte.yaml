@@ -1,61 +1,8 @@
 begrip: Adoptie aangifte
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product in de UPL (nr. 6); Utrecht: adoptie kind inschrijven.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente schrijft een adoptiekind uit het buitenland in de BRP in (Utrecht; UPL grondslag Wet BRP art. 2.38).
-    bronnen:
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
-    - 2025-vng-upl-producten-en-diensten-extern
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente op aangifte levert: een adoptiekind uit het buitenland laten inschrijven (UPL nr. 6; Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De inschrijving van het adoptiekind in de BRP (Utrecht).
@@ -75,9 +22,8 @@ kenmerken:
     - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: 'Het bedrijfsproces Inschrijven ingezetene: Utrecht verwerkt de aangifte als verhuizing vanuit het buitenland.'
-    bronnen:
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+    naar:
+    - inschrijven-ingezetene
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -86,9 +32,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 6), apart van de BRP-inschrijving; geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het laten inschrijven van een adoptiekind uit het buitenland in de basisregistratie personen.
 beschrijving:
 - 'Binnen vijf werkdagen na aankomst, op afspraak, met de identiteitsbewijzen van ouders en kind, de buitenlandse geboorteakte en de adoptiebeschikking (Utrecht). De adoptie zelf is een uitspraak van de rechtbank (BW 1 art. 227), geen gemeentelijk product; een Nederlandse adoptie verwerkt de gemeente als latere vermelding. Grondslag in de UPL: art. 2.38 Wet BRP (nr. 6).'
@@ -102,18 +45,20 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven

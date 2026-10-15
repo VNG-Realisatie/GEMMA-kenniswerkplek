@@ -1,77 +1,21 @@
 begrip: Inschrijven ontbinding huwelijk of partnerschap
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar en wettelijk: de inschrijving van de echtscheiding of van de beëindiging van het partnerschap (BW 1 art. 80c, 163; Utrecht Scheiden).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente waar het huwelijk is gesloten of het partnerschap geregistreerd, schrijft in (Utrecht; BW 1 art. 163).
-    bronnen:
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Ambtenaar van de burgerlijke stand (BW 1 art. 80c lid 2, 163).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - ambtenaar-van-de-burgerlijke-stand
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Registreert de akte van inschrijving en bijwerkt de huwelijksakte of partnerschapsakte met een latere vermelding (Besluit burgerlijke stand art. 60; Utrecht).
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
+    naar:
+    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
-    onderbouwing: 'De ontbinding: de stukken die de advocaat of notaris stuurt (Utrecht).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
+    naar:
+    - ontbinding-huwelijk-of-partnerschap
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De ingeschreven echtscheiding of beëindiging; vanaf die dag is zij definitief (Utrecht; BW 1 art. 163).
@@ -92,9 +36,8 @@ kenmerken:
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één inschrijving en latere vermelding.'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - bijhouden-burgerlijke-stand
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de stukken van advocaat of notaris tot de ingeschreven ontbinding.
@@ -109,24 +52,15 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de diensten Echtscheiding inschrijving (UPL nr. 122) en Geregistreerd partnerschap ontbinding (UPL nr. 157).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - echtscheiding-inschrijving
+    - geregistreerd-partnerschap-ontbinding
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het inschrijven van een echtscheiding of van de beëindiging van een geregistreerd partnerschap in de registers van de burgerlijke stand.
 beschrijving:
 - De advocaat stuurt de echtscheidingsbeschikking naar de gemeente waar het huwelijk is gesloten, die de echtscheiding op de huwelijksakte zet; bij een partnerschap sturen advocaat of notaris de stukken naar de gemeente van registratie (Utrecht). Bij een huwelijk in het buitenland gaat het naar Den Haag. De woongemeente verwerkt de ontbinding in de BRP (Utrecht). Een buitenlandse echtscheiding wordt verwerkt als buitenlands document (Utrecht Scheiden).
@@ -165,11 +99,13 @@ relaties:
   vindplaats: UPL nr. 157
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -177,7 +113,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen

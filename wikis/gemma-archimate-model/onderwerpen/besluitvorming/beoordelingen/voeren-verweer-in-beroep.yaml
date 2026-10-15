@@ -1,67 +1,18 @@
 begrip: Voeren verweer in beroep
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wettelijke taak van het bestuursorgaan in beroep (Awb art. 8:42); gangbaar als verweer voeren of de beroepsprocedure.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het gemeentelijke bestuursorgaan zendt de stukken aan de bestuursrechter, kan een verweerschrift indienen en neemt zo nodig een nieuw besluit (art. 8:42, 8:72 lid 4).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandige procedure die op elk besluit kan volgen, niet een stap van één ander begrip (art. 8:1, 8:42).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: beroep staat open tegen elk besluit (Awb hoofdstuk 8).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Iets wat gedaan wordt: verweer voeren in een beroepsprocedure.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: 'Wordt per beroep van begin tot eind doorlopen: stukken en verweerschrift, zitting, uitspraak, zo nodig een nieuw besluit (art. 8:42, 8:72).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: nee
-    onderbouwing: De bijdrage van de gemeente als partij, beschreven naar hoe zij verweer voert; wat de afnemer krijgt is de dienst Beroep.
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Beslisser (het bestuursorgaan dat het besluit nam, zendt de stukken, voert verweer en neemt zo nodig een nieuw besluit) en Belanghebbende (stelt beroep in) (art. 8:1, 8:42, 8:72 lid 4).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - belanghebbende
+    - beslisser
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Raadpleegt het bestreden besluit en de stukken die erop betrekking hebben en zendt ze aan de bestuursrechter; neemt na vernietiging zo nodig een nieuw besluit (art. 8:42, 8:72 lid 4).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - besluit
   aanleiding:
     waarde: ja
     onderbouwing: 'Een beroep bij de bestuursrechter: de rechter zendt de gronden van het beroepschrift aan het bestuursorgaan (art. 8:42 lid 1).'
@@ -100,24 +51,14 @@ kenmerken:
     onderbouwing: Op het beroep beslist de bestuursrechter (art. 8:72); een nieuw besluit van het bestuursorgaan volgt alleen als de rechter dat opdraagt.
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert het deel van de gemeente in de dienst Beroep (UPL nr. 54; art. 8:1, 8:42).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - beroep
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf het generieke proces voor verweer in beroep tegen elk besluit, geen specialisatie van een generiek GEMMA-element; GEMMA kent geen proces voor beroep.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -167,11 +108,11 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'De bestuursrechter is geen element: de gemeente is partij in het beroep, de rechter staat in de beschrijving.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -179,7 +120,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

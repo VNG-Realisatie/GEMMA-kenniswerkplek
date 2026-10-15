@@ -1,39 +1,6 @@
 begrip: Schadeloosstelling bij sluiting
+vak: bedrijf/passief
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ziet of doet hierover iets.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per rechthebbende.
@@ -60,14 +27,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
 toelichting: 'Geen element: gedeputeerde staten stellen de schadeloosstelling vast; de gemeente draagt alleen de kosten (art. 45 lid 2).'
 onderwerpen:
 - lijkbezorging
@@ -79,7 +38,7 @@ besluiten:
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 22
+    regel: 19
     toelichting: Kernrelatie ontbreekt voor Bedrijfsobject
     archimate_type: business-object
     voorleggen: true
@@ -88,7 +47,7 @@ beslist:
     - 'levenscyclus: nee'
     data_object: nee
     generiek: false
-    typeregel: 21
+    typeregel: 18
   voor_te_leggen:
   - 'wordt bewerkt: nee'
   - 'levenscyclus: nee'

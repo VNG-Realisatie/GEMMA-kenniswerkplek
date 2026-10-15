@@ -2,7 +2,7 @@
 id: beleidsnota
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Beleidsnota
 onderwerpen:
 - besluitvorming
@@ -27,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beleidsnota.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -60,18 +60,15 @@ Bedrijfsobject, niveau generiek. Uitkomst van de beslistabel: Passief (kern ja, 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: bedrijfslaag, passief (Bedrijfsobject, Afspraak, Representatie (geen pagina)). **Hoofdkenmerk**: ding. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbaar: de gemeenteraad stelt beleid vast, zoals participatiebeleid (VNG-implementatiehandleiding, bijlage 2); de wet spreekt van gemeentelijk beleid (Gemeentewet art. 150 lid 1). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente bereidt haar beleid voor, voert het uit en evalueert het, en betrekt daarbij ingezetenen en belanghebbenden (Gemeentewet art. 150 lid 1). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als vastgelegd beleid; geen onderdeel van één ander begrip (Gemeentewet art. 150 lid 1). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij besluitvorming: gemeentelijk beleid komt in elk onderwerp voor en wordt op dezelfde manier voorbereid (Gemeentewet art. 150). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, per onderwerp een eigen beleid, zoals het participatiebeleid (VNG-implementatiehandleiding, bijlage 2). [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, wordt voorbereid, vastgesteld, uitgevoerd en geëvalueerd (Gemeentewet art. 150 lid 1). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, bij inspraak legt Uitvoeren uniforme openbare voorbereidingsprocedure het ontwerp ter inzage (Gemeentewet art. 150 lid 2; Awb art. 3:11); de raad stelt het beleid vast (VNG-implementatiehandleiding, bijlage 2). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder object in deze wiki. [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Betrekken inwoners bij beleid](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md), [Uitvoeren uniforme openbare voorbereidingsprocedure](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md). |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, komt met dezelfde betekenis voor in elk onderwerp waarvoor de gemeente beleid vaststelt. [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
 
 ### Specialisaties

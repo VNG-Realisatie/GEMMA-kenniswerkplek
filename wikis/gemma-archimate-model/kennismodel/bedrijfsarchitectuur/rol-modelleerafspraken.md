@@ -8,7 +8,7 @@ titel: Rol — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Business Role* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `rol`
+*Business Role* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/actief-intern` · paginatype `rol`
 
 | Afspraak | Inhoud |
 |---|---|

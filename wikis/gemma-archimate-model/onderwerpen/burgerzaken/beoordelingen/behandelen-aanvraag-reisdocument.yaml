@@ -1,72 +1,20 @@
 begrip: Behandelen aanvraag reisdocument
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Paspoort of identiteitskaart aanvragen aan de balie (Utrecht); de aanvraag en de verstrekking zijn wetsbegrippen (Paspoortwet art. 1 onder a en d).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester neemt de aanvraag in ontvangst en verstrekt of weigert het reisdocument (Paspoortwet art. 26, 40, 44).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per aanvraag van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: 'Beslisser: de burgemeester verstrekt of weigert (Paspoortwet art. 40, 44); de Houder van het reisdocument vraagt aan en verschijnt persoonlijk (art. 1 onder b, 28); een Ouder met gezag geeft toestemming voor een minderjarige (art. 34; Utrecht).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+    naar:
+    - beslisser
+    - houder-van-het-reisdocument
+    - ouder
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Registreert het reisdocument bij de verstrekking en werkt het bij bij een wijziging (Paspoortwet art. 1 onder d en g, 40, 43); raadpleegt de ingeschreven persoon voor identiteit en nationaliteit (art. 26, 28; Paspoortbesluit art. 2.1).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
+    naar:
+    - reisdocument
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag, op afspraak aan de balie (Paspoortwet art. 27; Utrecht).
@@ -92,9 +40,8 @@ kenmerken:
     - 2026-rijk-paspoortbesluit-bwbr0044308
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het ontstaan van het reisdocument.'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
+    naar:
+    - beheren-reisdocumenten
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de aanvraag tot de uitreiking of de weigering.
@@ -111,23 +58,19 @@ kenmerken:
     - 2026-rijk-paspoortwet-bwbr0005212
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de diensten Paspoort, Paspoort tweede, Zakenpaspoort, Vluchtelingenpaspoort, Vreemdelingenpaspoort, Identiteitskaart en Reisdocument niet-ingezetene (UPL nr. 329, 330, 494, 449, 462, 186, 357).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - paspoort
+    - paspoort-tweede
+    - zakenpaspoort
+    - vluchtelingenpaspoort
+    - vreemdelingenpaspoort
+    - identiteitskaart
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aanvraag product.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een paspoort, identiteitskaart of ander reisdocument, tot de uitreiking of weigering.
 beschrijving:
 - De aanvrager verschijnt persoonlijk op afspraak aan de balie, met alle huidige reisdocumenten, ook verlopen, en een pasfoto; vanaf twaalf jaar worden twee vingerafdrukken opgenomen en de rechten worden bij de aanvraag betaald (Paspoortwet art. 28, 29, 33; Paspoortbesluit art. 3.6; Utrecht). De burgemeester verschaft zich zekerheid over de identiteit en de nationaliteit, uit het overgelegde reisdocument, de basisregistratie personen en het basisregister reisdocumenten; na vermissing of diefstal zonder ander reisdocument stelt hij de identiteit eerst vast (Paspoortbesluit art. 2.1; Utrecht).
@@ -249,11 +192,11 @@ deelprocessen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: Paspoortwet art. 32, 42; Paspoortbesluit art. 4.6
   begrip: uitreiken-reisdocument
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -261,7 +204,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

@@ -8,7 +8,7 @@ titel: Afspraak — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Contract* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `bedrijfsobject`
+*Contract* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/passief` · paginatype `bedrijfsobject`
 
 | Afspraak | Inhoud |
 |---|---|

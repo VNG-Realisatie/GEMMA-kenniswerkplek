@@ -3,35 +3,9 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Reisdocument
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wetsbegrip (Paspoortwet art. 1 onder r, 3a).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Wordt met het reisdocument verstrekt (Paspoortwet art. 3a).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: 'Een onderdeel van het reisdocument: het elektronische middel op het document (Paspoortwet art. 1 onder r, 3a).'
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
 toelichting: 'Onderdeel, geen pagina: het van rijkswege uitgegeven elektronische middel op het reisdocument voor authenticatie bij elektronische dienstverlening (Paspoortwet art. 1 onder r, 3a). Vermeld bij Reisdocument.'
 beslist:
   uitkomst:
@@ -45,3 +19,5 @@ beslist:
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212

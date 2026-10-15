@@ -2,7 +2,7 @@
 id: akte-van-de-burgerlijke-stand
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Akte van de burgerlijke stand
 onderwerpen:
 - burgerzaken
@@ -26,7 +26,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling akte-van-de-burgerlijke-stand.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- gegevensobject zonder sterke GGM-match
 
 ## Betekenis
 
@@ -73,19 +77,16 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: bedrijfslaag, passief (Bedrijfsobject, Afspraak, Representatie (geen pagina)). **Hoofdkenmerk**: ding. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, kernbegrip van Boek 1 BW en het Besluit burgerlijke stand: de akte van geboorte, huwelijk, partnerschap, overlijden en andere (BW 1 art. 18, 19, 22; Besluit burgerlijke stand hoofdstuk 2). [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de ambtenaar van de burgerlijke stand van de gemeente maakt de akten op en neemt ze op in de registers van de gemeente (BW 1 art. 16, 16a). [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elke akte staat in een register van de gemeente, per soort (BW 1 art. 16a, 17). [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, wordt opgemaakt, krijgt latere vermeldingen en kan worden aangevuld of verbeterd (BW 1 art. 18, 20, 24). [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, de ambtenaar van de burgerlijke stand maakt de akte op en voegt latere vermeldingen toe; de gemeente verwerkt de akte als brondocument in de BRP (BW 1 art. 18, 20; HUP Algemeen). [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [HUP BRP Algemeen](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-algemeen.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Bijhouden burgerlijke stand](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-burgerlijke-stand.md), [Bijhouden persoonsgegevens](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md), [Inschrijven ingezetene](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ingezetene.md), [Inschrijven ontbinding huwelijk of partnerschap](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ontbinding-huwelijk-of-partnerschap.md), [Opmaken akte levenloos geboren kind](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-levenloos-geboren-kind.md), [Opmaken akte van erkenning](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-erkenning.md), [Opmaken akte van naamskeuze](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-naamskeuze.md), [Opmaken akte van overlijden](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-overlijden.md), [Opmaken geboorteakte](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-geboorteakte.md), [Registreren partnerschap](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-partnerschap.md), [Toevoegen latere vermelding](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/toevoegen-latere-vermelding.md), [Verstrekken uittreksels en verklaringen burgerlijke stand](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-uittreksels-en-verklaringen-burgerlijke-stand.md), [Voltrekken huwelijk](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/voltrekken-huwelijk.md), [Wijzigen geslachtsvermelding](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-geslachtsvermelding.md). |
 | **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, de akten worden verwerkt in de BRP en elektronische aangifte en kennisgeving gaan met het burgerservicenummer (Besluit burgerlijke stand art. 67a; HUP Algemeen). [Besluit burgerlijke stand 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md), [HUP BRP Algemeen](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-algemeen.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki; de akten per soort zijn specialisaties zonder eigen pagina: ze worden door hetzelfde proces bijgehouden en verschillen alleen in de gegevens die de wet per soort vraagt (Besluit burgerlijke stand hoofdstuk 2). [Besluit burgerlijke stand 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) |
 
 ### Specialisaties
 

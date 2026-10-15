@@ -3,30 +3,12 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Identificatienummer van een persoon in de BRP (HUP Wijzigen identificatienummers).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-identificatienummers
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente kent het A-nummer toe en wijzigt het (HUP Wijzigen administratienummer).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-administratienummer
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: Een identificatienummer van de ingeschreven persoon; in het GGM een attribuut (anummer) van IngeschrevenPersoon (HUP Wijzigen identificatienummers).
     bronnen:
     - 2026-rvig-hup-wijzigen-identificatienummers
     - 2026-rvig-hup-wijzigen-administratienummer
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-wijzigen-identificatienummers
 toelichting: 'Eigenschap van Ingeschreven persoon: zijn identificatienummer in de BRP. Het wijzigen ervan valt onder het bedrijfsproces Wijzigen identificatienummers.'
 synoniemen:
 - naam: A-nummer

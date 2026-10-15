@@ -1,60 +1,8 @@
 begrip: BRP-wijzigingsverzoek
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 95); bij Utrecht Persoonsgegevens aanpassen.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente beslist op het verzoek (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een prestatie die de gemeente op verzoek of aangifte aan de afnemer levert, beschreven vanuit de afnemer (UPL nr. 95).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Gecorrigeerde gegevens of een gemotiveerde weigering (Utrecht; NVVB Identiteitswijziging).
@@ -74,9 +22,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Behandelen verzoek om correctie (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+    naar:
+    - behandelen-verzoek-om-correctie
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -85,9 +32,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (UPL nr. 95); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het verzoek om onjuiste eigen gegevens in de basisregistratie personen te laten corrigeren.
 beschrijving:
 - Adresgegevens aanpassen kan online of per post, persoonsgegevens zoals naam, geslacht en geboortedatum alleen persoonlijk of per post, met bewijsstukken (Utrecht Persoonsgegevens aanpassen). Grondslag is art. 2.58 Wet BRP; de aanvraag kan digitaal (UPL nr. 95).
@@ -103,18 +47,20 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp

@@ -1,62 +1,8 @@
 begrip: Verklaring omtrent gedrag aanvragen
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 434, verklaring omtrent gedrag (vog)); Utrecht noemt Verklaring omtrent het gedrag aanvragen (VOG) op de hubpagina Burgerzaken.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-    - 2026-utrecht-burgerzaken
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt de aanvraag van een inwoner in ontvangst, controleert haar en zendt haar door aan de minister (Wet justitiële en strafvorderlijke gegevens art. 30; Utrecht).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort primair bij burgerzaken: dienst van Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een afgebakende prestatie die de gemeente aanbiedt, beschreven vanuit de aanvrager.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De aanvrager krijgt binnen een tot vier weken bericht van Justis; de verklaring zelf geeft de minister af (Utrecht; Wet justitiële en strafvorderlijke gegevens art. 37).
@@ -77,11 +23,8 @@ kenmerken:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Behandelen aanvraag verklaring omtrent het gedrag.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+    naar:
+    - behandelen-aanvraag-verklaring-omtrent-het-gedrag
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -90,9 +33,6 @@ kenmerken:
     onderbouwing: De UPL noemt het als eigen product.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het aanvragen van een verklaring omtrent het gedrag bij de gemeente, die de aanvraag controleert en doorzendt naar de minister.
 beschrijving:
 - Alleen inwoners kunnen de VOG bij de gemeente aanvragen, online met een scan van het formulier van de werkgever of aan de balie op afspraak; de aanvraag kost 41,35 euro en wordt direct betaald (Utrecht). De beoordeling is van Justis; een werkgever kan de VOG ook rechtstreeks via Justis aanvragen, en wie niet in de BRP staat of een rechtspersoon vraagt de VOG direct bij Justis (Utrecht; Wet justitiële en strafvorderlijke gegevens art. 30, 31).
@@ -120,18 +60,22 @@ gemma_functie:
   vindplaats: UPL nr. 434 (GEMMA-domein Publieksdiensten)
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+- 2026-utrecht-burgerzaken
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog

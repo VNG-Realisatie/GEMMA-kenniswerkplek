@@ -1,44 +1,8 @@
 begrip: Participatieverordening
+vak: bedrijf/passief
 onderwerpen:
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: De raad stelt een verordening vast over het betrekken van ingezetenen en belanghebbenden bij beleid (art. 150 lid 1); gangbaar heet zij participatieverordening.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De raad stelt haar vast.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als verordening van de gemeente.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij participatie: de verordening van art. 150 Gemeentewet.'
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: nee
-    onderbouwing: De verordening van één gemeente als soort, geen concreet benoemde regeling; het model is Model Participatieverordening.
   afspraak:
     waarde: nee
     onderbouwing: Een regeling van de raad, geen overeenkomst.
@@ -47,10 +11,9 @@ kenmerken:
     onderbouwing: Geen vorm van een ander begrip.
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: De gemeenteraad stelt haar vast (art. 150 lid 1); het bestuursorgaan raadpleegt haar bij elke inwonersparticipatie (plan, inspraak, eindverslag) en bij elk verzoek om toepassing van het uitdaagrecht (indieningseisen, afwijzingsgronden, termijnen, afspraken).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-model-participatieverordening
+    naar:
+    - behandelen-verzoek-uitdaagrecht
+    - betrekken-inwoners-bij-beleid
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elke gemeente heeft haar eigen verordening, met de citeertitel Participatieverordening [naam gemeente, jaartal] (var. 1 art. [14] lid 2).
@@ -70,9 +33,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeenteraad stelt haar zelf vast (art. 150 lid 1).
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in participatie voor.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Specialisatie van Regeling die de gemeente anders behandelt; elke gemeente moet haar vaststellen, met door de wet voorgeschreven inhoud (regels over het betrekken bij voorbereiding, uitvoering en evaluatie van beleid, voorwaarden voor het uitdaagrecht), en de processen van participatie volgen haar regels (art. 150 lid 1–3). Keten Regeling → Participatieverordening.
@@ -121,11 +81,14 @@ relaties:
   vindplaats: Gemeentewet art. 150 lid 3; var. 1 art. 6, [8], var. 2 art. [11], [13]
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Participatie
-status: goedgekeurd
+bronnen:
+- 2026-rijk-gemeentewet-wettekst
+- 2024-vng-implementatiehandleiding-model-participatieverordening
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 38
+    regel: 35
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -134,8 +97,10 @@ beslist:
     - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
     data_object: nee
     generiek: false
-    typeregel: 21
+    typeregel: 18
   voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-gemeentewet-wettekst

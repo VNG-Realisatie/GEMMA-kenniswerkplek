@@ -13,7 +13,9 @@ De uitkomst staat in [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-
 
 ## ArchiMate-indeling, lichtere kenmerken, data-object en capability (plan 2026-10-15)
 
-Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 (matrix en lichtere kenmerken), deel 2 (data-object als element), deel 3 (Capability, eerst samen bepalen). Stap 1 en 2 zijn gedaan (O2 en O3: ja); volgende stap: stap 3–7, de omzetting.
+Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 (matrix en lichtere kenmerken), deel 2 (data-object als element), deel 3 (Capability, eerst samen bepalen). Deel 1 is omgezet (Uitkomst stap 3–7); volgende stap: nieuw AKKOORD voor de 285 elementen op review, dan deel 2.
+
+- **Potentiële relaties vastleggen.** 239 relationele kenmerken ja hebben geen relatie (bij elementen 104: vooral *aanleiding*, *toegewezen partij*, *bijdrage aan groter proces*, *gebruikt objecten*). Noem bij de volgende herbeoordeling per onderwerp de tegenpartij in `naar`: een element met de relatie, of naam en type. Het signaal over de kernrelatie wijst ze aan.
 
 - **`beslist` uit de beoordeling halen** (uit de analyse van het plan): het blok is 23.000 woorden en wordt meegelezen bij elk precedent; het kan naar een gegenereerd bestand per onderwerp.
 

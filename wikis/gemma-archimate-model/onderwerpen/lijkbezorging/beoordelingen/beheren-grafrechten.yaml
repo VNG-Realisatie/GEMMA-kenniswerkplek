@@ -1,60 +1,9 @@
 begrip: Beheren grafrechten
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het grafrecht en zijn beheer zijn gangbaar in de beheersverordeningen (Groningen art. 16–20; VNG-modelverordening art. 15–17).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college verleent, verlengt, schrijft over en verklaart vervallen (Groningen art. 16–20).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: 'Bestaat zelfstandig: het beheer van een grafrecht van verlening tot verval.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per grafrecht doorlopen, van verlening tot verval (art. 28).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: Beslisser (college) en Houder van de begraafplaats, die het recht verlengt en de verklaring van verwaarlozing opstelt (art. 28; Groningen art. 16).
@@ -63,9 +12,8 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Legt het grafrecht vast, werkt het bij en beëindigt het (art. 28).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - grafrecht
   aanleiding:
     waarde: ja
     onderbouwing: Schriftelijke aanvraag van een graf (Groningen art. 16 lid 1).
@@ -101,10 +49,9 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: ja
-    onderbouwing: Verlenen grafrecht en Vervallen verklaren grafrecht (art. 28; Groningen art. 16, 20).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - verlenen-grafrecht
+    - vervallen-verklaren-grafrecht
   omvat_levensloop:
     waarde: ja
     onderbouwing: Omvat de levensloop van het grafrecht, van verlening via verlenging en overschrijving tot verval (art. 28; Groningen art. 16–20).
@@ -123,15 +70,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki of in het GEMMA-model.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 definitie: 'Het beheer van een grafrecht over de hele looptijd: verlenen, verlengen, overschrijven en vervallen.'
 beschrijving:
 - Het grafrecht wordt schriftelijk gevestigd voor onbepaalde tijd of voor ten minste tien jaar, en op verzoek verlengd (Wet op de lijkbezorging art. 28 lid 1–3). Het college verleent het recht op aanvraag, schrijft het over en kan het vervallen verklaren; het recht vervalt ook als na een verklaring van verwaarlozing niet alsnog in het onderhoud is voorzien (Groningen art. 16–20; art. 28 lid 4–7).
@@ -175,11 +113,14 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 28; Groningen art. 16–20
-status: goedgekeurd
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2010-vng-model-beheersverordening-begraafplaatsen
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 28
+    regel: 25
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -187,7 +128,7 @@ beslist:
     data_object: nee
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen

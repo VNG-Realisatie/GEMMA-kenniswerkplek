@@ -2,7 +2,7 @@
 id: nederlanderschap
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -37,7 +37,7 @@ ggm_definitie: Gegevens over de nationaliteit.
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -75,17 +75,15 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: bedrijfslaag, passief (Bedrijfsobject, Afspraak, Representatie (geen pagina)). **Hoofdkenmerk**: ding. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, kernbegrip van de Rijkswet op het Nederlanderschap en het Besluit verkrijging en verlies Nederlanderschap; in de praktijk ook de Nederlandse nationaliteit (Rijkswet art. 1, 3; Utrecht). [Rijkswet op het Nederlanderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [Utrecht Nederlander worden](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst, bevestigt de optie en reikt de bevestiging en het uittreksel van het naturalisatiebesluit uit (Besluit art. 2, 7, 11, 33, 60a, 60b, 63). [Besluit verkrijging en verlies Nederlanderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een rechtsverhouding tussen persoon en Koninkrijk met een eigen begin (verkrijging) en einde (verlies), los van één ander begrip (Rijkswet art. 3 tot en met 16). [Rijkswet op het Nederlanderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: kernobject van Beheren Nederlanderschap (UPL taakveld 0.2). [Rijkswet op het Nederlanderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, per persoon, met een eigen datum en reden van verkrijging en verlies (HUP Nederlandse nationaliteit). [HUP Nederlandse nationaliteit](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nederlandse-nationaliteit.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, ontstaat van rechtswege, door optie of door naturalisatie en eindigt door verlies, afstand of intrekking (Rijkswet art. 3, 6, 7, 14, 15). [Rijkswet op het Nederlanderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, beheren Nederlanderschap registreert en beëindigt het: de burgemeester bevestigt de optie, reikt de bevestiging of het uittreksel uit en neemt de verklaring van afstand in ontvangst; de gemeente neemt het op en beëindigt het in de persoonslijst (Besluit art. 11, 60a, 60b, 63, 64; HUP Nederlandse nationaliteit). [Besluit verkrijging en verlies Nederlanderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [HUP Nederlandse nationaliteit](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nederlandse-nationaliteit.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Behandelen naturalisatieverzoek](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-naturalisatieverzoek.md), [Behandelen optieverklaring](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md), [Behandelen verklaring van afstand](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md), Behandelen verkrijging en verlies Nederlanderschap, [Beheren Nederlanderschap](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-nederlanderschap.md), [Bijhouden persoonsgegevens](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md). |
 | **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, categorie 04 Nationaliteit van de persoonslijst, met de reden van opnemen en beëindigen (HUP Nederlandse nationaliteit; LO BRP 4.4). [HUP Nederlandse nationaliteit](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nederlandse-nationaliteit.md), [Logisch Ontwerp BRP 2025.Q1](../../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, specialisatie van Nationaliteit die de gemeente anders behandelt: alleen voor het Nederlanderschap kent zij eigen processen (optie, naturalisatie, afstand) met eigen gegevens (reden van verkrijging en verlies, bijzonder Nederlanderschap); Nationaliteit zelf is een onderdeel van Ingeschreven persoon zonder pagina (Rijkswet; Besluit; HUP Nationaliteit). [Rijkswet op het Nederlanderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [HUP Nationaliteit](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nationaliteit.md) |
 

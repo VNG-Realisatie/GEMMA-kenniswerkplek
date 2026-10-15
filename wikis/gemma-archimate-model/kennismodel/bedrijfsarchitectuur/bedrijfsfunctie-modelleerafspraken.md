@@ -8,7 +8,7 @@ titel: Bedrijfsfunctie — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Business Function* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `bedrijfsfunctie`
+*Business Function* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/gedrag-intern` · paginatype `bedrijfsfunctie`
 
 | Afspraak | Inhoud |
 |---|---|

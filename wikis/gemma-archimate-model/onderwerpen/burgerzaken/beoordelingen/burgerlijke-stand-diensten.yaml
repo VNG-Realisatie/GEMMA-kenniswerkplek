@@ -1,57 +1,10 @@
 begrip: Burgerlijke stand diensten
+vak: bedrijf/gedrag-intern
+soort_gedrag: gegroepeerd_gedrag
 onderwerpen:
 - burgerzaken
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie; na aangifte van overlijden geeft de gemeente de akte van overlijden en het verlof af (RVO).
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand verleent het verlof (art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandige groepering van gedrag.
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Geen ander onderwerp beoordeelt het; hoort later ook bij een onderwerp burgerzaken.
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  gedrag:
-    waarde: ja
-    onderbouwing: Een groep van activiteiten.
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag:
-    waarde: ja
-    onderbouwing: Groepeert het bijhouden van de burgerlijke staat bij geboorte, overlijden en huwelijk op grond van dezelfde kennis en bevoegdheid (ambtenaar van de burgerlijke stand); geen eigen volgorde of doorlooptijd.
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: Ambtenaar van de burgerlijke stand (art. 11).
@@ -69,9 +22,9 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bedient_gedrag:
     waarde: ja
-    onderbouwing: Bedient Verlenen verlof tot begraving of crematie (art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - verlenen-verlof-tot-begraving-of-crematie
+    - bijhouden-burgerlijke-stand
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
@@ -85,9 +38,6 @@ kenmerken:
     onderbouwing: Geen bredere functie in deze wiki.
     gemma_relatie:
     - id-efd77657-f6f9-457c-a9e8-93d6d11647df
-  generiek:
-    waarde: nee
-    onderbouwing: Een domeinfunctie, niet in veel onderwerpen.
 definitie: Het bijhouden van de burgerlijke staat van personen naar aanleiding van geboorte, overlijden, huwelijk en verhuizing.
 per_onderwerp:
   lijkbezorging:
@@ -274,18 +224,20 @@ relaties:
   vindplaats: UPL nr. 61 (GEMMA-domein Publieksdiensten)
 beschrijving:
 - De ambtenaar van de burgerlijke stand maakt akten op van geboorte, huwelijk en overlijden en verleent het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11; RVO). De functie bedient de processen daarvoor.
-status: goedgekeurd
+bronnen:
+- 2026-rvo-aangifte-en-akte-van-overlijden
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

@@ -1,61 +1,8 @@
 begrip: Rijbewijs verlengen
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 363, rijbewijs verlengen); Utrecht noemt het rijbewijs online verlengen en het verlengen aan de balie.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt een aanvraag tot vernieuwing aan de balie in ontvangst en reikt het rijbewijs uit; bij online verlengen via de RDW doet zij alleen de uitreiking (Reglement rijbewijzen art. 35; Utrecht).
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort primair bij burgerzaken: dienst van Beheren rijbewijzen (UPL taakveld 0.2).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een afgebakende prestatie die de gemeente aanbiedt, beschreven vanuit de aanvrager.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De aanvrager krijgt het vernieuwde rijbewijs uitgereikt, twee werkdagen na een online aanvraag.
@@ -75,11 +22,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Behandelen aanvraag rijbewijs.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+    naar:
+    - behandelen-aanvraag-rijbewijs
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -88,9 +32,6 @@ kenmerken:
     onderbouwing: De UPL noemt het als eigen product.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het vernieuwen van een Nederlands rijbewijs bij de gemeente, aan de balie of online via de RDW, en het afhalen ervan.
 beschrijving:
 - Wie in de gemeente staat ingeschreven en een Nederlands rijbewijs heeft, kan de verlenging of een categorie-uitbreiding onder bepaalde voorwaarden online aanvragen via de RDW, met een digitale pasfoto van een erkende fotograaf of fotocabine en de DigiD-app; hij haalt het rijbewijs twee werkdagen later op afspraak op (Utrecht). Bij vernieuwing wordt het eerdere rijbewijs overgelegd en, bij een groot rijbewijs, vanaf 75 jaar of na een aantekening van het CBR, moet een verklaring van geschiktheid zijn geregistreerd (Reglement rijbewijzen art. 35).
@@ -106,18 +47,22 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+- 2026-rijk-reglement-rijbewijzen-bwbr0008074
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen

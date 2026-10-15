@@ -3,40 +3,11 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Nationaliteit
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wordt in de BRP opgenomen op grond van een rechterlijke uitspraak of bij evidente staatloosheid (HUP Staatloosheid); de Rijkswet definieert de staatloze (art. 1 lid 1 onder f).
-    bronnen:
-    - 2026-rvig-hup-staatloosheid
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente stelt evidente staatloosheid zelf vast en neemt staatloosheid op (HUP Staatloosheid).
-    bronnen:
-    - 2026-rvig-hup-staatloosheid
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: Een waarde van het gegeven Nationaliteit, in een eigen stapel (HUP Nationaliteit; HUP Staatloosheid).
     bronnen:
     - 2026-rvig-hup-nationaliteit
-    - 2026-rvig-hup-staatloosheid
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Niet los te zien van het genoemde begrip, maar wel een eigen waarde.
-    bronnen:
-    - 2026-rvig-hup-staatloosheid
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij burgerzaken (BRP).
-    bronnen:
-    - 2026-rvig-hup-staatloosheid
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
     - 2026-rvig-hup-staatloosheid
 toelichting: 'Waarde van Nationaliteit, geen pagina: sinds 1 oktober 2023 alleen opgenomen op grond van een rechterlijke uitspraak (Wet vaststellingsprocedure staatloosheid art. 4) of bij evidente staatloosheid, die de gemeente zelf vaststelt; wie beweert staatloos te zijn, moet dat aantonen. De staatloosheid eindigt bij verkrijging van een nationaliteit (HUP Staatloosheid). Het vaststellen van evidente staatloosheid is een processtap van Bijhouden persoonsgegevens; een staatloze betaalt een verlaagde prijs voor naturalisatie of optie (Utrecht).'
 beslist:
@@ -53,3 +24,6 @@ beslist:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2026-rvig-hup-nationaliteit
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rvig-hup-staatloosheid
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738

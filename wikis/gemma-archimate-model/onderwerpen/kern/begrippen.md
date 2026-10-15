@@ -28,7 +28,7 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 
 | Begrip | Reden | Herkomst |
 |---|---|---|
-| [Ketenpartner](../../elementpaginas/bedrijfsarchitectuur/rollen/ketenpartner.md) *Rol, goedgekeurd* | Hoedanigheid (kern ja) | rijksregelgeving |
+| [Ketenpartner](../../elementpaginas/bedrijfsarchitectuur/rollen/ketenpartner.md) *Rol, review* | Hoedanigheid (kern ja) | rijksregelgeving |
 
 ## Besluiten
 

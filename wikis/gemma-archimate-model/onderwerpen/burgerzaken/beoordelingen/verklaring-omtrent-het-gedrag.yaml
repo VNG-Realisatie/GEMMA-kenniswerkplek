@@ -1,44 +1,8 @@
 begrip: Verklaring omtrent het gedrag
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip en UPL-product: de verklaring omtrent het gedrag (Wet justitiële en strafvorderlijke gegevens art. 28; UPL nr. 434); gangbaar als VOG (Utrecht).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester neemt de aanvraag van een inwoner in ontvangst, onderzoekt de volledigheid en de identiteit en zendt haar door; de verklaring zelf is van de minister (Wet justitiële en strafvorderlijke gegevens art. 28, 30).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een verklaring met een eigen aanvraag, doel en beslissing per aanvrager (Wet justitiële en strafvorderlijke gegevens art. 28, 29, 32).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: kernobject van Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elke verklaring is afgegeven aan één aanvrager voor een doel (Wet justitiële en strafvorderlijke gegevens art. 28, 32).
@@ -51,10 +15,9 @@ kenmerken:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: Afgeven verklaring omtrent het gedrag ontvangt de aanvraag, onderzoekt haar en geeft de verklaring af of weigert (Wet justitiële en strafvorderlijke gegevens art. 30, 35, 37; Besluit justitiële en strafvorderlijke gegevens art. 48).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
+    naar:
+    - afgeven-verklaring-omtrent-het-gedrag
+    - behandelen-aanvraag-verklaring-omtrent-het-gedrag
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -74,15 +37,6 @@ kenmerken:
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking van de verklaring zelf; het onderzoek gebruikt de justitiële documentatie van de minister (Wet justitiële en strafvorderlijke gegevens art. 36).
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki; de VOG voor een natuurlijk persoon en voor een rechtspersoon zijn specialisaties (Wet justitiële en strafvorderlijke gegevens art. 28; Utrecht).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Verklaring van de minister dat uit een onderzoek naar iemands gedrag geen bezwaren zijn gebleken, gelet op het doel waarvoor ze wordt gevraagd.
 definitie_formeel: een verklaring van Onze Minister dat uit een onderzoek met betrekking tot het gedrag van de betrokken natuurlijke persoon of rechtspersoon ingesteld, gelet op het risico voor de samenleving in verband met het doel waarvoor de afgifte is gevraagd en na afweging van het belang van betrokkene, niet is gebleken van bezwaren tegen die natuurlijke persoon of rechtspersoon
 definitie_formeel_bron:
@@ -123,11 +77,16 @@ relaties:
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 28, 30 lid 1
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+- 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 35
+    regel: 32
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -135,7 +94,7 @@ beslist:
     data_object: nee
     objectniveau: kernobject
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2025-vng-upl-producten-en-diensten-extern

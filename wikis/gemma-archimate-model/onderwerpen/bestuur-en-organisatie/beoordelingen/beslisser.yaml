@@ -1,65 +1,52 @@
 begrip: Beslisser
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Rol uit de procesbouwstenen van GEMMA; de bronnen noemen per besluit het bevoegde bestuursorgaan.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2024-rijk-gemeentewet-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeentelijke bestuursorganen beslissen in de processen van dit onderwerp.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2024-rijk-gemeentewet-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2024-rijk-gemeentewet-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2024-rijk-gemeentewet-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De verantwoordelijkheid om in een proces het besluit te nemen; burgemeester, college of raad treedt erin op, afhankelijk van de bevoegdheid.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2024-rijk-gemeentewet-wettekst
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Verlenen grafrecht en Vervallen verklaren grafrecht (college), Opgraven stoffelijk overschot, Verzorgen gemeentebegrafenis, Treffen maatregel bij besmet stoffelijk overschot, Verlenen verlof tot ontleding en Afgeven laissez-passer (burgemeester) (Wlb art. 21, 22a, 29, 68; Groningen art. 16, 20; Besluit op de lijkbezorging art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2024-rijk-gemeentewet-wettekst
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    naar:
+    - uitvoeren-uniforme-openbare-voorbereidingsprocedure
+    - verlenen-grafrecht
+    - vervallen-verklaren-grafrecht
+    - opgraven-stoffelijk-overschot
+    - verzorgen-gemeentebegrafenis
+    - treffen-maatregel-bij-besmet-stoffelijk-overschot
+    - verlenen-toestemming-bijzondere-begraafplaats
+    - sluiten-begraafplaats
+    - verlenen-vergunning-bijzonder-crematorium
+    - stellen-andere-termijn
+    - verlenen-verlof-tot-ontleding
+    - afgeven-laissez-passer
+    - inschrijven-ingezetene
+    - inschrijven-op-briefadres
+    - uitvoeren-adresonderzoek
+    - behandelen-verzoek-om-geheimhouding
+    - verstrekken-persoonsgegevens
+    - behandelen-verzoek-om-correctie
+    - behandelen-verzoek-om-verwijdering-van-gegevens
+    - wijzigen-identificatienummers
+    - behandelen-aanvraag-reisdocument
+    - behandelen-aanvraag-reisdocument-niet-ingezetene
+    - behandelen-optieverklaring
+    - behandelen-verklaring-van-afstand
+    - behandelen-verzoek-om-volmacht
+    - registreren-kiesgerechtigdheid
+    - behandelen-aanvraag-rijbewijs
+    - inhouden-reisdocument
+    - wijzigen-naamgebruik
+    - verwerken-buitenlands-document
+    - behandelen-bezwaar
+    - behandelen-klacht
+    - voeren-verweer-in-beroep
+    - bekendmaken-besluit
+    - vaststellen-dwangsom-bij-niet-tijdig-beslissen
+    - behandelen-aanvraag-nadeelcompensatie
+    - behandelen-aanvraag-beschikking
+    - betrekken-inwoners-bij-beleid
+    - behandelen-verzoek-uitdaagrecht
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -72,16 +59,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2024-rijk-gemeentewet-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf de generieke GEMMA-rol (zie de GEMMA-match), geen specialisatie van een generiek GEMMA-element.
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
 beschrijving:
 - 'Wie beslist, volgt uit de wet of verordening die de bevoegdheid toekent: de burgemeester, het college van burgemeester en wethouders of de gemeenteraad. Welk orgaan in een proces beslist, staat in de beschrijving van dat proces.'
@@ -393,18 +370,24 @@ per_onderwerp:
   - Bij het kiesrecht beslissen burgemeester en wethouders over de registratie van de kiesgerechtigdheid en de burgemeester over een verzoek om bij volmacht te stemmen (Kieswet art. D 1, D 7, L 11).
   besluitvorming:
   - 'Het bestuursorgaan bereidt een besluit voor met de uniforme openbare voorbereidingsprocedure als een wettelijk voorschrift of het bestuursorgaan dat bepaalt: het legt het ontwerp ter inzage, geeft er kennis van, maakt een verslag van mondelinge zienswijzen en neemt het besluit (Awb art. 3:10–3:18).'
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2024-rijk-gemeentewet-wettekst
+- 2025-groningen-algemene-plaatselijke-verordening
+- 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

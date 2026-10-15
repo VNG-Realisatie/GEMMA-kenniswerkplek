@@ -2,19 +2,6 @@ begrip: Ontwerp van het te nemen besluit
 onderwerpen:
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het ontwerpbesluit dat met de stukken ter inzage ligt (art. 3:11).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het bestuursorgaan legt het ter inzage.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: 'Een stadium van Besluit: het ontwerp vóór de vaststelling (art. 3:11).'

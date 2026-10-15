@@ -1,44 +1,9 @@
 begrip: Register vermiste of vervallen reisdocumenten
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Verwerken vermissing reisdocument
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wetsbegrip (Paspoortwet art. 4a; Paspoortbesluit art. 1.1).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De registratie van een vermissing of verval door de gemeente komt erin terecht (Paspoortwet art. 4a; HUP Inhouding).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Eén register van de minister (Paspoortwet art. 4a).
@@ -70,26 +35,21 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Invoer van een andere partij: het register van de minister met ontvreemde, vermiste en van rechtswege vervallen reisdocumenten en identiteitskaarten, ter voorkoming en bestrijding van fraude (Paspoortwet art. 4a). De gemeente levert de gegevens door vermissing en verval te registreren. Geen pagina; vermeld bij Verwerken vermissing reisdocument.'
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-paspoortbesluit-bwbr0044308
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 33
+    regel: 30
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
     data_object: nee
     genoemd_begrip: Verwerken vermissing reisdocument
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-paspoortbesluit-bwbr0044308

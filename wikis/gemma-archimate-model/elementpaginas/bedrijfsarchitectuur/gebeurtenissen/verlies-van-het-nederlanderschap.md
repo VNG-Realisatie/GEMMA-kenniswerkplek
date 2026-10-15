@@ -2,7 +2,7 @@
 id: verlies-van-het-nederlanderschap
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Verlies van het Nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -27,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verlies-van-het-nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -60,19 +60,14 @@ Gebeurtenis. Uitkomst van de beslistabel: Gedrag, *toestandsverandering* (kern j
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: toestandsverandering. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip (Rijkswet art. 15, 16); Utrecht: de Nederlandse nationaliteit verliezen; gebeurtenis in de BRP (HUP Nederlandse nationaliteit). [Rijkswet op het Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md), [Utrecht nationaliteit opgeven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen.md), [HUP Nederlandse nationaliteit](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nederlandse-nationaliteit.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester bevestigt de afstand en de gemeente verwerkt het verlies in de basisregistratie personen en laat reisdocumenten innemen (Besluit art. 63, 64; HUP Nederlandse nationaliteit). [Besluit verkrijging en verlies Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [HUP Nederlandse nationaliteit](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nederlandse-nationaliteit.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige gebeurtenis met eigen gevolgen voor BRP en reisdocument (HUP Nationaliteit). [HUP Nationaliteit](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nationaliteit.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: verandert de toestand van het Nederlanderschap, kernobject van dit onderwerp. [Rijkswet op het Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gebeurt. [Rijkswet op het Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) |
-| **toestandsverandering**: Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? | Ja, op één moment verliest de persoon het Nederlanderschap: door afstand, het vrijwillig verkrijgen van een andere nationaliteit, langdurig hoofdverblijf buiten het Koninkrijk en de EU, of intrekking (Rijkswet art. 15). [Rijkswet op het Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke persoon die het Nederlanderschap verliest. [HUP Nederlandse nationaliteit](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nederlandse-nationaliteit.md) |
-| **leidt tot gedrag**: Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? | Ja, start Bijhouden persoonsgegevens: beëindigen van de Nederlandse nationaliteit en opnieuw opnemen van vreemde of onbekende nationaliteiten (HUP Nederlandse nationaliteit); en het verval van een Nederlands reisdocument van rechtswege (Paspoortwet art. 47 lid 1 onder a; HUP Nationaliteit). [HUP Nederlandse nationaliteit](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nederlandse-nationaliteit.md), [Paspoortwet](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Nationaliteit](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nationaliteit.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Rijkswet op het Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738.md) |
+| **leidt tot gedrag**: Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? | Ja, met [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md). |
 
 ### Relaties
 

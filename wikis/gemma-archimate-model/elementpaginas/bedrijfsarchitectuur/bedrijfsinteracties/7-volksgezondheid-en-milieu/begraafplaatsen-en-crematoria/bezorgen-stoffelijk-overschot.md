@@ -2,7 +2,7 @@
 id: bezorgen-stoffelijk-overschot
 type: bedrijfsinteractie
 archimate_type: business-interaction
-status: goedgekeurd
+status: review
 naam: Bezorgen stoffelijk overschot
 onderwerpen:
 - lijkbezorging
@@ -25,7 +25,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bezorgen-stoffelijk-overschot.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?
 
 ## Betekenis
 
@@ -64,24 +68,19 @@ Bedrijfsinteractie. Uitkomst van de beslistabel: Gedrag, *gezamenlijk gedrag* (k
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 46 zijn nee.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: gezamenlijk gedrag. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de lijkbezorging is de kern van de wet en van de gemeentelijke taak; bezorgen is de werkwoordsvorm (art. 1, 18). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente schouwt, geeft verlof, begraaft en cremeert, en zorgt voor de lijkbezorging als niemand anders dat doet (art. 4, 11, 21, 33). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig: het proces van overlijden tot de bezorging van het lijk. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **gezamenlijk gedrag**: Kan het alleen door twee of meer partijen samen worden uitgevoerd, zoals een ketensamenwerking waarin de bedrijfsprocessen van de partijen samenkomen? | Ja, de gemeente als overheid, de houder van de begraafplaats of het crematorium en de officier van justitie voeren het samen uit, elk onder eigen verantwoordelijkheid: bij een niet-natuurlijke dood geeft de officier de verklaring van geen bezwaar af, zonder welke geen verlof wordt verleend, en een vervroegde uitvaart vraagt zijn instemming (art. 10, 12, 17); de houder begraaft of cremeert (art. 23, 49). Niemand stuurt het geheel aan: een estafette (IK 27-34), in ArchiMate een bedrijfsinteractie waarin de bedrijfsprocessen van de partijen samenkomen (PH 144, 146). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [GEMMA Procesarchitectuur Proceshiërarchie](../../../../../modellen/gemma/bronduidingen/overig/2026-vng-gemma-proceshierarchie.md), [GEMMA Procesarchitectuur Impact van ketensamenwerking](../../../../../modellen/gemma/bronduidingen/overig/2026-vng-gemma-impact-ketensamenwerking.md) |
-| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, ketenpartner (de officier van justitie, art. 10, 12, 17), naast de rollen van de gemeente in de bedienende processen: Gemeentelijke lijkschouwer, Ambtenaar van de burgerlijke stand, Houder van de begraafplaats, Houder van het crematorium en Beslisser (art. 3, 11, 21, 23, 49). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, werkt het lijk bij, van overlijden tot bezorging (art. 1, 3, 11). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, het overlijden (art. 3, 16). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Ketenpartner](../../../rollen/ketenpartner.md). |
+| **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, met [Stoffelijk overschot](../../../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md). |
+| **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, met [Overlijden](../../../gebeurtenissen/overlijden.md). |
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een bezorgd lijk: begraven, gecremeerd of ontleed, met een bestemming voor de as (art. 1, 18 lid 2, 59). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elk overlijden. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, wet op de lijkbezorging art. 3–22a: schouwing, verlof, termijnen en de zorg van de burgemeester. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, degene die in de lijkbezorging voorziet, meestal een nabestaande (art. 18). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki of in het GEMMA-model. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
 

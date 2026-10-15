@@ -2,7 +2,7 @@
 id: verzoek-uitdaagrecht
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Verzoek uitdaagrecht
 onderwerpen:
 - participatie
@@ -29,7 +29,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verzoek-uitdaagrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -67,17 +67,15 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+**Vak**: bedrijfslaag, passief (Bedrijfsobject, Afspraak, Representatie (geen pagina)). **Hoofdkenmerk**: ding. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, verzoek bij het college om een taak over te nemen of een initiatief te ondersteunen, met indieningsvereisten (var. 1 art. 6, var. 2 art. 11). [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md), [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het college ontvangt en beoordeelt het verzoek. [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als verzoek van een indiener. [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij participatie. [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elk verzoek heeft een indiener en omschrijft de taak of de gewenste overheidsparticipatie, de reden en het beoogde resultaat (var. 1 art. 6 lid 2; var. 2 art. [11] lid 2). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, wordt ingediend, eventueel aangevuld, doorgezonden en toegewezen of afgewezen, met een openbare reactie (var. 1 art. 6, [8]; var. 2 art. [11], [13]). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, behandelen verzoek uitdaagrecht bewerkt het: het college neemt het in ontvangst, kan aanvullende informatie opvragen en zendt het door; het bevoegde bestuursorgaan wijst het toe of af (var. 1 art. 6 lid 5, [8]; var. 2 art. [11] lid 5, [13]). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Behandelen verzoek uitdaagrecht](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md). |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, de bronnen noemen geen breder begrip: zij spreken van een verzoek waarop het bestuursorgaan reageert en dat het toewijst of afwijst, niet van een aanvraag om een besluit (var. 1 art. [8]; Awb art. 1:3 lid 3). Of het een specialisatie van Aanvraag is, staat in de vragen. [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md), [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 
 ### Relaties

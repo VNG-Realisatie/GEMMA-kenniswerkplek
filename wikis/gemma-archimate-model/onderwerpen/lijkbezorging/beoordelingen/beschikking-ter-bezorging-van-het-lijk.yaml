@@ -1,23 +1,8 @@
 begrip: Beschikking ter bezorging van het lijk
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wettelijk begrip (art. 19).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gemeentelijk:
     waarde: nee
     onderbouwing: Wilsbeschikking van de overledene; de gemeente beslist er niet over en ziet haar niet.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 toelichting: 'Buiten scope: wilsbeschikking van de overledene (art. 19).'
 onderwerpen:
 - lijkbezorging
@@ -41,3 +26,5 @@ beslist:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst

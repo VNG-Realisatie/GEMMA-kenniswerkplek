@@ -1,71 +1,18 @@
 begrip: Afgeven verklaring omtrent het gedrag
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het ontvangen, onderzoeken en afgeven van de VOG is geregeld in de Wet justitiële en strafvorderlijke gegevens (art. 28 tot en met 39); gemeenten bieden de aanvraag aan (UPL nr. 434; Utrecht).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester neemt de aanvraag in ontvangst, onderzoekt de volledigheid en de identiteit en zendt haar door aan de minister (Wet justitiële en strafvorderlijke gegevens art. 30).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: het kernobject Verklaring omtrent het gedrag is van dit onderwerp (UPL taakveld 0.2).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per aanvraag doorlopen, van ontvangst tot afgifte of weigering.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: 'De Aanvrager van de verklaring omtrent het gedrag dient de aanvraag in (Wet justitiële en strafvorderlijke gegevens art. 33); Ketenpartner: het Rijk via de minister van Justitie en Veiligheid, in de praktijk Justis, beslist (art. 35, 37; Utrecht).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+    naar:
+    - ketenpartner
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: 'Registreert en beëindigt de verklaring: de aanvraag wordt ontvangen, onderzocht en afgegeven of geweigerd (Wet justitiële en strafvorderlijke gegevens art. 30, 35, 37); toetst de inschrijving in de basisregistratie personen en de identiteit (art. 30).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    naar:
+    - verklaring-omtrent-het-gedrag
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag om afgifte van de verklaring, aan de balie of online (Wet justitiële en strafvorderlijke gegevens art. 30; Utrecht).
@@ -112,14 +59,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het ontvangen en onderzoeken van een aanvraag voor een verklaring omtrent het gedrag en het afgeven of weigeren ervan, door gemeente en minister.
 beschrijving:
 - In het Europese deel van Nederland ontvangt de burgemeester de aanvraag van een natuurlijk persoon die als ingezetene in zijn gemeente staat, onderzoekt hij de volledigheid van de gegevens, verschaft hij zich zekerheid over de identiteit en zendt hij de aanvraag terstond door aan de minister; de gemeente kan een vergoeding verlangen en is de minister een vergoeding verschuldigd (Wet justitiële en strafvorderlijke gegevens art. 30, 39).
@@ -162,11 +101,14 @@ besluiten:
   besluit: 'Orkestratie (IK 27): de minister is verantwoordelijk voor de verklaring, de gemeente voert de ontvangst en het onderzoek van de aanvraag voor hem uit (Wet justitiële en strafvorderlijke gegevens art. 30, 35-37). Geen bedrijfsinteractie; blijft het levensloopproces van Verklaring omtrent het gedrag, met het deel van de minister in de beschrijving, en aggregeert het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag.'
   gevolg: verwerkt
   zekerheid: kennis
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 28
+    regel: 25
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -174,7 +116,7 @@ beslist:
     data_object: nee
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2025-vng-upl-producten-en-diensten-extern

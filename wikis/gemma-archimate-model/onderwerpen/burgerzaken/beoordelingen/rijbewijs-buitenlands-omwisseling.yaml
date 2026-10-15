@@ -1,62 +1,8 @@
 begrip: Rijbewijs buitenlands omwisseling
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 361, rijbewijs buitenlands omwisseling), en rubriek Rijbewijs buitenland bij Utrecht (hubpagina Burgerzaken).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-    - 2026-utrecht-burgerzaken
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt de aanvraag in ontvangst, neemt het buitenlandse rijbewijs in, stuurt het met de aanvraag naar de RDW en reikt het Nederlandse rijbewijs uit (Reglement rijbewijzen art. 28, 109; Utrecht).
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort primair bij burgerzaken: dienst van Beheren rijbewijzen (UPL taakveld 0.2).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een afgebakende prestatie die de gemeente aanbiedt, beschreven vanuit de aanvrager.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De aanvrager krijgt een Nederlands rijbewijs in ruil voor zijn buitenlandse rijbewijs, als de RDW akkoord is.
@@ -76,11 +22,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Behandelen aanvraag omwisseling buitenlands rijbewijs.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+    naar:
+    - behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -89,9 +32,6 @@ kenmerken:
     onderbouwing: De UPL noemt het als eigen product.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het omwisselen van een buitenlands rijbewijs voor een Nederlands rijbewijs, voor wie in Nederland komt wonen.
 beschrijving:
 - 'De aanvrager maakt twee afspraken, voor het aanvragen en voor het afhalen, en levert het buitenlandse rijbewijs in; de afhaalafspraak volgt pas als de RDW laat weten dat het Nederlandse rijbewijs klaarligt (Utrecht). De UPL kent het product in persoon en met de digitale dienstverlening van de Single Digital Gateway (UPL nr. 361: kanaal In Persoon, SDG).'
@@ -106,18 +46,23 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+- 2026-utrecht-burgerzaken
+- 2026-rijk-reglement-rijbewijzen-bwbr0008074
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen

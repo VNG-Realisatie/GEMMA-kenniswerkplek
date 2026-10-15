@@ -8,7 +8,7 @@ titel: Gebeurtenis — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Business Event* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `gebeurtenis`
+*Business Event* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/gedrag-intern` · paginatype `gebeurtenis`
 
 | Afspraak | Inhoud |
 |---|---|

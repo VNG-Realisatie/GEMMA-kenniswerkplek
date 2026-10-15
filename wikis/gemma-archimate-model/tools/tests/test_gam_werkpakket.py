@@ -5,7 +5,7 @@ import pytest
 import yaml
 
 import werkpakket
-from gam_hulp import KENMERKEN_BO
+from gam_hulp import KENMERKEN_BO, VELDEN_BO
 from llmwiki import beoordeling, sources
 
 WET = "2026-rijk-voorbeeldwet-wettekst"
@@ -83,7 +83,7 @@ def wiki(archimate_repo, tmp_path):
                                 "toelichting": "UPL nr. 64."}),
         ("behandelen-bezwaar", "Behandelen bezwaar", {"kernobject": "bezwaar"}),
     ]:
-        data = {"begrip": naam, "onderwerpen": ["demo"], "kenmerken": _kenmerken(), "definitie": f"Definitie {naam}.",
+        data = {"begrip": naam, "onderwerpen": ["demo"], **VELDEN_BO, "kenmerken": _kenmerken(), "definitie": f"Definitie {naam}.",
                 **extra, "beslist": {"uitkomst": {"soort": "element", "archimate_type": "business-object",
                                                   "paginatype": "bedrijfsobject"}}, "status": "review"}
         beoordeling.schrijf(demo / "beoordelingen" / f"{bid}.yaml", data)

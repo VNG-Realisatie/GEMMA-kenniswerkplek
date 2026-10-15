@@ -2,7 +2,7 @@
 id: rijbewijs
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Rijbewijs
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rijbewijs.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- gegevensobject zonder sterke GGM-match
 
 ## Betekenis
 
@@ -62,19 +66,16 @@ Bedrijfsobject, niveau kernobject. Uitkomst van de beslistabel: Passief (kern ja
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: bedrijfslaag, passief (Bedrijfsobject, Afspraak, Representatie (geen pagina)). **Hoofdkenmerk**: ding. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wetsbegrip en UPL-product: het rijbewijs, bedoeld in artikel 107 Wegenverkeerswet 1994 (art. 1 onder m); gangbaar in de gemeentelijke dienstverlening (UPL nr. 360; Utrecht). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester besluit tot afgifte, geeft het rijbewijs af en reikt het uit, voor wie als ingezetene met een adres in zijn gemeente staat (Wegenverkeerswet 1994 art. 116, 118a, 120a). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een document met een eigen afgiftedatum, geldigheidsduur en levensloop per houder (Wegenverkeerswet 1994 art. 118a, 122, 123). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: kernobject van Beheren rijbewijzen (UPL taakveld 0.2). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elk rijbewijs is afgegeven aan één houder voor een of meer categorieën, met een afgiftedatum (Wegenverkeerswet 1994 art. 118, 118a). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, wordt afgegeven en uitgereikt, vernieuwd of vervangen, en verliest zijn geldigheid door het verstrijken van de geldigheidsduur, omwisseling, overlijden of aangifte van vermissing (Wegenverkeerswet 1994 art. 119, 120, 122, 123). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, beheren rijbewijzen neemt de aanvraag in ontvangst, geeft het rijbewijs af, reikt het uit en neemt het oude rijbewijs in (Wegenverkeerswet 1994 art. 113, 116, 119 lid 2, 120a). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Behandelen aanvraag rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md), [Beheren rijbewijzen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-rijbewijzen.md), [Verwerken vermissing rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md). |
 | **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, het rijbewijs staat in het rijbewijzenregister van de RDW en kan een publiek identificatiemiddel bevatten (Wegenverkeerswet 1994 art. 111 lid 5, 126; Utrecht). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki; het beginnersrijbewijs, het bromfietsrijbewijs, het groot rijbewijs, het vervangend rijbewijs en het internationaal rijbewijs zijn specialisaties (Wegenverkeerswet 1994 art. 117, 120; Reglement rijbewijzen art. 105a; Utrecht). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Reglement rijbewijzen](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
 
 ### Specialisaties
 

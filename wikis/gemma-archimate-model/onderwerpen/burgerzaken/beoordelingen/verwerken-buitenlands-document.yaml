@@ -1,71 +1,18 @@
 begrip: Verwerken buitenlands document
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: buitenlandse documenten inschrijven (Utrecht); de HUP verwerkt buitenlandse akten en lagere brondocumenten (HUP Overlijden buitenland).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-    - 2026-rvig-hup-overlijden-buitenland
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente van inschrijving verwerkt het document in de BRP (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-    - 2026-rvig-hup-overlijden-buitenland
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-    - 2026-rvig-hup-overlijden-buitenland
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-    - 2026-rvig-hup-overlijden-buitenland
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-    - 2026-rvig-hup-overlijden-buitenland
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Bijhoudingsgemeente en Beslisser (college) (Utrecht; HUP Overlijden buitenland).
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-    - 2026-rvig-hup-overlijden-buitenland
+    naar:
+    - beslisser
+    - bijhoudingsgemeente
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Bijwerkt de gegevens van de ingeschreven persoon op grond van het buitenlandse document (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+    naar:
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Het verzoek van de ingeschrevene met het buitenlandse document (Utrecht), of een melding van een gebeurtenis in het buitenland (HUP Overlijden buitenland).
@@ -93,9 +40,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie bij de ingeschreven persoon.'
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het verzoek of de melding tot de verwerking of het besluit.
@@ -112,24 +58,14 @@ kenmerken:
     - 2026-rvig-hup-overlijden-buitenland
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst BRP-inschrijving buitenlandse akte (UPL nr. 89).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - brp-inschrijving-buitenlandse-akte
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-    - 2026-rvig-hup-overlijden-buitenland
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het beoordelen van een buitenlands document over een gebeurtenis van de burgerlijke staat en het verwerken daarvan in de basisregistratie personen.
 beschrijving:
 - Het document moet gelegaliseerd en zo nodig vertaald zijn; de gemeente beoordeelt per geval of het volstaat en kan om andere stukken vragen; ontbreekt een akte, dan kan een lager brondocument dienen (Wet BRP art. 2.8, 2.51; HUP Overlijden buitenland; Utrecht). Een huwelijk of echtscheiding in strijd met de Nederlandse openbare orde wordt niet opgenomen (HUP Huwelijk/geregistreerd partnerschap). Een registratie van een in het buitenland gesloten huwelijk is verplicht; bij een vermoeden van een schijnhuwelijk stelt de gemeente onderzoek in (Utrecht Trouwen in het buitenland).
@@ -167,11 +103,11 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -179,7 +115,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
   - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland

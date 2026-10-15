@@ -1,60 +1,8 @@
 begrip: Verklaring van huwelijksbevoegdheid
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product in de UPL (nr. 437); Utrecht: trouwen in het buitenland.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De eigen gemeente of de laatste woongemeente geeft de verklaring af (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente op verzoek levert: een internationaal document voor een huwelijk in het buitenland (UPL nr. 437; Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De verklaring, zes maanden geldig (Utrecht).
@@ -73,9 +21,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Verstrekken uittreksels en verklaringen burgerlijke stand (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
+    naar:
+    - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -84,9 +31,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 437); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het verkrijgen van een internationaal document waaruit blijkt dat iemand mag trouwen, voor een huwelijk in het buitenland.
 beschrijving:
 - 'Utrecht: € 31,10 in 2026; daarnaast kan een ongehuwdverklaring nodig zijn, een internationaal uittreksel BRP met de burgerlijke staat (BRP-uittreksel). Grondslag: de Overeenkomst van München van 5 september 1980 (UPL nr. 437; 1980-munchen-overeenkomst-verklaring-huwelijksbevoegdheid-bwbv0003766, art. 1): elke verdragsstaat geeft zijn onderdaan die in het buitenland wil trouwen een verklaring volgens een meertalig model, zes maanden geldig en vrijgesteld van legalisatie (art. 7, 10). Het verdrag is bron en geen beleidskader: de Nederlandse uitvoering staat in het Burgerlijk Wetboek boek 1 art. 49a (2026-rijk-burgerlijk-wetboek-boek-1) en het Besluit burgerlijke stand 1994, die beleidskader zijn. De ambtenaar van de burgerlijke stand van de woonplaats geeft de verklaring af, na verificatie dat naar Nederlands recht geen beletselen tegen het huwelijk bestaan (art. 49a lid 2 en 3). Digitaal kanaal (UPL nr. 437).'
@@ -103,18 +47,20 @@ besluiten:
   besluit: De Overeenkomst van München 1980 is bron en geen beleidskader; de Nederlandse uitvoering is BW boek 1 art. 49a. Genoemd in de beschrijving van de dienst.
   gevolg: verwerkt
   zekerheid: kennis
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland

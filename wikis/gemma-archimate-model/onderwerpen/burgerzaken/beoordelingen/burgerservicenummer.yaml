@@ -3,30 +3,11 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar identificatienummer van een persoon (HUP Wijzigen BSN; Utrecht Inschrijven vanuit het buitenland).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-bsn
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college kent het BSN toe bij de inschrijving als ingezetene (HUP Wijzigen BSN).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-bsn
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: Een identificatienummer van de ingeschreven persoon; in het GGM een attribuut van NatuurlijkPersoon (HUP Wijzigen identificatienummers).
     bronnen:
     - 2026-rvig-hup-wijzigen-identificatienummers
-    - 2026-rvig-hup-wijzigen-bsn
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
     - 2026-rvig-hup-wijzigen-bsn
 toelichting: 'Eigenschap van Ingeschreven persoon: zijn identificatienummer. Het wijzigen ervan is het bedrijfsproces Wijzigen identificatienummers.'
 synoniemen:
@@ -46,3 +27,6 @@ beslist:
   - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
   - 2026-rvig-hup-wijzigen-identificatienummers
   herkomst: richtlijn
+bronnen:
+- 2026-rvig-hup-wijzigen-bsn
+- 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland

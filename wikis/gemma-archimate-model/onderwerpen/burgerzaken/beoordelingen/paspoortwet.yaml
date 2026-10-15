@@ -1,45 +1,8 @@
 begrip: Paspoortwet
+vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare naam van de rijkswet over reisdocumenten (BWBR0005212).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Geeft de burgemeester de bevoegdheid tot het in ontvangst nemen van de aanvraag, verstrekking, uitreiking, weigering, vervallenverklaring en inhouding (art. 26, 40, 42, 44, 50b).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde regeling als geheel (BWBR0005212).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -55,17 +18,16 @@ kenmerken:
     - 2026-rijk-paspoortwet-bwbr0005212
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 26 tot en met 41 (aanvraag en verstrekking), 42 (uitreiking), 44 tot en met 46 (weigering en vervallenverklaring), 5a, 31 en 47 (vermissing en verval), 50b tot en met 57 (inhouding): gedrag in Behandelen aanvraag reisdocument, Uitreiken reisdocument en de andere bedrijfsprocessen onder Beheren reisdocumenten.'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
+    naar:
+    - behandelen-aanvraag-reisdocument
+    - paspoort
+    - paspoort-tweede
+    - vluchtelingenpaspoort
+    - vreemdelingenpaspoort
+    - verwerken-vermissing-reisdocument
+    - vermissing-of-diefstal-reisdocument-doorgeven
+    - inhouden-reisdocument
+    - zakenpaspoort
 definitie: Rijkswet over de soorten reisdocumenten, de aanspraak erop en de aanvraag, verstrekking, uitreiking, vervallenverklaring, het verval en de inhouding.
 beschrijving:
 - De Paspoortwet (BWBR0005212) regelt de soorten reisdocumenten en wie er recht op heeft (art. 2, 9 tot en met 16), de registers van de minister (art. 4a, 4c), de rechten die de gemeente als gemeentelijke belasting heft (art. 7), de gronden en de signalering voor weigering of vervallenverklaring (hoofdstuk III), de aanvraag (hoofdstuk IV), de verstrekking, uitreiking en wijziging (hoofdstuk V), de weigering of vervallenverklaring (hoofdstuk VI), het verval van rechtswege (hoofdstuk VII) en de inhouding en inlevering (hoofdstuk VIII). De Nederlandse identiteitskaart heeft sinds 2026-10-01 alleen nog een eigen wet; de Paspoortwet noemt haar bij vermissing, signalering en inhouding.
@@ -143,18 +105,18 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
   vindplaats: art. 9, 26, 40 (nationaal paspoort); Utrecht regel 229
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

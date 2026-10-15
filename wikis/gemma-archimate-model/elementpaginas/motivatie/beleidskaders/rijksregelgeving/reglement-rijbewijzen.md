@@ -2,7 +2,7 @@
 id: reglement-rijbewijzen
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Reglement rijbewijzen
 onderwerpen:
 - burgerzaken
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling reglement-rijbewijzen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -53,19 +53,15 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de algemene maatregel van bestuur over rijbewijzen (BWBR0008074); de UPL noemt het als grondslag van vier producten. [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft de burgemeester de aanvraag van een rijbewijs bij de gemeente van inschrijving, de doorgeleiding naar de Dienst Wegverkeer in bepaalde gevallen en de inneming van een buitenlands rijbewijs (art. 27, 28, 29, 109). [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van de bedrijfsprocessen en diensten van het rijbewijs (UPL taakveld 0.2). [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, een concreet benoemde regeling als geheel (BWBR0008074). [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, algemene maatregel van bestuur van het Rijk. [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, art. 26 tot en met 29 en 33 (aanvraag bij de burgemeester), 35 (vernieuwing), 39 (vermissing), 45 (omwisseling), 105 tot en met 109 (afgifte, vervangend rijbewijs, inname): grondslag van Behandelen aanvraag rijbewijs, Behandelen aanvraag omwisseling buitenlands rijbewijs, Uitreiken rijbewijs, Verwerken vermissing rijbewijs en de diensten Rijbewijs aanvragen, Rijbewijs verlengen, Rijbewijs buitenlands omwisseling (UPL nr. 360 tot en met 363; nr. 362 rijbewijs gezondheidsverklaring is een onderdeel van Rijbewijs aanvragen: de controle van de verklaring van geschiktheid). [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Behandelen aanvraag rijbewijs](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md), [Behandelen aanvraag omwisseling buitenlands rijbewijs](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Verwerken vermissing rijbewijs](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md), [Rijbewijs aanvragen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-aanvragen.md), [Rijbewijs verlengen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-verlengen.md), [Rijbewijs buitenlands omwisseling](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-buitenlands-omwisseling.md), [Vermissing of diefstal rijbewijs doorgeven](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-rijbewijs-doorgeven.md). |
 
 ### Relaties
 

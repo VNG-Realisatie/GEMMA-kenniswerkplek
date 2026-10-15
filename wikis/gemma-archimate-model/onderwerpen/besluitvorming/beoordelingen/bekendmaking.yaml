@@ -1,59 +1,8 @@
 begrip: Bekendmaking
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product in de UPL (nr. 47, bekendmaking); gangbaar: de bekendmaking van een besluit (Awb art. 3:40).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het gemeentelijke bestuursorgaan maakt zijn besluiten bekend, door toezending aan de belanghebbenden of in het gemeenteblad (Awb art. 3:41, 3:42; Bekendmakingswet art. 6).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-bekendmakingswet-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 47).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: elk besluit treedt pas na bekendmaking in werking (Awb art. 3:40).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Iets wat de gemeente aanbiedt: een besluit kenbaar maken aan wie het aangaat.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie voor burgers en bedrijven: zij krijgen het besluit toegezonden of kunnen het in het gemeenteblad lezen, met de mogelijkheid van bezwaar en beroep (Awb art. 3:41–3:45; UPL nr. 47).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Het besluit is bekendgemaakt en treedt in werking; wie een zienswijze gaf, heeft een mededeling ontvangen (art. 3:40, 3:43).
@@ -77,9 +26,8 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Bekendmaken besluit (art. 3:40–3:45).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - bekendmaken-besluit
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -88,9 +36,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 47); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf de generieke dienst voor de bekendmaking van elk besluit, geen specialisatie van een generiek GEMMA-element; GEMMA kent geen dienst bekendmaking.
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -105,18 +50,22 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'Domein Bestuur in plaats van Fysieke leefomgeving uit de UPL-lijst van GEMMA: de bekendmaking geldt voor elk besluit (procesarchitectuur-terugmelding).'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- 2026-rijk-bekendmakingswet-wettekst
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst

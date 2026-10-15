@@ -1,74 +1,19 @@
 begrip: Uitvoeren adresonderzoek
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: adresonderzoek (Circulaire adresonderzoek; Utrecht).'
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente start het onderzoek en besluit over de uitkomst (Circulaire adresonderzoek par. 2, 4.6).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-    - 2026-nvvb-handreiking-adresonderzoek
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-    - 2026-nvvb-handreiking-adresonderzoek
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-    - 2026-nvvb-handreiking-adresonderzoek
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-    - 2026-nvvb-handreiking-adresonderzoek
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Bijhoudingsgemeente, Toezichthouder BRP (huisbezoek) en Beslisser (college) (Circulaire adresonderzoek 4.5, 4.6).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
+    naar:
+    - beslisser
+    - bijhoudingsgemeente
+    - toezichthouder-brp
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Stelt de verblijfplaats in onderzoek en wijzigt of beëindigt haar ambtshalve; legt een onderzoeksdossier aan (Circulaire adresonderzoek 3.2, 4.2, 4.8).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
+    naar:
+    - verblijfplaats
   aanleiding:
     waarde: ja
     onderbouwing: Een melding van een persoon of organisatie, een terugmelding, een LAA-signaal of een eigen constatering (Circulaire adresonderzoek par. 2; NVVB Handreiking adresonderzoek).
@@ -95,9 +40,8 @@ kenmerken:
     - 2026-rijk-besluit-brp-bwbr0034306
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: herstelt een verkeerde adresinschrijving (Circulaire adresonderzoek par. 2).'
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de melding, het signaal of de eigen constatering tot het besluit.
@@ -114,23 +58,14 @@ kenmerken:
     - 2023-rvig-circulaire-adresonderzoek-brp
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Onjuiste inschrijving op adres melden (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+    naar:
+    - onjuiste-inschrijving-op-adres-melden
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het onderzoeken of een persoon woont op het adres waarop hij is ingeschreven, en het besluiten over een juiste inschrijving.
 beschrijving:
 - Het adresonderzoek is het instrument waarmee de gemeente een verkeerde adresinschrijving verbetert; zij start het bij twijfel over de juistheid van adresgegevens (Circulaire adresonderzoek par. 2). Aanleidingen zijn een melding van een bewoner of organisatie, een terugmelding van een bestuursorgaan, een signaal uit de Landelijke Aanpak Adreskwaliteit (LAA), een eigen constatering of een aangifte van verhuizing (Circulaire adresonderzoek; NVVB Handreiking adresonderzoek). De gemeente legt een onderzoeksdossier aan, plaatst een aantekening in onderzoek, schrijft de persoon aan, kan een huisbezoek laten afleggen door een toezichthouder BRP en neemt na een voornemen een besluit; de melder wordt over het resultaat geïnformeerd (Circulaire adresonderzoek 3.2–4.7). Een richtlijn voor de doorlooptijd is tien weken.
@@ -162,11 +97,14 @@ relaties:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2023-rvig-circulaire-adresonderzoek-brp
   vindplaats: Na uw melding; Wet BRP art. 2.20 lid 2; Circulaire adresonderzoek 4.7 (melder)
-status: goedgekeurd
+bronnen:
+- 2023-rvig-circulaire-adresonderzoek-brp
+- 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -174,7 +112,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
   - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek

@@ -1,61 +1,9 @@
 begrip: Verzorgen burgerzaken
+vak: bedrijf/gedrag-intern
+soort_gedrag: groepeert_processen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare naam van het taakgebied burgerzaken (UPL, taakveld 0.2).
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college houdt de basisregistratie personen bij en verstrekt de gegevens (Wet BRP art. 1.4).
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Het overkoepelende gedrag van dit onderwerp.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Een groep van activiteiten.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen:
-    waarde: ja
-    onderbouwing: Groepeert de processen rond de gemeentelijke taak burgerzaken en wordt niet per geval doorlopen.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-  gegroepeerd_gedrag:
-    waarde: nee
-    onderbouwing: 'Geen functie meer: de taak groepeert processen.'
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: De rol Bijhoudingsgemeente, die de gemeente vervult (Wet BRP art. 1.1 onder h, 1.4).
@@ -68,24 +16,17 @@ kenmerken:
     - 2026-rijk-wet-brp-bwbr0033715
   omvat_processen:
     waarde: ja
-    onderbouwing: 'Per kernobject één proces: Bijhouden persoonsgegevens (Wet BRP hoofdstuk 2), Bijhouden burgerlijke stand (BW 1 titel 4), Beheren reisdocumenten (Paspoortwet hoofdstuk IV tot en met VIII), Beheren Nederlanderschap, Beheren stempassen, Beheren rijbewijzen (Wegenverkeerswet 1994 hoofdstuk VI) en Afgeven verklaring omtrent het gedrag (Wet justitiële en strafvorderlijke gegevens art. 28 tot en met 39).'
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+    naar:
+    - bijhouden-persoonsgegevens
+    - bijhouden-burgerlijke-stand
+    - beheren-reisdocumenten
+    - beheren-nederlanderschap
+    - beheren-stempassen
+    - beheren-rijbewijzen
+    - afgeven-verklaring-omtrent-het-gedrag
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor burgerzaken.
 definitie: 'Gemeentelijke taak rond burgerzaken: persoonsgegevens, burgerlijke stand, reisdocumenten, rijbewijzen, Nederlanderschap, kiesrecht en de VOG.'
 beschrijving:
 - 'Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42), neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit verkrijging en verlies Nederlanderschap art. 2), verstrekt stempassen, kiezerspassen en volmachtbewijzen (Kieswet art. J 7, K 4, L 11), geeft rijbewijzen af (Wegenverkeerswet 1994 art. 116) en ontvangt de aanvraag voor een verklaring omtrent het gedrag, die de minister afgeeft (Wet justitiële en strafvorderlijke gegevens art. 30, 37). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon, Bijhouden burgerlijke stand met de akte van de burgerlijke stand, Beheren reisdocumenten met het reisdocument, Beheren Nederlanderschap met het Nederlanderschap, Beheren stempassen met de stempas, Beheren rijbewijzen met het rijbewijs en Afgeven verklaring omtrent het gedrag met de verklaring omtrent het gedrag als kernobject.'
@@ -148,11 +89,18 @@ relaties:
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   vindplaats: art. 28-39
+bronnen:
+- 2026-rijk-wet-brp-bwbr0033715
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+- 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 status: afgewezen
 beslist:
   uitkomst:
     soort: element
-    regel: 27
+    regel: 24
     toelichting: Gedrag, *groepeert processen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -161,7 +109,7 @@ beslist:
     - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   voor_te_leggen:
   - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
   bronnen:

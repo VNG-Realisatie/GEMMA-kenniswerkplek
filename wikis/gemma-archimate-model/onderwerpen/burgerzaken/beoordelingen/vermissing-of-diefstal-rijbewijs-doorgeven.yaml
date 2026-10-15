@@ -1,56 +1,8 @@
 begrip: Vermissing of diefstal rijbewijs doorgeven
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het product Vermissing Rijbewijs bij Utrecht, met online doorgeven bij de RDW; de wet kent het verlies van geldigheid door aangifte van vermissing (Wegenverkeerswet 1994 art. 123 lid 1 onder h).
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt aan de balie de vermissingsverklaring op, op afspraak of bij een nieuwe aanvraag (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: 'Bestaat zelfstandig: een eigen afspraakproduct zonder nieuwe aanvraag (Utrecht).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: dienstverlening rond het rijbewijs aan de balie (Utrecht).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een afgebakende prestatie die de gemeente aanbiedt, beschreven vanuit de aanvrager.
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De geregistreerde vermissing van het rijbewijs; het rijbewijs is niet meer geldig (Utrecht).
@@ -68,20 +20,11 @@ kenmerken:
     - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Verwerken vermissing rijbewijs.
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+    naar:
+    - verwerken-vermissing-rijbewijs
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het melden bij de gemeente dat een rijbewijs kwijt of gestolen is, zodat het rijbewijs ongeldig wordt en misbruik wordt voorkomen.
 beschrijving:
 - Gratis; online bij de RDW met DigiD, waar de vermissing direct wordt geregistreerd, of aan de balie met een eigen afspraak, waar men de vermissingsverklaring invult (Utrecht). Bij diefstal of beroving adviseert Utrecht ook aangifte te doen bij de politie. De UPL kent geen product voor deze melding; zie de terugmelding.
@@ -97,18 +40,21 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+- 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622

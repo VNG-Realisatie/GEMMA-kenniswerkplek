@@ -1,67 +1,19 @@
 begrip: Stellen andere termijn
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wettelijk: de burgemeester kan een andere termijn stellen (art. 17); gangbaar als uitvaart vervroegen of uitstellen (RVO).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester van de gemeente waar het lijk zich bevindt, stelt de termijn (art. 17 lid 1).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, met een eigen besluit en beroep (art. 17).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per aanvraag doorlopen, van aanvraag tot besluit (art. 17; RVO).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Beslisser (burgemeester) en Ketenpartner (officier van justitie, bij vervroegen) (art. 17 lid 1).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beslisser
+    - ketenpartner
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Legt de andere termijn vast als beschikking en werkt het lijk bij (art. 17).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beschikking
+    - stoffelijk-overschot
   aanleiding:
     waarde: ja
     onderbouwing: Een aanvraag van de nabestaanden, via de uitvaartondernemer, bij de gemeente waar de persoon is overleden (RVO).
@@ -85,9 +37,8 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: wijkt af van de termijn voor begraving of crematie (art. 16, 17).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - toestaan-lijkbezorging
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de aanvraag tot de vergunning voor een andere termijn.
@@ -104,24 +55,14 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Uitvaart vervroegen of uitstellen (art. 17; RVO).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
+    naar:
+    - uitvaart-vervroegen-of-uitstellen
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een besluit, niet in een benoemde toestandsverandering.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki of in het GEMMA-model.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Het toestaan dat een overledene eerder dan 36 uur of later dan de zesde werkdag na het overlijden wordt begraven of gecremeerd.
 beschrijving:
 - Begraving of crematie geschiedt niet eerder dan 36 uur en uiterlijk op de zesde werkdag na het overlijden (Wet op de lijkbezorging art. 16). Na een arts te hebben gehoord kan de burgemeester van de gemeente waar het stoffelijk overschot zich bevindt een andere termijn stellen; binnen 36 uur alleen in overeenstemming met de officier van justitie (art. 17 lid 1). Tegen het besluit staat binnen 24 uur beroep open bij de commissaris van de Koning (art. 17 lid 2). De nabestaanden vragen de vergunning aan bij de gemeente waar de persoon is overleden, meestal via de uitvaartondernemer (RVO).
@@ -163,11 +104,13 @@ besluiten:
 - datum: '2026-10-04'
   besluit: Eigen deelproces dat de dienst Uitvaart vervroegen of uitstellen realiseert, niet de functie Lijkbezorging. Herziet het besluit van 2026-10-01.
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -175,7 +118,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden

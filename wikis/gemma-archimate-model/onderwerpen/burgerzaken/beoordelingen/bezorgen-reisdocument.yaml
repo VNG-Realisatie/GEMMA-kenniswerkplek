@@ -1,42 +1,12 @@
 begrip: Bezorgen reisdocument
+hoofdkenmerk: gedrag
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Behandelen aanvraag reisdocument
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Laten bezorgen (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente laat het document via een bezorgpartij bezorgen op een adres in Nederland (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: Een manier van uitreiken, geen eigen handeling naast Uitreiken reisdocument (Utrecht; Paspoortwet art. 1 onder e).
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
 toelichting: 'Processtap zonder pagina: een andere manier van uitreiken, per huishouden op een adres in Nederland, niet bij een spoedaanvraag (Utrecht). Vermeld bij Uitreiken reisdocument.'
 beslist:
   uitkomst:
@@ -50,3 +20,5 @@ beslist:
   bronnen:
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
   herkomst: overig
+bronnen:
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

@@ -2,7 +2,7 @@
 id: besluit-verkrijging-en-verlies-nederlanderschap
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Besluit verkrijging en verlies Nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit-verkrijging-en-verlies-nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -54,19 +54,15 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, algemene maatregel van rijksbestuur bij de Rijkswet; de UPL noemt haar als grondslag van de naturalisatieceremonie en Utrecht als grondslag van het opgeven van de nationaliteit (UPL nr. 261). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht nationaliteit opgeven](../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, wijst in het Europese deel van Nederland de burgemeester aan voor het in ontvangst nemen van optieverklaringen, naturalisatieverzoeken en verklaringen van afstand en het uitreiken van bevestigingen en uittreksels (art. 2, 63). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandige regeling. [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: grondslag van de bedrijfsprocessen onder Beheren Nederlanderschap. [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, een concreet benoemde algemene maatregel van rijksbestuur als geheel (BWBR0013605). [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, algemene maatregel van rijksbestuur. [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, art. 60a is de grondslag van de dienst Naturalisatieceremonie (UPL nr. 261); art. 7-12, 31-38, 60a-60b en 62-64 regelen de behandeling door de burgemeester in de bedrijfsprocessen onder Beheren Nederlanderschap. [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip in deze wiki. [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Naturalisatieceremonie](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieceremonie.md), [Behandelen optieverklaring](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md), [Behandelen naturalisatieverzoek](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-naturalisatieverzoek.md), [Behandelen verklaring van afstand](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md), [Rijkswet op het Nederlanderschap](rijkswet-op-het-nederlanderschap.md), [Bewijs van nederlanderschap](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md). |
 
 ### Relaties
 

@@ -1,44 +1,9 @@
 begrip: Register paspoortsignaleringen
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Signalering
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Naam in het Paspoortbesluit (art. 1.1) en de HUP (RPS) voor het register van art. 25 lid 3 Paspoortwet.
-    bronnen:
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-rvig-hup-signalering-verstrekking-reisdocument
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ontvangt er mededelingen uit en verwerkt de signalering (HUP Signalering).
-    bronnen:
-    - 2026-rvig-hup-signalering-verstrekking-reisdocument
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   wordt_bewerkt:
     waarde: ja
     onderbouwing: Raadplegen via de mededelingen van de minister (Paspoortwet art. 25 lid 4).
@@ -53,21 +18,17 @@ kenmerken:
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-rijk-paspoortbesluit-bwbr0044308
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-rvig-hup-signalering-verstrekking-reisdocument
 synoniemen:
 - naam: RPS
   context: dagelijks gebruik
 toelichting: 'Representatie, geen pagina: het register van de minister met de personen bij wie gronden tot weigering of vervallenverklaring bestaan (Paspoortwet art. 25 lid 3; Paspoortbesluit art. 1.1). Vermeld bij Signalering.'
+bronnen:
+- 2026-rijk-paspoortbesluit-bwbr0044308
+- 2026-rvig-hup-signalering-verstrekking-reisdocument
 beslist:
   uitkomst:
     soort: geen_pagina
-    regel: 19
+    regel: 16
     toelichting: Waarneembare vorm
     archimate_type: representation
     voorleggen: false

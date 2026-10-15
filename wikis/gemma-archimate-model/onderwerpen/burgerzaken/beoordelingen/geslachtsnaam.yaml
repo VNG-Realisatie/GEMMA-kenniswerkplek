@@ -2,22 +2,6 @@ begrip: Geslachtsnaam
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip; gangbaar: achternaam (BW 1 art. 5; Utrecht Achternaam kind kiezen).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente legt de naamskeuze vast en verwerkt naamswijzigingen (BW 1 art. 5, 7; Utrecht).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: 'Een gegeven van de persoon: zijn achternaam, met voornamen en eventuele adellijke titel (BW 1 art. 4, 5; HUP Vaststelling geslachtsnaam). GGM: NaamNatuurlijkPersoon bij de persoon.'
@@ -44,3 +28,7 @@ beslist:
   - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
   - 2026-rvig-hup-vaststelling-geslachtsnaam
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+- 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen

@@ -1,67 +1,19 @@
 begrip: Vaststellen dwangsom bij niet tijdig beslissen
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wettelijke taak (Awb art. 4:18): de dwangsom bij beschikking vaststellen; gangbaar als de dwangsom bij niet tijdig beslissen.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het gemeentelijke bestuursorgaan stelt verschuldigdheid en hoogte van de dwangsom vast en betaalt haar (art. 4:17, 4:18).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandig proces met een eigen beschikking, dat op elk te laat beslisproces kan volgen (art. 4:18).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: geldt voor elke beschikking op aanvraag (Awb § 4.1.3.2).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Iets wat gedaan wordt: de dwangsom vaststellen.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: 'Wordt per ingebrekestelling van begin tot eind doorlopen: ingebrekestelling ontvangen, verschuldigdheid en hoogte vaststellen, betalen (art. 4:17, 4:18).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: nee
-    onderbouwing: Een procedure, beschreven naar hoe de dwangsom wordt vastgesteld; wat de afnemer krijgt is de dienst Dwangsom bij niet tijdig beslissen.
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Beslisser (het bestuursorgaan stelt de dwangsom bij beschikking vast) en Belanghebbende (de aanvrager stelt in gebreke) (art. 4:17 lid 3, 4:18).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - belanghebbende
+    - beslisser
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Raadpleegt de aanvraag en haar beslistermijn; legt de beschikking tot vaststelling van de dwangsom vast (art. 4:17, 4:18).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - beschikking
+    - aanvraag
   aanleiding:
     waarde: ja
     onderbouwing: Een schriftelijke ingebrekestelling door de aanvrager na het verstrijken van de beslistermijn (art. 4:17 lid 3).
@@ -102,24 +54,14 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Dwangsom bij niet tijdig beslissen (UPL rij 330; art. 4:17).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-logius-upl-actueel
+    naar:
+    - dwangsom-bij-niet-tijdig-beslissen
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf het generieke proces voor elke beschikking op aanvraag, geen specialisatie van een generiek GEMMA-element.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -166,11 +108,11 @@ besluiten:
 - datum: '2026-10-12'
   besluit: De ingebrekestelling start het proces en is geen eigen element.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -178,7 +120,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-logius-upl-actueel

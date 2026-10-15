@@ -2,7 +2,7 @@
 id: rijk
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Rijk
 onderwerpen:
 - bestuur-en-organisatie
@@ -30,7 +30,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rijk.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -56,20 +56,16 @@ Actor. Uitkomst van de beslistabel: Handelende partij (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: handelende partij. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbaar: de rijksoverheid; in de wetten handelt het Rijk via Onze Minister (Paspoortwet art. 1 onder l, art. 2 lid 3–4; Wet BRP art. 1.4 lid 2; Besluit verkrijging en verlies Nederlanderschap art. 37). GEMMA-actor Rijk. [Paspoortwet](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wet BRP](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [Besluit verkrijging en verlies Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, structurele, wettelijke relatie met elke gemeente: de minister van Justitie en Veiligheid beslist over het naturalisatieverzoek dat de burgemeester met advies toezendt (Besluit verkrijging en verlies Nederlanderschap art. 37), de minister van BZK houdt de niet-ingezetenen bij in de BRP en laat de reisdocumenten maken (Wet BRP art. 1.4 lid 2; Paspoortwet art. 2 lid 3). [Besluit verkrijging en verlies Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [Wet BRP](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [Paspoortwet](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig: de Staat der Nederlanden als bestuurslaag, met eigen organen. [Wet BRP](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, generiek: het Rijk is partij in meer onderwerpen; thuis in Bestuur en organisatie, zoals Gemeente (regel Thuishoren). [Besluit verkrijging en verlies Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **handelende partij**: Is het een organisatie, afdeling of persoon die activiteiten kan uitvoeren? | Ja, een partij die activiteiten uitvoert: beslist over naturalisatie, houdt registers bij en laat documenten maken (Besluit verkrijging en verlies Nederlanderschap art. 37, 38; Paspoortwet art. 2 lid 3). [Besluit verkrijging en verlies Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md), [Paspoortwet](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **los van verantwoordelijkheid**: Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | Ja, bestaat los van elke verantwoordelijkheid in burgerzaken, met eigen taken op vele terreinen. [Wet BRP](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) |
 | **eigen rechtspersoon**: Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | Ja, de Staat is rechtspersoon (BW Boek 2 art. 1); de ministers zijn zijn organen. [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md) |
-| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, ketenpartner in Beheren Nederlanderschap: de minister van Justitie en Veiligheid beslist over de naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38). [Besluit verkrijging en verlies Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
+| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, met [Ketenpartner](../rollen/ketenpartner.md). |
 | **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, de bestuurslaag als geheel, waarmee elke gemeente in dezelfde rol te maken heeft; zo ook Provincie en Waterschap. Afzonderlijke ministeries en rijksdiensten zijn geen eigen actor. [Besluit verkrijging en verlies Nederlanderschap](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere actor: de Staat staat in de wet als eigen rechtspersoon naast de provincies, de gemeenten en de waterschappen (BW Boek 2 art. 1 lid 1). [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md) |
 
 ### Relaties
 

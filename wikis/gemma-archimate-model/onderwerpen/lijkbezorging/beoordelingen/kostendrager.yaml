@@ -1,53 +1,16 @@
 begrip: Kostendrager
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wie de kosten draagt; de wet legt de kosten van de lijkbezorging door de burgemeester bij de gemeente (art. 22).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente draagt de kosten en kan ze verhalen (art. 22).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen verantwoordelijkheid, los van de uitvoering (art. 21, 22).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De verantwoordelijkheid voor de kosten, die de gemeente vervult (art. 22).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Verzorgen gemeentebegrafenis: de kosten komen ten laste van de gemeente, met verhaal op de nalatenschap (art. 22).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - verzorgen-gemeentebegrafenis
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -60,14 +23,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere rol in deze wiki of het GEMMA-model.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Komt nu alleen in de lijkbezorging voor.
 definitie: Verantwoordelijkheid voor het dragen van de kosten van een voorziening of handeling.
 per_onderwerp:
   lijkbezorging:
@@ -86,18 +41,18 @@ relaties:
   vindplaats: art. 22
 beschrijving:
 - Een kostendrager betaalt voor een voorziening of handeling die een ander uitvoert of die hij zelf laat uitvoeren, en kan de kosten soms verhalen.
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving

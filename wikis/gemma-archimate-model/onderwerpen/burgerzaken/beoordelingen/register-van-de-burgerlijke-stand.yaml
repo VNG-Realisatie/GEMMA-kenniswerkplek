@@ -1,42 +1,8 @@
 begrip: Register van de burgerlijke stand
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip: voor iedere gemeente registers van geboorten, huwelijken, geregistreerde partnerschappen en overlijden (BW 1 art. 17).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente houdt de registers (BW 1 art. 17; Besluit burgerlijke stand art. 5-7).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per soort en per jaar een register (Besluit burgerlijke stand art. 6, 7).
@@ -58,10 +24,12 @@ kenmerken:
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
 genoemd_begrip: Akte van de burgerlijke stand
 toelichting: 'Representatie, geen pagina: de registers zijn de vorm waarin de akten van de burgerlijke stand worden opgenomen en bewaard (BW 1 art. 17; Besluit burgerlijke stand art. 6). Vermeld bij Akte van de burgerlijke stand; precedent Register van begraven lijken.'
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
 beslist:
   uitkomst:
     soort: geen_pagina
-    regel: 19
+    regel: 16
     toelichting: Waarneembare vorm
     archimate_type: representation
     voorleggen: false

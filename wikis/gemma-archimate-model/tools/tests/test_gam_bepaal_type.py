@@ -10,16 +10,18 @@ TOOLS = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(TOOLS))
 
 import bepaal_type as bt  # noqa: E402
+from gam_hulp import nieuwe_vorm  # noqa: E402
 
 WIKI = TOOLS.parent
 
 
 def beoordeling(ja: set[str], **extra) -> dict:
-    return {
+    """Een beoordeling met elk kenmerk beantwoord; het hoofdkenmerk en de soort gedrag als keuzevelden."""
+    return nieuwe_vorm({
         "begrip": "test",
         "kenmerken": {s: {"waarde": "ja" if s in ja else "nee", "onderbouwing": "test"} for s in bt.SLEUTELS},
         **extra,
-    }
+    })
 
 
 SCOPE = {"herkenbaar", "gemeentelijk"}
@@ -48,10 +50,8 @@ def test_elke_regel_van_stap_0_tot_4_heeft_een_geval():
         beoordeling(SCOPE | {"slechts_eigenschap"}, genoemd_begrip="Pand"),
         beoordeling(SCOPE, genoemd_begrip="Besluit"),
         beoordeling(SCOPE | {"eigen_identiteit"}),
-        beoordeling(BO | {"per_keer_doorlopen"}),
-        beoordeling(ROL | {"handelende_partij"}),
+        {**beoordeling(PROCES), "vak": "bedrijf/passief"},
         beoordeling(SAMENWERKING),
-        beoordeling(BASIS | {"gedrag", "aanbod_als_geheel"}),
         beoordeling(ACTOR),
         beoordeling(ROL),
         beoordeling(PRODUCT),
@@ -59,7 +59,6 @@ def test_elke_regel_van_stap_0_tot_4_heeft_een_geval():
         beoordeling(BASIS | {"plaats"}),
         beoordeling(BELEIDSKADER),
         beoordeling(PROCES),
-        beoordeling(BASIS | {"gedrag"}),
         beoordeling(BASIS | {"waarneembare_vorm"}, genoemd_begrip="Aanslag"),
         beoordeling(BO | {"afspraak"}),
         beoordeling(BO),
@@ -137,14 +136,13 @@ def test_specialisatieniveau():
 
 
 def test_actor_rol_en_samenwerking():
-    houder = bt.evalueer(beoordeling(ROL | {"handelende_partij"}))
-    assert houder.paginatype == "rol"
-    burgemeester = bt.evalueer(beoordeling(ACTOR | {"hoedanigheid"}))
-    assert burgemeester.paginatype == "actor"
+    assert bt.evalueer(beoordeling(ROL)).paginatype == "rol"
+    assert bt.evalueer(beoordeling(ACTOR)).paginatype == "actor"
     assert bt.evalueer(beoordeling(ACTOR - {"los_van_verantwoordelijkheid"})).soort == "conflict"
     assert bt.evalueer(beoordeling(ROL | {"los_van_verantwoordelijkheid"})).soort == "conflict"
-    # GGD: organisatie en samenwerkingsverband met eigen rechtspersoon → actor
-    ggd = bt.evalueer(beoordeling(BASIS | {"handelende_partij", "samenwerkingsverband", "eigen_rechtspersoon",
+    # GGD: altijd een samenwerkingsverband, met eigen rechtspersoon → actor; los van de verantwoordelijkheid mag erbij
+    # (besluit 2026-10-15: in sommige processen treedt zij op als handelende partij, via een rol)
+    ggd = bt.evalueer(beoordeling(BASIS | {"samenwerkingsverband", "eigen_rechtspersoon", "los_van_verantwoordelijkheid",
                                            "vervult_een_rol", "soort_partij"}))
     assert ggd.paginatype == "actor"
     # Zorg- en Veiligheidshuis: zonder eigen rechtspersoon → bedrijfssamenwerking
@@ -212,11 +210,34 @@ def test_onvolledige_beoordeling_wordt_geweigerd():
     with pytest.raises(bt.BeoordelingFout) as exc:
         bt.evalueer(b)
     assert any("onderbouwing" in f for f in exc.value.fouten)
-    b = beoordeling(SCOPE)
-    del b["kenmerken"]["eigen_identiteit"]  # op het pad: de nee die de uitkomst bepaalt
+    b = beoordeling(BO)
+    del b["kenmerken"]["wordt_bewerkt"]  # op het pad, zonder standaardwaarde
+    del b["vak"]
     with pytest.raises(bt.BeoordelingFout) as exc:
         bt.evalueer(b)
-    assert any("op het pad niet beantwoord: eigen identiteit" in f for f in exc.value.fouten)
+    assert any("op het pad niet beantwoord: wordt bewerkt" in f for f in exc.value.fouten)
+    assert any("keuzeveld `vak` ontbreekt" in f for f in exc.value.fouten)
+
+
+def test_poort_alleen_een_afwijking():
+    """Zonder antwoord is de poort doorlopen; een afwijking met onderbouwing laat het begrip afvallen."""
+    b = _op_pad(beoordeling(BO))
+    b["kenmerken"] = {s: x for s, x in b["kenmerken"].items() if s not in bt.POORT}
+    assert bt.evalueer(b).paginatype == "bedrijfsobject"
+    b["kenmerken"]["eigen_identiteit"] = {"waarde": "nee", "onderbouwing": "Een deelstap van de aanvraag."}
+    u = bt.evalueer({**b, "genoemd_begrip": "Aanvraag"})
+    assert (u.soort, u.genoemd_begrip) == ("onderdeel", "Aanvraag")
+
+
+def test_vak_en_hoofdkenmerk_in_conflict():
+    u = bt.evalueer({**beoordeling(ROL), "vak": "bedrijf/passief"})
+    assert u.soort == "conflict" and "past niet bij het vak" in u.redenen[0]
+    u = bt.evalueer({**beoordeling(PROCES), "vak": "bedrijf/gedrag-extern"})
+    assert u.soort == "conflict" and "per keer doorlopen" in u.redenen[0]
+    assert bt.vak_bij("gedrag", "aangeboden_gedrag") == "bedrijf/gedrag-extern"
+    assert bt.hoofdkenmerk({"vak": "bedrijf/gedrag-extern"}) == "gedrag"
+    assert bt.soort_gedrag({"vak": "bedrijf/gedrag-extern"}) == "aangeboden_gedrag"
+    assert bt.hoofdkenmerk({"vak": "bedrijf/actief-intern"}) is None
 
 
 def _op_pad(b: dict) -> dict:
@@ -237,7 +258,7 @@ def test_buiten_het_pad_leidt_het_script_nee_af(ja):
 
 def test_pad_per_fase():
     a, f = bt.pad(bt.waarden(beoordeling(PROCES)), {})
-    assert a == bt.POORT + bt.AARD + bt.SOORT_GEDRAG
+    assert a == bt.POORT
     assert {"toegewezen_partij", "aanleiding", "omvat_levensloop", "klant_tot_klant", "zelfstandige_specialisatie",
             "geautomatiseerd_verwerkt"} <= set(f)
     assert "wordt_bewerkt" not in f
@@ -249,42 +270,64 @@ def test_pad_per_fase():
     assert bt.pad(bt.waarden(beoordeling(BO)), {"synoniem_van": "Graf"}) == ([], [])
 
 
-def test_kale_nee_alleen_in_aard_en_soort_gedrag():
+def test_kale_nee_en_keuze_als_kenmerk_worden_geweigerd():
     b = _op_pad(beoordeling(PROCES))
-    b["kenmerken"]["plaats"] = b["kenmerken"]["groepeert_processen"] = bt.KALE_NEE
-    assert bt.evalueer(b).paginatype == "bedrijfsproces"
-    b["kenmerken"]["eigen_besluit"] = bt.KALE_NEE
-    with pytest.raises(bt.BeoordelingFout) as exc:
-        bt.evalueer(b)
-    assert any("nee zonder onderbouwing op het pad" in f and "eigen besluit" in f for f in exc.value.fouten)
-    b["kenmerken"]["eigen_besluit"] = "ja — volgt uit art. 1 [2024-test]"
+    b["kenmerken"]["eigen_besluit"] = "nee"
     with pytest.raises(bt.BeoordelingFout) as exc:
         bt.evalueer(b)
     assert any("normaliseer" in f for f in exc.value.fouten)
-
-
-def test_schema_kale_nee():
-    validator = jsonschema.Draft202012Validator(bt.schema())
     b = _op_pad(beoordeling(PROCES))
-    b["kenmerken"]["plaats"] = bt.KALE_NEE
-    assert not list(validator.iter_errors({**b, "onderwerpen": ["test"]}))
-    b["kenmerken"]["plaats"] = "ja"
-    assert list(validator.iter_errors({**b, "onderwerpen": ["test"]}))
+    b["kenmerken"]["gedrag"] = {"waarde": "ja", "onderbouwing": "Iets wat gedaan wordt."}
+    with pytest.raises(bt.BeoordelingFout) as exc:
+        bt.evalueer(b)
+    assert any("keuze" in f and "hoofdkenmerk" in f for f in exc.value.fouten)
+
+
+def test_naar_bij_een_relationeel_kenmerk():
+    b = _op_pad(beoordeling(PROCES))
+    b["kenmerken"]["toegewezen_partij"] = {"waarde": "ja", "naar": ["houder"]}   # bron uit de relatie (beslissen)
+    assert bt.evalueer(b).paginatype == "bedrijfsproces"
+    b["kenmerken"]["toegewezen_partij"] = {"waarde": "ja", "naar": [{"naam": "Houder", "type": "rol"}]}
+    with pytest.raises(bt.BeoordelingFout) as exc:   # een tegenpartij die geen element is: onderbouwing en bron
+        bt.evalueer(b)
+    assert any("onderbouwing ontbreekt" in f for f in exc.value.fouten)
+    b["kenmerken"]["eigen_normering"] = {"waarde": "ja", "naar": ["wet"], "onderbouwing": "x"}
+    with pytest.raises(bt.BeoordelingFout) as exc:
+        bt.evalueer(b)
+    assert any("alleen bij een relationeel kenmerk" in f for f in exc.value.fouten)
+    alle = {"p": {"relaties": []}, "houder": {"relaties": [{"soort": "toewijzing", "naar": "p", "bronnen": ["x"]}]}}
+    assert bt.steunt_op_relatie("p", "toegewezen_partij", {"waarde": "ja", "naar": ["houder"]}, alle)
+    assert not bt.steunt_op_relatie("p", "gebruikt_objecten", {"waarde": "ja", "naar": ["houder"]}, alle)
+
+
+def test_schema_keuzevelden_en_naar():
+    validator = jsonschema.Draft202012Validator(bt.schema())
+    b = {**_op_pad(beoordeling(PROCES)), "onderwerpen": ["test"]}
+    assert not list(validator.iter_errors(b))
+    for fout in ({"plaats": "nee"}, {"gedrag": {"waarde": "ja", "onderbouwing": "x"}},
+                 {"toegewezen_partij": {"waarde": "ja", "naar": [{"naam": "Houder"}]}}):
+        assert list(validator.iter_errors({**b, "kenmerken": {**b["kenmerken"], **fout}})), fout
+    assert list(validator.iter_errors({**b, "vak": "bedrijf/onbekend"}))
+    goed = {"toegewezen_partij": {"waarde": "ja", "naar": ["houder", {"naam": "Houder", "type": "rol"}]}}
+    assert not list(validator.iter_errors({**b, "kenmerken": {**b["kenmerken"], **goed}}))
 
 
 def test_vragen_per_fase():
     nieuw = "\n".join(bt.vragen(None))
     assert nieuw.startswith("Fase A") and "`herkenbaar`" in nieuw and "`per_keer_doorlopen`" in nieuw
-    assert "Alleen bij gedrag" in nieuw and "normaliseer" in nieuw
+    assert "`bedrijf/gedrag-intern`" in nieuw and "Soort gedrag (`soort_gedrag`)" in nieuw and "normaliseer" in nieuw
     b = _op_pad(beoordeling(BO))
-    fase_a = {s: x for s, x in b["kenmerken"].items() if s in bt.POORT + bt.AARD}
+    fase_a = {s: x for s, x in b["kenmerken"].items() if s in bt.POORT}
     tekst = "\n".join(bt.vragen({**b, "kenmerken": fase_a}))
     assert tekst.startswith("Fase A, de groep") and "`afspraak`" in tekst and "`herkenbaar`" not in tekst
     fase_a |= {"waarneembare_vorm": b["kenmerken"]["waarneembare_vorm"], "afspraak": b["kenmerken"]["afspraak"]}
     tekst = "\n".join(bt.vragen({**b, "kenmerken": fase_a}))
-    assert tekst.startswith("Fase B, Bedrijfsobject") and "`wordt_bewerkt`" in tekst and "`afspraak`" not in tekst
+    assert tekst.startswith("Fase B, Bedrijfsobject") and "`wordt_bewerkt` †" in tekst and "`afspraak`" not in tekst
+    assert "`generiek`" not in tekst   # een standaardwaarde wordt niet gevraagd
     assert bt.vragen(b)[0].startswith("Alle kenmerken op het pad")
-    assert bt.vragen(_op_pad(beoordeling(SCOPE)))[0].startswith("Geen fase B: uitkomst onderdeel")
+    assert "\n".join(bt.vragen({**b, "vak": None})).startswith("Fase A. Poort")
+    onderdeel = _op_pad(beoordeling(SCOPE))
+    assert bt.vragen(onderdeel)[0].startswith("Geen fase B: uitkomst onderdeel")
     assert "`omvat_processen`" in "\n".join(bt.vragen(paginatype="procescluster"))
     with pytest.raises(ValueError):
         bt.vragen(paginatype="onbekend")
@@ -337,8 +380,8 @@ def test_stap_7_procescluster():
     assert soort_werk.procesniveau == "cluster naar soort werk"
     u = bt.evalueer(beoordeling(cluster - {"omvat_processen"}))
     assert (u.soort, u.regel) == ("geen_element", bt.EERSTE_DREMPELREGEL)
-    # een cluster en een proces zijn één soort gedrag per begrip
-    assert bt.evalueer(beoordeling(cluster | {"per_keer_doorlopen"})).soort == "conflict"
+    # een cluster is gedrag intern
+    assert bt.evalueer({**beoordeling(cluster), "vak": "bedrijf/gedrag-extern"}).soort == "conflict"
 
 
 def test_stap_7_objectniveau_per_begrip():

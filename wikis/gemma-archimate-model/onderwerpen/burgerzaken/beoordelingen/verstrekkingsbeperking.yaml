@@ -3,31 +3,12 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar als geheimhouding; wetsterm verstrekkingsbeperking (HUP Verstrekkingsbeperking; Utrecht Persoonsgegevens geheimhouden).
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
-    - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt de aantekening op op verzoek (HUP Verstrekkingsbeperking).
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: 'Een aantekening op de persoonslijst van de ingeschreven persoon (HUP Verstrekkingsbeperking: indicatie geheim).'
     bronnen:
     - 2026-rvig-hup-verstrekkingsbeperking
     - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
 toelichting: 'Eigenschap van Ingeschreven persoon: een aantekening (indicatie geheim) op de persoonslijst die de verstrekking aan bepaalde derden beperkt. Het vastleggen ervan is het bedrijfsproces Behandelen verzoek om geheimhouding.'
 synoniemen:
 - naam: Geheimhouding
@@ -50,3 +31,6 @@ beslist:
   - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
   - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
   herkomst: richtlijn
+bronnen:
+- 2026-rvig-hup-verstrekkingsbeperking
+- 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden

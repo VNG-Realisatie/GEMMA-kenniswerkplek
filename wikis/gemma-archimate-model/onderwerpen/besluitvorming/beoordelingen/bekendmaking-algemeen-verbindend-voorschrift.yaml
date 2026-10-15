@@ -1,58 +1,8 @@
 begrip: Bekendmaking algemeen verbindend voorschrift
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product in de UPL (nr. 48, bekendmaking algemeen verbindend voorschrift); gangbaar: de publicatie van een verordening in het gemeenteblad.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-bekendmakingswet-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college geeft het gemeenteblad uit, en het gemeentelijke bestuursorgaan maakt zijn algemeen verbindende voorschriften daarin bekend (Bekendmakingswet art. 2 lid 2, 6).
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 48).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: een regeling van de gemeente treedt pas na bekendmaking in werking (Bekendmakingswet art. 8).'
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Iets wat de gemeente aanbiedt: haar regelingen kenbaar maken aan ieder.'
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie voor burgers en bedrijven: zij kunnen de geldende regels van de gemeente elektronisch en kosteloos lezen in het gemeenteblad (Bekendmakingswet art. 2, 3, 6; UPL nr. 48).'
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Het algemeen verbindend voorschrift is in het gemeenteblad geplaatst en treedt in werking, zonder andere aanduiding op de achtste dag na de bekendmaking (art. 8, 10 lid 2).
@@ -76,10 +26,8 @@ kenmerken:
     - 2026-rijk-bekendmakingswet-wettekst
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Bekendmaken besluit (Bekendmakingswet art. 6; Awb art. 3:42).
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - bekendmaken-besluit
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -89,9 +37,6 @@ kenmerken:
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
     - 2026-rijk-bekendmakingswet-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf de generieke dienst voor de bekendmaking van elke gemeentelijke regeling, geen specialisatie van een generiek GEMMA-element.
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -106,18 +51,22 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'Domein Bestuur in plaats van Fysieke leefomgeving uit de UPL-lijst van GEMMA: de bekendmaking geldt voor elk besluit (procesarchitectuur-terugmelding).'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-bekendmakingswet-wettekst
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-bekendmakingswet-wettekst

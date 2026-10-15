@@ -1,45 +1,8 @@
 begrip: Wet op de Nederlandse identiteitskaart
+vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare naam van de wet over de identiteitskaart (BWBR0052951, art. 55).
-    bronnen:
-    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Geeft de burgemeester de bevoegdheid tot het in ontvangst nemen van de aanvraag, verstrekking, uitreiking, weigering en inhouding van de identiteitskaart (art. 15, 25, 27, 28, 35).
-    bronnen:
-    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde regeling als geheel (BWBR0052951).
-    bronnen:
-    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -55,17 +18,12 @@ kenmerken:
     - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 11, 15 en 25 (aanspraak, aanvraag en verstrekking), 27 (uitreiking), 7, 19 en 30 (vermissing en verval), 35 tot en met 39 (inhouding): grondslag van de dienst Identiteitskaart en, voor de identiteitskaart, van Behandelen aanvraag reisdocument, Uitreiken reisdocument, Verwerken vermissing reisdocument en Inhouden reisdocument.'
-    bronnen:
-    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
+    naar:
+    - identiteitskaart
+    - behandelen-aanvraag-reisdocument
+    - verwerken-vermissing-reisdocument
+    - inhouden-reisdocument
+    - paspoortwet
 definitie: Wet over de Nederlandse identiteitskaart, de aanspraak erop en de aanvraag, verstrekking, uitreiking, weigering, het verval en de inhouding.
 beschrijving:
 - 'De Wet op de Nederlandse identiteitskaart (BWBR0052951, sinds 2026-10-01) regelt de identiteitskaart buiten de Paspoortwet: de gegevens op de kaart en het publiek identificatiemiddel (art. 3, 4), de aanspraak (art. 11), de aanvraag, de verstrekking en de uitreiking door de burgemeester voor ingezetenen van zijn gemeente (art. 15-27), de weigering (art. 13, 28), het verval van rechtswege (art. 30), de inhouding en inlevering (art. 35-39) en de rechten die de gemeente als gemeentelijke belasting heft (art. 9). Een vervallenverklaring door de burgemeester kent de wet niet. Voor de registers van de minister verwijst ze naar de Paspoortwet (art. 5, 5a, 14).'
@@ -115,18 +73,18 @@ relaties:
   - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
   vindplaats: art. 1, 5, 5a, 14
 synoniemen: []
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
   herkomst: rijksregelgeving

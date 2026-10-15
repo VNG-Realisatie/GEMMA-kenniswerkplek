@@ -1,47 +1,7 @@
 begrip: Gemeenteraad
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar; wettelijk 'raad' (Gemeentewet art. 6, 7; titel hoofdstuk II).
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Bestuursorgaan van de gemeente.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag: nee
-  handelende_partij:
-    waarde: ja
-    onderbouwing: Bestuursorgaan dat de bevolking vertegenwoordigt en verordeningen vaststelt.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Bestaat los van elke afzonderlijke bevoegdheid.
@@ -49,10 +9,8 @@ kenmerken:
     - 2024-rijk-gemeentewet-wettekst
   vervult_een_rol:
     waarde: ja
-    onderbouwing: 'Vervult de rol Beslisser: stelt de verordeningen vast, wijst grond aan voor een bijzondere begraafplaats en staat een kerkgenootschap meer begraafplaatsen toe (Gemeentewet art. 147, 149; Wlb art. 38, 40).'
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beslisser
   soort_partij:
     waarde: ja
     onderbouwing: Elke gemeente heeft een raad, een college van burgemeester en wethouders en een burgemeester (Gemeentewet art. 6).
@@ -70,11 +28,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
   generiek:
     waarde: ja
     onderbouwing: Komt in elk onderwerp voor als bestuursorgaan (Gemeentewet art. 6).
@@ -106,18 +59,18 @@ onderwerpen:
 - bestuur-en-organisatie
 - lijkbezorging
 doelgroep: gemeente
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Handelende partij (kern ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 11
+    typeregel: 9
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

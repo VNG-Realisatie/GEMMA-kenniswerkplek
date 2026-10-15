@@ -8,7 +8,7 @@ titel: Bedrijfsproces — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Business Process* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `bedrijfsproces`
+*Business Process* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/gedrag-intern` · paginatype `bedrijfsproces`
 
 | Afspraak | Inhoud |
 |---|---|

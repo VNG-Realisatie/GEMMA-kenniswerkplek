@@ -15,6 +15,21 @@ Twee markeringen zijn verschillend:
 - **Weggefilterd**: niet in het kennismodel van de wiki. Een beoordeling legt elke gevonden relatie vast; de export laat een weggefilterde relatie weg, met de reden.
 - **Niet in Over GEMMA**: wel in het kennismodel van de wiki, maar niet in het GEMMA-kennismodel (Over GEMMA): een uitbreiding op het GEMMA-kennismodel. Het gaat mee in de export, gemarkeerd, en is een kandidaat voor een terugmelding over het kennismodel.
 
+## De ArchiMate-matrix
+
+Fase A kiest eerst het vak: de laag, het aspect en intern of extern, zoals in ArchiMate. Het vak bepaalt welke hoofdkenmerken en soorten gedrag er zijn, en welke vragen volgen. Motivatie kent geen aspecten.
+
+| Laag | Actief intern | Actief extern | Gedrag intern | Gedrag extern | Passief | Samengesteld |
+|---|---|---|---|---|---|---|
+| bedrijf | Actor, Rol, Bedrijfssamenwerking | Kanaal | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie | Dienst | Bedrijfsobject, Afspraak, Representatie (geen pagina) | Product |
+| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (nu een annotatie) | — |
+| technologie | weggefilterd: komt misschien nog | | | | | |
+| strategie | Capability (Vermogen): buiten dit model | | | | | |
+| motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |
+| overig | | | | | | Locatie (geen pagina), Groepering (indeling) |
+
+Wat fase A per vak vraagt, staat in [kenmerken en beslistabel](kenmerken-en-beslistabel.md).
+
 ## Bedrijfsarchitectuur
 
 | Elementtype | ArchiMate | Paginatype | In Over GEMMA |
@@ -50,6 +65,10 @@ Elementtypen zonder element: [weggefilterd](motivatie/weggefilterd.md) (uitkomst
 | [Data-object](applicatiearchitectuur/data-object-modelleerafspraken.md) | Data Object | annotatie | ja |
 
 Elementtypen zonder element: [weggefilterd](applicatiearchitectuur/weggefilterd.md) (applicatiecomponent, applicatieservice, applicatiefunctie, applicatie-interface, applicatieproces, applicatie-event).
+
+## Technologiearchitectuur
+
+Elementtypen zonder element: [weggefilterd](technologiearchitectuur/weggefilterd.md) (node, systeemsoftware, technologieservice).
 
 ## Overig
 

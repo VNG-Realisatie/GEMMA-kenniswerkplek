@@ -2,34 +2,9 @@ begrip: Reisdocumentenstation
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Begrip in het Paspoortbesluit (art. 1.1).
-    bronnen:
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente verwerkt er de aanvragen en uitreikingen in (Paspoortbesluit art. 1.1).
-    bronnen:
-    - 2026-rijk-paspoortbesluit-bwbr0044308
   buiten_dit_model:
     waarde: ja
     onderbouwing: 'Application Component: apparatuur en programmatuur van de minister waarin aangevraagde en uitgereikte reisdocumenten worden verwerkt (Paspoortbesluit art. 1.1); hoort bij de applicatielaag, niet bij de bedrijfslaag.'
-    bronnen:
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
     bronnen:
     - 2026-rijk-paspoortbesluit-bwbr0044308
 archimate_buiten_model: Application Component

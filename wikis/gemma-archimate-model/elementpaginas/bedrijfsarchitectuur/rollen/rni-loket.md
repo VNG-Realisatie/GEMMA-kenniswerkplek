@@ -2,7 +2,7 @@
 id: rni-loket
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: RNI-loket
 onderwerpen:
 - burgerzaken
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rni-loket.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -50,17 +50,13 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 53 zijn nee.
+**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: hoedanigheid. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare term (HUP Achtergronden; Utrecht RNI; NVVB Schema). [HUP BRP Achtergronden en begrippen](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md), [Utrecht RNI inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md), [NVVB Schema schriftelijke gegevensverstrekking BRP](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, een gemeente die als RNI-loket is aangewezen, schrijft in en verstrekt gegevens over niet-ingezetenen (Utrecht RNI; NVVB Schema). De gemeente voert zo een taak van de minister uit (Wet BRP art. 2.64, 2.67 lid 3; Besluit BRP art. 36); 19 gemeenten zijn RNI-loket (Nederland Wereldwijd RNI). [Utrecht RNI inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md), [NVVB Schema schriftelijke gegevensverstrekking BRP](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md), [Wet BRP](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [Besluit BRP](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md), [Nederland Wereldwijd RNI inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Utrecht RNI inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md), [HUP BRP Achtergronden en begrippen](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Utrecht RNI inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md), [HUP BRP Achtergronden en begrippen](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
-| **hoedanigheid**: Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? | Ja, de verantwoordelijkheid om niet-ingezetenen in de RNI in te schrijven en gegevens over hen te verstrekken (NVVB Schema: het college van het RNI-loket is bevoegd). [NVVB Schema schriftelijke gegevensverstrekking BRP](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md), [Utrecht RNI inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md) |
-| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, toegewezen aan Inschrijven niet-ingezetene en Verstrekken persoonsgegevens (Utrecht RNI; NVVB Schema). [Utrecht RNI inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md), [NVVB Schema schriftelijke gegevensverstrekking BRP](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere rol in deze wiki. [Utrecht RNI inschrijven](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven.md), [HUP BRP Achtergronden en begrippen](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
+| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, met [Inschrijven niet-ingezetene](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-niet-ingezetene.md), [Verstrekken persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-persoonsgegevens.md). |
 
 ### Relaties
 

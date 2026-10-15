@@ -2,7 +2,7 @@
 id: bekendmaken-besluit
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Bekendmaken besluit
 onderwerpen:
 - besluitvorming
@@ -26,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bekendmaken-besluit.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -65,26 +65,21 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 44 zijn nee.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: per keer doorlopen. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, wettelijke stap na elk besluit (Awb afdeling 3.6; Bekendmakingswet); GEMMA kent haar als procesbouwsteen en deelproces Bekendmaken. [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het gemeentelijke bestuursorgaan maakt zijn besluiten en regelingen bekend; het college geeft het gemeenteblad uit (Awb art. 3:41, 3:42; Bekendmakingswet art. 2 lid 2, 6). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een zelfstandig proces met eigen regels dat op elk besluit volgt, niet een stap van één ander begrip (art. 3:40–3:45). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij besluitvorming: elk besluit en elke regeling wordt zo bekendgemaakt (Awb afdeling 3.6). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt: een besluit bekendmaken. [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **per keer doorlopen**: Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? | Ja, wordt per besluit van begin tot eind doorlopen: toezenden of plaatsen in het gemeenteblad, mededeling aan wie een zienswijze gaf, kennisgeving van de terinzagelegging (Awb art. 3:41–3:44; Bekendmakingswet art. 6, 12). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, beslisser (het bestuursorgaan dat het besluit nam, maakt het bekend en doet mededeling) (Awb art. 3:41–3:43; Bekendmakingswet art. 6). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, verstrekt het besluit door toezending of plaatsing in het gemeenteblad, en een regeling door plaatsing in het gemeenteblad (Awb art. 3:41, 3:42; Bekendmakingswet art. 6). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
+| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Beslisser](../../../rollen/beslisser.md). |
+| **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, met [Besluit](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md), [Regeling](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md). |
 | **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, een genomen besluit of vastgestelde regeling, die pas na bekendmaking in werking treedt (Awb art. 3:40; Bekendmakingswet art. 8). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, het bekendgemaakte besluit, dat in werking treedt, met de vermelding van bezwaar en beroep; de mededelingen aan wie een zienswijze gaf (art. 3:40, 3:43, 3:45). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elk besluit en elke regeling. [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, afdeling 3.6 Awb en de Bekendmakingswet: wijze van bekendmaken, mededeling, vermelding van bezwaar en beroep, inwerkingtreding, terinzagelegging (Awb art. 3:40–3:45; Bekendmakingswet art. 6, 8, 10, 12, 13). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
 | **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, eén mutatie in de levensloop van een besluit: van genomen tot in werking (Awb art. 3:40). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 | **klant tot klant**: Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? | Ja, loopt van het genomen besluit tot het moment dat de belanghebbenden en ieder het kennen en het in werking treedt (art. 3:40–3:45). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, realiseert de diensten Bekendmaking (UPL nr. 47) en Bekendmaking algemeen verbindend voorschrift (UPL nr. 48). [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki. [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, met [Bekendmaking](../../../diensten/0-bestuur-en-ondersteuning/besluitvorming/bekendmaking.md), [Bekendmaking algemeen verbindend voorschrift](../../../diensten/0-bestuur-en-ondersteuning/besluitvorming/bekendmaking-algemeen-verbindend-voorschrift.md). |
 
 ### Relaties
 

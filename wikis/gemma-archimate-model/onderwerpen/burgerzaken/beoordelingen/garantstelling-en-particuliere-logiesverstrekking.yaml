@@ -1,56 +1,9 @@
 begrip: Garantstelling en particuliere logiesverstrekking
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Legalisatie handtekening
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product van de gemeente Utrecht (Garantstelling en particuliere logiesverstrekking aanvragen).
-    bronnen:
-    - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente legaliseert de handtekening op het formulier (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: De gemeente legaliseert op afspraak de handtekening van de gastheer (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een formulier met gelegaliseerde handtekening voor de visumaanvraag van de gast (Utrecht).
@@ -73,21 +26,18 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: Een legalisatie van een handtekening op een ander formulier, zonder eigen handeling van de gemeente; de UPL noemt het niet apart onder taakveld 0.2.
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Specialisatie zonder pagina van de dienst Legalisatie handtekening: de gemeente legaliseert de handtekening van de garantsteller op het formulier voor de visumaanvraag van een gast (Utrecht). Het raakt de BRP niet.'
 beslist:
   uitkomst:
     soort: specialisatie
-    regel: 24
+    regel: 21
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     genoemd_begrip: Legalisatie handtekening
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
   - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is

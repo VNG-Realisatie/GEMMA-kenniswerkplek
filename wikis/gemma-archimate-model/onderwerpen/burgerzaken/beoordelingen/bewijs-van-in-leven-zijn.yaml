@@ -1,61 +1,8 @@
 begrip: Bewijs van in leven zijn
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 61, bewijs van in leven zijn (attestatie de vita)); Utrecht.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente geeft het af; voor de attestatie de vita stelt de ambtenaar persoonlijk vast dat de aanvrager leeft (BW 1 art. 19k; Utrecht).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente op verzoek levert: een bewijs dat iemand leeft, bijvoorbeeld voor een pensioenfonds (UPL nr. 61; Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een bewijs van in leven zijn (uittreksel BRP, Nederlands) of een attestatie de vita (internationaal, meertalig, zes maanden geldig) (Utrecht; BW 1 art. 19k).
@@ -76,10 +23,9 @@ kenmerken:
     - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: De bedrijfsprocessen Verstrekken uittreksels en verklaringen burgerlijke stand (attestatie de vita, BW 1 art. 19k) en Verstrekken persoonsgegevens (bewijs uit de BRP; Utrecht).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
+    naar:
+    - verstrekken-persoonsgegevens
+    - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -88,9 +34,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 61); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het verkrijgen van een bewijs dat iemand in leven is, als uittreksel uit de BRP of als internationale attestatie de vita.
 beschrijving:
 - Het bewijs van in leven zijn is een uittreksel uit de BRP bij de gemeente van inschrijving, ook met DigiD of een machtiging; de attestatie de vita is internationaal, ook bij een andere gemeente te krijgen, en alleen persoonlijk aan de balie aan te vragen, zonder machtiging (Utrecht; BW 1 art. 19k). Gratis voor een pensioenregeling; anders Utrecht € 21,20 of € 17,80 in 2026 (Utrecht). Grondslag art. 19k BW 1 (UPL nr. 61).
@@ -104,18 +47,20 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen

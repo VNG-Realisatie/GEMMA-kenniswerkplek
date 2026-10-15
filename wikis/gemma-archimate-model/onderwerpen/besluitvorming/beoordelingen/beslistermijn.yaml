@@ -2,16 +2,6 @@ begrip: Beslistermijn
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar als beslistermijn; de Awb spreekt van de termijn waarbinnen een beschikking wordt gegeven (art. 4:13).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het gemeentelijke bestuursorgaan geeft de beschikking binnen de termijn (art. 4:13, 4:14).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   buiten_dit_model:
     waarde: ja
     onderbouwing: 'Een norm (Constraint): de beschikking volgt binnen de wettelijke termijn of anders binnen een redelijke termijn van ten hoogste acht weken (art. 4:13); zo ook Termijn van lijkbezorging.'

@@ -3,40 +3,12 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Nationaliteit
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wordt opgenomen als een nationaliteit niet kan worden aangetoond of vastgesteld (HUP Onbekende nationaliteit).
-    bronnen:
-    - 2026-rvig-hup-onbekende-nationaliteit
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt haar op en beëindigt haar (HUP Onbekende nationaliteit).
-    bronnen:
-    - 2026-rvig-hup-onbekende-nationaliteit
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: Een waarde van het gegeven Nationaliteit (HUP Onbekende nationaliteit; HUP Nationaliteit).
     bronnen:
     - 2026-rvig-hup-onbekende-nationaliteit
     - 2026-rvig-hup-nationaliteit
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Niet los te zien van het genoemde begrip, maar wel een eigen waarde.
-    bronnen:
-    - 2026-rvig-hup-onbekende-nationaliteit
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij burgerzaken (BRP).
-    bronnen:
-    - 2026-rvig-hup-onbekende-nationaliteit
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-onbekende-nationaliteit
 toelichting: 'Waarde van Nationaliteit, geen pagina: opgenomen als geen brondocument beschikbaar is en de nationaliteit niet van rechtswege kan worden bepaald; beëindigd als de werkelijke nationaliteit bekend wordt, bijvoorbeeld door een mededeling op grond van art. 2.17 Wet BRP, of bij verkrijging van het Nederlanderschap (HUP Onbekende nationaliteit). Een processtap van Bijhouden persoonsgegevens.'
 beslist:
   uitkomst:

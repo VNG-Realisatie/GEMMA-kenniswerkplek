@@ -2,7 +2,7 @@
 id: model-beheersverordening-begraafplaatsen
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Model-beheersverordening begraafplaatsen
 onderwerpen:
 - lijkbezorging
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling model-beheersverordening-begraafplaatsen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -58,18 +58,14 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de VNG noemt het model bij naam; gemeenten nemen het over (Groningen). [VNG Model-beheersverordening begraafplaatsen](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-wet-op-de-lijkbezorging.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, model voor de verordening waarmee de gemeente haar begraafplaatsen beheert. [VNG Model-beheersverordening begraafplaatsen](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-wet-op-de-lijkbezorging.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [VNG Model-beheersverordening begraafplaatsen](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-wet-op-de-lijkbezorging.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij de lijkbezorging. [VNG Model-beheersverordening begraafplaatsen](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-wet-op-de-lijkbezorging.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, een concreet benoemde VNG-modelverordening als geheel. [VNG Model-beheersverordening begraafplaatsen](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-wet-op-de-lijkbezorging.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, VNG-modelverordening, geen regeling van één gemeente. [VNG Model-beheersverordening begraafplaatsen](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [VNG Wet op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-wet-op-de-lijkbezorging.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, werkt uit, nooit grondslag: art. 11, 13–15 (uitgifte en verlenging), 17 (overschrijving en vervallen) en 24 (ruiming) werken de Wet op de lijkbezorging uit voor Grafuitgifte en de processen van grafrechten en graven; art. 19 (vergunning grafbedekking) en 20 (onderhoud door de gemeente) werken de diensten Gedenkteken plaatsingsvergunning en Grafonderhoud uit, die geen landelijke wettelijke grondslag hebben. [VNG Model-beheersverordening begraafplaatsen](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki. [VNG Model-beheersverordening begraafplaatsen](../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Verlenen grafrecht](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md), [Vervallen verklaren grafrecht](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md), [Ruimen graf](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md), [Wet op de lijkbezorging](../rijksregelgeving/wet-op-de-lijkbezorging.md), [Regeling](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md), [Grafuitgifte](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafuitgifte.md), [Gedenkteken plaatsingsvergunning](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gedenkteken-plaatsingsvergunning.md), [Grafonderhoud](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafonderhoud.md). |
 
 ### Relaties
 

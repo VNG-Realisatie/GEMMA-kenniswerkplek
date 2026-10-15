@@ -1,40 +1,12 @@
 begrip: Na-naturalisatie
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Regelen dat een kind alsnog Nederlander wordt nadat de ouder dat is geworden (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   gemeentelijk:
     waarde: nee
     onderbouwing: 'Verloopt bij de IND, niet bij de gemeente: de gemeentepagina verwijst ernaar (Utrecht).'
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen procedure.
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Genoemd in een bron van burgerzaken.
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Per kind doorlopen.
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
 toelichting: 'Buiten scope: de na-naturalisatie van een kind loopt via de IND, niet via de gemeente (Utrecht). Genoemd in de beschrijving van de dienst Naturalisatieverzoek.'
 besluiten:
 - datum: '2026-10-07'
@@ -56,3 +28,5 @@ beslist:
   bronnen:
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   herkomst: overig
+bronnen:
+- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie

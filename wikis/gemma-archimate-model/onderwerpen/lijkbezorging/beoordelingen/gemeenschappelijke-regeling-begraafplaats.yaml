@@ -1,48 +1,7 @@
 begrip: Gemeenschappelijke regeling begraafplaats
+vak: bedrijf/actief-intern
+hoofdkenmerk: samenwerkingsverband
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Gemeenten regelen samen hun begraafplaats (Wlb art. 33).
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband:
-    waarde: ja
-    onderbouwing: Gemeenten die samen een begraafplaats hebben of die op het grondgebied van een andere gemeente laten liggen (Wlb art. 33, 36; VNG-modelverordening toelichting 1.2).
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   eigen_rechtspersoon:
     waarde: nee
     onderbouwing: Een eenvoudige gemeenschappelijke regeling zonder openbaar lichaam (VNG-modelverordening toelichting 1.2).
@@ -55,14 +14,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  generiek:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
 toelichting: 'Geen element: de bronnen beschrijven alleen de mogelijkheid van een gemeenschappelijke regeling, geen bestaand verband met gedrag.'
 onderwerpen:
 - lijkbezorging
@@ -71,10 +22,13 @@ besluiten:
   besluit: 'Geen element: de wet noemt alleen de mogelijkheid (Wlb art. 33), dus geen samenwerkingsverband bij elke gemeente.'
   gevolg: afwijzen
   zekerheid: kennis
+bronnen:
+- 2010-vng-model-beheersverordening-begraafplaatsen
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 22
+    regel: 19
     toelichting: Kernrelatie ontbreekt voor Bedrijfssamenwerking
     archimate_type: business-collaboration
     voorleggen: true
@@ -83,7 +37,7 @@ beslist:
     - 'soort partij: nee'
     data_object: nee
     generiek: false
-    typeregel: 9
+    typeregel: 8
   voor_te_leggen:
   - 'voert gedrag uit: nee'
   - 'soort partij: nee'

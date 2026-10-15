@@ -1,47 +1,8 @@
 begrip: Wet justitiële en strafvorderlijke gegevens
+vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare naam van de wet over justitiële en strafvorderlijke gegevens (BWBR0014194), afgekort Wjsg; de UPL noemt art. 28 als grondslag van de VOG.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Geeft de burgemeester de ontvangst van de VOG-aanvraag van een natuurlijk persoon, de controle van de volledigheid en de identiteit en de doorzending naar de minister (art. 30), en de gemeente een kostenvergoeding (art. 39).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Verklaring omtrent het gedrag en Afgeven verklaring omtrent het gedrag (UPL taakveld 0.2).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde regeling als geheel (BWBR0014194).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -57,18 +18,10 @@ kenmerken:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 28 tot en met 39 (de verklaring omtrent het gedrag): grondslag van Afgeven verklaring omtrent het gedrag, Behandelen aanvraag verklaring omtrent het gedrag en de dienst Verklaring omtrent gedrag aanvragen (UPL nr. 434).'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2025-vng-upl-producten-en-diensten-extern
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
+    naar:
+    - afgeven-verklaring-omtrent-het-gedrag
+    - behandelen-aanvraag-verklaring-omtrent-het-gedrag
+    - verklaring-omtrent-gedrag-aanvragen
 definitie: Wet over de verwerking en verstrekking van justitiële en strafvorderlijke gegevens, met de regels voor de aanvraag en afgifte van de VOG.
 beschrijving:
 - 'De Wet justitiële en strafvorderlijke gegevens (BWBR0014194) regelt de verwerking en verstrekking van justitiële en strafvorderlijke gegevens, de rechten van de betrokkene, controle en toezicht en de persoonsdossiers. Voor Burgerzaken telt titel 2, afdeling 5 (art. 28 tot en met 39) over de verklaring omtrent het gedrag: de definitie (art. 28), de beschikking (art. 29), de aanvraag bij de burgemeester en de doorzending (art. 30, 31), het onderzoek en de weigering door de minister (art. 34 tot en met 38) en de kosten (art. 39). De rest van de wet valt buiten dit onderwerp. Het Besluit justitiële en strafvorderlijke gegevens werkt het onderzoek van de minister uit en geeft de gemeente geen taak; het is een bron, geen beleidskader.'
@@ -104,18 +57,18 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
 regelgever: rijk
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2025-vng-upl-producten-en-diensten-extern

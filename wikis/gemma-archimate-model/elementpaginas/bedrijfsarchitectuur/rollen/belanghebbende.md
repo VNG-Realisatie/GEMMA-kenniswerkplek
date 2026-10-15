@@ -2,7 +2,7 @@
 id: belanghebbende
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Belanghebbende
 onderwerpen:
 - besluitvorming
@@ -29,7 +29,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling belanghebbende.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -59,17 +59,13 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 53 zijn nee.
+**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: hoedanigheid. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, kernbegrip van de Awb (art. 1:2), ook gangbaar in de praktijk; de Wet op de lijkbezorging en de VNG-modelverordening gebruiken het voor de nabestaanden bij een algemeen graf (Wlb art. 27a; VNG-modelverordening art. 24). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [VNG Model-beheersverordening begraafplaatsen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente neemt besluiten waarbij belanghebbenden betrokken zijn: zij vragen besluiten aan, brengen zienswijzen naar voren en ontvangen mededelingen (Awb art. 1:3 lid 3, 3:15; Wlb art. 27a). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als hoedanigheid tegenover elk besluit, niet als onderdeel van één ander begrip (Awb art. 1:2). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij besluitvorming: het begrip komt uit de Awb en geldt bij elk besluit (art. 1:2). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **hoedanigheid**: Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? | Ja, de hoedanigheid waarin een persoon, rechtspersoon of bestuursorgaan optreedt tegenover een besluit: degene wiens belang rechtstreeks bij een besluit is betrokken (Awb art. 1:2). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
-| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, toegewezen aan Ruimen graf: de belanghebbende bij een algemeen graf ontvangt bericht van het verstrijken van de termijn en het voornemen tot ruiming (Wlb art. 27a; VNG-modelverordening art. 24 lid 1). In de besluitvorming dient de belanghebbende een aanvraag in en brengt een zienswijze naar voren (Awb art. 1:3 lid 3, 3:15). [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [VNG Model-beheersverordening begraafplaatsen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder element in deze wiki; Belanghebbende is zelf het generieke begrip. [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, met [Uitvoeren uniforme openbare voorbereidingsprocedure](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md), [Ruimen graf](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md), [Behandelen bezwaar](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-bezwaar.md), [Voeren verweer in beroep](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/voeren-verweer-in-beroep.md), [Vaststellen dwangsom bij niet tijdig beslissen](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/vaststellen-dwangsom-bij-niet-tijdig-beslissen.md), [Behandelen aanvraag nadeelcompensatie](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-nadeelcompensatie.md), [Behandelen aanvraag beschikking](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-beschikking.md). |
 
 ### Specialisaties
 

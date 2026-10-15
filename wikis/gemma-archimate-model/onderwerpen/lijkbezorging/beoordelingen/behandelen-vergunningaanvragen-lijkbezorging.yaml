@@ -1,74 +1,22 @@
 begrip: Behandelen vergunningaanvragen lijkbezorging
+vak: bedrijf/gedrag-intern
+soort_gedrag: groepeert_processen
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het verlenen van vergunningen, verloven en toestemmingen is gangbaar gemeentelijk werk; de wet kent er vijf in de lijkbezorging (art. 11, 17, 29, 41, 53).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De bedrijfsprocessen zijn gemeentelijk gedrag (zie elk bedrijfsproces).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen groepering van bedrijfsprocessen van één soort werk.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: nee
-    onderbouwing: Wordt niet per geval doorlopen; een groepering van processen.
-  groepeert_processen:
-    waarde: ja
-    onderbouwing: Groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   omvat_processen:
     waarde: ja
-    onderbouwing: Verlenen verlof tot begraving of crematie, Stellen andere termijn, Opgraven stoffelijk overschot, Verlenen toestemming bijzondere begraafplaats, Verlenen vergunning bijzonder crematorium, Verlenen verlof tot ontleding (art. 11, 17, 29, 40, 41, 53, 68) en Afgeven laissez-passer (Besluit op de lijkbezorging art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    naar:
+    - verlenen-verlof-tot-begraving-of-crematie
+    - stellen-andere-termijn
+    - opgraven-stoffelijk-overschot
+    - verlenen-toestemming-bijzondere-begraafplaats
+    - verlenen-vergunning-bijzonder-crematorium
+    - verlenen-verlof-tot-ontleding
+    - afgeven-laissez-passer
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki of in het GEMMA-model.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Het behandelen van aanvragen om een vergunning, verlof of toestemming voor de lijkbezorging en voor begraafplaatsen en crematoria.
 beschrijving:
 - 'Binnen de lijkbezorging verleent de gemeente op aanvraag verloven, vergunningen en toestemmingen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), een andere termijn (art. 17), de vergunning tot opgraving (art. 29), de toestemming voor een bijzondere begraafplaats (art. 40, 41), de vergunning voor een bijzonder crematorium (art. 53), het verlof tot ontleding (art. 68) en het laissez-passer voor lijken (Besluit op de lijkbezorging art. 11). Het cluster groepeert deze bedrijfsprocessen als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.'
@@ -131,11 +79,11 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: Besluit op de lijkbezorging art. 11
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 27
+    regel: 24
     toelichting: Gedrag, *groepeert processen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -143,7 +91,7 @@ beslist:
     data_object: nee
     procesniveau: cluster naar soort werk
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst

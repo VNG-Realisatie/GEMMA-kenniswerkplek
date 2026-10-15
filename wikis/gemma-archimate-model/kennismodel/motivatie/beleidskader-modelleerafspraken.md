@@ -8,7 +8,7 @@ titel: Beleidskader — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Driver* in ArchiMate · laag Motivatie · paginatype `beleidskader`
+*Driver* in ArchiMate · laag Motivatie · vak `motivatie` · paginatype `beleidskader`
 
 | Afspraak | Inhoud |
 |---|---|

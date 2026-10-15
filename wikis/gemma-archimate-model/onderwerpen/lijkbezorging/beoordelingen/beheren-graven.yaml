@@ -1,61 +1,9 @@
 begrip: Beheren graven
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Uitgifte, onderhoud en ruiming van graven zijn gangbare taken van de houder van een begraafplaats (art. 23, 27, 31; Groningen art. 11–16, 23, 27).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Als houder van de gemeentelijke begraafplaats geeft de gemeente graven uit, onderhoudt en ruimt ze (art. 33; Groningen art. 23, 27).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: 'Bestaat zelfstandig: het beheer van een graf van uitgifte tot ruiming.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per graf doorlopen, van uitgifte tot ruiming (art. 23, 31).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: Houder van de begraafplaats en Beheerder (art. 23, 27, 31; Groningen art. 27).
@@ -64,9 +12,8 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Legt het graf vast, werkt het bij en beëindigt het; houdt het register van begraven lijken bij (art. 23, 27, 31).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - graf
   aanleiding:
     waarde: ja
     onderbouwing: De uitgifte van een graf voor een begraving of bijzetting (art. 23; Groningen art. 13–16).
@@ -103,10 +50,8 @@ kenmerken:
     onderbouwing: 'Niet van toepassing: levensloopproces.'
   omvat_processen:
     waarde: ja
-    onderbouwing: Ruimen graf (art. 31; Groningen art. 27).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - ruimen-graf
   omvat_levensloop:
     waarde: ja
     onderbouwing: Omvat de levensloop van het graf, van uitgifte via begraving, bijzetting en onderhoud tot ruiming (art. 23, 27, 31).
@@ -125,15 +70,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki of in het GEMMA-model.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 definitie: 'Het beheer van een graf over de hele levensloop: uitgeven, begraven en bijzetten, onderhouden en ruimen.'
 beschrijving:
 - De houder van de begraafplaats bepaalt bij een algemeen graf wie erin wordt begraven, houdt het register van begraven lijken bij en ruimt graven na ten minste tien jaar grafrust (Wet op de lijkbezorging art. 23, 27, 31). Op de gemeentelijke begraafplaats regelt de beheersverordening de soorten graven, de uitgifte, het onderhoud en de ruiming (Groningen art. 11–16, 23, 27).
@@ -161,11 +97,11 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 23, 27, 31; Groningen art. 11–16
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 28
+    regel: 25
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -173,7 +109,7 @@ beslist:
     data_object: nee
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

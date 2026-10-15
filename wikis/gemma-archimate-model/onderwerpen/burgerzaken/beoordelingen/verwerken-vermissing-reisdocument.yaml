@@ -1,79 +1,22 @@
 begrip: Verwerken vermissing reisdocument
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Vermissing of diefstal doorgeven (Utrecht); de HUP beschrijft de registratie van de vermissing (HUP Inhouding).
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt de verklaring van vermissing in ontvangst en registreert haar (HUP Inhouding; Utrecht).
-    bronnen:
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per gemelde vermissing doorlopen.
-    bronnen:
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: De Houder van het reisdocument meldt de vermissing, vanaf achttien jaar zelf; voor een kind tot en met elf jaar een Ouder, van twaalf tot en met zeventien jaar het kind of een ouder (Paspoortwet art. 5a; Utrecht).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+    naar:
+    - houder-van-het-reisdocument
+    - ouder
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: 'Werkt het reisdocument bij: vermist en daarmee ongeldig (HUP Inhouding; Paspoortwet art. 47 lid 1 onder j).'
-    bronnen:
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-    - 2026-rijk-paspoortwet-bwbr0005212
+    naar:
+    - reisdocument
   aanleiding:
     waarde: ja
-    onderbouwing: De vermissing van het reisdocument en de melding daarvan (Paspoortwet art. 5a, 31 lid 1).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
+    naar:
+    - vermissing-van-het-reisdocument
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: 'De geregistreerde vermissing: het document is niet meer geldig, ook niet als het terugkomt (Utrecht; HUP Inhouding).'
@@ -92,9 +35,8 @@ kenmerken:
     - 2026-rijk-paspoortwet-bwbr0005212
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het einde van een vermist reisdocument.'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
+    naar:
+    - beheren-reisdocumenten
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de melding van de vermissing tot de registratie en het verval van rechtswege.
@@ -110,27 +52,15 @@ kenmerken:
     onderbouwing: De registratie volgt direct op de verklaring; het verval treedt van rechtswege in (HUP Inhouding; Paspoortwet art. 47 lid 1 onder j).
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Vermissing of diefstal reisdocument doorgeven (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+    naar:
+    - vermissing-of-diefstal-reisdocument-doorgeven
   leidt_tot_gebeurtenis:
     waarde: ja
-    onderbouwing: 'Verval van het reisdocument: door de verklaring van vermissing vervalt het van rechtswege (Paspoortwet art. 47 lid 1 onder j).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
+    naar:
+    - verval-van-het-reisdocument
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het ontvangen en registreren van de melding dat een reisdocument kwijt of gestolen is, waardoor het document ongeldig wordt.
 beschrijving:
 - De houder meldt de vermissing per document, online en gratis; de gemeente registreert de schriftelijke verklaring van vermissing direct (Utrecht; HUP Inhouding). Met de registratie wordt het document in het basisregister reisdocumenten automatisch ongeldig en vervalt het van rechtswege (HUP Inhouding; Paspoortwet art. 47 lid 1 onder j). De minister vermeldt vermiste reisdocumenten in het register vermiste of vervallen reisdocumenten, ter voorkoming van fraude (art. 4a).
@@ -180,11 +110,11 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-inhouding-inlevering-vermissing
   vindplaats: Paspoortwet art. 47 lid 1 onder j; HUP Inhouding
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -192,7 +122,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   - 2026-rvig-hup-inhouding-inlevering-vermissing

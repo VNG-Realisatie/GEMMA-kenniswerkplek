@@ -1,43 +1,9 @@
 begrip: Verblijfstitel
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Begrip uit LO BRP en HUP (categorie 10 Verblijfstitel; HUP Verblijfstitel).
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
-    - 2026-rvig-hup-verblijfstitel
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ontleent de verblijfstitel aan berichten van de IND en laat hem vervallen bij verkrijging van het Nederlanderschap (HUP Verblijfstitel).
-    bronnen:
-    - 2026-rvig-hup-verblijfstitel
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Rechtsgrond voor verblijf, met een eigen begin en einde (HUP Verblijfstitel).
-    bronnen:
-    - 2026-rvig-hup-verblijfstitel
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Wordt in de BRP bijgehouden.
-    bronnen:
-    - 2026-rvig-hup-verblijfstitel
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per persoon met een aanduiding en ingangsdatum (HUP Verblijfstitel).
@@ -74,26 +40,20 @@ kenmerken:
     bronnen:
     - 2026-rvig-hup-verblijfstitel
     - 2025-rvig-logisch-ontwerp-brp-2025q1
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-verblijfstitel
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Invoer van een andere partij: de IND levert de verblijfstitelgegevens met berichten, de gemeente neemt ze over en wijzigt ze alleen in overleg met de IND (HUP Verblijfstitel). Geen pagina; vermeld bij Ingeschreven persoon. Zelf laat de gemeente de verblijfstitel vervallen op de datum waarop de persoon het Nederlanderschap verkrijgt: een gevolg van de gebeurtenis Verkrijging van het Nederlanderschap in Bijhouden persoonsgegevens (HUP Verblijfstitel; HUP Nederlandse nationaliteit). Het GGM kent twee entiteiten Verblijfstitel (EAID_0F51B100_1C60_4d54_9B60_1C9BF9C856A2 en EAID_A660422D_E9ED_47c9_9978_480E57572775); GEMMA heeft het bedrijfsobject Verblijfstitel met de tweede GUID, dat ongekoppeld blijft.'
+bronnen:
+- 2025-rvig-logisch-ontwerp-brp-2025q1
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 33
+    regel: 30
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
     data_object: ja
     genoemd_begrip: Ingeschreven persoon
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   - 2026-rvig-hup-verblijfstitel

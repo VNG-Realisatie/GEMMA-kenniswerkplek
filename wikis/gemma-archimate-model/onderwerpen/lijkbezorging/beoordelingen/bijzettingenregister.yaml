@@ -1,56 +1,8 @@
 begrip: Bijzettingenregister
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 70); het register is een wettelijk begrip (Wlb art. 65).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente houdt het register bij als houder van een plaats van bijzetting, en het register is openbaar (Wlb art. 65 lid 1–2).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandig product in de UPL, niet een onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij de lijkbezorging (UPL, Iv3 7.5).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente als houder aanbiedt: inzage in het openbare register (Wlb art. 65 lid 2).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Inzage in of gegevens uit het register van alle daar bijgezette asbussen (Wlb art. 65).
@@ -64,20 +16,11 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: De functie Exploiteren van begraafplaatsen, die het register als houder bijhoudt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - exploiteren-van-begraafplaatsen
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere dienst in deze wiki of in het GEMMA-model.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Inzage in het openbare register van alle daar bijgezette asbussen dat de houder van een plaats van bijzetting bijhoudt.
 beschrijving:
 - De houder van een plaats van bijzetting houdt een register bij van alle daar bijgezette asbussen; het register is openbaar en gaat bij opheffing naar het archief van de gemeente waar de plaats lag (Wet op de lijkbezorging art. 65). Is de gemeente houder, dan biedt zij de inzage aan. Het register zelf is een representatie, zonder pagina; de inhoud staat in het Besluit op de lijkbezorging (art. 10).
@@ -90,18 +33,20 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 relaties: []
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

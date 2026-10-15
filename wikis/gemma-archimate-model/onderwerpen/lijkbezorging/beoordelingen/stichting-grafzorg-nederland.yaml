@@ -1,23 +1,8 @@
 begrip: Stichting Grafzorg Nederland
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Genoemd in de toelichting op de VNG-modelverordening.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
   gemeentelijk:
     waarde: nee
     onderbouwing: Alleen als mogelijke rechthebbende genoemd; geen structurele relatie met de gemeente.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
 toelichting: 'Buiten scope: alleen context (VNG-modelverordening, toelichting art. 17).'
 onderwerpen:
 - lijkbezorging
@@ -40,3 +25,5 @@ beslist:
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   herkomst: gemeentelijke-regelgeving
+bronnen:
+- 2010-vng-model-beheersverordening-begraafplaatsen

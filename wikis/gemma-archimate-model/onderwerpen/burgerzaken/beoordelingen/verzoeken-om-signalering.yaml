@@ -1,41 +1,11 @@
 begrip: Verzoeken om signalering
+hoofdkenmerk: gedrag
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip: het verzoek van een tot signalering bevoegd orgaan aan de minister (Paspoortwet art. 1 onder t, 25 lid 1).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college kan als tot invordering bevoegd orgaan verzoeken om weigering of vervallenverklaring bij nalatige betalers (Paspoortwet art. 22); een met de uitvoering van de wet belaste autoriteit bij fraude met reisdocumenten (art. 24).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
   betekenis_in_onderwerp:
     waarde: nee
     onderbouwing: 'Hoort in de eerste plaats bij de invordering van belastingen, terugvorderingen en verhaalbare kosten: daar ontstaat de grond (Paspoortwet art. 22). Dat onderwerp bestaat nog niet. Voorgelegd (zie vragen).'
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
 toelichting: 'Verwijzing: het college verzoekt de minister om weigering of vervallenverklaring van het reisdocument van iemand die zich door vertrek aan de invordering van belastingen, terugvorderingen of verhaalbare kosten dreigt te onttrekken (Paspoortwet art. 22, 25). Het verzoek ontstaat in de invordering, een onderwerp dat nog niet bestaat; een verzoek van de burgemeester bij fraude met reisdocumenten (art. 24 onder b) is daarnaast mogelijk. De gevolgen in dit onderwerp staan bij Signalering en Vervallen verklaren reisdocument.'
 besluiten:
 - datum: '2026-10-07'
@@ -52,3 +22,5 @@ beslist:
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212

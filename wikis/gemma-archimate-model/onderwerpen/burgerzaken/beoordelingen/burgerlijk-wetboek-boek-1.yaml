@@ -1,45 +1,8 @@
 begrip: Burgerlijk Wetboek Boek 1
+vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Boek 1 BW, Personen- en familierecht, is de formele grondslag van de burgerlijke stand.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Geeft de gemeente de burgerlijke stand: registers, ambtenaren, akten (BW 1 titel 4).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde wet als geheel.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -55,18 +18,30 @@ kenmerken:
     - 2026-rijk-burgerlijk-wetboek-boek-1
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: Titel 4 (art. 16-29) geeft de ambtenaar van de burgerlijke stand van de gemeente het opmaken van akten en latere vermeldingen, uitgevoerd in Bijhouden burgerlijke stand; de UPL noemt het boek als grondslag van onder meer geboorteaangifte, overlijdensaangifte, erkenning, naamskeuze, huwelijk en geregistreerd partnerschap.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2025-vng-upl-producten-en-diensten-extern
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
+    naar:
+    - bijhouden-burgerlijke-stand
+    - geboorteaangifte
+    - geboorteakte
+    - geboorteakte-levenloos-kind
+    - doodgeboren-kind-aangifte
+    - erkenning-kind
+    - overlijdensaangifte
+    - overlijdensakte
+    - naamskeuzeverklaring
+    - geslachtswijzigingsaangifte
+    - achternaamwijziging
+    - voornaamwijziging
+    - huwelijksaangifte
+    - geregistreerd-partnerschapaangifte
+    - huwelijk
+    - trouwlocatie
+    - ambtenaar-burgerlijke-stand-aanvragen
+    - geregistreerd-partnerschap-omzetting-in-huwelijk
+    - geregistreerd-partnerschap-ontbinding
+    - echtscheiding-inschrijving
+    - uittreksel-burgerlijke-stand
+    - bewijs-van-in-leven-zijn
+    - verklaring-van-huwelijksbevoegdheid
 definitie: 'Boek van het Burgerlijk Wetboek over personen- en familierecht: naam, burgerlijke stand, huwelijk, partnerschap, afstamming, adoptie en gezag.'
 beschrijving:
 - 'Titel 4 regelt de burgerlijke stand: de ambtenaar, de registers, de akten, de latere vermeldingen en de afgifte van afschriften en uittreksels (BW 1 art. 16-29). Het Besluit burgerlijke stand 1994 werkt deze titel uit. Voor de gemeente gaat het verder om de naam (art. 4-9), het huwelijk en het geregistreerd partnerschap (art. 30-80g), de ontbinding (art. 149-151), afstamming en erkenning (art. 197-207), adoptie (art. 227) en gezag (art. 244-253t).'
@@ -269,18 +244,18 @@ relaties:
   vindplaats: UPL nr. 437, art. 49a
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2025-vng-upl-producten-en-diensten-extern

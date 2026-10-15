@@ -1,60 +1,8 @@
 begrip: Naturalisatieoptie
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'UPL-product naturalisatieoptie, grondslag Rijkswet art. 6 (UPL nr. 262); Utrecht: Nederlander worden door optie.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt de optieverklaring aan de balie in ontvangst en de burgemeester beslist (Utrecht; Besluit art. 7, 11).
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als aanbod van de gemeente.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij burgerzaken (UPL taakveld 0.2).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Een prestatie die de gemeente levert.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente aan de optant aanbiedt: de behandeling van de optie tot bevestiging (UPL nr. 262; Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De bevestiging van de verkrijging van het Nederlanderschap (Besluit art. 11, 60a).
@@ -74,21 +22,11 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Behandelen optieverklaring (Besluit art. 7-11).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    naar:
+    - behandelen-optieverklaring
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 afnemer: extern
 domein: Publieksdiensten
 definitie: Het afleggen van een optieverklaring om door bevestiging van de burgemeester Nederlander te worden.
@@ -111,18 +49,21 @@ relaties:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   vindplaats: art. 3; Utrecht
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie

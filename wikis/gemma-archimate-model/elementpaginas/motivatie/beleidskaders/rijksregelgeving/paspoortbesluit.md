@@ -2,7 +2,7 @@
 id: paspoortbesluit
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Paspoortbesluit
 onderwerpen:
 - burgerzaken
@@ -21,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling paspoortbesluit.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -52,19 +52,15 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de algemene maatregel van rijksbestuur bij de Paspoortwet (BWBR0044308). [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft burgemeesters aanvullende bevoegdheden voor tweede paspoorten en, in aangewezen gemeenten, voor niet-ingezetenen (art. 3.1, 3.2, 4.1, 4.2) en regelt de identiteitsvaststelling bij aanvraag en uitreiking (art. 2.1, 4.6). [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, een concreet benoemde regeling als geheel (BWBR0044308). [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijksregelgeving van het Koninkrijk. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, art. 2.1 en 3.6 (identiteit, vingerafdrukken bij de aanvraag), 2.14 en 3.1 (tweede paspoort), 3.2 en 4.2 (niet-ingezetenen), 4.6 (uitreiking), 6.1 en 7.1 (mededeling bij verval, onttrekking aan het verkeer): gedrag in Behandelen aanvraag reisdocument, Uitreiken reisdocument en de diensten Paspoort tweede en Reisdocument niet-ingezetene. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Behandelen aanvraag reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Paspoort tweede](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md), [Reisdocument niet-ingezetene](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument-niet-ingezetene.md), [Paspoortwet](paspoortwet.md), [Inhouden reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md). |
 
 ### Relaties
 

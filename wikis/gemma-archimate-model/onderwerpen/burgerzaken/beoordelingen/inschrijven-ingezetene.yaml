@@ -1,81 +1,26 @@
 begrip: Inschrijven ingezetene
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar als inschrijving of inschrijven vanuit het buitenland (Utrecht; HUP Immigratie: eerste inschrijving).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-    - 2026-rvig-hup-immigratie
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente schrijft de persoon in en kent een BSN toe (HUP Immigratie; Utrecht).
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Bijhoudingsgemeente en Beslisser (college); de Aangever doet de aangifte (HUP Immigratie; HUP Hervestiging).
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
+    naar:
+    - aangever
+    - beslisser
+    - bijhoudingsgemeente
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Legt de ingeschreven persoon en zijn verblijfplaats vast en raadpleegt akten en andere brondocumenten (HUP Immigratie).
-    bronnen:
-    - 2026-rvig-hup-immigratie
+    naar:
+    - ingeschreven-persoon
+    - verblijfplaats
+    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
-    onderbouwing: Aangifte van verblijf en adres, in persoon, uiterlijk de vijfde dag na aanvang van het verblijf (HUP Immigratie).
-    bronnen:
-    - 2026-rvig-hup-immigratie
+    naar:
+    - adoptie
+    - vestiging-vanuit-het-buitenland
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een persoonslijst als ingezetene, met A-nummer en BSN, en binnen vier weken een overzicht van de persoonslijst (HUP Immigratie).
@@ -97,9 +42,8 @@ kenmerken:
     - 2026-rvig-hup-hervestiging
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: de inschrijving begint de administratieve levensloop (HUP Immigratie).'
-    bronnen:
-    - 2026-rvig-hup-immigratie
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de aangifte tot de persoonslijst en het overzicht.
@@ -115,23 +59,16 @@ kenmerken:
     - 2026-rijk-besluit-brp-bwbr0034306
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de diensten BRP-inschrijving (UPL nr. 88) en Persoonsgegevens verklaring onder eed of belofte (UPL nr. 335).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - brp-inschrijving
+    - persoonsgegevens-verklaring-onder-eed-of-belofte
+    - adoptie-aangifte
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het inschrijven van een persoon die zich vanuit het buitenland in de gemeente vestigt als ingezetene in de basisregistratie personen.
 beschrijving:
 - Wie zich vanuit het buitenland in de gemeente vestigt, doet uiterlijk de vijfde dag na aanvang van het verblijf in persoon aangifte van verblijf en adres (HUP Immigratie). De gemeente stelt de identiteit vast, toetst de criteria (waaronder rechtmatig verblijf), gaat na of de persoon al in de BRP of RNI voorkomt, verifieert het adres en schrijft de persoon in met een A-nummer en een BSN; binnen vier weken stuurt zij een volledig overzicht van de persoonslijst (HUP Immigratie; Utrecht Inschrijven vanuit het buitenland). Kan de geboortedatum of de vreemde nationaliteit niet uit de gewone bronnen worden ontleend, dan vraagt de gemeente een mededeling ex artikel 2.17 Wet BRP op bij de IND (NVVB mededeling art. 2.17). Ontbreekt een brondocument, dan neemt de gemeente een verklaring onder eed of belofte af (HUP Immigratie; UPL nr. 335).
@@ -196,11 +133,13 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
   vindplaats: UPL nr. 6; Utrecht inleiding
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -208,7 +147,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
   - 2026-rvig-hup-immigratie

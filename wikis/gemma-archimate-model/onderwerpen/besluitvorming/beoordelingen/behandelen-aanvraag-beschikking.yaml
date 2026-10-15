@@ -1,67 +1,19 @@
 begrip: Behandelen aanvraag beschikking
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wettelijke procedure (Awb afdeling 4.1); gangbaar als het behandelen van een aanvraag; GEMMA kent specifieke varianten zoals Behandelen aanvraag product.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het gemeentelijke bestuursorgaan ontvangt de aanvraag en beslist erop (art. 4:1, 4:13).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandige procedure met eigen termijnen, niet een stap van één ander begrip (afdeling 4.1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: het generieke gedrag voor elke beschikking op aanvraag (Awb afdeling 4.1).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Iets wat gedaan wordt: beslissen op een aanvraag om een beschikking.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: 'Wordt per aanvraag van begin tot eind doorlopen: ontvangst, aanvullen, voorbereiden en horen, beschikking (art. 4:1, 4:5, 4:7, 4:13).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: nee
-    onderbouwing: Een procedure, beschreven naar hoe de aanvraag wordt behandeld; wat de afnemer krijgt is de dienst Beschikking aanvragen.
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Beslisser (het bestuursorgaan beslist op de aanvraag en geeft de beschikking) en Belanghebbende (vraagt aan, of brengt als derde zijn zienswijze naar voren) (art. 1:3 lid 3, 4:1, 4:7, 4:8).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - belanghebbende
+    - beslisser
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Neemt de aanvraag in behandeling en laat haar zo nodig aanvullen (art. 4:1, 4:5); legt de beschikking vast (art. 1:3 lid 2, 4:13).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - beschikking
+    - aanvraag
   aanleiding:
     waarde: ja
     onderbouwing: Een aanvraag van een belanghebbende om een beschikking (art. 1:3 lid 3, 4:1).
@@ -102,24 +54,14 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Beschikking aanvragen (UPL nr. 55; art. 1:3).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - beschikking-aanvragen
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki; het is zelf het generieke beslisproces op aanvraag.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf het generieke proces voor elke beschikking op aanvraag; de GEMMA-processen Behandelen aanvraag product en Behandelen aanvraag vergunning of ontheffing zijn smallere varianten, geen generiek element waarvan dit een specialisatie is.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -166,11 +108,11 @@ relaties:
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 4:1, 4:5
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -178,7 +120,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

@@ -1,46 +1,8 @@
 begrip: Wegenverkeerswet 1994
+vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare naam van de wet over het verkeer op de weg (BWBR0006622), afgekort Wvw 1994.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Geeft de burgemeester de bevoegdheid tot afgifte van rijbewijzen en tot het afgeven van internationale rijbewijzen (art. 116, 117), en de gemeente het tarief bij plaatselijke verordening (art. 111 lid 5).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van het kernobject Rijbewijs en Beheren rijbewijzen (UPL taakveld 0.2).'
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde regeling als geheel (BWBR0006622).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -56,17 +18,14 @@ kenmerken:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 111 tot en met 113 (voorwaarden en aanvraag), 116 en 118a (afgifte en besluit tot afgifte), 119 en 120 (nieuw en vervangend rijbewijs), 120a (uitreiking) en 123 (verlies van geldigheid): grondslag van Beheren rijbewijzen, Behandelen aanvraag rijbewijs, Uitreiken rijbewijs, Verwerken vermissing rijbewijs en de diensten Rijbewijs aanvragen en Rijbewijs verlengen.'
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
+    naar:
+    - beheren-rijbewijzen
+    - behandelen-aanvraag-rijbewijs
+    - verwerken-vermissing-rijbewijs
+    - rijbewijs-aanvragen
+    - rijbewijs-verlengen
+    - behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
+    - vermissing-of-diefstal-rijbewijs-doorgeven
 definitie: Wet over het verkeer op de weg, met de regels voor de aanvraag, afgifte en geldigheid van rijbewijzen en de taken van de RDW en het CBR.
 beschrijving:
 - 'De Wegenverkeerswet 1994 (BWBR0006622) regelt het verkeer op de weg. Voor Burgerzaken telt hoofdstuk VI: de rijbewijsplicht (art. 107), de voorwaarden voor afgifte (art. 111, 112), de aanvraag (art. 113), de afgifte door de burgemeester of de RDW (art. 116), het nieuwe en het vervangende rijbewijs (art. 119, 120), de uitreiking (art. 120a), de geldigheid en het verlies ervan (art. 122, 123) en het rijbewijzenregister van de RDW (art. 126). De RDW en het CBR zijn zelfstandige bestuursorganen (art. 4a, 4z). Kentekens, voertuigeisen, rijonderricht, het onderzoek naar rijvaardigheid en de maatregelen na overtredingen vallen buiten dit onderwerp.'
@@ -129,18 +88,21 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
 regelgever: rijk
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2025-vng-upl-producten-en-diensten-extern

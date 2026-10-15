@@ -1,31 +1,8 @@
 begrip: Gezindte
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 synoniem_van: Kerkgenootschap
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Term in de verordening (art. 3 lid 3).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Beheert een deel van een gemeentelijke begraafplaats.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  handelende_partij:
-    waarde: ja
-    onderbouwing: Organisatie.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Bestaat los van het beheer.
@@ -34,11 +11,6 @@ kenmerken:
   vervult_een_rol:
     waarde: ja
     onderbouwing: Houder van een deel van de begraafplaats.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element.
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 toelichting: Synoniem van Kerkgenootschap (Groningen art. 3 lid 3).

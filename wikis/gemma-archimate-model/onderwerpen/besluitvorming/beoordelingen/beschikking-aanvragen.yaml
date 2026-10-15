@@ -1,59 +1,8 @@
 begrip: Beschikking aanvragen
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product in de UPL (nr. 55, beschikking, soort aanvraag); gangbaar: een beschikking aanvragen (Awb art. 1:3 lid 3, 4:1).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-logius-upl-actueel
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het gemeentelijke bestuursorgaan beslist op de aanvraag en geeft de beschikking (art. 4:1, 4:13).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 55).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: het algemene aanbod om op een aanvraag een beschikking te krijgen, in elk onderwerp (Awb afdeling 4.1).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Iets wat de gemeente aanbiedt: beslissen op een aanvraag om een beschikking.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie voor de aanvrager: op zijn aanvraag krijgt hij binnen de beslistermijn een beschikking (art. 1:3, 4:1, 4:13; UPL nr. 55).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een beschikking, ook als die de aanvraag afwijst (art. 1:3 lid 2).
@@ -77,9 +26,8 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Behandelen aanvraag beschikking (Awb afdeling 4.1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - behandelen-aanvraag-beschikking
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -88,9 +36,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 55); de generieke dienst waarvan de diensten op aanvraag in de onderwerpen gevallen zijn; geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf de generieke dienst voor elke beschikking op aanvraag, geen specialisatie van een generiek GEMMA-element; GEMMA kent geen generieke dienst hiervoor.
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -116,18 +61,21 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'De UPL-naam Beschikking is een synoniem van de dienst Beschikking aanvragen: zo is de dienst geen homoniem van het bedrijfsobject Beschikking.'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-logius-upl-actueel
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-logius-upl-actueel

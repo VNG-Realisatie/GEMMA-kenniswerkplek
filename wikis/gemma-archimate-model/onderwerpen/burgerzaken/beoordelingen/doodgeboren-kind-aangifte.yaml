@@ -1,62 +1,9 @@
 begrip: Doodgeboren kind aangifte
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 118).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Aangifte bij de ambtenaar van de burgerlijke stand (UPL, grondslag BW Boek 1 art. 19i).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij Burgerzaken: een aangifte bij de ambtenaar van de burgerlijke stand (UPL, Iv3 0.2, Burgerlijk Wetboek Boek 1 art. 19i).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een product van de burgerlijke stand (UPL, Iv3 0.2): de afnemer geeft de levenloze geboorte aan en krijgt een akte (Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De akte van geboorte (levenloos) en een gratis uittreksel (Utrecht).
@@ -76,9 +23,8 @@ kenmerken:
     - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Opmaken akte levenloos geboren kind (BW 1 art. 19i).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - opmaken-akte-levenloos-geboren-kind
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -87,9 +33,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 118); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het doen van aangifte van een levenloos geboren kind bij de gemeente van geboorte, waarna de gemeente een akte opmaakt.
 beschrijving:
 - Aangifte alleen aan de balie op afspraak, gratis (Utrecht). Heeft het kind kort geleefd, dan volgen een geboorteaangifte en een overlijdensaangifte. Opname in de BRP gebeurt alleen op verzoek (BRP-inschrijving niet in leven zijnd kind).
@@ -103,20 +46,23 @@ afnemer: extern
 domein: Publieksdiensten
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+- 2026-rijk-burgerlijk-wetboek-boek-1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

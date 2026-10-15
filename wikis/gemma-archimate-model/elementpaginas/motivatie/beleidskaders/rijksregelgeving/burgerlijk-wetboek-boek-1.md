@@ -2,7 +2,7 @@
 id: burgerlijk-wetboek-boek-1
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Burgerlijk Wetboek Boek 1
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling burgerlijk-wetboek-boek-1.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -65,19 +65,15 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, boek 1 BW, Personen- en familierecht, is de formele grondslag van de burgerlijke stand. [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft de gemeente de burgerlijke stand: registers, ambtenaren, akten (BW 1 titel 4). [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, een concreet benoemde wet als geheel. [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijkswet in formele zin (BWBR0002656). [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, titel 4 (art. 16-29) geeft de ambtenaar van de burgerlijke stand van de gemeente het opmaken van akten en latere vermeldingen, uitgevoerd in Bijhouden burgerlijke stand; de UPL noemt het boek als grondslag van onder meer geboorteaangifte, overlijdensaangifte, erkenning, naamskeuze, huwelijk en geregistreerd partnerschap. [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Bijhouden burgerlijke stand](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-burgerlijke-stand.md), [Geboorteaangifte](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteaangifte.md), [Geboorteakte](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteakte.md), [Geboorteakte levenloos kind](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteakte-levenloos-kind.md), [Doodgeboren kind aangifte](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/doodgeboren-kind-aangifte.md), [Erkenning kind](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/erkenning-kind.md), [Overlijdensaangifte](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/overlijdensaangifte.md), [Overlijdensakte](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/overlijdensakte.md), [Naamskeuzeverklaring](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naamskeuzeverklaring.md), [Geslachtswijzigingsaangifte](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geslachtswijzigingsaangifte.md), [Achternaamwijziging](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/achternaamwijziging.md), [Voornaamwijziging](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/voornaamwijziging.md), [Huwelijksaangifte](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/huwelijksaangifte.md), [Geregistreerd partnerschapaangifte](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschapaangifte.md), [Huwelijk](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/huwelijk.md), [Trouwlocatie](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/trouwlocatie.md), [Ambtenaar burgerlijke stand aanvragen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/ambtenaar-burgerlijke-stand-aanvragen.md), [Geregistreerd partnerschap omzetting in huwelijk](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschap-omzetting-in-huwelijk.md), [Geregistreerd partnerschap ontbinding](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschap-ontbinding.md), [Echtscheiding inschrijving](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/echtscheiding-inschrijving.md), [Uittreksel burgerlijke stand](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/uittreksel-burgerlijke-stand.md), [Bewijs van in leven zijn](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-in-leven-zijn.md), [Verklaring van huwelijksbevoegdheid](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-huwelijksbevoegdheid.md). |
 
 ### Relaties
 

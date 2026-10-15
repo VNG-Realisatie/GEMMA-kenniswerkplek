@@ -1,62 +1,8 @@
 begrip: Grafuitgifte
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: UPL-product Grafuitgifte (nr. 165); uitgifte van graven op aanvraag is gangbaar in de beheersverordeningen (VNG-modelverordening art. 11, 13–15; Groningen art. 14, 16; VNG retributies).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente geeft graven uit op haar begraafplaatsen (VNG-modelverordening art. 13–15; Groningen art. 16).
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandige dienst met een eigen naam in de UPL (nr. 165), niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij de lijkbezorging (UPL, Iv3 7.5); geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2026-vng-retributies
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Prestatie die de gemeente aanbiedt: een particulier graf, urnengraf of urnennis laten uitgeven; de toelichting op de VNG-modelverordening spreekt van dienstverlening en een voorzieningenpakket (toelichting 2).'
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Het uitsluitend recht op een particulier graf voor een vaste termijn (VNG-modelverordening art. 15; Groningen art. 16).
@@ -71,20 +17,11 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het proces Verlenen grafrecht.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - verlenen-grafrecht
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere dienst in deze wiki.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Een particulier graf, urnengraf of urnennis laten uitgeven, met het grafrecht daarop.
 beschrijving:
 - De gemeente geeft op haar begraafplaatsen particuliere graven, urnengraven en urnennissen uit (VNG-modelverordening art. 11, 13–15; Groningen art. 14, 16). Wie een graf wil, dient een schriftelijke aanvraag in; het college verleent het recht voor een vaste termijn, voor zover er ruimte is, en de gemeente heft er lijkbezorgingsrechten voor (Groningen art. 16; VNG-modelverordening art. 15; VNG retributies); die staan in de UPL als het product grafrechten (Gemeentewet art. 229; VNG retributies). De VNG-modelverordening beveelt aan aanvragen in te dienen bij de beheerder van de begraafplaats (toelichting 2).
@@ -122,18 +59,23 @@ besluiten:
 - datum: '2026-10-11'
   besluit: Grafuitgifte (UPL nr. 165) is een dienst; Graf aanvragen gaat erin op, met de synoniemen Graf aanvragen en Grafrecht aanvragen. Er komt geen product; de afspraak Grafrecht blijft via Verlenen grafrecht. Herziet het besluit van 2026-10-05 (product bij een dienst met een afspraak).
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2010-vng-model-beheersverordening-begraafplaatsen
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2026-vng-retributies
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2010-vng-model-beheersverordening-begraafplaatsen

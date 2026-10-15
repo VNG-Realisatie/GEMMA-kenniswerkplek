@@ -1,47 +1,10 @@
 begrip: Gemeentewet
+vak: motivatie
 onderwerpen:
 - bestuur-en-organisatie
 - lijkbezorging
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Concreet benoemde wet.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Regelt inrichting, bestuursorganen, bevoegdheden en financiën van de gemeente.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Een wet als geheel, geen losse norm of doel.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als wet.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij Bestuur en organisatie, de wet van de bestuursorganen van de gemeente; andere onderwerpen gebruiken haar als grondslag (participatie art. 150, lijkbezorging art. 147, 149, 229).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Concreet benoemde wet als geheel.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
   landelijk:
     waarde: ja
     onderbouwing: Rijkswet voor alle gemeenten.
@@ -49,17 +12,17 @@ kenmerken:
     - 2026-rijk-gemeentewet-wettekst
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: Art. 150 lid 1 en 2 geeft de raad de plicht ingezetenen en belanghebbenden bij beleid te betrekken (Betrekken inwoners bij beleid) en art. 150 lid 3 de plicht voorwaarden te stellen voor de uitvoering van taken door ingezetenen en maatschappelijke partijen (Behandelen verzoek uitdaagrecht).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
+    naar:
+    - betrekken-inwoners-bij-beleid
+    - behandelen-verzoek-uitdaagrecht
+    - participatieverordening
+    - regeling
+    - heffingsverordening
+    - heffing
+    - beleidsnota
   in_werking:
     waarde: ja
     onderbouwing: Geldend recht; art. 150 in de versie sinds 1 januari 2025.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder beleidskader in deze wiki; de wet staat op zichzelf.
     bronnen:
     - 2026-rijk-gemeentewet-wettekst
   generiek:
@@ -139,18 +102,18 @@ per_onderwerp:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor de Gemeentewet; nieuw voor GEMMA.
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
   - 2024-rijk-gemeentewet-wettekst

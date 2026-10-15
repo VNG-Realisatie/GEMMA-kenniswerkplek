@@ -1,57 +1,9 @@
 begrip: Vergunningenbeheer Publieksdiensten
+vak: bedrijf/gedrag-intern
+soort_gedrag: gegroepeerd_gedrag
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten; vergunningverlening voor lokale activiteiten is een gangbaar begrip. Zo kent de Model-APV de evenementenvergunning (art. 2:25), de vergunning voor inzameling van geld of goederen (art. 5:13) en de standplaatsvergunning (art. 5:18).
-    bronnen:
-    - 2023-vng-model-apv
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente verleent de vergunning om de uitvaart te vervroegen of uit te stellen, met toestemming van de burgemeester (RVO; art. 17).
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: 'Een eigen taak van de burgemeester, los van één ander begrip: na een arts te hebben gehoord een andere termijn stellen voor de begraving of crematie (Wet op de lijkbezorging art. 17 lid 1).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij lijkbezorging: bedient Stellen andere termijn (Wet op de lijkbezorging art. 17 lid 1). Geen ander onderwerp beoordeelt het; hoort later bij een algemeen onderwerp voor vergunningen.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: Een groep van activiteiten, waaronder het stellen van een andere termijn voor de begraving of crematie door de burgemeester (Wet op de lijkbezorging art. 17 lid 1).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag:
-    waarde: ja
-    onderbouwing: Groepeert het beheren en verlenen van vergunningen voor lokale activiteiten op grond van vergelijkbare kennis van aanvragen, toetsen en beslissen; geen eigen volgorde of doorlooptijd.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-vng-model-apv
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: De burgemeester beslist over een andere termijn voor begraving of crematie (art. 17).
@@ -69,9 +21,8 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bedient_gedrag:
     waarde: ja
-    onderbouwing: Bedient Stellen andere termijn (art. 17).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - stellen-andere-termijn
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
@@ -126,18 +77,21 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 71 (GEMMA-domein Publieksdiensten)
-status: goedgekeurd
+bronnen:
+- 2023-vng-model-apv
+- 2026-rvo-aangifte-en-akte-van-overlijden
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2023-vng-model-apv
   - 2026-rvo-aangifte-en-akte-van-overlijden

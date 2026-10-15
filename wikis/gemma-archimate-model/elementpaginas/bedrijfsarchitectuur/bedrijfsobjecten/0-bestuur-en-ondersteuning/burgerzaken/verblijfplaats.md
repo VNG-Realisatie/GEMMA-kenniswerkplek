@@ -2,7 +2,7 @@
 id: verblijfplaats
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Verblijfplaats
 onderwerpen:
 - burgerzaken
@@ -48,7 +48,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verblijfplaats.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -83,20 +83,17 @@ Bedrijfsobject, niveau subobject. Uitkomst van de beslistabel: Passief (kern ja,
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+**Vak**: bedrijfslaag, passief (Bedrijfsobject, Afspraak, Representatie (geen pagina)). **Hoofdkenmerk**: ding. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare term in HUP en LO BRP (categorie 08 Verblijfplaats); in de praktijk het adres (Utrecht Verhuizing doorgeven). [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md), [Logisch Ontwerp BRP 2025.Q1](../../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md), [Utrecht Verhuizing doorgeven](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-verhuizing-doorgeven.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente legt bij aangifte of ambtshalve de verblijfplaats vast en wijzigt haar (HUP Verblijfplaats; HUP Binnengemeentelijke adreswijziging). [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md), [HUP Binnengemeentelijke adreswijziging](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md), [Logisch Ontwerp BRP 2025.Q1](../../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md), [Logisch Ontwerp BRP 2025.Q1](../../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md) |
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elke verblijfplaats heeft een adres en een datum aanvang adreshouding (HUP Binnengemeentelijke adreswijziging). [HUP Binnengemeentelijke adreswijziging](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, begint bij inschrijving of verhuizing en eindigt bij de volgende adreswijziging of emigratie (HUP Binnengemeentelijke en Intergemeentelijke adreswijziging; HUP Emigratie). [HUP Binnengemeentelijke adreswijziging](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md), [HUP Intergemeentelijke adreswijziging](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-intergemeentelijke-adreswijziging.md), [HUP Emigratie](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-emigratie.md) |
-| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, verwerken adreswijziging legt de nieuwe verblijfplaats vast; Uitvoeren adresonderzoek wijzigt haar ambtshalve (HUP Binnengemeentelijke adreswijziging; Circulaire adresonderzoek 4.8). [HUP Binnengemeentelijke adreswijziging](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md), [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) |
+| **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Inschrijven ingezetene](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ingezetene.md), [Uitvoeren adresonderzoek](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitvoeren-adresonderzoek.md), [Verwerken adreswijziging](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-adreswijziging.md). |
 | **deel van object**: Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? | Ja, een groep gegevens van de ingeschreven persoon (categorie 08 op de persoonslijst); bestaat niet zonder die persoon (LO BRP 4.4). [Logisch Ontwerp BRP 2025.Q1](../../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md) |
 | **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, categorie 08 van de persoonslijst, gekoppeld aan de BAG (HUP Verblijfplaats; LO BRP 4.4). [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md), [Logisch Ontwerp BRP 2025.Q1](../../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type; woonadres en briefadres zijn haar specialisaties (HUP Verblijfplaats). [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md) |
 
 ### Specialisaties
 

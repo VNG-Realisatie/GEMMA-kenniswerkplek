@@ -1,66 +1,18 @@
 begrip: Verlenen verlof tot ontleding
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wettelijk: het schriftelijk verlof van de burgemeester tot ontleding (Wlb art. 68).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester geeft het verlof af (Wlb art. 68 lid 1).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, met een eigen besluit.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij de lijkbezorging.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Per aanvraag, van aanvraag tot verlof binnen drie dagen (Wlb art. 68 lid 1; Besluit op de lijkbezorging art. 17).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Beslisser (burgemeester) (Wlb art. 68 lid 1).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beslisser
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Legt het verlof tot ontleding vast en betreft het stoffelijk overschot (Wlb art. 68).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - vergunning
+    - stoffelijk-overschot
   aanleiding:
     waarde: ja
     onderbouwing: Een aanvraag om verlof tot ontleding (Besluit op de lijkbezorging art. 17).
@@ -84,9 +36,8 @@ kenmerken:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: ontleding is een wettelijke wijze van bezorging (Wlb art. 67).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - toestaan-lijkbezorging
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de aanvraag tot het verlof.
@@ -103,24 +54,14 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Ontleding stoffelijk overschot toestemming (UPL nr. 306).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - ontleding-stoffelijk-overschot-toestemming
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een besluit, niet in een benoemde toestandsverandering.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki; het cluster Behandelen vergunningaanvragen lijkbezorging groepeert, het specialiseert niet.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Het afgeven van het schriftelijk verlof waarmee een stoffelijk overschot mag worden ontleed.
 beschrijving:
 - Ontleding gebeurt alleen met schriftelijk verlof van de burgemeester, dat binnen drie dagen kosteloos wordt afgegeven en de plaats van ontleding vermeldt; tegen het besluit staat binnen 24 uur beroep open bij de commissaris van de Koning (Wet op de lijkbezorging art. 68). Beslisser is de burgemeester. De ontleding zelf hoort bij Uitvoeren lijkbezorging.
@@ -155,11 +96,13 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: Wlb art. 68; UPL nr. 306
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -167,7 +110,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst

@@ -1,46 +1,8 @@
 begrip: Kieswet
+vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Grondslag van de UPL-producten stempas, kiezerspas, volmachtbewijs verkiezingen en stemrecht (UPL nr. 397, 208, 453, 398).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Geeft B&W de registratie van de kiesgerechtigdheid en de burgemeester de verstrekking van stempas, kiezerspas en volmachtbewijs (art. D 1, J 7, K 4, L 11).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandige regeling.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van Beheren stempassen en Registreren kiesgerechtigdheid.'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde wet als geheel (BWBR0004627).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -56,18 +18,13 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: Art. J 7, K 1, L 8 en L 14 en B 1-B 3 zijn de grondslag van de diensten Stempas ontvangen, Kiezerspas, Volmachtbewijs verkiezingen en Stemrecht (UPL nr. 397, 208, 453, 398); art. D 1 van Registreren kiesgerechtigdheid.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2025-vng-upl-producten-en-diensten-extern
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
+    naar:
+    - stempas-ontvangen
+    - kiezerspas
+    - volmachtbewijs-verkiezingen
+    - stemrecht
+    - beheren-stempassen
+    - registreren-kiesgerechtigdheid
 regelgever: rijk
 definitie: Wet over het kiesrecht en de verkiezing van de vertegenwoordigende organen, waaronder de gemeenteraad.
 beschrijving:
@@ -127,18 +84,18 @@ relaties:
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. B 5, D 1-D 7
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   - 2025-vng-upl-producten-en-diensten-extern

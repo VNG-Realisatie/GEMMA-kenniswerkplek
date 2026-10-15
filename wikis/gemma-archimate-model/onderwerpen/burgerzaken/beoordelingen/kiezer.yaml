@@ -1,53 +1,19 @@
 begrip: Kiezer
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wetsbegrip (Kieswet art. J 7, K 1, L 1) en GEMMA-rol Kiezer.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Ontvangt de stempas van de burgemeester en richt verzoeken aan hem (Kieswet art. J 7, J 8, K 3, L 8).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen hoedanigheid.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: de rol voert gedrag uit in Beheren stempassen en Registreren kiesgerechtigdheid.'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De hoedanigheid van wie kiesgerechtigd is en als kiezer is geregistreerd (Kieswet art. D 1, J 7).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: Een hoedanigheid; de persoon bestaat los ervan, de rol niet.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Verstrekken stempas, Behandelen verzoek om kiezerspas, Behandelen verzoek om volmacht en Registreren kiesgerechtigdheid (Kieswet art. J 8, K 3, L 8, D 5).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - verstrekken-stempas
+    - behandelen-verzoek-om-kiezerspas
+    - behandelen-verzoek-om-volmacht
+    - registreren-kiesgerechtigdheid
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -60,14 +26,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki; in GEMMA een specialisatie van Klant.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van wie kiesgerechtigd en als kiezer geregistreerd is en bij een verkiezing mag stemmen.
 beschrijving:
@@ -120,18 +78,18 @@ relaties:
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. J 7 lid 2
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   - 2026-rvig-hup-europees-kiesrecht

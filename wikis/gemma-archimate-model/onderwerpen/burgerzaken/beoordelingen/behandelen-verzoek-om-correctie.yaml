@@ -1,76 +1,18 @@
 begrip: Behandelen verzoek om correctie
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar als persoonsgegevens aanpassen (Utrecht) en correctieverzoek (HUP).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente beoordeelt de bewijsstukken en neemt binnen vier weken een besluit (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
-    - 2018-nvvb-stappenplan-identiteitswijziging-brp
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
-    - 2018-nvvb-stappenplan-identiteitswijziging-brp
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
-    - 2018-nvvb-stappenplan-identiteitswijziging-brp
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
-    - 2018-nvvb-stappenplan-identiteitswijziging-brp
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Bijhoudingsgemeente en Beslisser (college) (Utrecht; NVVB Identiteitswijziging).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2018-nvvb-stappenplan-identiteitswijziging-brp
+    naar:
+    - beslisser
+    - bijhoudingsgemeente
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Corrigeert gegevens van de ingeschreven persoon en de verblijfplaats aan de hand van bewijsstukken (Utrecht; HUP Correcties).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
+    naar:
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Verzoek van de burger om correctie, met bewijsstukken (HUP Correcties; Utrecht).
@@ -98,9 +40,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één correctie in de persoonslijst (HUP Correcties).'
-    bronnen:
-    - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het verzoek tot de gecorrigeerde gegevens of de weigering.
@@ -119,23 +60,14 @@ kenmerken:
     - 2018-nvvb-stappenplan-identiteitswijziging-brp
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst BRP-wijzigingsverzoek (UPL nr. 95).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - brp-wijzigingsverzoek
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het beslissen op een verzoek van een ingeschrevene om onjuiste gegevens in de basisregistratie personen te corrigeren.
 beschrijving:
 - 'De burger kan vragen gegevens te laten aanpassen: adresgegevens, zoals een onjuiste inschrijfdatum, of persoonsgegevens zoals naam, geslacht en geboortedatum, met bewijsstukken; de gemeente beoordeelt de bewijsstukken en neemt binnen vier weken een besluit waartegen bezwaar mogelijk is (Utrecht Persoonsgegevens aanpassen). Wijzigt daardoor in feite de identiteit, zoals bij een andere geboortedatum, dan zijn gemeenten bijzonder terughoudend; de NVVB heeft een stappenplan, een model rectificatieverzoek en een model weigeringsbeschikking (NVVB Identiteitswijziging). Correcties na een eigen constatering of een onderzoek zijn registratiestappen zonder eigen besluit (HUP Correcties).'
@@ -174,11 +106,13 @@ relaties:
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: UPL nr. 95; Wet BRP art. 2.58
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -186,7 +120,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens

@@ -1,59 +1,9 @@
 begrip: Zienswijze
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product in de UPL (nr. 497, zienswijze); gangbaar: een zienswijze indienen (Awb art. 3:15).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Belanghebbenden brengen hun zienswijze naar voren bij het gemeentelijke bestuursorgaan dat het besluit voorbereidt (art. 3:15).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 497).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: de zienswijze is onderdeel van de algemene voorbereiding van besluiten (Awb art. 3:15).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Iets wat de gemeente aanbiedt: de gelegenheid een zienswijze naar voren te brengen.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie voor de belanghebbende: zijn zienswijze over een ontwerpbesluit naar voren brengen, schriftelijk of mondeling, en betrokken zien bij het besluit (art. 3:15, 3:17; UPL nr. 497).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De zienswijze is ingediend en wordt betrokken bij het besluit; bij een mondelinge zienswijze een verslag (art. 3:15, 3:17).
@@ -77,9 +27,8 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Uitvoeren uniforme openbare voorbereidingsprocedure (art. 3:15–3:17).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - uitvoeren-uniforme-openbare-voorbereidingsprocedure
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -88,9 +37,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 497); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf de generieke dienst voor elk besluit dat volgens afdeling 3.4 wordt voorbereid, geen specialisatie van een generiek GEMMA-element; zo ook Beslisser.
 afnemer: extern
 domein: Bestuur
 definitie: Het schriftelijk of mondeling naar voren brengen van een mening over een ontwerpbesluit dat ter inzage ligt.
@@ -101,18 +47,20 @@ beleidsdomein: Besluitvorming
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst Zienswijze; de Deelservice Inspraakprocedure (Vaststellen omgevingsplan) is een interne deeldienst voor het omgevingsplan. Nieuw voor GEMMA.
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst

@@ -2,7 +2,7 @@
 id: besluit-op-de-lijkbezorging
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Besluit op de lijkbezorging
 onderwerpen:
 - lijkbezorging
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit-op-de-lijkbezorging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -47,19 +47,15 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de AMvB bij de Wet op de lijkbezorging; de UPL noemt haar als grondslag (UPL nr. 445). [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft de burgemeester taken: het laissez-passer voor lijken afgeven en beslissen op een verlof tot ontleding (art. 11, 17). [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij de lijkbezorging. [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, een concreet benoemde algemene maatregel van bestuur als geheel (BWBR0009080). [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijksregelgeving: een algemene maatregel van bestuur. [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, art. 11 (laissez-passer voor lijken) en art. 17 (beslistermijn verlof tot ontleding): gedrag in Afgeven laissez-passer en Verlenen verlof tot ontleding. [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki; het besluit werkt de Wet op de lijkbezorging uit. [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Afgeven laissez-passer](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/afgeven-laissez-passer.md), [Verlenen verlof tot ontleding](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-ontleding.md), [Wet op de lijkbezorging](wet-op-de-lijkbezorging.md), [Vervoersdocumenten stoffelijk overschot](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervoersdocumenten-stoffelijk-overschot.md). |
 
 ### Relaties
 

@@ -1,45 +1,6 @@
 begrip: Plaats van bijzetting
+vak: bedrijf/passief
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wetsterm (art. 62, 65).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente is houder van urnengraven en urnennissen en vergunt bewaarplaatsen (Groningen art. 1 u, v; art. 64).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats:
-    waarde: nee
-    onderbouwing: Beoordeeld als voorziening met houder en register, niet als fysieke plaats.
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elke plaats apart, met eigen register (art. 65).
@@ -73,14 +34,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Plaats waar urnen worden bijgezet, zoals een urnengraf, urnennis, crematorium of bewaarplaats.
@@ -105,14 +58,14 @@ genoemd_begrip: Begraafplaats
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 37
+    regel: 34
     toelichting: Onderdeel van een ander object, zonder eigen proces
     archimate_type: business-object
     voorleggen: false
     data_object: nee
     genoemd_begrip: Begraafplaats
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

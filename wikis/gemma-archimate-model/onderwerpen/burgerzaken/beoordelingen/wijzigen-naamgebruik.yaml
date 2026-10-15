@@ -1,70 +1,18 @@
 begrip: Wijzigen naamgebruik
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: het verzoek om een andere aanduiding naamgebruik (HUP Wijziging naamgebruik; Utrecht Achternaamgebruik veranderen).'
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college geeft binnen vier weken gevolg aan het verzoek (HUP Wijziging naamgebruik).
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Bijhoudingsgemeente en Beslisser (college); de persoon verzoekt (HUP Wijziging naamgebruik).
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
+    naar:
+    - beslisser
+    - bijhoudingsgemeente
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Bijwerkt de aanduiding naamgebruik van de ingeschreven persoon (HUP Wijziging naamgebruik).
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
+    naar:
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Een schriftelijk verzoek van een (voormalig) gehuwde of geregistreerde partner, online, aan de balie of met een formulier (HUP Wijziging naamgebruik; Utrecht).
@@ -90,9 +38,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie bij de ingeschreven persoon.'
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het verzoek tot de gewijzigde aanduiding of de weigering.
@@ -109,24 +56,14 @@ kenmerken:
     - 2026-rvig-hup-wijziging-naamgebruik
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Naamgebruik verzoek aanduiding (UPL nr. 257).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - naamgebruik-verzoek-aanduiding
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het beslissen op een verzoek van een (voormalig) gehuwde of geregistreerde partner welke achternaam de overheid voor hem gebruikt.
 beschrijving:
 - Wie getrouwd of geregistreerd partner is of was, kiest de eigen naam, de naam van de partner of een combinatie in beide volgorden (BW 1 art. 9; Utrecht). Het college geeft binnen vier weken gevolg; weigeren is gelijkgesteld aan een Awb-besluit (Wet BRP art. 2.60; HUP Wijziging naamgebruik). De keuze gaat naar andere overheidsorganisaties; op een paspoort of rijbewijs staat altijd de eigen achternaam (Utrecht).
@@ -158,11 +95,11 @@ relaties:
   vindplaats: UPL nr. 257; Wet BRP art. 2.25
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -170,7 +107,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rvig-hup-wijziging-naamgebruik
   - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen

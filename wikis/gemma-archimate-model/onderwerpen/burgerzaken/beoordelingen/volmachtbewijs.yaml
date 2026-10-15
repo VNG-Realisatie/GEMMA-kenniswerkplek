@@ -3,35 +3,9 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Behandelen verzoek om volmacht
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip: de verklaring aan de gemachtigde ten bewijze van zijn bevoegdheid (Kieswet art. L 6, L 11).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester maakt het bij inwilliging op (Kieswet art. L 11 lid 2).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: Het resultaat van Behandelen verzoek om volmacht, of een omgezette stempas of kiezerspas (Kieswet art. L 11, L 14); de volmacht is de dienst, het bewijs een onderdeel.
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij burgerzaken.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
 toelichting: 'Onderdeel, geen pagina: bij inwilliging van het verzoek maakt de burgemeester een volmachtbewijs op, of de kiezer zet zijn stempas of kiezerspas om in een volmachtbewijs (Kieswet art. L 6, L 11, L 14). De dienst heet met de UPL-naam Volmachtbewijs verkiezingen.'
 beslist:
   uitkomst:
@@ -45,3 +19,5 @@ beslist:
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-kieswet-bwbr0004627

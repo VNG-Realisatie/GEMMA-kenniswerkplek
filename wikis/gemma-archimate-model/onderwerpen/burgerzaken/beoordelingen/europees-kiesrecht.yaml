@@ -3,40 +3,12 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het kiesrecht voor het Europees Parlement van niet-Nederlandse EU-onderdanen in Nederland (HUP Europees kiesrecht).
-    bronnen:
-    - 2026-rvig-hup-europees-kiesrecht
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt het verzoek (Y32) op en informeert de EU-onderdaan erover (HUP Europees kiesrecht).
-    bronnen:
-    - 2026-rvig-hup-europees-kiesrecht
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: Een aanduiding in de categorie kiesrecht van de persoonslijst (HUP Europees kiesrecht; HUP Kiesrecht).
     bronnen:
     - 2026-rvig-hup-europees-kiesrecht
     - 2026-rvig-hup-kiesrecht
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Niet los te zien van het genoemde begrip, maar wel een eigen waarde.
-    bronnen:
-    - 2026-rvig-hup-europees-kiesrecht
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij burgerzaken (BRP).
-    bronnen:
-    - 2026-rvig-hup-europees-kiesrecht
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-europees-kiesrecht
 toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: de aanduiding dat een EU-onderdaan aan de verkiezing van het Europees Parlement in Nederland deelneemt, op zijn verzoek met formulier Y32; zij eindigt op verzoek, bij vertrek of bij verkrijging van het Nederlanderschap (HUP Europees kiesrecht). Een processtap van Registreren kiesgerechtigdheid.'
 beslist:
   uitkomst:

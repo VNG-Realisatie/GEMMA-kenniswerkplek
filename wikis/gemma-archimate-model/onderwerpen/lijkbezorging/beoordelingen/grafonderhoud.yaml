@@ -1,60 +1,6 @@
 begrip: Grafonderhoud
+vak: bedrijf/gedrag-extern
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar in verordening en VNG ('onderhoud van graven en urnen').
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente biedt het aan tegen betaling (Groningen art. 23; VNG retributies).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Prestatie die de gemeente aan de rechthebbende aanbiedt, los van hoe zij het onderhoud uitvoert.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een onderhouden graf (Groningen art. 23 lid 3).
@@ -67,21 +13,12 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: 'De functie Exploiteren van begraafplaatsen, zonder eigen proces: een UPL-product zonder landelijke wettelijke grondslag wordt niet uitgewerkt in processen (regel Wettelijke grondslag).'
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - exploiteren-van-begraafplaatsen
+    - onderhouden-graf
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere dienst in deze wiki.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -109,18 +46,23 @@ afnemer: extern
 synoniemen:
 - naam: Onderhoud van graven
   context: beleid
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2026-vng-retributies
+- 2010-vng-model-beheersverordening-begraafplaatsen
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

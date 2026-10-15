@@ -1,59 +1,7 @@
 begrip: Verzorgen lijkbezorging
+vak: bedrijf/gedrag-intern
+soort_gedrag: groepeert_processen
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Naam van de wet en van het taakgebied (VNG).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-wet-op-de-lijkbezorging
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Gemeentelijke taken rond schouwen, begraven, cremeren en graven.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-wet-op-de-lijkbezorging
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-wet-op-de-lijkbezorging
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Het overkoepelende gedrag van dit onderwerp.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-wet-op-de-lijkbezorging
-  gedrag:
-    waarde: ja
-    onderbouwing: Een groep van activiteiten.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen:
-    waarde: ja
-    onderbouwing: Groepeert de processen rond de gemeentelijke taak lijkbezorging en wordt niet per geval doorlopen.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gegroepeerd_gedrag:
-    waarde: nee
-    onderbouwing: 'Geen functie meer: de taak groepeert processen.'
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: De rollen Houder van de begraafplaats, Houder van het crematorium en Houder van een plaats van bijzetting, die de gemeente vervult (art. 33, 37, 52, 63).
@@ -66,20 +14,15 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: ja
-    onderbouwing: 'Per kernobject één proces: Bezorgen stoffelijk overschot (art. 1–22a), Verzorgen gemeentebegrafenis (art. 20–22), Beheren grafrechten (art. 28), Beheren graven (art. 23, 27, 31), Beheren begraafplaatsen (art. 33–47) en Beheren crematoria (art. 50–56).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beheren-grafrechten
+    - beheren-graven
+    - beheren-begraafplaatsen
+    - beheren-crematoria
+    - verzorgen-gemeentebegrafenis
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 definitie: 'Gemeentelijke taak rond de lijkbezorging: het bezorgen van stoffelijke overschotten en het beheer van graven en grafrechten.'
 beschrijving:
 - 'Lijkbezorging geschiedt door begraving, crematie of een andere wettelijke wijze (Wet op de lijkbezorging art. 1). De gemeente schouwt stoffelijke overschotten via de gemeentelijke lijkschouwer, geeft het verlof tot begraving of crematie af, heeft ten minste één gemeentelijke begraafplaats, geeft graven uit, staat opgraving en ruiming toe en draagt zorg voor de lijkbezorging als niemand daarin voorziet (art. 4, 11, 21, 28, 29, 31, 33). De taak groepeert de processen daarvoor, één per kernobject: het stoffelijk overschot, de gemeentebegrafenis, het grafrecht, het graf, de begraafplaats en het crematorium.'
@@ -137,11 +80,14 @@ relaties:
   vindplaats: art. 20–22
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-vng-wet-op-de-lijkbezorging
 status: afgewezen
 beslist:
   uitkomst:
     soort: element
-    regel: 27
+    regel: 24
     toelichting: Gedrag, *groepeert processen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -150,7 +96,7 @@ beslist:
     - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   voor_te_leggen:
   - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
   bronnen:

@@ -2,7 +2,7 @@
 id: behandelen-vergunningaanvragen-lijkbezorging
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Behandelen vergunningaanvragen lijkbezorging
 onderwerpen:
 - lijkbezorging
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-vergunningaanvragen-lijkbezorging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -51,18 +51,13 @@ Bedrijfsproces, niveau cluster naar soort werk. Uitkomst van de beslistabel: Ged
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 52 zijn nee.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: groepeert processen. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, het verlenen van vergunningen, verloven en toestemmingen is gangbaar gemeentelijk werk; de wet kent er vijf in de lijkbezorging (art. 11, 17, 29, 41, 53). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de bedrijfsprocessen zijn gemeentelijk gedrag (zie elk bedrijfsproces). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen groepering van bedrijfsprocessen van één soort werk. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat gedaan wordt. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **groepeert processen**: Is het een groepering van bedrijfsprocessen van één soort werk, die niet per geval wordt doorlopen? | Ja, groepeert de bedrijfsprocessen van één soort werk, als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
-| **omvat processen**: Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? | Ja, verlenen verlof tot begraving of crematie, Stellen andere termijn, Opgraven stoffelijk overschot, Verlenen toestemming bijzondere begraafplaats, Verlenen vergunning bijzonder crematorium, Verlenen verlof tot ontleding (art. 11, 17, 29, 40, 41, 53, 68) en Afgeven laissez-passer (Besluit op de lijkbezorging art. 11). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Besluit op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder proces in deze wiki of in het GEMMA-model. [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **omvat processen**: Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? | Ja, met [Verlenen verlof tot begraving of crematie](verlenen-verlof-tot-begraving-of-crematie.md), [Stellen andere termijn](stellen-andere-termijn.md), [Opgraven stoffelijk overschot](opgraven-stoffelijk-overschot.md), [Verlenen toestemming bijzondere begraafplaats](verlenen-toestemming-bijzondere-begraafplaats.md), [Verlenen vergunning bijzonder crematorium](verlenen-vergunning-bijzonder-crematorium.md), [Verlenen verlof tot ontleding](verlenen-verlof-tot-ontleding.md), [Afgeven laissez-passer](afgeven-laissez-passer.md). |
 
 ### Relaties
 

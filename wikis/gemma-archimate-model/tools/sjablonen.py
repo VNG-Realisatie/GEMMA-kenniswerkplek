@@ -23,16 +23,12 @@ import bepaal_type
 TODO = "TODO"
 PATRONEN = ("upl-dienst",)
 
-DIENST_JA = ("herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp", "gedrag", "aangeboden_gedrag",
-             "benoembaar_resultaat", "komt_herhaald_voor", "eigen_normering", "afnemer", "gerealiseerd_door",
-             "zelfstandige_specialisatie")
-PROCES_JA = ("herkenbaar", "gemeentelijk", "eigen_identiteit", "betekenis_in_onderwerp", "gedrag", "per_keer_doorlopen",
-             "toegewezen_partij", "gebruikt_objecten", "aanleiding", "benoembaar_resultaat", "komt_herhaald_voor",
-             "eigen_normering", "bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit", "levert_aanbod",
-             "zelfstandige_specialisatie")
-STANDAARD_NEE = {"buiten_dit_model": "Geen doel, waarde, principe, losse norm, vermogen of thema.",
-                 "slechts_eigenschap": "Geen eigenschap, status of indeling van één ander begrip."}
-KALE = set(bepaal_type.AARD) | {s for s, k in bepaal_type.KENMERK.items() if k.groep == "Soort gedrag"}
+# De keuzevelden en de kenmerken met ja; de poort is doorlopen en *zelfstandige specialisatie* staat standaard op ja.
+DIENST_VELDEN = {"vak": "bedrijf/gedrag-extern"}
+DIENST_JA = ("benoembaar_resultaat", "komt_herhaald_voor", "eigen_normering", "afnemer", "gerealiseerd_door")
+PROCES_VELDEN = {"vak": "bedrijf/gedrag-intern", "soort_gedrag": "per_keer_doorlopen"}
+PROCES_JA = ("toegewezen_partij", "gebruikt_objecten", "aanleiding", "benoembaar_resultaat", "komt_herhaald_voor",
+             "eigen_normering", "bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit", "levert_aanbod")
 
 
 class SjabloonFout(Exception):
@@ -64,26 +60,27 @@ def _regel(waarde: str, tekst: str, bronnen: list[str]) -> str:
     return f"{waarde} — {tekst}" + (f" [{', '.join(bronnen)}]" if bronnen else "")
 
 
-def _kenmerken(ja: tuple[str, ...], bronnen: list[str], soort: str, extra: dict[str, str] | None = None) -> dict:
-    """Alle kenmerken in de schrijfvorm van één regel; `normaliseer_data` laat de nee's buiten het pad weg."""
-    extra = extra or {}
+def _kenmerken(ja: tuple[str, ...], bronnen: list[str], soort: str, naar: dict[str, list[str]] | None = None) -> dict:
+    """De kenmerken zonder standaardwaarde, in de schrijfvorm van één regel; een relationeel kenmerk met een bekende
+    tegenpartij krijgt `naar`. `normaliseer_data` laat de nee's buiten het pad weg."""
+    naar = naar or {}
     uit: dict = {}
     for s in bepaal_type.SLEUTELS:
-        if s in ja:
-            uit[s] = _regel("ja", f"{TODO}: {extra.get(s) or bepaal_type.NAAM[s]}", bronnen)
-        elif s in KALE:
-            uit[s] = bepaal_type.KALE_NEE
-        elif s in STANDAARD_NEE:
-            uit[s] = _regel("nee", STANDAARD_NEE[s], [])
-        elif s in ("generiek", "geautomatiseerd_verwerkt"):
+        if s in bepaal_type.KEUZE or s in bepaal_type.STANDAARD:
+            continue
+        if s in naar:
+            uit[s] = {"waarde": "ja", "naar": naar[s]}
+        elif s in ja:
+            uit[s] = _regel("ja", f"{TODO}: {bepaal_type.NAAM[s]}", bronnen)
+        elif s == "geautomatiseerd_verwerkt":
             uit[s] = _regel("nee", f"{TODO}: bevestig dat {bepaal_type.NAAM[s]} hier niet geldt", bronnen)
         else:
             uit[s] = _regel("nee", f"Niet van toepassing: {soort}.", [])
     return uit
 
 
-def _basis(p: Params, begrip: str, definitie: str) -> dict:
-    return {"begrip": begrip, "onderwerpen": [p.onderwerp], "afnemer": "extern",
+def _basis(p: Params, begrip: str, definitie: str, velden: dict) -> dict:
+    return {"begrip": begrip, **velden, "onderwerpen": [p.onderwerp], "afnemer": "extern", "bronnen": list(p.bronnen),
             **({"domein": p.domein} if p.domein else {}), **({"taakveld": p.taakveld} if p.taakveld else {}),
             **({"beleidsdomein": p.beleidsdomein} if p.beleidsdomein else {}),
             "definitie": f"{TODO}: {definitie}",
@@ -109,17 +106,18 @@ def bouw(patroon: str, p: Params) -> dict[str, dict]:
     if p.toegang and p.toegang not in ("raadplegen", "registreren"):
         raise SjabloonFout("--toegang is raadplegen of registreren")
     upl = f"UPL nr. {p.upl_nr}" if p.upl_nr else "UPL"
-    uit = {p.id: {**_basis(p, p.naam, f"wat de gemeente aanbiedt ({upl}), in één zin."),
-                  "kenmerken": _kenmerken(DIENST_JA, p.bronnen, "dienst",
-                                          {"herkenbaar": f"product in de UPL ({upl}); gangbare term"})}}
+    proces = p.proces or p.proces_id or slug(p.proces_naam)
+    uit = {p.id: {**_basis(p, p.naam, f"wat de gemeente aanbiedt ({upl}), in één zin.", DIENST_VELDEN),
+                  "kenmerken": _kenmerken(DIENST_JA, p.bronnen, "dienst", {"gerealiseerd_door": [proces]})}}
     realisatie = _relatie("realisatie", p.id, "realiseert", p.bronnen)
     if p.proces:
         uit[p.proces] = {"relaties": [realisatie]}
         return uit
     toegang = [_relatie(f"toegang ({p.toegang})", p.kernobject, f"{TODO}: handeling", p.bronnen)] if p.toegang else []
-    uit[p.proces_id or slug(p.proces_naam)] = {
-        **_basis(p, p.proces_naam, "wat het proces doet, van aanleiding tot resultaat."),
-        "kernobject": p.kernobject, "kenmerken": _kenmerken(PROCES_JA, p.bronnen, "bedrijfsproces"),
+    naar = {"levert_aanbod": [p.id], **({"gebruikt_objecten": [p.kernobject]} if p.toegang else {})}
+    uit[proces] = {
+        **_basis(p, p.proces_naam, "wat het proces doet, van aanleiding tot resultaat.", PROCES_VELDEN),
+        "kernobject": p.kernobject, "kenmerken": _kenmerken(PROCES_JA, p.bronnen, "bedrijfsproces", naar),
         "relaties": [realisatie, *toegang]}
     return uit
 

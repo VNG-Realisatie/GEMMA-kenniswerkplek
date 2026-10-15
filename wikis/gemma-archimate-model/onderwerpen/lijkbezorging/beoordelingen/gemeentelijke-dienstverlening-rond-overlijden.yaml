@@ -1,33 +1,9 @@
 begrip: Gemeentelijke dienstverlening rond overlijden
+hoofdkenmerk: gedrag
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2026-vng-wet-op-de-lijkbezorging
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ziet of doet hierover iets.
-    bronnen:
-    - 2026-vng-wet-op-de-lijkbezorging
   buiten_dit_model:
     waarde: ja
     onderbouwing: 'Grouping: Verzamelterm in de VNG-bron voor de dienstverlening rond overlijden.'
-    bronnen:
-    - 2026-vng-wet-op-de-lijkbezorging
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-vng-wet-op-de-lijkbezorging
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-vng-wet-op-de-lijkbezorging
-  gedrag:
-    waarde: ja
-    onderbouwing: Verzamelt gedrag.
     bronnen:
     - 2026-vng-wet-op-de-lijkbezorging
 toelichting: 'Buiten dit model (Grouping): Verzamelterm in de VNG-bron voor de dienstverlening rond overlijden.'

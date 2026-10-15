@@ -1,61 +1,8 @@
 begrip: Geboorteaangifte
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product in de UPL (nr. 136); Utrecht: geboorteaangifte doen.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente van geboorte ontvangt de aangifte en maakt de akte op (BW 1 art. 19, 19e).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente op aangifte levert, beschreven vanuit de afnemer: de geboorte aangeven (UPL nr. 136; Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De geboorteakte, een gratis uittreksel en de inschrijving van het kind in de BRP met een burgerservicenummer (Utrecht).
@@ -75,9 +22,8 @@ kenmerken:
     - 2026-utrecht-burgerzaken-geboorteaangifte-doen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Opmaken geboorteakte (BW 1 art. 19e).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - opmaken-geboorteakte
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -86,9 +32,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 136); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het doen van aangifte van de geboorte van een kind bij de gemeente waar het is geboren, waarna de gemeente een geboorteakte opmaakt.
 beschrijving:
 - 'Aangifte binnen drie dagen na de geboortedag (BW 1 art. 19e). Kanalen: online met DigiD voor de moeder of de andere ouder als die al juridisch ouder is, met controle bij ziekenhuis of verloskundige, of aan de balie op afspraak; een afwijkende of dubbele achternaam kan alleen aan de balie met beide ouders (Utrecht). Grondslag art. 19e BW 1; digitaal kanaal (UPL nr. 136).'
@@ -104,18 +47,22 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-geboorteaangifte-doen
+- 2026-rijk-burgerlijk-wetboek-boek-1
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-geboorteaangifte-doen

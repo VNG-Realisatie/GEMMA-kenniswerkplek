@@ -3,28 +3,9 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Begrip uit LO BRP en HUP (LO BRP 4.2.2; HUP Achtergronden).
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente van vertrek neemt verwijsgegevens op (HUP Achtergronden).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: Een van de persoonslijst afgeleide verzameling gegevens die verwijst naar de volgende gemeente van inschrijving (LO BRP 4.2.2).
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
     bronnen:
     - 2025-rvig-logisch-ontwerp-brp-2025q1
 toelichting: 'Eigenschap van Ingeschreven persoon: een afgeleide verwijzing naar de bijhoudingsgemeente, opgenomen door de vorige gemeente of de RNI. Geen pagina.'
@@ -44,3 +25,6 @@ beslist:
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   - 2026-rvig-hup-achtergronden-en-begrippen
   herkomst: informatiemodel
+bronnen:
+- 2025-rvig-logisch-ontwerp-brp-2025q1
+- 2026-rvig-hup-achtergronden-en-begrippen

@@ -1,47 +1,9 @@
 begrip: Inwoner
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 onderwerpen:
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Ingezetene in de wet (art. 150), inwoner in de modelverordening (var. 1 art. 1).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente betrekt inwoners bij beleid en zij kunnen taken overnemen (art. 150 lid 1 en 3).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als persoon.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort voorlopig bij participatie, het enige onderwerp dat haar als partij gebruikt.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-  gedrag: nee
-  handelende_partij:
-    waarde: ja
-    onderbouwing: Een persoon die participeert, een verzoek indient en een taak uitvoert.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Een inwoner is ingezetene van de gemeente, los van participatie; zij kan ook andere rollen vervullen, zoals indiener van een verzoek of belanghebbende bij inspraak.
@@ -57,24 +19,15 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder actor in deze wiki.
-    bronnen:
-    - 2024-vng-model-participatieverordening
   vervult_een_rol:
     waarde: ja
-    onderbouwing: Vervult de rol Indiener; inwoners kunnen bij het college een verzoek om toepassing van het uitdaagrecht of om overheidsparticipatie indienen (var. 1 art. 6 lid 1, var. 2 art. [11] lid 1).
-    bronnen:
-    - 2024-vng-model-participatieverordening
+    naar:
+    - indiener
   soort_partij:
     waarde: ja
     onderbouwing: Elke gemeente betrekt haar ingezetenen bij beleid en stelt voorwaarden voor de uitvoering van taken door hen (art. 150 lid 1 en 3).
     bronnen:
     - 2026-rijk-gemeentewet-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: In deze wiki gebruikt alleen participatie de inwoner als partij; andere onderwerpen gebruiken rollen zoals Aangever of Belanghebbende.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: Als partij niet; de gegevens van een ingezetene staan in de BRP, als Ingeschreven persoon (burgerzaken).
@@ -100,18 +53,21 @@ per_onderwerp:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent de actor Burger (procesarchitectuur, Actoren en rollen) zonder definitie en zonder relaties; een burger is niet altijd ingezetene van de gemeente, dus geen match op betekenis. Ingezetene (RSGB) is een bedrijfsobject, de registratie van de persoon, geen partij. Nieuw voor GEMMA.
-status: goedgekeurd
+bronnen:
+- 2026-rijk-gemeentewet-wettekst
+- 2024-vng-implementatiehandleiding-model-participatieverordening
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Handelende partij (kern ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 11
+    typeregel: 9
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
   - 2024-vng-implementatiehandleiding-model-participatieverordening

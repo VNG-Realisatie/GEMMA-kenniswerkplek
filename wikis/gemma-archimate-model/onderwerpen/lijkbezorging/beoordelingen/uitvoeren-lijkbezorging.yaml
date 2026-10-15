@@ -1,76 +1,29 @@
 begrip: Uitvoeren lijkbezorging
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Kern van de wet (art. 1).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Op de gemeentelijke begraafplaats en in een gemeentelijk crematorium voert de gemeente de begraving, bijzetting of crematie uit (Groningen art. 7, 10).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Houder van de begraafplaats of van het crematorium, beheerder (art. 8, 58; Groningen art. 7).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - degene-die-in-de-lijkbezorging-voorziet
+    - houder-van-de-begraafplaats
+    - houder-van-een-plaats-van-bijzetting
+    - houder-van-het-crematorium
+    - nabestaande
+    - rechthebbende-op-het-graf
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Raadpleegt het verlof, werkt graf, lijk en urn bij (art. 11, 23, 59).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - vergunning
+    - stoffelijk-overschot
+    - graf
+    - begraafplaats
+    - crematorium
+    - urn
   aanleiding:
     waarde: ja
-    onderbouwing: Overlijden en kennisgeving door degene die wil doen begraven (art. 16; Groningen art. 7 lid 2).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - overlijden
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Begraven of gecremeerd lijk, bijgezette of verstrooide as (art. 1, 59).
@@ -89,9 +42,8 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan het levensloopproces Begraven en cremeren stoffelijk overschot: de begraving, crematie of bijzetting zelf (art. 1, 23, 49).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - begraven-en-cremeren-stoffelijk-overschot
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het overlijden en de kennisgeving tot de begraven of gecremeerde overledene en de bestemming van de as.
@@ -113,14 +65,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki; begraving, crematie en ontleding zijn zijn varianten.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -204,11 +148,11 @@ deelprocessen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 59, 62
   begrip: bijzetten-of-verstrooien-van-de-as
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -216,7 +160,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

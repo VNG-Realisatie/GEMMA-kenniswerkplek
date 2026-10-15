@@ -1,43 +1,6 @@
 begrip: Wet publieke gezondheid
+vak: motivatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Concreet benoemde wet.
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Geeft gemeenten taken of rechten.
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde wet als geheel.
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -54,14 +17,6 @@ kenmerken:
   is_grondslag_voor:
     waarde: nee
     onderbouwing: Geeft het college de taak de GGD in te stellen en advies te vragen (art. 14, 16), en de GGD de taak een melding van een besmet lijk door te geven (art. 21, 27). Geen van die taken voert de gemeente uit in een proces of dienst van dit onderwerp; de maatregel bij een besmet lijk rust op Wlb art. 22a.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder beleidskader in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
 toelichting: 'Geen beleidskader in dit onderwerp: de taken die de wet de gemeente geeft (GGD instellen, advies vragen) horen bij een onderwerp publieke gezondheid. Voor de lijkbezorging levert ze de GGD en de melding van een besmet lijk.'
 onderwerpen:
 - lijkbezorging
@@ -72,7 +27,7 @@ besluiten:
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 22
+    regel: 19
     toelichting: Kernrelatie ontbreekt voor Beleidskader
     archimate_type: driver
     voorleggen: true
@@ -80,7 +35,7 @@ beslist:
     - 'is grondslag voor: nee'
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   voor_te_leggen:
   - 'is grondslag voor: nee'
   bronnen:

@@ -1,43 +1,9 @@
 begrip: Leges reisdocumenten
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Heffing
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip rechten (Paspoortwet art. 7); gangbaar: leges, de kosten van paspoort of ID-kaart (Utrecht).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Bij een aanvraag bij de burgemeester zijn de rechten gemeentelijke belasting (Paspoortwet art. 7 lid 4).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per aanvraag geheven (Paspoortwet art. 33).
@@ -71,24 +37,24 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: 'Een specialisatie van Heffing: rechten voor handelingen ten behoeve van de aanvraag, met een tarief naar leeftijd, soort document en snelheid (Paspoortwet art. 7 lid 2, 4); geen eigen gegevens of levensloop naast de heffing.'
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 synoniemen:
 - naam: Rechten
   context: wet
 toelichting: 'Specialisatie zonder pagina van Heffing: de rechten voor de aanvraag van een reisdocument, gemeentelijke belasting en bij de indiening te voldoen (Paspoortwet art. 7, 33). Het tarief en de bezorgkosten zijn lokale gegevens (Utrecht).'
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
 beslist:
   uitkomst:
     soort: specialisatie
-    regel: 24
+    regel: 21
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-object
     voorleggen: false
     data_object: nee
     genoemd_begrip: Heffing
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

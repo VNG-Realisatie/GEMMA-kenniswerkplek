@@ -33,7 +33,8 @@ MAP = "kennismodel"
 HANDMATIG = ("modelleerregels.md",)  # met de hand geschreven; render beheert ze niet
 
 LAGEN = {"bedrijfsarchitectuur": "Bedrijfsarchitectuur", "motivatie": "Motivatie",
-         "applicatiearchitectuur": "Applicatiearchitectuur", "overig": "Overig"}
+         "applicatiearchitectuur": "Applicatiearchitectuur", "technologiearchitectuur": "Technologiearchitectuur",
+         "overig": "Overig"}
 
 # --- Eigenschappen ---
 
@@ -144,6 +145,7 @@ class Elementtype:
     verplicht: tuple = ()  # eigenschappen die ingevuld moeten zijn
     afspraken: tuple = ()
     zonder_pagina: str = "annotatie"  # bij paginatype None: wat het type dan is
+    vak: str = ""  # het vak in de ArchiMate-matrix (tools/bepaal_type.py VAKKEN); leeg: geen begrip om te beoordelen
 
 
 GEMMA_MATCH = ("GEMMA-model", "match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en "
@@ -170,7 +172,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "bedrijfsobject; alleen *geautomatiseerd verwerkt* telt, als annotatie.",
                    "Een concreet benoemde regeling als geheel is een beleidskader; de soort (\"verordening\") is het "
                    "bedrijfsobject Regeling.",
-                   "Een kernobject heeft één thuis: het onderwerp waar het ontstaat en beheerd wordt.")),
+                   "Een kernobject heeft één thuis: het onderwerp waar het ontstaat en beheerd wordt."), vak="bedrijf/passief"),
     Elementtype(
         "afspraak", "Afspraak", "Contract", "contract", "bedrijfsarchitectuur", "bedrijfsobject",
         "Overeenkomst tussen meerdere partijen betreffende een bepaald onderwerp.", "GEMMA", True,
@@ -180,7 +182,7 @@ ELEMENTTYPEN: list[Elementtype] = [
         (("GGM", "als bij een bedrijfsobject"), GEMMA_MATCH),
         "Uitvoeringsovereenkomst; Grafrecht", "subsidiebeschikking (eenzijdig besluit); verordening",
         niveaus=("als bij een bedrijfsobject: kernobject, subobject of generiek",),
-        eigenschappen=("taakveld", "beleidsdomein", "ggm", "gemma", "data_object")),
+        eigenschappen=("taakveld", "beleidsdomein", "ggm", "gemma", "data_object"), vak="bedrijf/passief"),
     Elementtype(
         "product", "Product", "Product", "product", "bedrijfsarchitectuur", "product",
         "Een Product is een gebundeld aanbod van diensten met bijbehorende afspraken, geleverd door een organisatie aan "
@@ -194,7 +196,7 @@ ELEMENTTYPEN: list[Elementtype] = [
         "bezoekersparkeervergunning als tarief van de parkeervergunning (geen zelfstandig aanbod)",
         eigenschappen=("afnemer", "domein", "taakveld", "beleidsdomein", "gemma"), verplicht=("domein", "afnemer"),
         afspraken=("Een product komt nooit uit één UPL-item: een UPL-item is een dienst, en een product bundelt "
-                   "zulke diensten met afspraken.",)),
+                   "zulke diensten met afspraken.",), vak="bedrijf/samengesteld"),
     Elementtype(
         "dienst", "Dienst", "Business Service", "business-service", "bedrijfsarchitectuur", "dienst",
         "Een afgebakende prestatie van een persoon of organisatie (de dienstverlener), die voorziet in een behoefte van "
@@ -220,7 +222,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "Hangt de dienst onder een GEMMA-functie zonder beoordeling, dan noemt `gemma_functie` die functie, "
                    "met de UPL als bron en het UPL-nummer als vindplaats.",
                    "Een beleidskader hangt bij voorkeur aan een dienst of product; aan een proces alleen zolang er geen "
-                   "dienst of product is.")),
+                   "dienst of product is."), vak="bedrijf/gedrag-extern"),
     Elementtype(
         "bedrijfsproces", "Bedrijfsproces", "Business Process", "business-process", "bedrijfsarchitectuur",
         "bedrijfsproces", "Reeks opeenvolgend uit te voeren activiteiten die bijdraagt aan een specifiek resultaat, "
@@ -270,7 +272,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "Beleidsdomeinindeling.",
                    "Een ketenproces is geen procesniveau en geen element: waar de bedrijfsprocessen van meer partijen "
                    "samenkomen, is dat een bedrijfsinteractie.",
-                   "Een rol mag aan een bedrijfsproces worden toegewezen, niet alleen aan een bedrijfsfunctie.")),
+                   "Een rol mag aan een bedrijfsproces worden toegewezen, niet alleen aan een bedrijfsfunctie."), vak="bedrijf/gedrag-intern"),
     Elementtype(
         "bedrijfsfunctie", "Bedrijfsfunctie", "Business Function", "business-function", "bedrijfsarchitectuur",
         "bedrijfsfunctie", "Activiteiten die zijn gegroepeerd omdat daarvoor vergelijkbare bedrijfsmiddelen, kennis of "
@@ -288,7 +290,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "Een bladfunctie van GEMMA die een proces van een onderwerp bedient, met een bron, wordt een element "
                    "met een exacte match; een functie erboven is een knoop van de functiehiërarchie zonder beoordeling, "
                    "en het element hangt eronder met `gemma_functie` (met de GEMMA-relatie). Een proces mag door meer "
-                   "functies worden bediend.")),
+                   "functies worden bediend."), vak="bedrijf/gedrag-intern"),
     Elementtype(
         "gebeurtenis", "Gebeurtenis", "Business Event", "business-event", "bedrijfsarchitectuur", "gebeurtenis",
         "Iets dat binnen of buiten een organisatie is gebeurd en binnen die organisatie of daarbuiten gevolgen heeft.",
@@ -303,7 +305,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "nooit een deelproces.",
                    "Een gebeurtenis die het resultaat is van een bedrijfsproces (een rechtsgevolg) kan elders een "
                    "bedrijfsproces starten; een tussentoestand binnen één bedrijfsproces is geen element.",
-                   "Een gebeurtenis hangt onder het levensloopproces van het object waarvan de toestand verandert.")),
+                   "Een gebeurtenis hangt onder het levensloopproces van het object waarvan de toestand verandert."), vak="bedrijf/gedrag-intern"),
     Elementtype(
         "actor", "Actor", "Business Actor", "business-actor", "bedrijfsarchitectuur", "actor",
         "Een organisatie, afdeling daarbinnen of persoon die activiteiten kan uitvoeren.", "GEMMA", True,
@@ -321,7 +323,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "Tussen actoren alleen structurele relaties (deel van, lid van, voorzitter van); een handeling loopt "
                    "via rollen en processen of een gebeurtenis.",
                    "Een externe partij wordt alleen een actor bij een structurele relatie met de gemeente "
-                   "(opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht).")),
+                   "(opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)."), vak="bedrijf/actief-intern"),
     Elementtype(
         "rol", "Rol", "Business Role", "business-role", "bedrijfsarchitectuur", "rol",
         "Een rol is de verantwoordelijkheid voor specifiek gedrag waar een actor aan toegewezen kan worden.",
@@ -336,7 +338,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "(aanvragen, afgeven) is een toewijzing van de rol aan het proces dat het object gebruikt of maakt.",
                    "Een doelgroep (minima, jongeren) is geen rol maar een indeling van een actor.",
                    "Een bestuursorgaan (gemeenteraad, college, burgemeester) hangt via de rol Beslisser aan gedrag; welk "
-                   "orgaan bij welk proces bevoegd is, staat met het wetsartikel in de beschrijving van het proces.")),
+                   "orgaan bij welk proces bevoegd is, staat met het wetsartikel in de beschrijving van het proces."), vak="bedrijf/actief-intern"),
     Elementtype(
         "bedrijfssamenwerking", "Bedrijfssamenwerking", "Business Collaboration", "business-collaboration",
         "bedrijfsarchitectuur", "bedrijfssamenwerking",
@@ -347,7 +349,7 @@ ELEMENTTYPEN: list[Elementtype] = [
         "de gangbare naam van het verband",
         (GGM_GEEN, GEMMA_MATCH),
         "Zorg- en Veiligheidshuis", "GGD (eigen rechtspersoon: actor)",
-        eigenschappen=("doelgroep", "gemma"), verplicht=("doelgroep",)),
+        eigenschappen=("doelgroep", "gemma"), verplicht=("doelgroep",), vak="bedrijf/actief-intern"),
     Elementtype(
         "kanaal", "Kanaal", "Business Interface", "business-interface", "bedrijfsarchitectuur", "kanaal",
         "Communicatiekanaal dat bij de dienstverlening wordt gebruikt. Elk kanaal kent verschillende vormen waarin "
@@ -357,7 +359,7 @@ ELEMENTTYPEN: list[Elementtype] = [
         "publieksbalie; gemeentelijke website", "klantcontact (gedrag)",
         eigenschappen=("doelgroep", "gemma"), verplicht=("doelgroep",),
         afspraken=("Kanalen vormen één centrale set: een onderwerp koppelt een dienst aan een bestaand kanaal; een "
-                   "nieuw kanaal alleen na besluit van de redacteur.",)),
+                   "nieuw kanaal alleen na besluit van de redacteur.",), vak="bedrijf/actief-extern"),
     Elementtype(
         "bedrijfsinteractie", "Bedrijfsinteractie", "Business Interaction", "business-interaction",
         "bedrijfsarchitectuur", "bedrijfsinteractie",
@@ -376,7 +378,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "Elke nieuwe bedrijfsinteractie wordt voorgelegd: estafette (elke partij verantwoordelijk voor haar "
                    "deel: een bedrijfsinteractie) of orkestratie (één partij verantwoordelijk: geen interactie; voert "
                    "de gemeente het deel uit, dan specialiseert dat bedrijfsproces het GEMMA-proces *Leveren dienst aan "
-                   "derden*).")),
+                   "derden*)."), vak="bedrijf/gedrag-intern"),
     Elementtype(
         "beleidskader", "Beleidskader", "Driver", "driver", "motivatie", "beleidskader",
         "Beleidskader is gebaseerd op bestaand overheidsbeleid (Nationaal en Europees) en op de instrumenten die in het "
@@ -399,7 +401,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "UPL-dienst zonder landelijke grondslag.",
                    "De relaties naar een ander beleidskader (*werkt uit*, *verwijst naar*) en naar een rol, gebeurtenis "
                    "of bedrijfsobject zijn een uitbreiding op het GEMMA-kennismodel, dat een beleidskader alleen aan "
-                   "een product en een kwaliteitsdoel koppelt.")),
+                   "een product en een kwaliteitsdoel koppelt."), vak="motivatie"),
     Elementtype(
         "kwaliteitsdoel", "Kwaliteitsdoel", "Goal", "goal", "motivatie", None,
         "Gewenste kenmerken van overheidsdienstverlening vanuit het perspectief van de wensen van de samenleving, de "
@@ -475,14 +477,16 @@ class ZonderElement:
     laag: str
     reden: str
     over_gemma: str = ""  # de naam in Over GEMMA, als die afwijkt of bestaat
+    vak: str = ""  # het vak in de ArchiMate-matrix, als een begrip dit type kan krijgen
 
 
 ZONDER_ELEMENT: list[ZonderElement] = [
     ZonderElement("representatie", "Representatie", "Representation", "representation", "bedrijfsarchitectuur",
                   "De waarneembare vorm (document, formulier, register, bericht) van de informatie van een object: "
-                  "vermelden bij dat object, geen pagina."),
+                  "vermelden bij dat object, geen pagina.", vak="bedrijf/passief"),
     ZonderElement("locatie", "Locatie", "Location", "location", "overig",
-                  "Een fysieke plaats als zodanig: geen pagina. Een gebiedsindeling als gegeven is een bedrijfsobject."),
+                  "Een fysieke plaats als zodanig: geen pagina. Een gebiedsindeling als gegeven is een bedrijfsobject.",
+                  vak="overig/samengesteld"),
     ZonderElement("uitkomst", "Uitkomst", "Outcome", "outcome", "motivatie", "Buiten dit model."),
     ZonderElement("principe", "Principe", "Principle", "principle", "motivatie", "Buiten dit model.",
                   "Architectuurprincipe"),
@@ -510,6 +514,12 @@ ZONDER_ELEMENT: list[ZonderElement] = [
     ZonderElement("applicatie-event", "Applicatie-event", "Application Event", "application-event",
                   "applicatiearchitectuur", "De applicatielaag is nog niet gebouwd.", "Applicatie-event"),
 ]
+TECHNOLOGIE = "De technologielaag is nog niet gebouwd: zij zit in GEMMA en komt misschien nog."
+ZONDER_ELEMENT += [ZonderElement(sleutel, naam, engels, archimate_type, "technologiearchitectuur", TECHNOLOGIE, naam)
+                   for sleutel, naam, engels, archimate_type in (
+                       ("node", "Node", "Node", "node"),
+                       ("systeemsoftware", "Systeemsoftware", "System Software", "system-software"),
+                       ("technologieservice", "Technologieservice", "Technology Service", "technology-service"))]
 ZONDER = {z.sleutel: z for z in ZONDER_ELEMENT}
 
 # --- Relaties ---
@@ -973,7 +983,7 @@ def modelleerafspraken(e: Elementtype) -> str:
     kaart += [["Naamvorm", e.naamvorm],
               ["Afstemming", " · ".join(f"{doel}: {tekst}" for doel, tekst in e.afstemming)],
               ["Voorbeeld", f"wel: {e.wel} · niet: {e.niet}"]]
-    regels = [f"*{e.engels}* in ArchiMate · laag {LAGEN[e.laag]}"
+    regels = [f"*{e.engels}* in ArchiMate · laag {LAGEN[e.laag]}" + (f" · vak `{e.vak}`" if e.vak else "")
               + (f" · paginatype `{e.paginatype}`" if e.paginatype else f" · geen pagina ({e.zonder_pagina})"), "",
               *_tabel(["Afspraak", "Inhoud"], kaart)]
     if e.afspraken:
@@ -1031,6 +1041,11 @@ def readme() -> str:
               "- **Niet in Over GEMMA**: wel in het kennismodel van de wiki, maar niet in het GEMMA-kennismodel (Over "
               f"GEMMA): een {UITBREIDING}. Het gaat mee in de export, gemarkeerd, en is een kandidaat voor een "
               "terugmelding over het kennismodel.", ""]
+    import bepaal_type
+
+    matrix = bepaal_type.doc_matrix(per_vak=False)
+    regels += ["## De ArchiMate-matrix", "", *matrix[2:],
+               "Wat fase A per vak vraagt, staat in [kenmerken en beslistabel](kenmerken-en-beslistabel.md).", ""]
     for laag, laagnaam in LAGEN.items():
         rijen = [[_link(e.sleutel), e.engels, f"`{e.paginatype}`" if e.paginatype else e.zonder_pagina,
                   "ja" if e.over_gemma else "nee"] for e in ELEMENTTYPEN if e.laag == laag]
@@ -1082,11 +1097,13 @@ def indelingen_pagina() -> str:
 def kenmerken_pagina() -> str:
     import bepaal_type
 
-    regels = ["Elk begrip uit een bron krijgt één keer dezelfde vragen: de kenmerken. De beslistabel past daar vaste "
-              "regels op toe; de uitkomst is het type, of de reden waarom het begrip geen eigen pagina krijgt. Er wordt "
-              "nooit eerst een type gekozen. Per elementtype staat in zijn modelleerafspraken welke kenmerken het type "
-              "bepalen, welke de kernrelatie is en welke drempel geldt.", "",
-              *bepaal_type.doc_stap0(), *bepaal_type.doc_vragentabel(), *bepaal_type.doc_stappen()]
+    regels = ["Elk begrip uit een bron krijgt één keer dezelfde vragen. Fase A kiest het vak in de ArchiMate-matrix, het "
+              "hoofdkenmerk en bij gedrag de soort gedrag; de kenmerken controleren die keuze en bepalen het type. De "
+              "beslistabel past daar vaste regels op toe; de uitkomst is het type, of de reden waarom het begrip geen "
+              "eigen pagina krijgt. Een type wordt nooit direct gekozen. Per elementtype staat in zijn "
+              "modelleerafspraken welke kenmerken het type bepalen, welke de kernrelatie is en welke drempel geldt.", "",
+              *bepaal_type.doc_stap0(), *bepaal_type.doc_matrix(), *bepaal_type.doc_vragentabel(),
+              *bepaal_type.doc_stappen()]
     regels = [r[1:] if r.startswith("### ") else r for r in regels]
     return _pagina("kenmerken-en-beslistabel", "Kenmerken en beslistabel", regels)
 

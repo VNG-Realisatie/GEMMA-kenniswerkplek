@@ -313,15 +313,23 @@ def kennismodel(alle: dict[str, dict], uitkomsten: dict[str, dict | None], zonde
         if bid not in sleutel or bid in zonder:
             continue
         for kenmerk, k in bepaal_type.antwoorden(d).items():
-            kern = km.kernrelaties(kenmerk)
-            if k["waarde"] != "ja" or not kern:
+            if k["waarde"] == "nee" and kenmerk in bepaal_type.RELATIONEEL:
+                met = [x for x in sleutel if x != bid and bepaal_type.relaties_bij(bid, kenmerk, x, alle)]
+                if met:
+                    w.append(f"{bid}: kenmerk {kenmerk} is nee, maar er is een relatie met {', '.join(met)}: is het "
+                             "kenmerk ja, met de tegenpartij in `naar`? (regel Beslistabel beslist)")
                 continue
+            kern = km.kernrelaties(kenmerk)
+            if k["waarde"] != "ja" or not kern or any(isinstance(x, dict) for x in k.get("naar") or []):
+                continue  # een potentiële relatie met naam en type is vastgelegd
             groep = _eronder(bid, relaties)
             if not any((van in groep or r["naar"] in groep) and any(
                     (x.bron, km.kale_soort(x.soort), x.doel) == (bron, km.kale_soort(r["soort"]), doel) for x in kern)
                     for van, r, bron, doel in relaties):
                 w.append(f"{bid}: kenmerk {kenmerk} is ja, maar er is geen relatie van de kernrelatie "
-                         f"({'; '.join(f'{x.bron} {km.kale_soort(x.soort)} {x.doel}' for x in kern)}) (regel Beslistabel beslist)")
+                         f"({'; '.join(f'{x.bron} {km.kale_soort(x.soort)} {x.doel}' for x in kern)}); leg haar vast, of "
+                         "noem de tegenpartij in `naar` met naam en type als zij (nog) geen element is (regel Beslistabel "
+                         "beslist)")
     return w
 
 

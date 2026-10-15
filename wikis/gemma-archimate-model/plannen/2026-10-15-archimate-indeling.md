@@ -66,6 +66,17 @@ Verder, minder groot:
 - **O3, kenmerken uit relaties: ja.** Het script leidt ja en nee af voor de relationele kenmerken uit de relaties, ook die in andere beoordelingen; de bron is die van de relatie. In fase B wordt de vraag "leg de relatie vast". Het signaal "kernrelatie zonder relatie" vervalt. Een verschil tussen kenmerk en relatie bij de omzetting (stap 5) wordt per geval voorgelegd.
 - Voorbeeld *Ruimen graf*: de kenmerken gaan van ongeveer 560 naar ongeveer 150 woorden.
 
+## Uitkomst stap 3–7 (2026-10-15)
+
+- **O3 bijgesteld door de redacteur.** Een kenmerk afleiden uit een relatie is fragiel: een relatie bestaat alleen zolang beide elementen bestaan, en een kenmerk kan ja zijn door een relatie met een element dat er nog niet is. Daarom blijft het kenmerk de bewering en noemt het zijn tegenpartij in `naar`: het id van een element, of naam en type van een potentieel element. Bestaat de relatie, dan steunt het kenmerk op haar bron (zonder eigen onderbouwing); anders met eigen onderbouwing en bron. Vervalt de relatie, dan blijft de uitkomst en meldt het script dat de bron ontbreekt. Een relatie bij een kenmerk nee is een signaal.
+- **Gemeten vóór de omzetting**: 239 relationele kenmerken ja zonder relatie (bij elementen 104, het meest *aanleiding* 63 en *toegewezen partij* 17). Strikt afleiden had 80 processen tot geen element gemaakt. Ze blijven met hun onderbouwing staan; de tegenpartij met naam en type komt bij de volgende herbeoordeling (todo).
+- **Per geval besloten**: vier processen hadden *leidt tot gebeurtenis* nee met een triggering naar een gebeurtenis; het kenmerk is ja. GGD heeft hoofdkenmerk *samenwerkingsverband* (altijd een samenwerkingsverband, als partij via een rol); *los van verantwoordelijkheid* mag daarom ook bij een samenwerkingsverband.
+- **Beslistabel**: de regels voor een combinatie van aarden en voor gedrag zonder soort gedrag vervallen (één hoofdkenmerk; de soort gedrag is verplicht). Regel 7 (consistentie) toetst ook het vak. De regelnummers vanaf 8 schuiven op; ze staan niet op de pagina's.
+- **Omzetting**: alle 481 beoordelingen met een script. Uitkomst: `beslist` gelijk aan main (op de regelnummers na); alleen de status van de 285 goedgekeurde elementen gaat naar review, omdat het akkoord-hash de kenmerken telt (nieuw AKKOORD, zoals in 13c5312). De sectie Kenmerken op de pagina's toont vak, hoofdkenmerk, soort gedrag, de poort en de kenmerken met ja, met de tegenpartij als link. Bronnen die alleen in geschrapte kenmerken stonden, staan nu in `bronnen` van de beoordeling, zodat de bronnenlijst gelijk blijft.
+- **Woorden**: kenmerken van 136.947 naar 51.354, plus 1.210 voor de keuzevelden (−62%); de beoordelingen samen van 249.150 naar 166.584 (−33%).
+- **Open punt Extern bij gedrag**: volgt uit het vak (`bedrijf/gedrag-extern` is de dienst).
+- **Woordbudget** (besluit van de redacteur): kennismodel 21.100, skill beoordelen 6.700, AGENTS.md 1.720.
+
 ## Deel 1 — Matrix en lichtere kenmerken (denkniveau hoog)
 
 ### De matrix
@@ -198,7 +209,7 @@ Eén toets per type, maar geen gelijke omvang afdwingen. Voorbeelden:
 
 - **Naam van een data-object**: als het bedrijfsobject, of een gegevensnaam ("Zaakgegevens")?
 - **Wie nog meer data-objecten heeft**: kan ook een afspraak, of een rol of actor met tegenhanger, data-objecten hebben?
-- **Extern bij gedrag**: een eigen vraag, of volgt het uit de soort gedrag?
+- **Extern bij gedrag**: volgt uit het vak (opgelost in stap 3).
 
 ## Verificatie
 

@@ -2,7 +2,7 @@
 id: indiener
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Indiener
 onderwerpen:
 - participatie
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling indiener.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -48,16 +48,13 @@ Rol. Uitkomst van de beslistabel: Hoedanigheid (kern ja).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 53 zijn nee.
+**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: hoedanigheid. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de indiener van een verzoek om toepassing van het uitdaagrecht (var. 1 art. 7). [VNG Implementatiehandleiding participatieverordening](../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de gemeente ondersteunt de indiener en maakt afspraken met hem (var. 1 art. 7, 9). [VNG Implementatiehandleiding participatieverordening](../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig als hoedanigheid bij een verzoek. [VNG Implementatiehandleiding participatieverordening](../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij participatie. [VNG Implementatiehandleiding participatieverordening](../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **hoedanigheid**: Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de hoedanigheid waarin een partij optreedt? | Ja, de hoedanigheid van een inwoner of maatschappelijke partij die een verzoek indient. [VNG Implementatiehandleiding participatieverordening](../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
-| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, toegewezen aan Behandelen verzoek uitdaagrecht: dient het verzoek in, verstrekt aanvullende informatie, wordt geïnformeerd over de doorzending en maakt bij toewijzing afspraken over de uitvoering (var. 1 art. 6, [8] lid 1, [9]; var. 2 art. [11], [13] lid 1, [14]). [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+| **voert gedrag uit**: Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? | Ja, met [Behandelen verzoek uitdaagrecht](../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md). |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen specialisatie van Belanghebbende: indienen kunnen ingezetenen en maatschappelijke partijen (Gemeentewet art. 150 lid 3; var. 1 art. 6 lid 1), ook zonder een belang dat rechtstreeks bij een besluit is betrokken (Awb art. 1:2). Evenmin van Aanvrager zolang het verzoek geen aanvraag is (vraag bij Verzoek uitdaagrecht). [Gemeentewet](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md), [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
 
 ### Relaties

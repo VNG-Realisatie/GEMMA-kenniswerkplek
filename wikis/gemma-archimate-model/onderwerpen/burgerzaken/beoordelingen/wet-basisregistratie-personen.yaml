@@ -1,56 +1,8 @@
 begrip: Wet basisregistratie personen
+vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare naam; grondslag van de BRP-producten in de UPL en kader van Besluit, Regeling en HUP (UPL; Besluit BRP; HUP Algemeen).
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-brp-bwbr0034306
-    - 2026-rvig-hup-algemeen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Geeft het college de bijhouding van de BRP en de producten daarvan (UPL; HUP Achtergronden).
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-brp-bwbr0034306
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-brp-bwbr0034306
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde wet als geheel (BWBR0033715).
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-brp-bwbr0034306
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -69,19 +21,43 @@ kenmerken:
     - 2026-rvig-hup-algemeen
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 2.8, 2.23, 2.25, 2.38, 2.39, 2.43, 2.55, 2.56a, 2.57, 2.58, 2.59, 2.66 en 3.22: grondslag van de BRP-items in de UPL, die de bedrijfsprocessen onder Bijhouden persoonsgegevens leveren.'
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder beleidskader in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
+    naar:
+    - brp-inschrijving
+    - verhuismelding
+    - aangifte-vertrek-buitenland
+    - briefadres-aanvragen
+    - brp-uittreksel
+    - brp-inzagerecht
+    - brp-geheimhoudingsverzoek
+    - brp-wijzigingsverzoek
+    - brp-adoptie-uitschrijving
+    - rni-inschrijving
+    - brp-inzagerecht-gegevensverstrekking
+    - brp-inschrijving-niet-in-leven-zijnd-kind
+    - adoptie-aangifte
+    - naamgebruik-verzoek-aanduiding
+    - brp-inschrijving-buitenlandse-akte
+    - bewijs-van-nederlanderschap
+    - brp-uittreksel-met-gezag
+    - persoonsgegevens-verklaring-onder-eed-of-belofte
+    - briefadres
+    - inschrijven-op-briefadres
+    - briefadresgever
+    - verblijfplaats
+    - verwerken-adreswijziging
+    - verhuizing
+    - emigratie
+    - vestiging-vanuit-het-buitenland
+    - behandelen-verzoek-om-correctie
+    - behandelen-verzoek-om-geheimhouding
+    - behandelen-verzoek-om-verwijdering-van-gegevens
+    - wijzigen-naamgebruik
+    - ingeschreven-persoon
+    - bijhoudingsgemeente
+    - toezichthouder-brp
+    - onjuiste-inschrijving-op-adres-melden
+    - inschrijven-niet-ingezetene
+    - rni-loket
 definitie: 'Wet die de basisregistratie personen regelt: de inschrijving en bijhouding van gegevens over ingezetenen en niet-ingezetenen en de verstrekking daarvan.'
 beschrijving:
 - De Wet BRP wordt uitgewerkt in het Besluit BRP, de Regeling BRP en het Logisch Ontwerp BRP (Besluit BRP; LO BRP). Het college houdt de gegevens van de ingezetenen bij; de minister van BZK de RNI en de centrale voorzieningen (HUP Achtergronden). De UPL noemt de wet als grondslag van onder meer de BRP-inschrijving, de verhuismelding, de aangifte van vertrek, het briefadres, het uittreksel en de geheimhouding (UPL).
@@ -370,18 +346,24 @@ relaties:
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.64, 2.67 lid 3, 2.79
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-brp-bwbr0033715
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-besluit-brp-bwbr0034306
+- 2026-rvig-hup-algemeen
+- 2026-rvig-hup-achtergronden-en-begrippen
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   - 2025-vng-upl-producten-en-diensten-extern

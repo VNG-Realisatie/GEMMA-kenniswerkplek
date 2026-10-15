@@ -3,40 +3,12 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Nederlanderschap
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Aanduiding in de BRP voor wie als Nederlander wordt behandeld of is vastgesteld als niet-Nederlander (HUP Bijzonder Nederlanderschap).
-    bronnen:
-    - 2026-rvig-hup-bijzonder-nederlanderschap
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt de aanduiding op en beëindigt haar (HUP Bijzonder Nederlanderschap).
-    bronnen:
-    - 2026-rvig-hup-bijzonder-nederlanderschap
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: Een aanduiding bij het Nederlanderschap in dezelfde stapel; het GGM kent haar als attribuut aanduidingBijzonderNederlanderschap (HUP Bijzonder Nederlanderschap; HUP Nationaliteit).
     bronnen:
     - 2026-rvig-hup-bijzonder-nederlanderschap
     - 2026-rvig-hup-nationaliteit
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Niet los te zien van het genoemde begrip, maar wel een eigen waarde.
-    bronnen:
-    - 2026-rvig-hup-bijzonder-nederlanderschap
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij burgerzaken (BRP).
-    bronnen:
-    - 2026-rvig-hup-bijzonder-nederlanderschap
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-bijzonder-nederlanderschap
 toelichting: 'Eigenschap van Nederlanderschap, geen pagina: de aanduiding behandeld als Nederlander of vastgesteld niet-Nederlander staat in dezelfde stapel als de Nederlandse nationaliteit en sluit andere actuele nationaliteiten uit; bij verkrijging vervallen de verblijfstitel, een reisdocument voor vluchtelingen of vreemdelingen en de aanduiding Europees kiesrecht, bij verlies vervalt een Nederlands reisdocument (HUP Bijzonder Nederlanderschap). In het GGM een attribuut van NederlandseNationaliteitIngeschrevenPersoon en NatuurlijkPersoon.'
 beslist:
   uitkomst:

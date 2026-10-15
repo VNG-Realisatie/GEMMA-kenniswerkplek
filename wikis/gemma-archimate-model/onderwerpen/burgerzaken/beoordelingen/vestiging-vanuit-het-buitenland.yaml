@@ -1,65 +1,9 @@
 begrip: Vestiging vanuit het buitenland
+vak: bedrijf/gedrag-intern
+soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar (Circulaire adresonderzoek 4.8; Utrecht Inschrijven vanuit het buitenland).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Leidt tot inschrijving door de gemeente (HUP Immigratie; HUP Hervestiging).
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gebeurt.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering:
-    waarde: ja
-    onderbouwing: Gebeurt op één moment en heeft gevolgen voor de inschrijving.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   komt_herhaald_voor:
     waarde: ja
     onderbouwing: Bij elke persoon die het overkomt.
@@ -69,23 +13,11 @@ kenmerken:
     - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
   leidt_tot_gedrag:
     waarde: ja
-    onderbouwing: Start Inschrijven ingezetene (HUP Immigratie; HUP Hervestiging).
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
+    naar:
+    - inschrijven-ingezetene
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere gebeurtenis in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  generiek:
-    waarde: nee
-    onderbouwing: Een specifieke gebeurtenis, geen variant van een generieke GEMMA-gebeurtenis.
 definitie: Het gaan wonen in een Nederlandse gemeente van een persoon die in het buitenland woonde.
 beschrijving:
 - Wie vanuit het buitenland in een gemeente komt wonen, of het komende half jaar ten minste vier maanden, schrijft zich binnen vijf dagen in (Utrecht Inschrijven vanuit het buitenland). Stond de persoon nooit in de BRP of RNI, dan is het een immigratie (eerste inschrijving); stond hij in de RNI, dan een hervestiging (HUP Immigratie; HUP Hervestiging).
@@ -107,18 +39,21 @@ relaties:
   - 2026-rvig-hup-hervestiging
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: inleiding; Wet BRP art. 2.2, 2.38 lid 1
-status: goedgekeurd
+bronnen:
+- 2023-rvig-circulaire-adresonderzoek-brp
+- 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
   - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland

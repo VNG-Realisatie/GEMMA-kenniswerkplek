@@ -1,43 +1,7 @@
 begrip: Gebruiker
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Ontvangt mededelingen en verplichtingen van het college (VNG-modelverordening art. 21).
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: Wie een recht tot gebruik van een ruimte in een algemeen graf heeft (VNG-modelverordening art. 1 p).
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: Niet van toepassing.
@@ -56,14 +20,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  generiek:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
 toelichting: 'Geen element: de gebruiker van een algemeen graf heeft plichten, maar is niet aan gemeentelijk gedrag toegewezen (VNG-modelverordening art. 1 p, 21).'
 onderwerpen:
 - lijkbezorging
@@ -71,10 +27,12 @@ besluiten:
 - datum: '2026-10-01'
   besluit: 'Geen element: niet toegewezen aan gemeentelijk gedrag.'
   gevolg: afwijzen
+bronnen:
+- 2010-vng-model-beheersverordening-begraafplaatsen
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 22
+    regel: 19
     toelichting: Kernrelatie ontbreekt voor Rol
     archimate_type: business-role
     voorleggen: true
@@ -82,7 +40,7 @@ beslist:
     - 'voert gedrag uit: nee'
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   voor_te_leggen:
   - 'voert gedrag uit: nee'
   bronnen:

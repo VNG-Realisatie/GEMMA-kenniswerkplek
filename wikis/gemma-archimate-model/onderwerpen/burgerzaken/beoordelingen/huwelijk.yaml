@@ -1,60 +1,8 @@
 begrip: Huwelijk
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product in de UPL (nr. 184); Utrecht: trouwen in Utrecht.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand voltrekt het huwelijk in het gemeentehuis (BW 1 art. 63).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente levert: trouwen op een gekozen datum en locatie, beschreven vanuit de afnemer (UPL nr. 184; Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Het voltrokken huwelijk en de huwelijksakte, eventueel met een trouwboekje (Utrecht; BW 1 art. 63).
@@ -75,9 +23,8 @@ kenmerken:
     - 2026-utrecht-burgerzaken-trouwen-in-utrecht
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Voltrekken huwelijk (BW 1 art. 63).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - voltrekken-huwelijk
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -86,9 +33,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 184); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het laten voltrekken van een huwelijk door de ambtenaar van de burgerlijke stand, op een gekozen datum en locatie.
 beschrijving:
 - Na de melding van het voorgenomen huwelijk legt het paar locatie en datum vast, liefst drie maanden vooraf, met twee tot vier getuigen. Gemeenten bieden varianten met eigen tarieven, zoals gratis trouwen, eenvoudig trouwen, een flitshuwelijk of trouwen op een locatie naar keuze (Utrecht). Een geregistreerd partnerschap gaat op dezelfde manier. Grondslag art. 30 BW 1 (UPL nr. 184).
@@ -107,18 +51,20 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-trouwen-in-utrecht

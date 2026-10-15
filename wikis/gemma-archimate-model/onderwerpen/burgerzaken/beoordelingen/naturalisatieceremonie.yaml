@@ -1,60 +1,8 @@
 begrip: Naturalisatieceremonie
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: UPL-product naturalisatieceremonie, grondslag Besluit art. 60a (UPL nr. 261); Utrecht nodigt na goedkeuring uit voor de ceremonie.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente nodigt uit en houdt de ceremonie; de burgemeester reikt uit (Utrecht; Besluit art. 2, 60a, 60b).
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als aanbod van de gemeente.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij burgerzaken (UPL taakveld 0.2).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Een prestatie die de gemeente levert.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente aan nieuwe Nederlanders aanbiedt: de ceremonie met de uitreiking (UPL nr. 261; Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De uitgereikte bevestiging of het uittreksel van het besluit, waarmee men Nederlander is (Besluit art. 60a, 60b; Utrecht).
@@ -75,21 +23,12 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Behandelen naturalisatieverzoek en Behandelen optieverklaring, in het deelproces Houden naturalisatieceremonie (Besluit art. 60a, 60b).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    naar:
+    - behandelen-naturalisatieverzoek
+    - behandelen-optieverklaring
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 afnemer: extern
 domein: Publieksdiensten
 definitie: Het bijwonen van de ceremonie waarin een nieuwe Nederlander de verklaring van verbondenheid aflegt en de bevestiging of het besluit ontvangt.
@@ -117,18 +56,21 @@ relaties:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   vindplaats: art. 60b; Utrecht
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie

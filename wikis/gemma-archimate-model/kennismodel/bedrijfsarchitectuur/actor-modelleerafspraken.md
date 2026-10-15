@@ -8,7 +8,7 @@ titel: Actor — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Business Actor* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `actor`
+*Business Actor* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/actief-intern` · paginatype `actor`
 
 | Afspraak | Inhoud |
 |---|---|

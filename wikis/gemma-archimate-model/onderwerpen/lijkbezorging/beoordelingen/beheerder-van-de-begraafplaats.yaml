@@ -1,48 +1,14 @@
 begrip: Beheerder van de begraafplaats
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 synoniem_van: Houder van de begraafplaats
 toelichting: Synoniem van Houder van de begraafplaats. De Wet op de lijkbezorging kent alleen de houder van de begraafplaats (art. 8, 23, 27, 28, 31); de beheerder is de ambtenaar die bij een gemeentelijke begraafplaats de dagelijkse leiding heeft en de taken van de houder met mandaat uitvoert, ingericht door de beheersverordening (2010-vng-model-beheersverordening-begraafplaatsen, toelichting 2; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, art. 1 e). Zonder landelijke wettelijke bron blijft hij geen eigen rol (regel Wettelijke grondslag).
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Begrip uit de beheersverordening en de VNG-modelverordening (art. 1 e, 1 n).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Gemeentelijke ambtenaar.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De verantwoordelijkheid voor de dagelijkse leiding van de gemeentelijke begraafplaatsen.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
   voert_gedrag_uit:
     waarde: ja
     onderbouwing: Toegewezen aan Uitvoeren lijkbezorging (bepaalt tijd en plaats), Ruimen graf (ziet toe) en Opgraven stoffelijk overschot (is belast met de werkzaamheden) (Groningen art. 7, 27, 28).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki.
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen

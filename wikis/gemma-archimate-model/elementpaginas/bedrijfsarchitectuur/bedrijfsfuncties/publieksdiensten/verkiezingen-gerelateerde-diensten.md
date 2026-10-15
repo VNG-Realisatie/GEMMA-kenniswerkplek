@@ -2,7 +2,7 @@
 id: verkiezingen-gerelateerde-diensten
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: review
 naam: Verkiezingen gerelateerde diensten
 onderwerpen:
 - burgerzaken
@@ -29,7 +29,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verkiezingen-gerelateerde-diensten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -66,19 +66,15 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 49 zijn nee.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: gegroepeerd gedrag. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, het organiseren van verkiezingen is een eigen gemeentelijke taak: de burgemeester verstrekt stempassen, kiezerspassen en volmachtbewijzen en B&W registreren de kiesgerechtigdheid (Kieswet art. D 1, J 7, K 4, L 11). GEMMA-bedrijfsfunctie Verkiezingen gerelateerde diensten, onder Producten- en dienstenrealisatie publieksdiensten. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester verstrekt stempassen, kiezerspassen en volmachtbewijzen; B&W registreren de kiesgerechtigdheid (Kieswet art. D 1, J 7, K 4, L 11). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen taak van de gemeente, los van één ander begrip: burgemeester en wethouders registreren de kiesgerechtigdheid (Kieswet art. D 1) en de burgemeester verstrekt de stempassen (Kieswet art. J 7). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: bedient Beheren stempassen en Registreren kiesgerechtigdheid. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: het registreren van de kiesgerechtigdheid (Kieswet art. D 1) en het vaststellen en verstrekken van de stempassen (Kieswet art. J 7). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, doorlopende groepering van de gemeentelijke taken bij verkiezingen, op grond van dezelfde kennis van de Kieswet, zonder eigen volgorde (GEMMA). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, registreert en beëindigt de stempas en werkt de kiesrechtgegevens van de ingeschreven persoon bij (Kieswet art. J 7, J 7a; HUP Kiesrecht). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md), [HUP Kiesrecht](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-kiesrecht.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, de taak volgt uit de Kieswet en blijft bij een andere organisatie of werkwijze. [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
-| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient Beheren stempassen en Registreren kiesgerechtigdheid (Kieswet art. D 1, J 7). [Kieswet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
+| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, met [Beheren stempassen](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md), [Registreren kiesgerechtigdheid](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md). |
 | **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onder Producten- en dienstenrealisatie publieksdiensten (GEMMA). (GEMMA id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki; GEMMA-functie op het niveau van het onderwerp. (GEMMA id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff) |
 

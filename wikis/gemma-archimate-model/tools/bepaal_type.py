@@ -1,8 +1,13 @@
-"""Bepaal het ArchiMate-elementtype van een begrip uit zijn kenmerken.
+"""Bepaal het ArchiMate-elementtype van een begrip uit zijn keuzevelden en kenmerken.
 
 Eén bron van waarheid voor de criteria van deze wiki:
+- VAKKEN: de ArchiMate-matrix (laag, aspect, intern of extern), met per vak de hoofdkenmerken en de soorten gedrag;
+  fase A kiest het vak, het hoofdkenmerk (als het vak er meer heeft) en bij gedrag de soort gedrag (`vak`,
+  `hoofdkenmerk`, `soort_gedrag`);
 - KENMERKEN: de neutrale eigenschappen die het model per begrip één keer beantwoordt (ja/nee), met de vraag die
-  bepaalt of het kenmerk van toepassing is, en bij welke aard een ja mag (consistentie);
+  bepaalt of het kenmerk van toepassing is, en bij welk hoofdkenmerk een ja mag (consistentie); STANDAARD: de waarde
+  zonder antwoord (de poort is doorlopen; *zelfstandige specialisatie* ja, *generiek* nee); RELATIONEEL: de kenmerken
+  waarvan de tegenpartij een relatie is (`naar`);
 - TYPEN: per elementtype het kenmerk dat het type bepaalt, de kernrelatie (moet ja), de overige drempelcriteria
   (hoogstens DREMPEL_ONTBREKEND keer nee) en de aanvullingen;
 - REGELS: stap 0–4 van de beslistabel (welk begrip, scope, afhankelijkheid, consistentie, type), van boven naar
@@ -11,12 +16,13 @@ Eén bron van waarheid voor de criteria van deze wiki:
   context van alle begrippen in `indeling`) voor een voorlopig type met een pagina;
 - NAREGELS: aanvullingen op de uitkomst (tegenhanger, procesniveau, annotatie, homoniem).
 
-Het model vult de kenmerken op het pad in (`pad`: fase A en fase B, met onderbouwing en bron-id's); buiten het pad
-leidt deze tool nee af, en ze past de regels toe. De elementtypen zelf
+Het model vult de keuzevelden en de kenmerken op het pad in (`pad`: fase A en fase B, met onderbouwing en bron-id's,
+of bij een relationeel kenmerk de tegenpartij in `naar`); een poortkenmerk alleen bij een afwijking. Buiten het pad
+leidt deze tool de standaardwaarde af (meestal nee), en ze past de regels toe. De elementtypen zelf
 (naam, ArchiMate-type, paginatype), hun eigenschappen en indelingen staan in het kennismodel (tools/kennismodel.py).
 `schemas/beoordeling.schema.json` wordt hieruit gegenereerd (`schema --schrijf`); de vragen per fase geeft `vragen`, en
-de vragenlijst met voorbeelden en de stappentabel staan in `kennismodel/kenmerken-en-beslistabel.md` (gegenereerd door
-tools/kennismodel.py). Een test bewaakt dat ze gelijk blijven.
+de matrix, de vragenlijst met voorbeelden en de stappentabel staan in `kennismodel/kenmerken-en-beslistabel.md`
+(gegenereerd door tools/kennismodel.py). Een test bewaakt dat ze gelijk blijven.
 
 Gebruik (vanuit de wikimap):
     uv run python tools/bepaal_type.py evalueer <assessment.json | beoordeling.json> [--schrijf]
@@ -42,9 +48,9 @@ from kennismodel import AFNEMERS, DOELGROEPEN, DOMEINEN, REGELGEVERS, VERPLICHT,
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = WIKI_ROOT / "schemas" / "beoordeling.schema.json"
-CRITERIA_VERSIE = "2026-10-08"
+CRITERIA_VERSIE = "2026-10-15"
 
-GEEN_AARD = ""  # in `bij`: ja mag ook als het begrip geen aard heeft (een ding)
+GEEN_AARD = ""  # in `bij`: ja mag ook als het begrip geen hoofdkenmerk heeft (een ding)
 
 
 @dataclass(frozen=True)
@@ -56,7 +62,7 @@ class Kenmerk:
     ja: str
     nee: str
     herkomst: str
-    bij: frozenset | None = None  # aarden waarbij ja mag; None = altijd
+    bij: frozenset | None = None  # hoofdkenmerken waarbij ja mag; None = altijd
 
 
 def _bij(*aarden: str) -> frozenset:
@@ -98,33 +104,33 @@ KENMERKEN: list[Kenmerk] = [
             "een ander onderwerp? Noem bij nee het onderwerp waar het thuishoort.",
             "Graf in lijkbezorging", "akte van overlijden in lijkbezorging (hoort bij de burgerlijke stand)",
             "GEMMA (betekenis binnen het onderwerp)"),
-    # Aard (precies één ja; handelende partij met hoedanigheid of met samenwerkingsverband mag samen)
-    Kenmerk("gedrag", "gedrag", "Aard",
+    # Hoofdkenmerk (keuzeveld `hoofdkenmerk`: één waarde, of `ding`)
+    Kenmerk("gedrag", "gedrag", "Hoofdkenmerk",
             "Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling?",
             "aanvraag behandelen; verhuizing", "aanvraag", "ArchiMate (gedragselement)"),
-    Kenmerk("handelende_partij", "handelende partij", "Aard",
+    Kenmerk("handelende_partij", "handelende partij", "Hoofdkenmerk",
             "Is het een organisatie, afdeling of persoon die activiteiten kan uitvoeren?",
             "college van B&W; inwoner", "aanvrager", "GEMMA (definitie Actor)"),
-    Kenmerk("hoedanigheid", "hoedanigheid", "Aard",
+    Kenmerk("hoedanigheid", "hoedanigheid", "Hoofdkenmerk",
             "Is het een verantwoordelijkheid voor specifiek gedrag waaraan een partij kan worden toegewezen, of de "
             "hoedanigheid waarin een partij optreedt?",
             "aanvrager; houder van de begraafplaats", "gemeenteraad", "ArchiMate (definitie Rol)"),
-    Kenmerk("samenwerkingsverband", "samenwerkingsverband", "Aard",
+    Kenmerk("samenwerkingsverband", "samenwerkingsverband", "Hoofdkenmerk",
             "Is het een (ook tijdelijke) samenstelling van twee of meer partijen of rollen die samen gedrag uitvoeren?",
             "Zorg- en Veiligheidshuis; GGD (samenwerking van gemeenten)", "GGD-arts",
             "ArchiMate (definitie Bedrijfssamenwerking)"),
-    Kenmerk("toegangspunt", "toegangspunt", "Aard",
+    Kenmerk("toegangspunt", "toegangspunt", "Hoofdkenmerk",
             "Is het een communicatiekanaal waarlangs een dienst beschikbaar komt?",
             "publieksbalie; gemeentelijke website", "klantcontact", "NORA (definitie Kanaal)"),
-    Kenmerk("plaats", "plaats", "Aard",
+    Kenmerk("plaats", "plaats", "Hoofdkenmerk",
             "Is het een fysieke plaats als zodanig, en geen gebiedsindeling als gegeven?",
             "stadskantoor als vestigingsplaats", "wijk (indeling)", "ArchiMate (Location)"),
-    Kenmerk("aanbod_als_geheel", "aanbod als geheel", "Aard",
+    Kenmerk("aanbod_als_geheel", "aanbod als geheel", "Hoofdkenmerk",
             "Is het een gebundeld aanbod van diensten met bijbehorende afspraken, dat als geheel aan een afnemer "
             "wordt geleverd?",
             "bewonersparkeervergunning zoals de productencatalogus haar aanbiedt", "parkeren; één UPL-item als zodanig (een dienst)",
             "GEMMA (definitie Product)"),
-    Kenmerk("regeling_als_geheel", "regeling als geheel", "Aard",
+    Kenmerk("regeling_als_geheel", "regeling als geheel", "Hoofdkenmerk",
             "Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één "
             "artikel, een soort regeling of een richtlijn?",
             "Wet op de lijkbezorging; modelverordening participatie",
@@ -135,7 +141,7 @@ KENMERKEN: list[Kenmerk] = [
     Kenmerk("los_van_verantwoordelijkheid", "los van verantwoordelijkheid", "Partij",
             "Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen?",
             "kerkgenootschap; burgemeester", "houder van de begraafplaats",
-            "ArchiMate (actor tegenover rol)", _bij("handelende_partij", "hoedanigheid")),
+            "ArchiMate (actor tegenover rol)", _bij("handelende_partij", "hoedanigheid", "samenwerkingsverband")),
     Kenmerk("eigen_rechtspersoon", "eigen rechtspersoon", "Partij",
             "Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, "
             "vennootschap)?",
@@ -166,7 +172,7 @@ KENMERKEN: list[Kenmerk] = [
             "Komt via dit kanaal aanwijsbaar een gemeentelijke dienst beschikbaar? Noem de dienst.",
             "website → Melding openbare ruimte doen", "kanaal zonder aanwijsbare dienst",
             "GEMMA (kanaal wordt toegewezen aan dienst)", _bij("toegangspunt")),
-    # Soort gedrag (bij gedrag precies één ja)
+    # Soort gedrag (keuzeveld `soort_gedrag`, bij gedrag)
     Kenmerk("per_keer_doorlopen", "per keer doorlopen", "Soort gedrag",
             "Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen?",
             "aanvraag omgevingsvergunning behandelen", "vergunningverlening", "GEMMA (definitie Bedrijfsproces)",
@@ -374,20 +380,139 @@ GEMMA_KENMERKEN = ("in_functie_indeling", "zelfstandige_specialisatie")
 KENMERK = {k.sleutel: k for k in KENMERKEN}
 GROEPEN = list(dict.fromkeys(k.groep for k in KENMERKEN))
 GROEP_ALS = {
-    "Poort": "Altijd.",
-    "Aard": "Altijd. Precies één ja; alleen *handelende partij* met *hoedanigheid* of met *samenwerkingsverband* mag samen.",
+    "Poort": "Altijd, maar alleen een afwijking: zonder antwoord is de poort doorlopen (*herkenbaar*, *gemeentelijk*, "
+             "*eigen identiteit* en *betekenis in onderwerp* ja, *buiten dit model* en *slechts eigenschap* nee), en "
+             "steunt zij op de bronnen van de beoordeling.",
+    "Hoofdkenmerk": "Het keuzeveld `hoofdkenmerk`: één waarde uit het vak, of `ding` in het passieve vak; valt weg als "
+                    "het vak er maar één heeft.",
     "Partij": "Alleen bij *handelende partij*, *hoedanigheid*, *samenwerkingsverband* of *toegangspunt*; *soort partij* bij *handelende partij* en *samenwerkingsverband*.",
-    "Soort gedrag": "Alleen bij *gedrag*. Precies één ja.",
+    "Soort gedrag": "Het keuzeveld `soort_gedrag`, alleen bij *gedrag*: één waarde uit het vak; valt weg bij gedrag "
+                    "extern (*aangeboden gedrag*).",
     "Gedrag": "Alleen bij *gedrag*; *afnemer* en *benoembaar resultaat* ook bij *aanbod als geheel*.",
-    "Passief": "Bij een ding (geen aard); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en "
+    "Passief": "Bij een ding (geen hoofdkenmerk); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en "
                "*geautomatiseerd verwerkt* bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; "
                "*omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.",
     "Beleidskader": "Alleen bij *regeling als geheel*.",
-    "Specialisatie": "Altijd, als het type een pagina heeft.",
+    "Specialisatie": "Altijd, als het type een pagina heeft; zonder antwoord *zelfstandige specialisatie* ja en "
+                     "*generiek* nee.",
 }
-AARD = ["gedrag", "handelende_partij", "hoedanigheid", "samenwerkingsverband", "toegangspunt", "plaats",
-        "aanbod_als_geheel", "regeling_als_geheel"]
+HOOFDKENMERK = [k.sleutel for k in KENMERKEN if k.groep == "Hoofdkenmerk"]
+DING = "ding"  # het hoofdkenmerk van het passieve vak: geen van de hoofdkenmerken
 SOORT_GEDRAG = [k.sleutel for k in KENMERKEN if k.groep == "Soort gedrag"]
+KEUZE = frozenset(HOOFDKENMERK) | frozenset(SOORT_GEDRAG)  # kenmerken die een keuzeveld zijn, niet in `kenmerken`
+
+# Zonder antwoord: de poort is doorlopen (O2), een begrip is een zelfstandige specialisatie en niet generiek (O4); elk
+# ander kenmerk is nee.
+STANDAARD = {"herkenbaar": "ja", "gemeentelijk": "ja", "buiten_dit_model": "nee", "slechts_eigenschap": "nee",
+             "eigen_identiteit": "ja", "betekenis_in_onderwerp": "ja", "zelfstandige_specialisatie": "ja",
+             "generiek": "nee"}
+
+
+LAAGNAAM = {"bedrijf": "bedrijfslaag", "applicatie": "applicatielaag", "technologie": "technologielaag",
+            "strategie": "strategielaag", "motivatie": "motivatie", "overig": "overig"}
+
+
+@dataclass(frozen=True)
+class Vak:
+    """Een vak van de ArchiMate-matrix: laag, aspect en intern of extern, met de hoofdkenmerken en soorten gedrag."""
+    sleutel: str
+    laag: str
+    aspect: str
+    extern: bool | None  # None: het aspect kent geen intern en extern
+    hoofdkenmerken: tuple
+    soorten: tuple = ()
+
+    @property
+    def typen(self) -> str:
+        """De elementtypen in het vak, uit het kennismodel."""
+        return ", ".join([e.naam for e in km.ELEMENTTYPEN if e.vak == self.sleutel]
+                         + [f"{z.naam} (geen pagina)" for z in km.ZONDER_ELEMENT if z.vak == self.sleutel])
+
+    @property
+    def label(self) -> str:
+        delen = [LAAGNAAM[self.laag], self.aspect, {True: "extern", False: "intern"}.get(self.extern, "")]
+        return ", ".join(d for d in delen if d)
+
+
+VAKKEN: list[Vak] = [
+    Vak("bedrijf/actief-intern", "bedrijf", "actief", False, ("handelende_partij", "hoedanigheid", "samenwerkingsverband")),
+    Vak("bedrijf/actief-extern", "bedrijf", "actief", True, ("toegangspunt",)),
+    Vak("bedrijf/gedrag-intern", "bedrijf", "gedrag", False, ("gedrag",),
+        ("per_keer_doorlopen", "groepeert_processen", "gegroepeerd_gedrag", "toestandsverandering", "gezamenlijk_gedrag")),
+    Vak("bedrijf/gedrag-extern", "bedrijf", "gedrag", True, ("gedrag",), ("aangeboden_gedrag",)),
+    Vak("bedrijf/passief", "bedrijf", "passief", None, (DING,)),
+    Vak("bedrijf/samengesteld", "bedrijf", "samengesteld", None, ("aanbod_als_geheel",)),
+    Vak("motivatie", "motivatie", "", None, ("regeling_als_geheel",)),
+    Vak("overig/samengesteld", "overig", "samengesteld", None, ("plaats",)),
+]
+VAK = {v.sleutel: v for v in VAKKEN}
+KEUZEVELDEN = {
+    "vak": "Fase A, eerste keuze: het vak in de ArchiMate-matrix (laag, aspect, intern of extern)",
+    "hoofdkenmerk": "Fase A: het dominante kenmerk binnen het vak, of `ding` in het passieve vak; alleen nodig als het "
+                    "vak er meer heeft",
+    "soort_gedrag": "Fase A, bij gedrag: de soort gedrag binnen het vak; alleen nodig als het vak er meer heeft",
+}
+
+# Relationele kenmerken: de tegenpartij is een relatie (O3). Het kenmerk blijft de bewering en noemt zijn tegenpartij in
+# `naar`: het id van een element, of naam en type van een element dat (nog) niet bestaat. Bestaat de relatie, dan steunt
+# het kenmerk op haar bron; anders heeft het een eigen onderbouwing en bron. Per kenmerk: de richting vanuit het
+# begrip (uit: de relatie staat in deze beoordeling; in: in die van de tegenpartij), de relatiesoorten en de typen van
+# de tegenpartij (paginatypen; leeg: elk type).
+RELATIONEEL = {
+    "vervult_een_rol": ("uit", ("toewijzing",), ("rol",)),
+    "voert_gedrag_uit": ("uit", ("toewijzing",), ("bedrijfsproces", "bedrijfsfunctie", "bedrijfsinteractie")),
+    "ontsluit_een_dienst": ("uit", ("toewijzing",), ("dienst",)),
+    "toegewezen_partij": ("in", ("toewijzing",), ("rol", "actor", "bedrijfssamenwerking")),
+    "gebruikt_objecten": ("uit", ("toegang",), ("bedrijfsobject",)),
+    "aanleiding": ("in", ("triggering",), ()),
+    "gerealiseerd_door": ("in", ("realisatie",), ("bedrijfsproces", "bedrijfsfunctie")),
+    "leidt_tot_gedrag": ("uit", ("triggering",), ("bedrijfsproces", "bedrijfsinteractie")),
+    "bijdrage_aan_groter_proces": ("in", ("aggregatie", "compositie"), ("bedrijfsproces",)),
+    "omvat_processen": ("uit", ("aggregatie",), ("bedrijfsproces",)),
+    "levert_aanbod": ("uit", ("realisatie",), ("dienst", "product")),
+    "bedient_gedrag": ("uit", ("bediening",), ("bedrijfsproces",)),
+    "in_functie_indeling": ("in", ("aggregatie",), ("bedrijfsfunctie",)),
+    "leidt_tot_gebeurtenis": ("uit", ("triggering",), ("gebeurtenis",)),
+    "wordt_bewerkt": ("in", ("toegang",), ("bedrijfsproces", "bedrijfsfunctie", "bedrijfsinteractie")),
+    "omvat_diensten_en_afspraken": ("uit", ("aggregatie",), ("dienst", "bedrijfsobject")),
+    "is_grondslag_voor": ("uit", ("associatie",), ()),
+}
+
+
+def hoofdkenmerk(beoordeling: dict) -> str | None:
+    """Het hoofdkenmerk: het veld, of het enige hoofdkenmerk van het vak."""
+    if beoordeling.get("hoofdkenmerk"):
+        return beoordeling["hoofdkenmerk"]
+    v = VAK.get(beoordeling.get("vak") or "")
+    return v.hoofdkenmerken[0] if v and len(v.hoofdkenmerken) == 1 else None
+
+
+def soort_gedrag(beoordeling: dict) -> str | None:
+    """De soort gedrag: het veld, of de enige soort van het vak."""
+    if beoordeling.get("soort_gedrag"):
+        return beoordeling["soort_gedrag"]
+    v = VAK.get(beoordeling.get("vak") or "")
+    return v.soorten[0] if v and len(v.soorten) == 1 else None
+
+
+def vak_bij(hoofd: str | None, soort: str | None = None) -> str | None:
+    """Het vak waarin dit hoofdkenmerk (en deze soort gedrag) valt; None als dat niet eenduidig is."""
+    kandidaten = [v.sleutel for v in VAKKEN if (hoofd or DING) in v.hoofdkenmerken
+                  and (not v.soorten or soort in v.soorten)]
+    return kandidaten[0] if len(kandidaten) == 1 else None
+
+
+def _vak_conflict(beoordeling: dict) -> str | None:
+    """Past het hoofdkenmerk of de soort gedrag niet bij het vak? (stap 3)"""
+    v = VAK.get(beoordeling.get("vak") or "")
+    if not v:
+        return None
+    hoofd, soort = hoofdkenmerk(beoordeling), soort_gedrag(beoordeling)
+    if hoofd and hoofd not in v.hoofdkenmerken:
+        return f"hoofdkenmerk *{NAAM.get(hoofd, hoofd)}* past niet bij het vak {v.label}"
+    if soort and soort not in v.soorten:
+        return f"soort gedrag *{NAAM[soort]}* past niet bij het vak {v.label}"
+    return None
 
 @dataclass(frozen=True)
 class Typedef:
@@ -409,7 +534,7 @@ class Typedef:
 TEGENHANGER = {"onderscheidbare_exemplaren": "tegenhanger", "levenscyclus": "tegenhanger", "wordt_bewerkt": "tegenhanger"}
 TYPEN: list[Typedef] = [
     Typedef(*km.typevelden("bedrijfsobject"), "pagina",
-            "geen aard (een ding); *afspraak* en *waarneembare vorm* nee", {"afspraak": "nee", "waarneembare_vorm": "nee"},
+            "*ding*; *afspraak* en *waarneembare vorm* nee", {"afspraak": "nee", "waarneembare_vorm": "nee"},
             "wordt_bewerkt", ("onderscheidbare_exemplaren", "levenscyclus"),
             {"geautomatiseerd_verwerkt": "annotatie data-object",
              "deel_van_object": "ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina",
@@ -557,7 +682,8 @@ def _ja(k: dict, sleutel: str) -> bool:
 
 
 def _aard(k: dict) -> set[str]:
-    return {s for s in AARD if _ja(k, s)}
+    """Het hoofdkenmerk als verzameling (leeg: een ding)."""
+    return {s for s in HOOFDKENMERK if _ja(k, s)}
 
 
 def _soorten(k: dict) -> list[str]:
@@ -569,7 +695,7 @@ def _namen(sleutels) -> str:
 
 
 def _past_niet(k: dict) -> list[str]:
-    """Kenmerken die ja zijn maar niet bij de aard van het begrip passen (stap 3)."""
+    """Kenmerken die ja zijn maar niet bij het hoofdkenmerk van het begrip passen (stap 3)."""
     aard = _aard(k)
     fout = []
     for km in KENMERKEN:
@@ -602,12 +728,6 @@ def _element(nr, archimate_type, toelichting, paginatype=None, **kw) -> Uitkomst
 
 def _conflict(nr, reden) -> Uitkomst:
     return Uitkomst("conflict", nr, "Tegenstrijdige kenmerken", voorleggen=True, redenen=[reden])
-
-
-def _partij(k, e, nr):
-    if _ja(k, "los_van_verantwoordelijkheid"):
-        return _element(nr, "business-actor", "Partij en hoedanigheid, los van de verantwoordelijkheid")
-    return _element(nr, "business-role", "Partij en hoedanigheid, gebonden aan de verantwoordelijkheid")
 
 
 def _samenwerking(k, e, nr):
@@ -660,19 +780,13 @@ REGELS: list[Regel] = [
           "verwijzing in de begrippenlijst; beoordelen in het onderwerp waar het hoort",
           lambda k, e: not _ja(k, "betekenis_in_onderwerp"),
           lambda k, e, nr: Uitkomst("verwijzing", nr, "Hoort bij een ander onderwerp")),
-    Regel("3 Consistentie", "een kenmerk is ja dat niet bij de aard past (zie *alleen bij* per groep)",
-          "conflict: voorleggen",
-          lambda k, e: bool(_past_niet(k)),
-          lambda k, e, nr: _conflict(nr, f"Past niet bij de aard: {_namen(_past_niet(k))}")),
-    Regel("4 Type", "*handelende partij* en *hoedanigheid*", "*los van verantwoordelijkheid*: ja Actor, nee Rol",
-          lambda k, e: _aard(k) == {"handelende_partij", "hoedanigheid"}, _partij),
-    Regel("4 Type", "*samenwerkingsverband* (eventueel met *handelende partij*)",
-          "*eigen rechtspersoon*: ja Actor, nee Bedrijfssamenwerking",
-          lambda k, e: "samenwerkingsverband" in _aard(k) and _aard(k) <= {"samenwerkingsverband", "handelende_partij"},
-          _samenwerking),
-    Regel("4 Type", "andere combinatie van meer dan één aard", "conflict: voorleggen",
-          lambda k, e: len(_aard(k)) > 1,
-          lambda k, e, nr: _conflict(nr, f"Meer dan één aard: {_namen(sorted(_aard(k)))}")),
+    Regel("3 Consistentie", "het hoofdkenmerk of de soort gedrag past niet bij het vak, of een kenmerk is ja dat niet "
+          "bij het hoofdkenmerk past (zie *alleen bij* per groep)", "conflict: voorleggen",
+          lambda k, e: bool(e.get("vak_conflict") or _past_niet(k)),
+          lambda k, e, nr: _conflict(nr, e.get("vak_conflict")
+                                     or f"Past niet bij het hoofdkenmerk: {_namen(_past_niet(k))}")),
+    Regel("4 Type", "*samenwerkingsverband*", "*eigen rechtspersoon*: ja Actor, nee Bedrijfssamenwerking",
+          lambda k, e: _aard(k) == {"samenwerkingsverband"}, _samenwerking),
     Regel("4 Type", "*handelende partij*", "Actor; conflict als niet *los van verantwoordelijkheid*",
           lambda k, e: _aard(k) == {"handelende_partij"},
           lambda k, e, nr: _element(nr, "business-actor", "Handelende partij") if _ja(k, "los_van_verantwoordelijkheid")
@@ -691,19 +805,16 @@ REGELS: list[Regel] = [
           lambda k, e, nr: _element(nr, "location", "Fysieke plaats")),
     Regel("4 Type", "*regeling als geheel*", "*landelijk*: ja Beleidskader, nee bron (geen element)",
           lambda k, e: _aard(k) == {"regeling_als_geheel"}, _regeling),
-    Regel("4 Type", "*gedrag* en precies één soort gedrag",
-          "Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Dienst of Bedrijfsinteractie",
+    Regel("4 Type", "*gedrag*", "naar de soort gedrag: Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Dienst of "
+          "Bedrijfsinteractie",
           lambda k, e: _aard(k) == {"gedrag"} and len(_soorten(k)) == 1, _gedrag),
-    Regel("4 Type", "*gedrag*, maar geen of meer dan één soort gedrag", "conflict: voorleggen",
-          lambda k, e: _aard(k) == {"gedrag"},
-          lambda k, e, nr: _conflict(nr, f"Soort gedrag niet eenduidig: {_namen(_soorten(k)) or 'geen'}")),
-    Regel("4 Type", "geen aard, *waarneembare vorm*", "Representatie: geen pagina; vermelden bij het genoemde object",
+    Regel("4 Type", "ding, *waarneembare vorm*", "Representatie: geen pagina; vermelden bij het genoemde object",
           lambda k, e: _ja(k, "waarneembare_vorm"),
           lambda k, e, nr: _element(nr, "representation", "Waarneembare vorm", genoemd_begrip=e.get("genoemd_begrip"))),
-    Regel("4 Type", "geen aard, *afspraak*", "Afspraak (Contract)",
+    Regel("4 Type", "ding, *afspraak*", "Afspraak (Contract)",
           lambda k, e: _ja(k, "afspraak"),
           lambda k, e, nr: _element(nr, "contract", "Passief, afspraak")),
-    Regel("4 Type", "geen aard, overig", "Bedrijfsobject",
+    Regel("4 Type", "ding, overig", "Bedrijfsobject",
           lambda k, e: True,
           lambda k, e, nr: _element(nr, "business-object", "Passief")),
 ]
@@ -773,24 +884,21 @@ class BeoordelingFout(ValueError):
         super().__init__("; ".join(fouten))
 
 
-# --- Het pad: de kenmerken die de beslistabel voor dit begrip leest ---
+# --- Het pad: de keuzevelden en kenmerken die de beslistabel voor dit begrip leest ---
 #
-# Fase A: de poort (met een stop als het begrip afvalt), de aard en de groep van die aard. Fase B: de kenmerken van
-# het type (kernrelatie, eis, drempel, aanvullingen) en wat stap 6, stap 7 en de naregels lezen. Een kenmerk buiten het
-# pad hoeft niet in de beoordeling: het script leidt nee af. Elk kenmerk op het pad staat er expliciet in (de nee die
-# de uitkomst bepaalt, als dubbelcheck), met een onderbouwing; alleen in de groepen met precies één ja (Aard, Soort
-# gedrag) mag een kale `nee`.
+# Fase A: de poort (alleen een afwijking, met een stop als het begrip afvalt), de keuzevelden (vak, hoofdkenmerk, soort
+# gedrag) en de groep van het hoofdkenmerk. Fase B: de kenmerken van het type (kernrelatie, eis, drempel, aanvullingen)
+# en wat stap 6, stap 7 en de naregels lezen. Een kenmerk buiten het pad hoeft niet in de beoordeling: het script leidt
+# de standaardwaarde af (STANDAARD, anders nee). Elk ander kenmerk op het pad staat er expliciet in (ook de nee die de
+# uitkomst bepaalt, als dubbelcheck), met een onderbouwing, of bij een relationeel kenmerk met de tegenpartij in `naar`.
 
-KALE_NEE = "nee"
-EENDUIDIG = frozenset(AARD) | frozenset(SOORT_GEDRAG)  # precies één ja: een nee zonder onderbouwing mag
 POORT_STOP = (("buiten_dit_model", "ja"), ("slechts_eigenschap", "ja"), ("eigen_identiteit", "nee"),
               ("betekenis_in_onderwerp", "nee"))
-TYPEGROEP = (  # (aarden, kenmerken): de groep die het type kiest, als een van de aarden ja is
-    ({"gedrag"}, tuple(SOORT_GEDRAG)),
+TYPEGROEP = (  # (hoofdkenmerken, kenmerken): de groep die het type kiest, als een van de hoofdkenmerken ja is
     ({"handelende_partij", "hoedanigheid"}, ("los_van_verantwoordelijkheid",)),
     ({"samenwerkingsverband"}, ("eigen_rechtspersoon",)),
     ({"regeling_als_geheel"}, ("landelijk",)),
-    (set(), ("waarneembare_vorm", "afspraak")),  # geen aard: een ding
+    (set(), ("waarneembare_vorm", "afspraak")),  # geen hoofdkenmerk: een ding
 )
 STAP_7 = {"bedrijfsproces": ("omvat_levensloop", "bijdrage_aan_groter_proces", "klant_tot_klant", "levert_aanbod"),
           "bedrijfsobject": ("generiek", "invoer_van_een_ander", "deel_van_object")}
@@ -798,25 +906,46 @@ ELK_ELEMENT = ("zelfstandige_specialisatie", "generiek", "geautomatiseerd_verwer
 
 
 def antwoord(kenmerken: dict, sleutel: str) -> dict:
-    """Het antwoord op een kenmerk als object; een kale nee of een ontbrekend kenmerk (afgeleid) is {'waarde': 'nee'}."""
+    """Het antwoord op een kenmerk als object; een ontbrekend kenmerk heeft de standaardwaarde (meestal nee)."""
     a = kenmerken.get(sleutel)
-    return a if isinstance(a, dict) else {"waarde": "nee"}
+    return a if isinstance(a, dict) else {"waarde": STANDAARD.get(sleutel, "nee")}
 
 
 def antwoorden(beoordeling: dict) -> dict[str, dict]:
-    """De kenmerken die in de beoordeling staan, elk als object (een kale nee als {'waarde': 'nee'})."""
+    """De kenmerken die in de beoordeling staan, elk als object."""
     kenmerken = beoordeling.get("kenmerken") or {}
     return {s: antwoord(kenmerken, s) for s in kenmerken}
 
 
 def regelvorm(beoordeling: dict) -> list[str]:
     """De kenmerken die nog in de schrijfvorm van één regel staan (`ja — onderbouwing [bron]`)."""
-    return [s for s, a in (beoordeling.get("kenmerken") or {}).items() if isinstance(a, str) and a != KALE_NEE]
+    return [s for s, a in (beoordeling.get("kenmerken") or {}).items() if isinstance(a, str)]
+
+
+def naar_ids(a: dict) -> list[str]:
+    """De tegenpartijen in `naar` die een element-id zijn (geen naam en type)."""
+    return [x for x in a.get("naar") or [] if isinstance(x, str)]
+
+
+def relaties_bij(bid: str, sleutel: str, ander: str, alle: dict[str, dict]) -> list[dict]:
+    """De relaties die het relationele kenmerk `sleutel` van `bid` met tegenpartij `ander` uitwerken: in de richting en
+    met een soort uit RELATIONEEL, in de beoordeling van `bid` (uit) of van `ander` (in)."""
+    richting, soorten, _ = RELATIONEEL[sleutel]
+    van, naar = (bid, ander) if richting == "uit" else (ander, bid)
+    return [r for r in (alle.get(van) or {}).get("relaties") or []
+            if r["naar"] == naar and r["soort"].split(" (")[0] in soorten]
+
+
+def steunt_op_relatie(bid: str, sleutel: str, a: dict, alle: dict[str, dict]) -> bool:
+    """Steunt het kenmerk op een relatie met een bron of een GEMMA-relatie (regel Elke claim een bron)?"""
+    return any(r.get("bronnen") or r.get("gemma_relatie")
+               for ander in naar_ids(a) for r in relaties_bij(bid, sleutel, ander, alle))
 
 
 def extra_velden(beoordeling: dict) -> dict:
     extra = {s: beoordeling.get(s) for s in EXTRA_VELDEN}
     extra["soort_werk_van"] = (beoordeling.get("gemma_generiek") or {}).get("id")
+    extra["vak_conflict"] = _vak_conflict(beoordeling)
     return extra
 
 
@@ -834,23 +963,39 @@ def _poort(k: dict, extra: dict) -> list[str]:
     return pad
 
 
+def voorbij_poort(k: dict, extra: dict) -> bool:
+    return not extra.get("synoniem_van") and len(_poort(k, extra)) == len(POORT_STOP) + 2 \
+        and k["betekenis_in_onderwerp"] == "ja"
+
+
 def fase_a(k: dict, extra: dict) -> list[str]:
-    """Poort, aard en de groep van die aard, met een stop als het begrip afvalt."""
+    """De kenmerken van fase A: de poort en de groep van het hoofdkenmerk, met een stop als het begrip afvalt."""
     pad = _poort(k, extra)
-    if len(pad) < len(POORT_STOP) + 2 or k["betekenis_in_onderwerp"] == "nee":
+    if not voorbij_poort(k, extra):
         return pad
     aard = _aard(k)
-    pad += AARD
     for aarden, groep in TYPEGROEP:
         if _past_groep(aard, aarden):
             pad += [s for s in groep if s not in pad]
     return pad
 
 
+def open_keuzevelden(beoordeling: dict) -> list[str]:
+    """De keuzevelden van fase A die nodig zijn maar ontbreken: het vak, het hoofdkenmerk als het vak er meer heeft, de
+    soort gedrag bij gedrag. Een begrip dat bij de poort afvalt, heeft ze niet nodig."""
+    if not voorbij_poort(waarden(beoordeling), extra_velden(beoordeling)):
+        return []
+    uit = [] if beoordeling.get("vak") else ["vak"]
+    hoofd = hoofdkenmerk(beoordeling)
+    if not hoofd:
+        uit.append("hoofdkenmerk")
+    if hoofd == "gedrag" and not soort_gedrag(beoordeling):
+        uit.append("soort_gedrag")
+    return uit
+
+
 def _past_groep(aard: set[str], aarden: set[str]) -> bool:
-    """Telt de groep van `aarden` bij deze aard? Soort gedrag alleen bij gedrag alleen (stap 4)."""
-    if aarden == {"gedrag"}:
-        return aard == aarden
+    """Telt de groep van `aarden` bij dit hoofdkenmerk? Zonder hoofdkenmerk (een ding) de groep zonder aarden."""
     return bool(aard & aarden) if aarden else not aard
 
 
@@ -861,7 +1006,7 @@ def fase_b_type(t: Typedef) -> list[str]:
 
 
 def pad(k: dict, extra: dict) -> tuple[list[str], list[str]]:
-    """(fase A, fase B): de kenmerken die de beslistabel leest, bij deze waarden (een ontbrekend kenmerk is nee)."""
+    """(fase A, fase B): de kenmerken die de beslistabel leest, bij deze waarden."""
     a = fase_a(k, extra)
     u = _stap_0_tot_4(k, extra)
     if u.soort != "element":  # afgevallen, of een type zonder pagina: geen fase B
@@ -869,21 +1014,42 @@ def pad(k: dict, extra: dict) -> tuple[list[str], list[str]]:
     return a, [s for s in fase_b_type(typedef(u.paginatype, u.archimate_type, k)) if s not in a]
 
 
+def te_beantwoorden(sleutels) -> list[str]:
+    """De kenmerken die een antwoord nodig hebben: die zonder standaardwaarde."""
+    return [s for s in sleutels if s not in STANDAARD]
+
+
 POORT = [k.sleutel for k in KENMERKEN if k.groep == "Poort"]
-GROEPLABEL = {"gedrag": "Alleen bij gedrag (precies één ja; een nee zonder onderbouwing)",
-              "handelende_partij": "Alleen bij handelende partij of hoedanigheid",
+GROEPLABEL = {"handelende_partij": "Alleen bij handelende partij of hoedanigheid",
               "samenwerkingsverband": "Alleen bij samenwerkingsverband",
               "regeling_als_geheel": "Alleen bij regeling als geheel",
-              "": "Alleen zonder aard (een ding)"}
-SCHRIJFVORM = ("Schrijf per kenmerk één regel onder `kenmerken:`: `sleutel: ja — onderbouwing [bron-id, …]` (een plek in "
-               "een GEMMA-indeling: `[id-…]`, het id van de GEMMA-relatie); een nee: `sleutel: nee — onderbouwing`, in "
-               "Aard en Soort gedrag een kale `sleutel: nee`; tussen aanhalingstekens als de tekst `: ` of ` #` bevat. "
-               "Daarna: tools/beoordeling.py normaliseer <id>.")
+              "": "Alleen bij een ding (vak bedrijf/passief)"}
+SCHRIJFVORM = ("Schrijf de keuzevelden bovenaan (`vak:`, `hoofdkenmerk:`, `soort_gedrag:`). Schrijf per kenmerk één regel "
+               "onder `kenmerken:`: `sleutel: ja — onderbouwing [bron-id, …]` (een plek in een GEMMA-indeling: "
+               "`[id-…]`, het id van de GEMMA-relatie); een nee: `sleutel: nee — onderbouwing`; tussen aanhalingstekens "
+               "als de tekst `: ` of ` #` bevat. Een relationeel kenmerk (†) met ja noemt zijn tegenpartij: "
+               "`sleutel: {waarde: ja, naar: [<id>]}` als de relatie er is (die draagt de bron), anders met onderbouwing "
+               "en bronnen en in `naar` de naam en het type (`{naam: …, type: <paginatype>}`). Een poortkenmerk alleen "
+               "bij een afwijking. Daarna: tools/beoordeling.py normaliseer <id>.")
+FASE_A_POORT = ("Fase A. Poort, alleen een afwijking (zonder antwoord is de poort doorlopen en steunt zij op de bronnen "
+                "van de beoordeling): het begrip valt af bij de eerste die afwijkt (herkenbaar of gemeentelijk nee; buiten "
+                "dit model of slechts eigenschap ja; eigen identiteit of betekenis in onderwerp nee), dan stop; noem de "
+                "afwijking met onderbouwing en bron.")
 
 
 def _vraagregel(sleutel: str) -> str:
     k = KENMERK[sleutel]
-    return f"- `{sleutel}`: {k.vraag} Ja: {k.ja}. Nee: {k.nee}."
+    teken = " †" if sleutel in RELATIONEEL else ""
+    return f"- `{sleutel}`{teken}: {k.vraag} Ja: {k.ja}. Nee: {k.nee}."
+
+
+def _vakregel(v: Vak) -> str:
+    if len(v.hoofdkenmerken) == 1 and v.hoofdkenmerken[0] != DING:
+        k = KENMERK[v.hoofdkenmerken[0]]
+        return f"- `{v.sleutel}` ({v.label}; {v.typen}): {k.vraag} Ja: {k.ja}. Nee: {k.nee}."
+    if v.hoofdkenmerken == (DING,):
+        return f"- `{v.sleutel}` ({v.label}; {v.typen}): een ding, geen van de andere vakken."
+    return f"- `{v.sleutel}` ({v.label}; {v.typen}): een partij; kies het hoofdkenmerk."
 
 
 def type_van(paginatype: str) -> Typedef:
@@ -897,75 +1063,90 @@ def type_van(paginatype: str) -> Typedef:
 
 
 def vragen(beoordeling: dict | None = None, paginatype: str | None = None) -> list[str]:
-    """De vragen voor de volgende fase: de kenmerken op het pad die nog niet beantwoord zijn, met de voorbeelden.
-    Fase A zolang de poort of de aard open is (met de groepen per aard), daarna fase B van het type."""
+    """De vragen voor de volgende fase: de keuzevelden en de kenmerken op het pad die nog niet beantwoord zijn, met de
+    voorbeelden. Fase A zolang een keuzeveld of de groep van het hoofdkenmerk open is, daarna fase B van het type."""
     if paginatype:
         t = type_van(paginatype)
-        return [f"Fase B, {t.naam}: de kenmerken van het type, elk met een onderbouwing.",
-                *map(_vraagregel, fase_b_type(t)), "", SCHRIJFVORM]
+        return [f"Fase B, {t.naam}: de kenmerken van het type, elk met een onderbouwing of een tegenpartij (†).",
+                *map(_vraagregel, te_beantwoorden(fase_b_type(t))), "", SCHRIJFVORM]
     beoordeling = beoordeling or {}
     kenmerken = beoordeling.get("kenmerken") or {}
     extra = extra_velden(beoordeling)
     if extra.get("synoniem_van"):
         return ["Synoniem (stap 0): geen kenmerken."]
-    open_ = lambda sleutels: [s for s in sleutels if s not in kenmerken]  # noqa: E731
-    a, b = pad(waarden(beoordeling), extra)
-    if set(open_(a)) & set(POORT + AARD):
-        uit = ["Fase A. Poort, in volgorde: het begrip valt af bij de eerste die afwijkt (herkenbaar of gemeentelijk "
-               "nee; buiten dit model of slechts eigenschap ja; eigen identiteit of betekenis in onderwerp nee), dan stop.",
-               *map(_vraagregel, open_(POORT)), "",
-               "Aard: precies één ja (handelende partij met hoedanigheid of met samenwerkingsverband mag samen); een "
-               "nee zonder onderbouwing.", *map(_vraagregel, open_(AARD))]
+    open_ = lambda sleutels: [s for s in te_beantwoorden(sleutels) if s not in kenmerken]  # noqa: E731
+    k = waarden(beoordeling)
+    a, b = pad(k, extra)
+    velden = open_keuzevelden(beoordeling)
+    if velden:
+        intern = VAK["bedrijf/actief-intern"].hoofdkenmerken
+        uit = [FASE_A_POORT, *map(_vraagregel, POORT), "",
+               "Vak (`vak`): de eerste keuze, het vak in de ArchiMate-matrix.", *map(_vakregel, VAKKEN), "",
+               "Hoofdkenmerk (`hoofdkenmerk`): alleen bij `bedrijf/actief-intern`, één van:", *map(_vraagregel, intern), "",
+               "Soort gedrag (`soort_gedrag`): alleen bij `bedrijf/gedrag-intern`, één van (bij `bedrijf/gedrag-extern` "
+               "is het *aangeboden gedrag*):", *map(_vraagregel, VAK["bedrijf/gedrag-intern"].soorten)]
+        aard = _aard(k)
         for aarden, groep in TYPEGROEP:
-            if open_(groep):
+            if open_(groep) and (not hoofdkenmerk(beoordeling) or _past_groep(aard, aarden)):
                 uit += ["", GROEPLABEL[min(aarden) if aarden else ""] + ":", *map(_vraagregel, open_(groep))]
         return uit + ["", SCHRIJFVORM]
     if open_(a):
-        return ["Fase A, de groep van de aard:", *map(_vraagregel, open_(a)), "", SCHRIJFVORM]
-    u = _stap_0_tot_4(waarden(beoordeling), extra)
+        return ["Fase A, de groep van het hoofdkenmerk:", *map(_vraagregel, open_(a)), "", SCHRIJFVORM]
+    u = _stap_0_tot_4(k, extra)
     if not b:
         return [f"Geen fase B: uitkomst {u.soort} (regel {u.regel}). Draai tools/beslissen.py."]
-    t = typedef(u.paginatype, u.archimate_type, waarden(beoordeling))
+    t = typedef(u.paginatype, u.archimate_type, k)
     if not open_(b):
         return [f"Alle kenmerken op het pad van {t.naam} zijn beantwoord. Draai tools/beslissen.py."]
-    return [f"Fase B, {t.naam}: de kenmerken van het type, elk met een onderbouwing.", *map(_vraagregel, open_(b)),
-            "", SCHRIJFVORM]
+    return [f"Fase B, {t.naam}: de kenmerken van het type, elk met een onderbouwing of een tegenpartij (†).",
+            *map(_vraagregel, open_(b)), "", SCHRIJFVORM]
 
 
 def controleer(beoordeling: dict) -> list[str]:
-    """Structurele controle van een beoordeling (aanvullend op het JSON-schema), en het pad: elk kenmerk op het pad
-    staat er expliciet in; een nee op het pad heeft een onderbouwing, behalve in Aard en Soort gedrag."""
+    """Structurele controle van een beoordeling (aanvullend op het JSON-schema), en het pad: de keuzevelden zijn
+    ingevuld, en elk kenmerk op het pad zonder standaardwaarde staat er expliciet in, met een onderbouwing of (bij een
+    relationeel kenmerk met ja) een tegenpartij in `naar`."""
     fouten = []
     kenmerken = beoordeling.get("kenmerken") or {}
     for sleutel, a in kenmerken.items():
         if sleutel not in NAAM:
             fouten.append(f"onbekend kenmerk '{sleutel}'")
-        elif isinstance(a, str) and a != KALE_NEE:
+        elif sleutel in KEUZE:
+            veld = "soort_gedrag" if sleutel in SOORT_GEDRAG else "hoofdkenmerk"
+            fouten.append(f"'{NAAM[sleutel]}' is geen kenmerk meer maar een keuze: zet het in `{veld}`")
+        elif isinstance(a, str):
             fouten.append(f"kenmerk '{NAAM[sleutel]}' staat in de schrijfvorm van één regel; draai "
                           "tools/beoordeling.py normaliseer")
-        elif isinstance(a, str):
-            continue
         elif not isinstance(a, dict) or a.get("waarde") not in ("ja", "nee"):
             fouten.append(f"kenmerk '{NAAM[sleutel]}': waarde moet 'ja' of 'nee' zijn")
-        elif not str(a.get("onderbouwing", "")).strip():
-            fouten.append(f"kenmerk '{NAAM[sleutel]}': onderbouwing ontbreekt")
+        elif a.get("naar") and sleutel not in RELATIONEEL:
+            fouten.append(f"kenmerk '{NAAM[sleutel]}': `naar` alleen bij een relationeel kenmerk")
+        elif a.get("naar") and a["waarde"] != "ja":
+            fouten.append(f"kenmerk '{NAAM[sleutel]}': `naar` alleen bij ja")
+        elif not str(a.get("onderbouwing", "")).strip() and not (a.get("naar") and len(naar_ids(a)) == len(a["naar"])):
+            fouten.append(f"kenmerk '{NAAM[sleutel]}': onderbouwing ontbreekt" + (
+                " (een tegenpartij met naam en type heeft een onderbouwing en bron)" if a.get("naar") else ""))
     if fouten:
         return fouten
+    for veld in open_keuzevelden(beoordeling):
+        fouten.append(f"keuzeveld `{veld}` ontbreekt (tools/bepaal_type.py vragen)")
     a, b = pad(waarden(beoordeling), extra_velden(beoordeling))
-    ontbrekend = [s for s in a + b if s not in kenmerken]
+    ontbrekend = [s for s in te_beantwoorden(a + b) if s not in kenmerken]
     if ontbrekend:
         fouten.append(f"kenmerken op het pad niet beantwoord: {', '.join(NAAM[s] for s in ontbrekend)} "
                       "(tools/bepaal_type.py vragen)")
-    kaal = [s for s in a + b if kenmerken.get(s) == KALE_NEE and s not in EENDUIDIG]
-    if kaal:
-        fouten.append(f"nee zonder onderbouwing op het pad (alleen in Aard en Soort gedrag): {_namen(kaal)}")
     return fouten
 
 
 def waarden(beoordeling: dict) -> dict[str, str]:
-    """De waarde van elk kenmerk; buiten het pad leidt het script nee af."""
+    """De waarde van elk kenmerk: het hoofdkenmerk en de soort gedrag uit de keuzevelden, de antwoorden, en buiten het
+    pad de standaardwaarde (meestal nee)."""
     kenmerken = beoordeling.get("kenmerken") or {}
-    return {s: antwoord(kenmerken, s)["waarde"] for s in SLEUTELS}
+    k = {s: antwoord(kenmerken, s)["waarde"] for s in SLEUTELS}
+    for s in (hoofdkenmerk(beoordeling), soort_gedrag(beoordeling)):
+        if s in k:
+            k[s] = "ja"
+    return k
 
 
 def _stap_0_tot_4(k: dict, extra: dict) -> Uitkomst:
@@ -1284,11 +1465,51 @@ def doc_stap0() -> list[str]:
             "een bron? Noem dat begrip en waar het voorkomt. | door naar de kenmerken; naamkeuze voorleggen |", ""]
 
 
-PAD_UITLEG = ("Beantwoord de vragen op het pad, in twee fasen (`tools/bepaal_type.py vragen <id>`). Fase A: de poort, met "
-              "een stop als het begrip afvalt, de aard en de groep van die aard; een nee in Aard en Soort gedrag zonder "
-              "onderbouwing. Fase B: de kenmerken van het type, elk met een onderbouwing. Een kenmerk buiten het pad laat "
-              "je weg: het script leidt nee af. Bij \"Noem …\" hoort bij ja een concreet begrip, artikel of relatie uit de "
-              "bronnen; zonder zo'n verwijzing is het antwoord nee.")
+PAD_UITLEG = ("Beantwoord de vragen op het pad, in twee fasen (`tools/bepaal_type.py vragen <id>`). Fase A: de poort, "
+              "alleen een afwijking, met een stop als het begrip afvalt; dan de keuzevelden (vak, hoofdkenmerk, soort "
+              "gedrag; zie de matrix) en de groep van het hoofdkenmerk. Fase B: de kenmerken van het type, elk met een "
+              "onderbouwing. Een kenmerk buiten het pad laat je weg: het script leidt de standaardwaarde af (*standaard "
+              "ja* staat erbij, anders nee). Een relationeel kenmerk (†) met ja noemt zijn tegenpartij in `naar`: het id "
+              "van het element, en bestaat de relatie, dan steunt het kenmerk op haar bron; bestaat het element (nog) "
+              "niet, dan naam en type, met een onderbouwing en bron. Bij \"Noem …\" hoort bij ja een concreet begrip, "
+              "artikel of relatie uit de bronnen; zonder zo'n verwijzing is het antwoord nee.")
+
+
+def doc_matrix(per_vak: bool = True) -> list[str]:
+    """De ArchiMate-matrix met de vakken, en per vak wat fase A vraagt (kennismodel/kenmerken-en-beslistabel.md); zonder
+    `per_vak` alleen de matrix (kennismodel/README.md)."""
+    def cel(laag: str, aspect: str, extern: bool | None) -> str:
+        return ", ".join(v.typen for v in VAKKEN if (v.laag, v.aspect, v.extern) == (laag, aspect, extern)) or "—"
+
+    kolommen = [("actief", False), ("actief", True), ("gedrag", False), ("gedrag", True), ("passief", None),
+                ("samengesteld", None)]
+    regels = ["### De ArchiMate-matrix", "",
+              "Fase A kiest eerst het vak: de laag, het aspect en intern of extern, zoals in ArchiMate. Het vak bepaalt "
+              "welke hoofdkenmerken en soorten gedrag er zijn, en welke vragen volgen. Motivatie kent geen aspecten.", "",
+              "| Laag | Actief intern | Actief extern | Gedrag intern | Gedrag extern | Passief | Samengesteld |",
+              "|---|---|---|---|---|---|---|",
+              "| bedrijf | " + " | ".join(cel("bedrijf", a, e) for a, e in kolommen) + " |",
+              "| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (nu een annotatie) | "
+              "— |",
+              "| technologie | weggefilterd: komt misschien nog | | | | | |",
+              "| strategie | Capability (Vermogen): buiten dit model | | | | | |",
+              "| motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |",
+              "| overig | | | | | | Locatie (geen pagina), Groepering (indeling) |", ""]
+    if not per_vak:
+        return regels
+    regels += ["| Vak (`vak`) | Typen | Hoofdkenmerk (`hoofdkenmerk`) | Soort gedrag (`soort_gedrag`) | Fase A daarna |",
+               "|---|---|---|---|---|"]
+    for v in VAKKEN:
+        hoofd = ", ".join("`ding`" if h == DING else f"*{NAAM[h]}*" for h in v.hoofdkenmerken)
+        hoofd += " (kiezen)" if len(v.hoofdkenmerken) > 1 else " (volgt uit het vak)"
+        soort = (", ".join(f"*{NAAM[x]}*" for x in v.soorten) + (" (kiezen)" if len(v.soorten) > 1 else
+                                                                  " (volgt uit het vak)")) if v.soorten else "—"
+        groep = sorted({x for aarden, g in TYPEGROEP for x in g
+                        if any(_past_groep({h} - {DING}, aarden) for h in v.hoofdkenmerken)})
+        regels.append(f"| `{v.sleutel}` | {v.typen} | {hoofd} | {soort} | {_namen(groep) if groep else '—'} |")
+    nr = next(i for i, r in enumerate(REGELS, start=1) if r.stap.startswith("3"))
+    regels += ["", f"Past het hoofdkenmerk of de soort gedrag niet bij het vak, dan is er een conflict (regel {nr}).", ""]
+    return regels
 
 
 def doc_vragentabel() -> list[str]:
@@ -1300,7 +1521,9 @@ def doc_vragentabel() -> list[str]:
                    "|---|---|---|---|---|---|"]
         for km_ in (k for k in KENMERKEN if k.groep == groep):
             nr += 1
-            regels.append(f"| {nr} | *{km_.naam}* | {_cel(km_.vraag)} | {_cel(km_.ja)} | {_cel(km_.nee)} | "
+            naam = f"*{km_.naam}*" + (" †" if km_.sleutel in RELATIONEEL else "") + (
+                " (standaard ja)" if STANDAARD.get(km_.sleutel) == "ja" else "")
+            regels.append(f"| {nr} | {naam} | {_cel(km_.vraag)} | {_cel(km_.ja)} | {_cel(km_.nee)} | "
                           f"{_cel(km_.herkomst)} |")
         regels.append("")
     return regels
@@ -1324,11 +1547,22 @@ def doc_stappen() -> list[str]:
 def schema() -> dict:
     antwoord = {
         "type": "object",
-        "required": ["waarde", "onderbouwing"],
+        "required": ["waarde"],
         "properties": {
             "waarde": {"enum": ["ja", "nee"]},
-            "onderbouwing": {"type": "string", "minLength": 1},
+            "onderbouwing": {"type": "string", "minLength": 1,
+                             "description": "Verplicht, behalve bij een relationeel kenmerk met ja waarvan `naar` "
+                                            "alleen element-id's noemt (script)"},
             "bronnen": {"type": "array", "items": {"type": "string"}},
+            "naar": {"type": "array", "minItems": 1, "items": {"oneOf": [
+                {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                 "description": "Het id van het element; bestaat de relatie, dan steunt het kenmerk op haar bron"},
+                {"type": "object", "required": ["naam", "type"], "additionalProperties": False,
+                 "properties": {"naam": {"type": "string", "minLength": 1},
+                                "type": {"enum": [*PAGINATYPEN, "procescluster"]}},
+                 "description": "Een tegenpartij die (nog) geen element is: naam en paginatype"}]},
+                     "description": "Alleen bij een relationeel kenmerk (" + ", ".join(RELATIONEEL) + ") met ja: de "
+                                    "tegenpartij van de relatie (O3)"},
             "gemma_relatie": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^id-"},
                               "description": "Alleen bij " + ", ".join(GEMMA_KENMERKEN) + ": de GEMMA-relaties "
                                              "waarop de plek in een GEMMA-indeling steunt, in plaats van een bron "
@@ -1360,11 +1594,14 @@ def schema() -> dict:
                                            "element met relaties en per_onderwerp"},
             "kenmerken": {
                 "type": "object",
-                "properties": {s: {"$ref": "#/$defs/kenmerk"} for s in SLEUTELS},
+                "properties": {s: {"$ref": "#/$defs/antwoord"} for s in SLEUTELS if s not in KEUZE},
                 "additionalProperties": False,
-                "description": "De kenmerken op het pad (tools/bepaal_type.py vragen); buiten het pad leidt het script "
-                               "nee af. Een kale nee alleen in Aard en Soort gedrag (script)",
+                "description": "De kenmerken op het pad (tools/bepaal_type.py vragen); een poortkenmerk alleen bij een "
+                               "afwijking. Buiten het pad leidt het script de standaardwaarde af",
             },
+            "vak": {"enum": [v.sleutel for v in VAKKEN], "description": KEUZEVELDEN["vak"]},
+            "hoofdkenmerk": {"enum": [*HOOFDKENMERK, DING], "description": KEUZEVELDEN["hoofdkenmerk"]},
+            "soort_gedrag": {"enum": SOORT_GEDRAG, "description": KEUZEVELDEN["soort_gedrag"]},
             **{s: {"type": "string", "description": d} for s, d in EXTRA_VELDEN.items()},
             **{s: {"enum": list(w), "description": "Indelingsveld: de plaats in de indelingen (stap 7)"}
                for s, w in WAARDEN.items()},
@@ -1461,8 +1698,6 @@ def schema() -> dict:
         },
         "additionalProperties": False,
         "$defs": {
-            "kenmerk": {"oneOf": [{"$ref": "#/$defs/antwoord"},
-                                  {"const": KALE_NEE, "description": "Een nee zonder onderbouwing"}]},
             "antwoord": antwoord,
         },
     }

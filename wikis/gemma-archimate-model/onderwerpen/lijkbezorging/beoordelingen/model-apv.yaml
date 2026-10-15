@@ -1,44 +1,6 @@
 begrip: Model-APV
+vak: motivatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: De VNG publiceert de Model-APV als modelverordening; gemeenten nemen haar over en passen haar aan, en de UPL noemt haar als grondslag (nr. 32).
-    bronnen:
-    - 2023-vng-model-apv
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Model voor de algemene plaatselijke verordening die de raad vaststelt (aanhef: Gemeentewet art. 149 e.v.).'
-    bronnen:
-    - 2023-vng-model-apv
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als modelverordening, niet als onderdeel van een ander begrip.
-    bronnen:
-    - 2023-vng-model-apv
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Regelt de huishouding van de gemeente over veel beleidsdomeinen: openbare orde, evenementen, horeca, standplaatsen, asverstrooiing (hoofdstuk 1–6).'
-    bronnen:
-    - 2023-vng-model-apv
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde VNG-modelverordening als geheel.
-    bronnen:
-    - 2023-vng-model-apv
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -54,15 +16,9 @@ kenmerken:
     - 2023-vng-model-apv
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Werkt uit, nooit grondslag: art. 5:36 lid 3 (ontheffing van het verbod op incidentele asverstrooiing) werkt de dienst Asverstrooiing uit, die geen landelijke wettelijke grondslag heeft; de UPL noemt het artikel als grondslag (nr. 32).'
-    bronnen:
-    - 2023-vng-model-apv
-    - 2025-vng-upl-producten-en-diensten-extern
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder beleidskader in deze wiki.
-    bronnen:
-    - 2023-vng-model-apv
+    naar:
+    - asverstrooiing
+    - regeling
   generiek:
     waarde: ja
     onderbouwing: Regelt onderwerpen uit veel beleidsdomeinen en komt dus in veel onderwerpen voor (hoofdstuk 2–5).
@@ -102,18 +58,18 @@ relaties:
 onderwerpen:
 - lijkbezorging
 regelgever: VNG-modelverordening
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2023-vng-model-apv
   - 2025-vng-upl-producten-en-diensten-extern

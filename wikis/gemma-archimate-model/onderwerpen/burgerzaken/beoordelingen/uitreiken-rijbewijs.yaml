@@ -1,60 +1,9 @@
 begrip: Uitreiken rijbewijs
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het rijbewijs ophalen (Utrecht); uitreiking is een wetsbegrip (Wegenverkeerswet 1994 art. 120a).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester die het rijbewijs afgaf, reikt het uit, en neemt het eerdere rijbewijs in (Wegenverkeerswet 1994 art. 115, 119 lid 2, 120a; Utrecht).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: 'Een eigen moment in de levensloop, apart van de afgifte: de feitelijke terbeschikkingstelling, met eigen voorwaarden (Wegenverkeerswet 1994 art. 111 lid 2, 120a).'
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per afgegeven rijbewijs doorlopen.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: De Houder van het rijbewijs haalt het persoonlijk op, identificeert zich en levert zijn oude rijbewijs in (Wegenverkeerswet 1994 art. 111 lid 2, 119 lid 2; Utrecht).
@@ -118,14 +67,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het na de afgifte ter beschikking stellen van het rijbewijs aan de aanvrager, die daarbij zijn eerdere rijbewijs inlevert.
 synoniemen:
 - naam: Uitreiking van het rijbewijs
@@ -141,14 +82,14 @@ relaties: []
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 30
+    regel: 27
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     data_object: nee
     genoemd_begrip: Behandelen aanvraag rijbewijs
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen

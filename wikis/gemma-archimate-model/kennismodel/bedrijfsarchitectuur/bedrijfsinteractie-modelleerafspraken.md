@@ -8,7 +8,7 @@ titel: Bedrijfsinteractie — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Business Interaction* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `bedrijfsinteractie`
+*Business Interaction* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/gedrag-intern` · paginatype `bedrijfsinteractie`
 
 | Afspraak | Inhoud |
 |---|---|

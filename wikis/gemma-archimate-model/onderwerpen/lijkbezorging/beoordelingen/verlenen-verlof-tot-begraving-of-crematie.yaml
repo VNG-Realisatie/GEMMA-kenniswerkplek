@@ -1,75 +1,19 @@
 begrip: Verlenen verlof tot begraving of crematie
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wettelijke taak (art. 11); gangbaar 'verlof tot begraven of cremeren' (RVO).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand geeft het verlof af (art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Ambtenaar van de burgerlijke stand (art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - ambtenaar-van-de-burgerlijke-stand
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Raadpleegt de verklaring van overlijden of de verklaring van geen bezwaar en legt het verlof vast (art. 12, 13).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - vergunning
   aanleiding:
     waarde: ja
-    onderbouwing: Aanvraag door degene die in de lijkbezorging voorziet (art. 18), na aangifte van overlijden (RVO).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
+    naar:
+    - opmaken-akte-van-overlijden
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Schriftelijk verlof tot begraving of crematie (art. 11).
@@ -87,9 +31,8 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: zonder verlof geen begraving of crematie (art. 11).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - toestaan-lijkbezorging
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de aanvraag (Wlb art. 18) tot het verlof; een eigen aanvraag, ook al volgt zij op de aangifte van het overlijden.
@@ -106,25 +49,14 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   levert_aanbod:
     waarde: ja
-    onderbouwing: 'Realiseert de dienst Verlof tot begraven (UPL nr. 438): het verlof tot begraving of crematie dat de gemeente na aangifte van overlijden afgeeft (RVO; art. 11).'
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - verlof-tot-begraven
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki; het cluster naar soort werk is een groepering, geen generalisatie. Eigen normering en een eigen bevoegde (ambtenaar van de burgerlijke stand).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -158,11 +90,11 @@ onderwerpen:
 - lijkbezorging
 kernobject: stoffelijk-overschot
 afnemer: extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -170,7 +102,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden

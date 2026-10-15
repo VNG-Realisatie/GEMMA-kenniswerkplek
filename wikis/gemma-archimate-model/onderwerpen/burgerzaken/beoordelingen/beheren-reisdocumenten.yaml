@@ -1,58 +1,9 @@
 begrip: Beheren reisdocumenten
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: De aanvraag, verstrekking, uitreiking, wijziging, inhouding en vervallenverklaring van reisdocumenten zijn de taak van de burgemeester (Paspoortwet art. 26, 40, 42, 43, 44, 50b); gemeenten bieden paspoort en identiteitskaart aan (Utrecht).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester neemt de aanvraag in ontvangst, verstrekt en reikt uit, voor ingezetenen met een adres in zijn gemeente (Paspoortwet art. 26, 40, 42).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: het kernobject Reisdocument is van dit onderwerp (UPL taakveld 0.2).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per reisdocument doorlopen, van aanvraag tot verval of inhouding (Paspoortwet art. 1).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: 'Beslisser: de burgemeester is bevoegd tot verstrekking, uitreiking, weigering, vervallenverklaring en inhouding (Paspoortwet art. 40, 42, 44, 50b); de Houder van het reisdocument vraagt aan en levert in (art. 1, 28, 32).'
@@ -60,9 +11,8 @@ kenmerken:
     - 2026-rijk-paspoortwet-bwbr0005212
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: 'Registreert, werkt bij en beëindigt het reisdocument: verstrekking, uitreiking, vermissing, inhouding en definitieve onttrekking aan het verkeer (Paspoortwet art. 1, 40, 42, 54); raadpleegt de ingeschreven persoon (art. 26).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
+    naar:
+    - reisdocument
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag van een reisdocument (Paspoortwet art. 27).
@@ -108,14 +58,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het behandelen van aanvragen, verstrekken en uitreiken van reisdocumenten en het verwerken van vermissing, inhouding en verval ervan.
 beschrijving:
 - De burgemeester neemt de aanvraag in ontvangst, verstrekt het reisdocument binnen vier weken en reikt het binnen twee weken daarna uit, voor wie als ingezetene met een adres in zijn gemeente in de basisregistratie personen staat (Paspoortwet art. 26, 40, 41, 42). Een aangewezen gemeente behandelt ook aanvragen van niet-ingezetenen (Paspoortbesluit art. 3.2, 4.2). De Nederlandse identiteitskaart heeft een eigen wet, maar valt voor vermissing, signalering en inhouding ook onder de Paspoortwet (art. 1 onder u, 25, 50b).
@@ -195,11 +137,15 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Geen ketenproces: de minister voert tegenover de houder geen eigen deel uit. De documentsoorten zijn specialisaties zonder pagina met de wetsterm; de diensten houden de UPL-naam.'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 28
+    regel: 25
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -207,7 +153,7 @@ beslist:
     data_object: nee
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

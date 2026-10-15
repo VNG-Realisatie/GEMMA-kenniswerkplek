@@ -1,55 +1,8 @@
 begrip: Gewaarmerkte kopie reisdocument aanvragen
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Productpagina van Utrecht: waarmerken kopie Nederlands reisdocument aanvragen.'
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente maakt de kopie en verklaart dat ze gelijk is aan het origineel (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: dienstverlening rond het reisdocument aan de balie (Utrecht).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een afgebakende prestatie die de gemeente aanbiedt, beschreven vanuit de aanvrager.
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een gewaarmerkte kopie van het paspoort of de identiteitskaart, in het Nederlands, Engels, Frans of Duits (Utrecht).
@@ -73,14 +26,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het laten maken van een kopie van een Nederlands paspoort of identiteitskaart waarvan de gemeente verklaart dat ze gelijk is aan het origineel.
 beschrijving:
 - De aanvrager komt op afspraak met het originele document; er zijn leges. Een rijbewijs waarmerkt de gemeente niet (RDW), een buitenlands paspoort of buitenlandse identiteitskaart laat men waarmerken bij ambassade, consulaat of notaris (Utrecht). De dienst staat niet in de Paspoortwet en niet in de UPL; zie de terugmelding. GEMMA kent de algemene bedrijfsfunctie Waarmerking, het toevoegen van een waarmerk aan een document om de echtheid te bekrachtigen.
@@ -105,14 +50,14 @@ status: afgewezen
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
   herkomst: overig

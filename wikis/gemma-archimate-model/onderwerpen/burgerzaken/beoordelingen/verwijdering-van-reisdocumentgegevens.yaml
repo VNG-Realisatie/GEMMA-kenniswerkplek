@@ -1,43 +1,12 @@
 begrip: Verwijdering van reisdocumentgegevens
+hoofdkenmerk: gedrag
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Bijhouden persoonsgegevens
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Procedure in de HUP (Verwijdering van reisdocumentgegevens).
-    bronnen:
-    - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente verwijdert categorie 12 van de persoonslijst na de bewaartermijn, minimaal eenmaal per maand (HUP Verwijdering).
-    bronnen:
-    - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: 'Een registratiestap in de bijhouding van de persoonslijst, zonder eigen besluit of product: de gegevens van een niet uitgereikt document, of van een document dat elf of zestien jaar geleden is uitgegeven, gaan van de persoonslijst (HUP Verwijdering; LO BRP 4.4).'
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
 toelichting: 'Processtap zonder pagina: de gemeente verwijdert de gegevens van een Nederlands reisdocument van de persoonslijst als het niet is uitgereikt, of na de bewaartermijn van elf jaar (geldigheid vijf jaar of korter) of zestien jaar (langere geldigheid), na een inhouding in het basisregister reisdocumenten (HUP Verwijdering; LO BRP 4.4). De bewaartermijn is een eigenschap van de gegevens. Een registratiestap van de uitvoering, buiten het model volgens de afbakening van Burgerzaken; vermeld bij Bijhouden persoonsgegevens.'
 beslist:
   uitkomst:
@@ -52,3 +21,6 @@ beslist:
   - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   herkomst: informatiemodel
+bronnen:
+- 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
+- 2025-rvig-logisch-ontwerp-brp-2025q1

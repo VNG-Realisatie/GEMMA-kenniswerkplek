@@ -2,35 +2,9 @@ begrip: Adres
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar; het GGM kent het als Nummeraanduiding (BAG en RSGBPlus).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het actuele adres in de BRP verwijst verplicht naar een adres in de BAG (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat los van de persoon die er woont (HUP Verblijfplaats, koppeling BAG).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
   betekenis_in_onderwerp:
     waarde: nee
     onderbouwing: Het adres wordt toegekend en bijgehouden in de BAG, niet in burgerzaken; de BRP verwijst ernaar (HUP Verblijfplaats, koppeling BAG). Hoort bij een onderwerp BAG of adressen, dat nog niet bestaat.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
 toelichting: 'Verwijzing: het adres (nummeraanduiding) ontstaat en verandert in de basisregistratie adressen en gebouwen (BAG), een onderwerp dat nog niet bestaat. De verblijfplaats in de BRP verwijst ernaar.'
 synoniemen:
 - naam: Nummeraanduiding
@@ -51,3 +25,5 @@ beslist:
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   herkomst: richtlijn
+bronnen:
+- 2026-rvig-hup-verblijfplaats

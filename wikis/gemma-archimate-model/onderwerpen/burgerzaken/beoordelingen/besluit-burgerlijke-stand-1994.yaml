@@ -1,45 +1,8 @@
 begrip: Besluit burgerlijke stand 1994
+vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Algemene maatregel van bestuur ter uitwerking van titel 4 van Boek 1 BW.
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Regelt de ambtsuitoefening van de ambtenaar van de burgerlijke stand en wat de gemeente daarvoor moet verzorgen (art. 1-5).
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde AMvB als geheel.
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -55,17 +18,10 @@ kenmerken:
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: Hoofdstuk 1 regelt het houden, afsluiten en overbrengen van de registers en de afgifte van afschriften en uittreksels (art. 5-7, 26), uitgevoerd in Bijhouden burgerlijke stand.
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
+    naar:
+    - bijhouden-burgerlijke-stand
+    - burgerlijk-wetboek-boek-1
+    - uittreksel-burgerlijke-stand
 definitie: Algemene maatregel van bestuur die de ambtsuitoefening van de ambtenaar van de burgerlijke stand, de registers en de inhoud van de akten regelt.
 beschrijving:
 - Het besluit werkt titel 4 van Boek 1 BW uit. Hoofdstuk 1 regelt de ambtsuitoefening en de voorzieningen van de gemeente, het houden, afsluiten en overbrengen van de registers naar de centrale bewaarplaats, en afschriften en uittreksels (art. 1-7, 26, 30, 31). Hoofdstuk 2 legt per aktesoort de gegevens vast (art. 36-66); de elektronische aangifte van overlijden en kennisgeving van een huwelijk gaan met het burgerservicenummer (art. 67a).
@@ -105,18 +61,18 @@ relaties:
   vindplaats: art. 24, 26
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   herkomst: rijksregelgeving

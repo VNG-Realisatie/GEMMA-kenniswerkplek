@@ -8,7 +8,7 @@ titel: Kanaal — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Business Interface* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `kanaal`
+*Business Interface* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/actief-extern` · paginatype `kanaal`
 
 | Afspraak | Inhoud |
 |---|---|

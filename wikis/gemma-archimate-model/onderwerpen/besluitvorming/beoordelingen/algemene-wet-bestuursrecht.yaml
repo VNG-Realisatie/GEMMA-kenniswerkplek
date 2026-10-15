@@ -1,46 +1,9 @@
 begrip: Algemene wet bestuursrecht
+vak: motivatie
 onderwerpen:
 - besluitvorming
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Concreet benoemde wet, gangbaar als Awb (BWBR0005537).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Geeft elk bestuursorgaan van de gemeente algemene regels en plichten bij het voorbereiden en nemen van besluiten: beslissen op een aanvraag binnen een termijn, de uniforme openbare voorbereidingsprocedure, bezwaar en klachten behandelen (art. 1:1, 3:10, 4:13, 7:1, 9:1).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: de wet regelt het handelen van bestuursorganen bij besluiten, in elk onderwerp.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde wet als geheel (BWBR0005537).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -56,15 +19,15 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: Grondslag voor de UPL-diensten Zienswijze (art. 3:15, afdeling 3.4, de uniforme openbare voorbereidingsprocedure), Bekendmaking (art. 3:40), Beschikking aanvragen (art. 1:3, afdeling 4.1), Dwangsom bij niet tijdig beslissen (art. 4:17), Nadeelcompensatie (art. 4:126), Bezwaar (art. 7:1), Beroep (art. 8:1) en Klacht (art. 9:1); de UPL noemt de Awb ook als grondslag van subsidie (art. 4:21), bestuurlijke boete (art. 5:40) en spoedeisende bestuursdwang (art. 5:31), die bij andere onderwerpen horen.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder beleidskader in deze wiki; de wet staat op zichzelf.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - zienswijze
+    - bezwaar
+    - klacht
+    - beroep
+    - bekendmaking
+    - dwangsom-bij-niet-tijdig-beslissen
+    - nadeelcompensatie
+    - beschikking-aanvragen
   generiek:
     waarde: ja
     onderbouwing: Geldt met dezelfde betekenis in elk onderwerp waarin de gemeente besluiten neemt.
@@ -146,18 +109,21 @@ besluiten:
 - datum: '2026-10-11'
   besluit: 'Beleidskader in Besluitvorming (thuisonderwerp), met Lijkbezorging als tweede onderwerp. Is grondslag voor alleen naar diensten en processen (Zienswijze, de uniforme openbare voorbereidingsprocedure; in de tweede plak bezwaar, klacht en de andere UPL-diensten), niet naar de rol en de objecten die de wet definieert: die hebben de Awb als bron.'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

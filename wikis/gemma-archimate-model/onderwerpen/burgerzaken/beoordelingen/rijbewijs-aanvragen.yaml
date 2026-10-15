@@ -1,62 +1,8 @@
 begrip: Rijbewijs aanvragen
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 360, rijbewijs); Utrecht noemt het Rijbewijs aanvragen of verlengen en Rijbewijs op de hubpagina Burgerzaken.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-    - 2026-utrecht-burgerzaken
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt de aanvraag aan de balie in ontvangst, besluit tot afgifte en reikt het rijbewijs uit (Wegenverkeerswet 1994 art. 116; Utrecht).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort primair bij burgerzaken: dienst van Beheren rijbewijzen (UPL taakveld 0.2).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een afgebakende prestatie die de gemeente aanbiedt, beschreven vanuit de aanvrager.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De aanvrager krijgt het rijbewijs uitgereikt, voor het eerst, bij vernieuwing of ter vervanging.
@@ -76,11 +22,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Behandelen aanvraag rijbewijs.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+    naar:
+    - behandelen-aanvraag-rijbewijs
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -89,9 +32,6 @@ kenmerken:
     onderbouwing: De UPL noemt het als eigen product.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het aanvragen en ophalen van een Nederlands rijbewijs, voor het eerst, bij vernieuwing of ter vervanging van een verloren rijbewijs.
 beschrijving:
 - 'De aanvrager komt op afspraak aan de balie, met zijn vorige rijbewijs of een identiteitsbewijs en een pasfoto, en haalt het rijbewijs vijf werkdagen later persoonlijk op; per afspraak behandelt de gemeente één aanvraag en een spoedaanvraag kost extra (Utrecht). Een eerste rijbewijs vraagt een verklaring van geschiktheid en geeft een beginnersrijbewijs; een groot rijbewijs of een aanvraag vanaf 75 jaar vraagt een medische keuring (Utrecht; Reglement rijbewijzen art. 35). De gezondheidsverklaring (UPL nr. 362) is een onderdeel van deze dienst: de gemeente verkoopt haar niet, de aanvrager koopt haar bij het CBR, en de gemeente controleert bij het besluit over de aanvraag of de verklaring van geschiktheid is geregistreerd (Reglement rijbewijzen art. 35, 45, 97).'
@@ -114,18 +54,23 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+- 2026-utrecht-burgerzaken
+- 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen

@@ -1,53 +1,7 @@
 begrip: Ontleding
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Gemeentelijk: ontleden in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Per geval doorlopen.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: Houder van de begraafplaats of van het crematorium, beheerder.
@@ -102,9 +56,6 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: 'Variant van Uitvoeren lijkbezorging: zelfde gegevens en behandeling, geen eigen levenscyclus.'
-  generiek:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
 genoemd_begrip: Uitvoeren lijkbezorging
 toelichting: 'Specialisatie zonder pagina van Uitvoeren lijkbezorging: ontleden in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68).'
 onderwerpen:
@@ -112,14 +63,14 @@ onderwerpen:
 beslist:
   uitkomst:
     soort: specialisatie
-    regel: 24
+    regel: 21
     toelichting: Specialisatie zonder pagina (kern ja)
     archimate_type: business-process
     voorleggen: false
     data_object: nee
     genoemd_begrip: Uitvoeren lijkbezorging
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving

@@ -1,65 +1,8 @@
 begrip: Zakenpaspoort
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 494) en in Utrecht.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester neemt de aanvraag in ontvangst en verstrekt het reisdocument (Paspoortwet art. 26, 40).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een afgebakende prestatie die de gemeente aanbiedt, beschreven vanuit de aanvrager.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De aanvrager krijgt het reisdocument uitgereikt.
@@ -81,11 +24,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Behandelen aanvraag reisdocument.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
+    naar:
+    - behandelen-aanvraag-reisdocument
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -94,9 +34,6 @@ kenmerken:
     onderbouwing: De UPL noemt het als eigen product.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het aanvragen en ophalen van een nationaal paspoort met 66 in plaats van 34 bladzijden.
 beschrijving:
 - Een zakenpaspoort is een gewoon paspoort met extra bladzijden; het kan niet naast een normaal paspoort worden aangevraagd en kost hetzelfde (Utrecht). De Paspoortwet kent het niet als eigen soort; in het documentnummer heeft het de letter B (HUP Uitreiking). De UPL noemt als grondslag art. 3 Paspoortuitvoeringsregeling Buitenland 2001 (UPL nr. 494); zie de terugmelding over de grondslag.
@@ -108,18 +45,23 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+- 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
+- 2026-rijk-paspoortwet-bwbr0005212
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

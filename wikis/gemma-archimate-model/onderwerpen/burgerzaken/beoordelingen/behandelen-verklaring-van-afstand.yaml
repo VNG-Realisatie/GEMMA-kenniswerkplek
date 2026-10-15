@@ -1,72 +1,17 @@
 begrip: Behandelen verklaring van afstand
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: De Nederlandse nationaliteit opgeven met een verklaring van afstand bij de gemeente (Utrecht; UPL nr. 436); wetsbegrip (Rijkswet art. 15 lid 1 onder b; Besluit art. 63).
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De verklaring wordt afgelegd voor de burgemeester, die de identiteit vaststelt, de afstand bevestigt en de verklaring aan de minister zendt (Besluit art. 63, 64).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: bedrijfsproces onder Beheren Nederlanderschap (UPL taakveld 0.2).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Per verklaring doorlopen, van afleggen tot toezending en verwerking (Besluit art. 63, 64).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: 'Beslisser: de burgemeester neemt de verklaring in ontvangst en bevestigt haar; tegen een weigering staat beroep open bij de rechtbank Den Haag (Besluit art. 63; Utrecht).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+    naar:
+    - beslisser
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Beëindigt het Nederlanderschap door de afstand (Rijkswet art. 15 lid 1 onder b); bevordert de verwerking in de basisregistratie personen en de inname van reisdocumenten (Besluit art. 64 lid 3).
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    naar:
+    - nederlanderschap
   aanleiding:
     waarde: ja
     onderbouwing: De verklaring van afstand, door de meerderjarige zelf ondertekend, met inlevering van identiteitsbewijs en reisdocumenten (Besluit art. 62, 63; Utrecht).
@@ -91,9 +36,9 @@ kenmerken:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan het levensloopproces Beheren Nederlanderschap: het verlies door afstand.'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    naar:
+    - behandelen-verkrijging-en-verlies-nederlanderschap
+    - beheren-nederlanderschap
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de verklaring van afstand tot de bevestiging.
@@ -111,25 +56,15 @@ kenmerken:
     - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Verklaring van afstand nederlandse nationaliteit (UPL nr. 436).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - verklaring-van-afstand-nederlandse-nationaliteit
   leidt_tot_gebeurtenis:
     waarde: ja
-    onderbouwing: Verlies van het Nederlanderschap (Rijkswet art. 15 lid 1 onder b).
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+    naar:
+    - verlies-van-het-nederlanderschap
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; specialiseert het generieke GEMMA-proces Behandelen aangifte of melding.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 kernobject: nederlanderschap
 afnemer: extern
 definitie: Het in ontvangst nemen en bevestigen van een verklaring waarmee een persoon afstand doet van het Nederlanderschap.
@@ -171,11 +106,15 @@ relaties:
   bronnen:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   vindplaats: art. 15 lid 1 onder b
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -183,7 +122,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
   - 2025-vng-upl-producten-en-diensten-extern

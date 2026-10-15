@@ -1,58 +1,8 @@
 begrip: Nadeelcompensatie
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 260, nadeelcompensatie); wetsterm en gangbaar (Awb titel 4.5).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het gemeentelijke bestuursorgaan dat rechtmatig schade veroorzaakt, kent de benadeelde op aanvraag een vergoeding toe (art. 4:126 lid 1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 260).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: de regeling geldt voor de rechtmatige uitoefening van elke publiekrechtelijke bevoegdheid of taak (Awb titel 4.5).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Iets wat de gemeente aanbiedt: een vergoeding van onevenredige schade.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie voor de benadeelde: vergoeding van schade door rechtmatig overheidshandelen die boven het normale maatschappelijke risico uitgaat en hem onevenredig treft (art. 4:126; UPL nr. 260).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een beschikking over de vergoeding, in geld of in een andere vorm, met de kosten en wettelijke rente (art. 4:126 lid 4, 4:129).
@@ -76,9 +26,8 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Behandelen aanvraag nadeelcompensatie (art. 4:126–4:131).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - behandelen-aanvraag-nadeelcompensatie
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -87,9 +36,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 260); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf de generieke dienst voor nadeelcompensatie door elk bestuursorgaan, geen specialisatie van een generiek GEMMA-element; GEMMA kent geen dienst nadeelcompensatie.
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -100,18 +46,20 @@ beschrijving:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst of proces voor nadeelcompensatie; alleen de functie Schade gerelateerde diensten. Nieuw voor GEMMA.
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst

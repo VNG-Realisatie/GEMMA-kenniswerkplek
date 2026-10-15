@@ -1,34 +1,9 @@
 begrip: Bestuursorgaan
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - besluitvorming
-kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Kernbegrip van de Awb (art. 1:1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Raad, college en burgemeester zijn de bestuursorganen van de gemeente (Gemeentewet art. 6; Awb art. 1:1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-gemeentewet-wettekst
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als hoedanigheid van een orgaan met openbaar gezag (Awb art. 1:1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: het begrip komt uit de Awb.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De hoedanigheid waarin raad, college en burgemeester besluiten nemen (Awb art. 1:1, 1:3).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-gemeentewet-wettekst
+kenmerken: {}
 synoniem_van: Beslisser
 toelichting: Synoniem (context wet) van de rol Beslisser. De Awb noemt bestuursorgaan het orgaan dat besluiten neemt (art. 1:1, 1:3); in de gemeente zijn dat raad, college en burgemeester (Gemeentewet art. 6), die als actor de rol Beslisser vervullen.
 besluiten:
@@ -48,3 +23,6 @@ beslist:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-gemeentewet-wettekst
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- 2026-rijk-gemeentewet-wettekst

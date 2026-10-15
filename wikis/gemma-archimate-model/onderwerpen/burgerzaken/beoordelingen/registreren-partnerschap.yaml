@@ -1,71 +1,18 @@
 begrip: Registreren partnerschap
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wettelijk: registratie van partnerschap bij akte (BW 1 art. 80a); Utrecht: geregistreerd partnerschap aanvragen.'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand van de gemeente maakt de akte op (BW 1 art. 80a lid 3).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Ambtenaar van de burgerlijke stand (BW 1 art. 80a lid 3, 80g).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - ambtenaar-van-de-burgerlijke-stand
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Registreert de akte van registratie van partnerschap of de akte van omzetting (BW 1 art. 80a, 80g; Besluit burgerlijke stand art. 57a, 57c).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+    naar:
+    - akte-van-de-burgerlijke-stand
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De melding van het voorgenomen partnerschap, of het verzoek om omzetting in een huwelijk (BW 1 art. 80a, 80g; Utrecht).
@@ -91,9 +38,8 @@ kenmerken:
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: één akte in het register van geregistreerde partnerschappen of huwelijken.'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - bijhouden-burgerlijke-stand
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de melding van het voorgenomen partnerschap, of het verzoek om omzetting, tot de akte.
@@ -108,24 +54,15 @@ kenmerken:
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Geregistreerd partnerschap omzetting in huwelijk (UPL nr. 156); de registratie zelf volgt op Geregistreerd partnerschapaangifte (UPL nr. 158).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - geregistreerd-partnerschap-omzetting-in-huwelijk
+    - geregistreerd-partnerschapaangifte
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het behandelen van de melding van een voorgenomen partnerschap en het registreren ervan, of het omzetten van een partnerschap in een huwelijk, met de akte.
 beschrijving:
 - Het partnerschap wordt geregistreerd bij akte, opgemaakt door de ambtenaar; een ja-woord is niet verplicht (BW 1 art. 80a; Utrecht). Een partnerschap kan worden omgezet in een huwelijk met een akte van omzetting, zonder melding vooraf en zonder getuigen (BW 1 art. 80g; Utrecht). Locaties, tarieven en trouwambtenaar volgen het huwelijk (Utrecht Trouwen in Utrecht).
@@ -183,11 +120,11 @@ deelprocessen:
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 80a, 80g
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -195,7 +132,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen

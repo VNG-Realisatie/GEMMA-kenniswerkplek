@@ -1,41 +1,6 @@
 begrip: Crematorium
+vak: bedrijf/passief
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Kernbegrip (art. 49).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente kan een gemeentelijk crematorium hebben en vergunt bijzondere crematoria (art. 51, 53).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats:
-    waarde: nee
-    onderbouwing: Beoordeeld als voorziening die wordt gevestigd en in werking gehouden, niet als fysieke plaats.
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elk crematorium apart, gemeentelijk of bijzonder (art. 51).
@@ -48,9 +13,10 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: De gemeente vergunt vestiging, uitbreiding en wijziging van een bijzonder crematorium en besluit over een gemeentelijk crematorium (art. 53, 54).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beheren-crematoria
+    - uitvoeren-lijkbezorging
+    - verlenen-vergunning-bijzonder-crematorium
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -66,14 +32,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Inrichting waar stoffelijke overschotten worden gecremeerd en de as wordt geborgen.
@@ -92,11 +50,11 @@ specialisaties:
   omschrijving: Crematorium van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52). Geen eigen pagina.
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 35
+    regel: 32
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -104,7 +62,7 @@ beslist:
     data_object: nee
     objectniveau: kernobject
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving

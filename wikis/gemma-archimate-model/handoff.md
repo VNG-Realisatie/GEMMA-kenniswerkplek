@@ -4,20 +4,21 @@ Overdracht naar de volgende Sessie (2026-10-15). Wordt bij elke overdracht overs
 
 ## Stand van zaken
 
-- Plan [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md) is goedgekeurd (2026-10-15). Drie delen: de ArchiMate-matrix als eerste keuze met lichtere kenmerken (deel 1), data-object als element (deel 2), Capability, eerst samen bepalen (deel 3).
-- Stap 1 en 2 zijn gedaan. Besluiten van de redacteur staan in het plan: *aard* heet hoofdkenmerk; de naam blijft Capability; de technologielaag is een laag in de matrix; O2 (poort als uitzondering) en O3 (kenmerken uit relaties) zijn aangenomen, zie *Uitkomst stap 2*.
-- Nog niets aan de scripts, het schema of de beoordelingen gewijzigd.
+- Plan [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md), deel 1 is omgezet (commit `rules:` van 2026-10-15): keuzevelden `vak`, `hoofdkenmerk` en `soort_gedrag`, de poort als uitzondering, standaardwaarden, en relationele kenmerken met hun tegenpartij in `naar`. De besluiten en metingen staan in *Uitkomst stap 3–7*.
+- O3 is bijgesteld: het kenmerk wordt niet afgeleid uit de relatie, maar noemt zijn tegenpartij; de bron komt van de relatie als die bestaat.
+- `beslist` is gelijk aan de stand vóór de omzetting (op de regelnummers na). De 285 goedgekeurde elementen staan op review, omdat het akkoord-hash de kenmerken telt.
 
 ## Volgende klus
 
-Stap 3–7 van het plan: schema en `tools/bepaal_type.py` (keuzevelden `vak`, `hoofdkenmerk`, `soort_gedrag`; poort als uitzondering; kenmerken uit relaties; standaardwaarden; consistentieregel), het kennismodel, de omzetting van alle 481 beoordelingen met een script (de uitkomsten, pagina's en export blijven gelijk), skills en uitleg, commit. Verschillen tussen kenmerk en relatie bij de omzetting per geval voorleggen.
+1. Als dat nog niet gebeurd is: nieuw AKKOORD voor de 285 elementen (skill gemma-archimate-model-update, stap 13–17: `llmwiki promote plan`, AKKOORD van de redacteur, `promote apply`, `tools/afronden.py --bericht "chore: …"`). Controleer daarna dat `tools/archimate_export.py --check --rapport` gelijk is aan dat van de commit vóór de omzetting (508e1d0).
+2. Deel 2 van het plan: data-object als element (stap 8–11), met de open punten *Naam van een data-object* en *Wie nog meer data-objecten heeft*.
 
 ## Modeladvies
 
-Denkniveau hoog voor stap 3 (ontwerp in de code), middel voor stap 4–6. Begin een nieuwe Sessie met een sterk model of hoge redeneerinspanning: de omzetting raakt alle beoordelingen en moet de uitkomsten gelijk houden.
+Stap 1 is laag (scripts en het akkoord). Deel 2 vraagt denkniveau hoog voor het ontwerp (stap 8) en de 19 bedrijfsobjecten (stap 10), middel voor stap 9: een nieuwe Sessie met een sterk model of hoge redeneerinspanning.
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en plannen/2026-10-15-archimate-indeling.md (goedgekeurd; stap 1 en 2 gedaan, besluiten in Uitkomst stap 2). Voer stap 3–7 uit (deel 1): schema en tools/bepaal_type.py met de keuzevelden vak, hoofdkenmerk en soort_gedrag, poort als uitzondering (O2), kenmerken afgeleid uit relaties (O3), standaardwaarden (O4) en de consistentieregel; dan het kennismodel; dan de omzetting van alle beoordelingen met een script in de scratchpad, met tools/beslissen.py vóór en na: beslist, elementpaginas/ en archimate_export.py --check blijven gelijk. Een verschil tussen kenmerk en relatie leg je per geval voor. Werk daarna skills, AGENTS.md en ARCHITECTURE.md bij en commit met prefix rules.
+Lees wikis/gemma-archimate-model/handoff.md en plannen/2026-10-15-archimate-indeling.md (deel 1 omgezet, zie Uitkomst stap 3–7). Controleer eerst of de 285 elementen weer goedgekeurd zijn; zo niet, volg skill gemma-archimate-model-update stap 13–17 voor een nieuw AKKOORD. Voer daarna deel 2 uit (stap 8–11): data-object als veld `data_objecten` bij het bedrijfsobject, het element en de realisatie door het script, de GGM-terugmelding, registr*-signaal niet bij een bedrijfsobject. Leg de open punten (naam van een data-object, wie nog meer data-objecten heeft) eerst voor, en de 19 bedrijfsobjecten met geautomatiseerd verwerkt ja per geval in één tabel. Commit met prefix rules en add.
 ```

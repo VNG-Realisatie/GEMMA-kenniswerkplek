@@ -2,7 +2,7 @@
 id: bekendmakingswet
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Bekendmakingswet
 onderwerpen:
 - besluitvorming
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bekendmakingswet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -47,19 +47,15 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 50 zijn nee.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, concreet benoemde wet (BWBR0004287). [Bekendmakingswet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft het college de plicht een gemeenteblad uit te geven, en elk gemeentelijk bestuursorgaan de plicht zijn regelingen en besluiten zonder geadresseerden daarin bekend te maken (art. 2 lid 2, 6, 12). [Bekendmakingswet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Bekendmakingswet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij besluitvorming: de wet regelt de bekendmaking van regelingen en besluiten, in elk onderwerp. [Bekendmakingswet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, een concreet benoemde wet als geheel (BWBR0004287). [Bekendmakingswet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijkswet. [Bekendmakingswet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht, versie vanaf 1 januari 2024, opgehaald op 2026-10-12. [Bekendmakingswet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, art. 2 lid 2 en 6: het gemeenteblad en de bekendmaking van algemeen verbindende voorschriften (UPL nr. 48, bekendmaking algemeen verbindend voorschrift). [Bekendmakingswet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder beleidskader in deze wiki; de wet staat op zichzelf. [Bekendmakingswet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Bekendmaking algemeen verbindend voorschrift](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/bekendmaking-algemeen-verbindend-voorschrift.md). |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, geldt met dezelfde betekenis in elk onderwerp waarin de gemeente regelingen of besluiten bekendmaakt. [Bekendmakingswet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
 
 ### Relaties

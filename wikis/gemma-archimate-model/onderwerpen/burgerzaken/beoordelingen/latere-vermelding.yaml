@@ -2,23 +2,6 @@ begrip: Latere vermelding
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip en gangbaar in de burgerlijke stand: een vermelding die aan een akte wordt toegevoegd (BW 1 art. 20; Besluit burgerlijke stand art. 15-17, 31).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand voegt de latere vermelding toe (BW 1 art. 20, 28b).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: 'Een onderdeel van de akte van de burgerlijke stand: bestaat alleen bij een akte (BW 1 art. 20).'

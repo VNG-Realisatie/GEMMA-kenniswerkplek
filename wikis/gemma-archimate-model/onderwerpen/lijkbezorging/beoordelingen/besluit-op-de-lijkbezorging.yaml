@@ -1,46 +1,8 @@
 begrip: Besluit op de lijkbezorging
+vak: motivatie
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare naam van de AMvB bij de Wet op de lijkbezorging; de UPL noemt haar als grondslag (UPL nr. 445).
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Geeft de burgemeester taken: het laissez-passer voor lijken afgeven en beslissen op een verlof tot ontleding (art. 11, 17).'
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij de lijkbezorging.
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde algemene maatregel van bestuur als geheel (BWBR0009080).
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
@@ -56,17 +18,11 @@ kenmerken:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 11 (laissez-passer voor lijken) en art. 17 (beslistermijn verlof tot ontleding): gedrag in Afgeven laissez-passer en Verlenen verlof tot ontleding.'
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder beleidskader in deze wiki; het besluit werkt de Wet op de lijkbezorging uit.
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
+    naar:
+    - afgeven-laissez-passer
+    - verlenen-verlof-tot-ontleding
+    - wet-op-de-lijkbezorging
+    - vervoersdocumenten-stoffelijk-overschot
 definitie: Algemene maatregel van bestuur die de Wet op de lijkbezorging uitwerkt, onder meer voor het vervoer van een stoffelijk overschot naar en uit het buitenland.
 beschrijving:
 - Het Besluit op de lijkbezorging (BWBR0009080) regelt de modellen van de verklaring van overlijden, de eisen aan kist, graf en grafkelder, de inhoud van de registers van crematorium en plaats van bijzetting en het vervoer naar en uit het buitenland (art. 2–11). Voor de gemeente gaat het vooral om het laissez-passer voor lijken (art. 11) en de beslistermijn voor het verlof tot ontleding (art. 17).
@@ -105,18 +61,21 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: UPL nr. 445, art. 11
-status: goedgekeurd
+bronnen:
+- 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

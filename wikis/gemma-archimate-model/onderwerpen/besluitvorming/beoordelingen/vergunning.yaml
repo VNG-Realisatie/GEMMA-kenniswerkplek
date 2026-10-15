@@ -1,47 +1,6 @@
 begrip: Vergunning
+vak: bedrijf/passief
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar; wettelijk ook verlof of toestemming (art. 11, 29, 41, 68).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente verleent ze (art. 11, 29, 53, 64, 66b, 68; Groningen art. 22).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elke vergunning apart.
@@ -55,9 +14,16 @@ kenmerken:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: Afgegeven door de ambtenaar van de burgerlijke stand en de burgemeester, geraadpleegd in Uitvoeren lijkbezorging en Opgraven stoffelijk overschot (art. 11, 29).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - afgeven-laissez-passer
+    - opgraven-stoffelijk-overschot
+    - uitvoeren-lijkbezorging
+    - verlenen-toestemming-asverstrooiing
+    - verlenen-toestemming-bijzondere-begraafplaats
+    - verlenen-vergunning-bijzonder-crematorium
+    - verlenen-vergunning-grafbedekking
+    - verlenen-verlof-tot-begraving-of-crematie
+    - verlenen-verlof-tot-ontleding
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -144,11 +110,15 @@ relaties:
 onderwerpen:
 - besluitvorming
 - lijkbezorging
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2026-rvo-aangifte-en-akte-van-overlijden
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 32
+    regel: 29
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -156,7 +126,7 @@ beslist:
     data_object: nee
     objectniveau: generiek
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

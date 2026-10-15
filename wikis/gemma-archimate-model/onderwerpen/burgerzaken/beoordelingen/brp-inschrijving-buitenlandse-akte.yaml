@@ -1,60 +1,8 @@
 begrip: BRP-inschrijving buitenlandse akte
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product in de UPL (nr. 89); Utrecht: buitenlandse documenten inschrijven.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente van inschrijving verwerkt het document in de BRP (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente op verzoek levert: een buitenlands document over geboorte, huwelijk, overlijden, echtscheiding, erkenning of adoptie laten inschrijven (UPL nr. 89; Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Verwerking in de BRP binnen vier weken, met een bevestiging per brief (Utrecht).
@@ -73,9 +21,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Verwerken buitenlands document (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+    naar:
+    - verwerken-buitenlands-document
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -84,9 +31,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 89), apart van de BRP-inschrijving; geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het laten opnemen van een buitenlands document over een geboorte, huwelijk, overlijden, echtscheiding, erkenning of adoptie in de basisregistratie personen.
 beschrijving:
 - 'Op afspraak, met het gelegaliseerde en zo nodig vertaalde originele document (Utrecht). Wie Nederlander is, kan de buitenlandse akte daarna laten inschrijven in de registers van de gemeente Den Haag (BW 1 art. 25; Utrecht). Grondslag in de UPL: art. 2.38 Wet BRP (nr. 89).'
@@ -100,18 +44,20 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven

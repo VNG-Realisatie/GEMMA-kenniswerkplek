@@ -1,60 +1,24 @@
 begrip: Belanghebbende
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - besluitvorming
 - lijkbezorging
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Kernbegrip van de Awb (art. 1:2), ook gangbaar in de praktijk; de Wet op de lijkbezorging en de VNG-modelverordening gebruiken het voor de nabestaanden bij een algemeen graf (Wlb art. 27a; VNG-modelverordening art. 24).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'De gemeente neemt besluiten waarbij belanghebbenden betrokken zijn: zij vragen besluiten aan, brengen zienswijzen naar voren en ontvangen mededelingen (Awb art. 1:3 lid 3, 3:15; Wlb art. 27a).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als hoedanigheid tegenover elk besluit, niet als onderdeel van één ander begrip (Awb art. 1:2).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: het begrip komt uit de Awb en geldt bij elk besluit (art. 1:2).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: 'De hoedanigheid waarin een persoon, rechtspersoon of bestuursorgaan optreedt tegenover een besluit: degene wiens belang rechtstreeks bij een besluit is betrokken (Awb art. 1:2).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: 'Een verantwoordelijkheid of hoedanigheid tegenover een besluit, geen zelfstandige partij: wie belanghebbende is, verschilt per besluit (Awb art. 1:2).'
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan Ruimen graf: de belanghebbende bij een algemeen graf ontvangt bericht van het verstrijken van de termijn en het voornemen tot ruiming (Wlb art. 27a; VNG-modelverordening art. 24 lid 1). In de besluitvorming dient de belanghebbende een aanvraag in en brengt een zienswijze naar voren (Awb art. 1:3 lid 3, 3:15).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2010-vng-model-beheersverordening-begraafplaatsen
+    naar:
+    - uitvoeren-uniforme-openbare-voorbereidingsprocedure
+    - ruimen-graf
+    - behandelen-bezwaar
+    - voeren-verweer-in-beroep
+    - vaststellen-dwangsom-bij-niet-tijdig-beslissen
+    - behandelen-aanvraag-nadeelcompensatie
+    - behandelen-aanvraag-beschikking
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld; het GGM kent wel een entiteit Belanghebbende (Musea), maar de bronnen noemen geen gegevens die de gemeente over belanghebbenden vastlegt.
@@ -67,14 +31,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki; Belanghebbende is zelf het generieke begrip.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf de generieke GEMMA-rol (zie de GEMMA-match), geen specialisatie van een generiek GEMMA-element; zo ook Beslisser.
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van degene wiens belang rechtstreeks bij een besluit van een bestuursorgaan is betrokken.
 beschrijving:
@@ -146,18 +102,18 @@ besluiten:
 - datum: '2026-10-11'
   besluit: Aanvrager (Awb art. 1:3 lid 3, 4:2) is een specialisatie zonder pagina; in een onderwerp heet de rol naar het object, zoals Houder van het reisdocument.
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

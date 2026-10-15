@@ -1,31 +1,8 @@
 begrip: Bestemming van de as
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ziet of doet hierover iets.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: 'Eigenschap van de urn: bijgezet, verstrooid, meegegeven of naar het buitenland (art. 59 lid 2).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 toelichting: 'Eigenschap of indeling van Urn: Eigenschap van de urn: bijgezet, verstrooid, meegegeven of naar het buitenland (art. 59 lid 2).'

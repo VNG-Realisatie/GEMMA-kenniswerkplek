@@ -2,7 +2,7 @@
 id: bevolkingsadministratie-bijhouding
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: review
 naam: Bevolkingsadministratie bijhouding
 onderwerpen:
 - burgerzaken
@@ -31,7 +31,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bevolkingsadministratie-bijhouding.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -58,20 +58,16 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 48 zijn nee.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: gegroepeerd gedrag. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, de bijhouding van de BRP is een eigen taak: het college houdt de BRP bij voor zijn ingezetenen (HUP Achtergronden). GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten. [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het college houdt de BRP bij voor zijn ingezetenen (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: het college houdt de persoonsgegevens in de basisregistratie bij (Wet BRP art. 1.4 lid 1). [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) |
-| **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert de bijhouding van de BRP en de dienstverlening daarover op grond van dezelfde kennis en bevoegdheid (medewerker BRP namens het college); geen eigen volgorde of doorlooptijd (HUP Algemeen). [HUP BRP Algemeen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-algemeen.md) |
 | **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, bijhoudingsgemeente (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, werkt de ingeschreven persoon en zijn verblijfplaats bij (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, volgt uit de wettelijke taak van het college in de BRP, los van de organisatie (HUP Achtergronden). [HUP BRP Achtergronden en begrippen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-achtergronden-en-begrippen.md) |
-| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient Bijhouden persoonsgegevens (HUP Algemeen). [HUP BRP Algemeen](../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-algemeen.md) |
+| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, met [Bijhouden persoonsgegevens](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md). |
 | **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling. (GEMMA id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar. (GEMMA id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb) |
 

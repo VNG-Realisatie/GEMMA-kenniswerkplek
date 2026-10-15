@@ -1,39 +1,15 @@
 begrip: Koning
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Verleent het Nederlanderschap op voordracht van de minister (Rijkswet art. 7 lid 1; Utrecht: de Koning beslist).'
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   gemeentelijk:
     waarde: nee
     onderbouwing: 'Geen structurele samenwerking met de gemeente: de Koning verleent per geval op voordracht van de minister, zonder relatie met de gemeente (Rijkswet art. 7).'
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandige partij.
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Genoemd in de bronnen van burgerzaken.
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  handelende_partij:
-    waarde: ja
-    onderbouwing: Een orgaan dat activiteiten uitvoert.
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Bestaat los van deze taak.
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki.
     bronnen:
     - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
 toelichting: 'Buiten scope: de Koning verleent het Nederlanderschap op voordracht van de minister van Justitie en Veiligheid; de gemeente heeft met hem geen structurele relatie (regel Gemeentelijk perspectief). Genoemd in de beschrijving van Behandelen naturalisatieverzoek.'
@@ -58,3 +34,6 @@ beslist:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie

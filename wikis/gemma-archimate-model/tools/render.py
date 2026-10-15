@@ -217,6 +217,43 @@ class Wiki:
 # --- Elementpagina ---
 
 
+def _kenmerken(w: Wiki, van: str, d: dict) -> list[str]:
+    """De sectie Kenmerken: de keuzevelden, de poort en de kenmerken met ja. Een relationeel kenmerk noemt zijn
+    tegenpartij (`naar`): een element met een link, of naam en type van een element dat (nog) niet bestaat."""
+    expliciet = bepaal_type.antwoorden(d)
+    keuze = []
+    if d.get("vak"):
+        v = bepaal_type.VAK[d["vak"]]
+        keuze.append(f"**Vak**: {v.label} ({v.typen}).")
+    hoofd, soort = bepaal_type.hoofdkenmerk(d), bepaal_type.soort_gedrag(d)
+    if hoofd:
+        keuze.append(f"**Hoofdkenmerk**: {'ding' if hoofd == bepaal_type.DING else bepaal_type.NAAM[hoofd]}.")
+    if soort:
+        keuze.append(f"**Soort gedrag**: {bepaal_type.NAAM[soort]}.")
+    afwijking = [s for s in bepaal_type.POORT if s in expliciet]
+    poort = [] if afwijking else ["De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit "
+                                  "onderwerp); dat steunt op de bronnen onder Herkomst."]
+    rijen = []
+    for s in bepaal_type.SLEUTELS:
+        a = expliciet.get(s)
+        if not a or a["waarde"] != "ja":
+            continue
+        tegenpartij = [w.link(van, x) if isinstance(x, str) else f"{x['naam']} ({x['type']}, nog geen element)"
+                       for x in a.get("naar") or []]
+        delen = ([f"Ja, met {', '.join(tegenpartij)}" + ("." if not a.get("onderbouwing") else ":")] if tegenpartij else [])
+        if a.get("onderbouwing"):
+            delen.append(w.tekst(van, a["onderbouwing"] if tegenpartij else _ja(a["onderbouwing"])))
+        delen += [w.bronnen(van, a.get("bronnen", [])),
+                  f"(GEMMA {', '.join(a['gemma_relatie'])})" if a.get("gemma_relatie") else ""]
+        rijen.append([f"**{bepaal_type.NAAM[s]}**: {VRAAG[s]}", " ".join(x for x in delen if x)])
+    standaard = [bepaal_type.NAAM[s] for s, x in bepaal_type.STANDAARD.items()
+                 if x == "ja" and s not in bepaal_type.POORT and s not in expliciet]
+    uitleg = "De kenmerken met ja; de andere zijn nee" + (
+        f", behalve *{'*, *'.join(standaard)}* (standaard ja)." if standaard else ".")
+    return [" ".join(keuze + poort), "", uitleg, "", *_tabel(["Kenmerk", "Onderbouwing"], rijen)] if rijen else \
+        [" ".join(keuze + poort), "", uitleg, ""]
+
+
 def _ja(onderbouwing: str) -> str:
     """'Ja, ' voor de onderbouwing; een eerste woord als 'De' wordt 'de', een afkorting als 'GGM' blijft staan."""
     o = " ".join(str(onderbouwing).split())
@@ -416,13 +453,7 @@ def element_pagina(w: Wiki, bid: str) -> str:
         _sub("Naamkeuze", w.alineas(van, d.get("naamkeuze"))), _sub("Homoniemen", homoniemen)])
 
     # Plaats in het model: typering, kenmerken en samenhang met andere elementen.
-    ja = [s for s, waarde in bepaal_type.waarden(d).items() if waarde == "ja"]
-    kenmerken = [[f"**{bepaal_type.NAAM[s]}**: {VRAAG[s]}",
-                  " ".join(x for x in (w.tekst(van, _ja(d["kenmerken"][s]["onderbouwing"])),
-                                       w.bronnen(van, d["kenmerken"][s].get("bronnen", [])),
-                                       f"(GEMMA {', '.join(d['kenmerken'][s]['gemma_relatie'])})"
-                                       if d["kenmerken"][s].get("gemma_relatie") else "") if x)] for s in ja]
-    nee = len(bepaal_type.SLEUTELS) - len(ja)
+    kenmerken = _kenmerken(w, van, d)
     niveau = u.get("procesniveau") or u.get("objectniveau")
     typering = [f"{ARCHIMATE_NAAM.get(u['archimate_type'], u['archimate_type'])}"
                 + (f", niveau {niveau}" if niveau else "") + f". Uitkomst van de beslistabel: {u['toelichting']}.", ""]
@@ -474,8 +505,7 @@ def element_pagina(w: Wiki, bid: str) -> str:
     r += _groep("Plaats in het model", [
         _sub("Typering", typering), _sub("Plaats in de indelingen", indelingen(w, van, bid, d)),
         _sub("Specialisaties per onderwerp", specialisaties_zonder_pagina),
-        _sub("Kenmerken", [f"Alleen de kenmerken met ja; de overige {nee} zijn nee.", "",
-                           *_tabel(["Kenmerk", "Onderbouwing"], kenmerken)]),
+        _sub("Kenmerken", kenmerken),
         _sub("Generalisatie", w.alineas(van, d.get("generalisatie"))), _sub("Specialisaties", specialisaties),
         _sub("GGM-componenten", componenten), _sub("Tegenhanger", tegenhanger), _sub("Relaties", relaties),
         _sub("Kwaliteitsdoelen", kwaliteitsdoelen)])

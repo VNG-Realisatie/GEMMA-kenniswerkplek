@@ -107,10 +107,10 @@ kennismodel:
 # Woordbudget (llmwiki lint): per groep het maximum aan woorden. Een nieuwe regel of tekst gaat eerst naar de redacteur; pas daarna gaat het budget omhoog.
 lint:
   woordbudget:
-    AGENTS.md: 1700
-    "kennismodel/**/*.md": 20300
+    AGENTS.md: 1720
+    "kennismodel/**/*.md": 21100
     ".agents/skills/gemma-archimate-model-archimate-export/**/*.md": 1300
-    ".agents/skills/gemma-archimate-model-beoordelen/**/*.md": 6600
+    ".agents/skills/gemma-archimate-model-beoordelen/**/*.md": 6700
     ".agents/skills/gemma-archimate-model-criteria/**/*.md": 950
     ".agents/skills/gemma-archimate-model-gemma-release/**/*.md": 520
     ".agents/skills/gemma-archimate-model-ggm-release/**/*.md": 490

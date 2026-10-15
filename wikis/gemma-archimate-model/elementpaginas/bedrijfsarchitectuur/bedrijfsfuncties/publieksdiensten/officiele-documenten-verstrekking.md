@@ -2,7 +2,7 @@
 id: officiele-documenten-verstrekking
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: review
 naam: Officiële documenten verstrekking
 onderwerpen:
 - burgerzaken
@@ -31,7 +31,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling officiele-documenten-verstrekking.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -64,19 +64,15 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 49 zijn nee.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: gegroepeerd gedrag. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, het verstrekken van reisdocumenten en rijbewijzen is een eigen taak van de burgemeester (Paspoortwet art. 40, 42; Wegenverkeerswet 1994 art. 116, 120a). GEMMA-bedrijfsfunctie onder Producten- en dienstenrealisatie publieksdiensten. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, de burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42) en geeft rijbewijzen af en reikt ze uit (Wegenverkeerswet 1994 art. 116, 120a). [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij burgerzaken: de functie bedient Beheren reisdocumenten en Beheren rijbewijzen en omvat de diensten voor reisdocumenten en rijbewijzen (UPL taakveld 0.2). [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Wegenverkeerswet 1994](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, een groep van activiteiten: de burgemeester verstrekt nationale paspoorten en andere reisdocumenten (Paspoortwet art. 40 lid 1) en geeft rijbewijzen af (Wegenverkeerswet 1994 art. 116 lid 1). [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
-| **gegroepeerd gedrag**: Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | Ja, groepeert het op aanvraag verstrekken van persoonlijke documenten op grond van dezelfde kennis en bevoegdheid (de burgemeester, Paspoortwet art. 40); geen eigen volgorde of doorlooptijd. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, registreert en werkt het reisdocument bij (Paspoortwet art. 40, 42). [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **stabiel over tijd**: Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | Ja, volgt uit de wettelijke taak van de burgemeester, los van de organisatie (Paspoortwet art. 26, 40). [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, bedient Beheren reisdocumenten en Beheren rijbewijzen. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wegenverkeerswet 1994](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
+| **bedient gedrag**: Ondersteunt de functie aanwijsbaar een proces? | Ja, met [Beheren reisdocumenten](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-reisdocumenten.md), [Beheren rijbewijzen](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-rijbewijzen.md). |
 | **in functie-indeling**: Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? | Ja, onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling. (GEMMA id-1f944d4b-41d8-40cb-be75-8706806e07cc) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar. (GEMMA id-1f944d4b-41d8-40cb-be75-8706806e07cc) |
 

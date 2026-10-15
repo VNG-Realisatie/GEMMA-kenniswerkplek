@@ -1,65 +1,19 @@
 begrip: Verlenen toestemming bijzondere begraafplaats
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wettelijke aanwijzing van grond en toestemming voor de ingebruikneming van een bijzondere begraafplaats (art. 40, 41).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De raad wijst de grond aan en het college geeft de toestemming (art. 40 lid 1, 41).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, met een eigen besluit en beroep (art. 40–42).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per verzoek doorlopen, van aanwijzing van de grond tot de toestemming (art. 40, 41).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Beslisser (raad en college) (art. 40, 41); de houder van de bijzondere begraafplaats, zoals een kerkgenootschap, vraagt aan (art. 37).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beslisser
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Legt de aanwijzing en de toestemming vast en werkt de begraafplaats bij (art. 40, 41).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beschikking
+    - vergunning
+    - begraafplaats
   aanleiding:
     waarde: ja
     onderbouwing: Het voornemen van een kerkgenootschap of andere particuliere houder om een bijzondere begraafplaats aan te leggen, uit te breiden of in gebruik te nemen (art. 37, 40, 41).
@@ -82,9 +36,8 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Beheren begraafplaatsen: het begin van een bijzondere begraafplaats (art. 40, 41).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - beheren-begraafplaatsen
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het voornemen van de houder tot de aanwijzing en de toestemming.
@@ -100,24 +53,14 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Bijzondere begraafplaats toestemming (UPL nr. 71).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - bijzondere-begraafplaats-toestemming
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki of in het GEMMA-model.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
 definitie: Het aanwijzen van grond voor een bijzondere begraafplaats en het toestaan van de ingebruikneming ervan.
 beschrijving:
 - Een bijzondere begraafplaats wordt aangelegd en in stand gehouden door een kerkgenootschap, een privaatrechtelijke rechtspersoon of een natuurlijk persoon (Wet op de lijkbezorging art. 37). Voor aanleg of uitbreiding wordt alleen grond gebruikt die de gemeenteraad heeft aangewezen; het college kan maatregelen voorschrijven om de grond geschikt te maken (art. 40). Voor de ingebruikneming is toestemming van het college nodig, die alleen wordt geweigerd als niet aan de wettelijke voorschriften is voldaan (art. 41). Tegen deze besluiten staat beroep open bij gedeputeerde staten (art. 42).
@@ -160,11 +103,11 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: Wlb art. 40, 41; UPL nr. 71
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -172,7 +115,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

@@ -1,56 +1,8 @@
 begrip: Vermissing of diefstal reisdocument doorgeven
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Productpagina van Utrecht: paspoort of identiteitskaart, vermissing of diefstal doorgeven.'
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente maakt het online doorgeven mogelijk en registreert de vermissing (Utrecht; HUP Inhouding).
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een afgebakende prestatie die de gemeente aanbiedt, beschreven vanuit de houder.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De vermissing is geregistreerd en het document is ongeldig, zodat misbruik wordt voorkomen (Utrecht).
@@ -68,21 +20,11 @@ kenmerken:
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Verwerken vermissing reisdocument.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
+    naar:
+    - verwerken-vermissing-reisdocument
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het melden bij de gemeente dat een paspoort of identiteitskaart kwijt of gestolen is, zodat het document ongeldig wordt en misbruik wordt voorkomen.
 beschrijving:
 - Gratis, online en per document; vanaf achttien jaar meldt de houder zelf, voor een kind tot en met elf jaar een ouder, van twaalf tot en met zeventien jaar het kind of een ouder. Een als vermist opgegeven document is niet meer geldig, ook niet als het terugkomt, en moet dan worden ingeleverd (Utrecht). De Paspoortwet laat de houder de vermissing melden op een bij ministeriële regeling bepaalde wijze (art. 5a). De UPL kent geen product voor deze melding; zie de terugmelding.
@@ -98,18 +40,21 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+- 2026-rvig-hup-inhouding-inlevering-vermissing
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   - 2026-rvig-hup-inhouding-inlevering-vermissing

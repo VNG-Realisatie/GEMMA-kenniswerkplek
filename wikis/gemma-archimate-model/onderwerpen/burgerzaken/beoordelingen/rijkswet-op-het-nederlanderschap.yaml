@@ -1,48 +1,8 @@
 begrip: Rijkswet op het Nederlanderschap
+vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Formele grondslag van verkrijging en verlies van het Nederlanderschap; de UPL en Utrecht noemen haar als grondslag (UPL nr. 262, 263, 436).
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Geeft de bij algemene maatregel van rijksbestuur aangewezen autoriteit, in het Europese deel van Nederland de burgemeester, de taak verzoeken en verklaringen in ontvangst te nemen en de optie te bevestigen (Rijkswet art. 6 lid 3-5, 21; Besluit art. 2).
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandige regeling.
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van Beheren Nederlanderschap.'
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde rijkswet als geheel (BWBR0003738).
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -58,18 +18,11 @@ kenmerken:
     - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: Art. 6 (optie), 7 (verlening) en 15 (afstand) zijn de grondslag van de diensten Naturalisatieoptie, Naturalisatieverzoek en Verklaring van afstand nederlandse nationaliteit; art. 6 en 21 van de taak van de burgemeester in Beheren Nederlanderschap (UPL nr. 262, 263, 436).
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-    - 2025-vng-upl-producten-en-diensten-extern
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki.
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
+    naar:
+    - naturalisatieoptie
+    - naturalisatieverzoek
+    - verklaring-van-afstand-nederlandse-nationaliteit
+    - beheren-nederlanderschap
 regelgever: rijk
 definitie: Rijkswet over de verkrijging, het verlies en de vaststelling van het Nederlanderschap.
 beschrijving:
@@ -114,18 +67,23 @@ relaties:
   bronnen:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   vindplaats: art. 6, 7, 15, 21
-status: goedgekeurd
+bronnen:
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+- 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2025-vng-upl-producten-en-diensten-extern

@@ -1,55 +1,9 @@
 begrip: Verkiezingen gerelateerde diensten
+vak: bedrijf/gedrag-intern
+soort_gedrag: gegroepeerd_gedrag
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Het organiseren van verkiezingen is een eigen gemeentelijke taak: de burgemeester verstrekt stempassen, kiezerspassen en volmachtbewijzen en B&W registreren de kiesgerechtigdheid (Kieswet art. D 1, J 7, K 4, L 11). GEMMA-bedrijfsfunctie Verkiezingen gerelateerde diensten, onder Producten- en dienstenrealisatie publieksdiensten.'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester verstrekt stempassen, kiezerspassen en volmachtbewijzen; B&W registreren de kiesgerechtigdheid (Kieswet art. D 1, J 7, K 4, L 11).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: 'Een eigen taak van de gemeente, los van één ander begrip: burgemeester en wethouders registreren de kiesgerechtigdheid (Kieswet art. D 1) en de burgemeester verstrekt de stempassen (Kieswet art. J 7).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: bedient Beheren stempassen en Registreren kiesgerechtigdheid.'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Een groep van activiteiten: het registreren van de kiesgerechtigdheid (Kieswet art. D 1) en het vaststellen en verstrekken van de stempassen (Kieswet art. J 7).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag:
-    waarde: ja
-    onderbouwing: Doorlopende groepering van de gemeentelijke taken bij verkiezingen, op grond van dezelfde kennis van de Kieswet, zonder eigen volgorde (GEMMA).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: nee
     onderbouwing: De bron wijst geen rol aan de functie toe; de rollen hangen aan de processen.
@@ -66,9 +20,9 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   bedient_gedrag:
     waarde: ja
-    onderbouwing: Bedient Beheren stempassen en Registreren kiesgerechtigdheid (Kieswet art. D 1, J 7).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - beheren-stempassen
+    - registreren-kiesgerechtigdheid
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onder Producten- en dienstenrealisatie publieksdiensten (GEMMA).
@@ -82,9 +36,6 @@ kenmerken:
     onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; GEMMA-functie op het niveau van het onderwerp.
     gemma_relatie:
     - id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 domein: Publieksdiensten
 definitie: Het lokaal organiseren van verkiezingen.
 beschrijving:
@@ -144,18 +95,18 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 398 (GEMMA-domein Publieksdiensten)
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: 'Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *toegewezen partij*)'
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   - 2026-rvig-hup-kiesrecht

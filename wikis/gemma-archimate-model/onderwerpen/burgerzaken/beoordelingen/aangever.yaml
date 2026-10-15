@@ -1,56 +1,23 @@
 begrip: Aangever
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbare term (HUP Verblijfplaats: verplichte of bevoegde aangever).'
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Doet aangifte bij de gemeente (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De hoedanigheid waarin iemand aangifte doet voor zichzelf of een ander, verplicht of bevoegd (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: Een verantwoordelijkheid; de partij die haar vervult kan ook andere rollen hebben.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan Inschrijven ingezetene, Verwerken adreswijziging, Verwerken emigratie en Inschrijven op briefadres (HUP Verblijfplaats; HUP Emigratie). Bij de burgerlijke stand: de aangifte van geboorte, overlijden, levenloos geboren kind en geslachtswijziging (BW 1 art. 19e, 19h, 19i, 28).'
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-    - 2026-rvig-hup-emigratie
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - inschrijven-ingezetene
+    - verwerken-adreswijziging
+    - verwerken-emigratie
+    - inschrijven-op-briefadres
+    - opmaken-akte-van-overlijden
+    - opmaken-geboorteakte
+    - opmaken-akte-levenloos-geboren-kind
+    - wijzigen-geslachtsvermelding
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -63,14 +30,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere rol in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Hoedanigheid van wie bij de gemeente aangifte doet van een feit voor de basisregistratie personen of de burgerlijke stand, voor zichzelf of een ander.
 beschrijving:
 - Een meerderjarige doet zelf aangifte van verblijf en adres, adreswijziging en vertrek; ouders, voogden en verzorgers zijn verplicht aangifte te doen voor minderjarigen; echtgenoten, partners en ouders met een meerderjarig kind zijn bevoegd voor elkaar; het hoofd van een instelling kan aangifte doen voor wie er verblijft (HUP Verblijfplaats). Het college kan verplichten in persoon te verschijnen (HUP Verblijfplaats; Besluit BRP art. 30).
@@ -139,18 +98,22 @@ relaties:
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 28
-status: goedgekeurd
+bronnen:
+- 2026-rvig-hup-verblijfplaats
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rvig-hup-emigratie
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   - 2026-rijk-burgerlijk-wetboek-boek-1

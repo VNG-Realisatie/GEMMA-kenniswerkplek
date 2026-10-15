@@ -1,60 +1,8 @@
 begrip: Legalisatie handtekening
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 226) en bij Utrecht.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente vergelijkt de handtekening met die op het identiteitsbewijs (Utrecht Handtekening legaliseren).
-    bronnen:
-    - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een prestatie die de gemeente op verzoek of aangifte aan de afnemer levert, beschreven vanuit de afnemer (UPL nr. 226).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een gelegaliseerde handtekening, direct meegegeven (Utrecht).
@@ -85,9 +33,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (UPL nr. 226); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het bewijzen dat een handtekening echt is, doordat de gemeente haar vergelijkt met de handtekening op het identiteitsbewijs.
 beschrijving:
 - 'De aanvrager tekent bij voorkeur aan de balie met een ambtenaar erbij en kan niemand anders sturen; het tarief is € 21,20 per handtekening in 2026 (2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is). De UPL noemt art. 23 Wet griffierechten burgerlijke zaken als grondslag (2025-vng-upl-producten-en-diensten-extern, nr. 226), maar dat artikel stelt alleen het griffierecht vast (€ 25 per handtekening, meerdere handtekeningen van dezelfde persoon op hetzelfde stuk tellen als één; 2026-rijk-wet-griffierechten-burgerlijke-zaken-bwbr0028899, art. 23 lid 2) en geeft de gemeente geen taak of bevoegdheid: de wet is bron voor het tarief en geen beleidskader. De bevoegdheidsgrondslag van de gemeentelijke legalisatie is in de wet niet gevonden (verificatie nodig): ook de Wet regels inzake heffing van rechten voor legalisatie van handtekeningen (BWBR0005125) en de O. en W.-regeling legalisatie handtekeningen (BWBR0005229) regelen alleen rechten voor het Rijk, en gemeenten mandateren het afgeven van legalisatieverklaringen aan ambtenaren zonder wetsartikel te noemen.'
@@ -110,18 +55,20 @@ specialisaties:
 - naam: Garantstelling en particuliere logiesverstrekking
   omschrijving: 'De gemeente legaliseert de handtekening van de gastheer op het formulier bewijs garantstelling en/of particuliere logiesverstrekking, dat de gast gebruikt voor een visumaanvraag; het formulier is een half jaar geldig (Utrecht Garantstelling). Geen eigen pagina: een legalisatie met een ander formulier, die de UPL niet apart noemt onder 0.2.'
 vragen: []
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is

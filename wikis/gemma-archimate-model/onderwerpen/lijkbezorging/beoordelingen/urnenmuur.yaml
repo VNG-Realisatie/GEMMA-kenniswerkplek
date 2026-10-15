@@ -1,29 +1,8 @@
 begrip: Urnenmuur
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ziet of doet hierover iets.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: 'Onderdeel van Begraafplaats: Muur met urnennissen op de begraafplaats (Groningen art. 1 z).'
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 toelichting: 'Onderdeel van Begraafplaats: Muur met urnennissen op de begraafplaats (Groningen art. 1 z).'
 genoemd_begrip: Begraafplaats
 onderwerpen:
@@ -40,3 +19,5 @@ beslist:
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: gemeentelijke-regelgeving
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

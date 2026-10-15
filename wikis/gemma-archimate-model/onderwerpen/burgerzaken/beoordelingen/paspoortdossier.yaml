@@ -1,42 +1,9 @@
 begrip: Paspoortdossier
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Reisdocument
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Term in de HUP (Uitreiking, sectie Document).
-    bronnen:
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente die het reisdocument verstrekte, beheert het dossier (HUP Uitreiking).
-    bronnen:
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   wordt_bewerkt:
     waarde: ja
     onderbouwing: Bewaren van de aanvraagstukken, zoals het aanvraagformulier (HUP Uitreiking).
@@ -50,16 +17,11 @@ kenmerken:
     onderbouwing: Het dossier met de aanvullende gegevens en stukken van een verstrekt reisdocument (HUP Uitreiking).
     bronnen:
     - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
 toelichting: 'Representatie, geen pagina: het dossier van de verstrekkende gemeente met het aanvraagformulier en de andere gegevens van een verstrekt reisdocument (HUP Uitreiking). Vermeld bij Reisdocument.'
 beslist:
   uitkomst:
     soort: geen_pagina
-    regel: 19
+    regel: 16
     toelichting: Waarneembare vorm
     archimate_type: representation
     voorleggen: false

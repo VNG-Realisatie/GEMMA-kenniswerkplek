@@ -1,73 +1,18 @@
 begrip: Wijzigen identificatienummers
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Begrip uit de HUP (Wijzigen identificatienummers, BSN en administratienummer).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-identificatienummers
-    - 2026-rvig-hup-wijzigen-bsn
-    - 2026-rvig-hup-wijzigen-administratienummer
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het college van de bijhoudingsgemeente wijzigt het BSN; de gemeente kent nieuwe A-nummers toe (HUP Wijzigen BSN; HUP Wijzigen administratienummer).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-bsn
-    - 2026-rvig-hup-wijzigen-administratienummer
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-wijzigen-identificatienummers
-    - 2026-rvig-hup-wijzigen-bsn
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-wijzigen-identificatienummers
-    - 2026-rvig-hup-wijzigen-bsn
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rvig-hup-wijzigen-identificatienummers
-    - 2026-rvig-hup-wijzigen-bsn
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rvig-hup-wijzigen-identificatienummers
-    - 2026-rvig-hup-wijzigen-bsn
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Bijhoudingsgemeente en Beslisser (college) (HUP Wijzigen BSN).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-bsn
+    naar:
+    - beslisser
+    - bijhoudingsgemeente
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Werkt de identificatienummers van de ingeschreven persoon en zijn gerelateerden bij (HUP Wijzigen BSN; HUP Wijzigen administratienummer).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-bsn
-    - 2026-rvig-hup-wijzigen-administratienummer
+    naar:
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Een dubbele inschrijving of een foutvermoeden in het Foutenmeldpunt BSN, of meer personen met hetzelfde A-nummer (HUP Wijzigen BSN; HUP Wijzigen administratienummer).
@@ -93,9 +38,8 @@ kenmerken:
     - 2026-rvig-hup-wijzigen-administratienummer
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie in de persoonslijst (HUP Wijzigen identificatienummers).'
-    bronnen:
-    - 2026-rvig-hup-wijzigen-identificatienummers
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, ambtshalve, van de melding van de dubbele inschrijving of de fout tot het gewijzigde nummer.
@@ -114,19 +58,12 @@ kenmerken:
     waarde: nee
     onderbouwing: Levert geen product of dienst aan een afnemer.
   leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
+    waarde: ja
+    naar:
+    - verval-van-het-reisdocument
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-wijzigen-identificatienummers
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het wijzigen van het burgerservicenummer of het administratienummer van een ingeschreven persoon.
 beschrijving:
 - Het BSN wordt gewijzigd bij een dubbele inschrijving, zodat één juiste persoonslijst overblijft; het college van de bijhoudingsgemeente besluit, weegt de belangen van de persoon af (toeslagen, pensioen) en informeert hem; een geldig reisdocument vervalt dan van rechtswege (HUP Wijzigen BSN). Het A-nummer wordt gewijzigd als meer personen hetzelfde nummer hebben gekregen; de gemeente kent dan nieuwe nummers toe en meldt dat aan de andere gemeenten, de RNI en de BRP-verstrekkingsvoorziening (HUP Wijzigen administratienummer).
@@ -159,11 +96,18 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   vindplaats: Paspoortwet art. 47 lid 1 onder e; HUP Van rechtswege vervallen
-status: goedgekeurd
+bronnen:
+- 2026-rvig-hup-wijzigen-identificatienummers
+besluiten:
+- datum: '2026-10-15'
+  besluit: 'Leidt tot gebeurtenis is ja: de triggering naar verval-van-het-reisdocument staat met bron en vindplaats in de beoordeling; de nee was een vergissing (omzetting naar de ArchiMate-indeling).'
+  gevolg: verwerkt
+  zekerheid: logica
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -171,7 +115,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rvig-hup-wijzigen-identificatienummers
   - 2026-rvig-hup-wijzigen-bsn

@@ -1,71 +1,17 @@
 begrip: Behandelen aanvraag omwisseling buitenlands rijbewijs
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: De UPL noemt de omwisseling van een buitenlands rijbewijs als eigen product (nr. 361); Utrecht heeft er een eigen productpagina voor (Reglement rijbewijzen art. 28, 45).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester neemt de aanvraag in ontvangst, controleert haar, neemt het buitenlandse rijbewijs in en geleidt de aanvraag door naar de RDW (Reglement rijbewijzen art. 28, 109; Utrecht).
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen aanvraag waarvoor de RDW afgeeft en de gemeente alleen ontvangt en doorgeleidt (Reglement rijbewijzen art. 28, 105 lid 2).
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Bedrijfsproces onder Beheren rijbewijzen in burgerzaken.
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per aanvraag van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: De Houder van het rijbewijs vraagt aan en levert het buitenlandse rijbewijs in (Reglement rijbewijzen art. 27, 45, 109; Utrecht).
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+    naar:
+    - houder-van-het-rijbewijs
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Neemt het buitenlandse rijbewijs in en registreert de aanvraag; raadpleegt de ingeschreven persoon in de basisregistratie personen (Reglement rijbewijzen art. 33 lid 2, 109).
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+    naar:
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag, op afspraak aan de balie (Reglement rijbewijzen art. 27; Utrecht).
@@ -91,9 +37,8 @@ kenmerken:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Beheren rijbewijzen: het ontstaan van het Nederlandse rijbewijs bij een buitenlands rijbewijs.'
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+    naar:
+    - beheren-rijbewijzen
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de aanvraag aan de balie tot het afgegeven of geweigerde rijbewijs.
@@ -111,10 +56,8 @@ kenmerken:
     - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Rijbewijs buitenlands omwisseling (UPL nr. 361).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+    naar:
+    - rijbewijs-buitenlands-omwisseling
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
@@ -126,9 +69,6 @@ kenmerken:
     onderbouwing: Specialisatie van Behandelen aanvraag rijbewijs met een eigen afgever, de RDW, en een eigen eis, het inleveren van het buitenlandse rijbewijs (Reglement rijbewijzen art. 28, 105, 109).
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het in ontvangst nemen van een aanvraag om een buitenlands rijbewijs om te wisselen en het doorgeleiden ervan naar de RDW, die beslist.
 beschrijving:
 - Wie in Nederland woont, dient de aanvraag in bij de burgemeester van de gemeente van inschrijving en levert het buitenlandse rijbewijs in, met een paspoort, identiteitskaart of verblijfsvergunning, een pasfoto, bij een rijbewijs van buiten de EU en EER een gezondheidsverklaring van het CBR en bij de 30%-regeling de brief van de Belastingdienst (Reglement rijbewijzen art. 27, 33; Utrecht). De burgemeester geleidt de aanvraag terstond door naar de RDW, die het rijbewijs afgeeft; de gemeente stuurt het buitenlandse rijbewijs met de aanvraag naar de RDW, die het terugstuurt naar het land van afgifte (Reglement rijbewijzen art. 28, 105 lid 2, 109; Utrecht).
@@ -188,11 +128,13 @@ deelprocessen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: Utrecht; Wegenverkeerswet 1994 art. 119 lid 2
   begrip: uitreiken-rijbewijs
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -200,7 +142,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074

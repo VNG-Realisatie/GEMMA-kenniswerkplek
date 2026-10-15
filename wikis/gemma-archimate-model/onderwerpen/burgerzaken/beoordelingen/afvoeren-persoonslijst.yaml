@@ -1,62 +1,10 @@
 begrip: Afvoeren persoonslijst
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Bijhouden persoonsgegevens
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Begrip uit de HUP (Afvoeren van een ten onrechte opgenomen persoonslijst; Dubbelinschrijving).
-    bronnen:
-    - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-    - 2026-rvig-hup-dubbelinschrijving
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Gemeentelijk gedrag in de bijhouding van de BRP.
-    bronnen:
-    - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-    - 2026-rvig-hup-dubbelinschrijving
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-    - 2026-rvig-hup-dubbelinschrijving
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-    - 2026-rvig-hup-dubbelinschrijving
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-    - 2026-rvig-hup-dubbelinschrijving
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval doorlopen.
-    bronnen:
-    - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-    - 2026-rvig-hup-dubbelinschrijving
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: Bijhoudingsgemeente (HUP Dubbelinschrijving).
@@ -111,30 +59,23 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-    - 2026-rvig-hup-dubbelinschrijving
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 toelichting: 'Processtap zonder pagina: een ten onrechte opgenomen persoonslijst, bijvoorbeeld na een dubbele inschrijving of identiteitsfraude, wordt opgeschort met reden F; er is geen eigen besluit of product (afbakening). Het verwijderen van een geblokkeerde persoonslijst na verhuizing of emigratie is ook een registratiestap.'
 synoniemen:
 - naam: Dubbelinschrijving afhandelen
   context: HUP
+bronnen:
+- 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 30
+    regel: 27
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     data_object: nee
     genoemd_begrip: Bijhouden persoonsgegevens
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
   - 2026-rvig-hup-dubbelinschrijving

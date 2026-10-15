@@ -1,53 +1,16 @@
 begrip: Briefadresgever
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Stemt schriftelijk in en verstrekt inlichtingen aan het college (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De verantwoordelijkheid om post voor de houder van een briefadres in ontvangst te nemen en door te geven (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: Een verantwoordelijkheid; de partij die haar vervult kan ook andere rollen hebben.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan Inschrijven op briefadres: stemt schriftelijk in (HUP Verblijfplaats).'
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
+    naar:
+    - inschrijven-op-briefadres
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -60,14 +23,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere rol in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Verantwoordelijkheid van een persoon of aangewezen rechtspersoon om post voor de houder van een briefadres in ontvangst te nemen en door te geven.
 beschrijving:
 - De briefadresgever is een natuurlijk persoon of een door het college aangewezen rechtspersoon; hij stemt schriftelijk in, zorgt dat geschriften voor de houder worden doorgegeven en verstrekt het college inlichtingen (HUP Verblijfplaats). Zonder briefadresgever registreert de gemeente een adres van de gemeente zelf (HUP Verblijfplaats).
@@ -92,18 +47,18 @@ relaties:
   - 2026-rvig-hup-verblijfplaats
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: Briefadres; Wet BRP art. 2.45 lid 3
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   - 2026-rijk-wet-brp-bwbr0033715

@@ -1,47 +1,7 @@
 begrip: Kerkgenootschap
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Begrip uit BW Boek 2 en de Wet op de lijkbezorging.
-    bronnen:
-    - 2026-rijk-bw2-rechtspersonen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Houdt bijzondere begraafplaatsen en krijgt delen van de gemeentelijke begraafplaats ter beschikking; overlegt met het college (Wlb art. 37–39; Groningen art. 29).
-    bronnen:
-    - 2026-rijk-bw2-rechtspersonen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-bw2-rechtspersonen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-bw2-rechtspersonen
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gedrag: nee
-  handelende_partij:
-    waarde: ja
-    onderbouwing: Organisatie die activiteiten uitvoert.
-    bronnen:
-    - 2026-rijk-bw2-rechtspersonen
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: Bestaat los van het houderschap van een begraafplaats.
@@ -54,9 +14,9 @@ kenmerken:
     - 2026-rijk-bw2-rechtspersonen
   vervult_een_rol:
     waarde: ja
-    onderbouwing: Vervult de rol Houder van de begraafplaats (bijzondere begraafplaats, art. 37) en Houder van het crematorium (bijzonder crematorium, art. 52).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - houder-van-de-begraafplaats
+    - houder-van-het-crematorium
   soort_partij:
     waarde: ja
     onderbouwing: Een soort partij die in elke gemeente houder van een bijzondere begraafplaats of crematorium kan zijn (art. 37, 52); geen individueel kerkgenootschap.
@@ -74,14 +34,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki.
-    bronnen:
-    - 2026-rijk-bw2-rechtspersonen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 definitie: Kerkelijke gemeenschap, met inbegrip van haar zelfstandige onderdelen en de lichamen waarin kerkgenootschappen zijn verenigd.
 beschrijving:
 - Kerkgenootschappen, hun zelfstandige onderdelen en de lichamen waarin zij zijn verenigd, hebben rechtspersoonlijkheid en worden geregeerd door hun eigen statuut, voor zover dat niet in strijd is met de wet (BW Boek 2 art. 2).
@@ -112,18 +64,18 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: ketenpartners
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Handelende partij (kern ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 11
+    typeregel: 9
   bronnen:
   - 2026-rijk-bw2-rechtspersonen
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

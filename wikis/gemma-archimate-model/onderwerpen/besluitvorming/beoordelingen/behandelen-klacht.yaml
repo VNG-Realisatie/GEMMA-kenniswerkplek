@@ -1,67 +1,18 @@
 begrip: Behandelen klacht
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wettelijke procedure (Awb titel 9.1); gangbaar als klachtbehandeling of klachtafhandeling; GEMMA kent het proces Behandelen klacht.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het gemeentelijke bestuursorgaan behandelt de klachten over zijn gedragingen en die van wie onder zijn verantwoordelijkheid werkt (art. 9:1, 9:2).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een zelfstandige procedure, los van een besluit, niet een stap van één ander begrip (art. 9:2).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: een algemene procedure van elk bestuursorgaan uit de Awb (titel 9.1).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag:
-    waarde: ja
-    onderbouwing: 'Iets wat gedaan wordt: het behandelen van een klacht.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: 'Wordt per schriftelijke klacht van begin tot eind doorlopen: ontvangstbevestiging, horen, onderzoek, gemotiveerd oordeel (art. 9:6, 9:10–9:12).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: nee
-    onderbouwing: Een procedure, beschreven naar hoe de klacht wordt behandeld; wat de afnemer krijgt is de dienst Klacht.
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Beslisser (het bestuursorgaan draagt zorg voor de behandeling, handelt af en meldt zijn oordeel) en Klager (dient de klacht in en wordt gehoord) (art. 9:2, 9:4, 9:10–9:12).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - beslisser
+    - klager
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Ontvangt en behandelt de schriftelijke klacht; de klachten worden jaarlijks gepubliceerd (art. 9:6, 9:12a).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - schriftelijke-klacht
   aanleiding:
     waarde: ja
     onderbouwing: Een klacht over een gedraging van het bestuursorgaan, voor de procedure van afdeling 9.1.2 een schriftelijke klacht (art. 9:1, 9:4).
@@ -100,24 +51,14 @@ kenmerken:
     onderbouwing: Eindigt in een oordeel over de klacht, niet in een besluit waartegen beroep openstaat (art. 9:3, 9:12).
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Klacht (UPL nr. 212; art. 9:1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - klacht
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf het generieke proces voor een klacht over elk bestuursorgaan, en de GEMMA-match zelf (Behandelen klacht), geen specialisatie ervan.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -158,11 +99,11 @@ relaties:
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 9:4, 9:6, 9:12a
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -170,7 +111,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

@@ -1,42 +1,9 @@
 begrip: Reisdocumentenadministratie
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Reisdocument
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wetsbegrip (Paspoortwet art. 3 lid 8).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De tot uitreiking bevoegde autoriteiten, waaronder de burgemeester, houden haar bij (Paspoortwet art. 3 lid 8).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   wordt_bewerkt:
     waarde: ja
     onderbouwing: Aanvraag, verstrekking en uitreiking worden erin vastgelegd (Paspoortwet art. 3 lid 8).
@@ -50,16 +17,11 @@ kenmerken:
     onderbouwing: De administratie waarin de gegevens van de reisdocumenten worden vastgelegd, op naam en documentnummer toegankelijk (Paspoortwet art. 3 lid 8).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
 toelichting: 'Representatie, geen pagina: de administratie van de uitreikende autoriteit met de gegevens over aanvraag, verstrekking en uitreiking van de reisdocumenten (Paspoortwet art. 3 lid 8). Vermeld bij Reisdocument; precedent Register van de burgerlijke stand.'
 beslist:
   uitkomst:
     soort: geen_pagina
-    regel: 19
+    regel: 16
     toelichting: Waarneembare vorm
     archimate_type: representation
     voorleggen: false

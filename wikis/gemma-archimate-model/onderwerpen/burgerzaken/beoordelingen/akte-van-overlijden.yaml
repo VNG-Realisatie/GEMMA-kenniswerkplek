@@ -1,49 +1,9 @@
 begrip: Akte van overlijden
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 - lijkbezorging
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wettelijk begrip (art. 13).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand maakt haar op.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Eén akte per overlijden, in het register van overlijden van de gemeente van overlijden (BW 1 art. 17, 19f).
@@ -80,9 +40,6 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: 'Specialisatie van Akte van de burgerlijke stand: dezelfde levensloop in hetzelfde proces, alleen andere gegevens per aktesoort (Besluit burgerlijke stand art. 61-65); GEMMA kent geen akten per soort.'
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 genoemd_begrip: Akte van de burgerlijke stand
 toelichting: 'Specialisatie zonder pagina van Akte van de burgerlijke stand (Besluit burgerlijke stand art. 61-65); de relaties gaan naar de akte. Ook bij lijkvinding wordt een akte van overlijden opgemaakt (art. 62). In de UPL is overlijdensakte (nr. 316, BW 1 art. 19f) de dienst Overlijdensakte: een uittreksel of afschrift van deze akte. Tot 2026-10-07 een verwijzing vanuit Lijkbezorging.'
 synoniemen:
@@ -94,17 +51,20 @@ homoniemen:
   waar: UPL-lijst extern
   element: overlijdensakte
   naamkeuze: Deze beoordeling heet Akte van overlijden, de akte zelf (wetsterm); de dienst heet Overlijdensakte, de UPL-naam.
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rvo-aangifte-en-akte-van-overlijden
 beslist:
   uitkomst:
     soort: specialisatie
-    regel: 24
+    regel: 21
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-object
     voorleggen: false
     data_object: ja
     genoemd_begrip: Akte van de burgerlijke stand
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden

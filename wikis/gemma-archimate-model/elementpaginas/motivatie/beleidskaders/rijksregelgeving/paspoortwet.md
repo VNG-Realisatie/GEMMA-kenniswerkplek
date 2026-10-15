@@ -2,7 +2,7 @@
 id: paspoortwet
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Paspoortwet
 onderwerpen:
 - burgerzaken
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling paspoortwet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -53,19 +53,15 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 51 zijn nee.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, gangbare naam van de rijkswet over reisdocumenten (BWBR0005212). [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, geeft de burgemeester de bevoegdheid tot het in ontvangst nemen van de aanvraag, verstrekking, uitreiking, weigering, vervallenverklaring en inhouding (art. 26, 40, 42, 44, 50b). [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **regeling als geheel**: Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Ja, een concreet benoemde regeling als geheel (BWBR0005212). [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijksregelgeving van het Koninkrijk. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, art. 26 tot en met 41 (aanvraag en verstrekking), 42 (uitreiking), 44 tot en met 46 (weigering en vervallenverklaring), 5a, 31 en 47 (vermissing en verval), 50b tot en met 57 (inhouding): gedrag in Behandelen aanvraag reisdocument, Uitreiken reisdocument en de andere bedrijfsprocessen onder Beheren reisdocumenten. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, geen breder begrip van hetzelfde type in deze wiki. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Behandelen aanvraag reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Paspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort.md), [Paspoort tweede](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md), [Vluchtelingenpaspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vluchtelingenpaspoort.md), [Vreemdelingenpaspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vreemdelingenpaspoort.md), [Verwerken vermissing reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md), [Vermissing of diefstal reisdocument doorgeven](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-reisdocument-doorgeven.md), [Inhouden reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Zakenpaspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/zakenpaspoort.md). |
 
 ### Relaties
 

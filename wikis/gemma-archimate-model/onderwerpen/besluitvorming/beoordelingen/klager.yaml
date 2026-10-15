@@ -1,53 +1,16 @@
 begrip: Klager
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsterm (Awb art. 9:4–9:12) en gangbaar: wie een klacht indient.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente behandelt de klacht en hoort de klager (art. 9:2, 9:10).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als hoedanigheid tegenover een bestuursorgaan, los van een besluit; het is geen belanghebbende, want ieder mag klagen, ook over een gedraging jegens een ander (art. 9:1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: het begrip komt uit de Awb en geldt voor elk bestuursorgaan (hoofdstuk 9).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De hoedanigheid waarin een persoon of organisatie een klacht indient over een gedraging van een bestuursorgaan (art. 9:1, 9:4).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: 'Een hoedanigheid tegenover een bestuursorgaan, geen zelfstandige partij: ieder kan klager zijn.'
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan Behandelen klacht: dient de klacht in, wordt gehoord en krijgt het oordeel (art. 9:4, 9:10, 9:12).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - behandelen-klacht
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
@@ -60,14 +23,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder element in deze wiki; Belanghebbende past niet, want een klager hoeft geen belang bij een besluit te hebben.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Is zelf de generieke rol voor een klacht over elk bestuursorgaan, geen specialisatie van een generiek GEMMA-element; de GEMMA-rol Klant heeft geen definitie en is breder.
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van degene die een klacht indient over de manier waarop een bestuursorgaan zich heeft gedragen.
 beschrijving:
@@ -88,18 +43,18 @@ besluiten:
   besluit: 'Nieuwe generieke rol in Besluitvorming: ieder kan klagen, ook over een gedraging jegens een ander, dus de rol Belanghebbende past niet (Awb art. 9:1).'
   gevolg: verwerkt
   zekerheid: kennis
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving

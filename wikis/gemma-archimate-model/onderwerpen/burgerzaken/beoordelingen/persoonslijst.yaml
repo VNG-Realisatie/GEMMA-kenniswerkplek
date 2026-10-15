@@ -1,43 +1,9 @@
 begrip: Persoonslijst
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Kernbegrip van LO BRP en HUP (LO BRP 4.2.1; HUP Achtergronden).
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente houdt de persoonslijsten van haar ingezetenen bij (LO BRP 1.5.2).
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een herkenbaar eigen begrip in de BRP (LO BRP 4.2.1).
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij de BRP.
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -47,11 +13,6 @@ kenmerken:
     bronnen:
     - 2025-rvig-logisch-ontwerp-brp-2025q1
     - 2026-rvig-hup-achtergronden-en-begrippen
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
 toelichting: 'De vorm (representatie) waarin de gegevens van de ingeschreven persoon in de BRP worden bijgehouden: geen pagina, vermeld bij Ingeschreven persoon.'
 synoniemen:
 - naam: PL
@@ -59,7 +20,7 @@ synoniemen:
 beslist:
   uitkomst:
     soort: geen_pagina
-    regel: 19
+    regel: 16
     toelichting: Waarneembare vorm
     archimate_type: representation
     voorleggen: false

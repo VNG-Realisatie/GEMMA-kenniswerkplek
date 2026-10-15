@@ -121,7 +121,7 @@ def oordeel(data: dict) -> dict:
 
 def regel_naar_antwoord(sleutel: str, tekst: str) -> dict | str:
     """De schrijfvorm van één regel, `ja — onderbouwing [bron-id, id-…]`, als antwoord: een id met `id-` is een
-    GEMMA-relatie (`gemma_relatie`), de andere zijn bronnen. Een nee zonder onderbouwing en bronnen blijft de kale nee."""
+    GEMMA-relatie (`gemma_relatie`), de andere zijn bronnen."""
     m = re.fullmatch(r"\s*(ja|nee)\b(.*)", tekst, re.S)
     if not m:
         raise Fout(f"kenmerk {sleutel}: '{tekst}' begint niet met ja of nee")
@@ -136,8 +136,6 @@ def regel_naar_antwoord(sleutel: str, tekst: str) -> dict | str:
     bronnen = [i for i in ids if not i.startswith("id-")]
     relaties = [i for i in ids if i.startswith("id-")]
     if not onderbouwing:
-        if waarde == "nee" and not ids:
-            return bepaal_type.KALE_NEE
         raise Fout(f"kenmerk {sleutel}: {waarde} zonder onderbouwing")
     return {"waarde": waarde, "onderbouwing": onderbouwing, **({"bronnen": bronnen} if bronnen else {}),
             **({"gemma_relatie": relaties} if relaties else {})}
@@ -147,7 +145,7 @@ def normaliseer_data(data: dict) -> tuple[dict, list[str]]:
     """De kenmerken in de opgeslagen vorm: de schrijfvorm van één regel wordt een object, een nee buiten het pad valt
     weg (behalve met bronnen of een GEMMA-relatie), de volgorde is die van de vragenlijst. Geeft ook wat op het pad nog
     open staat."""
-    kenmerken = {s: regel_naar_antwoord(s, a) if isinstance(a, str) and a != bepaal_type.KALE_NEE else a
+    kenmerken = {s: regel_naar_antwoord(s, a) if isinstance(a, str) else a
                  for s, a in (data.get("kenmerken") or {}).items()}
     tijdelijk = {**data, "kenmerken": kenmerken}
     a, b = bepaal_type.pad(bepaal_type.waarden(tijdelijk), bepaal_type.extra_velden(tijdelijk))
@@ -160,7 +158,8 @@ def normaliseer_data(data: dict) -> tuple[dict, list[str]]:
 
     volgorde = {s: i for i, s in enumerate(bepaal_type.SLEUTELS)}
     nieuw = dict(sorted(((s, x) for s, x in kenmerken.items() if blijft(s, x)), key=lambda p: volgorde.get(p[0], 999)))
-    open_ = [bepaal_type.NAAM[s] for s in a + b if s not in nieuw]
+    open_ = [f"`{v}`" for v in bepaal_type.open_keuzevelden(tijdelijk)] \
+        + [bepaal_type.NAAM[s] for s in bepaal_type.te_beantwoorden(a + b) if s not in nieuw]
     return {**data, "kenmerken": nieuw}, ([f"op het pad nog niet beantwoord: {', '.join(open_)}"] if open_ else [])
 
 

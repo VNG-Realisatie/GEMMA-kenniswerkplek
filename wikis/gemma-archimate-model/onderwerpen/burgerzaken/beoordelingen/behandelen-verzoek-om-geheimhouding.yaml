@@ -1,70 +1,18 @@
 begrip: Behandelen verzoek om geheimhouding
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar als geheimhouding aanvragen of stopzetten (Utrecht); wetsterm verstrekkingsbeperking (HUP).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-    - 2026-rvig-hup-verstrekkingsbeperking
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente verwerkt het verzoek binnen vier weken en bevestigt het schriftelijk (HUP Verstrekkingsbeperking).
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
-    - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
-    - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
-    - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
-    - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Bijhoudingsgemeente en Beslisser (college) (HUP Verstrekkingsbeperking).
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
+    naar:
+    - beslisser
+    - bijhoudingsgemeente
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Werkt de ingeschreven persoon bij met een aantekening van geheimhouding (HUP Verstrekkingsbeperking).
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
+    naar:
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Schriftelijk verzoek van de ingeschrevene van 16 jaar of ouder, of van ouder, voogd of curator (HUP Verstrekkingsbeperking).
@@ -89,9 +37,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie in de persoonslijst (HUP Verstrekkingsbeperking).'
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het verzoek tot de aantekening en de bevestiging.
@@ -107,23 +54,14 @@ kenmerken:
     - 2026-rvig-hup-verstrekkingsbeperking
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst BRP-geheimhoudingsverzoek (UPL nr. 87).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - brp-geheimhoudingsverzoek
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-verstrekkingsbeperking
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het verwerken van een verzoek om persoonsgegevens niet aan bepaalde derden te verstrekken, of om die geheimhouding te beëindigen.
 beschrijving:
 - De burger kan verstrekking aan overheidsorganen op grond van een autorisatiebesluit niet tegenhouden, maar wel schriftelijk verzoeken geen gegevens te verstrekken aan bepaalde derden (HUP Verstrekkingsbeperking). Het verzoek is vormvrij en hoeft niet te worden gemotiveerd; de gemeente stelt de identiteit vast, verwerkt het binnen vier weken, bevestigt het schriftelijk en weigert het niet als de juiste persoon het doet (HUP Verstrekkingsbeperking). Online kan het met DigiD binnen vijf werkdagen; de geheimhouding verhuist mee naar een nieuwe gemeente (Utrecht Persoonsgegevens geheimhouden).
@@ -155,11 +93,13 @@ relaties:
   - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: UPL nr. 87; Wet BRP art. 2.59
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -167,7 +107,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
   - 2026-rvig-hup-verstrekkingsbeperking

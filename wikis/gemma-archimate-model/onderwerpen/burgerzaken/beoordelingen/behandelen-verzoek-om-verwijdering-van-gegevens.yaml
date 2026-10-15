@@ -1,75 +1,23 @@
 begrip: Behandelen verzoek om verwijdering van gegevens
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar als gegevens verwijderen (Utrecht) en brp-adoptie-uitschrijving (UPL nr. 86).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente verwijdert op schriftelijk verzoek en neemt binnen vier weken een besluit (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2025-vng-upl-producten-en-diensten-extern
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2025-vng-upl-producten-en-diensten-extern
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2025-vng-upl-producten-en-diensten-extern
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Bijhoudingsgemeente en Beslisser (college) (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+    naar:
+    - beslisser
+    - bijhoudingsgemeente
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Verwijdert gegevens van van voor een adoptie of geslachtswijziging uit de persoonslijst (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+    naar:
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
-    onderbouwing: Schriftelijk verzoek van het adoptiekind, de adoptieouders of de biologische ouders, of van de ingeschrevene na een geslachtswijziging (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+    naar:
+    - adoptie
+    - wijzigen-geslachtsvermelding
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Verwijderde gegevens en een mededeling aan de verzoeker (Utrecht).
@@ -88,9 +36,8 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: één mutatie in de persoonslijst (Utrecht).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van het verzoek tot de verwijderde gegevens en de mededeling; een eigen verzoek, ook na een geslachtswijziging.
@@ -106,23 +53,14 @@ kenmerken:
     - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst BRP-adoptie-uitschrijving (UPL nr. 86).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - brp-adoptie-uitschrijving
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder proces in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het beslissen op een verzoek om gegevens van vóór een adoptie of geslachtswijziging van de persoonslijst te verwijderen.
 beschrijving:
 - 'Na een adoptie of een wijziging van de vermelding van het geslacht kunnen de betrokkenen schriftelijk vragen de oude gegevens van de persoonslijst te verwijderen: voor een adoptiekind jonger dan 16 jaar de adoptieouders, daarna het kind zelf, en de biologische ouders voor de gegevens over het kind; bij een geslachtswijziging de ingeschrevene, of voor hem de ouder, voogd of curator (Utrecht Gegevens verwijderen). De gemeente neemt binnen vier weken een besluit waartegen bezwaar mogelijk is (Utrecht). Het afvoeren van een ten onrechte opgenomen persoonslijst is een registratiestap zonder eigen besluit (HUP Afvoeren persoonslijst).'
@@ -154,11 +92,11 @@ relaties:
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: UPL nr. 86; Wet BRP art. 2.57
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -166,7 +104,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   - 2025-vng-upl-producten-en-diensten-extern

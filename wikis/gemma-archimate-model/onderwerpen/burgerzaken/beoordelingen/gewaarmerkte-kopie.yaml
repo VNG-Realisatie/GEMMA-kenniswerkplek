@@ -1,42 +1,9 @@
 begrip: Gewaarmerkte kopie
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Reisdocument
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente maakt en waarmerkt haar (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   wordt_bewerkt:
     waarde: ja
     onderbouwing: Verstrekken aan de aanvrager (Utrecht).
@@ -50,16 +17,11 @@ kenmerken:
     onderbouwing: Een kopie van het reisdocument met de verklaring dat ze gelijk is aan het origineel (Utrecht).
     bronnen:
     - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
 toelichting: 'Representatie, geen pagina: een kopie van het Nederlandse reisdocument met de verklaring van de gemeente dat ze gelijk is aan het origineel (Utrecht). De dienst Gewaarmerkte kopie reisdocument aanvragen is vervallen, omdat er geen landelijke wettelijke grondslag is (regel Wettelijke grondslag).'
 beslist:
   uitkomst:
     soort: geen_pagina
-    regel: 19
+    regel: 16
     toelichting: Waarneembare vorm
     archimate_type: representation
     voorleggen: false

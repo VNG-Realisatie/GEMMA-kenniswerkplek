@@ -1,39 +1,6 @@
 begrip: Particulier foetusgraf
+vak: bedrijf/passief
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Gemeentelijk: Graf waarin een foetus jonger dan 24 weken kan worden bijgezet (Groningen art. 1 o).'
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elk graf apart.
@@ -67,9 +34,6 @@ kenmerken:
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: 'Variant van Graf: zelfde gegevens en behandeling, geen eigen levenscyclus.'
-  generiek:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
 genoemd_begrip: Graf
 toelichting: 'Specialisatie zonder pagina van Graf: Graf waarin een foetus jonger dan 24 weken kan worden bijgezet (Groningen art. 1 o).'
 onderwerpen:
@@ -77,14 +41,14 @@ onderwerpen:
 beslist:
   uitkomst:
     soort: specialisatie
-    regel: 24
+    regel: 21
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-object
     voorleggen: false
     data_object: nee
     genoemd_begrip: Graf
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: gemeentelijke-regelgeving

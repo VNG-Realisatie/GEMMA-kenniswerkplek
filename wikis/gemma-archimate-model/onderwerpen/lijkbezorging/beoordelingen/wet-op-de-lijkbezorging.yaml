@@ -1,47 +1,6 @@
 begrip: Wet op de lijkbezorging
+vak: motivatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare naam van de wet (citeertitel art. 95); de VNG noemt haar bij naam.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-wet-op-de-lijkbezorging
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Geeft de gemeente taken, bevoegdheden en plichten: lijkschouwers benoemen, verlof afgeven, gemeentelijke begraafplaats houden, opgraving en ontleding toestaan.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-wet-op-de-lijkbezorging
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-wet-op-de-lijkbezorging
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij de lijkbezorging.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-vng-wet-op-de-lijkbezorging
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde wet als geheel (BWBR0005009).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -57,17 +16,29 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 4 (benoemen lijkschouwer), 11–12 (verlof tot begraving of crematie), 21–22 (gemeentebegrafenis), 22a (besmet lijk), 28 (grafrecht), 29 (opgraving), 31 (ruiming), 33 (gemeentelijke begraafplaats), 68 (ontleding): gedrag in de processen hieronder.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder beleidskader in deze wiki; de wet staat op zichzelf.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Specifiek voor de lijkbezorging.
+    naar:
+    - schouwen-stoffelijk-overschot
+    - uitvoeren-lijkbezorging
+    - verzorgen-gemeentebegrafenis
+    - treffen-maatregel-bij-besmet-stoffelijk-overschot
+    - verlenen-grafrecht
+    - vervallen-verklaren-grafrecht
+    - opgraven-stoffelijk-overschot
+    - ruimen-graf
+    - verlenen-toestemming-bijzondere-begraafplaats
+    - sluiten-begraafplaats
+    - verlenen-vergunning-bijzonder-crematorium
+    - stellen-andere-termijn
+    - verlenen-verlof-tot-ontleding
+    - grafuitgifte
+    - begraafplaatsregister
+    - bijzettingenregister
+    - crematoriumregister
+    - bijzondere-begraafplaats-toestemming
+    - herbegraven-of-alsnog-cremeren
+    - ontleding-stoffelijk-overschot-toestemming
+    - uitvaart-vervroegen-of-uitstellen
+    - verlof-tot-begraven
 definitie: Wet die regelt hoe een stoffelijk overschot wordt geschouwd, begraven, gecremeerd of anders bezorgd, en welke taken de gemeente daarbij heeft.
 beschrijving:
 - De Wet op de lijkbezorging (BWBR0005009) bepaalt wat een lijk is, hoe lijkschouwing, begraving, crematie en ontleding verlopen, en welke besluiten burgemeester, college en raad daarbij nemen (art. 1–4, 11, 21, 29, 68). Ze verplicht elke gemeente tot ten minste één gemeentelijke begraafplaats (art. 33) en regelt het uitsluitend recht op een graf, de ruiming en de sluiting van begraafplaatsen (art. 28, 31, 43).
@@ -234,18 +205,21 @@ relaties:
 onderwerpen:
 - lijkbezorging
 regelgever: rijk
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-vng-wet-op-de-lijkbezorging
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-vng-wet-op-de-lijkbezorging

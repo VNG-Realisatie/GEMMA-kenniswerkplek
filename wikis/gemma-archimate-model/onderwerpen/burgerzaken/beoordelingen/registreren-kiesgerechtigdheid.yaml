@@ -1,78 +1,22 @@
 begrip: Registreren kiesgerechtigdheid
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Burgemeester en wethouders registreren de kiesgerechtigdheid van de ingezetenen (Kieswet art. D 1); UPL-product stemrecht (nr. 398); de BRP kent de categorie kiesrecht (HUP Kiesrecht).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rvig-hup-kiesrecht
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: B&W registreren de kiesgerechtigdheid en delen op verzoek mee of iemand als kiezer is geregistreerd; de burgemeester stelt een uitgesloten persoon in kennis (Kieswet art. B 5, D 1, D 5).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: bedrijfsproces onder Bijhouden persoonsgegevens.'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2026-rvig-hup-kiesrecht
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Per mededeling of verzoek doorlopen (Kieswet art. B 5, D 5; HUP Europees kiesrecht).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2026-rvig-hup-europees-kiesrecht
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: 'Beslisser: burgemeester en wethouders, die op een aanvraag tot wijziging beslissen (Kieswet art. D 1, D 7); Kiezer: verzoekt om mededeling of, als EU-onderdaan, om registratie voor het Europees Parlement (art. D 5; HUP Europees kiesrecht).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2026-rvig-hup-europees-kiesrecht
+    naar:
+    - beslisser
+    - kiezer
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: 'Werkt de ingeschreven persoon bij: de uitsluiting van het kiesrecht en de deelname aan het Europees kiesrecht in de persoonslijst (HUP Nederlands kiesrecht; HUP Europees kiesrecht); de kiesgerechtigdheid volgt uit de inschrijving als ingezetene (Kieswet art. B 4).'
-    bronnen:
-    - 2026-rvig-hup-nederlands-kiesrecht
-    - 2026-rvig-hup-europees-kiesrecht
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - ingeschreven-persoon
   aanleiding:
     waarde: ja
-    onderbouwing: Een mededeling van de minister over een uitsluiting, een verzoek van een EU-onderdaan (formulier Y32) of een verzoek om mededeling (Kieswet art. B 5, D 5; HUP Europees kiesrecht).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2026-rvig-hup-europees-kiesrecht
+    naar:
+    - uitsluiting-van-het-kiesrecht
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De registratie als kiezer, de mededeling of iemand is geregistreerd, en de kennisgeving van een uitsluiting (Kieswet art. B 5, D 1, D 5).
@@ -92,9 +36,8 @@ kenmerken:
     - 2026-rvig-hup-europees-kiesrecht
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden persoonsgegevens: de kiesrechtgegevens van de ingeschreven persoon.'
-    bronnen:
-    - 2026-rvig-hup-kiesrecht
+    naar:
+    - bijhouden-persoonsgegevens
   klant_tot_klant:
     waarde: ja
     onderbouwing: Ja, van de mededeling of het verzoek tot de registratie of de kennisgeving.
@@ -111,23 +54,14 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   levert_aanbod:
     waarde: ja
-    onderbouwing: Realiseert de dienst Stemrecht (UPL nr. 398).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - stemrecht
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 kernobject: ingeschreven-persoon
 afnemer: extern
 definitie: Het registreren van wie in de gemeente kiesgerechtigd is, met de uitsluiting van het kiesrecht en de deelname van EU-onderdanen aan de Europese verkiezingen.
@@ -161,11 +95,16 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: UPL nr. 398
-status: goedgekeurd
+bronnen:
+- 2026-rijk-kieswet-bwbr0004627
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rvig-hup-kiesrecht
+- 2026-rvig-hup-europees-kiesrecht
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -173,7 +112,7 @@ beslist:
     data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   - 2025-vng-upl-producten-en-diensten-extern

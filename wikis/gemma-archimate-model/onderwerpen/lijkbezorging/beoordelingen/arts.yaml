@@ -1,47 +1,7 @@
 begrip: Arts
+vak: bedrijf/actief-intern
+hoofdkenmerk: handelende_partij
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbaar.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: 'Als behandelende arts een wettelijke meld- en overlegplicht met de gemeentelijke lijkschouwer: meldt hem als hij geen verklaring van overlijden kan afgeven, overlegt met hem voordat hij die bij een minderjarige afgeeft en geeft hem informatie voor het nader onderzoek (art. 7 lid 2 en 6, art. 10a lid 1 en 3); zonder zijn verklaring geen verlof (art. 12). Als forensisch arts benoemd tot gemeentelijke lijkschouwer (art. 4, 5).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  gedrag:
-    waarde: nee
-    onderbouwing: Een partij, geen gedrag.
-  handelende_partij:
-    waarde: ja
-    onderbouwing: 'Een persoon die activiteiten uitvoert: schouwt het lijk, geeft de verklaring van overlijden af en doet mededeling aan de gemeentelijke lijkschouwer (art. 3, 7).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: ja
     onderbouwing: 'Bestaat los van de lijkbezorging, als arts die de overledene behandelde (RVO: de verklaring krijgt u van een behandelend arts).'
@@ -50,9 +10,9 @@ kenmerken:
     - 2026-rvo-aangifte-en-akte-van-overlijden
   vervult_een_rol:
     waarde: ja
-    onderbouwing: Ketenpartner als behandelende arts (art. 3, 7, 10a, 12) en Gemeentelijke lijkschouwer als forensisch arts die het college benoemt (art. 4, 5).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - ketenpartner
+    - gemeentelijke-lijkschouwer
   soort_partij:
     waarde: ja
     onderbouwing: Bij elk overlijden schouwt een arts het lijk, als behandelende arts of als gemeentelijke lijkschouwer (art. 3, 5); een soort partij, geen individuele arts.
@@ -70,14 +30,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere actor in deze wiki.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Komt in deze wiki alleen in de lijkbezorging voor.
 toelichting: Actor die als behandelende arts ketenpartner is (meld- en overlegplicht, art. 7, 10a) en als forensisch arts gemeentelijke lijkschouwer (art. 4, 5).
 onderwerpen:
 - lijkbezorging
@@ -116,18 +68,18 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Actor Arts in plaats van Behandelende arts (synoniem, wet): behandelend is de hoedanigheid tegenover de overledene. Arts vervult Ketenpartner en Gemeentelijke lijkschouwer (art. 4, 5); Ketenpartner wordt ook toegewezen aan Schouwen lijk (art. 3). Geen directe relatie behandelt: de medische behandeling is de interne zaak van de ketenpartner en de overledene is geen element; de arts hangt via Schouwen lijk aan het Lijk.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Handelende partij (kern ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 11
+    typeregel: 9
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden

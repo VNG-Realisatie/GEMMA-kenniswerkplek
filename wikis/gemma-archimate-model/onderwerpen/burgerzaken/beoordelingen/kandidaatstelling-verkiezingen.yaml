@@ -1,41 +1,11 @@
 begrip: Kandidaatstelling verkiezingen
+hoofdkenmerk: gedrag
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Product in de UPL (nr. 205), onder Iv3-taakveld 0.2.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente biedt het product aan (UPL).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Een eigen product van de UPL.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   betekenis_in_onderwerp:
     waarde: nee
     onderbouwing: 'Hoort niet bij Burgerzaken: de organisatie van de verkiezingen (kandidaatstelling, stembureaus, stemming, uitslag) valt buiten het onderwerp (afbakening Burgerzaken). Beoordelen in een later onderwerp verkiezingen, een onderwerp dat nog niet bestaat.'
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: 'Niet beoordeeld: verwijzing naar een later onderwerp.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 toelichting: 'Verwijzing: UPL-product nr. 205 (Kieswet art. H 1, R 1, Y 2 en Ya 4) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): de organisatie van de verkiezingen (kandidaatstelling, stembureaus, stemming, uitslag) valt buiten het onderwerp (afbakening Burgerzaken). Het product krijgt zijn pagina in een later onderwerp verkiezingen.'
 beslist:
   uitkomst:
@@ -48,3 +18,5 @@ beslist:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: informatiemodel
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern

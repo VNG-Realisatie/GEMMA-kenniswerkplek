@@ -1,49 +1,6 @@
 begrip: Begraafplaats
+vak: bedrijf/passief
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Kernbegrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-wet-op-de-lijkbezorging
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Elke gemeente heeft er ten minste één (art. 33; VNG).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-wet-op-de-lijkbezorging
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-wet-op-de-lijkbezorging
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-wet-op-de-lijkbezorging
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats:
-    waarde: nee
-    onderbouwing: Beoordeeld als gemeentelijke voorziening die wordt aangelegd, beheerd, in gebruik genomen en gesloten, niet als fysieke plaats.
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elke begraafplaats apart, met naam (Groningen art. 3 lid 1).
@@ -56,10 +13,11 @@ kenmerken:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: De gemeente beheert gemeentelijke begraafplaatsen en beslist over ingebruikname en sluiting (art. 41, 43, 44; Groningen art. 3 lid 2).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - beheren-begraafplaatsen
+    - sluiten-begraafplaats
+    - uitvoeren-lijkbezorging
+    - verlenen-toestemming-bijzondere-begraafplaats
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -75,14 +33,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip in deze wiki; gemeentelijke en bijzondere begraafplaats zijn zijn specialisaties.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in de lijkbezorging voor.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Terrein waar stoffelijke overschotten worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
@@ -117,11 +67,15 @@ relaties:
   vindplaats: Wlb art. 23 lid 1, 2; Groningen art. 1 d, h
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2026-vng-wet-op-de-lijkbezorging
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 35
+    regel: 32
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -129,7 +83,7 @@ beslist:
     data_object: nee
     objectniveau: kernobject
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

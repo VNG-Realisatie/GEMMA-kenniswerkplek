@@ -2,7 +2,7 @@
 id: bekendmaking-algemeen-verbindend-voorschrift
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Bekendmaking algemeen verbindend voorschrift
 onderwerpen:
 - besluitvorming
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bekendmaking-algemeen-verbindend-voorschrift.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -50,21 +50,17 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Kenmerken
 
-Alleen de kenmerken met ja; de overige 48 zijn nee.
+**Vak**: bedrijfslaag, gedrag, extern (Dienst). **Hoofdkenmerk**: gedrag. **Soort gedrag**: aangeboden gedrag. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+
+De kenmerken met ja; de andere zijn nee.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **herkenbaar**: Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | Ja, product in de UPL (nr. 48, bekendmaking algemeen verbindend voorschrift); gangbaar: de publicatie van een verordening in het gemeenteblad. [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **gemeentelijk**: Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | Ja, het college geeft het gemeenteblad uit, en het gemeentelijke bestuursorgaan maakt zijn algemeen verbindende voorschriften daarin bekend (Bekendmakingswet art. 2 lid 2, 6). [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **eigen identiteit**: Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? | Ja, een eigen product in de UPL, niet een onderdeel van één ander begrip (nr. 48). [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **betekenis in onderwerp**: Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? | Ja, hoort bij besluitvorming: een regeling van de gemeente treedt pas na bekendmaking in werking (Bekendmakingswet art. 8). [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **gedrag**: Beschrijft het iets wat gedaan wordt of gebeurt, en geen ding, partij, plaats of regeling? | Ja, iets wat de gemeente aanbiedt: haar regelingen kenbaar maken aan ieder. [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
-| **aangeboden gedrag**: Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | Ja, een prestatie voor burgers en bedrijven: zij kunnen de geldende regels van de gemeente elektronisch en kosteloos lezen in het gemeenteblad (Bekendmakingswet art. 2, 3, 6; UPL nr. 48). [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, het algemeen verbindend voorschrift is in het gemeenteblad geplaatst en treedt in werking, zonder andere aanduiding op de achtste dag na de bekendmaking (art. 8, 10 lid 2). [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
 | **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, bij elke verordening of andere algemeen verbindende regel van de gemeente. [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
 | **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, bekendmakingswet: plaatsing in het gemeenteblad, inwerkingtreding na bekendmaking, kosteloze toegang (art. 3, 6, 8, 10). [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
 | **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger en bedrijf (UPL nr. 48): ieder die aan de regels gebonden is. [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, het bedrijfsproces Bekendmaken besluit (Bekendmakingswet art. 6; Awb art. 3:42). [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md), [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert? | Ja, met [Bekendmaken besluit](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/bekendmaken-besluit.md). |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (nr. 48), met een eigen wet; geen specialisatie van Bekendmaking, die de Awb regelt. [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Bekendmakingswet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-bekendmakingswet-wettekst.md) |
 
 ### Relaties

@@ -1,61 +1,8 @@
 begrip: Echtscheiding inschrijving
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Product in de UPL (nr. 122); Utrecht: scheiden.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente waar het huwelijk is gesloten schrijft de echtscheiding in (BW 1 art. 163; Utrecht).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat de gemeente aanbiedt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: 'Een prestatie die de gemeente levert: de echtscheiding laten inschrijven (UPL nr. 122; Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: De echtscheiding op de huwelijksakte en in de BRP; vanaf die dag is zij definitief (Utrecht).
@@ -75,9 +22,8 @@ kenmerken:
     - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: Het bedrijfsproces Inschrijven ontbinding huwelijk of partnerschap (BW 1 art. 163).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - inschrijven-ontbinding-huwelijk-of-partnerschap
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -86,9 +32,6 @@ kenmerken:
     onderbouwing: Een eigen product in de UPL (nr. 122); geen bredere dienst in deze wiki.
     bronnen:
     - 2025-vng-upl-producten-en-diensten-extern
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het laten inschrijven van een door de rechtbank uitgesproken echtscheiding in de registers van de burgerlijke stand.
 beschrijving:
 - Scheiden gaat via de rechtbank; de gemeente schrijft de beschikking in (Utrecht). Grondslag art. 163 BW 1 (UPL nr. 122).
@@ -102,18 +45,22 @@ afnemer: extern
 domein: Publieksdiensten
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
+- 2026-rijk-burgerlijk-wetboek-boek-1
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen

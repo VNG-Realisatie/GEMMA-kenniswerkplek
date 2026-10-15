@@ -1,56 +1,9 @@
 begrip: Beheren stempassen
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het verstrekken en vervangen van stempassen, kiezerspassen en volmachtbewijzen is bij elke verkiezing een taak van de burgemeester (Kieswet art. J 7, J 8, K 4, L 11); GEMMA noemt het verstrekken van stempassen bij de functie Verkiezingen gerelateerde diensten.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester verstrekt stempassen, kiezerspassen en volmachtbewijzen (Kieswet art. J 7, K 4, L 11).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: het kernobject Stempas is van dit onderwerp (UPL taakveld 0.2).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per stempas doorlopen, van de vaststelling van de gegevens tot de stemming of de ongeldigheid (Kieswet art. J 7, J 7a).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: 'Beslisser: de burgemeester beslist op het verzoek om volmacht (Kieswet art. L 11); Kiezer: ontvangt de stempas en doet verzoeken (art. J 8, K 3, L 8).'
@@ -58,9 +11,8 @@ kenmerken:
     - 2026-rijk-kieswet-bwbr0004627
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: Registreert, vervangt en beëindigt de stempas (Kieswet art. J 7, J 7a, J 8); raadpleegt de als kiezer geregistreerde personen (art. J 7 lid 1).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - stempas
   aanleiding:
     waarde: ja
     onderbouwing: De dag van de kandidaatstelling voor een verkiezing (Kieswet art. J 7 lid 1).
@@ -104,14 +56,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 kernobject: stempas
 afnemer: extern
 definitie: Het verstrekken, vervangen en ongeldig maken van stempassen, kiezerspassen en volmachtbewijzen voor een verkiezing.
@@ -156,11 +100,14 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Procesindeling kiesrecht: Stempas is kernobject van Beheren stempassen, met de deelprocessen Verstrekken stempas, Behandelen verzoek om kiezerspas en Behandelen verzoek om volmacht; de registratie van de kiesgerechtigdheid is een deelproces van Bijhouden persoonsgegevens. Geen kunstmatig object Kiezersregistratie.'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2026-rijk-kieswet-bwbr0004627
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 28
+    regel: 25
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -168,7 +115,7 @@ beslist:
     data_object: nee
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   - 2025-vng-upl-producten-en-diensten-extern

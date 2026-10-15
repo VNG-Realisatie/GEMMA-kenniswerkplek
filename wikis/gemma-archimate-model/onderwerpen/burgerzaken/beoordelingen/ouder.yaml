@@ -1,60 +1,21 @@
 begrip: Ouder
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wettelijk en gangbaar: moeder en vader of duomoeder (BW 1 art. 198, 199; HUP Geboorte; Utrecht).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rvig-hup-geboorte
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De ouder doet aangifte van de geboorte, erkent, kiest de naam en regelt het gezag bij de gemeente (BW 1 art. 5, 19e, 203, 251b).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rvig-hup-geboorte
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rvig-hup-geboorte
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De hoedanigheid van juridisch ouder van een kind, waarin iemand aangifte doet, erkent, toestemt of de naam kiest (BW 1 art. 5, 198, 199, 204).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: Ouder is een hoedanigheid van een persoon, geen partij los van die verantwoordelijkheid.
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: Toegewezen aan Opmaken geboorteakte, Opmaken akte van erkenning en Inschrijven levenloos geboren kind (BW 1 art. 19e, 203; Wet BRP art. 2.56a).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-wet-brp-bwbr0033715
+    naar:
+    - opmaken-geboorteakte
+    - opmaken-akte-van-erkenning
+    - inschrijven-levenloos-geboren-kind
+    - opmaken-akte-van-naamskeuze
+    - behandelen-aanvraag-reisdocument
+    - verwerken-vermissing-reisdocument
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elke ouder is een te onderscheiden persoon.
@@ -69,16 +30,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rvig-hup-geboorte
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Hoedanigheid van wie juridisch moeder of andere ouder van een kind is, door geboorte, huwelijk, erkenning, vaststelling of adoptie.
 beschrijving:
 - 'Een kind heeft juridisch altijd een moeder, de vrouw uit wie het is geboren of de adoptiefmoeder, en hoogstens één andere ouder: de echtgenoot of partner van de moeder, de erkenner, de ouder van wie het ouderschap is vastgesteld of de adoptiefouder (BW 1 art. 198, 199; HUP Geboorte). In de gemeentelijke praktijk heet de vrouwelijke andere ouder duomoeder (Utrecht). De ouder doet aangifte van geboorte, erkent het kind, kiest samen met de andere ouder de achternaam en heeft gezag over een minderjarig kind (BW 1 art. 5, 19e, 203, 247).'
@@ -146,18 +97,23 @@ relaties:
   vindplaats: regel 35-37
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rvig-hup-geboorte
+- 2026-utrecht-burgerzaken-geboorteaangifte-doen
+- 2026-rijk-wet-brp-bwbr0033715
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rvig-hup-geboorte

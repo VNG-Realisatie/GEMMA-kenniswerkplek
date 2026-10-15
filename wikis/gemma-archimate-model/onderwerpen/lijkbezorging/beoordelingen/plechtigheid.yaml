@@ -1,38 +1,9 @@
 begrip: Plechtigheid
+hoofdkenmerk: gedrag
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare term in de bron.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ziet of doet hierover iets.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: 'Onderdeel van Uitvoeren lijkbezorging: Herdenkingsbijeenkomst op de begraafplaats, te melden aan de beheerder; samen met het gebruik van aula en muziekinstallatie een stap rond de uitvaart (Groningen art. 6, 8; VNG-modelverordening art. 5, 8).'
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij dit onderwerp; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
 toelichting: 'Onderdeel van Uitvoeren lijkbezorging: Herdenkingsbijeenkomst op de begraafplaats, te melden aan de beheerder; samen met het gebruik van aula en muziekinstallatie een stap rond de uitvaart (Groningen art. 6, 8; VNG-modelverordening art. 5, 8).'
 genoemd_begrip: Uitvoeren lijkbezorging
 onderwerpen:
@@ -50,3 +21,6 @@ beslist:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   herkomst: gemeentelijke-regelgeving
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2010-vng-model-beheersverordening-begraafplaatsen

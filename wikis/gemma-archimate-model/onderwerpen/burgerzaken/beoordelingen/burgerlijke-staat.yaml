@@ -2,21 +2,6 @@ begrip: Burgerlijke staat
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: gehuwd, geregistreerd partner, gescheiden of weduwe (HUP Huwelijk/geregistreerd partnerschap; Utrecht Trouwen in het buitenland: ongehuwdverklaring).'
-    bronnen:
-    - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente legt huwelijk, partnerschap en ontbinding vast in akten en de BRP (BW 1 art. 63, 80a, 163; HUP Huwelijk/geregistreerd partnerschap).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: 'Een gegeven van de persoon: of hij gehuwd is of een geregistreerd partnerschap heeft, met wie, en de gegevens van sluiting en ontbinding (HUP Huwelijk/geregistreerd partnerschap; GGM burgerlijkeStaat, SluitingOfAangaanHuwelijkOfGeregistreerdPartnerschap, OntbindingHuwelijk/geregistreerdPartnerschap).'
@@ -41,3 +26,7 @@ beslist:
   - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
   - 2026-rijk-burgerlijk-wetboek-boek-1
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
+- 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
+- 2026-rijk-burgerlijk-wetboek-boek-1

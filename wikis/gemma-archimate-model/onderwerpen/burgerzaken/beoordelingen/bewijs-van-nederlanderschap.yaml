@@ -1,58 +1,8 @@
 begrip: Bewijs van nederlanderschap
+vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: UPL-product bewijs van nederlanderschap, grondslag Wet BRP art. 2.55 (UPL nr. 62); een uittreksel uit de basisadministratie is een bewijs van het bezit van het Nederlanderschap (Besluit art. 61).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente verstrekt het uittreksel uit de basisregistratie personen (UPL nr. 62).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als aanbod van de gemeente.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij burgerzaken (UPL taakveld 0.2).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Een prestatie die de gemeente levert.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag:
-    waarde: ja
-    onderbouwing: Een prestatie die de gemeente aanbiedt aan wie moet aantonen dat hij Nederlander is (UPL nr. 62).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  gezamenlijk_gedrag: nee
   benoembaar_resultaat:
     waarde: ja
     onderbouwing: Een uittreksel uit de basisregistratie personen dat het Nederlanderschap vermeldt (Besluit art. 61).
@@ -71,21 +21,11 @@ kenmerken:
     - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
-    onderbouwing: 'Verstrekken persoonsgegevens: verstrekking aan de betrokkene uit de basisregistratie personen (UPL nr. 62: Wet BRP art. 2.55).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
+    naar:
+    - verstrekken-persoonsgegevens
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 afnemer: extern
 domein: Publieksdiensten
 definitie: Het verkrijgen van een bewijs dat iemand de Nederlandse nationaliteit bezit, als uittreksel uit de basisregistratie personen.
@@ -96,18 +36,20 @@ beleidsdomein: Burgerzaken
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605

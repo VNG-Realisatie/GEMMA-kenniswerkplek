@@ -3,40 +3,11 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Nationaliteit
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Elke niet-Nederlandse nationaliteit in de BRP (HUP Vreemde nationaliteit; HUP Nationaliteit).
-    bronnen:
-    - 2026-rvig-hup-vreemde-nationaliteit
-    - 2026-rvig-hup-nationaliteit
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt haar op en beëindigt haar in de persoonslijst (HUP Vreemde nationaliteit).
-    bronnen:
-    - 2026-rvig-hup-vreemde-nationaliteit
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
   slechts_eigenschap:
     waarde: ja
     onderbouwing: Een soort, en daarmee een waarde, van het gegeven Nationaliteit (HUP Nationaliteit).
     bronnen:
     - 2026-rvig-hup-nationaliteit
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Niet los te zien van het genoemde begrip, maar wel een eigen waarde.
-    bronnen:
-    - 2026-rvig-hup-vreemde-nationaliteit
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij burgerzaken (BRP).
-    bronnen:
-    - 2026-rvig-hup-vreemde-nationaliteit
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rvig-hup-vreemde-nationaliteit
 toelichting: 'Waarde van Nationaliteit, geen pagina: de gemeente neemt een vreemde nationaliteit op op grond van een brondocument of een mededeling van de minister van Justitie en Veiligheid (Wet BRP art. 2.17) en beëindigt haar bij verlies, afstand of verkrijging van het Nederlanderschap; naast de Nederlandse nationaliteit wordt geen vreemde nationaliteit opgenomen (HUP Vreemde nationaliteit). Een processtap van Bijhouden persoonsgegevens.'
 beslist:
   uitkomst:
@@ -51,3 +22,5 @@ beslist:
   - 2026-rvig-hup-vreemde-nationaliteit
   - 2026-rvig-hup-nationaliteit
   herkomst: richtlijn
+bronnen:
+- 2026-rvig-hup-vreemde-nationaliteit

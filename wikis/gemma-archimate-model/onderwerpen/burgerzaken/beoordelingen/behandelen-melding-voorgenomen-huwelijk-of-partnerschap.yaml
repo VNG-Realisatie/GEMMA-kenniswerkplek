@@ -1,61 +1,9 @@
 begrip: Behandelen melding voorgenomen huwelijk of partnerschap
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: melding voorgenomen huwelijk of partnerschap, vroeger ondertrouw (Utrecht); wettelijk de kennisgeving van het voornemen (BW 1 art. 44, 80a).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De aanstaande echtgenoten of partners melden bij de gemeente waar zij willen trouwen (BW 1 art. 44; Utrecht).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per geval van begin tot eind doorlopen.
-    bronnen:
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: Ambtenaar van de burgerlijke stand (BW 1 art. 44 lid 1); Huwelijkszaken controleert de melding (Utrecht).
@@ -120,15 +68,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het ontvangen en toetsen van de melding van een voorgenomen huwelijk of geregistreerd partnerschap.
 synoniemen:
 - naam: Kennisgeving van het voornemen te trouwen
@@ -141,24 +80,26 @@ gemma:
 genoemd_begrip: Voltrekken huwelijk
 toelichting: 'Deelproces zonder pagina van Voltrekken huwelijk, Registreren partnerschap: het ontvangen en toetsen van de melding van een voorgenomen huwelijk of geregistreerd partnerschap.'
 relaties: []
+besluiten:
+- datum: '2026-10-08'
+  besluit: 'De klant wil trouwen of een partnerschap laten registreren: Voltrekken huwelijk en Registreren partnerschap zijn de bedrijfsprocessen, van de melding tot de akte; de melding wordt van beide een deelproces zonder pagina, de diensten van de melding gaan naar die bedrijfsprocessen en het Archi-object vervalt. Afgewezen: alle drie bedrijfsproces.'
+  gevolg: verwerkt
+bronnen:
+- 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 30
+    regel: 27
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     data_object: nee
     genoemd_begrip: Voltrekken huwelijk
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
   herkomst: rijksregelgeving
-besluiten:
-- datum: '2026-10-08'
-  besluit: 'De klant wil trouwen of een partnerschap laten registreren: Voltrekken huwelijk en Registreren partnerschap zijn de bedrijfsprocessen, van de melding tot de akte; de melding wordt van beide een deelproces zonder pagina, de diensten van de melding gaan naar die bedrijfsprocessen en het Archi-object vervalt. Afgewezen: alle drie bedrijfsproces.'
-  gevolg: verwerkt

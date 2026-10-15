@@ -3,35 +3,9 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Behandelen aanvraag reisdocument
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Wetsbegrip: de afwijzende beslissing op de aanvraag die in behandeling is genomen (Paspoortwet art. 1 onder c).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester is bevoegd tot weigering (Paspoortwet art. 44).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
   eigen_identiteit:
     waarde: nee
     onderbouwing: 'Bestaat niet los van Behandelen aanvraag reisdocument: een van de twee uitkomsten van dat bedrijfsproces, naast de verstrekking (Paspoortwet art. 1 onder c en d).'
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
 toelichting: 'Onderdeel, geen pagina: de afwijzende uitkomst van Behandelen aanvraag reisdocument. De burgemeester weigert op de gronden van hoofdstuk III, meestal na een mededeling van de minister over een signalering; hij kondigt het voornemen aan en houdt de beslissing op verzoek acht weken aan (Paspoortwet art. 44 tot en met 46). De verstrekking, de andere uitkomst, staat als synoniem (wet) bij het bedrijfsproces.'
 beslist:
   uitkomst:
@@ -45,3 +19,5 @@ beslist:
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   herkomst: rijksregelgeving
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212

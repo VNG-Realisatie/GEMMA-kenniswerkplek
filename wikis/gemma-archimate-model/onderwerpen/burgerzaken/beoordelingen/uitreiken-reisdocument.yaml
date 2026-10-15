@@ -1,58 +1,9 @@
 begrip: Uitreiken reisdocument
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Het paspoort of de ID-kaart ophalen (Utrecht); uitreiking is een wetsbegrip (Paspoortwet art. 1 onder e).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester die de aanvraag in ontvangst nam, reikt uit (Paspoortwet art. 42 lid 1).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: 'Een eigen moment in de levensloop, apart van de verstrekking: de feitelijke terbeschikkingstelling, met eigen termijnen en voorwaarden (Paspoortwet art. 1 onder d en e, 42).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Wordt per verstrekt reisdocument doorlopen.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: De Houder van het reisdocument haalt het persoonlijk op en levert zijn oude Nederlandse reisdocumenten in (Paspoortwet art. 32; Utrecht).
@@ -114,14 +65,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het na de verstrekking ter beschikking stellen van het reisdocument aan de aanvrager, die daarbij zijn oude Nederlandse reisdocumenten inlevert.
 synoniemen:
 - naam: Uitreiking
@@ -137,14 +80,14 @@ relaties: []
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 30
+    regel: 27
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     data_object: nee
     genoemd_begrip: Behandelen aanvraag reisdocument
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

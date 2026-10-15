@@ -1,41 +1,8 @@
 begrip: Schriftelijke klacht
+vak: bedrijf/passief
 onderwerpen:
 - besluitvorming
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar: een klacht schriftelijk indienen; de wet spreekt van schriftelijke klacht en klaagschrift (Awb art. 9:2, 9:4).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Het gemeentelijke bestuursorgaan ontvangt de schriftelijke klacht, behandelt haar en publiceert de klachten jaarlijks (art. 9:6, 9:12a).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als de klacht die schriftelijk wordt ingediend, met eigen eisen aan de inhoud (art. 9:4 lid 2).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij besluitvorming: de Awb regelt de schriftelijke klacht voor elk bestuursorgaan (afdeling 9.1.2).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elke schriftelijke klacht heeft een indiener, een dagtekening en een gedraging waarover geklaagd wordt (art. 9:4 lid 2).
@@ -48,9 +15,8 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: Behandelen klacht ontvangt en behandelt de schriftelijke klacht (art. 9:6, 9:12a).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+    naar:
+    - behandelen-klacht
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -66,11 +32,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder object in deze wiki.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   generiek:
     waarde: ja
     onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp, voor elk bestuursorgaan (art. 9:1, 9:4).
@@ -93,11 +54,11 @@ gemma:
 relaties: []
 naamkeuze:
 - 'Schriftelijke klacht: de gangbare term, die ook in de wet staat (Awb art. 9:2, 9:4 lid 1); de wetsterm Klaagschrift is een synoniem (regel Bronvoorrang). De naam Klacht is van de UPL-dienst.'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 32
+    regel: 29
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -105,7 +66,7 @@ beslist:
     data_object: nee
     objectniveau: generiek
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving

@@ -1,53 +1,16 @@
 begrip: Indiener
+vak: bedrijf/actief-intern
+hoofdkenmerk: hoedanigheid
 onderwerpen:
 - participatie
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: De indiener van een verzoek om toepassing van het uitdaagrecht (var. 1 art. 7).
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente ondersteunt de indiener en maakt afspraken met hem (var. 1 art. 7, 9).
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig als hoedanigheid bij een verzoek.
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort bij participatie.
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid:
-    waarde: ja
-    onderbouwing: De hoedanigheid van een inwoner of maatschappelijke partij die een verzoek indient.
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   los_van_verantwoordelijkheid:
     waarde: nee
     onderbouwing: De rol bestaat alleen voor wie een verzoek wil indienen of heeft ingediend; een inwoner of maatschappelijke partij vervult haar (var. 1 art. 6 lid 1, 7 lid 1).
   voert_gedrag_uit:
     waarde: ja
-    onderbouwing: 'Toegewezen aan Behandelen verzoek uitdaagrecht: dient het verzoek in, verstrekt aanvullende informatie, wordt geïnformeerd over de doorzending en maakt bij toewijzing afspraken over de uitvoering (var. 1 art. 6, [8] lid 1, [9]; var. 2 art. [11], [13] lid 1, [14]).'
-    bronnen:
-    - 2024-vng-model-participatieverordening
+    naar:
+    - behandelen-verzoek-uitdaagrecht
   onderscheidbare_exemplaren:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld; de bronnen noemen geen gegevens over indieners naast het verzoek.
@@ -67,9 +30,6 @@ kenmerken:
     - 2026-rijk-gemeentewet-wettekst
     - 2024-vng-model-participatieverordening
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in participatie voor.
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van de inwoner of maatschappelijke partij die bij het college een verzoek uitdaagrecht indient of wil indienen.
 beschrijving:
@@ -93,18 +53,21 @@ relaties:
   bronnen:
   - 2024-vng-model-participatieverordening
   vindplaats: var. 1 art. [9]; var. 2 art. [14]
-status: goedgekeurd
+bronnen:
+- 2024-vng-implementatiehandleiding-model-participatieverordening
+- 2024-vng-model-participatieverordening
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 12
+    typeregel: 10
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2024-vng-model-participatieverordening

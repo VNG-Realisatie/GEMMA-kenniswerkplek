@@ -1,58 +1,9 @@
 begrip: Houden naturalisatieceremonie
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Naturalisatieceremonie: na goedkeuring nodigt de gemeente uit; men wordt pas Nederlander na de verklaring van verbondenheid (Utrecht; UPL nr. 261).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De burgemeester roept op, reikt de bevestiging van de optie of het uittreksel van het naturalisatiebesluit uit en neemt de verklaring van verbondenheid af (Besluit art. 2, 60a, 60b).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: bedrijfsproces onder Beheren Nederlanderschap (UPL taakveld 0.2).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: Per uitreiking doorlopen, van oproeping tot bekendmaking (Besluit art. 60a, 60b).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
     onderbouwing: 'Optant en Verzoeker om naturalisatie: verschijnen op oproeping en leggen de verklaring van verbondenheid af (Besluit art. 60a lid 2 en 4, 60b lid 2 en 4).'
@@ -114,14 +65,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het oproepen van nieuwe Nederlanders en het uitreiken van de bevestiging of het naturalisatiebesluit, na de verklaring van verbondenheid.
 synoniemen:
 - naam: Uitreiken bevestiging of uittreksel
@@ -132,17 +75,20 @@ gemma:
 genoemd_begrip: Behandelen naturalisatieverzoek
 toelichting: 'Deelproces zonder pagina van Behandelen naturalisatieverzoek, Behandelen optieverklaring: het oproepen van nieuwe Nederlanders en het uitreiken van de bevestiging of het naturalisatiebesluit, na de verklaring van verbondenheid.'
 relaties: []
+bronnen:
+- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+- 2025-vng-upl-producten-en-diensten-extern
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 30
+    regel: 27
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     data_object: nee
     genoemd_begrip: Behandelen naturalisatieverzoek
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   - 2025-vng-upl-producten-en-diensten-extern

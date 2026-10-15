@@ -27,188 +27,184 @@
       "type": "object",
       "properties": {
         "herkenbaar": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "gemeentelijk": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "buiten_dit_model": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "slechts_eigenschap": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "eigen_identiteit": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "betekenis_in_onderwerp": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "gedrag": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "handelende_partij": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "hoedanigheid": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "samenwerkingsverband": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "toegangspunt": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "plaats": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "aanbod_als_geheel": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "regeling_als_geheel": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "los_van_verantwoordelijkheid": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "eigen_rechtspersoon": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "vervult_een_rol": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "voert_gedrag_uit": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "soort_partij": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "ontsluit_een_dienst": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "per_keer_doorlopen": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "groepeert_processen": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "gegroepeerd_gedrag": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "toestandsverandering": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "aangeboden_gedrag": {
-          "$ref": "#/$defs/kenmerk"
-        },
-        "gezamenlijk_gedrag": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "toegewezen_partij": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "gebruikt_objecten": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "aanleiding": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "benoembaar_resultaat": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "komt_herhaald_voor": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "eigen_normering": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "stabiel_over_tijd": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "afnemer": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "gerealiseerd_door": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "leidt_tot_gedrag": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "bijdrage_aan_groter_proces": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "klant_tot_klant": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "omvat_processen": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "omvat_levensloop": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "eigen_besluit": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "levert_aanbod": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "bedient_gedrag": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "in_functie_indeling": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "leidt_tot_gebeurtenis": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "onderscheidbare_exemplaren": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "levenscyclus": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "wordt_bewerkt": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "afspraak": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "waarneembare_vorm": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "deel_van_object": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "invoer_van_een_ander": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "zelfstandig_aanbod": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "omvat_diensten_en_afspraken": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "geautomatiseerd_verwerkt": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "landelijk": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "in_werking": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "is_grondslag_voor": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "zelfstandige_specialisatie": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         },
         "generiek": {
-          "$ref": "#/$defs/kenmerk"
+          "$ref": "#/$defs/antwoord"
         }
       },
       "additionalProperties": false,
-      "description": "De kenmerken op het pad (tools/bepaal_type.py vragen); buiten het pad leidt het script nee af. Een kale nee alleen in Aard en Soort gedrag (script)"
+      "description": "De kenmerken op het pad (tools/bepaal_type.py vragen); een poortkenmerk alleen bij een afwijking. Buiten het pad leidt het script de standaardwaarde af"
+    },
+    "vak": {
+      "enum": [
+        "bedrijf/actief-intern",
+        "bedrijf/actief-extern",
+        "bedrijf/gedrag-intern",
+        "bedrijf/gedrag-extern",
+        "bedrijf/passief",
+        "bedrijf/samengesteld",
+        "motivatie",
+        "overig/samengesteld"
+      ],
+      "description": "Fase A, eerste keuze: het vak in de ArchiMate-matrix (laag, aspect, intern of extern)"
+    },
+    "hoofdkenmerk": {
+      "enum": [
+        "gedrag",
+        "handelende_partij",
+        "hoedanigheid",
+        "samenwerkingsverband",
+        "toegangspunt",
+        "plaats",
+        "aanbod_als_geheel",
+        "regeling_als_geheel",
+        "ding"
+      ],
+      "description": "Fase A: het dominante kenmerk binnen het vak, of `ding` in het passieve vak; alleen nodig als het vak er meer heeft"
+    },
+    "soort_gedrag": {
+      "enum": [
+        "per_keer_doorlopen",
+        "groepeert_processen",
+        "gegroepeerd_gedrag",
+        "toestandsverandering",
+        "aangeboden_gedrag",
+        "gezamenlijk_gedrag"
+      ],
+      "description": "Fase A, bij gedrag: de soort gedrag binnen het vak; alleen nodig als het vak er meer heeft"
     },
     "synoniem_van": {
       "type": "string",
@@ -851,22 +847,10 @@
   },
   "additionalProperties": false,
   "$defs": {
-    "kenmerk": {
-      "oneOf": [
-        {
-          "$ref": "#/$defs/antwoord"
-        },
-        {
-          "const": "nee",
-          "description": "Een nee zonder onderbouwing"
-        }
-      ]
-    },
     "antwoord": {
       "type": "object",
       "required": [
-        "waarde",
-        "onderbouwing"
+        "waarde"
       ],
       "properties": {
         "waarde": {
@@ -877,13 +861,60 @@
         },
         "onderbouwing": {
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "description": "Verplicht, behalve bij een relationeel kenmerk met ja waarvan `naar` alleen element-id's noemt (script)"
         },
         "bronnen": {
           "type": "array",
           "items": {
             "type": "string"
           }
+        },
+        "naar": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "oneOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                "description": "Het id van het element; bestaat de relatie, dan steunt het kenmerk op haar bron"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "naam",
+                  "type"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "naam": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "enum": [
+                      "actor",
+                      "bedrijfsfunctie",
+                      "bedrijfsinteractie",
+                      "bedrijfsobject",
+                      "bedrijfsproces",
+                      "bedrijfssamenwerking",
+                      "beleidskader",
+                      "dienst",
+                      "gebeurtenis",
+                      "kanaal",
+                      "product",
+                      "rol",
+                      "procescluster"
+                    ]
+                  }
+                },
+                "description": "Een tegenpartij die (nog) geen element is: naam en paginatype"
+              }
+            ]
+          },
+          "description": "Alleen bij een relationeel kenmerk (vervult_een_rol, voert_gedrag_uit, ontsluit_een_dienst, toegewezen_partij, gebruikt_objecten, aanleiding, gerealiseerd_door, leidt_tot_gedrag, bijdrage_aan_groter_proces, omvat_processen, levert_aanbod, bedient_gedrag, in_functie_indeling, leidt_tot_gebeurtenis, wordt_bewerkt, omvat_diensten_en_afspraken, is_grondslag_voor) met ja: de tegenpartij van de relatie (O3)"
         },
         "gemma_relatie": {
           "type": "array",

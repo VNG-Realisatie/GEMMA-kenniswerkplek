@@ -1,47 +1,8 @@
 begrip: Reglement rijbewijzen
+vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Gangbare naam van de algemene maatregel van bestuur over rijbewijzen (BWBR0008074); de UPL noemt het als grondslag van vier producten.
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2025-vng-upl-producten-en-diensten-extern
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Geeft de burgemeester de aanvraag van een rijbewijs bij de gemeente van inschrijving, de doorgeleiding naar de Dienst Wegverkeer in bepaalde gevallen en de inneming van een buitenlands rijbewijs (art. 27, 28, 29, 109).
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: 'Hoort bij burgerzaken: grondslag van de bedrijfsprocessen en diensten van het rijbewijs (UPL taakveld 0.2).'
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2025-vng-upl-producten-en-diensten-extern
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel:
-    waarde: ja
-    onderbouwing: Een concreet benoemde regeling als geheel (BWBR0008074).
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
@@ -57,18 +18,14 @@ kenmerken:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   is_grondslag_voor:
     waarde: ja
-    onderbouwing: 'Art. 26 tot en met 29 en 33 (aanvraag bij de burgemeester), 35 (vernieuwing), 39 (vermissing), 45 (omwisseling), 105 tot en met 109 (afgifte, vervangend rijbewijs, inname): grondslag van Behandelen aanvraag rijbewijs, Behandelen aanvraag omwisseling buitenlands rijbewijs, Uitreiken rijbewijs, Verwerken vermissing rijbewijs en de diensten Rijbewijs aanvragen, Rijbewijs verlengen, Rijbewijs buitenlands omwisseling (UPL nr. 360 tot en met 363; nr. 362 rijbewijs gezondheidsverklaring is een onderdeel van Rijbewijs aanvragen: de controle van de verklaring van geschiktheid).'
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-    - 2025-vng-upl-producten-en-diensten-extern
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
+    naar:
+    - behandelen-aanvraag-rijbewijs
+    - behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
+    - verwerken-vermissing-rijbewijs
+    - rijbewijs-aanvragen
+    - rijbewijs-verlengen
+    - rijbewijs-buitenlands-omwisseling
+    - vermissing-of-diefstal-rijbewijs-doorgeven
 definitie: Algemene maatregel van bestuur met de regels voor de aanvraag, afgifte en omwisseling van rijbewijzen en de verklaringen van rijvaardigheid en geschiktheid.
 beschrijving:
 - 'Het Reglement rijbewijzen (BWBR0008074) werkt de Wegenverkeerswet 1994 uit: de aanvraag bij de burgemeester van de gemeente van inschrijving (hoofdstuk II, art. 26 tot en met 45), de verklaringen van rijvaardigheid en geschiktheid die het CBR registreert (hoofdstuk III en IV, art. 97 en 100) en de afgifte (hoofdstuk V, art. 104a tot en met 121). De gezondheidsverklaring dient de aanvrager bij het CBR in (art. 100). Rijexamens, vakbekwaamheid en de registratie van gegevens vallen buiten dit onderwerp.'
@@ -134,18 +91,18 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
 regelgever: rijk
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 16
+    typeregel: 14
   bronnen:
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   - 2025-vng-upl-producten-en-diensten-extern

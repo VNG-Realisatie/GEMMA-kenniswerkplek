@@ -1,44 +1,8 @@
 begrip: Akte van de burgerlijke stand
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Kernbegrip van Boek 1 BW en het Besluit burgerlijke stand: de akte van geboorte, huwelijk, partnerschap, overlijden en andere (BW 1 art. 18, 19, 22; Besluit burgerlijke stand hoofdstuk 2).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand van de gemeente maakt de akten op en neemt ze op in de registers van de gemeente (BW 1 art. 16, 16a).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Elke akte staat in een register van de gemeente, per soort (BW 1 art. 16a, 17).
@@ -51,10 +15,21 @@ kenmerken:
     - 2026-rijk-burgerlijk-wetboek-boek-1
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand maakt de akte op en voegt latere vermeldingen toe; de gemeente verwerkt de akte als brondocument in de BRP (BW 1 art. 18, 20; HUP Algemeen).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rvig-hup-algemeen
+    naar:
+    - bijhouden-burgerlijke-stand
+    - bijhouden-persoonsgegevens
+    - inschrijven-ingezetene
+    - inschrijven-ontbinding-huwelijk-of-partnerschap
+    - opmaken-akte-levenloos-geboren-kind
+    - opmaken-akte-van-erkenning
+    - opmaken-akte-van-naamskeuze
+    - opmaken-akte-van-overlijden
+    - opmaken-geboorteakte
+    - registreren-partnerschap
+    - toevoegen-latere-vermelding
+    - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
+    - voltrekken-huwelijk
+    - wijzigen-geslachtsvermelding
   afspraak:
     waarde: nee
     onderbouwing: Geen overeenkomst tussen partijen.
@@ -73,14 +48,6 @@ kenmerken:
     bronnen:
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
     - 2026-rvig-hup-algemeen
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: 'Geen breder begrip in deze wiki; de akten per soort zijn specialisaties zonder eigen pagina: ze worden door hetzelfde proces bijgehouden en verschillen alleen in de gegevens die de wet per soort vraagt (Besluit burgerlijke stand hoofdstuk 2).'
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Akte die de ambtenaar van de burgerlijke stand opmaakt over een geboorte, huwelijk, partnerschap, overlijden of ander feit van de burgerlijke stand.
 beschrijving:
 - De ambtenaar van de burgerlijke stand neemt de akten en latere vermeldingen op in de registers van geboorten, huwelijken, geregistreerde partnerschappen en overlijden van de gemeente; een akte bevat alleen de gegevens die de wet vraagt en heeft de bewijskracht van een authentieke akte (BW 1 art. 16a, 18, 22). Het Besluit burgerlijke stand regelt per aktesoort de inhoud (hoofdstuk 2).
@@ -124,11 +91,11 @@ homoniemen:
   waar: UPL-lijst extern
   element: uittreksel-burgerlijke-stand
   naamkeuze: 'Deze pagina heet Akte van de burgerlijke stand: de akte zelf. De dienst heet Uittreksel burgerlijke stand, met de UPL-naam als synoniem.'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 35
+    regel: 32
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -136,8 +103,10 @@ beslist:
     data_object: ja
     objectniveau: kernobject
     generiek: false
-    typeregel: 21
+    typeregel: 18
   voor_te_leggen:
+  - gegevensobject zonder sterke GGM-match
+  open:
   - gegevensobject zonder sterke GGM-match
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1

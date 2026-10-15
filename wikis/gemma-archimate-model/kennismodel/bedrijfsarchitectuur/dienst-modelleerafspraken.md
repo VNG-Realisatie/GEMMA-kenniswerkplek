@@ -8,7 +8,7 @@ titel: Dienst — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Business Service* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `dienst`
+*Business Service* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/gedrag-extern` · paginatype `dienst`
 
 | Afspraak | Inhoud |
 |---|---|

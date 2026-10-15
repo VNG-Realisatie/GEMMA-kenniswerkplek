@@ -1,70 +1,17 @@
 begrip: Bijhouden burgerlijke stand
+vak: bedrijf/gedrag-intern
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand is belast met het opnemen van akten en latere vermeldingen in de registers van de burgerlijke stand en verricht onverwijld de werkzaamheden voor het houden van de registers (BW 1 art. 16a; Besluit burgerlijke stand art. 5).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: Elke gemeente houdt registers van geboorten, huwelijken, geregistreerde partnerschappen en overlijden bij, door ambtenaren die burgemeester en wethouders aanwijzen (BW 1 art. 16, 17).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen:
-    waarde: ja
-    onderbouwing: 'Wordt per akte doorlopen: opmaken op aangifte of verklaring, latere vermeldingen toevoegen, bewaren en afschriften en uittreksels afgeven (BW 1 art. 18, 20, 23; Besluit burgerlijke stand art. 6, 26).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering: nee
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Ambtenaar van de burgerlijke stand (BW 1 art. 16a).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - ambtenaar-van-de-burgerlijke-stand
   gebruikt_objecten:
     waarde: ja
-    onderbouwing: 'Registreert en bijwerkt de akte van de burgerlijke stand: opmaken en latere vermeldingen toevoegen (BW 1 art. 18, 20); verstrekt afschriften en uittreksels (art. 23).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     onderbouwing: Een aangifte (geboorte, overlijden), een verklaring of kennisgeving (erkenning, naamskeuze, voornemen te trouwen) of een rechterlijke uitspraak of besluit (BW 1 art. 19e, 19h, 44, 203, 20).
@@ -111,15 +58,6 @@ kenmerken:
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het opmaken en bijhouden van de akten van de burgerlijke stand in de registers van de gemeente, van opmaken tot latere vermelding en afgifte.
 beschrijving:
 - De ambtenaar van de burgerlijke stand maakt de akten op van geboorte, erkenning, naamskeuze, huwelijk, geregistreerd partnerschap, omzetting en overlijden, schrijft rechterlijke uitspraken en buitenlandse akten in en voegt latere vermeldingen toe, zoals een naamswijziging, adoptie, geslachtswijziging of echtscheiding (BW 1 art. 16a, 18, 20). Hij weigert een akte bij ongenoegzame bescheiden of strijd met de openbare orde; de belanghebbende kan dan de rechtbank verzoeken (art. 18c, 27).
@@ -282,11 +220,11 @@ bronnen:
 - 2026-rvig-hup-algemeen
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 28
+    regel: 25
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
@@ -294,7 +232,7 @@ beslist:
     data_object: nee
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rvig-hup-algemeen
   - 2026-rijk-burgerlijk-wetboek-boek-1

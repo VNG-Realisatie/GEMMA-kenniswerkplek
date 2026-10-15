@@ -8,7 +8,7 @@ titel: Product — modelleerafspraken
 
 <!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
-*Product* in ArchiMate · laag Bedrijfsarchitectuur · paginatype `product`
+*Product* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/samengesteld` · paginatype `product`
 
 | Afspraak | Inhoud |
 |---|---|

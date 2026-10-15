@@ -1,57 +1,9 @@
 begrip: Inlevering van het reisdocument
+vak: bedrijf/gedrag-intern
+soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: Wetsbegrip inlevering (Paspoortwet art. 32, 56); HUP Inhouding.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt het ingeleverde reisdocument in ontvangst en registreert de inlevering (HUP Inhouding).
-    bronnen:
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: 'Ja, een eigen moment in de levensloop van het reisdocument, waarna het wordt ingehouden: de houder levert het in, of het blijkt aan de balie vervallen, beschadigd of foutief (Paspoortwet art. 54 lid 1, 56).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  gedrag:
-    waarde: ja
-    onderbouwing: Iets wat gedaan wordt.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
-  per_keer_doorlopen: nee
-  groepeert_processen: nee
-  gegroepeerd_gedrag: nee
-  toestandsverandering:
-    waarde: ja
-    onderbouwing: Ja, het reisdocument komt bij een tot inhouding bevoegde autoriteit en is niet meer bij de houder (Paspoortwet art. 56; HUP Inhouding).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-  aangeboden_gedrag: nee
-  gezamenlijk_gedrag: nee
   komt_herhaald_voor:
     waarde: ja
     onderbouwing: Ja, bij elk vervallen, teruggevonden, beschadigd of te vervangen reisdocument (Paspoortwet art. 32, 54, 56).
@@ -59,22 +11,11 @@ kenmerken:
     - 2026-rijk-paspoortwet-bwbr0005212
   leidt_tot_gedrag:
     waarde: ja
-    onderbouwing: 'Ja, start Inhouden reisdocument: het ingeleverde document wordt ingehouden en definitief aan het verkeer onttrokken (Paspoortwet art. 54, 56; HUP Inhouding).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
+    naar:
+    - inhouden-reisdocument
   geautomatiseerd_verwerkt:
     waarde: nee
     onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 definitie: Het moment waarop een reisdocument bij een tot inhouding bevoegde autoriteit komt, doordat de houder het inlevert of het aan de balie wordt ingenomen.
 beschrijving:
 - De houder levert zijn oude Nederlandse reisdocumenten in bij de uitreiking van een nieuw document (Paspoortwet art. 32), en een vervallen of teruggevonden vermist document zo spoedig mogelijk bij een tot inhouding bevoegde autoriteit, of op haar verzoek (art. 56; HUP Inhouding). Een document wordt ook ingenomen als het aan de balie beschadigd, onbevoegd gewijzigd of foutief blijkt (art. 54 lid 1).
@@ -98,18 +39,18 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-inhouding-inlevering-vermissing
   vindplaats: Paspoortwet art. 54, 56; HUP Inhouding
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 23
     toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
     data_object: nee
     generiek: false
-    typeregel: 17
+    typeregel: 15
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-inhouding-inlevering-vermissing

@@ -1,49 +1,8 @@
 begrip: Gezag
+vak: bedrijf/passief
 onderwerpen:
 - burgerzaken
 kenmerken:
-  herkenbaar:
-    waarde: ja
-    onderbouwing: 'Gangbaar en wettelijk: ouderlijk gezag en voogdij over een minderjarige (BW 1 art. 247; NVVB Handreiking gezag; Utrecht Ouderlijk gezag aanvragen).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-nvvb-handreiking-gezag
-    - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
-  gemeentelijk:
-    waarde: ja
-    onderbouwing: De gemeente neemt het gezag op in de BRP en verstrekt het in het uittreksel met gezag; bij de erkenning legt de ambtenaar vast of de moeder alleen gezag heeft en meldt dat aan de griffier (BW 1 art. 251b; HUP Gezag over een minderjarige; Utrecht).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rvig-hup-gezag-over-een-minderjarige
-    - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
-  buiten_dit_model:
-    waarde: nee
-    onderbouwing: Geen doel, waarde, principe, losse norm, vermogen of thema.
-  slechts_eigenschap:
-    waarde: nee
-    onderbouwing: Geen eigenschap, status of indeling van één ander begrip.
-  eigen_identiteit:
-    waarde: ja
-    onderbouwing: Bestaat zelfstandig, niet als onderdeel of deelstap van één ander begrip.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-nvvb-handreiking-gezag
-    - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
-  betekenis_in_onderwerp:
-    waarde: ja
-    onderbouwing: Hoort primair bij burgerzaken; geen ander onderwerp beoordeelt het.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-nvvb-handreiking-gezag
-    - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
-  gedrag: nee
-  handelende_partij: nee
-  hoedanigheid: nee
-  samenwerkingsverband: nee
-  toegangspunt: nee
-  plaats: nee
-  aanbod_als_geheel: nee
-  regeling_als_geheel: nee
   onderscheidbare_exemplaren:
     waarde: ja
     onderbouwing: Per minderjarige een gezagsverhouding met een of twee gezaghouders (HUP Gezag over een minderjarige).
@@ -81,16 +40,6 @@ kenmerken:
     onderbouwing: Categorie 11 Gezagsverhouding van de persoonslijst (HUP Gezagsverhouding).
     bronnen:
     - 2026-rvig-hup-gezagsverhouding
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-nvvb-handreiking-gezag
-    - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
-  generiek:
-    waarde: nee
-    onderbouwing: Komt alleen in burgerzaken voor.
 genoemd_begrip: Bijhouden persoonsgegevens
 toelichting: 'Invoer van een andere partij, geen pagina: het gezag ontstaat van rechtswege of bij beschikking van de rechtbank en staat in het gezagsregister van de rechtbank (BW 1 art. 244, 252); de gemeente neemt het over in de BRP in Bijhouden persoonsgegevens en verstrekt het met de dienst BRP-uittreksel met gezag. Alleen bij de erkenning legt de ambtenaar van de burgerlijke stand vast of de moeder alleen gezag heeft (BW 1 art. 251b). Vormen: ouderlijk gezag (gezamenlijk of eenhoofdig) en voogdij; de gezagsverhouding in de BRP omvat ook curatele, die het gezag over een minderjarige uitsluit (HUP Gezagsverhouding). De GGM-entiteit Gezagsverhouding (Sociaal domein generiek) beschrijft hetzelfde begrip.'
 synoniemen:
@@ -102,17 +51,21 @@ ggm:
   guid: EAID_C18BB25F_536F_4b80_BC7C_7855DF2D7389
   sterkte: sterk
   onderbouwing: 'GGM-entiteit Gezagsverhouding (Sociaal domein generiek), met indicatie gezag minderjarige en indicatie curateleregister en een relatie naar IngeschrevenPersoon: hetzelfde als de gezagsverhouding in de BRP. De GGM-definitie is breder (ook arbeidsrelaties).'
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-nvvb-handreiking-gezag
+- 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 33
+    regel: 30
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
     data_object: ja
     genoemd_begrip: Bijhouden persoonsgegevens
     generiek: false
-    typeregel: 21
+    typeregel: 18
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-nvvb-handreiking-gezag

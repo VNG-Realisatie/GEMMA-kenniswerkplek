@@ -6,6 +6,7 @@ from test_gam_bepaal_type import (ACTOR, BELEIDSKADER, BO, DIENST, FUNCTIE, GEBE
 import beslissen
 import bepaal_type as bt
 import render
+from gam_hulp import nieuwe_vorm
 from llmwiki import beoordeling, logbook, modellen
 
 WET = "2026-overheid-gemeentewet"
@@ -30,7 +31,7 @@ def wiki(archimate_repo):
 
 
 def _element(begrip: str, ja: set[str], **extra) -> dict:
-    return {
+    return nieuwe_vorm({
         "begrip": begrip,
         "onderwerpen": ["test"],
         "kenmerken": {s: {"waarde": "ja", "onderbouwing": "Volgt uit de wet (art. 1).", "bronnen": [WET]} if s in ja
@@ -41,7 +42,7 @@ def _element(begrip: str, ja: set[str], **extra) -> dict:
         "beleidsdomein": "Vergunningen",
         "gemma": {"sterkte": "geen", "onderbouwing": "Niet in GEMMA."},
         **extra,
-    }
+    })
 
 
 def _bo(**extra) -> dict:
@@ -214,14 +215,45 @@ def test_goedgekeurd_zonder_logregel_wordt_review(wiki):
     assert _lees(wiki, "beschikking")["status"] == "review"
 
 
+
+def _rol_met_toewijzing(relaties: bool = True) -> dict:
+    toewijzing = {"soort": "toewijzing", "naar": "behandelen-aanvraag", "naam": "voert uit", "ggm_match": "geen",
+                  "bronnen": [WET], "vindplaats": "art. 3"}
+    return _element("Behandelaar", ROL, doelgroep="gemeente", relaties=[toewijzing] if relaties else [])
+
+
+def test_naar_steunt_op_de_relatie_ook_in_een_andere_beoordeling(wiki):
+    """O3: een relationeel kenmerk noemt zijn tegenpartij; de bron komt van de relatie, ook als die in de beoordeling
+    van de tegenpartij staat. Vervalt de relatie, dan blijft het kenmerk ja en mist het zijn bron: een fout."""
+    _schrijf(wiki, "beschikking", _bo())
+    _schrijf(wiki, "behandelaar", _rol_met_toewijzing())
+    proces = _proces()
+    proces["kenmerken"]["toegewezen_partij"] = {"waarde": "ja", "naar": ["behandelaar"]}
+    _schrijf(wiki, "behandelen-aanvraag", proces)
+    res = beslissen.beslissen(wiki, schrijven=False)
+    assert not [f for f in res.fouten if "behandelen-aanvraag" in f], res.fouten
+    assert res.uitkomsten["behandelen-aanvraag"]["paginatype"] == "bedrijfsproces"
+    _schrijf(wiki, "behandelaar", _rol_met_toewijzing(relaties=False))
+    res = beslissen.beslissen(wiki, schrijven=False)
+    assert any("noemt 'behandelaar', maar er is geen relatie toewijzing" in f for f in res.fouten)
+    assert any("kenmerk 'ja' zonder bron: toegewezen partij" in f for f in res.fouten)
+
+
+def test_kenmerk_nee_met_een_relatie_is_een_signaal(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    proces = _proces()   # toegang tot de beschikking, maar gebruikt objecten nee
+    _schrijf(wiki, "behandelen-aanvraag", proces)
+    res = beslissen.beslissen(wiki, schrijven=False)
+    assert any("gebruikt_objecten is nee, maar er is een relatie met beschikking" in w for w in res.waarschuwingen)
+
 @pytest.mark.parametrize("wijziging, melding", [
     (lambda d: d["relaties"][0].update(naar="onbekend"), "geen element"),
     (lambda d: d["relaties"][0].update(soort="toegang (houder)"), "toegang 'houder'"),
-    (lambda d: d["kenmerken"]["gedrag"].update(bronnen=["2026-onbekende-bron"]), "staat niet in sources/index"),
+    (lambda d: d["kenmerken"]["aanleiding"].update(bronnen=["2026-onbekende-bron"]), "staat niet in sources/index"),
     (lambda d: d.pop("definitie"), "zonder 'definitie'"),
     (lambda d: d.update(onderwerpen=["ander"]), "onderwerp 'ander'"),
     (lambda d: d.update(onverwacht="x"), "onverwacht"),
-    (lambda d: d["kenmerken"]["gedrag"].pop("bronnen"), "kenmerk 'ja' zonder bron: gedrag"),
+    (lambda d: d["kenmerken"]["aanleiding"].pop("bronnen"), "kenmerk 'ja' zonder bron: aanleiding"),
 ])
 def test_harde_fouten_schrijven_niets(wiki, wijziging, melding):
     _schrijf(wiki, "beschikking", _bo())
