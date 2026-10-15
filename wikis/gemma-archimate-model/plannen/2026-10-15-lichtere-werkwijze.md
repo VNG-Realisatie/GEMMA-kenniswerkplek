@@ -189,6 +189,21 @@ Stap 1 tot en met 3 leveren al direct winst op, ook zonder de rest.
 
 **Afwijking bij stap 9, 2026-10-15:** de regel "Levensloopproces realiseert altijd een dienst" is vervallen (besluit redacteur): een levensloopproces groepeert één of meer bedrijfsprocessen die de UPL-diensten realiseren, zoals de modelleerafspraken van Bedrijfsproces al zeggen; geen van de 14 levensloopprocessen met afnemer extern realiseert zelf een dienst. Zonder die regel blijft voor de proef één niveauvraag over (Verzorgen gemeentebegrafenis), zonder fase A en B en zonder clusters; dat is niet te vergelijken met deel 2. De proef wordt daarom het onderwerp Participatie, gemeten met de tabel "Totaal per onderwerp". De niveauvraag gaat naar de todo voor later, met de Logius-diensten van Lijkbezorging die ontbreken. Eerste meetpunt: het werkpakket van Lijkbezorging is 35.000 woorden (ongeveer 47.000 tokens), meer dan de startcontext waar dit plan van uitgaat; meet in de proef ook de omvang van het werkpakket per cluster.
 
+## Uitkomst stap 9 (2026-10-15)
+
+De proef was het onderwerp Participatie, in drie Sessies; het plan is hiermee afgerond.
+
+| | Fase 1 | Fase 2 | Fase 3 | Proef totaal | Plan "Straks" | Deel 2 |
+|---|---|---|---|---|---|---|
+| Beurten | 42 | 213 | 44 | ongeveer 300 | ongeveer 80 | 156 |
+| Totale invoer | 5,6 mln | 26,0 mln | 3,8 mln | ongeveer 35 mln | 4 à 5 mln | 48 mln |
+| Grootste context | 205.000 | 211.000 | 127.000 | 211.000 | ongeveer 80.000 | 487.000 |
+| Nieuwe besluiten | 6 | 0 | 8 | 14 | ongeveer 10 | ongeveer 30 |
+
+- De totale invoer daalde 26% ten opzichte van deel 2, maar is zeven keer de schatting. Fase 1 en 3 (9,4 mln, 86 beurten) zitten dicht bij het plan; het verschil zit in fase 2, waar drie beoordelingsagenten voor 12 begrippen 26 mln gebruikten en elk tot 160.000 à 210.000 tokens groeiden.
+- Voorleggen in één tabel werkt; fase 3 vroeg drie vervolgrondes, waaruit de zekerheid van besluiten (kennis, logica, indruk) volgde.
+- Gevolgen: tot ongeveer 15 begrippen doet de hoofdsessie fase B zelf (skill gemma-archimate-model-update, stap 8). De besluiten zijn opgeschoond (328 naar 107, het deel besluiten in het werkpakket ongeveer 70% kleiner), een besluit legt alleen nog inhoud vast, de status `kandidaat` en het opnemen-besluit vervallen, en de besluiten tellen niet meer mee in de hash van het akkoord. De open bevindingen staan in `todo.md`.
+
 ## Todo (nieuw punt in `wikis/gemma-archimate-model/todo.md`)
 
 **ArchiMate-indeling als eerste selectie in de beslistabel** (vraag redacteur 2026-10-15). De AI kiest eerst het vak in de ArchiMate-matrix: de laag (bedrijf, applicatie, technologie, motivatie, …) en het aspect (actieve structuur, gedrag, passieve structuur), met intern of extern. De bestaande kenmerken worden de controle op die keuze. Nu herkent de aard vooral de actieve structuur en het gedrag; een passief ding is "geen van de acht". Product en Locatie passen niet in één aspect; bepaal waar ze komen. Winst: fase A wordt een paar keuzes; de redacteur beoordeelt in de taal van ArchiMate; de applicatielaag wordt een laag in dezelfde matrix. Het raakt `bepaal_type.py`, het schema en alle beoordelingen (omzetting met een script, de uitkomsten moeten gelijk blijven). Een eigen klus op denkniveau hoog, na de lichtere werkwijze en vóór de Applicatielaag.

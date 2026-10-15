@@ -2,16 +2,14 @@
 
 Het actieve werk van deze wiki; de rest staat in [todo-later.md](todo-later.md). Een punt verdwijnt als het is afgehandeld; de afhandeling staat in de commit.
 
-## Werkwijze lichter maken (vraag redacteur 2026-10-14, eerst, vóór het volgende onderwerp)
+## Bevindingen uit de proef van de lichtere werkwijze (plan 2026-10-15, stap 9 afgerond)
 
-Uitgevoerd volgens het goedgekeurde plan [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-15-lichtere-werkwijze.md), stap 1 tot en met 8. Stap 9, de proef, is het onderwerp Participatie (Herbeoordeling hieronder), gemeten volgens het plan (Afwijking bij stap 9).
-
-Bevindingen uit fase 2 van de proef (2026-10-15), voor te leggen bij de samenvatting van de proef:
+De uitkomst staat in [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-15-lichtere-werkwijze.md), Uitkomst stap 9. Open uit fase 2:
 
 - **Werkpakket in fase B zonder passages en kandidaten.** `tools/werkpakket.py` geeft ze standaard alleen voor begrippen zonder beoordeling; in fase B hebben alle begrippen er een, dus stap 7 van skill gemma-archimate-model-update vraagt `--alles`.
 - **Geen werkpakket voor het cluster zonder kernobject.** Het hele werkpakket met `--alles` was 21.243 woorden; een optie om op id's te filteren (bijvoorbeeld `--ids`) maakt het klein.
 - **`tools/bronduiding.py citaat` leest geen bron met varianten en artikelnummers tussen haken** (de VNG-modelverordening Participatie): de citaten zijn overgetypt en met `controleer` nagekeken.
-- **Beoordelingsagenten lezen precedenten buiten hun opdracht** (bestaande beoordelingen en code, 3.500 à 5.000 woorden) en hebben 44 à 65 beurten; bij een klein onderwerp is fase B in de hoofdsessie waarschijnlijk goedkoper (meting in `handoff.md`).
+- **Beoordelingsagenten lezen precedenten buiten hun opdracht** (bestaande beoordelingen en code, 3.500 à 5.000 woorden). Sinds het opschonen van de besluiten staan brede besluiten als regel in het kennismodel; meet bij het volgende onderwerp met agenten of het lezen buiten de opdracht afneemt.
 
 ## ArchiMate-indeling als eerste selectie in de beslistabel (vraag redacteur 2026-10-15, na de lichtere werkwijze en vóór de Applicatielaag)
 

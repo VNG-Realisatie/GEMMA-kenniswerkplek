@@ -36,7 +36,7 @@ Sluit af met `handoff.md` (de clusters met hun id's en de besluiten) en een star
 | # | Stap | Denkniveau | Hoe | Resultaat |
 |---|---|---|---|---|
 | 7 | Werkpakketten | laag | Per cluster `uv run python tools/werkpakket.py <onderwerp> --cluster <kernobject>`. Een cluster is een kernobject met zijn processen, gebeurtenissen en diensten. Actoren, rollen, beleidskaders, functies en kanalen zonder kernobject vormen samen één cluster, met het werkpakket van het hele onderwerp | werkpakketten |
-| 8 | Beoordelingsagenten | hoog | Start per cluster een subagent op denkniveau hoog, parallel, met de opdracht hieronder. Bij één cluster of een handvol begrippen doet de hoofdsessie fase B zelf, met dezelfde opdracht | beoordelingen met fase B |
+| 8 | Beoordelingsagenten | hoog | Start per cluster een subagent op denkniveau hoog, parallel, met de opdracht hieronder. Tot ongeveer 15 begrippen doet de hoofdsessie fase B zelf, per cluster, met dezelfde opdracht | beoordelingen met fase B |
 | 9 | Verslagen bundelen | hoog | Zet de terugmeldingen uit de verslagen in de registers (`references/terugmeldingen.md`). Maak een nieuw begrip dat een agent noemt aan met fase A, en wijs het een cluster toe. Volgt het antwoord op een vraag uit een besluit of uit een ander cluster, beantwoord haar dan zelf; anders blijft ze in `vragen:` voor fase 3. Moet een agent verder, zet dan dezelfde agent voort in plaats van een nieuwe te starten | registers, `vragen:` |
 | 10 | Beslissen | hoog | `uv run python tools/beslissen.py`. Los hier de fouten tussen clusters op, zoals relaties en dubbele begrippen | status, pagina's |
 
