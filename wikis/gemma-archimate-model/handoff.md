@@ -19,11 +19,17 @@ Overdracht naar de volgende Sessie (2026-10-15). Wordt bij elke overdracht overs
   - `tools/afronden.py --bericht "<prefix>: …"` (na `promote apply`): weigert zonder gewijzigde `log.md`, draait commit-check op het bericht, export-check, export, render-check en lint, en commit pas als alles slaagt (`--droog` toont de stappen). Skill update, stap 16 en 17, verwijst ernaar.
   - Controle: pytest (246) en lint zonder fouten; `beslissen.py` werkt 0 bestanden bij, `render.py --check` en `archimate_export.py --check` slagen. Tests: een sjabloon komt na invullen van de TODO's door `beslissen.py` als dienst en als bedrijfsproces.
   - Niet gebouwd: andere patronen dan upl-dienst (komt erbij als een patroon zich herhaalt); afronden is niet in een echte `promote apply`-cyclus gedraaid (dat gebeurt in de proef, stap 9).
-- Nog niet gedaan: compacte uitvoer van `llmwiki promote plan` (valt onder stap 8, of als eigen punt in de todo).
+- Stap 7 uitgevoerd (commits "tools: bronduiding.py", "rules: bronduiding in de skills"):
+  - `tools/bronduiding.py`: `delen <bron-id>` (koppen met regelnummer), `citaat <bron-id> "art. 6 lid 2" [--schrijf <bronduiding>]` (letterlijke tekst uit `sources/raw/`, zonder de ruis van wetten.nl) en `controleer <bronduiding>…`. Met tests (`test_gam_bronduiding.py`).
+  - De controle vergelijkt woorden (leestekens, opmaak, opsommingstekens en regelafbreking tellen niet; `…` laat tekst weg) en komt als waarschuwing in `beslissen.py` (regel Elke claim een bron), geen fout: 11 bestaande citaten staan niet letterlijk in de bron.
+  - Skill ingest §4: één bronduiding per bron (bestaande aanvullen, wiki-breed zoeken), alleen de delen van de wet die het onderwerp raken, citaten uit het script. Update-skill, stap 2, en de kaart verwijzen ernaar.
+  - B4 gelezen als: de bronduiding dekt alleen de relevante delen en wordt na fase A aangevuld. Stap 2 blijft vóór het werkpakket, want het werkpakket leest de `## Kernbegrippen` uit de bronduidingen.
+  - Controle: pytest (410) en lint zonder fouten; `beslissen.py` werkt 0 bestanden bij, `render.py --check` en `archimate_export.py --check` slagen.
+- Nog niet gedaan: de 11 citaten die niet letterlijk zijn (per geval aan de redacteur voorleggen; daarna de waarschuwing een fout maken); compacte uitvoer van `llmwiki promote plan` (valt onder stap 8, of als eigen punt in de todo).
 
 ## Scope
 
-Stap 7 van het plan: **bronduiding** (B4, C4, D2) in skill `gemma-archimate-model-ingest`. Klaar als een nieuwe bronduiding met citaten uit het script komt. Denkniveau middel. Lees uit het plan alleen de rijen B4, C4 en D2, de rij van stap 7 en de sectie Controle. Daarna stap 8 en verder, elk in een eigen commit na akkoord.
+Stap 8 van het plan: **G2, G4, G5, E4** (export op verzoek, woordbudget, opruimen, de todo splitsen). Klaar als lint met budget zonder fouten slaagt. Denkniveau laag. Lees uit het plan alleen de rijen G2, G4, G5 en E4, de rij van stap 8 en de sectie Controle. Daarna stap 9 (proef) in eigen Sessies per fase. De 11 niet-letterlijke citaten kunnen eerst: leg ze per geval voor met `uv run python tools/bronduiding.py controleer $(find onderwerpen modellen -path '*bronduidingen*' -name '*.md')`.
 
 ## Besluiten die gelden
 
@@ -44,10 +50,10 @@ Stap 7 van het plan: **bronduiding** (B4, C4, D2) in skill `gemma-archimate-mode
 
 ## Modeladvies
 
-Stap 7 vraagt denkniveau middel: een skill en een script rond bronduidingen, met weinig afweging. Een sneller model of een gemiddelde redeneerinspanning volstaat. Begin een nieuwe Sessie.
+Stap 8 vraagt denkniveau laag: scripts draaien en regels bijwerken. Een sneller model volstaat. Begin een nieuwe Sessie. De proef (stap 9) vraagt weer hoog, in een Sessie per fase.
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en voer stap 7 uit van plannen/2026-10-15-lichtere-werkwijze.md (sectie Uitvoering): bronduiding (B4, C4, D2) in skill gemma-archimate-model-ingest. Lees uit het plan alleen de rijen B4, C4 en D2, de rij van stap 7 en de sectie Controle. Klaar als een nieuwe bronduiding met citaten uit het script komt, en pytest en lint zonder fouten zijn. Leg kort voor wat je bouwt, voer uit na mijn akkoord, en commit met een prefix.
+Lees wikis/gemma-archimate-model/handoff.md en voer stap 8 uit van plannen/2026-10-15-lichtere-werkwijze.md (sectie Uitvoering): G2, G4, G5 en E4. Lees uit het plan alleen de rijen G2, G4, G5 en E4, de rij van stap 8 en de sectie Controle. Klaar als lint met budget zonder fouten slaagt, en pytest ook. Leg kort voor wat je bouwt, voer uit na mijn akkoord, en commit met een prefix. Begin eventueel met de 11 niet-letterlijke citaten uit de handoff, per geval aan mij voorgelegd.
 ```

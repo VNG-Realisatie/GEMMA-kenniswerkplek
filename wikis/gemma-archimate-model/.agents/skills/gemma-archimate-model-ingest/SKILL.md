@@ -49,6 +49,12 @@ Lees de bron en bespreek met de redacteur, vóór je schrijft: hoe rijk is de br
 
 ## 4. Bronduiding schrijven
 
+**Eén bronduiding per bron, per deel van de wet.** Zoek eerst of de bron al een bronduiding heeft, in welk onderwerp dan ook: `ls onderwerpen/*/bronduidingen/*/<bron-id>.md modellen/*/bronduidingen/*/<bron-id>.md`. Bestaat zij, vul haar dan aan met de delen die dit onderwerp raakt en zet de bron alleen in `bronnen` van `afbakening.yaml` van dit onderwerp; maak geen tweede bronduiding. Links naar de bron lossen wiki-breed op naar die ene bronduiding.
+
+**Alleen de delen die een element onderbouwen.** Bij een wet: `uv run python tools/bronduiding.py delen <bron-id>` toont de hoofdstukken, afdelingen en artikelen met regelnummer. Duid alleen de delen die begrippen, relaties of een grondslag voor dit onderwerp leveren; zeg in de *Samenvatting* welke delen dat zijn en welke je liet liggen. Blijkt na fase A dat een element een ander deel nodig heeft, vul de bronduiding dan aan (kernbegrippen, relaties, citaten); de bronduiding hoeft niet vooraf af te zijn.
+
+**Citaten komen uit het script, niet uit het geheugen.** `uv run python tools/bronduiding.py citaat <bron-id> "art. 6 lid 2" --schrijf <bronduiding.md>` haalt de letterlijke tekst uit `sources/raw/` en zet haar met de vindplaats onder `## Citaten` (zonder `--schrijf` toont het de regel). Voor een bron zonder artikelen (een webpagina, een handreiking) typ je het citaat over uit de brontekst, met de kop of het alineanummer als vindplaats; weglaten kan met `…`. `uv run python tools/bronduiding.py controleer <bronduiding.md>` meldt een citaat dat niet letterlijk in de bron staat (leestekens en opmaak tellen niet); `tools/beslissen.py` geeft dezelfde melding als waarschuwing (regel Elke claim een bron). Los die op door het citaat te herstellen, niet door de bron te wijzigen.
+
 Pad `onderwerpen/<onderwerp>/bronduidingen/<brontype>/<bron-id>.md`, met het brontype uit de intake (regel Bronvoorrang; `tools/beslissen.py` controleert de map) (schema `schemas/bronduiding.schema.json`):
 
 ```markdown
