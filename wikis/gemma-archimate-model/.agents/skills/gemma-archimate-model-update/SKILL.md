@@ -5,7 +5,7 @@ metadata:
   kind: workflow
   scope: wiki
   requires-skills: "wiki-curatie-update gemma-archimate-model-ingest gemma-archimate-model-criteria gemma-archimate-model-beoordelen gemma-archimate-model-archimate-export"
-  requires-tools: "llmwiki python:tools/werkpakket.py python:tools/bepaal_type.py python:tools/beoordeling.py python:tools/beslissen.py python:tools/render.py python:tools/relaties.py python:tools/ggm.py python:tools/gemma.py python:tools/archimate_export.py"
+  requires-tools: "llmwiki python:tools/werkpakket.py python:tools/bepaal_type.py python:tools/beoordeling.py python:tools/beslissen.py python:tools/render.py python:tools/relaties.py python:tools/ggm.py python:tools/gemma.py python:tools/archimate_export.py python:tools/afronden.py"
 ---
 
 # Workflow gemma-archimate-model-update
@@ -59,8 +59,8 @@ Je bent beoordelingsagent voor het cluster <kernobject> van het onderwerp <onder
 | 13 | Bekijken | redacteur | laag | Per afgerond onderwerp of deel, niet per begrip: `uv run python -m llmwiki promote plan [--onderwerp <id>]` en de samenvatting in de chat tonen. De redacteur leest `ter-beoordeling.md`, de pagina's en de wijzigingen in Source Control. Wil de redacteur iets anders, pas dan de beoordeling aan en ga terug naar stap 11 | — |
 | 14 | Akkoord | redacteur | laag | De redacteur typt AKKOORD. "Prima" of "ziet er goed uit" is geen akkoord; vraag dan opnieuw | — |
 | 15 | Vastleggen | script | laag | `uv run python -m llmwiki promote apply --akkoord-woord AKKOORD`, als los commando, nooit samen met lint of commit. Het harness vraagt de redacteur om een klik, en die klik geldt alleen voor het akkoord | `goedgekeurd`, `log.md`, pagina's |
-| 16 | Exporteren | script | laag | Direct na stap 15, zonder nieuwe vraag: het AKKOORD dekt de export. Skill `gemma-archimate-model-archimate-export`, stap 1 en 2: `uv run python tools/archimate_export.py --check`, dan `uv run python tools/archimate_export.py`. Geef het rapport door zoals die skill voorschrijft. Weigert de export, meld dan waarom en commit niet voordat het is opgelost | `export/gemma-archimate-model.archimate`, `export/rapport.md` |
-| 17 | Commit | redacteur of AI | laag | Direct na stap 16, zonder nieuwe vraag, op main, met een prefix (AGENTS.md, Werkwijze; controle: `uv run python -m llmwiki commit-check <bestand>`). Commit de beoordelingen, de pagina's, `log.md`, de export en `handoff.md` samen; de pre-commit-controle eist dat de pagina's gelijk zijn aan de render. Importeren in GEMMA doet de redacteur (skill `gemma-archimate-model-archimate-export`, stap 4) | Git |
+| 16 | Exporteren | script | laag | Direct na stap 15, zonder nieuwe vraag: het AKKOORD dekt de export. Skill `gemma-archimate-model-archimate-export`, stap 1 en 2: `uv run python tools/archimate_export.py --check`, dan `uv run python tools/archimate_export.py`. Geef het rapport door zoals die skill voorschrijft. Weigert de export, meld dan waarom en commit niet voordat het is opgelost. Stap 16 en 17 kunnen samen met `uv run python tools/afronden.py --bericht "<prefix>: …"` (draait na `promote apply` de berichtcontrole, export-check, export, render-check en lint, en commit pas als alles slaagt; weigert zonder een gewijzigde `log.md`); geef daarna `export/rapport.md` door | `export/gemma-archimate-model.archimate`, `export/rapport.md` |
+| 17 | Commit | redacteur of AI | laag | Direct na stap 16, zonder nieuwe vraag, op main, met een prefix (AGENTS.md, Werkwijze; controle: `uv run python -m llmwiki commit-check <bestand>`). Commit de beoordelingen, de pagina's, `log.md`, de export en `handoff.md` samen; de pre-commit-controle eist dat de pagina's gelijk zijn aan de render. `afronden.py` doet deze stap ook, na stap 16. Importeren in GEMMA doet de redacteur (skill `gemma-archimate-model-archimate-export`, stap 4) | Git |
 
 ## Grenzen
 

@@ -14,11 +14,16 @@ Overdracht naar de volgende Sessie (2026-10-15). Wordt bij elke overdracht overs
   - ARCHITECTURE.md, sectie 4: van 2.187 naar 1.424 woorden. De koppen 4.1 tot en met 4.5 en het waarom zijn gebleven; wat het kennismodel al beschrijft, is een verwijzing.
   - Gelezen regels per fase (gemeten met `wc`, inclusief beide AGENTS.md): fase 1 hoofdsessie 10.615 (de bronduiding in een subagent: 4.775; doet de hoofdsessie de ingest zelf: 12.607); fase 2 hoofdsessie 4.391; beoordelingsagent voor een cluster met proces, object, gebeurtenis en dienst 11.966, met alle references 13.930; fase 3 7.169.
   - Controle: `beslissen.py` werkt 0 bestanden bij, `render.py --check` en `archimate_export.py --check` slagen, pytest en lint zonder fouten.
+- Stap 6 uitgevoerd (commits "tools: sjablonen en afronden", "rules: sjabloon en afronden in de skills"):
+  - `beoordeling.py sjabloon upl-dienst <id> --naam … --onderwerp … --kernobject … --bron … (--proces <id> | --proces-naam …)` (logica in `tools/sjablonen.py`): zet de dienst klaar (kenmerken van fase A en B, velden van de indeling) met een bestaand proces (alleen de relatie realisatie erbij) of een nieuw proces (eigen kenmerken, kernobject, optioneel toegang). Elke ja-onderbouwing, definitie, beschrijving en GEMMA-tekst is `TODO` met de opgegeven bronnen; `beslissen.py` meldt een fout zolang er een TODO staat. Een bestaande beoordeling wordt niet overschreven. Geen `status`, geen `beslist`.
+  - `tools/afronden.py --bericht "<prefix>: …"` (na `promote apply`): weigert zonder gewijzigde `log.md`, draait commit-check op het bericht, export-check, export, render-check en lint, en commit pas als alles slaagt (`--droog` toont de stappen). Skill update, stap 16 en 17, verwijst ernaar.
+  - Controle: pytest (246) en lint zonder fouten; `beslissen.py` werkt 0 bestanden bij, `render.py --check` en `archimate_export.py --check` slagen. Tests: een sjabloon komt na invullen van de TODO's door `beslissen.py` als dienst en als bedrijfsproces.
+  - Niet gebouwd: andere patronen dan upl-dienst (komt erbij als een patroon zich herhaalt); afronden is niet in een echte `promote apply`-cyclus gedraaid (dat gebeurt in de proef, stap 9).
 - Nog niet gedaan: compacte uitvoer van `llmwiki promote plan` (valt onder stap 8, of als eigen punt in de todo).
 
 ## Scope
 
-Stap 6 van het plan: **sjablonen** (C3) en **afronden** (E3, `tools/afronden.py`: na `promote apply` export-check, export, lint en commit met het opgegeven bericht). Klaar als een sjabloon een beoordeling geeft die door `beslissen.py` komt. Denkniveau middel. Lees uit het plan alleen de rijen C3 en E3, de rij van stap 6 en de sectie Controle. Daarna stap 7 en verder, elk in een eigen commit na akkoord.
+Stap 7 van het plan: **bronduiding** (B4, C4, D2) in skill `gemma-archimate-model-ingest`. Klaar als een nieuwe bronduiding met citaten uit het script komt. Denkniveau middel. Lees uit het plan alleen de rijen B4, C4 en D2, de rij van stap 7 en de sectie Controle. Daarna stap 8 en verder, elk in een eigen commit na akkoord.
 
 ## Besluiten die gelden
 
@@ -39,10 +44,10 @@ Stap 6 van het plan: **sjablonen** (C3) en **afronden** (E3, `tools/afronden.py`
 
 ## Modeladvies
 
-Stap 6 vraagt denkniveau middel: sjablonen schrijven en een script dat bestaande commando's achter elkaar draait. Een sneller model of een gemiddelde redeneerinspanning volstaat. Begin een nieuwe Sessie.
+Stap 7 vraagt denkniveau middel: een skill en een script rond bronduidingen, met weinig afweging. Een sneller model of een gemiddelde redeneerinspanning volstaat. Begin een nieuwe Sessie.
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en voer stap 6 uit van plannen/2026-10-15-lichtere-werkwijze.md (sectie Uitvoering): sjablonen (C3) en afronden (E3, tools/afronden.py). Lees uit het plan alleen de rijen C3 en E3, de rij van stap 6 en de sectie Controle. Klaar als een sjabloon een beoordeling geeft die door beslissen.py komt, en pytest en lint zonder fouten zijn. Leg kort voor wat je bouwt, voer uit na mijn akkoord, en commit met een prefix.
+Lees wikis/gemma-archimate-model/handoff.md en voer stap 7 uit van plannen/2026-10-15-lichtere-werkwijze.md (sectie Uitvoering): bronduiding (B4, C4, D2) in skill gemma-archimate-model-ingest. Lees uit het plan alleen de rijen B4, C4 en D2, de rij van stap 7 en de sectie Controle. Klaar als een nieuwe bronduiding met citaten uit het script komt, en pytest en lint zonder fouten zijn. Leg kort voor wat je bouwt, voer uit na mijn akkoord, en commit met een prefix.
 ```
