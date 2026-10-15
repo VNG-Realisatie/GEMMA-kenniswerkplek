@@ -98,8 +98,9 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen object voor dit verzoek; Verzoek (Omgevingswet) is een vraag aan het bevoegd gezag om een product of dienst te leveren. Nieuw voor GEMMA.
 besluiten:
 - datum: '2026-10-15'
-  besluit: 'Geen specialisatie van Aanvraag, en Indiener geen specialisatie van Belanghebbende: geen bron noemt de reactie op het verzoek een besluit, en art. 150 lid 3 Gemeentewet vraagt geen rechtstreeks belang. Zekerheid: logica; opnieuw toetsen als rechtspraak of een handreiking de reactie als besluit kwalificeert.'
+  besluit: 'Geen specialisatie van Aanvraag, en Indiener geen specialisatie van Belanghebbende: geen bron noemt de reactie op het verzoek een besluit, en art. 150 lid 3 Gemeentewet vraagt geen rechtstreeks belang. Opnieuw toetsen als rechtspraak of een handreiking de reactie als besluit kwalificeert.'
   gevolg: verwerkt
+  zekerheid: logica
 status: review
 beslist:
   uitkomst:

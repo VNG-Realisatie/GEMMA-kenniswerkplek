@@ -117,4 +117,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-07: Afgewezen: één gemeentelijk deel met alle tien bedrijfsprocessen (bijna gelijk aan de ketensamenwerking, mengt overheid en houder) en groepen per fase (volgen de fase, niet de partij). Een groep arts vervalt: in het model schouwt alleen de gemeentelijke lijkschouwer, die de gemeente benoemt (Wlb art. 3, 4). Namen afgewezen: Toezien op lijkbezorging (homoniem met toezicht), Bezorgen en bestemmen (bijna de naam van de ketensamenwerking).
+- 2026-10-07: Afgewezen: één gemeentelijk deel met alle tien bedrijfsprocessen (bijna gelijk aan de ketensamenwerking, mengt overheid en houder) en groepen per fase (volgen de fase, niet de partij). Een groep arts vervalt: in het model schouwt alleen de gemeentelijke lijkschouwer, die de gemeente benoemt (Wlb art. 3, 4). Namen afgewezen: Toezien op lijkbezorging (homoniem met toezicht), Bezorgen en bestemmen (bijna de naam van de ketensamenwerking). *Zekerheid: logica.*

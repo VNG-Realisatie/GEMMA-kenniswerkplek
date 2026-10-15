@@ -119,4 +119,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-12: De bestuursrechter is geen element: de gemeente is partij in het beroep, de rechter staat in de beschrijving.
+- 2026-10-12: De bestuursrechter is geen element: de gemeente is partij in het beroep, de rechter staat in de beschrijving. *Zekerheid: logica.*

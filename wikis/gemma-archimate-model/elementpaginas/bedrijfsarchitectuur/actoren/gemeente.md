@@ -123,5 +123,5 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-04: Actor als soort partij (elke gemeente), geen rol: de afzonderlijke gemeenten zijn geen eigen element.
-- 2026-10-04: Geen GEMMA-match: de actor Gemeente is een gemeente als rechtspersoon, de GEMMA-rol Gemeente is de verantwoordelijkheid die gemeenten hebben (doelgroep van applicatieservices). Het onderscheid staat in definitie, beschrijving en homoniemen.
+- 2026-10-04: Actor als soort partij (elke gemeente), geen rol: de afzonderlijke gemeenten zijn geen eigen element. *Zekerheid: logica.*
+- 2026-10-04: Geen GEMMA-match: de actor Gemeente is een gemeente als rechtspersoon, de GEMMA-rol Gemeente is de verantwoordelijkheid die gemeenten hebben (doelgroep van applicatieservices). Het onderscheid staat in definitie, beschrijving en homoniemen. *Zekerheid: logica.*

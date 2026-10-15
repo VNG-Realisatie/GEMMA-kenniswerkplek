@@ -133,4 +133,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-08: Geen bedrijfsinteractie: bij optie en afstand beslist de burgemeester zelf, bij de naturalisatie voert de gemeente delen uit voor de minister (orkestratie, IK 27). Blijft het ene levensloopproces van Nederlanderschap, met zijn object in Archi; Behandelen verkrijging en verlies Nederlanderschap is erin samengevoegd: de vier bedrijfsprocessen en de toegangsrelaties komen hier terug, het object van Behandelen vervalt.
+- 2026-10-08: Geen bedrijfsinteractie: bij optie en afstand beslist de burgemeester zelf, bij de naturalisatie voert de gemeente delen uit voor de minister (orkestratie, IK 27). Blijft het ene levensloopproces van Nederlanderschap, met zijn object in Archi; Behandelen verkrijging en verlies Nederlanderschap is erin samengevoegd: de vier bedrijfsprocessen en de toegangsrelaties komen hier terug, het object van Behandelen vervalt. *Zekerheid: logica.*

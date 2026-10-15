@@ -115,4 +115,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-08: Orkestratie (IK 27): de minister is verantwoordelijk voor de verklaring, de gemeente voert de ontvangst en het onderzoek van de aanvraag voor hem uit (Wet justitiële en strafvorderlijke gegevens art. 30, 35-37). Geen bedrijfsinteractie; blijft het levensloopproces van Verklaring omtrent het gedrag, met het deel van de minister in de beschrijving, en aggregeert het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag.
+- 2026-10-08: Orkestratie (IK 27): de minister is verantwoordelijk voor de verklaring, de gemeente voert de ontvangst en het onderzoek van de aanvraag voor hem uit (Wet justitiële en strafvorderlijke gegevens art. 30, 35-37). Geen bedrijfsinteractie; blijft het levensloopproces van Verklaring omtrent het gedrag, met het deel van de minister in de beschrijving, en aggregeert het bedrijfsproces Behandelen aanvraag verklaring omtrent het gedrag. *Zekerheid: logica.*

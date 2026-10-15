@@ -134,4 +134,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-07: Geen ketenproces: de minister voert tegenover de houder geen eigen deel uit. De documentsoorten zijn specialisaties zonder pagina met de wetsterm; de diensten houden de UPL-naam.
+- 2026-10-07: Geen ketenproces: de minister voert tegenover de houder geen eigen deel uit. De documentsoorten zijn specialisaties zonder pagina met de wetsterm; de diensten houden de UPL-naam. *Zekerheid: logica.*

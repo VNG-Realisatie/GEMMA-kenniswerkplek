@@ -99,4 +99,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-15: Beleidskader met thuis Bestuur en organisatie, geen verwijzing.
+- 2026-10-15: Beleidskader met thuis Bestuur en organisatie, geen verwijzing. *Zekerheid: logica.*

@@ -185,11 +185,13 @@ object_van:
   datum: '2026-10-15'
 besluiten:
 - datum: '2026-10-15'
-  besluit: 'Heroverweging van het besluit over het eigen proces (fase 1, genomen op eerste indruk, met participatie in het sociaal domein in gedachten): levensloopproces met kernobject Participatieplan, één proces voor participatie bij beleid in elk domein (Gemeentewet art. 150 lid 1). Geen generiek deelproces van het vaststellen van beleid en geen bedrijfsinteractie. Zekerheid: logica; opnieuw toetsen als er een proces voor het vaststellen van beleid komt.'
+  besluit: 'Heroverweging van het besluit over het eigen proces (fase 1, genomen op eerste indruk, met participatie in het sociaal domein in gedachten): levensloopproces met kernobject Participatieplan, één proces voor participatie bij beleid in elk domein (Gemeentewet art. 150 lid 1). Geen generiek deelproces van het vaststellen van beleid en geen bedrijfsinteractie. Opnieuw toetsen als er een proces voor het vaststellen van beleid komt.'
   gevolg: verwerkt
+  zekerheid: logica
 - datum: '2026-10-15'
-  besluit: 'Geen GEMMA-match met het Generiek deelproces Uitvoeren participatie (Vaststellen omgevingsplan): participatie in het fysieke domein (Omgevingswet) en in het sociaal domein is een andere participatie dan die bij gemeentelijk beleid uit art. 150 Gemeentewet. Hernoemd tot Betrekken inwoners bij beleid, zodat de naam dat onderscheid laat zien. Zekerheid: kennis.'
+  besluit: 'Geen GEMMA-match met het Generiek deelproces Uitvoeren participatie (Vaststellen omgevingsplan): participatie in het fysieke domein (Omgevingswet) en in het sociaal domein is een andere participatie dan die bij gemeentelijk beleid uit art. 150 Gemeentewet. Hernoemd tot Betrekken inwoners bij beleid, zodat de naam dat onderscheid laat zien.'
   gevolg: verwerkt
+  zekerheid: kennis
 status: review
 beslist:
   uitkomst:

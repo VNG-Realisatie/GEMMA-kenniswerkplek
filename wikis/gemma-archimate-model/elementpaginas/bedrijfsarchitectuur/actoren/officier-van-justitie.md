@@ -81,4 +81,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-04: Actor als ketenpartner in Bezorgen stoffelijk overschot (Wlb art. 10, 12), zonder eigen deelproces. Herziet de uitkomst buiten scope.
+- 2026-10-04: Actor als ketenpartner in Bezorgen stoffelijk overschot (Wlb art. 10, 12), zonder eigen deelproces. Herziet de uitkomst buiten scope. *Zekerheid: logica.*

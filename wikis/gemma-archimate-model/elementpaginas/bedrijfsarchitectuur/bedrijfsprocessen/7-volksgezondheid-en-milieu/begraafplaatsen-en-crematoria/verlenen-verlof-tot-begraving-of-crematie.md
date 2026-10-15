@@ -115,4 +115,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-04: Eigen proces dat het verlof tot begraven levert, niet alleen een specialisatie van Vergunning. Herziet het besluit van 2026-10-01.
+- 2026-10-04: Eigen proces dat het verlof tot begraven levert, niet alleen een specialisatie van Vergunning. Herziet het besluit van 2026-10-01. *Zekerheid: logica.*

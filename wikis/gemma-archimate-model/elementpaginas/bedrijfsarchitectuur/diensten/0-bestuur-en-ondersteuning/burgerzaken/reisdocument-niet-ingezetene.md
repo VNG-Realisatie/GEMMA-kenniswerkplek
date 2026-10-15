@@ -111,4 +111,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-07: UPL nr. 356 reisdocument is geen eigen dienst maar een synoniem (context UPL) van deze dienst, met procesarchitectuur-terugmelding. De dienst wordt gerealiseerd door het nieuwe deelproces Behandelen aanvraag reisdocument niet-ingezetene.
+- 2026-10-07: UPL nr. 356 reisdocument is geen eigen dienst maar een synoniem (context UPL) van deze dienst, met procesarchitectuur-terugmelding. De dienst wordt gerealiseerd door het nieuwe deelproces Behandelen aanvraag reisdocument niet-ingezetene. *Zekerheid: logica.*

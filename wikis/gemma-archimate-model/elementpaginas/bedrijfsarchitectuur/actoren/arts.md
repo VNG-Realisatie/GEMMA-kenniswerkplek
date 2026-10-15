@@ -94,5 +94,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-04: Actor als ketenpartner in Bezorgen stoffelijk overschot, zoals de Officier van justitie: wettelijke overlegplicht (Wlb art. 10a lid 1) en meldplicht (art. 7 lid 2 en 6) met de gemeentelijke lijkschouwer. Herziet de uitkomst buiten scope.
-- 2026-10-04: Actor Arts in plaats van Behandelende arts (synoniem, wet): behandelend is de hoedanigheid tegenover de overledene. Arts vervult Ketenpartner en Gemeentelijke lijkschouwer (art. 4, 5); Ketenpartner wordt ook toegewezen aan Schouwen lijk (art. 3). Geen directe relatie behandelt: de medische behandeling is de interne zaak van de ketenpartner en de overledene is geen element; de arts hangt via Schouwen lijk aan het Lijk.
+- 2026-10-04: Actor als ketenpartner in Bezorgen stoffelijk overschot, zoals de Officier van justitie: wettelijke overlegplicht (Wlb art. 10a lid 1) en meldplicht (art. 7 lid 2 en 6) met de gemeentelijke lijkschouwer. Herziet de uitkomst buiten scope. *Zekerheid: logica.*
+- 2026-10-04: Actor Arts in plaats van Behandelende arts (synoniem, wet): behandelend is de hoedanigheid tegenover de overledene. Arts vervult Ketenpartner en Gemeentelijke lijkschouwer (art. 4, 5); Ketenpartner wordt ook toegewezen aan Schouwen lijk (art. 3). Geen directe relatie behandelt: de medische behandeling is de interne zaak van de ketenpartner en de overledene is geen element; de arts hangt via Schouwen lijk aan het Lijk. *Zekerheid: logica.*

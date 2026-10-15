@@ -159,4 +159,4 @@ GEMMA-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-07: Koppelen aan het GEMMA-bedrijfsobject Verblijfplaats (partiële match): dezelfde naam en kern, het GEMMA-element is verweesd; de export overschrijft de definitie met die uit de wiki.
+- 2026-10-07: Koppelen aan het GEMMA-bedrijfsobject Verblijfplaats (partiële match): dezelfde naam en kern, het GEMMA-element is verweesd; de export overschrijft de definitie met die uit de wiki. *Zekerheid: logica.*

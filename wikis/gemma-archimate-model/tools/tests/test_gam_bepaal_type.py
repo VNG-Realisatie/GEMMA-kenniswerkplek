@@ -498,4 +498,6 @@ def test_besluit_heeft_altijd_tekst_en_is_verwerkt_of_afwijzen():
     assert fout({"datum": "2026-10-15", "gevolg": "afwijzen"})
     assert fout({"datum": "2026-10-15", "besluit": "Keuze.", "gevolg": "opnemen"})
     assert fout({"datum": "2026-10-15", "besluit": "Keuze.", "gevolg": "verwerkt", "redenen": ["x"]})
+    assert not fout({"datum": "2026-10-15", "besluit": "Keuze.", "gevolg": "verwerkt", "zekerheid": "indruk"})
+    assert fout({"datum": "2026-10-15", "besluit": "Keuze.", "gevolg": "verwerkt", "zekerheid": "zeker"})
 

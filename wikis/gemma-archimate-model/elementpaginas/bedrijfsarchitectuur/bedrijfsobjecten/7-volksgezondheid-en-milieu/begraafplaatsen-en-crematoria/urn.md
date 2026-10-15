@@ -114,5 +114,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-09-30: Naam Urn volgens het gangbare gebruik; asbus (wet, beheersverordening) is een synoniem. Een sierurn met meer asbussen is één urn.
-- 2026-10-08: Herziet het besluit van 2026-10-04: geen subobject van Stoffelijk overschot, maar een eigen bedrijfsobject. De as is deel van het stoffelijk overschot, de urn is de houder ervan, met een eigen levensloop en register (Wlb art. 58, 59, 62, 65, 66). Het enige bedrijfsproces met Urn als kernobject, Verlenen toestemming asverstrooiing, vervalt (regel Wettelijke grondslag); bijzetten en verstrooien vallen in Uitvoeren lijkbezorging. De pagina en het object in Archi blijven.
+- 2026-09-30: Naam Urn volgens het gangbare gebruik; asbus (wet, beheersverordening) is een synoniem. Een sierurn met meer asbussen is één urn. *Zekerheid: logica.*
+- 2026-10-08: Herziet het besluit van 2026-10-04: geen subobject van Stoffelijk overschot, maar een eigen bedrijfsobject. De as is deel van het stoffelijk overschot, de urn is de houder ervan, met een eigen levensloop en register (Wlb art. 58, 59, 62, 65, 66). Het enige bedrijfsproces met Urn als kernobject, Verlenen toestemming asverstrooiing, vervalt (regel Wettelijke grondslag); bijzetten en verstrooien vallen in Uitvoeren lijkbezorging. De pagina en het object in Archi blijven. *Zekerheid: logica.*

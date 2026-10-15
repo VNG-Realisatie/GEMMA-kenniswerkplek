@@ -107,4 +107,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-07: Procesindeling kiesrecht: Stempas is kernobject van Beheren stempassen, met de deelprocessen Verstrekken stempas, Behandelen verzoek om kiezerspas en Behandelen verzoek om volmacht; de registratie van de kiesgerechtigdheid is een deelproces van Bijhouden persoonsgegevens. Geen kunstmatig object Kiezersregistratie.
+- 2026-10-07: Procesindeling kiesrecht: Stempas is kernobject van Beheren stempassen, met de deelprocessen Verstrekken stempas, Behandelen verzoek om kiezerspas en Behandelen verzoek om volmacht; de registratie van de kiesgerechtigdheid is een deelproces van Bijhouden persoonsgegevens. Geen kunstmatig object Kiezersregistratie. *Zekerheid: logica.*

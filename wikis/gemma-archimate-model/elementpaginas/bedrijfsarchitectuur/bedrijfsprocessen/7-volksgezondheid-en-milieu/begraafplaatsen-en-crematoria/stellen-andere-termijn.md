@@ -122,4 +122,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-04: Eigen deelproces dat de dienst Uitvaart vervroegen of uitstellen realiseert, niet de functie Lijkbezorging. Herziet het besluit van 2026-10-01.
+- 2026-10-04: Eigen deelproces dat de dienst Uitvaart vervroegen of uitstellen realiseert, niet de functie Lijkbezorging. Herziet het besluit van 2026-10-01. *Zekerheid: logica.*

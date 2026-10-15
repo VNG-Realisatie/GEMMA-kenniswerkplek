@@ -96,4 +96,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-12: Domein Bestuur in plaats van Fysieke leefomgeving uit de UPL-lijst van GEMMA: de bekendmaking geldt voor elk besluit (procesarchitectuur-terugmelding).
+- 2026-10-12: Domein Bestuur in plaats van Fysieke leefomgeving uit de UPL-lijst van GEMMA: de bekendmaking geldt voor elk besluit (procesarchitectuur-terugmelding). *Zekerheid: logica.*

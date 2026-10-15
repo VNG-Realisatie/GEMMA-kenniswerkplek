@@ -74,4 +74,4 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 
 ## Besluiten
 
-- 2026-10-15: Beleidsdomein Participatie onder taakveld 0 Bestuur en Ondersteuning voor alle elementen met Participatie als thuisonderwerp, niet onder Sociaal domein: art. 150 Gemeentewet gaat over het betrekken van inwoners bij gemeentelijk beleid in elk domein, een taak van het bestuur; participatie in het sociaal domein (Participatiewet, cliëntenparticipatie, sociale basis in Iv3 6.1) is een ander begrip. De Gemeentewet houdt haar eigen indeling. Zekerheid: logica.
+- 2026-10-15: Beleidsdomein Participatie onder taakveld 0 Bestuur en Ondersteuning voor alle elementen met Participatie als thuisonderwerp, niet onder Sociaal domein: art. 150 Gemeentewet gaat over het betrekken van inwoners bij gemeentelijk beleid in elk domein, een taak van het bestuur; participatie in het sociaal domein (Participatiewet, cliëntenparticipatie, sociale basis in Iv3 6.1) is een ander begrip. De Gemeentewet houdt haar eigen indeling. *Zekerheid: logica.*

@@ -130,4 +130,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-07: Binnen Burgerzaken, niet een later onderwerp: UPL 360-363 en 434 staan onder 0.2 en op de Utrecht-hubpagina.
+- 2026-10-07: Binnen Burgerzaken, niet een later onderwerp: UPL 360-363 en 434 staan onder 0.2 en op de Utrecht-hubpagina. *Zekerheid: logica.*

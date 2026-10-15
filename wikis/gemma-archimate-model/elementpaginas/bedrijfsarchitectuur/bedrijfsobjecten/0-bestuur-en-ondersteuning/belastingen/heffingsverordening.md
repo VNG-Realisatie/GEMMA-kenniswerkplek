@@ -148,4 +148,4 @@ Match **sterk** met GEMMA-element *Heffingsverordening* (business-object). Zelfd
 
 ### Besluiten redacteur
 
-- 2026-10-10: Het proces dat de verordening raadpleegt (het heffen van lijkbezorgingsrechten) komt bij het onderwerp Heffingen en betalingen; tot dan blijft het kenmerk wordt bewerkt zonder toegang, en blijft de relatie *regelt het recht voor* naar Grafonderhoud staan, buiten het kennismodel en buiten de export.
+- 2026-10-10: Het proces dat de verordening raadpleegt (het heffen van lijkbezorgingsrechten) komt bij het onderwerp Heffingen en betalingen; tot dan blijft het kenmerk wordt bewerkt zonder toegang, en blijft de relatie *regelt het recht voor* naar Grafonderhoud staan, buiten het kennismodel en buiten de export. *Zekerheid: logica.*

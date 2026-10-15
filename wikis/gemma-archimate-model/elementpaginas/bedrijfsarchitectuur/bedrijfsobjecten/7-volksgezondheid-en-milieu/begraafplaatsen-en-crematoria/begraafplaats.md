@@ -111,4 +111,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-09-30: Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats.
+- 2026-09-30: Kenmerk plaats is nee: beoordeeld als gemeentelijke voorziening, niet als fysieke plaats. *Zekerheid: logica.*

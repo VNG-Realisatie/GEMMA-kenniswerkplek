@@ -120,4 +120,4 @@ Match **sterk** met GEMMA-element *Behandelen bezwaar* (business-process). Hetze
 
 ### Besluiten redacteur
 
-- 2026-10-12: De adviescommissie (Awb art. 7:13) is geen element: het bestuursorgaan kan haar instellen; zij staat in de beschrijving.
+- 2026-10-12: De adviescommissie (Awb art. 7:13) is geen element: het bestuursorgaan kan haar instellen; zij staat in de beschrijving. *Zekerheid: logica.*

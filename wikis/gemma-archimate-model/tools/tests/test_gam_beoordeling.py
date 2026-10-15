@@ -42,7 +42,7 @@ def test_besluiten_van_onderwerp_en_begrip(wiki):
     assert cli.zet(wiki, "besluit", "kernobject", "aanvraag")
     cli.besluit(wiki, "besluit", "2026-10-02", "verwerkt", "Breder begrip boven Beschikking.")
     uit = cli.besluiten(wiki, "demo")
-    assert uit[0].startswith("[demo] 2026-10-01") and "verwerkt: Breder begrip" in uit[1]
+    assert uit[0].startswith("[demo] 2026-10-01") and "verwerkt (logica): Breder begrip" in uit[1]
     with pytest.raises(cli.Fout):
         cli.besluiten(wiki, "bestaatniet")
 
@@ -86,7 +86,10 @@ def test_besluit_met_tekst(wiki):
     pad = wiki / "onderwerpen" / "demo" / "beoordelingen" / "besluit.yaml"
     cli.besluit(wiki, "besluit", "2026-10-15", "verwerkt", "Breder begrip.")
     assert beoordeling.laad(pad)["besluiten"][-1] == {"datum": "2026-10-15", "besluit": "Breder begrip.",
-                                                      "gevolg": "verwerkt"}
+                                                      "gevolg": "verwerkt", "zekerheid": "logica"}
+    cli.besluit(wiki, "besluit", "2026-10-16", "verwerkt", "Volgens de wet.", zekerheid="kennis")
+    assert beoordeling.laad(pad)["besluiten"][-1]["zekerheid"] == "kennis"
+    assert any("(kennis): Volgens de wet." in r for r in cli.besluiten(wiki, "demo"))
 
 
 def test_compacte_waarschuwingen():

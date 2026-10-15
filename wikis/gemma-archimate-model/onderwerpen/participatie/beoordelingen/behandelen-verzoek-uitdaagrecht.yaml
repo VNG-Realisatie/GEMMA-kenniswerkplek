@@ -127,8 +127,9 @@ synoniemen:
   context: praktijk
 besluiten:
 - datum: '2026-10-15'
-  besluit: 'Levensloopproces met kernobject Verzoek uitdaagrecht, van indienen tot evaluatie van de uitvoering. Zekerheid: logica.'
+  besluit: Levensloopproces met kernobject Verzoek uitdaagrecht, van indienen tot evaluatie van de uitvoering.
   gevolg: verwerkt
+  zekerheid: logica
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Participatie

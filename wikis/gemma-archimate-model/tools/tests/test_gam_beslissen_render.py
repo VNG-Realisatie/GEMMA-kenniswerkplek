@@ -979,23 +979,24 @@ def test_besluiten_van_een_onderwerp(wiki):
     onderwerp = beoordeling.laad(wiki / "onderwerpen/test/afbakening.yaml")
     onderwerp["besluiten"] = [{"datum": "2026-09-30", "begrip": "Uitdaagrecht", "besluit": "Geen eigen pagina.",
                                "stand": "open (todo)"},
-                              {"datum": "2026-10-01", "besluit": "Afbakening van het onderwerp."}]
+                              {"datum": "2026-10-01", "besluit": "Afbakening van het onderwerp.", "zekerheid": "kennis"}]
     beoordeling.schrijf(wiki / "onderwerpen/test/afbakening.yaml", onderwerp)
     _beslissen(wiki)
     assert not (wiki / "besluiten").exists()
     lijst = (wiki / "onderwerpen" / "test" / "begrippen.md").read_text(encoding="utf-8")
-    assert "## Besluiten" in lijst and "- 2026-10-01: Afbakening van het onderwerp." in lijst
-    assert "- 2026-09-30: **Uitdaagrecht**: Geen eigen pagina. *Stand: open (todo)*" in lijst
+    assert "## Besluiten" in lijst and "- 2026-10-01: Afbakening van het onderwerp. *Zekerheid: kennis.*" in lijst
+    assert "- 2026-09-30: **Uitdaagrecht**: Geen eigen pagina. *Stand: open (todo)* *Zekerheid: logica.*" in lijst
     # zonder datum, met een onbekend veld, over een begrip met een beoordeling of met een bestandspad: een fout
     _schrijf(wiki, "beschikking", _bo())
     begrip = "Beschikking"
-    onderwerp["besluiten"] = [{"besluit": "Zie references/relaties.md.", "onderwerp": "test"},
+    onderwerp["besluiten"] = [{"besluit": "Zie references/relaties.md.", "onderwerp": "test", "zekerheid": "zeker"},
                               {"datum": "2026-10-02", "begrip": begrip, "besluit": "Iets (regel Thuishoren, "
                                                                               "ARCHITECTURE.md *Indelingen*)."}]
     beoordeling.schrijf(wiki / "onderwerpen/test/afbakening.yaml", onderwerp)
     fouten = beslissen.beslissen(wiki, schrijven=False).fouten
     assert "onderwerp test, besluit 1: 'datum' ontbreekt of is geen datum (jjjj-mm-dd)" in fouten
     assert "onderwerp test, besluit 1: onbekend veld 'onderwerp'" in fouten
+    assert "onderwerp test, besluit 1: zekerheid 'zeker' is niet een van kennis, logica, indruk" in fouten
     assert any(f.startswith("onderwerp test, besluit 1: 'besluit' noemt het bestandspad 'references/relaties.md'") for f in fouten)
     assert any(f.startswith(f"onderwerp test, besluit 2: '{begrip}' heeft een beoordeling") for f in fouten)
     assert not any("besluit 2: 'besluit' noemt" in f for f in fouten)   # ARCHITECTURE.md bij naam mag

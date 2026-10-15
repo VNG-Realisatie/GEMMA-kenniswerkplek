@@ -247,4 +247,4 @@ Match **exact** met GEMMA-element *IngeschrevenPersoon* (business-object). GEMMA
 
 ### Besluiten redacteur
 
-- 2026-10-07: Kenmerk generiek nee: één concreet object dat andere onderwerpen met relaties gebruiken, geen abstract type met domeinspecialisaties zoals Besluit.
+- 2026-10-07: Kenmerk generiek nee: één concreet object dat andere onderwerpen met relaties gebruiken, geen abstract type met domeinspecialisaties zoals Besluit. *Zekerheid: logica.*

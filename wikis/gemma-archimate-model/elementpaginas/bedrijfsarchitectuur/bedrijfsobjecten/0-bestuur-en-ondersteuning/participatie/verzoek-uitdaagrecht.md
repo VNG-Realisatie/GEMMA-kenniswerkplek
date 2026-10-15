@@ -111,4 +111,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-15: Geen specialisatie van Aanvraag, en Indiener geen specialisatie van Belanghebbende: geen bron noemt de reactie op het verzoek een besluit, en art. 150 lid 3 Gemeentewet vraagt geen rechtstreeks belang. Zekerheid: logica; opnieuw toetsen als rechtspraak of een handreiking de reactie als besluit kwalificeert.
+- 2026-10-15: Geen specialisatie van Aanvraag, en Indiener geen specialisatie van Belanghebbende: geen bron noemt de reactie op het verzoek een besluit, en art. 150 lid 3 Gemeentewet vraagt geen rechtstreeks belang. Opnieuw toetsen als rechtspraak of een handreiking de reactie als besluit kwalificeert. *Zekerheid: logica.*

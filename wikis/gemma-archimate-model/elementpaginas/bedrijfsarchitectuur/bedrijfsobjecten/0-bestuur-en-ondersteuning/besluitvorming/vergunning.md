@@ -152,4 +152,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-09-30: Het gekozen niveau voor de vergunningen en verloven in de lijkbezorging (geen element per soort vergunning of verlof).
+- 2026-09-30: Het gekozen niveau voor de vergunningen en verloven in de lijkbezorging (geen element per soort vergunning of verlof). *Zekerheid: logica.*

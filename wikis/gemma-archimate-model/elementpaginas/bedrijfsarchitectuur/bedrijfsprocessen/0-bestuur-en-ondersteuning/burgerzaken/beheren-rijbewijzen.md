@@ -127,4 +127,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-07: Bedrijfsproces, geen ketenproces: de burgemeester besluit tot afgifte; RDW en CBR zijn producent en bron van invoer en geen eigen actor. De omwisseling van een buitenlands rijbewijs is een deelproces waarin de gemeente doorgeleidt.
+- 2026-10-07: Bedrijfsproces, geen ketenproces: de burgemeester besluit tot afgifte; RDW en CBR zijn producent en bron van invoer en geen eigen actor. De omwisseling van een buitenlands rijbewijs is een deelproces waarin de gemeente doorgeleidt. *Zekerheid: logica.*

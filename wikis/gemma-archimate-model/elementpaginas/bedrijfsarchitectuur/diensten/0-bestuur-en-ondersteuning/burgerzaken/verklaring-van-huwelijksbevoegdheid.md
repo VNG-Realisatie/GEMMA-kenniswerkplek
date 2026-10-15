@@ -91,4 +91,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-07: De Overeenkomst van München 1980 is bron en geen beleidskader; de Nederlandse uitvoering is BW boek 1 art. 49a. Genoemd in de beschrijving van de dienst.
+- 2026-10-07: De Overeenkomst van München 1980 is bron en geen beleidskader; de Nederlandse uitvoering is BW boek 1 art. 49a. Genoemd in de beschrijving van de dienst. *Zekerheid: logica.*

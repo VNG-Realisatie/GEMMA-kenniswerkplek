@@ -819,6 +819,14 @@
               "verwerkt"
             ]
           },
+          "zekerheid": {
+            "enum": [
+              "kennis",
+              "logica",
+              "indruk"
+            ],
+            "description": "kennis: domeinkennis van de redacteur of een bron, geldt als regel; logica: afgeleid, opnieuw voorleggen als nieuwe informatie de redenering raakt; indruk: voorlopig, in fase 3 opnieuw voorleggen. Zonder veld: logica"
+          },
           "stand": {
             "type": "string",
             "minLength": 1,

@@ -1229,6 +1229,7 @@ def indeling(beoordelingen: dict[str, dict], uitkomsten: dict[str, dict | None])
 
 
 REDEN_GEEN_GGM = "gegevensobject zonder sterke GGM-match"
+ZEKERHEID = ("kennis", "logica", "indruk")   # van een besluit; zonder veld: logica
 
 
 def voor_te_leggen(uitkomst: Uitkomst | dict, ggm_match: str | None = None) -> list[str]:
@@ -1449,6 +1450,10 @@ def schema() -> dict:
             "besluiten": {"type": "array", "items": {**obj(
                 ["datum", "besluit", "gevolg"], datum={"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
                 besluit=tekst, gevolg={"enum": ["afwijzen", "verwerkt"]},
+                zekerheid={"enum": list(ZEKERHEID),
+                           "description": "kennis: domeinkennis van de redacteur of een bron, geldt als regel; logica: "
+                                          "afgeleid, opnieuw voorleggen als nieuwe informatie de redenering raakt; "
+                                          "indruk: voorlopig, in fase 3 opnieuw voorleggen. Zonder veld: logica"},
                 stand={**tekst, "description": "Bij een besluit dat nog open staat: hoe het nu staat"})}},
             "status": {"enum": ["review", "goedgekeurd", "afgewezen"],
                        "description": "Door tools/beslissen.py en llmwiki promote; niet zelf invullen"},

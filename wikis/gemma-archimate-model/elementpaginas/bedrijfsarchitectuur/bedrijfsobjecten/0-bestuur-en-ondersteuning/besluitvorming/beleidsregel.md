@@ -89,4 +89,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-12: Eigen generiek bedrijfsobject naast Regeling en Beleidsnota: een besluit van algemene strekking dat alleen het bestuursorgaan bindt (Awb art. 1:3 lid 4, 4:84), geen algemeen verbindend voorschrift en geen beleidsnota.
+- 2026-10-12: Eigen generiek bedrijfsobject naast Regeling en Beleidsnota: een besluit van algemene strekking dat alleen het bestuursorgaan bindt (Awb art. 1:3 lid 4, 4:84), geen algemeen verbindend voorschrift en geen beleidsnota. *Zekerheid: logica.*

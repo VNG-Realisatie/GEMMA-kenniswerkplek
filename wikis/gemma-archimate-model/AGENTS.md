@@ -22,7 +22,7 @@ Een regel is kort: de kern. Staat er meer bij een regel, dan noemt zij waar de u
 
 ### Werkwijze
 
-- **Navragen** — Bij twijfel over een begrip, bron, naam of match: vraag het de redacteur, één vraag tegelijk, met context, argumenten en advies. Nooit gokken. Wat al besloten is (de `besluiten:` van de beoordeling en van het onderwerp), vraag je niet opnieuw.
+- **Navragen** — Bij twijfel over een begrip, bron, naam of match: vraag het de redacteur, met context, argumenten en advies. Nooit gokken. Wat al besloten is (de `besluiten:` van de beoordeling en van het onderwerp), vraag je naar zijn zekerheid opnieuw: `kennis` nooit, `logica` als nieuwe informatie de redenering raakt, `indruk` in fase 3 altijd.
 - **Eén naamgeving** — Noem brontypen, groepen en mappen precies zoals in de regel Bronvoorrang (`rijksregelgeving`, groep *Rijksregelgeving*; samen met `europese-regelgeving` heten ze landelijke regelgeving), in beoordelingen, analyses, terugmeldingen en de chat. Een modelverordening van de VNG heet een VNG-modelverordening, nooit VNG-model: dat is te verwarren met het GEMMA-model en andere modellen.
 - **Bestaand bijwerken** — Bestaat een beoordeling al, werk haar dan bij. Neem niet aan wat erin hoort.
 - **Per geval** — Een besluit (hernoemen, samenvoegen, afwijzen, herformuleren) nooit in bulk doorvoeren op grond van één eerder akkoord; leg elk geval apart voor.

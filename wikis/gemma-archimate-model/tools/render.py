@@ -535,11 +535,11 @@ def element_pagina(w: Wiki, bid: str) -> str:
 
 
 def _besluit(w: Wiki, van: str, b: dict) -> str:
-    """Een besluit: datum, bij een onderwerp het begrip zonder beoordeling, het besluit en de stand."""
+    """Een besluit: datum, bij een onderwerp het begrip zonder beoordeling, het besluit, de stand en de zekerheid."""
     begrip = f"**{b['begrip']}**: " if b.get("begrip") else ""
     stand = f" *Stand: {w.tekst(van, b['stand'])}*" if b.get("stand") else ""
     tekst = w.tekst(van, b["besluit"])
-    return f"- {b['datum']}: {begrip}{tekst}{stand}"
+    return f"- {b['datum']}: {begrip}{tekst}{stand} *Zekerheid: {b.get('zekerheid', 'logica')}.*"
 
 
 def _begrip_cel(w: Wiki, van: str, bid: str, d: dict) -> str:

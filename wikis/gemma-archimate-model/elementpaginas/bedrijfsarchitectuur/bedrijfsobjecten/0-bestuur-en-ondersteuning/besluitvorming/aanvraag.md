@@ -162,4 +162,4 @@ GEMMA-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-12: Aanvraag is de externe aanvraag volgens de Awb: het verzoek van een belanghebbende om een besluit. GGM Archief is de primaire entiteit (met het GEMMA-object Aanvraag van Archief), Diensten een duplicaat. Aanvraag in ICT is een interne aanvraag die niet tot een besluit leidt: een homoniem, met een GGM-terugmelding; het GEMMA-object Aanvraag van ICT blijft ongekoppeld. Duplicaten worden niet per geval teruggemeld.
+- 2026-10-12: Aanvraag is de externe aanvraag volgens de Awb: het verzoek van een belanghebbende om een besluit. GGM Archief is de primaire entiteit (met het GEMMA-object Aanvraag van Archief), Diensten een duplicaat. Aanvraag in ICT is een interne aanvraag die niet tot een besluit leidt: een homoniem, met een GGM-terugmelding; het GEMMA-object Aanvraag van ICT blijft ongekoppeld. Duplicaten worden niet per geval teruggemeld. *Zekerheid: logica.*

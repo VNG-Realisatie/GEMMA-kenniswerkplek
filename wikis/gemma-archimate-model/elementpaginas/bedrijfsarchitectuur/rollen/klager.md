@@ -77,4 +77,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-12: Nieuwe generieke rol in Besluitvorming: ieder kan klagen, ook over een gedraging jegens een ander, dus de rol Belanghebbende past niet (Awb art. 9:1).
+- 2026-10-12: Nieuwe generieke rol in Besluitvorming: ieder kan klagen, ook over een gedraging jegens een ander, dus de rol Belanghebbende past niet (Awb art. 9:1). *Zekerheid: logica.*

@@ -130,4 +130,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-04: Vervallen verklaren grafrecht specialiseert niet Opleggen sanctie: het verval volgt uit de afspraak, niet uit handhaving.
+- 2026-10-04: Vervallen verklaren grafrecht specialiseert niet Opleggen sanctie: het verval volgt uit de afspraak, niet uit handhaving. *Zekerheid: logica.*

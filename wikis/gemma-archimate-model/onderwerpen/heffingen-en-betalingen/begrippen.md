@@ -31,4 +31,4 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 
 ## Besluiten
 
-- 2026-10-12: **Belastingaanslag bezwaar**: Thuis in Heffingen en betalingen, bij het kernobject Belastingaanslag (UPL nr. 49, grondslag Awb art. 7:1; Gemeentewet art. 231: de heffing van gemeentelijke belastingen volgt de Algemene wet inzake rijksbelastingen, met de heffingsambtenaar in de plaats van de inspecteur). Beoordelen als dat onderwerp wordt uitgewerkt, met de AWR en de Gemeentewet als bronnen, als specialisatie van de dienst Bezwaar, gerealiseerd door Behandelen bezwaar.
+- 2026-10-12: **Belastingaanslag bezwaar**: Thuis in Heffingen en betalingen, bij het kernobject Belastingaanslag (UPL nr. 49, grondslag Awb art. 7:1; Gemeentewet art. 231: de heffing van gemeentelijke belastingen volgt de Algemene wet inzake rijksbelastingen, met de heffingsambtenaar in de plaats van de inspecteur). Beoordelen als dat onderwerp wordt uitgewerkt, met de AWR en de Gemeentewet als bronnen, als specialisatie van de dienst Bezwaar, gerealiseerd door Behandelen bezwaar. *Zekerheid: logica.*

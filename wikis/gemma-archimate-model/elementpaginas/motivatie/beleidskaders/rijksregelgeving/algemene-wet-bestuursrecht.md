@@ -107,4 +107,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-11: Beleidskader in Besluitvorming (thuisonderwerp), met Lijkbezorging als tweede onderwerp. Is grondslag voor alleen naar diensten en processen (Zienswijze, de uniforme openbare voorbereidingsprocedure; in de tweede plak bezwaar, klacht en de andere UPL-diensten), niet naar de rol en de objecten die de wet definieert: die hebben de Awb als bron.
+- 2026-10-11: Beleidskader in Besluitvorming (thuisonderwerp), met Lijkbezorging als tweede onderwerp. Is grondslag voor alleen naar diensten en processen (Zienswijze, de uniforme openbare voorbereidingsprocedure; in de tweede plak bezwaar, klacht en de andere UPL-diensten), niet naar de rol en de objecten die de wet definieert: die hebben de Awb als bron. *Zekerheid: logica.*

@@ -139,4 +139,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-15: Levensloopproces met kernobject Verzoek uitdaagrecht, van indienen tot evaluatie van de uitvoering. Zekerheid: logica.
+- 2026-10-15: Levensloopproces met kernobject Verzoek uitdaagrecht, van indienen tot evaluatie van de uitvoering. *Zekerheid: logica.*

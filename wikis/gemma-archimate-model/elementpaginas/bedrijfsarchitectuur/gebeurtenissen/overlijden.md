@@ -117,5 +117,5 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-04: Niet generiek: Overlijden is een specifieke gebeurtenis, geen specialisatie van een generieke GEMMA-gebeurtenis; geen voorstel aan GEMMA.
-- 2026-10-08: Overlijden leidt tot de akte (Opmaken akte van overlijden, daarna Verlenen verlof) en tot het begraven of cremeren (Uitvoeren lijkbezorging). Bijzetten of verstrooien van de as wordt een deelproces van Uitvoeren lijkbezorging. Schouwen stoffelijk overschot blijft een eigen bedrijfsproces (de schouw gebeurt vóór de aangifte en de aanvraag van het verlof, door een andere rol); de verklaring van overlijden gaat als stroom naar Verlenen verlof (Wlb art. 12). Afgewezen: Schouwen als deelproces van Verlenen verlof.
+- 2026-10-04: Niet generiek: Overlijden is een specifieke gebeurtenis, geen specialisatie van een generieke GEMMA-gebeurtenis; geen voorstel aan GEMMA. *Zekerheid: logica.*
+- 2026-10-08: Overlijden leidt tot de akte (Opmaken akte van overlijden, daarna Verlenen verlof) en tot het begraven of cremeren (Uitvoeren lijkbezorging). Bijzetten of verstrooien van de as wordt een deelproces van Uitvoeren lijkbezorging. Schouwen stoffelijk overschot blijft een eigen bedrijfsproces (de schouw gebeurt vóór de aangifte en de aanvraag van het verlof, door een andere rol); de verklaring van overlijden gaat als stroom naar Verlenen verlof (Wlb art. 12). Afgewezen: Schouwen als deelproces van Verlenen verlof. *Zekerheid: logica.*

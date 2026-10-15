@@ -110,4 +110,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-12: De UPL-naam Beschikking is een synoniem van de dienst Beschikking aanvragen: zo is de dienst geen homoniem van het bedrijfsobject Beschikking.
+- 2026-10-12: De UPL-naam Beschikking is een synoniem van de dienst Beschikking aanvragen: zo is de dienst geen homoniem van het bedrijfsobject Beschikking. *Zekerheid: logica.*

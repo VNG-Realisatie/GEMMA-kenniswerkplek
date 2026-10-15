@@ -124,4 +124,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-11: Grafuitgifte (UPL nr. 165) is een dienst; Graf aanvragen gaat erin op, met de synoniemen Graf aanvragen en Grafrecht aanvragen. Er komt geen product; de afspraak Grafrecht blijft via Verlenen grafrecht. Herziet het besluit van 2026-10-05 (product bij een dienst met een afspraak).
+- 2026-10-11: Grafuitgifte (UPL nr. 165) is een dienst; Graf aanvragen gaat erin op, met de synoniemen Graf aanvragen en Grafrecht aanvragen. Er komt geen product; de afspraak Grafrecht blijft via Verlenen grafrecht. Herziet het besluit van 2026-10-05 (product bij een dienst met een afspraak). *Zekerheid: logica.*

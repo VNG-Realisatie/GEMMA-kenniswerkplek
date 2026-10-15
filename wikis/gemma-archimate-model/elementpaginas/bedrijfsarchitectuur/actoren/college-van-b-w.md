@@ -118,4 +118,4 @@ GEMMA-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-09-30: Naam *College van B&W*, de gangbare naam; de wetsterm *burgemeester en wethouders* en Groningen *college* zijn synoniemen.
+- 2026-09-30: Naam *College van B&W*, de gangbare naam; de wetsterm *burgemeester en wethouders* en Groningen *college* zijn synoniemen. *Zekerheid: logica.*

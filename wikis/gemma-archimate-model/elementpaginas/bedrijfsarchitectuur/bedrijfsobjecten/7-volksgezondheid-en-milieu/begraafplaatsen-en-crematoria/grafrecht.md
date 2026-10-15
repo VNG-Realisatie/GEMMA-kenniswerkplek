@@ -127,4 +127,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-09-30: Afspraak: tweezijdig, met rechten en plichten, ook als het grafrecht als besluit op aanvraag wordt verleend.
+- 2026-09-30: Afspraak: tweezijdig, met rechten en plichten, ook als het grafrecht als besluit op aanvraag wordt verleend. *Zekerheid: logica.*

@@ -125,4 +125,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. GEMMA kent 
 
 ### Besluiten redacteur
 
-- 2026-10-11: Generiek bedrijfsproces met pagina, met de naam Uitvoeren uniforme openbare voorbereidingsprocedure: bij een besluit op aanvraag loopt de procedure van de aanvraag tot het besluit (klant tot klant). Het proces realiseert de UPL-dienst Zienswijze; Beslisser en Belanghebbende worden eraan toegewezen; de Awb is er grondslag voor. Processen in andere onderwerpen die afdeling 3.4 volgen, zoals inspraak, verwijzen ernaar.
+- 2026-10-11: Generiek bedrijfsproces met pagina, met de naam Uitvoeren uniforme openbare voorbereidingsprocedure: bij een besluit op aanvraag loopt de procedure van de aanvraag tot het besluit (klant tot klant). Het proces realiseert de UPL-dienst Zienswijze; Beslisser en Belanghebbende worden eraan toegewezen; de Awb is er grondslag voor. Processen in andere onderwerpen die afdeling 3.4 volgen, zoals inspraak, verwijzen ernaar. *Zekerheid: logica.*

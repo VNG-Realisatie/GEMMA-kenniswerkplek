@@ -115,4 +115,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-07: De dienst heet Briefadres aanvragen, met briefadres (UPL nr. 85) als synoniem; homoniem van het bedrijfsobject Briefadres (precedent Uitvaart vervroegen of uitstellen).
+- 2026-10-07: De dienst heet Briefadres aanvragen, met briefadres (UPL nr. 85) als synoniem; homoniem van het bedrijfsobject Briefadres (precedent Uitvaart vervroegen of uitstellen). *Zekerheid: logica.*

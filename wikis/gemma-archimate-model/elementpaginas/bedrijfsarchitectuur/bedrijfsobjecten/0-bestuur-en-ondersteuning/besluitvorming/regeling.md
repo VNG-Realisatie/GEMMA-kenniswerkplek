@@ -152,4 +152,4 @@ Match **sterk** met GEMMA-element *Regeling* (business-object). Zelfde begrip (v
 
 ### Besluiten redacteur
 
-- 2026-10-10: Wordt bewerkt zonder toegang: het proces dat een regeling vaststelt of raadpleegt, komt bij het onderwerp Heffingen en betalingen (via de specialisatie Heffingsverordening) of een later onderwerp; tot dan blijft het signaal staan.
+- 2026-10-10: Wordt bewerkt zonder toegang: het proces dat een regeling vaststelt of raadpleegt, komt bij het onderwerp Heffingen en betalingen (via de specialisatie Heffingsverordening) of een later onderwerp; tot dan blijft het signaal staan. *Zekerheid: logica.*

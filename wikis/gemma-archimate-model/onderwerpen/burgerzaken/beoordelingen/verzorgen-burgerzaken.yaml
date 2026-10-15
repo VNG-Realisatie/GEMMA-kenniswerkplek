@@ -93,7 +93,7 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 besluiten:
 - datum: '2026-10-08'
-  besluit: 'Vervalt: de taak is geen procesniveau meer (besluit 2026-10-08, procesniveaus volgens GEMMA Online, Proceshiërarchie). Boven de levensloopprocessen staat het beleidsdomein Burgerzaken; de beschrijving staat letterlijk, zonder de zin over de taak als groepering, in het register van beleidsdomeinen. Het object in Archi vervalt; een typewijziging naar groepering kan niet (regel Objectbehoud).'
+  besluit: 'Vervalt: de taak is geen procesniveau meer (procesniveaus volgens GEMMA Online, Proceshiërarchie). Boven de levensloopprocessen staat het beleidsdomein Burgerzaken; de beschrijving staat letterlijk, zonder de zin over de taak als groepering, in het register van beleidsdomeinen. Het object in Archi vervalt; een typewijziging naar groepering kan niet (regel Objectbehoud).'
   gevolg: afwijzen
 gemma:
   sterkte: geen

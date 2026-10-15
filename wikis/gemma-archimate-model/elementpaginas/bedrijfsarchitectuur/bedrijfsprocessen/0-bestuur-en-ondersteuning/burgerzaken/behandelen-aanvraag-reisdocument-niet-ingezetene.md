@@ -131,4 +131,4 @@ Procesarchitectuur-terugmeldingen:
 
 ### Besluiten redacteur
 
-- 2026-10-07: Eigen deelproces voor de aanvraag van een niet-ingezetene, specialisatie van Behandelen aanvraag reisdocument: bijzonder is niet het document maar de taak, die alleen aangewezen gemeenten uitvoeren (Paspoortbesluit art. 3.2, 4.2). Realiseert de dienst Reisdocument niet-ingezetene.
+- 2026-10-07: Eigen deelproces voor de aanvraag van een niet-ingezetene, specialisatie van Behandelen aanvraag reisdocument: bijzonder is niet het document maar de taak, die alleen aangewezen gemeenten uitvoeren (Paspoortbesluit art. 3.2, 4.2). Realiseert de dienst Reisdocument niet-ingezetene. *Zekerheid: logica.*

@@ -109,4 +109,4 @@ Nieuw voor GEMMA: het GEMMA-model kent geen element voor dit begrip. Het GEMMA-m
 
 ### Besluiten redacteur
 
-- 2026-10-12: De ingebrekestelling start het proces en is geen eigen element.
+- 2026-10-12: De ingebrekestelling start het proces en is geen eigen element. *Zekerheid: logica.*

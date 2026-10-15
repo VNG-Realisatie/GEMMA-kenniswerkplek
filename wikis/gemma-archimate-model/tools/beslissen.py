@@ -485,8 +485,10 @@ def _besluiten_onderwerp(oid: str, onderwerp: dict, begrippen: dict[str, str], r
             res.fouten.append(f"{naam}: 'datum' ontbreekt of is geen datum (jjjj-mm-dd)")
         if not b.get("besluit"):
             res.fouten.append(f"{naam}: 'besluit' ontbreekt")
-        for veld in sorted(set(b) - {"datum", "besluit", "begrip", "stand"}):
+        for veld in sorted(set(b) - {"datum", "besluit", "begrip", "zekerheid", "stand"}):
             res.fouten.append(f"{naam}: onbekend veld '{veld}'")
+        if b.get("zekerheid", "logica") not in bepaal_type.ZEKERHEID:
+            res.fouten.append(f"{naam}: zekerheid '{b['zekerheid']}' is niet een van {', '.join(bepaal_type.ZEKERHEID)}")
         if b.get("begrip") and str(b["begrip"]).lower() in begrippen:
             res.fouten.append(f"{naam}: '{b['begrip']}' heeft een beoordeling ({begrippen[str(b['begrip']).lower()]}); "
                               "zet het besluit daar (regel Letterlijk verplaatsen)")

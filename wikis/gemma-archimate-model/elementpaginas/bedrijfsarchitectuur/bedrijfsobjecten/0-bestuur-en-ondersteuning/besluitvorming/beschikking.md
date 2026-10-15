@@ -171,4 +171,4 @@ Match **sterk** met GEMMA-element *Beschikking* (business-object). Gekoppeld aan
 
 ### Besluiten redacteur
 
-- 2026-09-30: De GUID van Generiek Jeugd en Wmo blijft de koppeling met het GGM, zolang het GGM geen domeinoverstijgende entiteit kent.
+- 2026-09-30: De GUID van Generiek Jeugd en Wmo blijft de koppeling met het GGM, zolang het GGM geen domeinoverstijgende entiteit kent. *Zekerheid: logica.*
