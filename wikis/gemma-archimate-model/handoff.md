@@ -29,7 +29,7 @@ Overdracht naar de volgende Sessie (2026-10-15). Wordt bij elke overdracht overs
 
 ## Scope
 
-Stap 8 van het plan: **G2, G4, G5, E4** (export op verzoek, woordbudget, opruimen, de todo splitsen). Klaar als lint met budget zonder fouten slaagt. Denkniveau laag. Lees uit het plan alleen de rijen G2, G4, G5 en E4, de rij van stap 8 en de sectie Controle. Daarna stap 9 (proef) in eigen Sessies per fase. De 11 niet-letterlijke citaten kunnen eerst: leg ze per geval voor met `uv run python tools/bronduiding.py controleer $(find onderwerpen modellen -path '*bronduidingen*' -name '*.md')`.
+Stap 8 van het plan: **G2, G4, G5, E4** (export op verzoek, woordbudget, opruimen, de todo splitsen). Klaar als lint met budget zonder fouten slaagt. Denkniveau laag. Lees uit het plan alleen de rijen G2, G4, G5 en E4, de rij van stap 8 en de sectie Controle. Daarna stap 9 (proef) in eigen Sessies per fase; meet daar ook de ingest-subagent en het aanvullen van bronduidingen na fase A (plan, Afwijking bij stap 7). De 11 niet-letterlijke citaten kunnen eerst: leg ze per geval voor met `uv run python tools/bronduiding.py controleer $(find onderwerpen modellen -path '*bronduidingen*' -name '*.md')`.
 
 ## Besluiten die gelden
 
