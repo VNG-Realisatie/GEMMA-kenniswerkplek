@@ -8,19 +8,18 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Een registratiestap in de bijhouding van de persoonslijst, zonder eigen besluit of product: de gegevens van een niet uitgereikt document, of van een document dat elf of zestien jaar geleden is uitgegeven, gaan van de persoonslijst (HUP Verwijdering; LO BRP 4.4).'
 toelichting: 'Processtap zonder pagina: de gemeente verwijdert de gegevens van een Nederlands reisdocument van de persoonslijst als het niet is uitgereikt, of na de bewaartermijn van elf jaar (geldigheid vijf jaar of korter) of zestien jaar (langere geldigheid), na een inhouding in het basisregister reisdocumenten (HUP Verwijdering; LO BRP 4.4). De bewaartermijn is een eigenschap van de gegevens. Een registratiestap van de uitvoering, buiten het model volgens de afbakening van Burgerzaken; vermeld bij Bijhouden persoonsgegevens.'
+bronnen:
+- 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
+- 2025-rvig-logisch-ontwerp-brp-2025q1
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Bijhouden persoonsgegevens
     generiek: false
   bronnen:
   - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   herkomst: informatiemodel
-bronnen:
-- 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
-- 2025-rvig-logisch-ontwerp-brp-2025q1

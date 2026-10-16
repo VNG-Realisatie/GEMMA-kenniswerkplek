@@ -35,11 +35,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: Categorie 04 van de persoonslijst (LO BRP 4.4).
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
 toelichting: 'Onderdeel van Ingeschreven persoon (categorie 04 van de persoonslijst), zonder eigen bedrijfsproces: geen pagina. De Nederlandse nationaliteit heeft wel eigen processen (optie, naturalisatie, afstand) en is als Nederlanderschap een eigen element, kernobject van Beheren Nederlanderschap; de andere nationaliteiten neemt de gemeente alleen op en beëindigt ze in de bijhouding van de persoonsgegevens, op grond van brondocumenten of een mededeling van de minister (HUP Nationaliteit; HUP Vreemde nationaliteit; HUP Onbekende nationaliteit). Vreemde nationaliteit, onbekende nationaliteit en staatloosheid zijn waarden van dit gegeven zonder pagina; stapels, codes en redenen blijven buiten het model.'
 ggm:
   guid: EAID_69B41CDD_C3F1_449b_92B4_8F7657840646
@@ -52,7 +47,6 @@ beslist:
     toelichting: Onderdeel van een ander object, zonder eigen proces
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Ingeschreven persoon
     generiek: false
     typeregel: 18

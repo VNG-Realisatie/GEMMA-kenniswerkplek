@@ -13,9 +13,6 @@ kenmerken:
     waarde: ja
     naar:
     - verwerken-vermissing-rijbewijs
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het moment waarop de houder niet meer over zijn rijbewijs beschikt, doordat het kwijt of gestolen is.
 beschrijving:
 - Diefstal of beroving is een vorm van vermissing; bij diefstal of beroving adviseert Utrecht ook aangifte bij de politie te doen, wat niet verplicht is maar nodig kan zijn voor de verzekering (Utrecht). Een rijbewijs dat bij identiteitsfraude of een datalek is betrokken, laat men op dezelfde manier ongeldig maken, ook als het niet kwijt is (Utrecht).
@@ -38,7 +35,7 @@ relaties:
   vindplaats: WVW art. 123 lid 1 onder h; Utrecht regel 126-140
 bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -47,7 +44,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

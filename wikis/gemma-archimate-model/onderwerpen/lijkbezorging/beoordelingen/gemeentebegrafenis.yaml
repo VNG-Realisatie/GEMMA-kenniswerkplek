@@ -27,11 +27,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: GGM-entiteit met attributen (melder, kosten, datum begrafenis en ruiming).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Lijkbezorging waarvoor de gemeente zorgt en betaalt omdat niemand anders daarin voorziet.
@@ -55,7 +50,7 @@ relaties:
   vindplaats: art. 21
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -64,13 +59,18 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: kernobject
     generiek: false
     typeregel: 18
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: gemeentebegrafenis-data
+    naam: Gemeentebegrafenis-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/gemeentebegrafenis-data.md
   ggm:
     ggm_entiteit: Gemeentebegrafenis
     ggm_guid: EAID_F2DBE01F_7535_4f26_9DF2_081EF8632F36

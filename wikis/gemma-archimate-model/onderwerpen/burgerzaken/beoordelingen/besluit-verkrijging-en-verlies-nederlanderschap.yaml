@@ -3,9 +3,6 @@ vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   landelijk:
     waarde: ja
     onderbouwing: Algemene maatregel van rijksbestuur.
@@ -85,7 +82,7 @@ bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -94,7 +91,6 @@ beslist:
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 14
   bronnen:

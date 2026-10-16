@@ -3,9 +3,6 @@ vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   landelijk:
     waarde: ja
     onderbouwing: Rijkswet (Stb. 2026/180).
@@ -73,7 +70,7 @@ relaties:
   - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
   vindplaats: art. 1, 5, 5a, 14
 synoniemen: []
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -82,7 +79,6 @@ beslist:
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 14
   bronnen:

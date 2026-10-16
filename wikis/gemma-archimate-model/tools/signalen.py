@@ -39,7 +39,10 @@ def per_begrip(bid: str, data: dict, uitkomst: dict, onderwerpnamen: list[str], 
     for zin in VERBODEN_ZINNEN:
         if zin in laag:
             w.append(f"{bid}: '{zin}': alleen met een concrete, domeinspecifieke reden (regel Geen absolute taal)")
-    for woord in sorted({m.group(0) for m in REGISTR_RE.finditer(tekst)}):
+    # bij een bedrijfsobject (of afspraak) mag de tekst de registratie noemen; registratie is nooit een argument voor het type
+    registratietaal = set() if uitkomst.get("archimate_type") in ("business-object", "contract") \
+        else {m.group(0) for m in REGISTR_RE.finditer(tekst)}
+    for woord in sorted(registratietaal):
         w.append(f"{bid}: '{woord}': is dit een argument voor het type? (regel Beslistabel beslist)")
     if uitkomst["soort"] != "element":
         return w

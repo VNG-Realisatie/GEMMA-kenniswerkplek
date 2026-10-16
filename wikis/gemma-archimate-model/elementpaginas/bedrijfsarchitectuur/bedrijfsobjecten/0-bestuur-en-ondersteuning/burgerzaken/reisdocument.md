@@ -2,7 +2,7 @@
 id: reisdocument
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Reisdocument
 onderwerpen:
 - burgerzaken
@@ -12,7 +12,8 @@ definitie: Document van het Koninkrijk op naam van een persoon waarmee hij kan r
 match:
   ggm: sterk
   gemma: sterk
-data_object: ja
+data_objecten:
+- Reisdocument-data
 objectniveau: kernobject
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
@@ -61,7 +62,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling reisdocument.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -105,7 +106,6 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elk reisdocument heeft een documentnummer en een houder (Paspoortwet art. 1, 3). [Paspoortwet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, aanvraag, verstrekking, uitreiking, wijziging, en verval van rechtswege, vervallenverklaring, inhouding of vermissing, tot definitieve onttrekking aan het verkeer (Paspoortwet art. 1, 44, 47, 54). [Paspoortwet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Behandelen aanvraag reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md), [Beheren reisdocumenten](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-reisdocumenten.md), [Inhouden reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Verwerken vermissing reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md). |
-| **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, reisdocumentenadministratie, basisregister reisdocumenten en categorie 12 van de persoonslijst (Paspoortwet art. 3, 4c; LO BRP 4.4). [Paspoortwet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Logisch Ontwerp BRP 2025.Q1](../../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md) |
 
 ### Specialisaties
 
@@ -136,6 +136,10 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | [Ingeschreven persoon](ingeschreven-persoon.md) | is houder van *associatie (gericht), 1 → 0..** | Reisdocument | [Logisch Ontwerp BRP 2025.Q1](../../../../../onderwerpen/burgerzaken/bronduidingen/informatiemodel/2025-rvig-logisch-ontwerp-brp-2025q1.md), [HUP Reisdocument](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-reisdocument.md), [Besluit BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md), [Paspoortwet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) (LO 4.4, categorie 12; HUP Reisdocument; Besluit BRP bijlage 1 (gegevens omtrent het reisdocument); Paspoortwet art. 1 onder f (houder)); GGM (EAID_423300D3_B0CE_4c89_BA5F_84D7317DE876) |
 | [Inhouden reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md) | houdt in en onttrekt aan het verkeer, verklaart vervallen *toegang (beëindigen)* | Reisdocument | [Paspoortwet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Paspoortbesluit](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (Paspoortwet art. 1 onder h en j, 54; Paspoortbesluit art. 7.1; art. 1 onder i, 44) |
 | [Verwerken vermissing reisdocument](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md) | registreert vermissing van *toegang (bijwerken)* | Reisdocument | [HUP Inhouding, inlevering of vermissing](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-inhouding-inlevering-vermissing.md), [Paspoortwet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) (HUP Inhouding, inleiding; Paspoortwet art. 47 lid 1 onder j) |
+
+### Data-objecten
+
+- [Reisdocument-data](../../../../applicatiearchitectuur/data-objecten/reisdocument-data.md) *realisatie*: GGM-entiteit *Reisdocument*, match sterk.
 
 ## Herkomst
 

@@ -60,9 +60,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het opnemen van de gezamenlijke verklaring van de ouders over de achternaam van hun kind in een akte van naamskeuze.
 beschrijving:
 - Zonder keuze krijgt het kind de achternaam van de moeder, of van de vader bij gehuwde ouders; bij het eerste kind kunnen de ouders samen kiezen voor de achternaam van de andere ouder of, sinds 2024, een dubbele achternaam. Beide ouders zijn aanwezig met een geldig identiteitsbewijs (BW 1 art. 5; Utrecht). Een kind met een tweede nationaliteit kan de achternaam volgens die nationaliteit krijgen (Utrecht).
@@ -92,7 +89,7 @@ beleidsdomein: Burgerzaken
 bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -101,7 +98,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

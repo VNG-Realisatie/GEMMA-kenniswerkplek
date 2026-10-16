@@ -9,9 +9,6 @@ kenmerken:
     naar:
     - uitvoeren-lijkbezorging
     - ruimen-graf
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het openhouden van gemeentelijke begraafplaatsen en crematoria en het ter beschikking stellen van graven en ruimte voor bijzetting en verstrooiing.
 beschrijving:
 - Op de gemeentelijke begraafplaats en in een gemeentelijk crematorium begraaft, cremeert en zet de gemeente bij, binnen de tijden die de verordening bepaalt (Wet op de lijkbezorging art. 23, 49, 56, 62; Groningen art. 7, 21), en ruimt zij graven om ruimte vrij te maken (art. 31; Groningen art. 27). Het cluster groepeert deze bedrijfsprocessen als specialisatie van het GEMMA-proces Uitbaten gemeentelijke voorzieningen.
@@ -40,7 +37,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 31; Groningen art. 27
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -49,7 +46,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: cluster naar soort werk
     generiek: false
     typeregel: 15

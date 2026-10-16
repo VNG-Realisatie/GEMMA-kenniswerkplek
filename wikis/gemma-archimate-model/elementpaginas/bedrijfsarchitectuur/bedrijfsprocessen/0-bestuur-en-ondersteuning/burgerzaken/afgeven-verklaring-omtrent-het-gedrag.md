@@ -2,7 +2,7 @@
 id: afgeven-verklaring-omtrent-het-gedrag
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Afgeven verklaring omtrent het gedrag
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het ontvangen en onderzoeken van een aanvraag voor een verklaring omtrent het gedrag en het afgeven of weigeren ervan, door gemeente en minister.
 match:
   gemma: geen
-data_object: nee
 procesniveau: levensloopproces
 afnemer: extern
 bronnen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling afgeven-verklaring-omtrent-het-gedrag.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

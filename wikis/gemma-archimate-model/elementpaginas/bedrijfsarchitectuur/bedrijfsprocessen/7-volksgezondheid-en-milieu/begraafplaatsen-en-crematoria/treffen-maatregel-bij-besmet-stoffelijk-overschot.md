@@ -2,7 +2,7 @@
 id: treffen-maatregel-bij-besmet-stoffelijk-overschot
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Treffen maatregel bij besmet stoffelijk overschot
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het nemen van maatregelen om gevaar voor de volksgezondheid door een besmet stoffelijk overschot af te wenden.
 match:
   gemma: geen
-data_object: nee
 procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling treffen-maatregel-bij-besmet-stoffelijk-overschot.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -6,16 +6,15 @@ kenmerken:
     waarde: nee
     onderbouwing: Hoort bij een onderwerp over economische zaken (nog niet gestart); in participatie alleen een facultatieve uitbreiding.
 toelichting: 'Verwijzing: de ondernemer wordt beoordeeld in een onderwerp over economische zaken.'
+bronnen:
+- 2024-vng-implementatiehandleiding-model-participatieverordening
 beslist:
   uitkomst:
     soort: verwijzing
     regel: 6
     toelichting: Hoort bij een ander onderwerp
     voorleggen: false
-    data_object: nee
     generiek: false
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   herkomst: richtlijn
-bronnen:
-- 2024-vng-implementatiehandleiding-model-participatieverordening

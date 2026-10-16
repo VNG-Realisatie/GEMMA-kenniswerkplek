@@ -65,9 +65,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een besluit, niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Het beslissen op een verzoek om as te verstrooien op een plek waar dat zonder toestemming verboden is.
 beschrijving:
 - Buiten de begraafplaats verleent het college op verzoek van de nabestaande die zorgdraagt voor de asbus bij bijzondere omstandigheden ontheffing van het verbod op de plaatsen uit de APV (APV Groningen art. 5:27 lid 3). Op de gemeentelijke begraafplaats geeft het college toestemming voor verstrooiing op een aangewezen plek (Groningen art. 21 lid 1–2). Beslisser is het college.
@@ -118,7 +115,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

@@ -68,9 +68,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het beslissen op een verzoek om gegevens uit de basisregistratie personen en het verstrekken ervan aan de ingeschrevene of aan anderen.
 beschrijving:
 - 'Het college ontvangt verzoeken om gegevens uit de BRP: van de ingeschrevene zelf (inzage, kopie, uittreksel; art. 2.55 Wet BRP) en van overheidsorganen, bij besluit aangewezen derden, bij gemeentelijke verordening aangewezen derden en overige verzoekers (NVVB Schema; UPL). De medewerker stelt vast wie verzoekt en waarvoor, deelt het verzoek in, verstrekt de gegevens die daarbij horen en protocolleert de verstrekking; bij een geregistreerde verstrekkingsbeperking volgt een belangenafweging (NVVB Schema). Gegevens in onderzoek worden met vermelding daarvan verstrekt; verzoeken over niet-ingezetenen gaan naar een RNI-loket (NVVB Schema).'
@@ -136,7 +133,7 @@ relaties:
 bronnen:
 - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
 - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -145,7 +142,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

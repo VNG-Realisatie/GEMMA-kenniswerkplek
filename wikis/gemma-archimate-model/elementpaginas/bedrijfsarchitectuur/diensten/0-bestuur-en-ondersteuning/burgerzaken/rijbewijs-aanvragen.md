@@ -2,7 +2,7 @@
 id: rijbewijs-aanvragen
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Rijbewijs aanvragen
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het aanvragen en ophalen van een Nederlands rijbewijs, voor het eerst, bij vernieuwing of ter vervanging van een verloren rijbewijs.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -28,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rijbewijs-aanvragen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

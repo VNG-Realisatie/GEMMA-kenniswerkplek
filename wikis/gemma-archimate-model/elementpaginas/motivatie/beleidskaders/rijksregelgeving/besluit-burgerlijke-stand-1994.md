@@ -2,7 +2,7 @@
 id: besluit-burgerlijke-stand-1994
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Besluit burgerlijke stand 1994
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Algemene maatregel van bestuur die de ambtsuitoefening van de ambtenaar van de burgerlijke stand, de registers en de inhoud van de akten regelt.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 synoniemen:
 - Besluit burgerlijke stand (dagelijks gebruik)
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit-burgerlijke-stand-1994.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

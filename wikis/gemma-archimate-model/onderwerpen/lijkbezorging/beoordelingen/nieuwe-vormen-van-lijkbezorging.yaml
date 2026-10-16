@@ -10,6 +10,8 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Buiten scope: alleen genoemd in het VNG-standpunt over de wetswijziging; de wet regelt ze nog niet en er is geen herkenbaar begrip.'
   gevolg: afwijzen
+bronnen:
+- 2026-vng-wet-op-de-lijkbezorging
 beslist:
   uitkomst:
     soort: buiten_scope
@@ -18,12 +20,9 @@ beslist:
     voorleggen: false
     redenen:
     - 'herkenbaar: nee'
-    data_object: nee
     generiek: false
   voor_te_leggen:
   - 'herkenbaar: nee'
   bronnen:
   - 2026-vng-wet-op-de-lijkbezorging
   herkomst: overig
-bronnen:
-- 2026-vng-wet-op-de-lijkbezorging

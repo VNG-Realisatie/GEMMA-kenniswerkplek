@@ -56,9 +56,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het verlenen van de vergunning voor het vestigen, uitbreiden of wijzigen van een crematorium van een particuliere houder.
 beschrijving:
 - Het vestigen, uitbreiden of wijzigen van een bijzonder crematorium behoeft een vergunning van het college (Wet op de lijkbezorging art. 53). Een vergunning voor vestiging wordt pas verleend nadat het college het voornemen ten minste dertig dagen tevoren openbaar heeft gemaakt (art. 54). Belanghebbenden kunnen in beroep bij gedeputeerde staten (art. 55).
@@ -85,7 +82,7 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 53
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -94,7 +91,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

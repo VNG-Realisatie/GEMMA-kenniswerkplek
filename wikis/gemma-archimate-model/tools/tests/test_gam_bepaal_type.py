@@ -187,11 +187,10 @@ def test_aanvullingen():
     u = bt.evalueer(beoordeling(ACTOR | {"onderscheidbare_exemplaren", "levenscyclus", "wordt_bewerkt"}))
     assert u.tegenhanger == "bedrijfsobject"
     assert bt.evalueer(beoordeling(ACTOR)).tegenhanger is None
-    data_object = bt.evalueer(beoordeling(BO | {"geautomatiseerd_verwerkt"}))
-    assert data_object.data_object == "ja"
-    assert bt.REDEN_GEEN_GGM in bt.voor_te_leggen(data_object, "partieel")
-    assert bt.REDEN_GEEN_GGM not in bt.voor_te_leggen(data_object, "sterk")
-    assert not bt.voor_te_leggen(bt.evalueer(beoordeling(BO)))   # geen gegevensobject: geen GGM nodig
+    data_object = bt.evalueer(beoordeling(BO))
+    assert bt.REDEN_GEEN_GGM in bt.voor_te_leggen(data_object, [{"ggm_sterkte": "partieel"}])
+    assert bt.REDEN_GEEN_GGM not in bt.voor_te_leggen(data_object, [{"ggm_sterkte": "sterk"}])
+    assert not bt.voor_te_leggen(data_object)   # geen data-object: geen GGM nodig
     assert bt.voorgestelde_status(data_object, ggm_match="partieel") == "review"
     besluit = {"datum": "2026-10-01", "besluit": "Keuze.", "gevolg": "verwerkt"}
     assert bt.voorgestelde_status(data_object, besluiten=[besluit, {**besluit, "gevolg": "afwijzen"}]) == "afgewezen"
@@ -259,8 +258,8 @@ def test_buiten_het_pad_leidt_het_script_nee_af(ja):
 def test_pad_per_fase():
     a, f = bt.pad(bt.waarden(beoordeling(PROCES)), {})
     assert a == bt.POORT
-    assert {"toegewezen_partij", "aanleiding", "omvat_levensloop", "klant_tot_klant", "zelfstandige_specialisatie",
-            "geautomatiseerd_verwerkt"} <= set(f)
+    assert {"toegewezen_partij", "aanleiding", "omvat_levensloop", "klant_tot_klant", "zelfstandige_specialisatie"} \
+        <= set(f)
     assert "wordt_bewerkt" not in f
     a, f = bt.pad(bt.waarden(beoordeling(BO)), {})
     assert a[-2:] == ["waarneembare_vorm", "afspraak"] and f[0] == "wordt_bewerkt"

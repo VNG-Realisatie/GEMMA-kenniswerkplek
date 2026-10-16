@@ -2,14 +2,13 @@
 id: emigratie
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Emigratie
 onderwerpen:
 - burgerzaken
 definitie: Het vertrek van een ingezetene om ten minste acht maanden van een jaar in het buitenland te wonen.
 match:
   gemma: geen
-data_object: nee
 synoniemen:
 - Vertrek naar het buitenland (wet)
 bronnen:
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling emigratie.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

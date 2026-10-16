@@ -2,7 +2,7 @@
 id: behandelen-verzoek-om-verwijdering-van-gegevens
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Behandelen verzoek om verwijdering van gegevens
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het beslissen op een verzoek om gegevens van vóór een adoptie of geslachtswijziging van de persoonslijst te verwijderen.
 match:
   gemma: geen
-data_object: nee
 procesniveau: bedrijfsproces
 afnemer: extern
 bronnen:
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-verzoek-om-verwijdering-van-gegevens.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

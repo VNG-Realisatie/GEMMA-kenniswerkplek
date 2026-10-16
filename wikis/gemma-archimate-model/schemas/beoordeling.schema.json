@@ -146,9 +146,6 @@
         "omvat_diensten_en_afspraken": {
           "$ref": "#/$defs/antwoord"
         },
-        "geautomatiseerd_verwerkt": {
-          "$ref": "#/$defs/antwoord"
-        },
         "landelijk": {
           "$ref": "#/$defs/antwoord"
         },
@@ -450,6 +447,52 @@
         }
       },
       "additionalProperties": false
+    },
+    "data_objecten": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "naam",
+          "ggm"
+        ],
+        "properties": {
+          "naam": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "-data$"
+          },
+          "ggm": {
+            "type": "object",
+            "required": [
+              "guid",
+              "sterkte",
+              "onderbouwing"
+            ],
+            "properties": {
+              "guid": {
+                "type": "string",
+                "pattern": "^EAID_"
+              },
+              "sterkte": {
+                "enum": [
+                  "exact",
+                  "sterk",
+                  "partieel"
+                ]
+              },
+              "onderbouwing": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "Alleen een extra data-object, voor een andere GGM-entiteit dan de match van het element (`ggm`): naam (op -data) en de GGM-match. Het data-object <naam>-data uit `ggm` maakt het script zelf (tools/beslissen.py)"
     },
     "gemma_generiek": {
       "type": "object",

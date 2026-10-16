@@ -35,12 +35,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: Categorie 08 van de persoonslijst, gekoppeld aan de BAG (HUP Verblijfplaats; LO BRP 4.4).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
 definitie: Het adres waar een ingeschreven persoon woont of, zonder woonadres, zijn post ontvangt, met de periode waarin dat adres geldt.
 beschrijving:
 - De verblijfplaats is een woonadres of een briefadres (HUP Verblijfplaats). Een woonadres is het adres waar iemand woont, in een woning of op een vaste stand- of ligplaats; bij wisselend verblijf het adres waar hij in een half jaar de meeste malen overnacht. Wie geen woonadres heeft, wordt ingeschreven op een briefadres. Het actuele adres in de BRP verwijst sinds 1 januari 2024 verplicht naar een adres in de BAG (HUP Verblijfplaats).
@@ -83,7 +77,7 @@ bronnen:
 - 2026-rvig-hup-intergemeentelijke-adreswijziging
 - 2026-rvig-hup-emigratie
 - 2023-rvig-circulaire-adresonderzoek-brp
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -92,7 +86,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: subobject
     generiek: false
     typeregel: 18
@@ -105,6 +98,12 @@ beslist:
   - 2026-rvig-hup-emigratie
   - 2023-rvig-circulaire-adresonderzoek-brp
   herkomst: informatiemodel
+  data_objecten:
+  - id: verblijfplaats-data
+    naam: Verblijfplaats-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/verblijfplaats-data.md
   ggm:
     ggm_entiteit: VerblijfadresIngeschrevenPersoon
     ggm_guid: EAID_F6DAC299_3F19_45c6_BFFE_EB38C1C51459

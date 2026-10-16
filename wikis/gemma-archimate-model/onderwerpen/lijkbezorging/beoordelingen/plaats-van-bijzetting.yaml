@@ -31,9 +31,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Plaats waar urnen worden bijgezet, zoals een urnengraf, urnennis, crematorium of bewaarplaats.
@@ -62,7 +59,6 @@ beslist:
     toelichting: Onderdeel van een ander object, zonder eigen proces
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Begraafplaats
     generiek: false
     typeregel: 18

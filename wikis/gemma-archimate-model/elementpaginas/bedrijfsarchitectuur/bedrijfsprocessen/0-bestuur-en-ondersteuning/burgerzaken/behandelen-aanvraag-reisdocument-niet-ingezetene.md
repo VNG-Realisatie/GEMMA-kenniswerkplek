@@ -2,7 +2,7 @@
 id: behandelen-aanvraag-reisdocument-niet-ingezetene
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Behandelen aanvraag reisdocument niet-ingezetene
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een reisdocument van iemand die niet als ingezetene in de BRP staat, tot de uitreiking of weigering.
 match:
   gemma: geen
-data_object: nee
 procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-aanvraag-reisdocument-niet-ingezetene.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

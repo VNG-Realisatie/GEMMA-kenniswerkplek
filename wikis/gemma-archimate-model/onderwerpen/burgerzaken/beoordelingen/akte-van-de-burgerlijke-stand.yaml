@@ -42,12 +42,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: De akten worden verwerkt in de BRP en elektronische aangifte en kennisgeving gaan met het burgerservicenummer (Besluit burgerlijke stand art. 67a; HUP Algemeen).
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-    - 2026-rvig-hup-algemeen
 definitie: Akte die de ambtenaar van de burgerlijke stand opmaakt over een geboorte, huwelijk, partnerschap, overlijden of ander feit van de burgerlijke stand.
 beschrijving:
 - De ambtenaar van de burgerlijke stand neemt de akten en latere vermeldingen op in de registers van geboorten, huwelijken, geregistreerde partnerschappen en overlijden van de gemeente; een akte bevat alleen de gegevens die de wet vraagt en heeft de bewijskracht van een authentieke akte (BW 1 art. 16a, 18, 22). Het Besluit burgerlijke stand regelt per aktesoort de inhoud (hoofdstuk 2).
@@ -91,7 +85,10 @@ homoniemen:
   waar: UPL-lijst extern
   element: uittreksel-burgerlijke-stand
   naamkeuze: 'Deze pagina heet Akte van de burgerlijke stand: de akte zelf. De dienst heet Uittreksel burgerlijke stand, met de UPL-naam als synoniem.'
-status: goedgekeurd
+bronnen:
+- 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+- 2026-rvig-hup-algemeen
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -100,15 +97,22 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: kernobject
     generiek: false
     typeregel: 18
   voor_te_leggen:
-  - gegevensobject zonder sterke GGM-match
+  - data-object zonder sterke GGM-match
+  open:
+  - data-object zonder sterke GGM-match
   bronnen:
-  - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   - 2026-rvig-hup-algemeen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: akte-van-de-burgerlijke-stand-data
+    naam: Akte van de burgerlijke stand-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/akte-van-de-burgerlijke-stand-data.md
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md

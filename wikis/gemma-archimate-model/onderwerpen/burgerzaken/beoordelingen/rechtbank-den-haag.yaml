@@ -17,6 +17,9 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Buiten scope: beslist per geval en op verzoek over de vaststelling van het Nederlanderschap, geen structurele samenwerking met de gemeente (precedent Gedeputeerde staten).'
   gevolg: afwijzen
+bronnen:
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+- 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
 beslist:
   uitkomst:
     soort: buiten_scope
@@ -25,7 +28,6 @@ beslist:
     voorleggen: false
     redenen:
     - 'gemeentelijk: nee'
-    data_object: nee
     generiek: false
   voor_te_leggen:
   - 'gemeentelijk: nee'
@@ -33,6 +35,3 @@ beslist:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-- 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen

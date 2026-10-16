@@ -60,9 +60,6 @@ kenmerken:
     onderbouwing: Het rijbewijs wordt ongeldig door de aangifte (Wegenverkeerswet 1994 art. 123 lid 1 onder h); een eigen gebeurtenis voor het verval is niet opgenomen, omdat de bronnen geen gemeentelijke handeling erna beschrijven.
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het ontvangen en vastleggen van de verklaring dat een rijbewijs kwijt of gestolen is, waardoor het rijbewijs ongeldig wordt.
 beschrijving:
 - De houder geeft de vermissing online door aan de RDW met DigiD, waar ze direct wordt geregistreerd, of aan de balie van de gemeente, waar hij de vermissingsverklaring invult bij een nieuwe aanvraag of in een eigen afspraak (Utrecht). Een rijbewijs verliest zijn geldigheid door aangifte van vermissing; wie het terugvindt, levert het in bij degene die het nieuwe rijbewijs afgaf (Wegenverkeerswet 1994 art. 123 lid 1 onder h, 119 lid 4, 120 lid 3).
@@ -96,7 +93,7 @@ relaties:
   bronnen:
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   vindplaats: Utrecht regel 134-140
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -105,7 +102,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

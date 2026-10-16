@@ -69,6 +69,7 @@ MOTIVATIE = {"driver", "goal"}
 GEDRAG = {"business-process", "business-function", "business-event", "business-service", "business-interaction"}
 PASSIEF = {"business-object", "contract", "representation"}
 SAMENGESTELD = {"product"}
+DATA = {"data-object"}  # applicatielaag: alleen het data-object, afgeleid uit de GGM-match
 GROEPERING = {"grouping"}
 
 # Deelverzameling van de ArchiMate-relatietabel voor de business-laag (conservatief).
@@ -84,6 +85,7 @@ TOEGESTAAN = {
     ("access", "gedrag", "passief"), ("access", "actief", "passief"),
     ("triggering", "gedrag", "gedrag"), ("flow", "gedrag", "gedrag"),
     ("realization", "gedrag", "gedrag"), ("realization", "passief", "passief"),
+    ("realization", "data", "passief"),  # een data-object realiseert een bedrijfsobject (of afspraak)
     ("serving", "gedrag", "gedrag"), ("serving", "gedrag", "actief"),
     ("serving", "samengesteld", "actief"),  # Product → bediening → Klant (kennismodel regel 596)
     ("influence", "motivatie", "motivatie"),
@@ -96,7 +98,7 @@ DEEL_GEHEEL_WERKWOORDEN = ("bevat", "bestaat uit", "omvat", "onderdeel van", "de
 
 def categorie(archimate_type: str) -> str:
     for naam, typen in (("actief", ACTIEF), ("gedrag", GEDRAG), ("passief", PASSIEF), ("samengesteld", SAMENGESTELD),
-                        ("motivatie", MOTIVATIE), ("groepering", GROEPERING)):
+                        ("data", DATA), ("motivatie", MOTIVATIE), ("groepering", GROEPERING)):
         if archimate_type in typen:
             return naam
     return "onbekend"

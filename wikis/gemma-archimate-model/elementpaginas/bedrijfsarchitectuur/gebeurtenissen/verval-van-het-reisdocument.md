@@ -2,7 +2,7 @@
 id: verval-van-het-reisdocument
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Verval van het reisdocument
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het ongeldig worden van een reisdocument zonder besluit, onder meer door verlopen geldigheid, gewijzigde persoonsgegevens, overlijden of vermissing.
 match:
   gemma: geen
-data_object: nee
 synoniemen:
 - Van rechtswege vervallen (wet)
 - Ongeldig worden (beleid)
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verval-van-het-reisdocument.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

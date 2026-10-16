@@ -20,9 +20,6 @@ kenmerken:
     bronnen:
     - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
     - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: Een legalisatie van een handtekening op een ander formulier, zonder eigen handeling van de gemeente; de UPL noemt het niet apart onder taakveld 0.2.
@@ -34,7 +31,6 @@ beslist:
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Legalisatie handtekening
     generiek: false
     typeregel: 15

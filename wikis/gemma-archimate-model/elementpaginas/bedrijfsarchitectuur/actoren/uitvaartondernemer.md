@@ -2,7 +2,7 @@
 id: uitvaartondernemer
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Uitvaartondernemer
 onderwerpen:
 - lijkbezorging
@@ -10,7 +10,6 @@ onderwerpen:
 definitie: Onderneming die in opdracht van nabestaanden de uitvaart verzorgt.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 synoniemen:
 - Uitvaartonderneming (beleid)
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling uitvaartondernemer.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

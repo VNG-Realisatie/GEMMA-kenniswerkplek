@@ -55,9 +55,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 kernobject: stempas
 afnemer: extern
 definitie: Het vaststellen, personaliseren en toezenden van stempassen aan de kiezers, en het uitreiken van een nieuwe stempas op verzoek.
@@ -91,7 +88,7 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: UPL nr. 397
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -100,7 +97,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

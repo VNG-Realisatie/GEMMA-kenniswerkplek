@@ -2,14 +2,13 @@
 id: toezichthouder-brp
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Toezichthouder BRP
 onderwerpen:
 - burgerzaken
 definitie: Verantwoordelijkheid voor het toezicht op de juistheid van de inschrijving in de basisregistratie personen, onder meer met een huisbezoek.
 match:
   gemma: geen
-data_object: nee
 doelgroep: gemeente
 bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
@@ -20,7 +19,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling toezichthouder-brp.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

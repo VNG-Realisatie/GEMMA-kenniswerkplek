@@ -22,9 +22,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: De gegevens van de persoon horen bij Ingeschreven persoon; de rol zelf wordt niet bijgehouden.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Hoedanigheid van degene omtrent wiens gedrag een verklaring omtrent het gedrag wordt gevraagd en die de aanvraag indient.
 beschrijving:
 - De wet kent de aanvrager, degene omtrent wiens gedrag de verklaring wordt gevraagd, of een vertegenwoordiger van de rechtspersoon (Wet justitiële en strafvorderlijke gegevens art. 33). De aanvraag bevat de voornamen, de geboortedatum en het doel, en de aanvrager of degene te wiens behoeve de verklaring wordt gevraagd, geeft het risico voor de samenleving op (art. 32). In de praktijk heeft vaak een werkgever of een andere organisatie het aanvraagformulier ingevuld; de aanvrager zelf dient in en betaalt (Utrecht).
@@ -50,7 +47,7 @@ relaties:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
   vindplaats: art. 30, 33; Utrecht regel 37-53
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -59,7 +56,6 @@ beslist:
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 10
   bronnen:

@@ -2,14 +2,13 @@
 id: houder-van-een-plaats-van-bijzetting
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Houder van een plaats van bijzetting
 onderwerpen:
 - lijkbezorging
 definitie: Verantwoordelijkheid voor een plaats waar urnen worden bijgezet.
 match:
   gemma: geen
-data_object: nee
 doelgroep: gemeente
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -20,7 +19,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling houder-van-een-plaats-van-bijzetting.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

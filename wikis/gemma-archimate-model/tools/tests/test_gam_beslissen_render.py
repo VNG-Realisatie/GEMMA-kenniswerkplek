@@ -162,9 +162,13 @@ def test_beslissen_en_render_zijn_idempotent_en_check_vangt_handwerk(wiki):
     assert render.main(["--wiki", str(wiki), "--check"]) == 0
 
 
-def test_gegevensobject_zonder_ggm_ligt_voor_tot_het_akkoord(wiki):
-    _schrijf(wiki, "beschikking", _element("Beschikking", BO | {"generiek", "geautomatiseerd_verwerkt"},
-                                           ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}))
+HIAAT = {"nummer": 1, "domein": "Vergunningen", "type": "hiaat", "element": "beschikking", "status": "open",
+         "bevinding": ["**Bevinding:** ontbreekt.", "**Voorstel:** opnemen."]}
+
+
+def test_data_object_zonder_ggm_ligt_voor_tot_het_akkoord(wiki):
+    _schrijf(wiki, "beschikking", _bo())
+    beoordeling.schrijf(wiki / beslissen.TERUGMELDINGEN, {"terugmeldingen": [HIAAT]})
     _beslissen(wiki)
     data = _lees(wiki, "beschikking")
     assert data["status"] == "review"
@@ -336,12 +340,53 @@ def test_gemma_terugmelding_noemt_wiki_en_gemma_elementen(wiki):
 
 
 def test_signalen_noemen_de_regel_bij_naam(wiki):
+    """Registratietaal is een signaal, behalve bij een bedrijfsobject: daar mag de tekst de registratie noemen."""
     _schrijf(wiki, "beschikking", _bo(beschrijving=["Wordt geregistreerd in het zaaksysteem."]))
-    _schrijf(wiki, "aanvraag-behandeling", _element("Aanvraagbehandeling", PROCES, kernobject="beschikking", afnemer="extern"))
+    _schrijf(wiki, "aanvraag-behandeling", _element("Aanvraagbehandeling", PROCES, kernobject="beschikking", afnemer="extern",
+                                                    beschrijving=["Het proces registreert de aanvraag."]))
     res = beslissen.beslissen(wiki)
     assert res.fouten == []
     assert any("regel Naamvorm" in w and "aanvraag-behandeling" in w for w in res.waarschuwingen)
-    assert any("regel Beslistabel beslist" in w and "geregistreerd" in w for w in res.waarschuwingen)
+    assert any("regel Beslistabel beslist" in w and "registreert" in w for w in res.waarschuwingen)
+    assert not any("'geregistreerd'" in w for w in res.waarschuwingen)
+
+
+GGM_ENTITEITEN = {"EAID_BESCHIKKING": {"id": "EAID_BESCHIKKING", "name": "Beschikking", "uml_type": "Class",
+                                       "documentation": "Een besluit voor één geval."},
+                  "EAID_ONDERDEEL": {"id": "EAID_ONDERDEEL", "name": "Onderdeel", "uml_type": "Class"}}
+
+
+def test_data_object_volgt_uit_de_ggm_match(wiki, monkeypatch):
+    """Het script maakt <naam>-data uit de GGM-match van het element, en een extra data-object uit `data_objecten`,
+    met een pagina en de status van het element; zonder match of hiaat is er geen data-object."""
+    monkeypatch.setattr(beslissen.Context, "ggm", lambda self: {"entities": GGM_ENTITEITEN})
+    match = {"guid": "EAID_BESCHIKKING", "sterkte": "exact", "onderbouwing": "Zelfde begrip."}
+    extra = [{"naam": "Onderdeel-data", "ggm": {"guid": "EAID_ONDERDEEL", "sterkte": "partieel", "onderbouwing": "Deel."}}]
+    _schrijf(wiki, "beschikking", {**_bo(data_objecten=extra), "ggm": match})
+    _beslissen(wiki)
+    data = _lees(wiki, "beschikking")
+    assert [(x["id"], x["relatie"], x["ggm_sterkte"]) for x in data["beslist"]["data_objecten"]] == [
+        ("beschikking-data", "realisatie", "exact"), ("onderdeel-data", "realisatie", "partieel")]
+    assert data["beslist"]["open"] == [bt.REDEN_GEEN_GGM]   # de extra match is zwakker dan sterk
+    pagina = (wiki / "elementpaginas/applicatiearchitectuur/data-objecten/beschikking-data.md").read_text(encoding="utf-8")
+    assert "status: review" in pagina and "ggm_entiteit: Beschikking" in pagina and "(*realisatie*)" in pagina
+    element = (wiki / data["beslist"]["pad"]).read_text(encoding="utf-8")
+    assert "### Data-objecten" in element and "Onderdeel-data" in element
+
+    _schrijf(wiki, "beschikking", _bo())   # sterkte geen, zonder hiaat: geen data-object
+    _beslissen(wiki)
+    assert "data_objecten" not in _lees(wiki, "beschikking")["beslist"]
+    assert not (wiki / "elementpaginas/applicatiearchitectuur/data-objecten/beschikking-data.md").exists()
+
+
+def test_data_objecten_alleen_bij_passief_partij_en_gebeurtenis(wiki, monkeypatch):
+    monkeypatch.setattr(beslissen.Context, "ggm", lambda self: {"entities": GGM_ENTITEITEN})
+    extra = [{"naam": "Onderdeel-data", "ggm": {"guid": "EAID_ONDERDEEL", "sterkte": "sterk", "onderbouwing": "Deel."}}]
+    _schrijf(wiki, "beschikking", _bo(data_objecten=extra))   # geen eigen match en geen hiaat
+    _schrijf(wiki, "behandelen-aanvraag", _proces(data_objecten=extra))
+    fouten = beslissen.beslissen(wiki, schrijven=False).fouten
+    assert any(f.startswith("beschikking: data_objecten zonder data-object van het element zelf") for f in fouten)
+    assert any(f.startswith("behandelen-aanvraag: data_objecten horen alleen bij") for f in fouten)
 
 
 def test_relatie_buiten_het_kennismodel_is_een_signaal_en_staat_op_de_pagina(wiki):

@@ -36,9 +36,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Specialisatie van Beschikking met eigen werkwijze (aanvraag, voorschriften, intrekking); het gekozen niveau voor alle vergunningen en verloven in de lijkbezorging.
@@ -114,7 +111,7 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-rvo-aangifte-en-akte-van-overlijden
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -123,7 +120,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     objectniveau: generiek
     generiek: false
     typeregel: 18

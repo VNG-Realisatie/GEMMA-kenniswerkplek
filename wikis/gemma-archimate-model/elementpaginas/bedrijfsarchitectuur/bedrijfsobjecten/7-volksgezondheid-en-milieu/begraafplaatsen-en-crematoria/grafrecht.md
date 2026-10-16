@@ -2,7 +2,7 @@
 id: grafrecht
 type: bedrijfsobject
 archimate_type: contract
-status: goedgekeurd
+status: review
 naam: Grafrecht
 onderwerpen:
 - lijkbezorging
@@ -12,7 +12,8 @@ definitie: Uitsluitend recht om in een particulier graf stoffelijke overschotten
 match:
   ggm: geen
   gemma: geen
-data_object: ja
+data_objecten:
+- Grafrecht-data
 objectniveau: kernobject
 synoniemen:
 - Uitsluitend recht op een graf (wet)
@@ -29,7 +30,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling grafrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- data-object zonder sterke GGM-match
 
 ## Betekenis
 
@@ -76,7 +81,6 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, gevestigd, verlengd, overgeschreven, vervallen (art. 28; Groningen art. 16, 18–20). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Beheren grafrechten](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-grafrechten.md), [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md), [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md). |
 | **afspraak**: Is het een overeenkomst tussen twee of meer partijen met rechten en plichten, en geen eenzijdig besluit of regeling? | Ja, tweezijdige afspraak tussen houder en rechthebbende met rechten en plichten (onderhoud, betaling, bepalen wie begraven wordt), ook als de gemeente het als besluit op aanvraag verleent (tweewegenleer, VNG retributies). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Retributies](../../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-retributies.md) |
-| **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, rechthebbende, ingangsdatum, looptijd en verlengingen worden per recht bijgehouden voor mededelingen en heffing (art. 28 lid 2; VNG retributies). [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [VNG Retributies](../../../../../onderwerpen/lijkbezorging/bronduidingen/overig/2026-vng-retributies.md) |
 
 ### Relaties
 
@@ -94,6 +98,10 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | [Rechthebbende op het graf](../../../rollen/rechthebbende-op-het-graf.md) | heeft *toegang (partij)* | Grafrecht | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 28; Groningen art. 1 w) |
 | [Verlenen grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md) | verleent *toegang (registreren)* | Grafrecht | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 28; Groningen art. 16) |
 | [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md) | doet vervallen *toegang (beëindigen)* | Grafrecht | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 28 lid 6; Groningen art. 20) |
+
+### Data-objecten
+
+- [Grafrecht-data](../../../../applicatiearchitectuur/data-objecten/grafrecht-data.md) *realisatie*: geen GGM-entiteit (GGM-terugmelding hiaat).
 
 ## Herkomst
 

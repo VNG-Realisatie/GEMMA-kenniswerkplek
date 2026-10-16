@@ -2,7 +2,7 @@
 id: wet-basisregistratie-personen
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Wet basisregistratie personen
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: 'Wet die de basisregistratie personen regelt: de inschrijving en bijhouding van gegevens over ingezetenen en niet-ingezetenen en de verstrekking daarvan.'
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 synoniemen:
 - Wet BRP (dagelijks gebruik)
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling wet-basisregistratie-personen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

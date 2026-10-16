@@ -2,7 +2,7 @@
 id: verzoeker-om-naturalisatie
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Verzoeker om naturalisatie
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Hoedanigheid van degene die een verzoek om naturalisatie indient om Nederlander te worden.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 synoniemen:
 - Verzoeker (wet)
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verzoeker-om-naturalisatie.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

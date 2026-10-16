@@ -21,9 +21,6 @@ kenmerken:
     bronnen:
     - 2024-vng-model-participatieverordening
     - 2024-vng-implementatiehandleiding-model-participatieverordening
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 synoniemen:
 - naam: VNG Model Participatieverordening 2024
   context: beleid
@@ -83,7 +80,7 @@ kwaliteitsdoelen:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -92,7 +89,6 @@ beslist:
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 14
   bronnen:

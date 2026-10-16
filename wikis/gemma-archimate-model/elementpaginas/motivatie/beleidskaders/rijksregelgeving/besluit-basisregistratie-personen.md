@@ -2,7 +2,7 @@
 id: besluit-basisregistratie-personen
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Besluit basisregistratie personen
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Algemene maatregel van bestuur die de Wet basisregistratie personen uitwerkt, onder meer voor inschrijving, aangifte, adresonderzoek en verstrekking.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 synoniemen:
 - Besluit BRP (dagelijks gebruik)
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit-basisregistratie-personen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -2,14 +2,13 @@
 id: vergunningenbeheer-publieksdiensten
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: review
 naam: Vergunningenbeheer Publieksdiensten
 onderwerpen:
 - lijkbezorging
 definitie: Het beheren en verlenen van vergunningen voor diverse soorten lokale activiteiten.
 match:
   gemma: exact
-data_object: nee
 domein: Publieksdiensten
 bronnen:
 - 2023-vng-model-apv
@@ -30,7 +29,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vergunningenbeheer-publieksdiensten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

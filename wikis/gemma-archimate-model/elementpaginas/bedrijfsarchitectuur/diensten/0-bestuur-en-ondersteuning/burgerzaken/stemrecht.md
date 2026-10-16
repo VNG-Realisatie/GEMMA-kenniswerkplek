@@ -2,7 +2,7 @@
 id: stemrecht
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Stemrecht
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het registreren als kiezer van wie kiesgerechtigd is, en op verzoek meedelen of iemand als kiezer is geregistreerd.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling stemrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

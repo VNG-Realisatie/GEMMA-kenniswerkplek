@@ -55,9 +55,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het opmaken en bijhouden van de akten van de burgerlijke stand in de registers van de gemeente, van opmaken tot latere vermelding en afgifte.
 beschrijving:
 - De ambtenaar van de burgerlijke stand maakt de akten op van geboorte, erkenning, naamskeuze, huwelijk, geregistreerd partnerschap, omzetting en overlijden, schrijft rechterlijke uitspraken en buitenlandse akten in en voegt latere vermeldingen toe, zoals een naamswijziging, adoptie, geslachtswijziging of echtscheiding (BW 1 art. 16a, 18, 20). Hij weigert een akte bij ongenoegzame bescheiden of strijd met de openbare orde; de belanghebbende kan dan de rechtbank verzoeken (art. 18c, 27).
@@ -220,7 +217,7 @@ bronnen:
 - 2026-rvig-hup-algemeen
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -229,7 +226,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: levensloopproces
     generiek: false
     typeregel: 15

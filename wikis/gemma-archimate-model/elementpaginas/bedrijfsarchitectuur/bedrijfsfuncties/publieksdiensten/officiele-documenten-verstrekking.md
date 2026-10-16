@@ -2,14 +2,13 @@
 id: officiele-documenten-verstrekking
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: review
 naam: Officiële documenten verstrekking
 onderwerpen:
 - burgerzaken
 definitie: Het op aanvraag verstrekken van persoonlijke documenten zoals paspoort of rijbewijs.
 match:
   gemma: exact
-data_object: nee
 domein: Publieksdiensten
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
@@ -31,7 +30,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling officiele-documenten-verstrekking.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

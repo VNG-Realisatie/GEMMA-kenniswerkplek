@@ -58,9 +58,6 @@ kenmerken:
     waarde: ja
     naar:
     - verval-van-het-reisdocument
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het ontvangen en registreren van de melding dat een reisdocument kwijt of gestolen is, waardoor het document ongeldig wordt.
 beschrijving:
 - De houder meldt de vermissing per document, online en gratis; de gemeente registreert de schriftelijke verklaring van vermissing direct (Utrecht; HUP Inhouding). Met de registratie wordt het document in het basisregister reisdocumenten automatisch ongeldig en vervalt het van rechtswege (HUP Inhouding; Paspoortwet art. 47 lid 1 onder j). De minister vermeldt vermiste reisdocumenten in het register vermiste of vervallen reisdocumenten, ter voorkoming van fraude (art. 4a).
@@ -110,7 +107,7 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-inhouding-inlevering-vermissing
   vindplaats: Paspoortwet art. 47 lid 1 onder j; HUP Inhouding
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -119,7 +116,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

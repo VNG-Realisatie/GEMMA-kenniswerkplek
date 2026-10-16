@@ -59,9 +59,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een besluit, niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Het afgeven van het schriftelijk verlof waarmee een stoffelijk overschot mag worden ontleed.
 beschrijving:
 - Ontleding gebeurt alleen met schriftelijk verlof van de burgemeester, dat binnen drie dagen kosteloos wordt afgegeven en de plaats van ontleding vermeldt; tegen het besluit staat binnen 24 uur beroep open bij de commissaris van de Koning (Wet op de lijkbezorging art. 68). Beslisser is de burgemeester. De ontleding zelf hoort bij Uitvoeren lijkbezorging.
@@ -98,7 +95,7 @@ relaties:
   vindplaats: Wlb art. 68; UPL nr. 306
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -107,7 +104,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

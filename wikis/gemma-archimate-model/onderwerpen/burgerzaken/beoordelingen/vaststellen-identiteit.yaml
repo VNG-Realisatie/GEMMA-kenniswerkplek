@@ -59,9 +59,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Processtap zonder pagina: de medewerker stelt bij elke aangifte of aanvraag de identiteit vast aan de hand van een identiteitsdocument, volgens het ID-protocol van de NVVB. Het is een stap in onder meer Inschrijven ingezetene en Verwerken adreswijziging, zonder eigen besluit, eigen wettelijke regels of eigen product. GEMMA kent daarnaast de generieke bedrijfsfunctie Identiteitvaststelling (Niet domeingebonden), die later in Kern kan worden beoordeeld.'
 synoniemen:
 - naam: Identiteitsvaststelling
@@ -75,7 +72,6 @@ beslist:
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Inschrijven ingezetene
     generiek: false
     typeregel: 15

@@ -28,9 +28,6 @@ kenmerken:
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
     gemma_relatie:
     - id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar.
@@ -184,7 +181,7 @@ relaties:
 bronnen:
 - 2026-rvig-hup-achtergronden-en-begrippen
 - 2026-rijk-wet-brp-bwbr0033715
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -193,7 +190,6 @@ beslist:
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

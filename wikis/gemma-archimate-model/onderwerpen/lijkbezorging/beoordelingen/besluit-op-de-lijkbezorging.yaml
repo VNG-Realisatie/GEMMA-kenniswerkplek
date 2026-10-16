@@ -3,9 +3,6 @@ vak: motivatie
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
   landelijk:
     waarde: ja
     onderbouwing: 'Rijksregelgeving: een algemene maatregel van bestuur.'
@@ -64,7 +61,7 @@ relaties:
 bronnen:
 - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -73,7 +70,6 @@ beslist:
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 14
   bronnen:

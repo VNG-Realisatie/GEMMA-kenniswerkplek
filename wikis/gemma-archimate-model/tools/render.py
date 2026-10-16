@@ -412,7 +412,7 @@ def element_pagina(w: Wiki, bid: str) -> str:
         **{k: d[k] for k in ("taakveld", "beleidsdomein") if d.get(k)},
         "definitie": d["definitie"],
         "match": {k: d[k]["sterkte"] for k in ("ggm", "gemma") if d.get(k)},
-        "data_object": u.get("data_object", "nee"),
+        "data_objecten": [x["naam"] for x in a.get("data_objecten", [])],
         **({"procesniveau": u["procesniveau"]} if u.get("procesniveau") else {}),
         **({"objectniveau": u["objectniveau"]} if u.get("objectniveau") else {}),
         **({"generiek": True} if u.get("generiek") else {}),
@@ -502,13 +502,15 @@ def element_pagina(w: Wiki, bid: str) -> str:
              w.bronnen(van, k["bronnen"], k.get("vindplaats"))] for k in d["kwaliteitsdoelen"]])] \
         if d.get("kwaliteitsdoelen") else []
     specialisaties_zonder_pagina = specialisaties_per_onderwerp(w, van, bid) if u.get("objectniveau") == "generiek" else []
+    data_objecten = [*[f"- [{x['naam']}]({w.rel(van, x['pad'])}) *{x['relatie']}*: " + _ggm_kort(x, a)
+                       for x in a.get("data_objecten", [])], ""] if a.get("data_objecten") else []
     r += _groep("Plaats in het model", [
         _sub("Typering", typering), _sub("Plaats in de indelingen", indelingen(w, van, bid, d)),
         _sub("Specialisaties per onderwerp", specialisaties_zonder_pagina),
         _sub("Kenmerken", kenmerken),
         _sub("Generalisatie", w.alineas(van, d.get("generalisatie"))), _sub("Specialisaties", specialisaties),
         _sub("GGM-componenten", componenten), _sub("Tegenhanger", tegenhanger), _sub("Relaties", relaties),
-        _sub("Kwaliteitsdoelen", kwaliteitsdoelen)])
+        _sub("Data-objecten", data_objecten), _sub("Kwaliteitsdoelen", kwaliteitsdoelen)])
 
     # Herkomst: waar het begrip is gevonden en hoe het aansluit op GGM en GEMMA.
     bronnen = [*_tabel(["Korte titel", "Bron"], [[w.bron(van, b, w.korte_titel(b)), w.titel(b)] for b in a.get("bronnen", [])])] \
@@ -558,6 +560,59 @@ def element_pagina(w: Wiki, bid: str) -> str:
     besluiten = [_besluit(w, van, b) for b in d.get("besluiten", [])]
     r += _groep("Herkomst", [_sub("Bronnen", bronnen), _sub("Afstemming met GGM", ggm_regels),
                              _sub("Afstemming met GEMMA", gemma_regels), _sub("Besluiten redacteur", besluiten)])
+    return _pagina(meta, r)
+
+
+# --- Data-objectpagina ---
+
+
+def ggm_van(x: dict, beslist: dict) -> dict:
+    """De letterlijke GGM-velden van een data-object: eigen bij een extra data-object, anders die van het element."""
+    return x.get("ggm") or ({} if x.get("onderbouwing") else beslist.get("ggm") or {})
+
+
+def _ggm_kort(x: dict, beslist: dict) -> str:
+    """De GGM-entiteit van een data-object in één regel."""
+    if ggm_van(x, beslist):
+        return f"GGM-entiteit *{ggm_van(x, beslist)['ggm_entiteit']}*, match {x['ggm_sterkte']}."
+    return "geen GGM-entiteit (GGM-terugmelding hiaat)."
+
+
+def data_object_pagina(w: Wiki, bid: str, x: dict) -> str:
+    """De pagina van een data-object: afgeleid uit de GGM-match van zijn element (tools/beslissen.py), met diens status."""
+    d = w.begrippen[bid]
+    van = x["pad"]
+    ggm = ggm_van(x, d["beslist"])
+    meta = {"id": x["id"], "type": "data-object", "archimate_type": "data-object", "status": d["status"],
+            "naam": x["naam"], "element": d["begrip"], "relatie": x["relatie"],
+            "match": {"ggm": x["ggm_sterkte"]},
+            **{k: ggm[k] for k in ("ggm_entiteit", "ggm_guid", "ggm_beleidsdomein") if ggm.get(k)}}
+    element = w.link(van, bid)
+    soort = ARCHIMATE_NAAM.get(w.uitkomst(bid)["archimate_type"], "element").lower()
+    lidwoord = "het" if soort == "bedrijfsobject" else "de"
+    betekenis = f"De gegevens over {lidwoord} {soort} {element} in het informatiemodel " + (
+        "(*realisatie*)." if x["relatie"] == "realisatie"
+        else "(*associatie*: ArchiMate kent geen realisatie naar dit type).")
+    r = [f"# {x['naam']}", "", _gegenereerd(f"de beoordeling {bid}.yaml (de GGM-match)"), "",
+         STATUSREGEL[d["status"]] + f" Volgt de status van {element}.", ""]
+    r += _sectie("Betekenis", [betekenis, ""])
+    ggm_bron = w.yaml.get("ggm", {}).get("bron")
+    model = w.bron(van, ggm_bron, "GGM") if ggm_bron else "GGM"
+    onderbouwing = x.get("onderbouwing") or (d.get("ggm") or {}).get("onderbouwing", "")
+    if ggm:
+        regels = [f"Match **{x['ggm_sterkte']}** met GGM-entiteit *{ggm['ggm_entiteit']}* (beleidsdomein "
+                  f"{ggm.get('ggm_beleidsdomein', '—')}, taakveld {ggm.get('ggm_taakveld', '—')}) in het {model}. "
+                  f"{w.tekst(van, onderbouwing)}", ""]
+        if ggm.get("ggm_definitie"):
+            regels += [f"> {_cel(ggm['ggm_definitie'])}", ""]
+    else:
+        regels = [f"Geen entiteit in het {model}. {w.tekst(van, onderbouwing)}", ""]
+    meldingen = [m for m in w.terugmeldingen if m.get("element") == bid or bid in (m.get("elementen") or [])]
+    if meldingen:
+        lijst = w.rel(van, TERUGMELDLIJST)
+        regels += ["GGM-terugmeldingen:", "", *[f"- [Nummer {m['nummer']}]({lijst}) ({m['type']}, {m.get('status', 'open')})"
+                                               for m in meldingen], ""]
+    r += _sectie("Afstemming met GGM", regels)
     return _pagina(meta, r)
 
 
@@ -1001,6 +1056,8 @@ def render(wiki_root: Path = WIKI_ROOT) -> dict[str, str]:
     for bid, d in w.begrippen.items():
         if w.pad(bid) and d.get("status"):
             uit[w.pad(bid)] = element_pagina(w, bid)
+            for x in d["beslist"].get("data_objecten", []):
+                uit[x["pad"]] = data_object_pagina(w, bid, x)
     for oid in w.onderwerpen:
         uit[gam_gemeen.begrippen_pad(oid)] = begrippenlijst(w, oid)
         uit[gam_gemeen.overzicht_pad(oid)] = overzicht(w, oid)

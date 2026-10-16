@@ -23,9 +23,6 @@ kenmerken:
     waarde: ja
     naar:
     - inschrijven-levenloos-geboren-kind
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Een eigen product in de UPL (nr. 90), apart van de BRP-inschrijving; geen bredere dienst in deze wiki.
@@ -48,7 +45,7 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
 - 2026-rijk-wet-brp-bwbr0033715
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -57,7 +54,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

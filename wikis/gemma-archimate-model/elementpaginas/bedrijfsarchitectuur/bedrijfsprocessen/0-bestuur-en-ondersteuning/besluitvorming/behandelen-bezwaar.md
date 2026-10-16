@@ -2,7 +2,7 @@
 id: behandelen-bezwaar
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Behandelen bezwaar
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: 'Het behandelen van een bezwaarschrift tegen een besluit: belanghebbenden horen, het besluit heroverwegen en op het bezwaar beslissen.'
 match:
   gemma: sterk
-data_object: nee
 procesniveau: bedrijfsproces
 afnemer: extern
 bronnen:
@@ -31,7 +30,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-bezwaar.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

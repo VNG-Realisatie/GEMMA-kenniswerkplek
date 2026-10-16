@@ -2,14 +2,13 @@
 id: inwoner
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Inwoner
 onderwerpen:
 - participatie
 definitie: Persoon die ingezetene is van de gemeente.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 synoniemen:
 - Ingezetene (wet)
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling inwoner.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

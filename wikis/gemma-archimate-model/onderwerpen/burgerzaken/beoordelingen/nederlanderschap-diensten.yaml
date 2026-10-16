@@ -26,9 +26,6 @@ kenmerken:
     onderbouwing: Onder Producten- en dienstenrealisatie publieksdiensten (GEMMA).
     gemma_relatie:
     - id-21417578-47f0-4f78-a4ba-50b4ee134815
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; GEMMA-functie op het niveau van het onderwerp.
@@ -91,7 +88,7 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 62 (GEMMA-domein Publieksdiensten)
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -100,7 +97,6 @@ beslist:
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

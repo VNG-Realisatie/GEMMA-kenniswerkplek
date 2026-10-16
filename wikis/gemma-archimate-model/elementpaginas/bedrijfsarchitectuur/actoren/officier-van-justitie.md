@@ -2,14 +2,13 @@
 id: officier-van-justitie
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Officier van justitie
 onderwerpen:
 - lijkbezorging
 definitie: Lid van het openbaar ministerie dat beslist over strafrechtelijk onderzoek, ook naar een niet-natuurlijke dood.
 match:
   gemma: geen
-data_object: nee
 doelgroep: ketenpartners
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -20,7 +19,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling officier-van-justitie.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

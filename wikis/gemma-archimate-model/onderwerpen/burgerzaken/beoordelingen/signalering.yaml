@@ -36,15 +36,12 @@ kenmerken:
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-rvig-hup-signalering-verstrekking-reisdocument
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: Categorie 12, groep 36 Signalering van de persoonslijst (LO BRP 4.4).
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
 synoniemen:
 - naam: Paspoortsignalering
   context: beleid
 toelichting: 'Invoer van een andere partij: de minister vermeldt een persoon in het register paspoortsignaleringen op verzoek van een tot signalering bevoegd orgaan (openbaar ministerie, ministers, rechter-commissaris, of een tot invordering bevoegd orgaan zoals het college) en deelt dat de burgemeester mee (Paspoortwet art. 18 tot en met 25). De gemeente beslist niet over de signalering zelf: zij neemt haar op in categorie 12 van de persoonslijst, controleert de signaleringslijst bij elke aangifte van verblijf en adres, en de burgemeester weigert op die grond een reisdocument of houdt het in en verklaart het vervallen (art. 41, 44, 53; HUP Signalering). Geen pagina; vermeld bij Behandelen aanvraag reisdocument, Inhouden reisdocument en Vervallen verklaren reisdocument.'
+bronnen:
+- 2025-rvig-logisch-ontwerp-brp-2025q1
 beslist:
   uitkomst:
     soort: onderdeel
@@ -52,12 +49,11 @@ beslist:
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     genoemd_begrip: Behandelen aanvraag reisdocument
     generiek: false
     typeregel: 18
   bronnen:
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-signalering-verstrekking-reisdocument
-  - 2025-rvig-logisch-ontwerp-brp-2025q1
   herkomst: rijksregelgeving

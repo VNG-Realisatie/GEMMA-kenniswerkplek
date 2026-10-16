@@ -2,7 +2,7 @@
 id: ambtenaar-burgerlijke-stand-aanvragen
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Ambtenaar burgerlijke stand aanvragen
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het laten aanwijzen van een eigen trouwambtenaar voor één dag, voor de voltrekking van het eigen huwelijk of partnerschap.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ambtenaar-burgerlijke-stand-aanvragen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

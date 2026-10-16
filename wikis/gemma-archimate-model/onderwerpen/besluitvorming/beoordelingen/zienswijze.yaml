@@ -29,9 +29,6 @@ kenmerken:
     waarde: ja
     naar:
     - uitvoeren-uniforme-openbare-voorbereidingsprocedure
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Een eigen product in de UPL (nr. 497); geen bredere dienst in deze wiki.
@@ -49,7 +46,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst Zienswijze; de Deelservice Inspraakprocedure (Vaststellen omgevingsplan) is een interne deeldienst voor het omgevingsplan. Nieuw voor GEMMA.
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -58,7 +55,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

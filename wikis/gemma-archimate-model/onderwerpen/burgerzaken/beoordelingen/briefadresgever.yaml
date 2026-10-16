@@ -20,9 +20,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Verantwoordelijkheid van een persoon of aangewezen rechtspersoon om post voor de houder van een briefadres in ontvangst te nemen en door te geven.
 beschrijving:
 - De briefadresgever is een natuurlijk persoon of een door het college aangewezen rechtspersoon; hij stemt schriftelijk in, zorgt dat geschriften voor de houder worden doorgegeven en verstrekt het college inlichtingen (HUP Verblijfplaats). Zonder briefadresgever registreert de gemeente een adres van de gemeente zelf (HUP Verblijfplaats).
@@ -47,7 +44,7 @@ relaties:
   - 2026-rvig-hup-verblijfplaats
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: Briefadres; Wet BRP art. 2.45 lid 3
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -56,7 +53,6 @@ beslist:
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 10
   bronnen:

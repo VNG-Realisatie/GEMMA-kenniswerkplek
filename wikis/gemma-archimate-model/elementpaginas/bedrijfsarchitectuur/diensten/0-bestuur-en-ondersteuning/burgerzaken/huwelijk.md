@@ -2,7 +2,7 @@
 id: huwelijk
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Huwelijk
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het laten voltrekken van een huwelijk door de ambtenaar van de burgerlijke stand, op een gekozen datum en locatie.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling huwelijk.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

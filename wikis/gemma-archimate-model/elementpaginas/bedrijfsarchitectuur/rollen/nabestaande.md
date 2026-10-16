@@ -2,14 +2,13 @@
 id: nabestaande
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Nabestaande
 onderwerpen:
 - lijkbezorging
 definitie: Naaste van een overledene die zorg draagt voor de uitvaart of de urn.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling nabestaande.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

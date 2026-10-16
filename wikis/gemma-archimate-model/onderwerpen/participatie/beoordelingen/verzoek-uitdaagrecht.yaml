@@ -29,9 +29,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De indiener stelt het op, maar de gemeente behandelt het en het bevoegde bestuursorgaan beslist erop, zoals bij een aanvraag.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur, alleen een facultatief formulier (var. 1 art. 6 lid 4).
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: 'De bronnen noemen geen breder begrip: zij spreken van een verzoek waarop het bestuursorgaan reageert en dat het toewijst of afwijst, niet van een aanvraag om een besluit (var. 1 art. [8]; Awb art. 1:3 lid 3). Of het een specialisatie van Aanvraag is, staat in de vragen.'
@@ -66,7 +63,7 @@ besluiten:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -75,7 +72,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     objectniveau: kernobject
     generiek: false
     typeregel: 18

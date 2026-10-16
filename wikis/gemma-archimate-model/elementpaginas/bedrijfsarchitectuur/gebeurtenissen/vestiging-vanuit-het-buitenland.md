@@ -2,14 +2,13 @@
 id: vestiging-vanuit-het-buitenland
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Vestiging vanuit het buitenland
 onderwerpen:
 - burgerzaken
 definitie: Het gaan wonen in een Nederlandse gemeente van een persoon die in het buitenland woonde.
 match:
   gemma: geen
-data_object: nee
 bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
 - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vestiging-vanuit-het-buitenland.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

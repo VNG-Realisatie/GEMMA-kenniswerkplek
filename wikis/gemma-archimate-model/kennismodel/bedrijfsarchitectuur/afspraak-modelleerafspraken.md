@@ -18,7 +18,7 @@ titel: Afspraak — modelleerafspraken
 | Herken je aan | *afspraak*. Moet ja: *wordt bewerkt* (kernrelatie); hoogstens 1 nee: *onderscheidbare exemplaren*, *levenscyclus*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfsproces ─toegang→ Afspraak |
 | Niveaus | als bij een bedrijfsobject: kernobject, subobject of generiek |
-| Eigenschappen | `taakveld`: het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling · `beleidsdomein`: het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling · `ggm`: de match met het GGM: entiteit, sterkte en onderbouwing · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `data_object`: annotatie: het begrip wordt als gegevensstructuur geautomatiseerd verwerkt |
+| Eigenschappen | `taakveld`: het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling · `beleidsdomein`: het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling · `ggm`: de match met het GGM: entiteit, sterkte en onderbouwing · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `data_objecten`: een extra data-object voor een andere GGM-entiteit: naam en GGM-match |
 | Indelingen | [Beleidsdomeinindeling](../indelingen.md) |
 | Naamvorm | de gangbare term uit beleid en praktijk, zoals bij een bedrijfsobject |
 | Afstemming | GGM: als bij een bedrijfsobject · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen |
@@ -34,6 +34,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | in | toegang | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | een handeling: registreren (schrijven), bijwerken (lezen-schrijven), beëindigen (schrijven), raadplegen (lezen), verstrekken (lezen), bewaren (lezen-schrijven), overbrengen (lezen), vernietigen (schrijven) | *wordt bewerkt* | nee: uitbreiding op het GEMMA-kennismodel |  |
 | in | aggregatie | [Product](product-modelleerafspraken.md) | omvat | *omvat diensten en afspraken* | ja |  |
 | uit | associatie (gericht) | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel |  |
+| in | realisatie | [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel |  |
 | in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling |
 
 ## Weggefilterd

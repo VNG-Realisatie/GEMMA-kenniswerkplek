@@ -2,7 +2,7 @@
 id: paspoortwet
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Paspoortwet
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Rijkswet over de soorten reisdocumenten, de aanspraak erop en de aanvraag, verstrekking, uitreiking, vervallenverklaring, het verval en de inhouding.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling paspoortwet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

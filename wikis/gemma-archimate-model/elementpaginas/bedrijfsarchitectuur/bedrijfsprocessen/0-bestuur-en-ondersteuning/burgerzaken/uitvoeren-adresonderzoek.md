@@ -2,7 +2,7 @@
 id: uitvoeren-adresonderzoek
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Uitvoeren adresonderzoek
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het onderzoeken of een persoon woont op het adres waarop hij is ingeschreven, en het besluiten over een juiste inschrijving.
 match:
   gemma: geen
-data_object: nee
 procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
@@ -28,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling uitvoeren-adresonderzoek.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

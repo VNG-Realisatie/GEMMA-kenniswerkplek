@@ -2,7 +2,7 @@
 id: aanvrager-van-de-verklaring-omtrent-het-gedrag
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Aanvrager van de verklaring omtrent het gedrag
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Hoedanigheid van degene omtrent wiens gedrag een verklaring omtrent het gedrag wordt gevraagd en die de aanvraag indient.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 synoniemen:
 - Aanvrager VOG (beleid)
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling aanvrager-van-de-verklaring-omtrent-het-gedrag.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -2,14 +2,13 @@
 id: kerkgenootschap
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Kerkgenootschap
 onderwerpen:
 - lijkbezorging
 definitie: Kerkelijke gemeenschap, met inbegrip van haar zelfstandige onderdelen en de lichamen waarin kerkgenootschappen zijn verenigd.
 match:
   gemma: geen
-data_object: nee
 doelgroep: ketenpartners
 synoniemen:
 - Gezindte (beleid)
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling kerkgenootschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

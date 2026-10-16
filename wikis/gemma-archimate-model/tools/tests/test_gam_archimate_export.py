@@ -849,3 +849,19 @@ def test_dienst_zonder_grondslag_gaat_niet_mee_en_staat_in_het_rapport(tmp_path)
     assert uit.zonder_grondslag == ["Legaliseren"]
     rapport = ae.rapport_md(uit, "2026-10-11T12:00:00", "2026-vng-gemma", False)
     assert "## Zonder grondslag" in rapport and "- Legaliseren" in rapport
+
+
+def test_data_object_in_de_applicatielaag_met_realisatie(tmp_path):
+    begrippen = _begrippen()
+    begrippen["urn"]["beslist"]["data_objecten"] = [
+        {"id": "urn-data", "naam": "Urn-data", "relatie": "realisatie", "ggm_sterkte": "geen", "pad": "y/urn-data.md"}]
+    uit, root = _export(tmp_path, begrippen=begrippen)
+    did = ae.vast_id("element", "data-object", "urn-data")
+    el = _el(root, did)
+    assert el.get("{http://www.w3.org/2001/XMLSchema-instance}type") == "archimate:DataObject"
+    assert [n for n, _ in _pad(root, did)] == ["Application", "wiki-gemma-model", "Data-objecten"]
+    assert _props(el)["wiki-gemma-model element"] == "urn"
+    realisatie = next(e for e in root.iter("element") if e.get("source") == did)
+    assert realisatie.get("{http://www.w3.org/2001/XMLSchema-instance}type") == "archimate:RealizationRelationship"
+    assert realisatie.get("target") == ae.vast_id("element", "urn")
+    assert uit.data_objecten == ["Urn-data → Urn (realisatie; GGM: geen, hiaat)"]

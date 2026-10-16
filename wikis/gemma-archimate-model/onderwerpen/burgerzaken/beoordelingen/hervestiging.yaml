@@ -15,9 +15,6 @@ kenmerken:
     onderbouwing: Start Inschrijven ingezetene.
     bronnen:
     - 2026-rvig-hup-hervestiging
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: Een soort vestiging vanuit het buitenland die tot hetzelfde bedrijfsproces leidt.
@@ -29,7 +26,6 @@ beslist:
     toelichting: Specialisatie zonder pagina (kern ja, 1/1)
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Vestiging vanuit het buitenland
     generiek: false
     typeregel: 15

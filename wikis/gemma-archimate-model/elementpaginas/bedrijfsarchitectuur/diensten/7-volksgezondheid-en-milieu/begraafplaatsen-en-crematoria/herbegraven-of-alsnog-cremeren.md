@@ -2,7 +2,7 @@
 id: herbegraven-of-alsnog-cremeren
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Herbegraven of alsnog cremeren
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Toestemming van de gemeente om een begraven stoffelijk overschot op te graven en elders te begraven of te cremeren.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Fysieke leefomgeving
 bronnen:
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling herbegraven-of-alsnog-cremeren.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

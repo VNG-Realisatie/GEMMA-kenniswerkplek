@@ -18,9 +18,6 @@ kenmerken:
     waarde: ja
     naar:
     - exploiteren-van-begraafplaatsen
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Inzage in het openbare register van de stoffelijke overschotten die op een begraafplaats zijn begraven, met de plaats van het graf.
 beschrijving:
 - De houder van een begraafplaats houdt een register bij van alle daar begraven stoffelijke overschotten, met de plaats waar zij begraven zijn; het register is openbaar en gaat bij opheffing naar het archief van de gemeente waar de plaats lag (Wet op de lijkbezorging art. 27). Is de gemeente houder, dan biedt zij de inzage aan. Het register zelf is het Register van begraven lijken, een representatie van Graf.
@@ -40,7 +37,7 @@ gemma_functie:
 relaties: []
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -49,7 +46,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

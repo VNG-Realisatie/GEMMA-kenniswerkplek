@@ -2,7 +2,7 @@
 id: vervallen-verklaren-grafrecht
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Vervallen verklaren grafrecht
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het beëindigen van een grafrecht door de gemeente, bijvoorbeeld bij verwaarlozing van het graf of het uitblijven van betaling.
 match:
   gemma: geen
-data_object: nee
 procesniveau: bedrijfsproces
 afnemer: extern
 bronnen:
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vervallen-verklaren-grafrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

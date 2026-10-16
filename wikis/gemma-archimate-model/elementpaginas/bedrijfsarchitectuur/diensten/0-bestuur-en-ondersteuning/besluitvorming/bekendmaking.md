@@ -2,7 +2,7 @@
 id: bekendmaking
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Bekendmaking
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: Het kenbaar maken van een besluit aan wie het aangaat, waarna het in werking treedt.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Bestuur
 bronnen:
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bekendmaking.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

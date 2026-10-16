@@ -2,7 +2,7 @@
 id: stempas-ontvangen
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Stempas ontvangen
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het als kiezer ontvangen van een stempas voor een verkiezing, en bij verlies of niet-ontvangst een nieuwe aanvragen.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling stempas-ontvangen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -28,9 +28,6 @@ kenmerken:
     waarde: ja
     naar:
     - vaststellen-dwangsom-bij-niet-tijdig-beslissen
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Een eigen product in de UPL (rij 330); geen bredere dienst in deze wiki.
@@ -48,7 +45,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst of proces voor de dwangsom bij niet tijdig beslissen. Nieuw voor GEMMA.
 bronnen:
 - 2026-logius-upl-actueel
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -57,7 +54,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

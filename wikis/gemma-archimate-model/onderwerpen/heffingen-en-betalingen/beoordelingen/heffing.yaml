@@ -28,11 +28,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: GGM-entiteit.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie.
@@ -93,7 +88,7 @@ bronnen:
 - 2024-rijk-gemeentewet-wettekst
 - 2026-vng-retributies
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -102,7 +97,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: generiek
     generiek: false
     typeregel: 18
@@ -111,6 +105,12 @@ beslist:
   - 2026-vng-retributies
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: heffing-data
+    naam: Heffing-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/heffing-data.md
   ggm:
     ggm_entiteit: Heffing
     ggm_guid: EAID_B3371695_97AD_49d2_9AF1_15591B422007

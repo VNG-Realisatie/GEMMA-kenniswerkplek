@@ -29,9 +29,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: Het bestuursorgaan stelt het op, eventueel in overleg met inwoners en maatschappelijke partijen (var. 1 art. 3 lid 1; toelichting).
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Openbaar plan waarin een bestuursorgaan vooraf vastlegt waarom, hoe en wanneer het inwoners betrekt bij de voorbereiding, uitvoering of evaluatie van beleid.
 beschrijving:
 - Het bestuursorgaan stelt het plan op voordat het beleid wordt voorbereid, uitgevoerd of geëvalueerd, en maakt het openbaar; bereidt het college een besluit van de raad voor, dan stelt het college het op en informeert het de raad over de inhoud (2024-vng-model-participatieverordening, var. 1 art. 3 lid 1, 3; var. 2 art. [7] lid 1, 3).
@@ -55,7 +52,7 @@ gemma:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -64,7 +61,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     objectniveau: kernobject
     generiek: false
     typeregel: 18

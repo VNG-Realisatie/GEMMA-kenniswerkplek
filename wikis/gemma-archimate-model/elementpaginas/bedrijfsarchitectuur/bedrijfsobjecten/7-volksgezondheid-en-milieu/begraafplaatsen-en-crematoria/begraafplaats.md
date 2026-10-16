@@ -2,7 +2,7 @@
 id: begraafplaats
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Begraafplaats
 onderwerpen:
 - lijkbezorging
@@ -12,7 +12,6 @@ definitie: Terrein waar stoffelijke overschotten worden begraven en urnen worden
 match:
   ggm: geen
   gemma: geen
-data_object: nee
 objectniveau: kernobject
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling begraafplaats.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -29,9 +29,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Houder waarin de as van een overledene wordt geborgen en wordt bewaard, bijgezet of verstrooid.
@@ -84,7 +81,7 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-retributies
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -95,10 +92,11 @@ beslist:
     voorleggen: true
     redenen:
     - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-    data_object: nee
     generiek: false
     typeregel: 18
   voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

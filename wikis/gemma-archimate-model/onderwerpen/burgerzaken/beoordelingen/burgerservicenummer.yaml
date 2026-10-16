@@ -13,13 +13,15 @@ toelichting: 'Eigenschap van Ingeschreven persoon: zijn identificatienummer. Het
 synoniemen:
 - naam: BSN
   context: dagelijks gebruik
+bronnen:
+- 2026-rvig-hup-wijzigen-bsn
+- 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
 beslist:
   uitkomst:
     soort: eigenschap
     regel: 4
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Ingeschreven persoon
     generiek: false
   bronnen:
@@ -27,6 +29,3 @@ beslist:
   - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
   - 2026-rvig-hup-wijzigen-identificatienummers
   herkomst: richtlijn
-bronnen:
-- 2026-rvig-hup-wijzigen-bsn
-- 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland

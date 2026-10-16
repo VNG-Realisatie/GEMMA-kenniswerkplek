@@ -2,7 +2,7 @@
 id: zienswijze
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Zienswijze
 onderwerpen:
 - besluitvorming
@@ -12,7 +12,6 @@ beleidsdomein: Besluitvorming
 definitie: Het schriftelijk of mondeling naar voren brengen van een mening over een ontwerpbesluit dat ter inzage ligt.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Bestuur
 bronnen:
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling zienswijze.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

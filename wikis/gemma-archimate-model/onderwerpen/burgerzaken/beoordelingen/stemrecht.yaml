@@ -23,9 +23,6 @@ kenmerken:
     waarde: ja
     naar:
     - registreren-kiesgerechtigdheid
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 afnemer: extern
 domein: Publieksdiensten
 definitie: Het registreren als kiezer van wie kiesgerechtigd is, en op verzoek meedelen of iemand als kiezer is geregistreerd.
@@ -46,7 +43,7 @@ relaties:
   vindplaats: art. D 5
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -55,7 +52,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

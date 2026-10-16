@@ -24,9 +24,6 @@ kenmerken:
     onderbouwing: Vastgesteld door de raad, in werking op een datum, en ingetrokken als een nieuwe verordening haar vervangt, met overgangsrecht (var. 1 art. [13]–[14]).
     bronnen:
     - 2024-vng-model-participatieverordening
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   deel_van_object:
     waarde: nee
     onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
@@ -84,7 +81,7 @@ beleidsdomein: Participatie
 bronnen:
 - 2026-rijk-gemeentewet-wettekst
 - 2024-vng-implementatiehandleiding-model-participatieverordening
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -95,10 +92,11 @@ beslist:
     voorleggen: true
     redenen:
     - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-    data_object: nee
     generiek: false
     typeregel: 18
   voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-gemeentewet-wettekst

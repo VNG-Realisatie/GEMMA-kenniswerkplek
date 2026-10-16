@@ -2,7 +2,7 @@
 id: uitvaart-vervroegen-of-uitstellen
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Uitvaart vervroegen of uitstellen
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Toestemming van de gemeente om een overledene eerder dan 36 uur of later dan zes werkdagen na het overlijden te begraven of te cremeren.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling uitvaart-vervroegen-of-uitstellen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -2,7 +2,7 @@
 id: beleidsregel
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Beleidsregel
 onderwerpen:
 - besluitvorming
@@ -12,7 +12,6 @@ definitie: Algemene regel die een bestuursorgaan bij besluit vaststelt over hoe 
 match:
   ggm: geen
   gemma: geen
-data_object: nee
 objectniveau: generiek
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beleidsregel.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

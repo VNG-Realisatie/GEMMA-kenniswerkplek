@@ -24,9 +24,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Geen element: gedeputeerde staten stellen de schadeloosstelling vast; de gemeente draagt alleen de kosten (art. 45 lid 2).'
 onderwerpen:
 - lijkbezorging
@@ -45,7 +42,6 @@ beslist:
     redenen:
     - 'wordt bewerkt: nee'
     - 'levenscyclus: nee'
-    data_object: nee
     generiek: false
     typeregel: 18
   voor_te_leggen:

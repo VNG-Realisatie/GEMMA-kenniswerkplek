@@ -2,7 +2,7 @@
 id: reglement-rijbewijzen
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Reglement rijbewijzen
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Algemene maatregel van bestuur met de regels voor de aanvraag, afgifte en omwisseling van rijbewijzen en de verklaringen van rijvaardigheid en geschiktheid.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-reglement-rijbewijzen-bwbr0008074
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling reglement-rijbewijzen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

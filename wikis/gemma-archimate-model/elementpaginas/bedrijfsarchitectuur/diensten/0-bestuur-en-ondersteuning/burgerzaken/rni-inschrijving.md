@@ -2,7 +2,7 @@
 id: rni-inschrijving
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: RNI inschrijving
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Inschrijving in de registratie niet-ingezetenen van wie niet in Nederland woont maar wel een relatie heeft met de Nederlandse overheid.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rni-inschrijving.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

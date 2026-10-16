@@ -4,9 +4,6 @@ kenmerken:
   ontsluit_een_dienst:
     waarde: nee
     onderbouwing: In de bronnen alleen voor mededelingen van de behandelend arts aan de lijkschouwer; geen gemeentelijke dienst aan een afnemer.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Geen element in dit onderwerp: het kanaal ontsluit hier geen gemeentelijke dienst. Kanalen vormen één centrale set.'
 onderwerpen:
 - lijkbezorging
@@ -26,7 +23,6 @@ beslist:
     voorleggen: true
     redenen:
     - 'ontsluit een dienst: nee'
-    data_object: nee
     generiek: false
     typeregel: 12
   voor_te_leggen:

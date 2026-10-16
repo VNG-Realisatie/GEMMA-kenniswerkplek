@@ -3,9 +3,6 @@ vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   landelijk:
     waarde: ja
     onderbouwing: 'Rijksregelgeving: een algemene maatregel van bestuur.'
@@ -85,7 +82,7 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-brp-bwbr0034306
   vindplaats: art. 36 (de gemeente waar de inschrijfvoorziening is ondergebracht)
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -94,7 +91,6 @@ beslist:
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 14
   bronnen:

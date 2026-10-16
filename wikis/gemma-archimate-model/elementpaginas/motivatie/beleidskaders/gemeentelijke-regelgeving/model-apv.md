@@ -2,7 +2,7 @@
 id: model-apv
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Model-APV
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: Model van de VNG voor de algemene plaatselijke verordening, waarin een gemeente de openbare orde en andere onderwerpen van haar huishouding regelt.
 match:
   gemma: geen
-data_object: nee
 regelgever: VNG-modelverordening
 synoniemen:
 - Model Algemene plaatselijke verordening (beleid)
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling model-apv.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -22,9 +22,6 @@ kenmerken:
     waarde: ja
     naar:
     - verwerken-vermissing-rijbewijs
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het melden bij de gemeente dat een rijbewijs kwijt of gestolen is, zodat het rijbewijs ongeldig wordt en misbruik wordt voorkomen.
 beschrijving:
 - Gratis; online bij de RDW met DigiD, waar de vermissing direct wordt geregistreerd, of aan de balie met een eigen afspraak, waar men de vermissingsverklaring invult (Utrecht). Bij diefstal of beroving adviseert Utrecht ook aangifte te doen bij de politie. De UPL kent geen product voor deze melding; zie de terugmelding.
@@ -43,7 +40,7 @@ domein: Publieksdiensten
 bronnen:
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -52,7 +49,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

@@ -40,12 +40,6 @@ kenmerken:
     onderbouwing: De burgemeester bevestigt de optie zelf en reikt de bevestiging en het uittreksel uit; alleen het besluit tot verlening neemt de minister (Besluit art. 11, 38, 60b).
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: Categorie 04 Nationaliteit van de persoonslijst, met de reden van opnemen en beëindigen (HUP Nederlandse nationaliteit; LO BRP 4.4).
-    bronnen:
-    - 2026-rvig-hup-nederlandse-nationaliteit
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: 'Specialisatie van Nationaliteit die de gemeente anders behandelt: alleen voor het Nederlanderschap kent zij eigen processen (optie, naturalisatie, afstand) met eigen gegevens (reden van verkrijging en verlies, bijzonder Nederlanderschap); Nationaliteit zelf is een onderdeel van Ingeschreven persoon zonder pagina (Rijkswet; Besluit; HUP Nationaliteit).'
@@ -91,7 +85,8 @@ bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+- 2025-rvig-logisch-ontwerp-brp-2025q1
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -100,7 +95,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: kernobject
     generiek: false
     typeregel: 18
@@ -109,10 +103,16 @@ beslist:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rvig-hup-nederlandse-nationaliteit
   - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-nederlandse-nationaliteit
   - 2026-rvig-hup-nationaliteit
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: nederlanderschap-data
+    naam: Nederlanderschap-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/nederlanderschap-data.md
   ggm:
     ggm_entiteit: NederlandseNationaliteitIngeschrevenPersoon
     ggm_guid: EAID_BA5F2281_466D_4c69_9EB8_D10614C5CD8E

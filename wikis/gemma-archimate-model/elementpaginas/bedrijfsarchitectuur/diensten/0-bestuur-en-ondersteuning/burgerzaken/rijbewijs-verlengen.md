@@ -2,7 +2,7 @@
 id: rijbewijs-verlengen
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Rijbewijs verlengen
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het vernieuwen van een Nederlands rijbewijs bij de gemeente, aan de balie of online via de RDW, en het afhalen ervan.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rijbewijs-verlengen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -3,9 +3,6 @@ vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   landelijk:
     waarde: ja
     onderbouwing: Wet van het Rijk.
@@ -57,7 +54,7 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
 regelgever: rijk
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -66,7 +63,6 @@ beslist:
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 14
   bronnen:

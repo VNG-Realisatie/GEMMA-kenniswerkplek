@@ -2,7 +2,7 @@
 id: behandelen-klacht
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Behandelen klacht
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: 'Het behandelen van een klacht over een gedraging van een bestuursorgaan: de klager horen, de klacht onderzoeken en een oordeel geven.'
 match:
   gemma: sterk
-data_object: nee
 procesniveau: bedrijfsproces
 afnemer: extern
 bronnen:
@@ -31,7 +30,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-klacht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

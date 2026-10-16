@@ -2,7 +2,7 @@
 id: heffingsverordening
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Heffingsverordening
 onderwerpen:
 - heffingen-en-betalingen
@@ -13,7 +13,8 @@ definitie: Door de gemeenteraad vastgestelde verordening over de heffing en invo
 match:
   ggm: exact
   gemma: sterk
-data_object: ja
+data_objecten:
+- Heffingsverordening-data
 objectniveau: generiek
 synoniemen:
 - Belastingverordening (wet)
@@ -52,7 +53,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling heffingsverordening.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -104,7 +105,6 @@ De kenmerken met ja; de andere zijn nee.
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, per belasting of recht en per gemeente. [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, vastgesteld, gewijzigd, ingetrokken (Gemeentewet art. 216). [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, geraadpleegd voor de tarieven bij uitgifte en onderhoud (Groningen art. 8, 23, 24). [Beheersverordening begraafplaatsen Groningen](../../../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) |
-| **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, GGM-entiteit. [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, specialisatie van Regeling met eigen gegevens (belastingplichtige, belastbaar feit, tarief, art. 217); het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten. [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 | **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, heffingsverordeningen komen in veel onderwerpen voor (Gemeentewet art. 216, 229). [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) |
 
@@ -127,6 +127,10 @@ De kenmerken met ja; de andere zijn nee.
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Gemeentewet](../../../../motivatie/beleidskaders/rijksregelgeving/gemeentewet.md) | is grondslag voor *associatie (gericht)* | Heffingsverordening | [Gemeentewet](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2024-rijk-gemeentewet-wettekst.md) (art. 216) |
+
+### Data-objecten
+
+- [Heffingsverordening-data](../../../../applicatiearchitectuur/data-objecten/heffingsverordening-data.md) *realisatie*: GGM-entiteit *Heffingsverordening*, match exact.
 
 ## Herkomst
 

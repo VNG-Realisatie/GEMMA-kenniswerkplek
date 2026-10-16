@@ -30,9 +30,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Gezondheidsdienst die de colleges van de gemeenten in een regio via een gemeenschappelijke regeling instellen en in stand houden voor de publieke gezondheid.
 beschrijving:
 - De colleges van burgemeester en wethouders van de gemeenten in een regio stellen de gemeentelijke gezondheidsdienst via een gemeenschappelijke regeling in en houden haar in stand (Wet publieke gezondheid art. 14 lid 1); de regeling stelt een openbaar lichaam in, zodat de GGD eigen rechtspersoonlijkheid heeft (art. 14 lid 2). De gemeenten zijn zo mede-eigenaar en opdrachtgever. De GGD staat onder leiding van een directeur publieke gezondheid (art. 14 lid 3).
@@ -62,7 +59,7 @@ besluiten:
   besluit: 'Hoofdkenmerk samenwerkingsverband: de GGD is altijd een samenwerkingsverband van gemeenten, met eigen rechtspersoon (Actor); in sommige processen treedt zij op als handelende partij, via de rol die zij vervult (Adviseur). Los van verantwoordelijkheid mag daarom ook bij een samenwerkingsverband.'
   gevolg: verwerkt
   zekerheid: kennis
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -71,7 +68,6 @@ beslist:
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 8
   bronnen:

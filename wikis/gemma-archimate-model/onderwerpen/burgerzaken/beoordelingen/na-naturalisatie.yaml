@@ -13,6 +13,8 @@ besluiten:
   besluit: 'Buiten scope: loopt via de IND, zonder handeling van de gemeente.'
   gevolg: afwijzen
   zekerheid: kennis
+bronnen:
+- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
 beslist:
   uitkomst:
     soort: buiten_scope
@@ -21,12 +23,9 @@ beslist:
     voorleggen: false
     redenen:
     - 'gemeentelijk: nee'
-    data_object: nee
     generiek: false
   voor_te_leggen:
   - 'gemeentelijk: nee'
   bronnen:
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   herkomst: overig
-bronnen:
-- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie

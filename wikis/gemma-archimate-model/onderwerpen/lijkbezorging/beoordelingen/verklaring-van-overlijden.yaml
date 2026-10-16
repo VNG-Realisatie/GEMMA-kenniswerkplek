@@ -31,9 +31,6 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rvo-aangifte-en-akte-van-overlijden
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Verklaring van de schouwer dat de dood door een natuurlijke oorzaak is ingetreden.
@@ -62,7 +59,6 @@ beslist:
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Verlenen verlof tot begraving of crematie
     generiek: false
     typeregel: 18

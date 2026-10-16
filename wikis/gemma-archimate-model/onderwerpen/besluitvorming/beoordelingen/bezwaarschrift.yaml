@@ -29,9 +29,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De belanghebbende dient het in, maar de gemeente behandelt het als eigen zaak, legt het ter inzage en beslist erop (art. 7:4, 7:11).
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   generiek:
     waarde: ja
     onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp waarin de gemeente besluiten neemt (art. 6:4, 7:1).
@@ -56,7 +53,7 @@ relaties:
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 6:5 lid 1 onder c, 7:11
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -65,11 +62,20 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     objectniveau: generiek
     generiek: false
     typeregel: 18
+  voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  open:
+  - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: bezwaarschrift-data
+    naam: Bezwaarschrift-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/bezwaarschrift-data.md
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/bezwaarschrift.md

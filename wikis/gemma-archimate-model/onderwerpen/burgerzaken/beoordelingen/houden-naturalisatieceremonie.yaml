@@ -62,9 +62,6 @@ kenmerken:
     onderbouwing: Verkrijging van het Nederlanderschap (Besluit art. 60a lid 1, 60b lid 1).
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het oproepen van nieuwe Nederlanders en het uitreiken van de bevestiging of het naturalisatiebesluit, na de verklaring van verbondenheid.
 synoniemen:
 - naam: Uitreiken bevestiging of uittreksel
@@ -85,7 +82,6 @@ beslist:
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Behandelen naturalisatieverzoek
     generiek: false
     typeregel: 15

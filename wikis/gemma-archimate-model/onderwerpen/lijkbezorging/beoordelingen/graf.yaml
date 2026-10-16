@@ -30,11 +30,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: 'Gravenadministratie: het register van begraven lijken met de plaats (art. 27) wordt als gegevensstructuur bijgehouden; GGM Gemeentebegrafenis verwijst ernaar (attribuut datumRuimingGraf).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Eigen behandeling (uitgifte, begraving, ruiming); de grafsoorten zijn zijn specialisaties. Geen breder herkenbaar begrip.
@@ -85,7 +80,7 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -94,15 +89,22 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: kernobject
     generiek: false
     typeregel: 18
   voor_te_leggen:
-  - gegevensobject zonder sterke GGM-match
+  - data-object zonder sterke GGM-match
+  open:
+  - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: graf-data
+    naam: Graf-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/graf-data.md
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md

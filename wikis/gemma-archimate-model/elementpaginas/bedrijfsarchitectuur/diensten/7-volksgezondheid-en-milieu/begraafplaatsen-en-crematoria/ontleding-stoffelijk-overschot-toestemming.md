@@ -2,7 +2,7 @@
 id: ontleding-stoffelijk-overschot-toestemming
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Ontleding stoffelijk overschot toestemming
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Toestemming van de gemeente om een stoffelijk overschot in het belang van de wetenschap of het wetenschappelijk onderwijs te laten ontleden.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Fysieke leefomgeving
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ontleding-stoffelijk-overschot-toestemming.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

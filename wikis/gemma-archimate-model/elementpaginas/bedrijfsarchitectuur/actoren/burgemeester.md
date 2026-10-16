@@ -2,7 +2,7 @@
 id: burgemeester
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Burgemeester
 onderwerpen:
 - bestuur-en-organisatie
@@ -11,7 +11,6 @@ onderwerpen:
 definitie: Bestuursorgaan van de gemeente, voorzitter van gemeenteraad en college, benoemd bij koninklijk besluit.
 match:
   gemma: geen
-data_object: nee
 doelgroep: gemeente
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling burgemeester.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

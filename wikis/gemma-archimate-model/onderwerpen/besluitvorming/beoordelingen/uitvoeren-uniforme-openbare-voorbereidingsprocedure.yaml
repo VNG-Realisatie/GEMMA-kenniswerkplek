@@ -60,9 +60,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 kernobject: besluit
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
@@ -128,7 +125,7 @@ besluiten:
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -137,7 +134,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

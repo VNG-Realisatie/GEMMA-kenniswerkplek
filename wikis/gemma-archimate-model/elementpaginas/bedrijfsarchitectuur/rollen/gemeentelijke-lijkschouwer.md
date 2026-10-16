@@ -2,14 +2,13 @@
 id: gemeentelijke-lijkschouwer
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Gemeentelijke lijkschouwer
 onderwerpen:
 - lijkbezorging
 definitie: Arts die door het college is benoemd om stoffelijke overschotten te schouwen.
 match:
   gemma: geen
-data_object: nee
 doelgroep: gemeente
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -19,7 +18,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeentelijke-lijkschouwer.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

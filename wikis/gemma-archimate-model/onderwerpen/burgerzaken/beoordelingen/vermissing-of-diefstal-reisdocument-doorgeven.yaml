@@ -22,9 +22,6 @@ kenmerken:
     waarde: ja
     naar:
     - verwerken-vermissing-reisdocument
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het melden bij de gemeente dat een paspoort of identiteitskaart kwijt of gestolen is, zodat het document ongeldig wordt en misbruik wordt voorkomen.
 beschrijving:
 - Gratis, online en per document; vanaf achttien jaar meldt de houder zelf, voor een kind tot en met elf jaar een ouder, van twaalf tot en met zeventien jaar het kind of een ouder. Een als vermist opgegeven document is niet meer geldig, ook niet als het terugkomt, en moet dan worden ingeleverd (Utrecht). De Paspoortwet laat de houder de vermissing melden op een bij ministeriële regeling bepaalde wijze (art. 5a). De UPL kent geen product voor deze melding; zie de terugmelding.
@@ -43,7 +40,7 @@ domein: Publieksdiensten
 bronnen:
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
 - 2026-rvig-hup-inhouding-inlevering-vermissing
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -52,7 +49,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

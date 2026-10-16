@@ -2,7 +2,7 @@
 id: beheren-begraafplaatsen
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Beheren begraafplaatsen
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: 'Het beheer van een begraafplaats over de hele levensloop: aanleggen, in gebruik nemen, sluiten en opheffen.'
 match:
   gemma: geen
-data_object: nee
 procesniveau: levensloopproces
 afnemer: extern
 bronnen:
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beheren-begraafplaatsen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

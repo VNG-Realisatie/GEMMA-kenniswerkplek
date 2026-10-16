@@ -26,7 +26,7 @@ Fase A kiest eerst het vak: de laag, het aspect en intern of extern, zoals in Ar
 | Laag | Actief intern | Actief extern | Gedrag intern | Gedrag extern | Passief | Samengesteld |
 |---|---|---|---|---|---|---|
 | bedrijf | Actor, Rol, Bedrijfssamenwerking | Kanaal | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie | Dienst | Bedrijfsobject, Afspraak, Representatie (geen pagina) | Product |
-| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (nu een annotatie) | — |
+| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (afgeleid uit de GGM-match) | — |
 | technologie | weggefilterd: komt misschien nog | | | | | |
 | strategie | Capability (Vermogen): buiten dit model | | | | | |
 | motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |
@@ -119,7 +119,7 @@ Beantwoord de vragen op het pad, in twee fasen (`tools/bepaal_type.py vragen <id
 | 44 | *in functie-indeling* † | Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. | Exploiteren van begraafplaatsen (onder Exploitatie fysieke leefomgeving) | Lijkbezorging als functie | GEMMA (Functie-indeling naar domein) |
 | 45 | *leidt tot gebeurtenis* † | Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. | Vervallen verklaren grafrecht → Verval van het grafrecht | een tussenstap zonder eigen uitkomst | GEMMA (proces triggert gebeurtenis, regel 924) |
 
-**Passief.** Bij een ding (geen hoofdkenmerk); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en *geautomatiseerd verwerkt* bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; *omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.
+**Passief.** Bij een ding (geen hoofdkenmerk); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; *omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.
 
 | Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
 |---|---|---|---|---|---|
@@ -132,22 +132,21 @@ Beantwoord de vragen op het pad, in twee fasen (`tools/bepaal_type.py vragen <id
 | 52 | *invoer van een ander* | Maakt en beheert een andere partij het, terwijl de gemeente het alleen ontvangt of raadpleegt? Noem de maker. | verklaring van overlijden (de arts of lijkschouwer) | vergunning (de gemeente verleent haar) | wiki (abstractieniveau) |
 | 53 | *zelfstandig aanbod* | Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product? | bewonersparkeervergunning | bezoekersparkeervergunning als tarief van parkeervergunning | UPL (één naam per aanbod) |
 | 54 | *omvat diensten en afspraken* † | Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze. | parkeervergunning (dienst parkeren, voorwaarden) | losse dienst | GEMMA (product bundelt dienst en afspraak) |
-| 55 | *geautomatiseerd verwerkt* | Wordt het als gegevensstructuur geautomatiseerd verwerkt? | zaak in het zaaksysteem | keukentafelgesprek | GEMMA (definitie Data-object) |
 
 **Beleidskader.** Alleen bij *regeling als geheel*.
 
 | Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
 |---|---|---|---|---|---|
-| 56 | *landelijk* | Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Wet op de lijkbezorging; AVG; modelverordening | beheersverordening of beleidsnota van één gemeente (blijft bron) | GEMMA (definitie Beleidskader); wiki |
-| 57 | *in werking* | Is de regeling geldend recht, of als modelverordening actueel? | Archiefwet 1995 | ingetrokken wet | wiki |
-| 58 | *is grondslag voor* † | Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. | Wet op de lijkbezorging art. 28 → Verlenen grafrecht | BW boek 2, gebruikt voor één definitie | GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader) |
+| 55 | *landelijk* | Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Wet op de lijkbezorging; AVG; modelverordening | beheersverordening of beleidsnota van één gemeente (blijft bron) | GEMMA (definitie Beleidskader); wiki |
+| 56 | *in werking* | Is de regeling geldend recht, of als modelverordening actueel? | Archiefwet 1995 | ingetrokken wet | wiki |
+| 57 | *is grondslag voor* † | Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. | Wet op de lijkbezorging art. 28 → Verlenen grafrecht | BW boek 2, gebruikt voor één definitie | GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader) |
 
 **Specialisatie.** Altijd, als het type een pagina heeft; zonder antwoord *zelfstandige specialisatie* ja en *generiek* nee.
 
 | Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
 |---|---|---|---|---|---|
-| 59 | *zelfstandige specialisatie* (standaard ja) | Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. | Omgevingsvergunning naast Vergunning (eigen wet en procedure); Houder van het crematorium naast Houder van de begraafplaats (eigen plichten) | vergunning tot opgraving (variant van Vergunning); aanvrager van een vergunning tot opgraving (variant van Aanvrager) | GEMMA (zelfstandig ding waar beleid op gemaakt wordt; specialisatie) |
-| 60 | *generiek* | Komt het met dezelfde betekenis in veel onderwerpen voor? | Besluit; Beschikking; aanvraag ontvangen; Klant | Graf; Ruimen graf | wiki (abstractieniveau; GEMMA generieke elementen) |
+| 58 | *zelfstandige specialisatie* (standaard ja) | Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. | Omgevingsvergunning naast Vergunning (eigen wet en procedure); Houder van het crematorium naast Houder van de begraafplaats (eigen plichten) | vergunning tot opgraving (variant van Vergunning); aanvrager van een vergunning tot opgraving (variant van Aanvrager) | GEMMA (zelfstandig ding waar beleid op gemaakt wordt; specialisatie) |
+| 59 | *generiek* | Komt het met dezelfde betekenis in veel onderwerpen voor? | Besluit; Beschikking; aanvraag ontvangen; Klant | Graf; Ruimen graf | wiki (abstractieniveau; GEMMA generieke elementen) |
 
 ## Stappentabel
 
@@ -193,7 +192,7 @@ Stap 0–4 van boven naar beneden: de eerste passende regel beslist en levert he
 | 36 | 7 Indeling | bedrijfsinteractie | `kernobject` verplicht; voorleggen: ketensamenwerking (estafette) of orkestratie (de gemeente levert een dienst aan derden) |
 | — | Aanvulling | `homoniem_van` ingevuld | voorleggen: naamkeuze; `## Homoniemen` bij beide; bij een GGM-homoniem een terugmelding |
 | — | Aanvulling | Actor of Rol met *onderscheidbare exemplaren*, *levenscyclus* en *wordt bewerkt* | ook een bedrijfsobjectpagina (tegenhanger) |
-| — | Aanvulling | *geautomatiseerd verwerkt* | annotatie `data_object: ja` |
+| — | Aanvulling | Bedrijfsobject, afspraak, rol, actor of gebeurtenis met een GGM-match, of met sterkte geen en een GGM-terugmelding hiaat | het data-object *<naam>-data* (tools/beslissen.py); `data_objecten` voor een extra GGM-entiteit |
 | — | Signaal (controle) | Dienst zonder realiserend proces of functie met pagina; Gebeurtenis zonder gestart gedrag met pagina | waarschuwing: proces als kandidaat voorleggen |
 | — | Signaal (controle) | Functie onder domeinniveau of dienst zonder (bovenliggende) functie, met meer (bovenliggende) functies, met een ander domein, of een functie buiten de GEMMA-functieketen; product onder een functie | waarschuwing: de (bovenliggende) functie wordt een element met een aggregatie naar de functie of de dienst; een functie met GEMMA type *Bedrijfsfunctie domein* en een product hangen via `domein` aan de domeingroepering |
 | — | Signaal (controle) | Product of dienst waarvan het domein niet past bij de GEMMA-domeinen van zijn beleidsdomein; een beleidsdomein dat GEMMA niet kent met producten en diensten in meer domeinen | waarschuwing: domein of beleidsdomein herzien, of het verschil voorleggen als voorstel aan het GEMMA-team |

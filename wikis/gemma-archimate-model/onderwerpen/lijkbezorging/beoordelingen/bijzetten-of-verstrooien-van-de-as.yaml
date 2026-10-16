@@ -57,9 +57,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een bijgezette, verstrooide of meegegeven asbus, niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: 'Het geven van een bestemming aan de as na een crematie: bijzetten van de urn, verstrooien van de as of meegeven aan de nabestaande.'
 gemma:
   sterkte: geen
@@ -73,7 +70,6 @@ beslist:
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Uitvoeren lijkbezorging
     generiek: false
     typeregel: 15

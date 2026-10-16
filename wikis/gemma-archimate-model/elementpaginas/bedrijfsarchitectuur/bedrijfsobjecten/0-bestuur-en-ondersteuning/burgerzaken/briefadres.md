@@ -2,7 +2,7 @@
 id: briefadres
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Briefadres
 onderwerpen:
 - burgerzaken
@@ -12,7 +12,8 @@ definitie: Adres waar post voor een ingeschreven persoon zonder woonadres in ont
 match:
   ggm: exact
   gemma: exact
-data_object: ja
+data_objecten:
+- Briefadres-data
 objectniveau: subobject
 bronnen:
 - 2026-rvig-hup-verblijfplaats
@@ -49,7 +50,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling briefadres.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -91,7 +92,6 @@ De kenmerken met ja; de andere zijn nee.
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, begint met de aangifte of ambtshalve registratie en eindigt als de persoon weer een woonadres heeft of na adresonderzoek (HUP Verblijfplaats; Utrecht Onjuiste inschrijving). [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md), [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Inschrijven op briefadres](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md). |
 | **deel van object**: Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? | Ja, een vorm van de verblijfplaats van één ingeschreven persoon (HUP Verblijfplaats: functie adres B). [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md), [HUP Binnengemeentelijke adreswijziging](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-binnengemeentelijke-adreswijziging.md) |
-| **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, functie adres B in categorie 08, met een koppeling naar een nevenadres in de BAG (HUP Verblijfplaats). [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md) |
 | **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, specialisatie van Verblijfplaats die de gemeente anders behandelt: eigen voorwaarden, een briefadresgever en een eigen besluit (HUP Verblijfplaats; NVVB Beleidsregel briefadres); GGM en GEMMA kennen het als eigen begrip. [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md), [NVVB Beleidsregel briefadres](../../../../../onderwerpen/burgerzaken/bronduidingen/gemeentelijke-regelgeving/2026-nvvb-beleidsregel-briefadres.md) |
 
 ### Relaties
@@ -109,6 +109,10 @@ De kenmerken met ja; de andere zijn nee.
 | [Briefadresgever](../../../rollen/briefadresgever.md) | geeft post door *toegang (beheerder)* | Briefadres | [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md), [Wet BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Briefadres; Wet BRP art. 2.45 lid 3) |
 | [Inschrijven op briefadres](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md) | legt vast *toegang (registreren)* | Briefadres | [HUP Verblijfplaats](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfplaats.md), [Wet BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (Briefadres; Wet BRP art. 2.23) |
 | [Wet basisregistratie personen](../../../../motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md) | is grondslag voor *associatie (gericht)* | Briefadres | [Wet BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) (art. 1.1, 2.23, 2.40) |
+
+### Data-objecten
+
+- [Briefadres-data](../../../../applicatiearchitectuur/data-objecten/briefadres-data.md) *realisatie*: GGM-entiteit *Briefadres*, match exact.
 
 ## Herkomst
 

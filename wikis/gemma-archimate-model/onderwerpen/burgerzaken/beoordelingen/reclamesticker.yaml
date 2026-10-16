@@ -7,16 +7,15 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Hoort niet bij Burgerzaken: het gaat om een sticker tegen ongewenste reclame; de UPL noemt de Reclamecode als grondslag en geen wet uit Burgerzaken. Beoordelen in een later onderwerp over de openbare orde of de leefomgeving, een onderwerp dat nog niet bestaat.'
 toelichting: 'Verwijzing: UPL-product nr. 348 (Reclamecode) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): het gaat om een sticker tegen ongewenste reclame; de UPL noemt de Reclamecode als grondslag en geen wet uit Burgerzaken. Het product krijgt zijn pagina in een later onderwerp over de openbare orde of de leefomgeving.'
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
 beslist:
   uitkomst:
     soort: verwijzing
     regel: 6
     toelichting: Hoort bij een ander onderwerp
     voorleggen: false
-    data_object: nee
     generiek: false
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: informatiemodel
-bronnen:
-- 2025-vng-upl-producten-en-diensten-extern

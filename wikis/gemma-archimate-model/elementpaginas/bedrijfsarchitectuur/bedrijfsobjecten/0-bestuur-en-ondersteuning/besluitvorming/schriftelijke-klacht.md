@@ -2,7 +2,7 @@
 id: schriftelijke-klacht
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Schriftelijke klacht
 onderwerpen:
 - besluitvorming
@@ -12,7 +12,8 @@ definitie: Schriftelijke klacht over de manier waarop een bestuursorgaan of een 
 match:
   ggm: geen
   gemma: geen
-data_object: nee
+data_objecten:
+- Schriftelijke klacht-data
 objectniveau: generiek
 synoniemen:
 - Klaagschrift (wet)
@@ -24,7 +25,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling schriftelijke-klacht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- data-object zonder sterke GGM-match
 
 ## Betekenis
 
@@ -78,6 +83,10 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Behandelen klacht](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-klacht.md) | behandelt *toegang (registreren)* | Schriftelijke klacht | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 9:4, 9:6, 9:12a) |
+
+### Data-objecten
+
+- [Schriftelijke klacht-data](../../../../applicatiearchitectuur/data-objecten/schriftelijke-klacht-data.md) *realisatie*: geen GGM-entiteit (GGM-terugmelding hiaat).
 
 ## Herkomst
 

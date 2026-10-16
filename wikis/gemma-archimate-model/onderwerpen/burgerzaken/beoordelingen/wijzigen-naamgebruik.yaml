@@ -61,9 +61,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het beslissen op een verzoek van een (voormalig) gehuwde of geregistreerde partner welke achternaam de overheid voor hem gebruikt.
 beschrijving:
 - Wie getrouwd of geregistreerd partner is of was, kiest de eigen naam, de naam van de partner of een combinatie in beide volgorden (BW 1 art. 9; Utrecht). Het college geeft binnen vier weken gevolg; weigeren is gelijkgesteld aan een Awb-besluit (Wet BRP art. 2.60; HUP Wijziging naamgebruik). De keuze gaat naar andere overheidsorganisaties; op een paspoort of rijbewijs staat altijd de eigen achternaam (Utrecht).
@@ -95,7 +92,7 @@ relaties:
   vindplaats: UPL nr. 257; Wet BRP art. 2.25
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -104,7 +101,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

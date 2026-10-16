@@ -26,9 +26,6 @@ kenmerken:
     naar:
     - behandelen-naturalisatieverzoek
     - behandelen-optieverklaring
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 afnemer: extern
 domein: Publieksdiensten
 definitie: Het bijwonen van de ceremonie waarin een nieuwe Nederlander de verklaring van verbondenheid aflegt en de bevestiging of het besluit ontvangt.
@@ -59,7 +56,7 @@ relaties:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -68,7 +65,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

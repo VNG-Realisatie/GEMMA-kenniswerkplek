@@ -2,7 +2,7 @@
 id: besluit-verkrijging-en-verlies-nederlanderschap
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Besluit verkrijging en verlies Nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Algemene maatregel van rijksbestuur die de bevoegde autoriteiten aanwijst en de behandeling van optie, naturalisatie en afstand regelt.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit-verkrijging-en-verlies-nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

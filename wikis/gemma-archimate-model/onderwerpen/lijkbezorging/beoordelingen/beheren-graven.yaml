@@ -67,9 +67,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een geruimd graf, niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: 'Het beheer van een graf over de hele levensloop: uitgeven, begraven en bijzetten, onderhouden en ruimen.'
 beschrijving:
 - De houder van de begraafplaats bepaalt bij een algemeen graf wie erin wordt begraven, houdt het register van begraven lijken bij en ruimt graven na ten minste tien jaar grafrust (Wet op de lijkbezorging art. 23, 27, 31). Op de gemeentelijke begraafplaats regelt de beheersverordening de soorten graven, de uitgifte, het onderhoud en de ruiming (Groningen art. 11–16, 23, 27).
@@ -97,7 +94,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 23, 27, 31; Groningen art. 11–16
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -106,7 +103,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: levensloopproces
     generiek: false
     typeregel: 15

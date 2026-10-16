@@ -2,7 +2,7 @@
 id: beheren-graven
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Beheren graven
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: 'Het beheer van een graf over de hele levensloop: uitgeven, begraven en bijzetten, onderhouden en ruimen.'
 match:
   gemma: geen
-data_object: nee
 procesniveau: levensloopproces
 afnemer: extern
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beheren-graven.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

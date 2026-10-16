@@ -60,9 +60,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het begraven of cremeren van een stoffelijk overschot door de houder van een begraafplaats of crematorium, tot en met de bestemming van de as.
 beschrijving:
 - 'Begraving geschiedt op een begraafplaats, crematie in een crematorium (Wet op de lijkbezorging art. 23, 49). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). De houder van een crematorium houdt een register bij, bewaart de asbus minimaal een maand en zorgt daarna voor de bestemming van de as: bijzetting, verstrooiing of meegeven aan de nabestaande (art. 50, 59, 62).'
@@ -99,7 +96,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 23, 49
 vragen: []
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -108,7 +105,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: levensloopproces
     generiek: false
     typeregel: 15

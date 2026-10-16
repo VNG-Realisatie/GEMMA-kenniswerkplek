@@ -2,7 +2,7 @@
 id: verklaring-omtrent-gedrag-aanvragen
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Verklaring omtrent gedrag aanvragen
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het aanvragen van een verklaring omtrent het gedrag bij de gemeente, die de aanvraag controleert en doorzendt naar de minister.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -28,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verklaring-omtrent-gedrag-aanvragen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

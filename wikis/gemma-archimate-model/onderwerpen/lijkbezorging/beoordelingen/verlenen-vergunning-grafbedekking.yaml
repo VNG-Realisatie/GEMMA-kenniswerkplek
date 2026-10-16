@@ -60,9 +60,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een besluit, niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Het beslissen op een aanvraag om een vergunning voor een gedenkteken of andere grafbedekking op een particulier graf.
 beschrijving:
 - De rechthebbende van een particulier graf vraagt de vergunning aan; het college beslist en kan de vergunning weigeren als niet wordt voldaan aan de nadere regels over de aard en de afmetingen van de grafbedekking (Groningen art. 22; VNG-modelverordening art. 19). Beslisser is het college.
@@ -107,7 +104,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

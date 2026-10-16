@@ -2,7 +2,7 @@
 id: vermissing-of-diefstal-rijbewijs-doorgeven
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Vermissing of diefstal rijbewijs doorgeven
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het melden bij de gemeente dat een rijbewijs kwijt of gestolen is, zodat het rijbewijs ongeldig wordt en misbruik wordt voorkomen.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vermissing-of-diefstal-rijbewijs-doorgeven.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

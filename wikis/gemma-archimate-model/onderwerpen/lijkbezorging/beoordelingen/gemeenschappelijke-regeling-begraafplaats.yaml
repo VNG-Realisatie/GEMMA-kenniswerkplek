@@ -11,9 +11,6 @@ kenmerken:
   soort_partij:
     waarde: nee
     onderbouwing: De bronnen beschrijven alleen de mogelijkheid; geen verband dat bij elke gemeente voorkomt.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Geen element: de bronnen beschrijven alleen de mogelijkheid van een gemeenschappelijke regeling, geen bestaand verband met gedrag.'
 onderwerpen:
 - lijkbezorging
@@ -35,7 +32,6 @@ beslist:
     redenen:
     - 'voert gedrag uit: nee'
     - 'soort partij: nee'
-    data_object: nee
     generiek: false
     typeregel: 8
   voor_te_leggen:

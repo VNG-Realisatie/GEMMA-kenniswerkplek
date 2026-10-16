@@ -7,13 +7,16 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Een handeling binnen Houden naturalisatieceremonie: de uitreiking vindt pas plaats nadat zij is afgelegd (Besluit art. 60a lid 3-4, 60b lid 3-4).'
 toelichting: 'Onderdeel, geen pagina: een processtap van Houden naturalisatieceremonie. Wie de bevestiging of het uittreksel in persoon ontvangt, legt de verklaring mondeling af, of schriftelijk als dat redelijkerwijs niet kan worden verlangd; men wordt pas Nederlander nadat zij is afgelegd (Besluit verkrijging en verlies Nederlanderschap art. 60a, 60b; Utrecht).'
+bronnen:
+- 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Behandelen naturalisatieverzoek
     generiek: false
   bronnen:
@@ -21,7 +24,3 @@ beslist:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie

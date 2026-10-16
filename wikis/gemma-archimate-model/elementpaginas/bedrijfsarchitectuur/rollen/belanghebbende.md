@@ -2,7 +2,7 @@
 id: belanghebbende
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Belanghebbende
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ onderwerpen:
 definitie: Hoedanigheid van degene wiens belang rechtstreeks bij een besluit van een bestuursorgaan is betrokken.
 match:
   gemma: sterk
-data_object: nee
 doelgroep: inwoners en ondernemers
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -29,7 +28,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling belanghebbende.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

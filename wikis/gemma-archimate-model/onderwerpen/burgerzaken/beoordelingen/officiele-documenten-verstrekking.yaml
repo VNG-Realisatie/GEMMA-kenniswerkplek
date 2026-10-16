@@ -27,9 +27,6 @@ kenmerken:
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
     gemma_relatie:
     - id-1f944d4b-41d8-40cb-be75-8706806e07cc
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar.
@@ -151,7 +148,7 @@ relaties:
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -160,7 +157,6 @@ beslist:
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

@@ -63,9 +63,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het onderzoeken of een persoon woont op het adres waarop hij is ingeschreven, en het besluiten over een juiste inschrijving.
 beschrijving:
 - Het adresonderzoek is het instrument waarmee de gemeente een verkeerde adresinschrijving verbetert; zij start het bij twijfel over de juistheid van adresgegevens (Circulaire adresonderzoek par. 2). Aanleidingen zijn een melding van een bewoner of organisatie, een terugmelding van een bestuursorgaan, een signaal uit de Landelijke Aanpak Adreskwaliteit (LAA), een eigen constatering of een aangifte van verhuizing (Circulaire adresonderzoek; NVVB Handreiking adresonderzoek). De gemeente legt een onderzoeksdossier aan, plaatst een aantekening in onderzoek, schrijft de persoon aan, kan een huisbezoek laten afleggen door een toezichthouder BRP en neemt na een voornemen een besluit; de melder wordt over het resultaat geïnformeerd (Circulaire adresonderzoek 3.2–4.7). Een richtlijn voor de doorlooptijd is tien weken.
@@ -100,7 +97,7 @@ relaties:
 bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -109,7 +106,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

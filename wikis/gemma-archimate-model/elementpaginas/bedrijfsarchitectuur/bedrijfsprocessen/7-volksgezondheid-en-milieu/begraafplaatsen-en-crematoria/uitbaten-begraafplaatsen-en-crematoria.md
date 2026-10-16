@@ -2,7 +2,7 @@
 id: uitbaten-begraafplaatsen-en-crematoria
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Uitbaten begraafplaatsen en crematoria
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het openhouden van gemeentelijke begraafplaatsen en crematoria en het ter beschikking stellen van graven en ruimte voor bijzetting en verstrooiing.
 match:
   gemma: geen
-data_object: nee
 procesniveau: cluster naar soort werk
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling uitbaten-begraafplaatsen-en-crematoria.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

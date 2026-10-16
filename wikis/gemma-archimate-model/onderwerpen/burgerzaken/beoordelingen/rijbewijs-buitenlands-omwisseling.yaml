@@ -24,9 +24,6 @@ kenmerken:
     waarde: ja
     naar:
     - behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: De UPL noemt het als eigen product.
@@ -51,7 +48,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
 - 2026-utrecht-burgerzaken
 - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -60,7 +57,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

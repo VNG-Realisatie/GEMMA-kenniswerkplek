@@ -62,9 +62,6 @@ kenmerken:
     waarde: ja
     naar:
     - verlies-van-het-nederlanderschap
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 kernobject: nederlanderschap
 afnemer: extern
 definitie: Het in ontvangst nemen en bevestigen van een verklaring waarmee een persoon afstand doet van het Nederlanderschap.
@@ -110,7 +107,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -119,7 +116,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

@@ -32,9 +32,6 @@ kenmerken:
     onderbouwing: De minister is verantwoordelijk voor de verwerking van de gegevens erin (Paspoortwet art. 4a lid 1).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Invoer van een andere partij: het register van de minister met ontvreemde, vermiste en van rechtswege vervallen reisdocumenten en identiteitskaarten, ter voorkoming en bestrijding van fraude (Paspoortwet art. 4a). De gemeente levert de gegevens door vermissing en verval te registreren. Geen pagina; vermeld bij Verwerken vermissing reisdocument.'
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
@@ -46,7 +43,6 @@ beslist:
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Verwerken vermissing reisdocument
     generiek: false
     typeregel: 18

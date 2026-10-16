@@ -2,7 +2,7 @@
 id: beslisser
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Beslisser
 onderwerpen:
 - bestuur-en-organisatie
@@ -13,7 +13,6 @@ onderwerpen:
 definitie: Verantwoordelijkheid voor het nemen van het besluit in een proces.
 match:
   gemma: sterk
-data_object: nee
 doelgroep: gemeente
 synoniemen:
 - Bestuursorgaan (wet)
@@ -55,7 +54,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beslisser.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -2,7 +2,7 @@
 id: bewijs-van-in-leven-zijn
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Bewijs van in leven zijn
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het verkrijgen van een bewijs dat iemand in leven is, als uittreksel uit de BRP of als internationale attestatie de vita.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bewijs-van-in-leven-zijn.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

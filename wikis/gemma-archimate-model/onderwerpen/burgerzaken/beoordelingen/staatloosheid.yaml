@@ -10,13 +10,15 @@ kenmerken:
     - 2026-rvig-hup-nationaliteit
     - 2026-rvig-hup-staatloosheid
 toelichting: 'Waarde van Nationaliteit, geen pagina: sinds 1 oktober 2023 alleen opgenomen op grond van een rechterlijke uitspraak (Wet vaststellingsprocedure staatloosheid art. 4) of bij evidente staatloosheid, die de gemeente zelf vaststelt; wie beweert staatloos te zijn, moet dat aantonen. De staatloosheid eindigt bij verkrijging van een nationaliteit (HUP Staatloosheid). Het vaststellen van evidente staatloosheid is een processtap van Bijhouden persoonsgegevens; een staatloze betaalt een verlaagde prijs voor naturalisatie of optie (Utrecht).'
+bronnen:
+- 2026-rvig-hup-staatloosheid
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
 beslist:
   uitkomst:
     soort: eigenschap
     regel: 4
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Nationaliteit
     generiek: false
   bronnen:
@@ -24,6 +26,3 @@ beslist:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2026-rvig-hup-nationaliteit
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rvig-hup-staatloosheid
-- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738

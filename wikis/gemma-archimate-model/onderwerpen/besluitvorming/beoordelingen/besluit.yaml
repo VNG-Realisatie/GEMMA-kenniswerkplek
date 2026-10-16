@@ -30,9 +30,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   generiek:
     waarde: ja
     onderbouwing: Een besluit in de zin van de Awb komt in elk onderwerp voor (Awb art. 1:3).
@@ -67,7 +64,7 @@ onderwerpen:
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -76,7 +73,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     objectniveau: generiek
     generiek: false
     typeregel: 18
@@ -84,6 +80,12 @@ beslist:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: besluit-data
+    naam: Besluit-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/besluit-data.md
   ggm:
     ggm_entiteit: Besluit
     ggm_guid: EAID_AFB100D2_8C68_4488_8949_13E945D15920

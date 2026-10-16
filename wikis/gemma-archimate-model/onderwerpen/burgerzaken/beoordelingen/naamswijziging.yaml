@@ -14,9 +14,6 @@ kenmerken:
     waarde: ja
     naar:
     - toevoegen-latere-vermelding
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het wijzigen van de voornaam door de rechtbank of van de geslachtsnaam bij koninklijk besluit.
 beschrijving:
 - 'Een voornaam laat men wijzigen bij de rechtbank, een achternaam via Justis bij koninklijk besluit; de gemeente beslist er niet over maar neemt de nieuwe naam op (BW 1 art. 4 lid 4, 7; Utrecht). Een geldig Nederlands reisdocument vervalt bij een naamswijziging van rechtswege (HUP Erkenning). Het naamgebruik is iets anders: de keuze welke achternaam de overheid gebruikt (BW 1 art. 9).'
@@ -54,7 +51,7 @@ bronnen:
 - 2026-rvig-hup-wijziging-geslachtsnaam
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -63,7 +60,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

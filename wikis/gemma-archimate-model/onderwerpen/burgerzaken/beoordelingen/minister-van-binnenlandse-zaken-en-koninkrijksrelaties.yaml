@@ -26,9 +26,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 synoniemen:
 - naam: Onze Minister
   context: wet
@@ -52,7 +49,6 @@ beslist:
     voorleggen: true
     redenen:
     - 'soort partij: nee'
-    data_object: nee
     generiek: false
     typeregel: 9
   voor_te_leggen:

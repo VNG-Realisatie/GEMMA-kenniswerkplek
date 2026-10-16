@@ -59,9 +59,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 kernobject: ingeschreven-persoon
 afnemer: extern
 definitie: Het registreren van wie in de gemeente kiesgerechtigd is, met de uitsluiting van het kiesrecht en de deelname van EU-onderdanen aan de Europese verkiezingen.
@@ -100,7 +97,7 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rvig-hup-kiesrecht
 - 2026-rvig-hup-europees-kiesrecht
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -109,7 +106,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

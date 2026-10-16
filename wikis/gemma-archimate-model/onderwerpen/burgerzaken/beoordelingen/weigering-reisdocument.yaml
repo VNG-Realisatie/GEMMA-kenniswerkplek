@@ -7,17 +7,16 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Bestaat niet los van Behandelen aanvraag reisdocument: een van de twee uitkomsten van dat bedrijfsproces, naast de verstrekking (Paspoortwet art. 1 onder c en d).'
 toelichting: 'Onderdeel, geen pagina: de afwijzende uitkomst van Behandelen aanvraag reisdocument. De burgemeester weigert op de gronden van hoofdstuk III, meestal na een mededeling van de minister over een signalering; hij kondigt het voornemen aan en houdt de beslissing op verzoek acht weken aan (Paspoortwet art. 44 tot en met 46). De verstrekking, de andere uitkomst, staat als synoniem (wet) bij het bedrijfsproces.'
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Behandelen aanvraag reisdocument
     generiek: false
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-paspoortwet-bwbr0005212

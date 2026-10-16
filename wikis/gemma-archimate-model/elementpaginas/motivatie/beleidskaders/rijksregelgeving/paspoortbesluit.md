@@ -2,7 +2,7 @@
 id: paspoortbesluit
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Paspoortbesluit
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Algemene maatregel van rijksbestuur die de Paspoortwet uitwerkt, zoals de geldigheid, de aanvraag en de bevoegdheden van burgemeesters.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-paspoortbesluit-bwbr0044308
@@ -21,7 +20,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling paspoortbesluit.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

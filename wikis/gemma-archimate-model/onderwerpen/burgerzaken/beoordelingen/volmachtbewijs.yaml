@@ -7,17 +7,16 @@ kenmerken:
     waarde: nee
     onderbouwing: Het resultaat van Behandelen verzoek om volmacht, of een omgezette stempas of kiezerspas (Kieswet art. L 11, L 14); de volmacht is de dienst, het bewijs een onderdeel.
 toelichting: 'Onderdeel, geen pagina: bij inwilliging van het verzoek maakt de burgemeester een volmachtbewijs op, of de kiezer zet zijn stempas of kiezerspas om in een volmachtbewijs (Kieswet art. L 6, L 11, L 14). De dienst heet met de UPL-naam Volmachtbewijs verkiezingen.'
+bronnen:
+- 2026-rijk-kieswet-bwbr0004627
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Behandelen verzoek om volmacht
     generiek: false
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-kieswet-bwbr0004627

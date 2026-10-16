@@ -27,9 +27,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Hoedanigheid van wie juridisch moeder of andere ouder van een kind is, door geboorte, huwelijk, erkenning, vaststelling of adoptie.
 beschrijving:
 - 'Een kind heeft juridisch altijd een moeder, de vrouw uit wie het is geboren of de adoptiefmoeder, en hoogstens één andere ouder: de echtgenoot of partner van de moeder, de erkenner, de ouder van wie het ouderschap is vastgesteld of de adoptiefouder (BW 1 art. 198, 199; HUP Geboorte). In de gemeentelijke praktijk heet de vrouwelijke andere ouder duomoeder (Utrecht). De ouder doet aangifte van geboorte, erkent het kind, kiest samen met de andere ouder de achternaam en heeft gezag over een minderjarig kind (BW 1 art. 5, 19e, 203, 247).'
@@ -102,7 +99,7 @@ bronnen:
 - 2026-rvig-hup-geboorte
 - 2026-utrecht-burgerzaken-geboorteaangifte-doen
 - 2026-rijk-wet-brp-bwbr0033715
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -111,7 +108,6 @@ beslist:
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 10
   bronnen:

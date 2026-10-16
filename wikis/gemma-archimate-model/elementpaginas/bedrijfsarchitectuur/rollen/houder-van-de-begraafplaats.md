@@ -2,14 +2,13 @@
 id: houder-van-de-begraafplaats
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Houder van de begraafplaats
 onderwerpen:
 - lijkbezorging
 definitie: Verantwoordelijkheid voor het in stand houden en beheren van een begraafplaats.
 match:
   gemma: geen
-data_object: nee
 doelgroep: gemeente
 synoniemen:
 - Beheerder van de begraafplaats (beleid)
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling houder-van-de-begraafplaats.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

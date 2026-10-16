@@ -16,7 +16,6 @@ beslist:
     toelichting: Buiten dit model
     archimate_type: Constraint
     voorleggen: false
-    data_object: nee
     generiek: false
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

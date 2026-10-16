@@ -2,7 +2,7 @@
 id: verzoek-uitdaagrecht
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Verzoek uitdaagrecht
 onderwerpen:
 - participatie
@@ -12,7 +12,6 @@ definitie: Verzoek van inwoners of maatschappelijke partijen aan het college om 
 match:
   ggm: geen
   gemma: geen
-data_object: nee
 objectniveau: kernobject
 synoniemen:
 - Verzoek toepassing uitdaagrecht (beleid, variant 1)
@@ -29,7 +28,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verzoek-uitdaagrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

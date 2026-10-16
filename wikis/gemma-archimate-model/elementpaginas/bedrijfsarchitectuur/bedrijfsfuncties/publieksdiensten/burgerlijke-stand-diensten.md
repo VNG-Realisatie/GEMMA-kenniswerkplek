@@ -2,7 +2,7 @@
 id: burgerlijke-stand-diensten
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: review
 naam: Burgerlijke stand diensten
 onderwerpen:
 - burgerzaken
@@ -10,7 +10,6 @@ onderwerpen:
 definitie: Het bijhouden van de burgerlijke staat van personen naar aanleiding van geboorte, overlijden, huwelijk en verhuizing.
 match:
   gemma: exact
-data_object: nee
 domein: Publieksdiensten
 bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
@@ -31,7 +30,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling burgerlijke-stand-diensten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

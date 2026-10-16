@@ -2,7 +2,7 @@
 id: geboorteakte-levenloos-kind
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Geboorteakte levenloos kind
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het verkrijgen van een uittreksel of afschrift van de akte van een levenloos geboren kind.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 bronnen:
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling geboorteakte-levenloos-kind.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

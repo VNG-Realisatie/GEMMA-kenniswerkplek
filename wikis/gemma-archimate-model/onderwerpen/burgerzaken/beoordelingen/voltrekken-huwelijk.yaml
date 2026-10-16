@@ -62,9 +62,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het behandelen van de melding van een voorgenomen huwelijk, het in het openbaar voltrekken ervan en het opmaken van de huwelijksakte.
 beschrijving:
 - 'Het huwelijk wordt in het openbaar voltrokken in het gemeentehuis, met twee tot vier meerderjarige getuigen; de partijen verschijnen in persoon (BW 1 art. 63, 65). Burgemeester en wethouders kunnen andere gebouwen als huis der gemeente aanwijzen: eigen locaties, vaste trouwlocaties en een locatie naar keuze die de gemeente goedkeurt (BW 1 art. 63, 64; Utrecht Trouwlocaties). De gemeente kiest de trouwambtenaar; een eigen trouwambtenaar voor één dag wordt als buitengewoon ambtenaar aangewezen (BW 1 art. 16; Utrecht).'
@@ -152,7 +149,7 @@ deelprocessen:
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 63-65
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -161,7 +158,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

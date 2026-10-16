@@ -13,7 +13,7 @@ import kennismodel as km  # noqa: E402
 import relaties  # noqa: E402
 
 WIKI = TOOLS.parent
-MET_ELEMENT = [e for e in km.ELEMENTTYPEN if e.paginatype]
+MET_ELEMENT = [e for e in km.ELEMENTTYPEN if e.paginatype and e.vak]  # het data-object is afgeleid, zonder indeling
 
 
 def test_elk_type_heeft_modelleerafspraken_en_elke_laag_weggefilterd():

@@ -2,7 +2,7 @@
 id: adoptie
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Adoptie
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het door een uitspraak van de rechtbank ontstaan van de familierechtelijke betrekking tussen een kind en zijn adoptiefouders.
 match:
   gemma: geen
-data_object: nee
 bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rvig-hup-adoptie
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling adoptie.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

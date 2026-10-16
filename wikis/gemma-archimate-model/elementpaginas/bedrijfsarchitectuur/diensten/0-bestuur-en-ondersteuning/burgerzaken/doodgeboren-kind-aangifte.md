@@ -2,7 +2,7 @@
 id: doodgeboren-kind-aangifte
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Doodgeboren kind aangifte
 onderwerpen:
 - burgerzaken
@@ -12,7 +12,6 @@ beleidsdomein: Burgerzaken
 definitie: Het doen van aangifte van een levenloos geboren kind bij de gemeente van geboorte, waarna de gemeente een akte opmaakt.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -28,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling doodgeboren-kind-aangifte.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

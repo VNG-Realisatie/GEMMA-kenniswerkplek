@@ -2,7 +2,7 @@
 id: erkenning-kind
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Erkenning kind
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het erkennen van een kind door een man of vrouw bij de ambtenaar van de burgerlijke stand, voor of na de geboorte.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling erkenning-kind.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

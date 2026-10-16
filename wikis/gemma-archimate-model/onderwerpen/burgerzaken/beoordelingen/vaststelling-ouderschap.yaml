@@ -14,9 +14,6 @@ kenmerken:
     waarde: ja
     naar:
     - toevoegen-latere-vermelding
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het door een uitspraak van de rechtbank ontstaan van het juridisch ouderschap van een man of vrouw over een kind.
 beschrijving:
 - De rechtbank stelt het ouderschap vast op verzoek van de moeder of het kind (BW 1 art. 207); de gemeente verwerkt de uitspraak (HUP Vaststelling ouderschap). Naast geboorte, erkenning, adoptie en ontkenning is het een van de gronden van de afstamming (HUP Afstamming).
@@ -36,7 +33,7 @@ relaties:
   vindplaats: inleiding
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -45,7 +42,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

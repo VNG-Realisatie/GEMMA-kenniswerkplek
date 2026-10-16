@@ -59,9 +59,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: De bronnen noemen geen toestandsverandering met een eigen naam die een ander proces start.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur, alleen een facultatief formulier (var. 1 art. 6 lid 4).
 synoniemen:
 - naam: Overheidsparticipatie
   context: beleid, variant 2, breder dan het uitdaagrecht
@@ -142,7 +139,7 @@ relaties:
 bronnen:
 - 2026-rijk-gemeentewet-wettekst
 - 2024-vng-implementatiehandleiding-model-participatieverordening
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -151,7 +148,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: levensloopproces
     generiek: false
     typeregel: 15

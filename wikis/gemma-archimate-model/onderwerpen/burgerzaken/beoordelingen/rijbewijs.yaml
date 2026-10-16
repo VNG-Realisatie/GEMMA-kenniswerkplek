@@ -34,12 +34,6 @@ kenmerken:
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: Het rijbewijs staat in het rijbewijzenregister van de RDW en kan een publiek identificatiemiddel bevatten (Wegenverkeerswet 1994 art. 111 lid 5, 126; Utrecht).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
 definitie: Bewijs van rijbevoegdheid op naam van een persoon, afgegeven voor het besturen van motorrijtuigen van een of meer categorieën.
 beschrijving:
 - Het rijbewijs wordt op aanvraag en tegen betaling afgegeven door de burgemeester van de gemeente waar de aanvrager als ingezetene met een adres in de basisregistratie personen staat, of in de bij algemene maatregel van bestuur bepaalde gevallen door de RDW, voor een of meer categorieën motorrijtuigen (Wegenverkeerswet 1994 art. 111, 116, 118; Reglement rijbewijzen art. 27, 105). De afgifte steunt op een onderzoek naar rijvaardigheid en geschiktheid of op een eerder rijbewijs (art. 111 lid 1).
@@ -86,7 +80,7 @@ bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -95,16 +89,23 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: kernobject
     generiek: false
     typeregel: 18
   voor_te_leggen:
-  - gegevensobject zonder sterke GGM-match
+  - data-object zonder sterke GGM-match
+  open:
+  - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: rijbewijs-data
+    naam: Rijbewijs-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/rijbewijs-data.md
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs.md

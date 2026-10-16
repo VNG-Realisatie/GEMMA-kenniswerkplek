@@ -62,9 +62,6 @@ kenmerken:
     waarde: ja
     naar:
     - verval-van-het-reisdocument
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het ontvangen van de aangifte van een wijziging van het geslacht en het toevoegen daarvan als latere vermelding aan de geboorteakte.
 beschrijving:
 - Aangifte kan een Nederlander van zestien jaar of ouder, of iemand met een verblijfstitel die een jaar in Nederland woont, bij de gemeente van geboorte; bij geboorte in het buitenland bij Den Haag. Alleen van man naar vrouw of omgekeerd; een non-binaire vermelding spreekt de rechter uit (BW 1 art. 28; Utrecht; HUP Geslachtswijziging). Op afspraak aan de balie, gratis (Utrecht).
@@ -119,7 +116,7 @@ besluiten:
   besluit: 'Leidt tot gebeurtenis is ja: de triggering naar verval-van-het-reisdocument staat met bron en vindplaats in de beoordeling; de nee was een vergissing (omzetting naar de ArchiMate-indeling).'
   gevolg: verwerkt
   zekerheid: logica
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -128,7 +125,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

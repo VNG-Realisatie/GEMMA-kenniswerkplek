@@ -2,7 +2,7 @@
 id: naamswijziging
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Naamswijziging
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het wijzigen van de voornaam door de rechtbank of van de geslachtsnaam bij koninklijk besluit.
 match:
   gemma: geen
-data_object: nee
 synoniemen:
 - Wijziging van de geslachtsnaam (wet)
 - Wijziging voornaam (HUP)
@@ -30,7 +29,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling naamswijziging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

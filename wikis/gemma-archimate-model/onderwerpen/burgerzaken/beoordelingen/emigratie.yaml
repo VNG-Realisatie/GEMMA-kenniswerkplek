@@ -14,9 +14,6 @@ kenmerken:
     waarde: ja
     naar:
     - verwerken-emigratie
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het vertrek van een ingezetene om ten minste acht maanden van een jaar in het buitenland te wonen.
 beschrijving:
 - Wie in een jaar acht maanden of langer in het buitenland gaat wonen, emigreert; ook een verhuizing naar het Caribisch deel van het Koninkrijk geldt als emigratie (Utrecht Emigratie doorgeven; HUP Emigratie).
@@ -36,7 +33,7 @@ relaties:
   - 2026-utrecht-burgerzaken-emigratie-doorgeven
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: inleiding; Wet BRP art. 2.43 lid 1
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -45,7 +42,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

@@ -2,7 +2,7 @@
 id: bekendmaking-algemeen-verbindend-voorschrift
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Bekendmaking algemeen verbindend voorschrift
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: Het publiceren van een verordening of andere algemeen verbindende regel van de gemeente in het gemeenteblad, waarna zij geldt.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Bestuur
 bronnen:
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bekendmaking-algemeen-verbindend-voorschrift.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

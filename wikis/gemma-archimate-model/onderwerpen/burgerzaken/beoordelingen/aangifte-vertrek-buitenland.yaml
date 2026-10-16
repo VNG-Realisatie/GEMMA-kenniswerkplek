@@ -24,9 +24,6 @@ kenmerken:
     waarde: ja
     naar:
     - verwerken-emigratie
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Een eigen product in de UPL (UPL nr. 1); geen bredere dienst in deze wiki.
@@ -57,7 +54,7 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-emigratie-doorgeven
 - 2026-rvig-hup-emigratie
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -66,7 +63,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

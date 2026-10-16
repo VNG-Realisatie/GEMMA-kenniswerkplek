@@ -44,9 +44,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Geen element: een zelden voorkomende benoeming zonder aanwijsbare aanleiding of objecten; de taak staat bij de rol Gemeentelijke lijkschouwer en de functie Lijkbezorging.'
 onderwerpen:
 - lijkbezorging
@@ -63,7 +60,6 @@ beslist:
     voorleggen: true
     redenen:
     - 'aanleiding: nee'
-    data_object: nee
     generiek: false
     typeregel: 15
   voor_te_leggen:

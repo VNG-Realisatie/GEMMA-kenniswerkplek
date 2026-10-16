@@ -2,7 +2,7 @@
 id: beheren-grafrechten
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Beheren grafrechten
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: 'Het beheer van een grafrecht over de hele looptijd: verlenen, verlengen, overschrijven en vervallen.'
 match:
   gemma: geen
-data_object: nee
 procesniveau: levensloopproces
 afnemer: extern
 bronnen:
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beheren-grafrechten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

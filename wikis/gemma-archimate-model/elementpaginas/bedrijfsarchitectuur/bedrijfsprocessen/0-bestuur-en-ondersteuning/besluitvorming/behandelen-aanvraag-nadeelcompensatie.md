@@ -2,7 +2,7 @@
 id: behandelen-aanvraag-nadeelcompensatie
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Behandelen aanvraag nadeelcompensatie
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: Het beslissen op een aanvraag om vergoeding van onevenredige schade door rechtmatig handelen van de gemeente.
 match:
   gemma: geen
-data_object: nee
 procesniveau: bedrijfsproces
 afnemer: extern
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-aanvraag-nadeelcompensatie.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

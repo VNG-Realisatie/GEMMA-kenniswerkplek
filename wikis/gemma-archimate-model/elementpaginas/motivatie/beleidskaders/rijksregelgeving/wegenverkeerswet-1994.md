@@ -2,7 +2,7 @@
 id: wegenverkeerswet-1994
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Wegenverkeerswet 1994
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Wet over het verkeer op de weg, met de regels voor de aanvraag, afgifte en geldigheid van rijbewijzen en de taken van de RDW en het CBR.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling wegenverkeerswet-1994.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -2,7 +2,7 @@
 id: geregistreerd-partnerschap-ontbinding
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Geregistreerd partnerschap ontbinding
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het laten inschrijven van de beëindiging van een geregistreerd partnerschap.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling geregistreerd-partnerschap-ontbinding.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

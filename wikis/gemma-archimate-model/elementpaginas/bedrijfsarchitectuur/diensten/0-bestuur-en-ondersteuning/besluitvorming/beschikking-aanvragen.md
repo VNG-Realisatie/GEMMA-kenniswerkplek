@@ -2,7 +2,7 @@
 id: beschikking-aanvragen
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Beschikking aanvragen
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: Het aanvragen van een besluit van de gemeente in een concreet geval, zoals een vergunning of ontheffing.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Bestuur
 synoniemen:
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beschikking-aanvragen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

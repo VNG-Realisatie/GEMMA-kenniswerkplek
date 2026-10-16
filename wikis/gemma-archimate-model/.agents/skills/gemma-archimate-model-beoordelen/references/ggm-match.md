@@ -18,7 +18,11 @@ Vergelijk de definities, volg relaties en generalisaties, en kijk naar het belei
 | `zwak` | Verwant, maar wezenlijk andere reikwijdte of granulariteit | Geen `guid`; hooguit een relatie noteren |
 | `geen` | Geen GGM-entiteit | Geen `guid`; bij een object zeg je in de onderbouwing in welk proces het ontstaat, met de bron |
 
-Een gegevensobject (`data_object: ja`) met een match zwakker dan `sterk` wordt voorgelegd. Elk bedrijfsobject en product heeft een `ggm`-blok, ook bij `geen`.
+Elk bedrijfsobject en product heeft een `ggm`-blok, ook bij `geen`.
+
+## Data-object
+
+Het script maakt *<naam>-data* uit de match van een bedrijfsobject, afspraak, rol, actor of gebeurtenis, of bij `geen` met een terugmelding hiaat; zwakker dan `sterk` wordt voorgelegd. Een andere GGM-entiteit, zoals die van een onderdeel zonder pagina, wordt een extra in `data_objecten`: `naam` op -data en `ggm` (`guid`, `sterkte`, `onderbouwing`).
 
 ## Wat het GGM dekt
 

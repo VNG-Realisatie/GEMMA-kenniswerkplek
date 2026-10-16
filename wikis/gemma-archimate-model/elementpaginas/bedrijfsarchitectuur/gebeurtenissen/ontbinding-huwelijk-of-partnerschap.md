@@ -2,7 +2,7 @@
 id: ontbinding-huwelijk-of-partnerschap
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Ontbinding huwelijk of partnerschap
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het eindigen van een huwelijk door echtscheiding of van een geregistreerd partnerschap door beëindiging, anders dan door overlijden.
 match:
   gemma: geen
-data_object: nee
 synoniemen:
 - Echtscheiding (wet)
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ontbinding-huwelijk-of-partnerschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

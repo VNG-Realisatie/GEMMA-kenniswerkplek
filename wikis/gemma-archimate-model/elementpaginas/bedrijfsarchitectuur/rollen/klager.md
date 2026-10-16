@@ -2,14 +2,13 @@
 id: klager
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Klager
 onderwerpen:
 - besluitvorming
 definitie: Hoedanigheid van degene die een klacht indient over de manier waarop een bestuursorgaan zich heeft gedragen.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -19,7 +18,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling klager.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -8,13 +8,16 @@ toelichting: 'Onderdeel van Grafrecht: Stap in de levenscyclus van het grafrecht
 genoemd_begrip: Grafrecht
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2010-vng-model-beheersverordening-begraafplaatsen
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Grafrecht
     generiek: false
   bronnen:
@@ -22,7 +25,3 @@ beslist:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-wet-op-de-lijkbezorging-wettekst
-- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-- 2010-vng-model-beheersverordening-begraafplaatsen

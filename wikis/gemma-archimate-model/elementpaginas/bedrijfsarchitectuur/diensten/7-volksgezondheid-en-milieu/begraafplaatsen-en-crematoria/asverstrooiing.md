@@ -2,7 +2,7 @@
 id: asverstrooiing
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Asverstrooiing
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Toestemming van de gemeente om as te verstrooien op een plek waar dat zonder toestemming niet mag.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Fysieke leefomgeving
 bronnen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling asverstrooiing.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 **Zonder landelijke wettelijke grondslag.** Een UPL-dienst die geen wettelijke taak is: ze wordt beschreven voor zover mogelijk, zonder processen, objecten, gebeurtenissen of rollen, is teruggemeld aan de procesarchitectuur ([nr. 24](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md)) en gaat niet naar het GEMMA-model ([lijst](../../../../overig/zonder-grondslag.md)).
 

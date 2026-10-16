@@ -2,7 +2,7 @@
 id: participatieverordening
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Participatieverordening
 onderwerpen:
 - participatie
@@ -12,7 +12,6 @@ definitie: Verordening van de gemeenteraad met regels over het betrekken van inw
 match:
   ggm: geen
   gemma: geen
-data_object: nee
 synoniemen:
 - Verordening over betrekken bij beleid (wet)
 - Inspraakverordening (voorganger, te vervangen vóór 1 januari 2027)
@@ -26,7 +25,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling participatieverordening.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
 
 ## Betekenis
 

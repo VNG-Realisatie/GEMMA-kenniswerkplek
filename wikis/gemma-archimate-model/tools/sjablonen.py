@@ -72,8 +72,6 @@ def _kenmerken(ja: tuple[str, ...], bronnen: list[str], soort: str, naar: dict[s
             uit[s] = {"waarde": "ja", "naar": naar[s]}
         elif s in ja:
             uit[s] = _regel("ja", f"{TODO}: {bepaal_type.NAAM[s]}", bronnen)
-        elif s == "geautomatiseerd_verwerkt":
-            uit[s] = _regel("nee", f"{TODO}: bevestig dat {bepaal_type.NAAM[s]} hier niet geldt", bronnen)
         else:
             uit[s] = _regel("nee", f"Niet van toepassing: {soort}.", [])
     return uit

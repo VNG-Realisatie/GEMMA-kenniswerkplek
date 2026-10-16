@@ -2,7 +2,7 @@
 id: vluchtelingenpaspoort
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Vluchtelingenpaspoort
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het aanvragen en ophalen van een reisdocument voor vluchtelingen, voor wie als vluchteling in Nederland is toegelaten.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vluchtelingenpaspoort.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

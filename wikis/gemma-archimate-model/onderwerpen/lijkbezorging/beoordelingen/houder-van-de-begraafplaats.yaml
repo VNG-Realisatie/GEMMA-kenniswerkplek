@@ -21,9 +21,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Verantwoordelijkheid voor het in stand houden en beheren van een begraafplaats.
 beschrijving:
 - De houder van de begraafplaats stelt voor een begraving de identiteit van het stoffelijk overschot vast (art. 8), bepaalt wie in een algemeen graf wordt begraven (art. 23), houdt het register van begraven lijken (art. 27), doet mededeling van het verstrijken van termijnen (art. 27a, 28 lid 2), kan een verklaring van verwaarlozing opstellen (art. 28 lid 4) en geeft last tot het ruimen van graven (art. 31). Bij een gemeentelijke begraafplaats is de gemeente houder; bij een bijzondere begraafplaats een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 37).
@@ -95,7 +92,7 @@ doelgroep: gemeente
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -104,7 +101,6 @@ beslist:
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 10
   bronnen:

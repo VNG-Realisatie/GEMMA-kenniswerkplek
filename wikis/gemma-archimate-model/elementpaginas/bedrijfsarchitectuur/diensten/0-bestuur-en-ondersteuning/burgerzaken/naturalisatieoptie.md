@@ -2,7 +2,7 @@
 id: naturalisatieoptie
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Naturalisatieoptie
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het afleggen van een optieverklaring om door bevestiging van de burgemeester Nederlander te worden.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling naturalisatieoptie.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

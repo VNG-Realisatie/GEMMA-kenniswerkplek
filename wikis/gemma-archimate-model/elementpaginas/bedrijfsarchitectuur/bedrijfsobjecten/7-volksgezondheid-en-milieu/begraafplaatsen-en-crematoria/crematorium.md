@@ -2,7 +2,7 @@
 id: crematorium
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Crematorium
 onderwerpen:
 - lijkbezorging
@@ -12,7 +12,6 @@ definitie: Inrichting waar stoffelijke overschotten worden gecremeerd en de as w
 match:
   ggm: geen
   gemma: geen
-data_object: nee
 objectniveau: kernobject
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling crematorium.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

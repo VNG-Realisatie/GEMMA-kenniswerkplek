@@ -27,9 +27,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: Actor die als behandelende arts ketenpartner is (meld- en overlegplicht, art. 7, 10a) en als forensisch arts gemeentelijke lijkschouwer (art. 4, 5).
 onderwerpen:
 - lijkbezorging
@@ -68,7 +65,7 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Actor Arts in plaats van Behandelende arts (synoniem, wet): behandelend is de hoedanigheid tegenover de overledene. Arts vervult Ketenpartner en Gemeentelijke lijkschouwer (art. 4, 5); Ketenpartner wordt ook toegewezen aan Schouwen lijk (art. 3). Geen directe relatie behandelt: de medische behandeling is de interne zaak van de ketenpartner en de overledene is geen element; de arts hangt via Schouwen lijk aan het Lijk.'
   gevolg: verwerkt
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -77,7 +74,6 @@ beslist:
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 9
   bronnen:

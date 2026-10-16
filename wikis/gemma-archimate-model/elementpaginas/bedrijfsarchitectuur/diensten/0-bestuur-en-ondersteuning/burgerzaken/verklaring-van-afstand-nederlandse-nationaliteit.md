@@ -2,7 +2,7 @@
 id: verklaring-van-afstand-nederlandse-nationaliteit
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Verklaring van afstand nederlandse nationaliteit
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het afleggen van een verklaring van afstand bij de gemeente om de Nederlandse nationaliteit op te geven.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verklaring-van-afstand-nederlandse-nationaliteit.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

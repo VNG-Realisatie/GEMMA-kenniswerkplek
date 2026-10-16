@@ -25,9 +25,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: De gegevens van de persoon horen bij Ingeschreven persoon; de rol zelf wordt niet bijgehouden.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Hoedanigheid van degene op wiens naam een reisdocument is of wordt gesteld en die het aanvraagt, ophaalt, vermissing meldt en inlevert.
 beschrijving:
 - 'De wet onderscheidt de aanvrager, die een aanvraag indient of op wie zij betrekking heeft, en de houder, op wiens naam het reisdocument is gesteld en voor wie het is uitgereikt (Paspoortwet art. 1 onder b en f). In de gemeentelijke praktijk is het dezelfde persoon in opeenvolgende fasen: hij verschijnt persoonlijk bij de aanvraag, legt al zijn reisdocumenten over, haalt het nieuwe document op en levert de oude in, meldt een vermissing en levert een vervallen of teruggevonden document in (art. 28, 29, 32, 56; Utrecht). Voor een minderjarige vraagt de ouder of voogd aan en geeft de toestemming (art. 34).'
@@ -86,7 +83,7 @@ relaties:
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rvig-hup-inhouding-inlevering-vermissing
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -95,7 +92,6 @@ beslist:
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 10
   bronnen:

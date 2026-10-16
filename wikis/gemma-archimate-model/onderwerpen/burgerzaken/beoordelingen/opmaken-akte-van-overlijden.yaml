@@ -57,9 +57,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het ontvangen van de aangifte van een overlijden of lijkvinding en het opmaken van de akte van overlijden.
 beschrijving:
 - De ambtenaar van de burgerlijke stand van de gemeente van overlijden stelt de identiteit van de aangever vast en maakt de akte op, op grond van de verklaring van overlijden; de aangifte kan elektronisch, met het burgerservicenummer van de overledene en de verklaring van de arts (BW 1 art. 19f, 19h; Besluit burgerlijke stand art. 67a). Bij een lijkvinding maakt hij de akte op de schriftelijke aangifte van de hulpofficier van justitie; datum en plaats van de vinding gelden als datum en plaats van overlijden (Besluit burgerlijke stand art. 62; HUP Lijkvinding).
@@ -110,7 +107,7 @@ bronnen:
 - 2026-rvig-hup-rechtsvermoeden-van-overlijden
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -119,7 +116,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

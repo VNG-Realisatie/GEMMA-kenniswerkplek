@@ -28,9 +28,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: 'Variant van Graf: zelfde gegevens en behandeling, geen eigen levenscyclus.'
@@ -45,7 +42,6 @@ beslist:
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Graf
     generiek: false
     typeregel: 18

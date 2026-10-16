@@ -2,7 +2,7 @@
 id: gemeente
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Gemeente
 onderwerpen:
 - bestuur-en-organisatie
@@ -11,7 +11,6 @@ onderwerpen:
 definitie: Een gemeente als rechtspersoon, met een raad, een college van burgemeester en wethouders en een burgemeester.
 match:
   gemma: geen
-data_object: nee
 doelgroep: gemeente
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeente.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

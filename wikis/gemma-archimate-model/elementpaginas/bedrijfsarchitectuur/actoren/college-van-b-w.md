@@ -2,7 +2,7 @@
 id: college-van-b-w
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: College van B&W
 onderwerpen:
 - bestuur-en-organisatie
@@ -10,7 +10,6 @@ onderwerpen:
 definitie: Dagelijks bestuur van de gemeente, bestaande uit de burgemeester en de wethouders.
 match:
   gemma: exact
-data_object: nee
 doelgroep: gemeente
 synoniemen:
 - Burgemeester en wethouders (wet)
@@ -31,7 +30,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling college-van-b-w.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

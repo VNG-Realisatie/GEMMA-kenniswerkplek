@@ -2,7 +2,7 @@
 id: rijkswet-op-het-nederlanderschap
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Rijkswet op het Nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Rijkswet over de verkrijging, het verlies en de vaststelling van het Nederlanderschap.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rijkswet-op-het-nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

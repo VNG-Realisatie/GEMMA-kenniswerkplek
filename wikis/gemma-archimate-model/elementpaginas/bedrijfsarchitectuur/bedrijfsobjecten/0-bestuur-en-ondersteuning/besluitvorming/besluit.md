@@ -2,7 +2,7 @@
 id: besluit
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Besluit
 onderwerpen:
 - besluitvorming
@@ -13,7 +13,8 @@ definitie: Schriftelijke beslissing van een bestuursorgaan met rechtsgevolg, voo
 match:
   ggm: sterk
   gemma: sterk
-data_object: nee
+data_objecten:
+- Besluit-data
 objectniveau: generiek
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -52,7 +53,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -112,6 +113,10 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | [Bezwaarschrift](bezwaarschrift.md) | is gericht tegen *associatie (gericht)* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 6:5 lid 1 onder c, 7:11) |
 | [Uitvoeren uniforme openbare voorbereidingsprocedure](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md) | legt ter inzage als ontwerp en neemt *toegang (registreren)* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 3:11, 3:18) |
 | [Voeren verweer in beroep](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/voeren-verweer-in-beroep.md) | zendt de stukken over het bestreden besluit; neemt na vernietiging zo nodig een nieuw *toegang (raadplegen, registreren: lezen-schrijven)* | Besluit | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 8:42 lid 1; art. 8:72 lid 4) |
+
+### Data-objecten
+
+- [Besluit-data](../../../../applicatiearchitectuur/data-objecten/besluit-data.md) *realisatie*: GGM-entiteit *Besluit*, match sterk.
 
 ## Herkomst
 

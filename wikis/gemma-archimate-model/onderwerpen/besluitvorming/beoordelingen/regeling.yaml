@@ -27,9 +27,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; de gemeentelijke verordening is een specialisatie.
@@ -91,7 +88,7 @@ onderwerpen:
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
 - 2026-vng-wet-op-de-lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -102,11 +99,12 @@ beslist:
     voorleggen: true
     redenen:
     - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
-    data_object: nee
     objectniveau: generiek
     generiek: false
     typeregel: 18
   voor_te_leggen:
+  - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
+  open:
   - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
   bronnen:
   - 2024-rijk-gemeentewet-wettekst

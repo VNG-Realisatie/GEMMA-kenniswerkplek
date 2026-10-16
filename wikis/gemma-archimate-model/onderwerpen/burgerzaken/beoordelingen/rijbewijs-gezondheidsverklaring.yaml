@@ -39,13 +39,16 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Geen zelfstandige dienst maar een subdienst: onderdeel van het besluit over de aanvraag (Rijbewijs aanvragen, Behandelen aanvraag rijbewijs); de gemeente controleert de verklaring van geschiktheid bij het CBR. Terugmelding aan de procesarchitectuur (18).'
   gevolg: verwerkt
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs
+- 2026-utrecht-burgerzaken
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Rijbewijs aanvragen
     generiek: false
   bronnen:
@@ -54,7 +57,3 @@ beslist:
   - 2026-utrecht-burgerzaken
   - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   herkomst: rijksregelgeving
-bronnen:
-- 2025-vng-upl-producten-en-diensten-extern
-- 2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs
-- 2026-utrecht-burgerzaken

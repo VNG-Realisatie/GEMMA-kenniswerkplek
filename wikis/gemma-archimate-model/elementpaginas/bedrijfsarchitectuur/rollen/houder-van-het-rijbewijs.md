@@ -2,7 +2,7 @@
 id: houder-van-het-rijbewijs
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Houder van het rijbewijs
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Hoedanigheid van degene aan wie een rijbewijs is of wordt afgegeven en die het aanvraagt, ophaalt, vermissing meldt en inlevert.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 synoniemen:
 - Aanvrager rijbewijs (wet)
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling houder-van-het-rijbewijs.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

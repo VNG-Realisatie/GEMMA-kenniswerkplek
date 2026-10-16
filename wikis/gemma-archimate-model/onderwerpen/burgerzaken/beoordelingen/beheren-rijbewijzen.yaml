@@ -58,9 +58,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar; de bedrijfsprocessen leiden tot de gebeurtenissen.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het behandelen van aanvragen, afgeven en uitreiken van rijbewijzen en het verwerken van de vermissing ervan.
 beschrijving:
 - De burgemeester neemt de aanvraag in ontvangst en geeft het rijbewijs af, voor wie als ingezetene met een adres in zijn gemeente in de basisregistratie personen staat; het besluit tot afgifte neemt hij na de controle van de identiteit, de bescheiden en de voorwaarden (Wegenverkeerswet 1994 art. 113, 116, 118a; Reglement rijbewijzen art. 27, 33). De gemeente stelt het tarief vast bij plaatselijke verordening en betaalt de RDW een vergoeding voor de productie en aflevering (Wegenverkeerswet 1994 art. 111 lid 5, 121).
@@ -134,7 +131,7 @@ bronnen:
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
 - 2026-rijk-reglement-rijbewijzen-bwbr0008074
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -143,7 +140,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: levensloopproces
     generiek: false
     typeregel: 15

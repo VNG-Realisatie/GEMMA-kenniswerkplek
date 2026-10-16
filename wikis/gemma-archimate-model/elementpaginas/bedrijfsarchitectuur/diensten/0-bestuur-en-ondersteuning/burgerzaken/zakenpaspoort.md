@@ -2,7 +2,7 @@
 id: zakenpaspoort
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Zakenpaspoort
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het aanvragen en ophalen van een nationaal paspoort met 66 in plaats van 34 bladzijden.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 bronnen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling zakenpaspoort.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

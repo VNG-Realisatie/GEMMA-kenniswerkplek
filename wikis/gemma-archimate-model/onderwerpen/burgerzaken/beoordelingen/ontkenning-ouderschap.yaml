@@ -15,9 +15,6 @@ kenmerken:
     waarde: ja
     naar:
     - toevoegen-latere-vermelding
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het vervallen van het juridisch ouderschap van een ouder die niet de biologische ouder is, door een uitspraak of verklaring.
 beschrijving:
 - De vader, de moeder of het kind kan het ouderschap ontkennen op de grond dat de ouder niet de biologische ouder is (BW 1 art. 200); de moeder uit wie het kind is geboren kan in bepaalde gevallen zelf een verklaring afleggen bij de ambtenaar (HUP Ontkenning ouderschap). Ook de geslachtsnaam van het kind kan daardoor veranderen.
@@ -38,7 +35,7 @@ relaties:
   vindplaats: art. 49-52
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -47,7 +44,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

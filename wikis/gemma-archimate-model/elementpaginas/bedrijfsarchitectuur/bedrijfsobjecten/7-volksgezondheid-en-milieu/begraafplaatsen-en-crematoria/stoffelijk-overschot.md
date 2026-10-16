@@ -2,7 +2,7 @@
 id: stoffelijk-overschot
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Stoffelijk overschot
 onderwerpen:
 - lijkbezorging
@@ -12,7 +12,6 @@ definitie: Het lichaam van een overledene of doodgeborene.
 match:
   ggm: geen
   gemma: geen
-data_object: nee
 objectniveau: kernobject
 synoniemen:
 - Lijk (wet)
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling stoffelijk-overschot.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

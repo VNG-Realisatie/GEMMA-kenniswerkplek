@@ -2,7 +2,7 @@
 id: verklaring-omtrent-het-gedrag
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Verklaring omtrent het gedrag
 onderwerpen:
 - burgerzaken
@@ -12,7 +12,6 @@ definitie: Verklaring van de minister dat uit een onderzoek naar iemands gedrag 
 match:
   ggm: geen
   gemma: geen
-data_object: nee
 objectniveau: kernobject
 synoniemen:
 - VOG (beleid)
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verklaring-omtrent-het-gedrag.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

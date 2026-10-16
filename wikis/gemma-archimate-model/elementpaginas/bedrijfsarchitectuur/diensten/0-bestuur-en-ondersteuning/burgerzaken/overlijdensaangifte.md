@@ -2,7 +2,7 @@
 id: overlijdensaangifte
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Overlijdensaangifte
 onderwerpen:
 - burgerzaken
@@ -12,7 +12,6 @@ beleidsdomein: Burgerzaken
 definitie: Het doen van aangifte van een overlijden bij de gemeente waar iemand is overleden, waarna de gemeente een akte van overlijden opmaakt.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -30,7 +29,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling overlijdensaangifte.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

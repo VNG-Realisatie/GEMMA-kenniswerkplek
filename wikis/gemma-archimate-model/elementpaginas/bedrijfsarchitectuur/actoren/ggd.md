@@ -2,14 +2,13 @@
 id: ggd
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: GGD
 onderwerpen:
 - lijkbezorging
 definitie: Gezondheidsdienst die de colleges van de gemeenten in een regio via een gemeenschappelijke regeling instellen en in stand houden voor de publieke gezondheid.
 match:
   gemma: geen
-data_object: nee
 doelgroep: ketenpartners
 synoniemen:
 - Gemeentelijke gezondheidsdienst (wet)
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ggd.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

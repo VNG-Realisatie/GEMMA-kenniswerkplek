@@ -42,6 +42,10 @@ elementtype (met het id uit Over GEMMA waar dat bestaat), een relatie per toeges
 lezen-schrijven, of die van Over GEMMA) en een groepering per indeling, met de eigenschappen `kernrelatie` en `in Over GEMMA`. De relaties van de elementen worden gefilterd op dat
 kennismodel; het rapport noemt wat wegvalt.
 
+Een data-object (`beslist.data_objecten`, afgeleid uit de GGM-match) gaat mee met zijn element: een DataObject in de map
+`Application / wiki-gemma-model / Data-objecten`, met de GGM-entiteit als eigenschap, en een realisatie naar een
+bedrijfsobject of afspraak, of een associatie naar een rol, actor of gebeurtenis (ArchiMate kent daar geen realisatie).
+
 Een UPL-dienst zonder landelijke wettelijke grondslag (`beslist.zonder_grondslag`, regel Wettelijke grondslag) gaat niet
 mee: ze is geen wettelijke taak. Het rapport noemt haar.
 
@@ -166,6 +170,7 @@ class Uitkomst:
     groeperingen_nieuw: list[str] = field(default_factory=list)
     specialisaties: list[str] = field(default_factory=list)
     kwaliteitsdoelen: list[str] = field(default_factory=list)
+    data_objecten: list[str] = field(default_factory=list)
     indelingen: int = 0
     kennismodel_elementen: int = 0
     kennismodel_relaties: int = 0
@@ -504,6 +509,7 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                 uit.relaties_nieuw += 1
                 b.eigen_map("relations", []).objecten.append(el)
 
+    _data_objecten(b, uit, gekozen, ids, gemma_relaties)
     _gemma_specialisaties(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
     _kwaliteitsdoelen(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels)
     _indelingen(b, uit, gemma_data, gekozen, ids, gemma_relaties, sleutels, beleidsdomeinen)
@@ -513,6 +519,29 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
     uit.zonder_plaats = _zonder_plaats(b, gekozen, ids)
     uit.xml = _serialiseer(b, gemma_bron)
     return uit
+
+
+def _data_objecten(b: Bouwer, uit: Uitkomst, gekozen: dict, ids: dict, gemma_relaties: dict) -> None:
+    """De data-objecten van de elementen (`beslist.data_objecten`): een DataObject met een vast id uit het id van het
+    data-object, en een realisatie of associatie naar het element."""
+    for bid, data in sorted(gekozen.items()):
+        if bid not in ids:
+            continue
+        for x in data["beslist"].get("data_objecten", []):
+            did = vast_id("element", "data-object", x["id"])
+            el = ET.Element("element", {XSI: xsi_type("data-object"), "name": x["naam"], "id": did})
+            ggm = x.get("ggm") or ({} if x.get("onderbouwing") else data["beslist"].get("ggm") or {})
+            if ggm.get("ggm_definitie"):
+                ET.SubElement(el, "documentation").text = ggm["ggm_definitie"]
+            _eigenschappen(el, [(eig("id"), x["id"]), *b.gemeen("nieuw"), (eig("status"), data.get("status", "")),
+                                (eig("element"), bid), (eig("GGM-entiteit"), ggm.get("ggm_entiteit", "")),
+                                (eig("GGM-guid"), ggm.get("ggm_guid", "")), (eig("GGM-match"), x["ggm_sterkte"]),
+                                (eig("pagina"), x["pad"])])
+            b.eigen_map("application", ["Data-objecten"]).objecten.append(el)
+            rtype = "realization-relationship" if x["relatie"] == "realisatie" else "association-relationship"
+            _relatie(b, uit, gemma_relaties, rtype, did, ids[bid], f"{x['id']}#{x['relatie']}", [], sleutel=x["id"])
+            uit.data_objecten.append(f"{x['naam']} → {data['begrip']} ({x['relatie']}; GGM: "
+                                     f"{ggm.get('ggm_entiteit') or 'geen, hiaat'})")
 
 
 def _functiehierarchie(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: dict, gemma_relaties: dict,
@@ -1076,6 +1105,10 @@ def rapport_md(uit: Uitkomst, tijdstempel: str, gemma_bron: str, concept: bool) 
                    "Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder het GEMMA-taakveld als "
                    "dat bestaat), de groepen van de Grondslagindeling en de doelgroepen.", ""]
         regels += [f"- {x}" for x in sorted(uit.groeperingen_nieuw)] + [""]
+    if uit.data_objecten:
+        regels += ["## Data-objecten", "",
+                   "Afgeleid uit de GGM-match van het element, in de applicatielaag van de wiki.", ""]
+        regels += [f"- {x}" for x in sorted(uit.data_objecten)] + [""]
     if uit.zonder_grondslag:
         regels += ["## Zonder grondslag", "",
                    "UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, teruggemeld aan de "

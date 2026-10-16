@@ -2,7 +2,7 @@
 id: brp-uittreksel-met-gezag
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: BRP-uittreksel met gezag
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Een uittreksel uit de basisregistratie personen met de gegevens over het gezag over een minderjarige.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 bronnen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling brp-uittreksel-met-gezag.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -10,6 +10,8 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Buiten scope: alleen genoemd als mogelijke nieuwe rechthebbende op het graf (VNG-modelverordening, toelichting art. 17); geen structurele relatie met de gemeente.'
   gevolg: afwijzen
+bronnen:
+- 2010-vng-model-beheersverordening-begraafplaatsen
 beslist:
   uitkomst:
     soort: buiten_scope
@@ -18,12 +20,9 @@ beslist:
     voorleggen: false
     redenen:
     - 'gemeentelijk: nee'
-    data_object: nee
     generiek: false
   voor_te_leggen:
   - 'gemeentelijk: nee'
   bronnen:
   - 2010-vng-model-beheersverordening-begraafplaatsen
   herkomst: gemeentelijke-regelgeving
-bronnen:
-- 2010-vng-model-beheersverordening-begraafplaatsen

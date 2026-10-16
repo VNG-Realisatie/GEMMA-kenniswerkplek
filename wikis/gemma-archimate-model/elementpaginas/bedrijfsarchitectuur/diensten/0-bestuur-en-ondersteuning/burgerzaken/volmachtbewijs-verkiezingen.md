@@ -2,7 +2,7 @@
 id: volmachtbewijs-verkiezingen
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Volmachtbewijs verkiezingen
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het aanvragen van een volmacht, zodat een andere kiezer met een volmachtbewijs namens de aanvrager stemt.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling volmachtbewijs-verkiezingen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

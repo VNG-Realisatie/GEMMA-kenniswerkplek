@@ -14,9 +14,6 @@ kenmerken:
     waarde: ja
     naar:
     - opmaken-akte-levenloos-geboren-kind
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het ter wereld komen van een kind dat bij de geboorte niet leeft.
 beschrijving:
 - De akte wordt opgemaakt in het register van overlijden, met alleen een geslachtsnaam en voornamen als de ouders dat willen (BW 1 art. 19i; Besluit burgerlijke stand art. 66). Opname in de BRP gebeurt alleen op verzoek van een ouder (HUP Geboorte; Utrecht). Een levenloos geboren kind is ook een doodgeborene in de zin van de Wet op de lijkbezorging (art. 2).
@@ -41,7 +38,7 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
 - 2026-rvig-hup-geboorte
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -50,7 +47,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

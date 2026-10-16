@@ -2,7 +2,7 @@
 id: bezwaarschrift
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Bezwaarschrift
 onderwerpen:
 - besluitvorming
@@ -12,7 +12,8 @@ definitie: Geschrift waarmee een belanghebbende bezwaar maakt tegen een besluit 
 match:
   ggm: geen
   gemma: geen
-data_object: nee
+data_objecten:
+- Bezwaarschrift-data
 objectniveau: generiek
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -22,7 +23,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bezwaarschrift.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- data-object zonder sterke GGM-match
 
 ## Betekenis
 
@@ -72,6 +77,10 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | [Behandelen bezwaar](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-bezwaar.md) | behandelt *toegang (registreren)* | Bezwaarschrift | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 6:4–6:6, 7:4) |
+
+### Data-objecten
+
+- [Bezwaarschrift-data](../../../../applicatiearchitectuur/data-objecten/bezwaarschrift-data.md) *realisatie*: geen GGM-entiteit (GGM-terugmelding hiaat).
 
 ## Herkomst
 

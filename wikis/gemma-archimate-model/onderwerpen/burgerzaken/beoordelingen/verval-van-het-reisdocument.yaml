@@ -16,9 +16,6 @@ kenmerken:
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het ongeldig worden van een reisdocument zonder besluit, onder meer door verlopen geldigheid, gewijzigde persoonsgegevens, overlijden of vermissing.
 beschrijving:
 - Een reisdocument vervalt van rechtswege als de houder het Nederlanderschap verliest, de geldigheidsduur verstrijkt, de geslachtsnaam, voornamen, geboortedatum, het geslacht of het burgerservicenummer van de houder wijzigen, de houder overlijdt, het document is ingenomen, bij de aanvraag onjuiste gegevens zijn gebruikt of de houder het als vermist heeft gemeld (Paspoortwet art. 47 lid 1). Ook de intrekking van de verklaring van toestemming kan het document van rechtswege doen vervallen (art. 48).
@@ -42,7 +39,7 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   vindplaats: art. 54 lid 1 onder a, 56
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -51,7 +48,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

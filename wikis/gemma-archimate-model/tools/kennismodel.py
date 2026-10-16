@@ -69,7 +69,7 @@ EIGENSCHAPPEN = {  # veld in de beoordeling → wat het vastlegt
     "deelprocessen": "de deelprocessen in volgorde, elk met één of twee zinnen en een bron (geen eigen pagina)",
     "gemma": "de match met het GEMMA-model: het id gaat mee in de export",
     "ggm": "de match met het GGM: entiteit, sterkte en onderbouwing",
-    "data_object": "annotatie: het begrip wordt als gegevensstructuur geautomatiseerd verwerkt",
+    "data_objecten": "een extra data-object voor een andere GGM-entiteit: naam en GGM-match",
 }
 
 # --- Vaste relatienamen ---
@@ -116,7 +116,7 @@ RELATIETYPE_UITLEG = {
                "één relatie, met de vereniging van de toegangstypen",
     "triggering": "het een start het ander, in de tijd",
     "stroom": "gedrag geeft iets door aan ander gedrag",
-    "realisatie": "gedrag realiseert een dienst; een data-object realiseert een bedrijfsobject",
+    "realisatie": "gedrag realiseert een dienst; een data-object realiseert een bedrijfsobject of afspraak",
     "bediening": "het een ondersteunt of bedient het ander",
     "invloed": "een motivatie-element beïnvloedt een ander, met een sterkte",
 }
@@ -151,6 +151,7 @@ class Elementtype:
 GEMMA_MATCH = ("GEMMA-model", "match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en "
                               "definitie van het GEMMA-element; een zwakke of partiële match voorleggen")
 GGM_GEEN = ("GGM", "geen match: het GGM modelleert gegevens")
+GGM_DATA = ("GGM", "matchdoel voor het data-object (`ggm`, niet verplicht)")
 
 ELEMENTTYPEN: list[Elementtype] = [
     Elementtype(
@@ -167,9 +168,9 @@ ELEMENTTYPEN: list[Elementtype] = [
                  "generiek object: dezelfde betekenis in veel onderwerpen; domeinspecialisaties krijgen geen pagina en "
                  "staan in relaties met `via`",
                  "onderdeel zonder eigen proces, en invoer die een andere partij maakt: geen pagina"),
-        eigenschappen=("taakveld", "beleidsdomein", "ggm", "gemma", "data_object"),
+        eigenschappen=("taakveld", "beleidsdomein", "ggm", "gemma", "data_objecten"),
         afspraken=("Registratie, eigendom, systeembeheer, regie of een extern systeem zijn geen argument voor een "
-                   "bedrijfsobject; alleen *geautomatiseerd verwerkt* telt, als annotatie.",
+                   "bedrijfsobject; de beschrijving mag de registratie noemen.",
                    "Een concreet benoemde regeling als geheel is een beleidskader; de soort (\"verordening\") is het "
                    "bedrijfsobject Regeling.",
                    "Een kernobject heeft één thuis: het onderwerp waar het ontstaat en beheerd wordt."), vak="bedrijf/passief"),
@@ -182,7 +183,7 @@ ELEMENTTYPEN: list[Elementtype] = [
         (("GGM", "als bij een bedrijfsobject"), GEMMA_MATCH),
         "Uitvoeringsovereenkomst; Grafrecht", "subsidiebeschikking (eenzijdig besluit); verordening",
         niveaus=("als bij een bedrijfsobject: kernobject, subobject of generiek",),
-        eigenschappen=("taakveld", "beleidsdomein", "ggm", "gemma", "data_object"), vak="bedrijf/passief"),
+        eigenschappen=("taakveld", "beleidsdomein", "ggm", "gemma", "data_objecten"), vak="bedrijf/passief"),
     Elementtype(
         "product", "Product", "Product", "product", "bedrijfsarchitectuur", "product",
         "Een Product is een gebundeld aanbod van diensten met bijbehorende afspraken, geleverd door een organisatie aan "
@@ -296,11 +297,11 @@ ELEMENTTYPEN: list[Elementtype] = [
         "Iets dat binnen of buiten een organisatie is gebeurd en binnen die organisatie of daarbuiten gevolgen heeft.",
         "GEMMA", True, "Ogenblikkelijk voorval dat gedrag start of afsluit (verhuizing, aanvraag ontvangen).",
         "een voltooide toestandsverandering (Overlijden; Verval van het grafrecht)",
-        (GGM_GEEN, GEMMA_MATCH,
+        (GGM_DATA, GEMMA_MATCH,
          ("generiek GEMMA-element", "bij *generiek*: specialisatie van een generieke GEMMA-gebeurtenis "
                                     "(`gemma_generiek`, exacte match)")),
         "Overlijden; Verval van het grafrecht; Aanvraag ontvangen", "verhuizing doorgeven (proces)",
-        eigenschappen=("gemma", "gemma_generiek"),
+        eigenschappen=("gemma", "gemma_generiek", "ggm", "data_objecten"),
         afspraken=("Een gebeurtenis van buiten (de klant, een derde, het recht of een termijn) start een bedrijfsproces, "
                    "nooit een deelproces.",
                    "Een gebeurtenis die het resultaat is van een bedrijfsproces (een rechtsgevolg) kan elders een "
@@ -312,11 +313,11 @@ ELEMENTTYPEN: list[Elementtype] = [
         "Persoon, organisatie of eenheid, ook extern of generiek (inwoner), en een samenwerkingsverband met eigen "
         "rechtspersoon (GGD). Hangt alleen via een rol aan gedrag en objecten.",
         "de soort partij in de gangbare term (College van B&W; Kerkgenootschap)",
-        (GGM_GEEN, GEMMA_MATCH),
+        (GGM_DATA, GEMMA_MATCH),
         "College van B&W; Kerkgenootschap; GGD; Rijk",
         "gemeente Utrecht (één exemplaar); een afzonderlijk ministerie of rijksdienst (staat in de beschrijving van "
         "Rijk)",
-        eigenschappen=("doelgroep", "gemma"), verplicht=("doelgroep",),
+        eigenschappen=("doelgroep", "gemma", "ggm", "data_objecten"), verplicht=("doelgroep",),
         afspraken=("Een actor is een soort partij: elke gemeente heeft ermee te maken in dezelfde rol. Dat sluit uit "
                    "wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat: Rijk, "
                    "Provincie en Waterschap zijn een soort partij.",
@@ -329,11 +330,11 @@ ELEMENTTYPEN: list[Elementtype] = [
         "Een rol is de verantwoordelijkheid voor specifiek gedrag waar een actor aan toegewezen kan worden.",
         "ArchiMate", True, "Verantwoordelijkheid of hoedanigheid (aanvrager, belastingplichtige, heffingsambtenaar).",
         "de hoedanigheid in de gangbare term (Houder van de begraafplaats; Rechthebbende op het graf)",
-        (GGM_GEEN, GEMMA_MATCH,
+        (GGM_DATA, GEMMA_MATCH,
          ("generiek GEMMA-element", "bij *generiek*: specialisatie van een generieke GEMMA-rol (`gemma_generiek`, "
                                     "exacte match), zoals Klant")),
         "Houder van de begraafplaats; Rechthebbende op het graf; Aanvrager", "gemeenteraad (actor)",
-        eigenschappen=("doelgroep", "gemma", "gemma_generiek"), verplicht=("doelgroep",),
+        eigenschappen=("doelgroep", "gemma", "gemma_generiek", "ggm", "data_objecten"), verplicht=("doelgroep",),
         afspraken=("Wat een rol met een object is, is toegang met een vaste verantwoordelijkheid; een handeling "
                    "(aanvragen, afgeven) is een toewijzing van de rol aan het proces dat het object gebruikt of maakt.",
                    "Een doelgroep (minima, jongeren) is geen rol maar een indeling van een actor.",
@@ -417,16 +418,15 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "Sterkte: " + "; ".join(f"`{s}` {u}" for s, u in STERKTEN.items()) + "."),
         zonder_pagina="matchdoel (GEMMA)"),
     Elementtype(
-        "data-object", "Data-object", "Data Object", "data-object", "applicatiearchitectuur", None,
+        "data-object", "Data-object", "Data Object", "data-object", "applicatiearchitectuur", "data-object",
         "Samenhangende set gegevens die geautomatiseerd kan worden verwerkt.", "GEMMA", True,
-        "Nu een annotatie (`data_object: ja`) bij een begrip dat *geautomatiseerd verwerkt* wordt; voorbereiding op de "
-        "applicatielaag. In GEMMA realiseert een data-object een bedrijfsobject.",
-        "als het bedrijfsobject dat het realiseert",
-        (("GGM", "matchdoel: een gegevensobject zonder sterke GGM-match wordt voorgelegd"),),
-        "zaak in het zaaksysteem", "keukentafelgesprek",
-        eigenschappen=("data_object", "ggm"),
-        afspraken=("Gegevensvastlegging bepaalt nooit of iets een element is; *geautomatiseerd verwerkt* is alleen een "
-                   "annotatie.",)),
+        "De schakel van een element naar het GGM. Geen beoordeling: het script leidt het af uit de GGM-match van het "
+        "element, of sterkte geen met een terugmelding hiaat, en het volgt de status van het element.",
+        "de naam van het element met -data (Graf-data)",
+        (("GGM", "de match van het element, of een extra in `data_objecten`; zwakker dan sterk voorleggen"),),
+        "Graf-data (hiaat); Ingeschreven persoon-data", "Beleidsnota-data (geen match, geen hiaat)",
+        eigenschappen=("ggm", "data_objecten"),
+        afspraken=("Registratie en haar wettelijke grondslag staan bij het element in de bedrijfslaag.",)),
     Elementtype(
         "groepering", "Groepering", "Grouping", "grouping", "overig", None,
         "Een groepering aggregeert of omvat concepten die bij elkaar horen op grond van een gemeenschappelijk kenmerk.",
@@ -616,7 +616,10 @@ RELATIES: list[Relatie] = [
     Relatie("beleidskader", "invloed", "kwaliteitsdoel", True, ("geeft grondslag aan",), (),
             "met een sterkte; het kwaliteitsdoel is een element van GEMMA (veld `kwaliteitsdoelen`)"),
     # Applicatie
-    Relatie("data-object", "realisatie", "bedrijfsobject", True, (), (), "nu een annotatie"),
+    Relatie("data-object", "realisatie", "bedrijfsobject", True),
+    Relatie("data-object", "realisatie", "afspraak", False),
+    *[Relatie("data-object", "associatie", doel, False, (), (), "ArchiMate: geen realisatie")
+      for doel in ("rol", "actor", "gebeurtenis")],
     # Indelingen: de groeperingen van de Beleidsdomeinindeling, de Functie-indeling naar domein en de Grondslagindeling
     Relatie("groepering", "aggregatie", "groepering", True, (), (), "taakveld → beleidsdomein; domein → beleidsdomein"),
     *[Relatie("groepering", "aggregatie", doel, doel in ("bedrijfsobject", "bedrijfsfunctie", "rol"), (), (), toelichting)

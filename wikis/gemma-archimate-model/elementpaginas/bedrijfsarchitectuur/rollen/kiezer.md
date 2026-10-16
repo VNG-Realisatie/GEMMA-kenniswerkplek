@@ -2,7 +2,7 @@
 id: kiezer
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Kiezer
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Hoedanigheid van wie kiesgerechtigd en als kiezer geregistreerd is en bij een verkiezing mag stemmen.
 match:
   gemma: exact
-data_object: nee
 doelgroep: inwoners en ondernemers
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
@@ -28,7 +27,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling kiezer.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

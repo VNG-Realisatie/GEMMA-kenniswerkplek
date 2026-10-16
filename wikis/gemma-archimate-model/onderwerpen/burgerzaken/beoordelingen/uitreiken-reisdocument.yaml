@@ -62,9 +62,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het na de verstrekking ter beschikking stellen van het reisdocument aan de aanvrager, die daarbij zijn oude Nederlandse reisdocumenten inlevert.
 synoniemen:
 - naam: Uitreiking
@@ -84,7 +81,6 @@ beslist:
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Behandelen aanvraag reisdocument
     generiek: false
     typeregel: 15

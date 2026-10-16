@@ -2,14 +2,13 @@
 id: rni-loket
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: RNI-loket
 onderwerpen:
 - burgerzaken
 definitie: Verantwoordelijkheid van een daartoe aangewezen gemeente om personen in de registratie niet-ingezetenen in te schrijven en hun gegevens te verstrekken.
 match:
   gemma: geen
-data_object: nee
 doelgroep: gemeente
 bronnen:
 - 2026-rvig-hup-achtergronden-en-begrippen
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rni-loket.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

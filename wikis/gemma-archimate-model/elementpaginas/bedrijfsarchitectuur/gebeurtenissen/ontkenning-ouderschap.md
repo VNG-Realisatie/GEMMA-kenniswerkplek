@@ -2,7 +2,7 @@
 id: ontkenning-ouderschap
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Ontkenning ouderschap
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het vervallen van het juridisch ouderschap van een ouder die niet de biologische ouder is, door een uitspraak of verklaring.
 match:
   gemma: geen
-data_object: nee
 synoniemen:
 - Ontkenning van het vaderschap (wet)
 bronnen:
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ontkenning-ouderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

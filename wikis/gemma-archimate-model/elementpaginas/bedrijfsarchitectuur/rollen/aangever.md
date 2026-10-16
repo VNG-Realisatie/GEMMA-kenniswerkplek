@@ -2,14 +2,13 @@
 id: aangever
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Aangever
 onderwerpen:
 - burgerzaken
 definitie: Hoedanigheid van wie bij de gemeente aangifte doet van een feit voor de basisregistratie personen of de burgerlijke stand, voor zichzelf of een ander.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 bronnen:
 - 2026-rvig-hup-verblijfplaats
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling aangever.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

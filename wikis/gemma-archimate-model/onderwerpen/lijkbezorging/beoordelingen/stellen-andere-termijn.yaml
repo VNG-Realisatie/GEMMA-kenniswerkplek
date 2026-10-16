@@ -60,9 +60,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een besluit, niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het toestaan dat een overledene eerder dan 36 uur of later dan de zesde werkdag na het overlijden wordt begraven of gecremeerd.
 beschrijving:
 - Begraving of crematie geschiedt niet eerder dan 36 uur en uiterlijk op de zesde werkdag na het overlijden (Wet op de lijkbezorging art. 16). Na een arts te hebben gehoord kan de burgemeester van de gemeente waar het stoffelijk overschot zich bevindt een andere termijn stellen; binnen 36 uur alleen in overeenstemming met de officier van justitie (art. 17 lid 1). Tegen het besluit staat binnen 24 uur beroep open bij de commissaris van de Koning (art. 17 lid 2). De nabestaanden vragen de vergunning aan bij de gemeente waar de persoon is overleden, meestal via de uitvaartondernemer (RVO).
@@ -106,7 +103,7 @@ besluiten:
   gevolg: verwerkt
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -115,7 +112,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

@@ -24,9 +24,6 @@ kenmerken:
     waarde: ja
     naar:
     - behandelen-naturalisatieverzoek
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 afnemer: extern
 domein: Publieksdiensten
 definitie: Het indienen van een verzoek om naturalisatie, dat de gemeente onderzoekt en met haar advies doorstuurt naar de minister.
@@ -54,7 +51,7 @@ relaties:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -63,7 +60,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

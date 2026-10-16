@@ -2,7 +2,7 @@
 id: verhuismelding
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Verhuismelding
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het doorgeven van een verhuizing binnen of naar de gemeente, zodat het nieuwe adres in de basisregistratie personen komt.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -28,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verhuismelding.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

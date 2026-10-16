@@ -53,9 +53,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 kernobject: stempas
 afnemer: extern
 definitie: Het verstrekken, vervangen en ongeldig maken van stempassen, kiezerspassen en volmachtbewijzen voor een verkiezing.
@@ -103,7 +100,7 @@ besluiten:
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -112,7 +109,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: levensloopproces
     generiek: false
     typeregel: 15

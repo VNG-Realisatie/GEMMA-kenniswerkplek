@@ -10,19 +10,18 @@ besluiten:
 - datum: '2026-10-12'
   besluit: Synoniem (context wet) van Beslisser, geen eigen element.
   gevolg: verwerkt
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- 2026-rijk-gemeentewet-wettekst
 beslist:
   uitkomst:
     soort: synoniem
     regel: 1
     toelichting: Ander woord voor een bestaand begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Beslisser
     generiek: false
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-gemeentewet-wettekst
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-algemene-wet-bestuursrecht-wettekst
-- 2026-rijk-gemeentewet-wettekst

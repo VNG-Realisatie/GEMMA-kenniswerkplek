@@ -17,10 +17,10 @@ titel: Gebeurtenis — modelleerafspraken
 | Duiding | Ogenblikkelijk voorval dat gedrag start of afsluit (verhuizing, aanvraag ontvangen). |
 | Herken je aan | *gedrag* en *toestandsverandering*. Moet ja: *leidt tot gedrag* (kernrelatie); hoogstens 1 nee: *komt herhaald voor*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Gebeurtenis ─triggering→ Bedrijfsproces; Gebeurtenis ─triggering→ Bedrijfsinteractie |
-| Eigenschappen | `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `gemma_generiek`: het generieke GEMMA-element waarvan dit een specialisatie is (exacte match) |
+| Eigenschappen | `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `gemma_generiek`: het generieke GEMMA-element waarvan dit een specialisatie is (exacte match) · `ggm`: de match met het GGM: entiteit, sterkte en onderbouwing · `data_objecten`: een extra data-object voor een andere GGM-entiteit: naam en GGM-match |
 | Indelingen | [Procesindeling naar kernobject](../indelingen.md); [Procesindeling naar soort werk](../indelingen.md) (bij *generiek*) |
 | Naamvorm | een voltooide toestandsverandering (Overlijden; Verval van het grafrecht) |
-| Afstemming | GGM: geen match: het GGM modelleert gegevens · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen · generiek GEMMA-element: bij *generiek*: specialisatie van een generieke GEMMA-gebeurtenis (`gemma_generiek`, exacte match) |
+| Afstemming | GGM: matchdoel voor het data-object (`ggm`, niet verplicht) · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen · generiek GEMMA-element: bij *generiek*: specialisatie van een generieke GEMMA-gebeurtenis (`gemma_generiek`, exacte match) |
 | Voorbeeld | wel: Overlijden; Verval van het grafrecht; Aanvraag ontvangen · niet: verhuizing doorgeven (proces) |
 
 ## Afspraken
@@ -42,6 +42,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | uit | triggering | [Gebeurtenis](gebeurtenis-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel | een rechtsgevolg dat een ander teweegbrengt |
 | uit | specialisatie | [Gebeurtenis](gebeurtenis-modelleerafspraken.md) | is een |  | nee: uitbreiding op het GEMMA-kennismodel | naar een generieke gebeurtenis |
 | in | associatie (gericht) | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | is grondslag voor |  | nee: uitbreiding op het GEMMA-kennismodel | de regeling die de gebeurtenis regelt |
+| in | associatie | [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel | ArchiMate: geen realisatie |
 
 ## Weggefilterd
 

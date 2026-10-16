@@ -29,9 +29,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Inrichting waar stoffelijke overschotten worden gecremeerd en de as wordt geborgen.
@@ -50,7 +47,7 @@ specialisaties:
   omschrijving: Crematorium van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52). Geen eigen pagina.
 onderwerpen:
 - lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -59,7 +56,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     objectniveau: kernobject
     generiek: false
     typeregel: 18

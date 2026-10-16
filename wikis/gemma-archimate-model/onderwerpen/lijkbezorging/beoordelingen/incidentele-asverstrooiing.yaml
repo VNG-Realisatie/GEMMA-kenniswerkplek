@@ -50,9 +50,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: 'Variant van Uitvoeren lijkbezorging: zelfde gegevens en behandeling, geen eigen levenscyclus.'
@@ -67,7 +64,6 @@ beslist:
     toelichting: Specialisatie zonder pagina (kern ja)
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Uitvoeren lijkbezorging
     generiek: false
     typeregel: 15

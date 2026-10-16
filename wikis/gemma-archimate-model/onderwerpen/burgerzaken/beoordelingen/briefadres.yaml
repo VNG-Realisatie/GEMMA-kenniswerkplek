@@ -33,11 +33,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: Functie adres B in categorie 08, met een koppeling naar een nevenadres in de BAG (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: 'Specialisatie van Verblijfplaats die de gemeente anders behandelt: eigen voorwaarden, een briefadresgever en een eigen besluit (HUP Verblijfplaats; NVVB Beleidsregel briefadres); GGM en GEMMA kennen het als eigen begrip.'
@@ -78,7 +73,7 @@ bronnen:
 - 2026-nvvb-beleidsregel-briefadres
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
 - 2023-rvig-circulaire-adresonderzoek-brp
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -87,7 +82,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: subobject
     generiek: false
     typeregel: 18
@@ -99,6 +93,12 @@ beslist:
   - 2026-rvig-hup-binnengemeentelijke-adreswijziging
   - 2026-rijk-wet-brp-bwbr0033715
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: briefadres-data
+    naam: Briefadres-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/briefadres-data.md
   ggm:
     ggm_entiteit: Briefadres
     ggm_guid: EAID_3015DCE3_7C05_4160_A717_533553258C15

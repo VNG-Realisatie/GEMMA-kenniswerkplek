@@ -8,19 +8,18 @@ kenmerken:
     waarde: nee
     onderbouwing: De laatste stap van Inhouden reisdocument, en van Uitreiken reisdocument voor ingeleverde of niet opgehaalde documenten (Paspoortwet art. 42 lid 4, 54 lid 3; Paspoortbesluit art. 7.1).
 toelichting: 'Processtap zonder pagina: het vernietigen, of onbruikbaar maken en teruggeven, van een ingeleverd, ingehouden, vervallen verklaard, niet opgehaald of gevonden reisdocument (Paspoortwet art. 1 onder j, 42 lid 4, 54 lid 3; Paspoortbesluit art. 7.1). Vermeld bij Inhouden reisdocument en Uitreiken reisdocument.'
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-paspoortbesluit-bwbr0044308
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Inhouden reisdocument
     generiek: false
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-paspoortbesluit-bwbr0044308
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-paspoortwet-bwbr0005212
-- 2026-rijk-paspoortbesluit-bwbr0044308

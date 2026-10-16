@@ -2,14 +2,13 @@
 id: besmet-stoffelijk-overschot-gemeld
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Besmet stoffelijk overschot gemeld
 onderwerpen:
 - lijkbezorging
 definitie: De burgemeester heeft van de GGD de melding ontvangen dat een stoffelijk overschot besmet is met gevaar voor de volksgezondheid.
 match:
   gemma: geen
-data_object: nee
 synoniemen:
 - Melding besmet lijk (wet)
 - Besmet lijk gemeld (wet)
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besmet-stoffelijk-overschot-gemeld.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

@@ -31,9 +31,6 @@ kenmerken:
     onderbouwing: De minister analyseert mededelingen en profielen en signaleert gemeenten (Besluit BRP art. 28a).
     bronnen:
     - 2026-rijk-besluit-brp-bwbr0034306
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Invoer van een andere partij: de minister selecteert signalen van mogelijk onjuiste adresgegevens en stuurt ze naar de gemeente. Geen pagina; aanleiding voor Uitvoeren adresonderzoek.'
 synoniemen:
 - naam: LAA-melding
@@ -47,7 +44,6 @@ beslist:
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Uitvoeren adresonderzoek
     generiek: false
     typeregel: 18

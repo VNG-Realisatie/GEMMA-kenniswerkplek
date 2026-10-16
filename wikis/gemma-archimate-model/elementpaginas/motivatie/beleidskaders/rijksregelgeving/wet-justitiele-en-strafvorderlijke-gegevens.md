@@ -2,7 +2,7 @@
 id: wet-justitiele-en-strafvorderlijke-gegevens
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Wet justitiële en strafvorderlijke gegevens
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Wet over de verwerking en verstrekking van justitiële en strafvorderlijke gegevens, met de regels voor de aanvraag en afgifte van de VOG.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling wet-justitiele-en-strafvorderlijke-gegevens.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

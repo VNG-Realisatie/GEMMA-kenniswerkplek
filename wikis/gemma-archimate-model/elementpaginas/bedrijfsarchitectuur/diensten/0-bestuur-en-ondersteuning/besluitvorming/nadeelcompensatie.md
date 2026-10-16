@@ -2,7 +2,7 @@
 id: nadeelcompensatie
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Nadeelcompensatie
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: Een vergoeding voor schade die de gemeente rechtmatig veroorzaakt en die iemand onevenredig zwaar treft.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Bestuur
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling nadeelcompensatie.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

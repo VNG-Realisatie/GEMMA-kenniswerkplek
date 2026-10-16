@@ -10,6 +10,9 @@ Leest elke beoordeling in `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml`
 - `beslist.pad`: waar het render-script de pagina zet (map en submappen uit wiki.yaml: taakveld en beleidsdomein, bij een functie het domein);
 - `beslist.ggm`, `beslist.ggm_duplicaten`, `beslist.gemma`: de letterlijke velden bij de match die de AI koos
   (tools/ggm.py, tools/gemma.py); de AI vult die nooit zelf;
+- `beslist.data_objecten`: bij een bedrijfsobject, afspraak, rol, actor of gebeurtenis de data-objecten, afgeleid uit
+  de GGM-match (`ggm`: een match, of sterkte geen met een GGM-terugmelding hiaat) en uit `data_objecten` (een extra
+  GGM-entiteit), elk met id, naam, relatie en pad; een extra data-object ook met de letterlijke GGM-velden;
 - `beslist.kwaliteitsdoelen`: bij een beleidskader de letterlijke naam en definitie van elk GEMMA-kwaliteitsdoel;
 - `beslist.bronnen` en `beslist.herkomst`: alle bronnen van het begrip, en het brontype van de hoogste.
 Nieuwe GGM-terugmeldingen in `modellen/ggm/terugmeldingen.yaml` krijgen het volgende nummer.
@@ -157,7 +160,7 @@ def _controleer_element(ctx: Context, bid: str, data: dict, uitkomst: dict, res:
     for veld in ctx.wiki_yaml["page_types"][paginatype].get("submappen", []):
         if not bepaal_type.submap(data, veld):
             res.fouten.append(f"{bid}: {paginatype} zonder '{veld}' (bepaalt de map)")
-    if uitkomst.get("data_object") == "ja" or paginatype in ("bedrijfsobject", "product"):
+    if paginatype in ("bedrijfsobject", "product"):
         if not data.get("ggm"):
             res.fouten.append(f"{bid}: {paginatype} zonder GGM-match ('ggm', ook bij sterkte geen)")
     res.fouten += [f"{bid}: {f}" for f in bepaal_type.controleer_indelingsvelden(data, uitkomst)]
@@ -214,6 +217,58 @@ def _modelvelden(ctx: Context, bid: str, data: dict, res: Resultaat) -> dict:
                 **gemmatool.velden(treffers[0]),
                 "gemma_paden": [" › ".join(p) for p in gemmatool.functie_paden(ctx.gemma(), ctx.functies(), treffers[0]["id"])]}
     return beslist
+
+
+DATA_OBJECT_TYPEN = ("bedrijfsobject", "rol", "actor", "gebeurtenis")  # paginatypen; bedrijfsobject omvat de afspraak
+DATA_OBJECT_DIR = "elementpaginas/applicatiearchitectuur/data-objecten"
+
+
+def hiaten(register: dict | None) -> set[str]:
+    """De elementen met een GGM-terugmelding hiaat die niet is afgewezen: hun data-object heeft geen GGM-entiteit."""
+    return {e for m in (register or {}).get("terugmeldingen", []) if m.get("type") == "hiaat"
+            and m.get("status") != "afgewezen" for e in [m.get("element"), *(m.get("elementen") or [])] if e}
+
+
+def _data_objecten(ctx: Context, bid: str, data: dict, uitkomst: dict, met_hiaat: set[str], res: Resultaat) -> dict:
+    """De data-objecten van een element: <naam>-data uit de GGM-match van het element (een match, of sterkte geen met een
+    GGM-terugmelding hiaat), en elk extra data-object uit `data_objecten` met zijn eigen GGM-entiteit."""
+    import ggm as ggmtool
+
+    extra = data.get("data_objecten") or []
+    if uitkomst.get("paginatype") not in DATA_OBJECT_TYPEN:
+        if extra:
+            res.fouten.append(f"{bid}: data_objecten horen alleen bij een bedrijfsobject, afspraak, rol, actor of "
+                              "gebeurtenis")
+        return {}
+    relatie = "realisatie" if uitkomst.get("paginatype") == "bedrijfsobject" else "associatie"
+    eigen = data.get("ggm") or {}
+    kandidaten = []
+    if eigen.get("guid") or (eigen.get("sterkte") == "geen" and bid in met_hiaat):
+        kandidaten.append((f"{data['begrip']}-data", eigen))
+    elif extra:
+        res.fouten.append(f"{bid}: data_objecten zonder data-object van het element zelf: geef het element een "
+                          "GGM-match (ggm), of bij sterkte geen een GGM-terugmelding hiaat")
+    gezien = {eigen.get("guid")}
+    for d in extra:
+        if d["ggm"]["guid"] in gezien:
+            res.fouten.append(f"{bid}: data-object {d['naam']} heeft dezelfde GGM-entiteit als een ander data-object "
+                              "van het element")
+        gezien.add(d["ggm"]["guid"])
+        kandidaten.append((d["naam"], d["ggm"]))
+    uit = []
+    for naam, g in kandidaten:
+        do_id = slug(naam)
+        item = {"id": do_id, "naam": naam, "relatie": relatie, "ggm_sterkte": g["sterkte"],
+                "pad": f"{DATA_OBJECT_DIR}/{do_id}.md"}
+        if g is not eigen:   # de letterlijke velden van de match van het element staan al in `beslist.ggm`
+            treffers = ggmtool.zoek_entiteit(ctx.ggm(), g["guid"])
+            if not treffers:
+                res.fouten.append(f"{bid}: GGM-guid {g['guid']} van data-object {naam} bestaat niet in het GGM")
+                continue
+            item["ggm"] = ggmtool.velden(treffers[0])
+            item["onderbouwing"] = g["onderbouwing"]
+        uit.append(item)
+    return {"data_objecten": uit}
 
 
 def _kwaliteitsdoelen(ctx: Context, bid: str, data: dict, uitkomst: dict, res: Resultaat) -> dict:
@@ -609,6 +664,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
 
     nieuw: dict[str, dict] = {}
     alle_data = {b: d for b, (_, d) in alle.items()}
+    met_hiaat = hiaten(beoordeling.laad(wiki_root / TERUGMELDINGEN) if (wiki_root / TERUGMELDINGEN).exists() else None)
     for bid, (pad, data) in alle.items():
         uitkomst = uitkomsten[bid]
         if uitkomst is None:
@@ -641,9 +697,13 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             if onderwerp not in onderwerpen:
                 res.fouten.append(f"{bid}: onderwerp '{onderwerp}' heeft geen {gam_gemeen.afbakening_pad(onderwerp).as_posix()}")
         ggm_sterkte = (data.get("ggm") or {}).get("sterkte")
-        redenen = bepaal_type.voor_te_leggen(uitkomst, ggm_sterkte)
+        data_objecten = _data_objecten(ctx, bid, data, uitkomst, met_hiaat, res) \
+            if uitkomst["soort"] == "element" else {}
+        if data.get("data_objecten") and uitkomst["soort"] != "element":
+            res.fouten.append(f"{bid}: data_objecten horen bij een element")
+        redenen = bepaal_type.voor_te_leggen(uitkomst, data_objecten.get("data_objecten", []))
         beslist = {"uitkomst": uitkomst, "voor_te_leggen": redenen, "open": [],
-                    "bronnen": bronnen, "herkomst": herkomst(ctx, bronnen)}
+                    "bronnen": bronnen, "herkomst": herkomst(ctx, bronnen), **data_objecten}
         status = None
         if uitkomst["soort"] == "element":
             if not bronnen:
@@ -675,10 +735,15 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
 
     paden = {}
     for bid, d in [(b, nieuw.get(b, alle[b][1])) for b in alle]:
-        pad = (d.get("beslist") or {}).get("pad")
-        if pad and pad in paden:
-            res.fouten.append(f"{bid}: zelfde paginapad als '{paden[pad]}' ({pad})")
-        paden[pad] = bid
+        beslist_ = d.get("beslist") or {}
+        for pad in [beslist_.get("pad"), *(x["pad"] for x in beslist_.get("data_objecten", []))]:
+            if pad and pad in paden:
+                res.fouten.append(f"{bid}: zelfde paginapad als '{paden[pad]}' ({pad})")
+            paden[pad] = bid
+    for bid, d in [(b, nieuw.get(b, alle[b][1])) for b in alle]:
+        for x in (d.get("beslist") or {}).get("data_objecten", []):
+            if x["id"] in alle:
+                res.fouten.append(f"{bid}: data-object {x['naam']} heeft het id van de beoordeling '{x['id']}'")
 
     pa_register = _pa_terugmeldingen(ctx, uitkomsten, res)
     gemma_register = _gemma_terugmeldingen(ctx, uitkomsten, res)

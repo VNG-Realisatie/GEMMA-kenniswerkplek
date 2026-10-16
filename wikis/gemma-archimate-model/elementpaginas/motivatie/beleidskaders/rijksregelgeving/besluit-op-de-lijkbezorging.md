@@ -2,7 +2,7 @@
 id: besluit-op-de-lijkbezorging
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Besluit op de lijkbezorging
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Algemene maatregel van bestuur die de Wet op de lijkbezorging uitwerkt, onder meer voor het vervoer van een stoffelijk overschot naar en uit het buitenland.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit-op-de-lijkbezorging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

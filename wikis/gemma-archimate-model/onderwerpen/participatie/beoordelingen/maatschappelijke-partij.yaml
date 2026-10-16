@@ -27,9 +27,6 @@ kenmerken:
     onderbouwing: In elke gemeente kunnen maatschappelijke partijen gemeentelijke taken uitvoeren onder de voorwaarden van de verordening (art. 150 lid 3).
     bronnen:
     - 2026-rijk-gemeentewet-wettekst
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 doelgroep: inwoners en ondernemers
 relaties:
 - soort: toewijzing
@@ -52,7 +49,7 @@ gemma:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -61,7 +58,6 @@ beslist:
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 9
   bronnen:

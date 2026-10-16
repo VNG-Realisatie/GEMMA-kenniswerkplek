@@ -20,9 +20,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: De gemeente informeert en ondersteunt de indiener, maar de bronnen noemen geen gegevens die zij los van het verzoek over hem vastlegt.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: 'Geen specialisatie van Belanghebbende: indienen kunnen ingezetenen en maatschappelijke partijen (Gemeentewet art. 150 lid 3; var. 1 art. 6 lid 1), ook zonder een belang dat rechtstreeks bij een besluit is betrokken (Awb art. 1:2). Evenmin van Aanvrager zolang het verzoek geen aanvraag is (vraag bij Verzoek uitdaagrecht).'
@@ -56,7 +53,7 @@ relaties:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2024-vng-model-participatieverordening
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -65,7 +62,6 @@ beslist:
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 10
   bronnen:

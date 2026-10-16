@@ -2,14 +2,13 @@
 id: nederlanderschap-diensten
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: review
 naam: Nederlanderschap diensten
 onderwerpen:
 - burgerzaken
 definitie: Het behandelen van aanvragen van de Nederlandse nationaliteit of het verkrijgen van bewijs daarvan.
 match:
   gemma: exact
-data_object: nee
 domein: Publieksdiensten
 bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
@@ -28,7 +27,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling nederlanderschap-diensten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

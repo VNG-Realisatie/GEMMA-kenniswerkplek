@@ -17,10 +17,10 @@ titel: Rol — modelleerafspraken
 | Duiding | Verantwoordelijkheid of hoedanigheid (aanvrager, belastingplichtige, heffingsambtenaar). |
 | Herken je aan | *hoedanigheid*, niet *los van verantwoordelijkheid*. Moet ja: *voert gedrag uit* (kernrelatie). Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Rol ─toewijzing→ Bedrijfsproces; Rol ─toewijzing→ Bedrijfsfunctie; Rol ─toewijzing→ Bedrijfsinteractie |
-| Eigenschappen | `doelgroep` (verplicht): gemeente, inwoners en ondernemers of ketenpartners: de plaats in de Doelgroepindeling (gemeente, inwoners en ondernemers, ketenpartners) · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `gemma_generiek`: het generieke GEMMA-element waarvan dit een specialisatie is (exacte match) |
+| Eigenschappen | `doelgroep` (verplicht): gemeente, inwoners en ondernemers of ketenpartners: de plaats in de Doelgroepindeling (gemeente, inwoners en ondernemers, ketenpartners) · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `gemma_generiek`: het generieke GEMMA-element waarvan dit een specialisatie is (exacte match) · `ggm`: de match met het GGM: entiteit, sterkte en onderbouwing · `data_objecten`: een extra data-object voor een andere GGM-entiteit: naam en GGM-match |
 | Indelingen | [Procesindeling naar soort werk](../indelingen.md) (bij *generiek*); [Doelgroepindeling](../indelingen.md) |
 | Naamvorm | de hoedanigheid in de gangbare term (Houder van de begraafplaats; Rechthebbende op het graf) |
-| Afstemming | GGM: geen match: het GGM modelleert gegevens · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen · generiek GEMMA-element: bij *generiek*: specialisatie van een generieke GEMMA-rol (`gemma_generiek`, exacte match), zoals Klant |
+| Afstemming | GGM: matchdoel voor het data-object (`ggm`, niet verplicht) · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen · generiek GEMMA-element: bij *generiek*: specialisatie van een generieke GEMMA-rol (`gemma_generiek`, exacte match), zoals Klant |
 | Voorbeeld | wel: Houder van de begraafplaats; Rechthebbende op het graf; Aanvrager · niet: gemeenteraad (actor) |
 
 ## Afspraken
@@ -48,6 +48,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | in | bediening | [Dienst](dienst-modelleerafspraken.md) | bedient |  | ja | de rol van de afnemer |
 | in | bediening | [Product](product-modelleerafspraken.md) | bedient |  | ja | de rol van de afnemer, een specialisatie van Klant |
 | in | associatie (gericht) | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | is grondslag voor |  | nee: uitbreiding op het GEMMA-kennismodel | de regeling die de rol regelt |
+| in | associatie | [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel | ArchiMate: geen realisatie |
 | in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Doelgroepindeling |
 
 ## Weggefilterd

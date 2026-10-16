@@ -32,11 +32,6 @@ kenmerken:
     onderbouwing: De minister geeft de verklaring af binnen de keten die de gemeente met hem uitvoert; ze is geen invoer voor een gemeentelijk proces (Wet justitiële en strafvorderlijke gegevens art. 30, 37).
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking van de verklaring zelf; het onderzoek gebruikt de justitiële documentatie van de minister (Wet justitiële en strafvorderlijke gegevens art. 36).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 definitie: Verklaring van de minister dat uit een onderzoek naar iemands gedrag geen bezwaren zijn gebleken, gelet op het doel waarvoor ze wordt gevraagd.
 definitie_formeel: een verklaring van Onze Minister dat uit een onderzoek met betrekking tot het gedrag van de betrokken natuurlijke persoon of rechtspersoon ingesteld, gelet op het risico voor de samenleving in verband met het doel waarvoor de afgifte is gevraagd en na afweging van het belang van betrokkene, niet is gebleken van bezwaren tegen die natuurlijke persoon of rechtspersoon
 definitie_formeel_bron:
@@ -82,7 +77,7 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
 - 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -91,7 +86,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     objectniveau: kernobject
     generiek: false
     typeregel: 18

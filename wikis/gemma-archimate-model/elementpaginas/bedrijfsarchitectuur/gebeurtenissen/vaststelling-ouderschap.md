@@ -2,7 +2,7 @@
 id: vaststelling-ouderschap
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Vaststelling ouderschap
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het door een uitspraak van de rechtbank ontstaan van het juridisch ouderschap van een man of vrouw over een kind.
 match:
   gemma: geen
-data_object: nee
 synoniemen:
 - Gerechtelijke vaststelling van het ouderschap (wet)
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vaststelling-ouderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

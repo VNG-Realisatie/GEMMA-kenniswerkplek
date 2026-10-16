@@ -56,9 +56,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Processtap zonder pagina: een ten onrechte opgenomen persoonslijst, bijvoorbeeld na een dubbele inschrijving of identiteitsfraude, wordt opgeschort met reden F; er is geen eigen besluit of product (afbakening). Het verwijderen van een geblokkeerde persoonslijst na verhuizing of emigratie is ook een registratiestap.'
 synoniemen:
 - naam: Dubbelinschrijving afhandelen
@@ -72,7 +69,6 @@ beslist:
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Bijhouden persoonsgegevens
     generiek: false
     typeregel: 15

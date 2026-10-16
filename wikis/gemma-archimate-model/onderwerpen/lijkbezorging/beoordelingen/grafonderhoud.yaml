@@ -16,9 +16,6 @@ kenmerken:
     naar:
     - exploiteren-van-begraafplaatsen
     - onderhouden-graf
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -51,7 +48,7 @@ bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-retributies
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -60,7 +57,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

@@ -13,9 +13,6 @@ kenmerken:
     waarde: ja
     naar:
     - bijhouden-persoonsgegevens
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het moment waarop een persoon het Nederlanderschap verliest, door afstand, een andere nationaliteit, verblijf in het buitenland of intrekking.
 beschrijving:
 - Het Nederlanderschap gaat voor een meerderjarige verloren door het vrijwillig verkrijgen van een andere nationaliteit, door een verklaring van afstand, door dertien jaar hoofdverblijf buiten het Koninkrijk en de EU met ook een vreemde nationaliteit, of door intrekking door de minister; een minderjarige verliest het onder meer met zijn ouder (Rijkswet op het Nederlanderschap art. 14-16). Utrecht onderscheidt het opgeven, door een verklaring van afstand, van het verliezen zonder bewuste keuze.
@@ -50,7 +47,7 @@ bronnen:
 - 2026-rvig-hup-nederlandse-nationaliteit
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-rvig-hup-nationaliteit
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -59,7 +56,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

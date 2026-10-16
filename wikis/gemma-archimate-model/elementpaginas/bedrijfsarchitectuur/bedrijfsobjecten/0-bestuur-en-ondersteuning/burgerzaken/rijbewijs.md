@@ -2,7 +2,7 @@
 id: rijbewijs
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Rijbewijs
 onderwerpen:
 - burgerzaken
@@ -12,7 +12,8 @@ definitie: Bewijs van rijbevoegdheid op naam van een persoon, afgegeven voor het
 match:
   ggm: geen
   gemma: geen
-data_object: ja
+data_objecten:
+- Rijbewijs-data
 objectniveau: kernobject
 bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
@@ -25,7 +26,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rijbewijs.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- data-object zonder sterke GGM-match
 
 ## Betekenis
 
@@ -71,7 +76,6 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elk rijbewijs is afgegeven aan één houder voor een of meer categorieën, met een afgiftedatum (Wegenverkeerswet 1994 art. 118, 118a). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, wordt afgegeven en uitgereikt, vernieuwd of vervangen, en verliest zijn geldigheid door het verstrijken van de geldigheidsduur, omwisseling, overlijden of aangifte van vermissing (Wegenverkeerswet 1994 art. 119, 120, 122, 123). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Behandelen aanvraag rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md), [Beheren rijbewijzen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-rijbewijzen.md), [Verwerken vermissing rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md). |
-| **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, het rijbewijs staat in het rijbewijzenregister van de RDW en kan een publiek identificatiemiddel bevatten (Wegenverkeerswet 1994 art. 111 lid 5, 126; Utrecht). [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) |
 
 ### Specialisaties
 
@@ -97,6 +101,10 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | [Beheren rijbewijzen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-rijbewijzen.md) | geeft af, reikt uit en neemt in *toegang (registreren)* | Rijbewijs | [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 115, 116, 119, 120a) |
 | [Houder van het rijbewijs](../../../rollen/houder-van-het-rijbewijs.md) | is houder van *toegang (houder)* | Rijbewijs | [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md) (art. 119 lid 4) |
 | [Verwerken vermissing rijbewijs](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md) | registreert vermissing van *toegang (bijwerken)* | Rijbewijs | [Wegenverkeerswet 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wegenverkeerswet-1994-bwbr0006622.md), [Utrecht Rijbewijs aanvragen of verlengen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen.md) (WVW art. 123 lid 1 onder h; Utrecht regel 126-140) |
+
+### Data-objecten
+
+- [Rijbewijs-data](../../../../applicatiearchitectuur/data-objecten/rijbewijs-data.md) *realisatie*: geen GGM-entiteit (GGM-terugmelding hiaat).
 
 ## Herkomst
 

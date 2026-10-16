@@ -37,9 +37,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het lichaam van een overledene of doodgeborene.
@@ -62,7 +59,7 @@ synoniemen:
   context: wet
 naamkeuze:
 - Stoffelijk overschot is de term van de Uniforme Productenlijst (2025-vng-upl-producten-en-diensten-extern, bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk (2026-rvo-aangifte-en-akte-van-overlijden). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet.
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -71,7 +68,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     objectniveau: kernobject
     generiek: false
     typeregel: 18

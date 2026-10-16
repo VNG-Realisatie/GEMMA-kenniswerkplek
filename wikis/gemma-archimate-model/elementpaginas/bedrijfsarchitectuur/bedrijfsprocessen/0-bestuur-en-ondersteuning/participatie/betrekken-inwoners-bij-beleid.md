@@ -2,7 +2,7 @@
 id: betrekken-inwoners-bij-beleid
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Betrekken inwoners bij beleid
 onderwerpen:
 - participatie
@@ -11,7 +11,6 @@ beleidsdomein: Participatie
 definitie: Het op initiatief van de gemeente betrekken van inwoners en maatschappelijke partijen bij de voorbereiding, uitvoering of evaluatie van gemeentelijk beleid.
 match:
   gemma: geen
-data_object: nee
 procesniveau: levensloopproces
 afnemer: extern
 synoniemen:
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling betrekken-inwoners-bij-beleid.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

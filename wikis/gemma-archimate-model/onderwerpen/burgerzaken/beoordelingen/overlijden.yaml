@@ -14,9 +14,6 @@ kenmerken:
     - uitvoeren-lijkbezorging
     - bezorgen-stoffelijk-overschot
     - opmaken-akte-van-overlijden
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -88,7 +85,7 @@ bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rvig-hup-overlijden-nederland
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -97,7 +94,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

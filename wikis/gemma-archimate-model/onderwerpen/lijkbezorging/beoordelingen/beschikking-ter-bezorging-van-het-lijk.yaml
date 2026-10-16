@@ -11,6 +11,8 @@ besluiten:
   besluit: 'Buiten scope: wilsbeschikking van de overledene zelf (art. 19); de gemeente beslist er niet over. Ook als invoer bij een gemeentebegrafenis geen pagina (precedent Verklaring van overlijden).'
   gevolg: afwijzen
   zekerheid: kennis
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
 beslist:
   uitkomst:
     soort: buiten_scope
@@ -19,12 +21,9 @@ beslist:
     voorleggen: false
     redenen:
     - 'gemeentelijk: nee'
-    data_object: nee
     generiek: false
   voor_te_leggen:
   - 'gemeentelijk: nee'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-wet-op-de-lijkbezorging-wettekst

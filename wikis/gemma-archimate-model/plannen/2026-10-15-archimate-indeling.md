@@ -77,6 +77,25 @@ Verder, minder groot:
 - **Open punt Extern bij gedrag**: volgt uit het vak (`bedrijf/gedrag-extern` is de dienst).
 - **Woordbudget** (besluit van de redacteur): kennismodel 21.100, skill beoordelen 6.700, AGENTS.md 1.720.
 
+## Uitkomst stap 8–11 (2026-10-16)
+
+Besluiten van de redacteur:
+
+- **Naam**: `<naam van het element>-data` (Graf-data).
+- **Wie data-objecten heeft**: bedrijfsobject (met de afspraak), rol, actor en gebeurtenis. Een ander type dat uit de GGM-match naar boven komt, wordt voorgelegd. De eenmalige controle: alleen bedrijfsobjecten hadden een GGM-match. Op naam zijn er GGM-entiteiten voor rollen (Belanghebbende, Aangever, Indiener, Rechthebbende), een actor (Gemeente) en gebeurtenissen (RSGBPlus: geboorte, overlijden, huwelijk, ontbinding, migratie); daarom kwam de gebeurtenis erbij.
+- **Ontwerp bijgesteld**: de verwerking van de grondslagen blijft in de bedrijfslaag, en het data-object is de schakel naar het informatiemodel. Het veld `vastlegging` vervalt. Het script leidt het data-object af uit `ggm` van het element: een match (exact, sterk of partieel), of sterkte geen met een GGM-terugmelding hiaat. `data_objecten` staat alleen in de beoordeling voor een extra GGM-entiteit (naam en `ggm`, met een match). De GGM-velden erft het data-object van het element. Een `gemma`-veld is er niet: de 14 GEMMA-data-objecten zijn generiek (Zaakgegevens, Bericht …).
+- **Relatie**: realisatie naar een bedrijfsobject of afspraak; associatie naar een rol, actor of gebeurtenis, omdat ArchiMate daar geen realisatie kent (een uitbreiding op het GEMMA-kennismodel).
+- **Woordbudget**: [modelleerregels.md](../kennismodel/modelleerregels.md) is puntsgewijs herschreven (van 2.759 naar 2.217 woorden), zodat het kennismodel binnen 21.100 blijft (20.874). Het budget van skill beoordelen gaat van 6.700 naar 6.750; de uitleg staat als sectie in `references/ggm-match.md`, niet in een eigen `references/data-object.md`.
+
+Uitvoering:
+
+- Het kenmerk *geautomatiseerd verwerkt* en de annotatie `data_object` vervallen. Het kenmerk is uit 382 beoordelingen geschrapt, met een script. Bij 6 beoordelingen stond een bron alleen in dat kenmerk; die staat nu in `bronnen`.
+- Het registr*-signaal geldt niet meer bij een bedrijfsobject of afspraak: van 154 naar 127 signalen. De andere signalen zijn gelijk gebleven.
+- De pagina's staan in `elementpaginas/applicatiearchitectuur/data-objecten/`, naar de laag, en niet in `elementpaginas/data-object/`. Het element toont ze onder *Data-objecten*.
+- De export zet het data-object in `Application / wiki-gemma-model / Data-objecten`. De concept-export heeft dezelfde 281 elementen en 18 relaties meer.
+- Uitkomst: 18 afgeleide data-objecten. Dat zijn de 13 elementen met *geautomatiseerd verwerkt* ja, plus Aanvraag, Beschikking en Besluit (GGM sterk) en Bezwaarschrift en Schriftelijke klacht (hiaat 20 en 21). Bij Ingeschreven persoon komen er 3 extra bij: Gezag-data (Gezagsverhouding, sterk; ook curatele), Nationaliteit-data (exact) en Verblijfstitel-data (sterk). Signalering heeft geen GGM-entiteit; Akte van overlijden valt onder Akte van de burgerlijke stand-data.
+- De 285 goedgekeurde elementen staan weer op review, omdat het akkoord-hash de kenmerken telt: een nieuw AKKOORD.
+
 ## Deel 1 — Matrix en lichtere kenmerken (denkniveau hoog)
 
 ### De matrix

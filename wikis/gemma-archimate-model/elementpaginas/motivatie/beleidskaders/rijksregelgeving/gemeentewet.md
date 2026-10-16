@@ -2,7 +2,7 @@
 id: gemeentewet
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Gemeentewet
 onderwerpen:
 - bestuur-en-organisatie
@@ -13,7 +13,6 @@ beleidsdomein: Besluitvorming
 definitie: Wet die de inrichting, de bestuursorganen, de bevoegdheden en de financiën van de gemeente regelt.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-gemeentewet-wettekst
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeentewet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

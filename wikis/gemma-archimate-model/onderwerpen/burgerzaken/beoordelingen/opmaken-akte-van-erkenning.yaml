@@ -62,9 +62,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het opnemen van de erkenning van een kind door een man of vrouw in een akte van erkenning, voor of na de geboorte.
 beschrijving:
 - 'De vader of duomoeder die niet met de moeder is getrouwd of een geregistreerd partnerschap heeft, kan het kind voor of na de geboorte erkennen. Toestemming is nodig van de moeder bij een kind jonger dan twaalf, van moeder en kind tussen twaalf en zestien, en van het kind zelf vanaf zestien (BW 1 art. 204; Utrecht). Bij de erkenning legt de erkenner de keuze van de achternaam vast en regelt hij het gezag: samen, of de verklaring dat de moeder alleen gezag heeft, die de ambtenaar aan de griffier meldt (BW 1 art. 251b; Utrecht).'
@@ -97,7 +94,7 @@ bronnen:
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
 - 2026-utrecht-burgerzaken-kind-erkennen
 - 2026-rvig-hup-erkenning
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -106,7 +103,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

@@ -24,9 +24,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: De gegevens van de persoon horen bij Ingeschreven persoon; de rol zelf wordt niet bijgehouden.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Hoedanigheid van degene aan wie een rijbewijs is of wordt afgegeven en die het aanvraagt, ophaalt, vermissing meldt en inlevert.
 beschrijving:
 - 'Het Reglement rijbewijzen spreekt van de aanvrager, de Wegenverkeerswet 1994 van de houder van een rijbewijs. In de gemeentelijke praktijk is het dezelfde persoon in opeenvolgende fasen: hij vraagt aan met een identiteitsbewijs en een pasfoto, haalt het nieuwe rijbewijs persoonlijk op, levert het oude in, geeft een vermissing door en levert een teruggevonden rijbewijs in (Reglement rijbewijzen art. 27, 33; Wegenverkeerswet 1994 art. 111 lid 2, 119 lid 2 en 4; Utrecht).'
@@ -75,7 +72,7 @@ relaties:
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 119 lid 4
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -84,7 +81,6 @@ beslist:
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 10
   bronnen:

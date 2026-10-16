@@ -2,7 +2,7 @@
 id: crematoriumregister
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Crematoriumregister
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Inzage in het openbare register van alle daar gecremeerde stoffelijke overschotten en de bestemming van de as dat de houder van een crematorium bijhoudt.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Fysieke leefomgeving
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling crematoriumregister.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

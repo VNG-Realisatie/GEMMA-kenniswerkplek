@@ -2,7 +2,7 @@
 id: verklaring-van-huwelijksbevoegdheid
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Verklaring van huwelijksbevoegdheid
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het verkrijgen van een internationaal document waaruit blijkt dat iemand mag trouwen, voor een huwelijk in het buitenland.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verklaring-van-huwelijksbevoegdheid.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

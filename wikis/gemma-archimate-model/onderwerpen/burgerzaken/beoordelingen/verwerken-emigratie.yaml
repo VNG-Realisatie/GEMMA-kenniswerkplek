@@ -57,9 +57,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het verwerken van het vertrek van een ingezetene naar het buitenland, waarna hij als niet-ingezetene in de RNI staat.
 beschrijving:
 - Wie ten minste twee derde van een jaar in het buitenland gaat wonen, doet aangifte van vertrek, vanaf vijf dagen voor het vertrek; ook een verhuizing naar het Caribisch deel van het Koninkrijk is een emigratie, waarbij de persoon kosteloos een verhuisbericht krijgt (HUP Emigratie; Regeling BRP bijlage 9). Na verwerking verhuist de persoonslijst naar de RNI en blijft de laatste bijhoudingsgemeente verantwoordelijk voor rechtsfeiten van voor de emigratie (HUP Emigratie). Is de persoon niet te bereiken, dan neemt de gemeente het vertrek ambtshalve op na een adresonderzoek (HUP Emigratie; Circulaire adresonderzoek 4.8).
@@ -97,7 +94,7 @@ bronnen:
 - 2026-rvig-hup-emigratie
 - 2026-rijk-besluit-brp-bwbr0034306
 - 2025-rvig-logisch-ontwerp-brp-2025q1
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -106,7 +103,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

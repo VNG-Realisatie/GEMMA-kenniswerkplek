@@ -29,9 +29,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De klager dient haar in, maar de gemeente behandelt haar als eigen zaak en publiceert de klachten jaarlijks (art. 9:6, 9:12a).
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   generiek:
     waarde: ja
     onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp, voor elk bestuursorgaan (art. 9:1, 9:4).
@@ -54,7 +51,7 @@ gemma:
 relaties: []
 naamkeuze:
 - 'Schriftelijke klacht: de gangbare term, die ook in de wet staat (Awb art. 9:2, 9:4 lid 1); de wetsterm Klaagschrift is een synoniem (regel Bronvoorrang). De naam Klacht is van de UPL-dienst.'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -63,11 +60,20 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     objectniveau: generiek
     generiek: false
     typeregel: 18
+  voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  open:
+  - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: schriftelijke-klacht-data
+    naam: Schriftelijke klacht-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/schriftelijke-klacht-data.md
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/schriftelijke-klacht.md

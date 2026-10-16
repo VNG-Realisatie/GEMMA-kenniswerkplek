@@ -28,9 +28,6 @@ kenmerken:
     waarde: ja
     naar:
     - bekendmaken-besluit
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Een eigen product in de UPL (nr. 48), met een eigen wet; geen specialisatie van Bekendmaking, die de Awb regelt.
@@ -55,7 +52,7 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-bekendmakingswet-wettekst
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -64,7 +61,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

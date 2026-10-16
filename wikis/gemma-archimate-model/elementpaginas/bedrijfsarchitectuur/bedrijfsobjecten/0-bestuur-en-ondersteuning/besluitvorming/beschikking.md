@@ -2,7 +2,7 @@
 id: beschikking
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Beschikking
 onderwerpen:
 - besluitvorming
@@ -13,7 +13,8 @@ definitie: Besluit van een bestuursorgaan in een concreet geval, zoals het verle
 match:
   ggm: sterk
   gemma: sterk
-data_object: nee
+data_objecten:
+- Beschikking-data
 objectniveau: generiek
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -50,7 +51,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beschikking.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -134,6 +135,10 @@ De kenmerken met ja; de andere zijn nee.
 | [Vergunning](vergunning.md) | is een *specialisatie* | Beschikking | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md), [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (Awb art. 1:3 lid 2; Wlb art. 29, 53) |
 | [Verlenen toestemming bijzondere begraafplaats](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-bijzondere-begraafplaats.md) | wijst aan *toegang (registreren)* | Beschikking | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 40 lid 1) |
 | [Vervallen verklaren grafrecht](../../../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md) | stelt op *toegang (registreren)* | Beschikking | [Wet op de lijkbezorging](../../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 28 lid 4) |
+
+### Data-objecten
+
+- [Beschikking-data](../../../../applicatiearchitectuur/data-objecten/beschikking-data.md) *realisatie*: GGM-entiteit *Beschikking*, match sterk.
 
 ## Herkomst
 

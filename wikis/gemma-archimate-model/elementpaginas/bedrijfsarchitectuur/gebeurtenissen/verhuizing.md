@@ -2,14 +2,13 @@
 id: verhuizing
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Verhuizing
 onderwerpen:
 - burgerzaken
 definitie: Het gaan wonen van een persoon op een ander adres in Nederland.
 match:
   gemma: geen
-data_object: nee
 synoniemen:
 - Adreswijziging (wet)
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verhuizing.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

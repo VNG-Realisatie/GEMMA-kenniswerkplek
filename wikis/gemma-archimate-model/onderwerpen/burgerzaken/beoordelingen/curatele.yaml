@@ -32,16 +32,12 @@ kenmerken:
     onderbouwing: De rechtbank spreekt de curatele uit en die staat in het centraal curatele- en bewindregister; de gemeente neemt haar alleen over (HUP Curatele).
     bronnen:
     - 2026-rvig-hup-curatele
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: Categorie 11 Gezagsverhouding van de persoonslijst (HUP Gezagsverhouding).
-    bronnen:
-    - 2026-rvig-hup-gezagsverhouding
 genoemd_begrip: Bijhouden persoonsgegevens
 toelichting: 'Invoer van een andere partij, geen pagina: de rechtbank spreekt de curatele uit en die staat in het centraal curatele- en bewindregister; de gemeente neemt haar over in de BRP in Bijhouden persoonsgegevens (HUP Curatele). Curatele sluit gezag over een minderjarige uit (HUP Gezagsverhouding). Boek 1 titel 16 valt buiten de afbakening van de wetsbron; de curator verzoekt soms namens de persoon, bijvoorbeeld om gegevens te overschrijven (HUP Overschrijven gegevens bij geslachtswijziging).'
 bronnen:
 - 2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging
 - 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rvig-hup-gezagsverhouding
 beslist:
   uitkomst:
     soort: onderdeel
@@ -49,13 +45,12 @@ beslist:
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     genoemd_begrip: Bijhouden persoonsgegevens
     generiek: false
     typeregel: 18
   bronnen:
   - 2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging
   - 2026-rijk-burgerlijk-wetboek-boek-1
-  - 2026-rvig-hup-curatele
   - 2026-rvig-hup-gezagsverhouding
+  - 2026-rvig-hup-curatele
   herkomst: rijksregelgeving

@@ -2,7 +2,7 @@
 id: naturalisatieverzoek
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Naturalisatieverzoek
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het indienen van een verzoek om naturalisatie, dat de gemeente onderzoekt en met haar advies doorstuurt naar de minister.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling naturalisatieverzoek.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

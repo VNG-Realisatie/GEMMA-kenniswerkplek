@@ -15,9 +15,6 @@ kenmerken:
     waarde: ja
     naar:
     - inschrijven-ingezetene
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het gaan wonen in een Nederlandse gemeente van een persoon die in het buitenland woonde.
 beschrijving:
 - Wie vanuit het buitenland in een gemeente komt wonen, of het komende half jaar ten minste vier maanden, schrijft zich binnen vijf dagen in (Utrecht Inschrijven vanuit het buitenland). Stond de persoon nooit in de BRP of RNI, dan is het een immigratie (eerste inschrijving); stond hij in de RNI, dan een hervestiging (HUP Immigratie; HUP Hervestiging).
@@ -42,7 +39,7 @@ relaties:
 bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
 - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -51,7 +48,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

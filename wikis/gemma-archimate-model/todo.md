@@ -13,9 +13,11 @@ De uitkomst staat in [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-
 
 ## ArchiMate-indeling, lichtere kenmerken, data-object en capability (plan 2026-10-15)
 
-Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 (matrix en lichtere kenmerken), deel 2 (data-object als element), deel 3 (Capability, eerst samen bepalen). Deel 1 is omgezet (Uitkomst stap 3–7); volgende stap: nieuw AKKOORD voor de 285 elementen op review, dan deel 2.
+Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 (matrix en lichtere kenmerken), deel 2 (data-object als element), deel 3 (Capability, eerst samen bepalen). Deel 1 en 2 zijn omgezet (Uitkomst stap 3–7 en 8–11); volgende stap: deel 3, Capability, eerst als bespreking.
 
 - **Potentiële relaties vastleggen.** 239 relationele kenmerken ja hebben geen relatie (bij elementen 104: vooral *aanleiding*, *toegewezen partij*, *bijdrage aan groter proces*, *gebruikt objecten*). Noem bij de volgende herbeoordeling per onderwerp de tegenpartij in `naar`: een element met de relatie, of naam en type. Het signaal over de kernrelatie wijst ze aan.
+
+- **GGM-match voor rollen, actoren en gebeurtenissen.** Op naam zijn er GGM-entiteiten voor Belanghebbende, Aangever (RSGBPlus), Indiener, Rechthebbende (Archief), Gemeente en de BRP-gebeurtenissen (GeboorteIngeschrevenPersoon, OverlijdenIngeschrevenPersoon, SluitingOfAangaanHuwelijkOfGeregistreerdPartnerschap, OntbindingHuwelijk/geregistreerdPartnerschap, MigratieIngeschrevenNatuurlijkPersoon). Kies de match op betekenis bij de herbeoordeling van het onderwerp; een match geeft vanzelf een data-object.
 
 - **`beslist` uit de beoordeling halen** (uit de analyse van het plan): het blok is 23.000 woorden en wordt meegelezen bij elk precedent; het kan naar een gegenereerd bestand per onderwerp.
 

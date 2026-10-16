@@ -11,9 +11,6 @@ kenmerken:
     waarde: ja
     naar:
     - treffen-maatregel-bij-besmet-stoffelijk-overschot
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
@@ -40,7 +37,7 @@ object_van:
   id: besmet-lijk-gemeld
   wijziging: hernoemd
   datum: '2026-10-05'
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -49,7 +46,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

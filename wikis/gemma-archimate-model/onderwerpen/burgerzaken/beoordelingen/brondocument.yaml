@@ -32,9 +32,6 @@ kenmerken:
     bronnen:
     - 2026-rvig-hup-algemeen
     - 2026-nvvb-id-protocol-medewerkers
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Invoer: een akte, rechterlijke uitspraak of buitenlands document dat een andere partij opmaakt en waaraan de gemeente de gegevens ontleent. Geen pagina; vermeld bij Bijhouden persoonsgegevens. De Nederlandse akte is het element Akte van de burgerlijke stand.'
 bronnen:
 - 2026-rvig-hup-achtergronden-en-begrippen
@@ -46,7 +43,6 @@ beslist:
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Bijhouden persoonsgegevens
     generiek: false
     typeregel: 18

@@ -2,7 +2,7 @@
 id: model-participatieverordening
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Model Participatieverordening
 onderwerpen:
 - participatie
@@ -11,7 +11,6 @@ beleidsdomein: Participatie
 definitie: VNG-modelverordening voor de verordening waarin een gemeente het betrekken van inwoners bij beleid en het uitdaagrecht regelt.
 match:
   gemma: geen
-data_object: nee
 regelgever: VNG-modelverordening
 synoniemen:
 - VNG Model Participatieverordening 2024 (beleid)
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling model-participatieverordening.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

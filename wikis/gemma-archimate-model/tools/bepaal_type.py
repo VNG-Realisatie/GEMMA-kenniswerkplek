@@ -48,7 +48,7 @@ from kennismodel import AFNEMERS, DOELGROEPEN, DOMEINEN, REGELGEVERS, VERPLICHT,
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = WIKI_ROOT / "schemas" / "beoordeling.schema.json"
-CRITERIA_VERSIE = "2026-10-15"
+CRITERIA_VERSIE = "2026-10-16"
 
 GEEN_AARD = ""  # in `bij`: ja mag ook als het begrip geen hoofdkenmerk heeft (een ding)
 
@@ -337,9 +337,6 @@ KENMERKEN: list[Kenmerk] = [
             "Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze.",
             "parkeervergunning (dienst parkeren, voorwaarden)", "losse dienst",
             "GEMMA (product bundelt dienst en afspraak)", _bij("aanbod_als_geheel")),
-    Kenmerk("geautomatiseerd_verwerkt", "geautomatiseerd verwerkt", "Passief",
-            "Wordt het als gegevensstructuur geautomatiseerd verwerkt?",
-            "zaak in het zaaksysteem", "keukentafelgesprek", "GEMMA (definitie Data-object)"),
     # Beleidskader
     Kenmerk("landelijk", "landelijk", "Beleidskader",
             "Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, "
@@ -390,7 +387,7 @@ GROEP_ALS = {
                     "extern (*aangeboden gedrag*).",
     "Gedrag": "Alleen bij *gedrag*; *afnemer* en *benoembaar resultaat* ook bij *aanbod als geheel*.",
     "Passief": "Bij een ding (geen hoofdkenmerk); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en "
-               "*geautomatiseerd verwerkt* bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; "
+               "bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; "
                "*omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.",
     "Beleidskader": "Alleen bij *regeling als geheel*.",
     "Specialisatie": "Altijd, als het type een pagina heeft; zonder antwoord *zelfstandige specialisatie* ja en "
@@ -536,14 +533,12 @@ TYPEN: list[Typedef] = [
     Typedef(*km.typevelden("bedrijfsobject"), "pagina",
             "*ding*; *afspraak* en *waarneembare vorm* nee", {"afspraak": "nee", "waarneembare_vorm": "nee"},
             "wordt_bewerkt", ("onderscheidbare_exemplaren", "levenscyclus"),
-            {"geautomatiseerd_verwerkt": "annotatie data-object",
-             "deel_van_object": "ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina",
+            {"deel_van_object": "ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina",
              "invoer_van_een_ander": "ja: onderdeel, geen pagina"}, "Graf; Aanvraag; Vergunning", "Obj"),
     Typedef(*km.typevelden("afspraak"), "pagina", "*afspraak*",
             {"afspraak": "ja", "waarneembare_vorm": "nee"}, "wordt_bewerkt",
             ("onderscheidbare_exemplaren", "levenscyclus"),
-            {"geautomatiseerd_verwerkt": "annotatie data-object",
-             "deel_van_object": "ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina",
+            {"deel_van_object": "ja: subobject bij een eigen bedrijfsproces, anders onderdeel zonder pagina",
              "invoer_van_een_ander": "ja: onderdeel, geen pagina"}, "Uitvoeringsovereenkomst; Grafrecht", "Afspr"),
     Typedef(*km.typevelden("product"), "pagina", "*aanbod als geheel*", {"aanbod_als_geheel": "ja"},
             "omvat_diensten_en_afspraken", ("afnemer", "benoembaar_resultaat"), {},
@@ -669,7 +664,6 @@ class Uitkomst:
     voorleggen: bool = False
     redenen: list[str] = field(default_factory=list)
     tegenhanger: str | None = None
-    data_object: str = "nee"
     genoemd_begrip: str | None = None
     procesniveau: str | None = None
     objectniveau: str | None = None
@@ -864,7 +858,9 @@ NAREGELS = [
     ("Aanvulling", "`homoniem_van` ingevuld", "voorleggen: naamkeuze; `## Homoniemen` bij beide; bij een GGM-homoniem een terugmelding"),
     ("Aanvulling", "Actor of Rol met *onderscheidbare exemplaren*, *levenscyclus* en *wordt bewerkt*",
      "ook een bedrijfsobjectpagina (tegenhanger)"),
-    ("Aanvulling", "*geautomatiseerd verwerkt*", "annotatie `data_object: ja`"),
+    ("Aanvulling", "Bedrijfsobject, afspraak, rol, actor of gebeurtenis met een GGM-match, of met sterkte geen en een "
+                   "GGM-terugmelding hiaat", "het data-object *<naam>-data* (tools/beslissen.py); `data_objecten` voor "
+                   "een extra GGM-entiteit"),
     ("Signaal (controle)", "Dienst zonder realiserend proces of functie met pagina; Gebeurtenis zonder gestart gedrag met pagina",
      "waarschuwing: proces als kandidaat voorleggen"),
     ("Signaal (controle)", "Functie onder domeinniveau of dienst zonder (bovenliggende) functie, met meer "
@@ -902,7 +898,7 @@ TYPEGROEP = (  # (hoofdkenmerken, kenmerken): de groep die het type kiest, als e
 )
 STAP_7 = {"bedrijfsproces": ("omvat_levensloop", "bijdrage_aan_groter_proces", "klant_tot_klant", "levert_aanbod"),
           "bedrijfsobject": ("generiek", "invoer_van_een_ander", "deel_van_object")}
-ELK_ELEMENT = ("zelfstandige_specialisatie", "generiek", "geautomatiseerd_verwerkt")
+ELK_ELEMENT = ("zelfstandige_specialisatie", "generiek")
 
 
 def antwoord(kenmerken: dict, sleutel: str) -> dict:
@@ -1282,8 +1278,6 @@ def evalueer(beoordeling: dict) -> Uitkomst:
         uitkomst.redenen.append(f"homoniem van {extra['homoniem_van']}: naamkeuze voorleggen")
     if uitkomst.paginatype in ("actor", "rol") and all(_ja(k, s) for s in TEGENHANGER):
         uitkomst.tegenhanger = "bedrijfsobject"
-    if _ja(k, "geautomatiseerd_verwerkt"):
-        uitkomst.data_object = "ja"
     return uitkomst
 
 
@@ -1409,15 +1403,17 @@ def indeling(beoordelingen: dict[str, dict], uitkomsten: dict[str, dict | None])
     return fouten
 
 
-REDEN_GEEN_GGM = "gegevensobject zonder sterke GGM-match"
+REDEN_GEEN_GGM = "data-object zonder sterke GGM-match"
 ZEKERHEID = ("kennis", "logica", "indruk")   # van een besluit; zonder veld: logica
 
 
-def voor_te_leggen(uitkomst: Uitkomst | dict, ggm_match: str | None = None) -> list[str]:
-    """De redenen waarom de redacteur over dit begrip moet beslissen (leeg: de AI mag het zelf afhandelen)."""
+def voor_te_leggen(uitkomst: Uitkomst | dict, data_objecten: list[dict] = ()) -> list[str]:
+    """De redenen waarom de redacteur over dit begrip moet beslissen (leeg: de AI mag het zelf afhandelen).
+    `data_objecten`: de afgeleide data-objecten van het element (tools/beslissen.py), elk met de sterkte van zijn
+    GGM-match."""
     u = uitkomst if isinstance(uitkomst, dict) else asdict(uitkomst)
     redenen = list(u["redenen"]) or (["voorleggen"] if u["voorleggen"] else [])
-    if u["soort"] == "element" and u["data_object"] == "ja" and ggm_match not in ("exact", "sterk"):
+    if u["soort"] == "element" and any(d["ggm_sterkte"] not in ("exact", "sterk") for d in data_objecten):
         redenen.append(REDEN_GEEN_GGM)
     return redenen
 
@@ -1489,7 +1485,7 @@ def doc_matrix(per_vak: bool = True) -> list[str]:
               "| Laag | Actief intern | Actief extern | Gedrag intern | Gedrag extern | Passief | Samengesteld |",
               "|---|---|---|---|---|---|---|",
               "| bedrijf | " + " | ".join(cel("bedrijf", a, e) for a, e in kolommen) + " |",
-              "| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (nu een annotatie) | "
+              "| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (afgeleid uit de GGM-match) | "
               "— |",
               "| technologie | weggefilterd: komt misschien nog | | | | | |",
               "| strategie | Capability (Vermogen): buiten dit model | | | | | |",
@@ -1629,6 +1625,13 @@ def schema() -> dict:
                                                                  guid={"type": "string", "pattern": "^EAID_"},
                                                                  toelichting=tekst)}),
             "gemma": obj(["sterkte", "onderbouwing"], id=tekst, sterkte=sterkte, onderbouwing=tekst),
+            "data_objecten": {"type": "array", "minItems": 1, "items": obj(
+                ["naam", "ggm"], naam={**tekst, "pattern": "-data$"},
+                ggm=obj(["guid", "sterkte", "onderbouwing"], guid={"type": "string", "pattern": "^EAID_"},
+                        sterkte={"enum": ["exact", "sterk", "partieel"]}, onderbouwing=tekst)),
+                "description": "Alleen een extra data-object, voor een andere GGM-entiteit dan de match van het "
+                               "element (`ggm`): naam (op -data) en de GGM-match. Het data-object <naam>-data uit "
+                               "`ggm` maakt het script zelf (tools/beslissen.py)"},
             "gemma_generiek": {**obj(["id", "onderbouwing"], id=tekst, onderbouwing=tekst),
                                "description": "Specialisatie van een generiek GEMMA-element (bedrijfsproces, "
                                               "gebeurtenis, dienst of rol), met het id van dat element; bij een "

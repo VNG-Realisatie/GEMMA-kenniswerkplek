@@ -57,11 +57,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente schrijft de ingezetene zelf in en houdt de gegevens bij (HUP Achtergronden).
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: De persoonslijst wordt in de gemeentelijke voorziening en de centrale voorzieningen van de BRP geautomatiseerd bijgehouden (LO BRP 1.5.2).
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Een specialisatie van natuurlijk persoon (GGM) met eigen gegevens en een eigen behandeling in de BRP; ingezetene en niet-ingezetene zijn zijn specialisaties.
@@ -134,7 +129,7 @@ bronnen:
 - 2025-rvig-logisch-ontwerp-brp-2025q1
 - 2026-rvig-hup-achtergronden-en-begrippen
 - 2023-rvig-circulaire-adresonderzoek-brp
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -143,7 +138,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: kernobject
     generiek: false
     typeregel: 18
@@ -158,6 +152,12 @@ beslist:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-algemeen
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: ingeschreven-persoon-data
+    naam: Ingeschreven persoon-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/ingeschreven-persoon-data.md
   ggm:
     ggm_entiteit: IngeschrevenPersoon
     ggm_guid: EAID_AF9534B0_7CBD_4061_9276_A7B6698B383A

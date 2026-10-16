@@ -2,14 +2,13 @@
 id: maatschappelijke-partij
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Maatschappelijke partij
 onderwerpen:
 - participatie
 definitie: Vereniging, stichting, buurtcomité of andere organisatie die een actieve bijdrage levert aan de samenleving in de gemeente.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
@@ -21,7 +20,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling maatschappelijke-partij.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

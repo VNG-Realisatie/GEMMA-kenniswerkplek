@@ -24,9 +24,6 @@ kenmerken:
     waarde: ja
     naar:
     - behandelen-verzoek-om-volmacht
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 afnemer: extern
 domein: Publieksdiensten
 definitie: Het aanvragen van een volmacht, zodat een andere kiezer met een volmachtbewijs namens de aanvrager stemt.
@@ -50,7 +47,7 @@ relaties:
   vindplaats: art. L 8
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -59,7 +56,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

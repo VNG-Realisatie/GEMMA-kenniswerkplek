@@ -13,9 +13,6 @@ kenmerken:
     waarde: ja
     naar:
     - inhouden-reisdocument
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het moment waarop een reisdocument bij een tot inhouding bevoegde autoriteit komt, doordat de houder het inlevert of het aan de balie wordt ingenomen.
 beschrijving:
 - De houder levert zijn oude Nederlandse reisdocumenten in bij de uitreiking van een nieuw document (Paspoortwet art. 32), en een vervallen of teruggevonden vermist document zo spoedig mogelijk bij een tot inhouding bevoegde autoriteit, of op haar verzoek (art. 56; HUP Inhouding). Een document wordt ook ingenomen als het aan de balie beschadigd, onbevoegd gewijzigd of foutief blijkt (art. 54 lid 1).
@@ -39,7 +36,7 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-inhouding-inlevering-vermissing
   vindplaats: Paspoortwet art. 54, 56; HUP Inhouding
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -48,7 +45,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

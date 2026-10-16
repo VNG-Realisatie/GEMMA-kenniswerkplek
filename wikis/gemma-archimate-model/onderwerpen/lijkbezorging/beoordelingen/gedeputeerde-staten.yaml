@@ -20,7 +20,6 @@ beslist:
     voorleggen: false
     redenen:
     - 'gemeentelijk: nee'
-    data_object: nee
     generiek: false
   voor_te_leggen:
   - 'gemeentelijk: nee'

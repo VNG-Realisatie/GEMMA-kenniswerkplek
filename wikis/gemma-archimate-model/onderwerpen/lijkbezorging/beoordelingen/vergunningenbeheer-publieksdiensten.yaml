@@ -28,9 +28,6 @@ kenmerken:
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
     gemma_relatie:
     - id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen ding.'
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen breder begrip van hetzelfde type in deze wiki.
@@ -80,7 +77,7 @@ relaties:
 bronnen:
 - 2023-vng-model-apv
 - 2026-rvo-aangifte-en-akte-van-overlijden
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -89,7 +86,6 @@ beslist:
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

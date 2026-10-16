@@ -2,7 +2,7 @@
 id: bekendmakingswet
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Bekendmakingswet
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: Wet over de publicatiebladen van de overheid en de bekendmaking en inwerkingtreding van algemeen verbindende voorschriften en besluiten.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 bronnen:
 - 2026-rijk-bekendmakingswet-wettekst
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bekendmakingswet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

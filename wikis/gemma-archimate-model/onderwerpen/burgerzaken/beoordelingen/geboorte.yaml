@@ -15,9 +15,6 @@ kenmerken:
     waarde: ja
     naar:
     - opmaken-geboorteakte
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het levend ter wereld komen van een kind.
 beschrijving:
 - Binnen drie dagen na de geboorte wordt aangifte gedaan in de gemeente van geboorte (BW 1 art. 19e). Een kind heeft juridisch altijd een moeder en hoogstens één andere ouder; het wordt in de BRP ingeschreven als de moeder ingezetene is, anders op aangifte van verblijf en adres (HUP Geboorte). Een kind dat levend is geboren maar vóór de aangifte overleed, krijgt een geboorteakte en een akte van overlijden (HUP Overlijden; Utrecht Levenloos geboren kind).
@@ -35,7 +32,7 @@ relaties:
   vindplaats: art. 19e
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -44,7 +41,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

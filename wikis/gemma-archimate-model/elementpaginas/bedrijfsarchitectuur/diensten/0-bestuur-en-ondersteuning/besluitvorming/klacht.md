@@ -2,7 +2,7 @@
 id: klacht
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Klacht
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: Het indienen van een klacht over de manier waarop een bestuursorgaan of een medewerker zich heeft gedragen.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Bestuur
 synoniemen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling klacht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

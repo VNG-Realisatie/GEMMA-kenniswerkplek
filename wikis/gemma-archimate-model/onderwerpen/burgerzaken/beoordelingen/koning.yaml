@@ -18,6 +18,9 @@ besluiten:
   besluit: 'Buiten scope: verleent het Nederlanderschap bij koninklijk besluit op voordracht van de minister, zonder structurele samenwerking met de gemeente; genoemd in de beschrijving van Beheren Nederlanderschap.'
   gevolg: afwijzen
   zekerheid: kennis
+bronnen:
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
 beslist:
   uitkomst:
     soort: buiten_scope
@@ -26,7 +29,6 @@ beslist:
     voorleggen: false
     redenen:
     - 'gemeentelijk: nee'
-    data_object: nee
     generiek: false
   voor_te_leggen:
   - 'gemeentelijk: nee'
@@ -34,6 +36,3 @@ beslist:
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
   - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-- 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie

@@ -2,7 +2,7 @@
 id: bijzondere-begraafplaats-toestemming
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Bijzondere begraafplaats toestemming
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Toestemming van de gemeente om een bijzondere begraafplaats aan te leggen, uit te breiden of in gebruik te nemen.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bijzondere-begraafplaats-toestemming.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

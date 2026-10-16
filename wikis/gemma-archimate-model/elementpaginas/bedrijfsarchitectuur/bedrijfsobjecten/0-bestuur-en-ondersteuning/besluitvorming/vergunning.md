@@ -2,7 +2,7 @@
 id: vergunning
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Vergunning
 onderwerpen:
 - besluitvorming
@@ -13,7 +13,6 @@ definitie: Beschikking waarmee een bestuursorgaan toestemming geeft voor een han
 match:
   ggm: geen
   gemma: geen
-data_object: nee
 objectniveau: generiek
 synoniemen:
 - Verlof (wet)
@@ -29,7 +28,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vergunning.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

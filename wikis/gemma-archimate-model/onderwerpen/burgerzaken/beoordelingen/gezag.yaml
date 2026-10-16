@@ -35,11 +35,6 @@ kenmerken:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-rvig-hup-gezag-over-een-minderjarige
     - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: Categorie 11 Gezagsverhouding van de persoonslijst (HUP Gezagsverhouding).
-    bronnen:
-    - 2026-rvig-hup-gezagsverhouding
 genoemd_begrip: Bijhouden persoonsgegevens
 toelichting: 'Invoer van een andere partij, geen pagina: het gezag ontstaat van rechtswege of bij beschikking van de rechtbank en staat in het gezagsregister van de rechtbank (BW 1 art. 244, 252); de gemeente neemt het over in de BRP in Bijhouden persoonsgegevens en verstrekt het met de dienst BRP-uittreksel met gezag. Alleen bij de erkenning legt de ambtenaar van de burgerlijke stand vast of de moeder alleen gezag heeft (BW 1 art. 251b). Vormen: ouderlijk gezag (gezamenlijk of eenhoofdig) en voogdij; de gezagsverhouding in de BRP omvat ook curatele, die het gezag over een minderjarige uitsluit (HUP Gezagsverhouding). De GGM-entiteit Gezagsverhouding (Sociaal domein generiek) beschrijft hetzelfde begrip.'
 synoniemen:
@@ -55,6 +50,7 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-nvvb-handreiking-gezag
 - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
+- 2026-rvig-hup-gezagsverhouding
 beslist:
   uitkomst:
     soort: onderdeel
@@ -62,7 +58,6 @@ beslist:
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     genoemd_begrip: Bijhouden persoonsgegevens
     generiek: false
     typeregel: 18
@@ -70,6 +65,6 @@ beslist:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-nvvb-handreiking-gezag
   - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
-  - 2026-rvig-hup-gezag-over-een-minderjarige
   - 2026-rvig-hup-gezagsverhouding
+  - 2026-rvig-hup-gezag-over-een-minderjarige
   herkomst: rijksregelgeving

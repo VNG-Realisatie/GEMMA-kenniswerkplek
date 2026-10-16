@@ -31,9 +31,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: 'Een specialisatie van Heffing: rechten voor handelingen ten behoeve van de aanvraag, met een tarief naar leeftijd, soort document en snelheid (Paspoortwet art. 7 lid 2, 4); geen eigen gegevens of levensloop naast de heffing.'
@@ -51,7 +48,6 @@ beslist:
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Heffing
     generiek: false
     typeregel: 18

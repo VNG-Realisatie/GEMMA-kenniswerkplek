@@ -7,17 +7,16 @@ toelichting: 'Onderdeel van Urn: De inhoud van de urn (art. 58).'
 genoemd_begrip: Urn
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Urn
     generiek: false
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-wet-op-de-lijkbezorging-wettekst

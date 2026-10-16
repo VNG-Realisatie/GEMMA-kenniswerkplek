@@ -2,7 +2,7 @@
 id: gemeenteraad
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Gemeenteraad
 onderwerpen:
 - bestuur-en-organisatie
@@ -10,7 +10,6 @@ onderwerpen:
 definitie: Bestuursorgaan van de gemeente dat de gehele bevolking vertegenwoordigt en de gemeentelijke verordeningen vaststelt.
 match:
   gemma: exact
-data_object: nee
 doelgroep: gemeente
 synoniemen:
 - Raad (wet)
@@ -29,7 +28,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeenteraad.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

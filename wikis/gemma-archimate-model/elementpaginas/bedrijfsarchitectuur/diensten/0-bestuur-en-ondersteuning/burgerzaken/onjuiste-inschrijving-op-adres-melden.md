@@ -2,7 +2,7 @@
 id: onjuiste-inschrijving-op-adres-melden
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Onjuiste inschrijving op adres melden
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het melden dat iemand op het eigen adres staat ingeschreven die er niet woont, of dat een briefadreshouder niet bereikbaar is.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling onjuiste-inschrijving-op-adres-melden.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

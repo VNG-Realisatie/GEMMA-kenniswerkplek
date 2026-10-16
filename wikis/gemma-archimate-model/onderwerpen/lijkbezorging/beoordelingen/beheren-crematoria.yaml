@@ -61,9 +61,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een opgeheven crematorium, niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: 'Het beheer van een crematorium over de hele levensloop: vestigen, uitbreiden of wijzigen, en opheffen.'
 beschrijving:
 - Crematoria zijn gemeentelijk of bijzonder; een bijzonder crematorium wordt gevestigd en in werking gehouden door een kerkgenootschap, een privaatrechtelijke rechtspersoon of een natuurlijk persoon (Wet op de lijkbezorging art. 51, 52). Het college besluit tot vestiging van een gemeentelijk crematorium of verleent een vergunning voor een bijzonder crematorium, in beide gevallen na een openbare kennisgeving van ten minste dertig dagen (art. 53, 54). Bij opheffing van een bijzonder crematorium gaat het register naar het archief van de gemeente (art. 50 lid 3).
@@ -89,7 +86,7 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 50, 51, 54
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -98,7 +95,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: levensloopproces
     generiek: false
     typeregel: 15

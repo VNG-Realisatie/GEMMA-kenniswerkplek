@@ -2,14 +2,13 @@
 id: houder-van-het-crematorium
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Houder van het crematorium
 onderwerpen:
 - lijkbezorging
 definitie: Verantwoordelijkheid voor een crematorium, het bergen van de as en de bestemming daarvan.
 match:
   gemma: geen
-data_object: nee
 doelgroep: gemeente
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -19,7 +18,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling houder-van-het-crematorium.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

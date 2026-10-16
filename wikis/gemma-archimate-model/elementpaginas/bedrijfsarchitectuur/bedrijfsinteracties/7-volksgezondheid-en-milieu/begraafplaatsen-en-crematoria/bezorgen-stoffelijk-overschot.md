@@ -2,7 +2,7 @@
 id: bezorgen-stoffelijk-overschot
 type: bedrijfsinteractie
 archimate_type: business-interaction
-status: goedgekeurd
+status: review
 naam: Bezorgen stoffelijk overschot
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: De samenwerking van gemeente, houder van begraafplaats of crematorium en officier van justitie bij de bezorging van een stoffelijk overschot.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 synoniemen:
 - Bezorgen lijken (wet)
@@ -25,7 +24,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bezorgen-stoffelijk-overschot.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?
 
 ## Betekenis
 

@@ -2,14 +2,13 @@
 id: bijhoudingsgemeente
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Bijhoudingsgemeente
 onderwerpen:
 - burgerzaken
 definitie: Verantwoordelijkheid van een gemeente voor de bijhouding van de gegevens van de ingezetenen die er hun adres hebben.
 match:
   gemma: geen
-data_object: nee
 doelgroep: gemeente
 bronnen:
 - 2026-rvig-hup-intergemeentelijke-adreswijziging
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bijhoudingsgemeente.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

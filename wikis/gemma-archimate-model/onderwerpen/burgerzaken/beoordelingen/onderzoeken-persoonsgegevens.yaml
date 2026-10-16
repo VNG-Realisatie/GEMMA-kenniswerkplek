@@ -55,9 +55,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Processtap zonder pagina: bij twijfel stelt de bijhoudingsgemeente gegevens in onderzoek en neemt proceduregegevens op; het onderzoek eindigt in een actualisering of correctie zonder eigen besluit. Twijfel over het adres leidt tot het bedrijfsproces Uitvoeren adresonderzoek; een verzoek van de burger tot Behandelen verzoek om correctie.'
 synoniemen:
 - naam: In onderzoek stellen van gegevens
@@ -74,7 +71,6 @@ beslist:
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Bijhouden persoonsgegevens
     generiek: false
     typeregel: 15

@@ -28,11 +28,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: GGM-entiteit.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Specialisatie van Regeling met eigen gegevens (belastingplichtige, belastbaar feit, tarief, art. 217); het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten.
@@ -95,7 +90,7 @@ relaties:
 onderwerpen:
 - heffingen-en-betalingen
 - lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -104,7 +99,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: generiek
     generiek: false
     typeregel: 18
@@ -113,6 +107,12 @@ beslist:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2026-vng-retributies
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: heffingsverordening-data
+    naam: Heffingsverordening-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/heffingsverordening-data.md
   ggm:
     ggm_entiteit: Heffingsverordening
     ggm_guid: EAID_C29CCD49_04E2_44b4_A6B0_AD8B10552628

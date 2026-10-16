@@ -13,9 +13,6 @@ kenmerken:
     waarde: ja
     naar:
     - registreren-kiesgerechtigdheid
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het moment waarop een persoon bij onherroepelijke rechterlijke uitspraak van het kiesrecht is uitgesloten.
 beschrijving:
 - Een uitsluiting van het kiesrecht volgt altijd uit een onherroepelijke rechterlijke uitspraak, geldt voor bepaalde of onbepaalde tijd en voor alle verkiezingen, en kan Nederlanders en vreemdelingen treffen; ze wordt beoordeeld naar de toestand op de dag van de kandidaatstelling (Kieswet art. B 5 lid 1; HUP Nederlands kiesrecht). De minister van Justitie en Veiligheid doet mededeling aan de burgemeester van de woongemeente, die de persoon in kennis stelt (art. B 5 lid 2-3). Ook de lidstaat van nationaliteit kan een EU-onderdaan van het Europees kiesrecht uitsluiten (HUP Europees kiesrecht). De uitsluiting eindigt na een nieuwe mededeling of op de einddatum (HUP Nederlands kiesrecht).
@@ -38,7 +35,7 @@ relaties:
   vindplaats: Kieswet art. B 5 lid 3; HUP Nederlands kiesrecht
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -47,7 +44,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

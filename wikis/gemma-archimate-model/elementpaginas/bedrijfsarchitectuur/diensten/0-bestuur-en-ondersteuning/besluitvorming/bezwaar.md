@@ -2,7 +2,7 @@
 id: bezwaar
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Bezwaar
 onderwerpen:
 - besluitvorming
@@ -11,7 +11,6 @@ beleidsdomein: Besluitvorming
 definitie: Het maken van bezwaar tegen een besluit bij het bestuursorgaan dat het nam, zodat het het besluit heroverweegt.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Bestuur
 synoniemen:
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bezwaar.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

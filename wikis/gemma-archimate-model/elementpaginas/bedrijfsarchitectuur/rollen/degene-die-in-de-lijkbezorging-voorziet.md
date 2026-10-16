@@ -2,14 +2,13 @@
 id: degene-die-in-de-lijkbezorging-voorziet
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Degene die in de lijkbezorging voorziet
 onderwerpen:
 - lijkbezorging
 definitie: Wie de lijkbezorging van een overledene regelt en daarvoor het verlof aanvraagt.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 synoniemen:
 - Degene die in de uitvaart voorziet (beleid)
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling degene-die-in-de-lijkbezorging-voorziet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

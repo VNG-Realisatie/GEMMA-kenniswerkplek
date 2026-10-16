@@ -58,9 +58,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het aanwijzen van grond voor een bijzondere begraafplaats en het toestaan van de ingebruikneming ervan.
 beschrijving:
 - Een bijzondere begraafplaats wordt aangelegd en in stand gehouden door een kerkgenootschap, een privaatrechtelijke rechtspersoon of een natuurlijk persoon (Wet op de lijkbezorging art. 37). Voor aanleg of uitbreiding wordt alleen grond gebruikt die de gemeenteraad heeft aangewezen; het college kan maatregelen voorschrijven om de grond geschikt te maken (art. 40). Voor de ingebruikneming is toestemming van het college nodig, die alleen wordt geweigerd als niet aan de wettelijke voorschriften is voldaan (art. 41). Tegen deze besluiten staat beroep open bij gedeputeerde staten (art. 42).
@@ -103,7 +100,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: Wlb art. 40, 41; UPL nr. 71
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -112,7 +109,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

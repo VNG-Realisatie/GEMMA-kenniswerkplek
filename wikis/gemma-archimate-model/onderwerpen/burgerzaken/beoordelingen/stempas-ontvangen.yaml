@@ -23,9 +23,6 @@ kenmerken:
     waarde: ja
     naar:
     - verstrekken-stempas
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 afnemer: extern
 domein: Publieksdiensten
 definitie: Het als kiezer ontvangen van een stempas voor een verkiezing, en bij verlies of niet-ontvangst een nieuwe aanvragen.
@@ -55,7 +52,7 @@ relaties:
   vindplaats: art. J 7 lid 2
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -64,7 +61,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

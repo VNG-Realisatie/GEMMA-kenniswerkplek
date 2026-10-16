@@ -31,9 +31,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: Het bestuursorgaan maakt de afspraken samen met de indiener.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Afspraken die het bestuursorgaan bij toewijzing van een verzoek uitdaagrecht met de indiener maakt over de uitvoering.
 beschrijving:
 - Wijst het bevoegde bestuursorgaan een verzoek toe, dan maakt het met de indiener afspraken over het proces, het resultaat en de looptijd, het budget en de financieringswijze, het contact met en de ondersteuning door het bestuursorgaan, de stappen bij het niet nakomen van de afspraken en het tussentijds beëindigen, en de evaluatie (2024-vng-model-participatieverordening, var. 1 art. [9]; var. 2 art. [14]). Variant 1 laat de onderwerpen facultatief, variant 2 noemt ze vast.
@@ -58,7 +55,7 @@ bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2024-vng-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -69,10 +66,11 @@ beslist:
     voorleggen: true
     redenen:
     - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-    data_object: nee
     generiek: false
     typeregel: 17
   voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening

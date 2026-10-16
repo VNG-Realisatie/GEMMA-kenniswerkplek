@@ -2,14 +2,13 @@
 id: adviseur
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Adviseur
 onderwerpen:
 - lijkbezorging
 definitie: Verantwoordelijkheid voor het geven van advies aan wie een besluit neemt.
 match:
   gemma: sterk
-data_object: nee
 doelgroep: ketenpartners
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -26,7 +25,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling adviseur.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

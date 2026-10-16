@@ -2,7 +2,7 @@
 id: stempas
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Stempas
 onderwerpen:
 - burgerzaken
@@ -12,7 +12,8 @@ definitie: Persoonlijk document waarmee een kiezer bij een verkiezing kan stemme
 match:
   ggm: geen
   gemma: geen
-data_object: ja
+data_objecten:
+- Stempas-data
 objectniveau: kernobject
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
@@ -23,7 +24,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling stempas.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- data-object zonder sterke GGM-match
 
 ## Betekenis
 
@@ -69,7 +74,6 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | **onderscheidbare exemplaren**: Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | Ja, elke stempas heeft een volgnummer (Kieswet art. J 7 lid 2). [Kieswet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **levenscyclus**: Ontstaan, veranderen en eindigen de exemplaren? | Ja, wordt per verkiezing gepersonaliseerd en verstrekt, kan worden vervangen, omgezet in een volmachtbewijs of ongeldig worden, en het register wordt na de verkiezing vernietigd (Kieswet art. J 7, J 7a, J 8, L 14). [Kieswet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 | **wordt bewerkt**: Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? | Ja, met [Behandelen verzoek om kiezerspas](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-kiezerspas.md), [Behandelen verzoek om volmacht](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-volmacht.md), [Beheren stempassen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md), [Verstrekken stempas](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-stempas.md). |
-| **geautomatiseerd verwerkt**: Wordt het als gegevensstructuur geautomatiseerd verwerkt? | Ja, gepersonaliseerd uit de gegevens van de geregistreerde kiezers, met een register van ongeldige stempassen (Kieswet art. J 7 lid 1, J 7a). [Kieswet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) |
 
 ### Specialisaties
 
@@ -93,6 +97,10 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | [Beheren stempassen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md) | verstrekt, vervangt en maakt ongeldig *toegang (registreren)* | Stempas | [Kieswet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) (art. J 7, J 7a, J 8) |
 | [Kiezer](../../../rollen/kiezer.md) | ontvangt *toegang (houder)* | Stempas | [Kieswet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) (art. J 7 lid 2) |
 | [Verstrekken stempas](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-stempas.md) | verstrekt en vervangt *toegang (registreren)* | Stempas | [Kieswet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-kieswet-bwbr0004627.md) (art. J 7, J 8) |
+
+### Data-objecten
+
+- [Stempas-data](../../../../applicatiearchitectuur/data-objecten/stempas-data.md) *realisatie*: geen GGM-entiteit (GGM-terugmelding hiaat).
 
 ## Herkomst
 

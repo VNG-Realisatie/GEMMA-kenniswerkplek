@@ -30,9 +30,6 @@ kenmerken:
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
     gemma_relatie:
     - id-efd77657-f6f9-457c-a9e8-93d6d11647df
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen ding.'
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Geen bredere functie in deze wiki.
@@ -226,7 +223,7 @@ beschrijving:
 - De ambtenaar van de burgerlijke stand maakt akten op van geboorte, huwelijk en overlijden en verleent het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11; RVO). De functie bedient de processen daarvoor.
 bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -235,7 +232,6 @@ beslist:
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

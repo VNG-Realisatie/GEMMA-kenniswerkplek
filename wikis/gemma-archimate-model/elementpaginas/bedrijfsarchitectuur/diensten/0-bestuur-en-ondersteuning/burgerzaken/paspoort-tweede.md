@@ -2,7 +2,7 @@
 id: paspoort-tweede
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Paspoort tweede
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het aanvragen van een tweede paspoort naast het eerste, voor wie moet reizen terwijl het eerste voor een visum bij een buitenlandse vertegenwoordiging ligt.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling paspoort-tweede.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

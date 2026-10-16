@@ -18,7 +18,7 @@ titel: Bedrijfsobject — modelleerafspraken
 | Herken je aan | *ding*; *afspraak* en *waarneembare vorm* nee. Moet ja: *wordt bewerkt* (kernrelatie); hoogstens 1 nee: *onderscheidbare exemplaren*, *levenscyclus*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfsproces ─toegang→ Bedrijfsobject; Bedrijfsfunctie ─toegang→ Bedrijfsobject; Bedrijfsinteractie ─toegang→ Bedrijfsobject |
 | Niveaus | kernobject: het object waarvan één levensloopproces de hele levensloop omvat · subobject: een deel van een kernobject, met een eigen bedrijfsproces · generiek object: dezelfde betekenis in veel onderwerpen; domeinspecialisaties krijgen geen pagina en staan in relaties met `via` · onderdeel zonder eigen proces, en invoer die een andere partij maakt: geen pagina |
-| Eigenschappen | `taakveld`: het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling · `beleidsdomein`: het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling · `ggm`: de match met het GGM: entiteit, sterkte en onderbouwing · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `data_object`: annotatie: het begrip wordt als gegevensstructuur geautomatiseerd verwerkt |
+| Eigenschappen | `taakveld`: het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling · `beleidsdomein`: het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling · `ggm`: de match met het GGM: entiteit, sterkte en onderbouwing · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `data_objecten`: een extra data-object voor een andere GGM-entiteit: naam en GGM-match |
 | Indelingen | [Beleidsdomeinindeling](../indelingen.md) |
 | Naamvorm | de gangbare term uit beleid en praktijk, zonder lidwoord; de wetsterm wordt een synoniem met context "wet" |
 | Afstemming | GGM: matchdoel en toets: entiteit, definitie en relaties; zonder match een GGM-terugmelding (hiaat) · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen |
@@ -26,7 +26,7 @@ titel: Bedrijfsobject — modelleerafspraken
 
 ## Afspraken
 
-- Registratie, eigendom, systeembeheer, regie of een extern systeem zijn geen argument voor een bedrijfsobject; alleen *geautomatiseerd verwerkt* telt, als annotatie.
+- Registratie, eigendom, systeembeheer, regie of een extern systeem zijn geen argument voor een bedrijfsobject; de beschrijving mag de registratie noemen.
 - Een concreet benoemde regeling als geheel is een beleidskader; de soort ("verordening") is het bedrijfsobject Regeling.
 - Een kernobject heeft één thuis: het onderwerp waar het ontstaat en beheerd wordt.
 
@@ -47,7 +47,7 @@ In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee be
 | uit | specialisatie | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | is een |  | ja |  |
 | in | associatie (gericht) | [Afspraak](afspraak-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel |  |
 | in | associatie (gericht) | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | is grondslag voor, is model voor |  | nee: uitbreiding op het GEMMA-kennismodel | de regeling die het object regelt; *is model voor*: een VNG-modelverordening voor de soort regeling (Regeling) |
-| in | realisatie | [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) | vrij, uit de bron |  | ja | nu een annotatie |
+| in | realisatie | [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) | vrij, uit de bron |  | ja |  |
 | in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Beleidsdomeinindeling |
 
 ## Weggefilterd

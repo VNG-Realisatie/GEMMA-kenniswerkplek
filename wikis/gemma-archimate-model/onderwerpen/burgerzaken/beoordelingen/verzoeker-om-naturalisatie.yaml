@@ -20,9 +20,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van degene die een verzoek om naturalisatie indient om Nederlander te worden.
 beschrijving:
@@ -49,7 +46,7 @@ bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
 - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -58,7 +55,6 @@ beslist:
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 10
   bronnen:

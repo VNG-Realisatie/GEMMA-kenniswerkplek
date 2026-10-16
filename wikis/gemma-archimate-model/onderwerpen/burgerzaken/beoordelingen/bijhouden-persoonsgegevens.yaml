@@ -75,9 +75,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt in een opgeschorte persoonslijst, niet in een benoemde toestandsverandering die een ander proces start.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het bijhouden van de gegevens van een ingeschreven persoon in de basisregistratie personen, van inschrijving tot opschorting.
 beschrijving:
 - 'Bijhouden omvat het inschrijven van personen en het actualiseren, corrigeren en verwijderen van gegevens (HUP Achtergronden). De bijhouding is per gebeurtenis opgezet: een aangifte van de persoon, een akte uit de registers van de burgerlijke stand of een ander document, zoals een buitenlandse akte of een rechterlijke uitspraak; de gemeente ontleent de gegevens aan zulke brondocumenten (HUP Algemeen; HUP Achtergronden). Het college van de gemeente waar een ingezetene zijn adres heeft is verantwoordelijk; bij een verhuizing naar een andere gemeente gaat de persoonslijst naar de nieuwe bijhoudingsgemeente, bij emigratie naar de RNI (HUP Achtergronden; LO BRP 1.6).'
@@ -271,7 +268,7 @@ bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
 - 2025-rvig-logisch-ontwerp-brp-2025q1
 - 2026-rvig-hup-intergemeentelijke-adreswijziging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -280,7 +277,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: levensloopproces
     generiek: false
     typeregel: 15

@@ -18,9 +18,6 @@ kenmerken:
     waarde: ja
     naar:
     - verlenen-verlof-tot-begraving-of-crematie
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Toestemming van de gemeente om een stoffelijk overschot te begraven of te cremeren.
 beschrijving:
 - Geen begraving of crematie zonder schriftelijk verlof van de ambtenaar van de burgerlijke stand, dat kosteloos wordt afgegeven (Wet op de lijkbezorging art. 11). De UPL-naam noemt alleen begraven; het verlof geldt ook voor crematie. Voor vervoer over land naar België of Luxemburg volstaat het verlof (Besluit op de lijkbezorging art. 11 lid 3).
@@ -51,7 +48,7 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -60,7 +57,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

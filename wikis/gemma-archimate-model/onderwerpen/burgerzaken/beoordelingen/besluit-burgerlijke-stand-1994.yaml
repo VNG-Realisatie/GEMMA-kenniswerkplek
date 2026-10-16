@@ -3,9 +3,6 @@ vak: motivatie
 onderwerpen:
 - burgerzaken
 kenmerken:
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   landelijk:
     waarde: ja
     onderbouwing: AMvB van het Rijk (BWBR0006493).
@@ -61,7 +58,7 @@ relaties:
   vindplaats: art. 24, 26
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -70,7 +67,6 @@ beslist:
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 14
   bronnen:

@@ -1,9 +1,6 @@
 begrip: Model-beheersverordening begraafplaatsen
 vak: motivatie
 kenmerken:
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   landelijk:
     waarde: ja
     onderbouwing: VNG-modelverordening, geen regeling van één gemeente.
@@ -100,7 +97,7 @@ relaties:
 onderwerpen:
 - lijkbezorging
 regelgever: VNG-modelverordening
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -109,7 +106,6 @@ beslist:
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 14
   bronnen:

@@ -2,7 +2,7 @@
 id: voornaamwijziging
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Voornaamwijziging
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het laten opnemen van een door de rechtbank gewijzigde voornaam in de geboorteakte en de basisregistratie personen.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 bronnen:
@@ -24,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling voornaamwijziging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

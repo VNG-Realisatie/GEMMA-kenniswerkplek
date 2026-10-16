@@ -2,7 +2,7 @@
 id: algemene-wet-bestuursrecht
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Algemene wet bestuursrecht
 onderwerpen:
 - besluitvorming
@@ -12,7 +12,6 @@ beleidsdomein: Besluitvorming
 definitie: Wet met de algemene regels voor het handelen van bestuursorganen bij het voorbereiden en nemen van besluiten, bij bezwaar en beroep en bij klachten.
 match:
   gemma: geen
-data_object: nee
 regelgever: rijk
 synoniemen:
 - Awb (wet)
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling algemene-wet-bestuursrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

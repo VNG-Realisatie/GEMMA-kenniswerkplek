@@ -58,9 +58,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het inschrijven van een persoon die niet in Nederland woont in de registratie niet-ingezetenen, door een gemeente die RNI-loket is.
 beschrijving:
 - Wie niet in Nederland woont maar een relatie heeft met de Nederlandse overheid, of hooguit vier maanden in Nederland blijft, laat zich inschrijven in de RNI en krijgt een BSN (Utrecht RNI). De inschrijving gebeurt op verzoek bij een RNI-loket of op voordracht van een aangewezen bestuursorgaan; de minister van BZK is verantwoordelijk voor de RNI (HUP Achtergronden; LO BRP 1.5.2). Utrecht schrijft sinds 2026 alleen personen met een Europees paspoort in; anderen gaan naar andere RNI-loketten (Utrecht RNI).
@@ -98,7 +95,7 @@ relaties:
 bronnen:
 - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -107,7 +104,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

@@ -7,17 +7,16 @@ toelichting: 'Onderdeel van Graf: Ruimte binnen een graf (Groningen art. 1 h, k)
 genoemd_begrip: Graf
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Graf
     generiek: false
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: gemeentelijke-regelgeving
-bronnen:
-- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

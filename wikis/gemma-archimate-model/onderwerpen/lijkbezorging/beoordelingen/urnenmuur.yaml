@@ -7,17 +7,16 @@ toelichting: 'Onderdeel van Begraafplaats: Muur met urnennissen op de begraafpla
 genoemd_begrip: Begraafplaats
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Begraafplaats
     generiek: false
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: gemeentelijke-regelgeving
-bronnen:
-- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

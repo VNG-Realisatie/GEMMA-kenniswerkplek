@@ -7,17 +7,16 @@ kenmerken:
     onderbouwing: Deelstap van Behandelen verzoek uitdaagrecht (var. 1 art. 8).
 genoemd_begrip: Behandelen verzoek uitdaagrecht
 toelichting: Deelstap van Behandelen verzoek uitdaagrecht (variant 1 art. 8).
+bronnen:
+- 2024-vng-implementatiehandleiding-model-participatieverordening
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Behandelen verzoek uitdaagrecht
     generiek: false
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   herkomst: richtlijn
-bronnen:
-- 2024-vng-implementatiehandleiding-model-participatieverordening

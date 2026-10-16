@@ -67,9 +67,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Het verval van het grafrecht volgt uit het bedrijfsproces Vervallen verklaren grafrecht.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: 'Het beheer van een grafrecht over de hele looptijd: verlenen, verlengen, overschrijven en vervallen.'
 beschrijving:
 - Het grafrecht wordt schriftelijk gevestigd voor onbepaalde tijd of voor ten minste tien jaar, en op verzoek verlengd (Wet op de lijkbezorging art. 28 lid 1–3). Het college verleent het recht op aanvraag, schrijft het over en kan het vervallen verklaren; het recht vervalt ook als na een verklaring van verwaarlozing niet alsnog in het onderhoud is voorzien (Groningen art. 16–20; art. 28 lid 4–7).
@@ -116,7 +113,7 @@ relaties:
 bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -125,7 +122,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: levensloopproces
     generiek: false
     typeregel: 15

@@ -64,9 +64,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een rijbewijs, tot de uitreiking of weigering, ook bij vernieuwing of vervanging.
 beschrijving:
 - De aanvrager dient de aanvraag in bij de burgemeester van de gemeente waar hij als ingezetene staat, aan de balie op afspraak, met een ingevuld formulier, een identiteitsbewijs of eerder rijbewijs en een pasfoto; de burgemeester raadpleegt de basisregistratie personen (Wegenverkeerswet 1994 art. 113; Reglement rijbewijzen art. 27, 33; Utrecht). Verlengen en een categorie-uitbreiding kan ook online via de RDW met DigiD; de gemeente reikt het rijbewijs dan alleen uit (Utrecht). Een spoedaanvraag kost extra en levert sneller (Utrecht).
@@ -146,7 +143,7 @@ deelprocessen:
   begrip: uitreiken-rijbewijs
 bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -155,7 +152,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

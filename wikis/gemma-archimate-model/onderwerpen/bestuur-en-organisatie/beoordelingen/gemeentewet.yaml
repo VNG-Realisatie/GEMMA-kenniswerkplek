@@ -30,9 +30,6 @@ kenmerken:
     onderbouwing: Geldt met dezelfde betekenis in elk onderwerp waarin de gemeente een orgaan, een verordening of een heffing gebruikt (participatie art. 150, lijkbezorging art. 147, 149, 229).
     bronnen:
     - 2026-rijk-gemeentewet-wettekst
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 relaties:
 - soort: associatie (gericht)
   naar: betrekken-inwoners-bij-beleid
@@ -102,7 +99,7 @@ per_onderwerp:
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor de Gemeentewet; nieuw voor GEMMA.
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -111,7 +108,6 @@ beslist:
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 14
   bronnen:

@@ -2,14 +2,13 @@
 id: verkiezingen-gerelateerde-diensten
 type: bedrijfsfunctie
 archimate_type: business-function
-status: goedgekeurd
+status: review
 naam: Verkiezingen gerelateerde diensten
 onderwerpen:
 - burgerzaken
 definitie: Het lokaal organiseren van verkiezingen.
 match:
   gemma: exact
-data_object: nee
 domein: Publieksdiensten
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
@@ -29,7 +28,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verkiezingen-gerelateerde-diensten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

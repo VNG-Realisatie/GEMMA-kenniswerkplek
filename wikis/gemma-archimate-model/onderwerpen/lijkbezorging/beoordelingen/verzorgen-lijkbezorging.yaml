@@ -20,9 +20,6 @@ kenmerken:
     - beheren-begraafplaatsen
     - beheren-crematoria
     - verzorgen-gemeentebegrafenis
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: 'Gemeentelijke taak rond de lijkbezorging: het bezorgen van stoffelijke overschotten en het beheer van graven en grafrechten.'
 beschrijving:
 - 'Lijkbezorging geschiedt door begraving, crematie of een andere wettelijke wijze (Wet op de lijkbezorging art. 1). De gemeente schouwt stoffelijke overschotten via de gemeentelijke lijkschouwer, geeft het verlof tot begraving of crematie af, heeft ten minste één gemeentelijke begraafplaats, geeft graven uit, staat opgraving en ruiming toe en draagt zorg voor de lijkbezorging als niemand daarin voorziet (art. 4, 11, 21, 28, 29, 31, 33). De taak groepeert de processen daarvoor, één per kernobject: het stoffelijk overschot, de gemeentebegrafenis, het grafrecht, het graf, de begraafplaats en het crematorium.'
@@ -94,7 +91,6 @@ beslist:
     voorleggen: true
     redenen:
     - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
-    data_object: nee
     generiek: false
     typeregel: 15
   voor_te_leggen:

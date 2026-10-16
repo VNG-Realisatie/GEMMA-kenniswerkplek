@@ -2,7 +2,7 @@
 id: naamgebruik-verzoek-aanduiding
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Naamgebruik verzoek aanduiding
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: 'Het kiezen welke achternaam de overheid gebruikt na een huwelijk of geregistreerd partnerschap: de eigen, die van de partner of een combinatie.'
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -26,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling naamgebruik-verzoek-aanduiding.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

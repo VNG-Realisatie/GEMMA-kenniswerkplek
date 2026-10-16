@@ -12,13 +12,16 @@ toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: de aanduiding na
 synoniemen:
 - naam: Achternaamgebruik
   context: beleid
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rvig-hup-wijziging-naamgebruik
+- 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
 beslist:
   uitkomst:
     soort: eigenschap
     regel: 4
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Ingeschreven persoon
     generiek: false
   bronnen:
@@ -26,7 +29,3 @@ beslist:
   - 2026-rvig-hup-wijziging-naamgebruik
   - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-burgerlijk-wetboek-boek-1
-- 2026-rvig-hup-wijziging-naamgebruik
-- 2026-utrecht-burgerzaken-achternaamgebruik-veranderen

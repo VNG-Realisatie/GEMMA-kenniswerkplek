@@ -20,9 +20,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van degene die een optieverklaring aflegt om Nederlander te worden.
 beschrijving:
@@ -40,7 +37,7 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 3, 6, 7; art. 60a lid 2 en 4
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -49,7 +46,6 @@ beslist:
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 10
   bronnen:

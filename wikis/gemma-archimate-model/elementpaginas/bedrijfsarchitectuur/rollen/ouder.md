@@ -2,7 +2,7 @@
 id: ouder
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Ouder
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Hoedanigheid van wie juridisch moeder of andere ouder van een kind is, door geboorte, huwelijk, erkenning, vaststelling of adoptie.
 match:
   gemma: geen
-data_object: nee
 doelgroep: inwoners en ondernemers
 synoniemen:
 - Moeder (wet)
@@ -35,7 +34,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ouder.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

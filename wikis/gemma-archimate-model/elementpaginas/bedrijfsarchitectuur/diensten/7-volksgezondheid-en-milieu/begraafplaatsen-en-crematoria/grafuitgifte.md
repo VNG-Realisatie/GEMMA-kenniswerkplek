@@ -2,7 +2,7 @@
 id: grafuitgifte
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Grafuitgifte
 onderwerpen:
 - lijkbezorging
@@ -12,7 +12,6 @@ definitie: Een particulier graf, urnengraf of urnennis laten uitgeven, met het g
 match:
   ggm: geen
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Fysieke leefomgeving
 synoniemen:
@@ -30,7 +29,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling grafuitgifte.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

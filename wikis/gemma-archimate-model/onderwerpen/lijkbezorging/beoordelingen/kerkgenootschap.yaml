@@ -31,9 +31,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Kerkelijke gemeenschap, met inbegrip van haar zelfstandige onderdelen en de lichamen waarin kerkgenootschappen zijn verenigd.
 beschrijving:
 - Kerkgenootschappen, hun zelfstandige onderdelen en de lichamen waarin zij zijn verenigd, hebben rechtspersoonlijkheid en worden geregeerd door hun eigen statuut, voor zover dat niet in strijd is met de wet (BW Boek 2 art. 2).
@@ -64,7 +61,7 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: ketenpartners
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -73,7 +70,6 @@ beslist:
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 9
   bronnen:

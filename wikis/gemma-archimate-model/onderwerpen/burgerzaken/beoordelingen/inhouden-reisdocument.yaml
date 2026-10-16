@@ -55,9 +55,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het innemen van een ingeleverd of in te houden reisdocument, zo nodig het vervallen verklaren ervan, tot de onttrekking aan het verkeer of de teruggave.
 beschrijving:
 - Een reisdocument wordt ingehouden als het van rechtswege is vervallen, zo is beschadigd dat beveiligingskenmerken zijn aangetast of gegevens onleesbaar zijn, onbevoegd is gewijzigd, de gezichtsopname niet meer lijkt of er fouten in staan (Paspoortwet art. 54 lid 1). Een document dat vervallen kan worden verklaard, houdt de burgemeester in na een mededeling van de minister en hij beslist daarna over de vervallenverklaring (art. 44 lid 2, 53). Ook de politie en de grensbewaking zijn bevoegd tot inhouding (art. 50b).
@@ -122,7 +119,7 @@ bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rvig-hup-inhouding-inlevering-vermissing
 - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -131,7 +128,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

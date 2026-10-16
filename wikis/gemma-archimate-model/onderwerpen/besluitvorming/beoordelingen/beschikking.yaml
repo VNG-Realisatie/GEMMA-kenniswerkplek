@@ -34,9 +34,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   zelfstandige_specialisatie:
     waarde: ja
     onderbouwing: Specialisatie van Besluit met eigen regels (bezwaar en beroep, aanvraag); eigen GEMMA-element.
@@ -98,7 +95,7 @@ onderwerpen:
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -107,7 +104,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     objectniveau: generiek
     generiek: false
     typeregel: 18
@@ -115,6 +111,12 @@ beslist:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: beschikking-data
+    naam: Beschikking-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/beschikking-data.md
   ggm:
     ggm_entiteit: Beschikking
     ggm_guid: EAID_71D7E96D_641A_4b6a_A325_DED07C3B5836

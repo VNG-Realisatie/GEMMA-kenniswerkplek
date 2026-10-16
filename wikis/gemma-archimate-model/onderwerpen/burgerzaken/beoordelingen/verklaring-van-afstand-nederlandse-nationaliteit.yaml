@@ -24,9 +24,6 @@ kenmerken:
     waarde: ja
     naar:
     - behandelen-verklaring-van-afstand
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 afnemer: extern
 domein: Publieksdiensten
 definitie: Het afleggen van een verklaring van afstand bij de gemeente om de Nederlandse nationaliteit op te geven.
@@ -43,7 +40,7 @@ gemma:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -52,7 +49,6 @@ beslist:
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

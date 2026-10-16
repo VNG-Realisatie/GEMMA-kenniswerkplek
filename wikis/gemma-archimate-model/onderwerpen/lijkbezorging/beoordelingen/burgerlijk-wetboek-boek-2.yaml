@@ -1,9 +1,6 @@
 begrip: Burgerlijk Wetboek Boek 2
 vak: motivatie
 kenmerken:
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   landelijk:
     waarde: ja
     onderbouwing: Rijkswet.
@@ -33,7 +30,6 @@ beslist:
     voorleggen: true
     redenen:
     - 'is grondslag voor: nee'
-    data_object: nee
     generiek: false
     typeregel: 14
   voor_te_leggen:

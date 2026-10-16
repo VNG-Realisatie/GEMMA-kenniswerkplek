@@ -13,9 +13,6 @@ kenmerken:
     waarde: ja
     naar:
     - verwerken-vermissing-reisdocument
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het moment waarop de houder niet meer over zijn reisdocument beschikt, doordat het kwijt of gestolen is.
 definitie_formeel: ieder geval waarin de houder niet meer de feitelijke beschikking heeft over een op zijn naam gesteld reisdocument, anders dan door of ten behoeve van handelingen van een daartoe bevoegde autoriteit
 definitie_formeel_bron:
@@ -46,7 +43,7 @@ bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
 - 2026-rvig-hup-inhouding-inlevering-vermissing
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -55,7 +52,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

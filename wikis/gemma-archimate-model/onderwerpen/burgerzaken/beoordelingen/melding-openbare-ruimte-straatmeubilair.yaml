@@ -7,16 +7,15 @@ kenmerken:
     waarde: nee
     onderbouwing: 'Hoort niet bij Burgerzaken: het gaat om een melding over de openbare ruimte (UPL-domein Fysieke leefomgeving, zonder grondslag), geen taak uit de BRP, de burgerlijke stand, de reisdocumenten, het kiesrecht of het Nederlanderschap. Beoordelen in een later onderwerp openbare ruimte, een onderwerp dat nog niet bestaat.'
 toelichting: 'Verwijzing: UPL-product nr. 245 (zonder grondslag) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): het gaat om een melding over de openbare ruimte (UPL-domein Fysieke leefomgeving, zonder grondslag), geen taak uit de BRP, de burgerlijke stand, de reisdocumenten, het kiesrecht of het Nederlanderschap. Het product krijgt zijn pagina in een later onderwerp openbare ruimte.'
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
 beslist:
   uitkomst:
     soort: verwijzing
     regel: 6
     toelichting: Hoort bij een ander onderwerp
     voorleggen: false
-    data_object: nee
     generiek: false
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   herkomst: informatiemodel
-bronnen:
-- 2025-vng-upl-producten-en-diensten-extern

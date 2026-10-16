@@ -31,9 +31,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: Niet bij dit begrip aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: 'Variant van Vergunning: zelfde gegevens en behandeling, geen eigen levenscyclus.'
@@ -48,7 +45,6 @@ beslist:
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-object
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Vergunning
     generiek: false
     typeregel: 18

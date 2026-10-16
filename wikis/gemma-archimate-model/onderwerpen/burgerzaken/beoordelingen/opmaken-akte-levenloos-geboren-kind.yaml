@@ -58,9 +58,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het ontvangen van de aangifte van een levenloos geboren kind en het opmaken van de akte daarvan.
 beschrijving:
 - De akte heet akte van geboorte (levenloos) en wordt opgenomen in het register van overlijden; geslachtsnaam en voornamen worden alleen vermeld als de ouders dat willen. De ambtenaar meldt gegevens aan het CBS (BW 1 art. 19i; Besluit burgerlijke stand art. 66). Aangifte alleen aan de balie; een late aangifte of een aanvulling van de voornaam kan nog (Utrecht). Opname in de BRP is een apart verzoek.
@@ -89,7 +86,7 @@ relaties:
   vindplaats: UPL nr. 118
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -98,7 +95,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

@@ -2,14 +2,13 @@
 id: arts
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Arts
 onderwerpen:
 - lijkbezorging
 definitie: Persoon die als arts mensen medisch onderzoekt en behandelt.
 match:
   gemma: geen
-data_object: nee
 doelgroep: ketenpartners
 synoniemen:
 - Behandelende arts (wet)
@@ -22,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling arts.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

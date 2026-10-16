@@ -32,11 +32,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: De elektronische aangifte van overlijden gaat met het burgerservicenummer (Besluit burgerlijke stand art. 67a).
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   zelfstandige_specialisatie:
     waarde: nee
     onderbouwing: 'Specialisatie van Akte van de burgerlijke stand: dezelfde levensloop in hetzelfde proces, alleen andere gegevens per aktesoort (Besluit burgerlijke stand art. 61-65); GEMMA kent geen akten per soort.'
@@ -54,6 +49,7 @@ homoniemen:
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rvo-aangifte-en-akte-van-overlijden
+- 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
 beslist:
   uitkomst:
     soort: specialisatie
@@ -61,14 +57,13 @@ beslist:
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     genoemd_begrip: Akte van de burgerlijke stand
     generiek: false
     typeregel: 18
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rvig-hup-overlijden-nederland
-  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   herkomst: rijksregelgeving

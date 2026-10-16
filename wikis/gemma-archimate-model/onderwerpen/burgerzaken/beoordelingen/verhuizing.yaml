@@ -15,9 +15,6 @@ kenmerken:
     waarde: ja
     naar:
     - verwerken-adreswijziging
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het gaan wonen van een persoon op een ander adres in Nederland.
 beschrijving:
 - Bij een verhuizing binnen of naar een gemeente doet de persoon aangifte van adreswijziging in de nieuwe gemeente (Utrecht Verhuizing doorgeven; HUP Intergemeentelijke adreswijziging).
@@ -37,7 +34,7 @@ relaties:
   - 2026-utrecht-burgerzaken-verhuizing-doorgeven
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: HUP inleiding; Utrecht inleiding; Wet BRP art. 2.39 lid 1
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -46,7 +43,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

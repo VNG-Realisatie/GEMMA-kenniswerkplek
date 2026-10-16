@@ -2,7 +2,7 @@
 id: vermissing-van-het-rijbewijs
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Vermissing van het rijbewijs
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het moment waarop de houder niet meer over zijn rijbewijs beschikt, doordat het kwijt of gestolen is.
 match:
   gemma: geen
-data_object: nee
 synoniemen:
 - Aangifte van vermissing van het rijbewijs (wet)
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vermissing-van-het-rijbewijs.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

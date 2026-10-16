@@ -13,9 +13,6 @@ kenmerken:
     waarde: ja
     naar:
     - bijhouden-persoonsgegevens
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het moment waarop een persoon Nederlander wordt, van rechtswege of door de uitreiking van de bevestiging van de optie of het naturalisatiebesluit.
 beschrijving:
 - Het Nederlanderschap wordt verkregen van rechtswege, bij geboorte, erkenning of adoptie, of door optie of verlening (Rijkswet op het Nederlanderschap art. 3-7). Bij optie en naturalisatie treedt de verkrijging in werking door de uitreiking van de bevestiging of van het uittreksel van het besluit, en werkt terug tot de dagtekening (Besluit verkrijging en verlies Nederlanderschap art. 60a, 60b).
@@ -52,7 +49,7 @@ bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-rvig-hup-vreemde-nationaliteit
 - 2026-rijk-paspoortwet-bwbr0005212
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -61,7 +58,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

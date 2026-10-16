@@ -2,7 +2,7 @@
 id: model-beheersverordening-begraafplaatsen
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Model-beheersverordening begraafplaatsen
 onderwerpen:
 - lijkbezorging
@@ -11,7 +11,6 @@ beleidsdomein: Begraafplaatsen en crematoria
 definitie: Model van de VNG voor de verordening waarin een gemeente het beheer en het gebruik van haar begraafplaatsen regelt.
 match:
   gemma: geen
-data_object: nee
 regelgever: VNG-modelverordening
 synoniemen:
 - VNG Model beheersverordening begraafplaatsen (beleid)
@@ -25,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling model-beheersverordening-begraafplaatsen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

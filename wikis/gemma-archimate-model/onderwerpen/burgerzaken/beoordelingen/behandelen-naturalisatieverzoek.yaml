@@ -64,9 +64,6 @@ kenmerken:
     waarde: ja
     naar:
     - verkrijging-van-het-nederlanderschap
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 kernobject: nederlanderschap
 afnemer: extern
 definitie: Het in ontvangst nemen en onderzoeken van een verzoek om naturalisatie, met het advies aan de minister, tot de uitreiking op de naturalisatieceremonie.
@@ -151,7 +148,7 @@ besluiten:
   besluit: 'Leidt tot gebeurtenis is ja: de triggering naar verkrijging-van-het-nederlanderschap staat met bron en vindplaats in de beoordeling; de nee was een vergissing (omzetting naar de ArchiMate-indeling).'
   gevolg: verwerkt
   zekerheid: logica
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -160,7 +157,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: bedrijfsproces
     generiek: false
     typeregel: 15

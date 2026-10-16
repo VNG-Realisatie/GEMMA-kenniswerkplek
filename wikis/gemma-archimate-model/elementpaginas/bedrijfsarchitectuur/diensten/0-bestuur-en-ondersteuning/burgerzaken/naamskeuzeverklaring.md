@@ -2,7 +2,7 @@
 id: naamskeuzeverklaring
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Naamskeuzeverklaring
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het vastleggen van de keuze van de ouders voor de achternaam van hun kind bij de ambtenaar van de burgerlijke stand.
 match:
   gemma: geen
-data_object: nee
 afnemer: extern
 domein: Publieksdiensten
 synoniemen:
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling naamskeuzeverklaring.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

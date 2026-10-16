@@ -2,7 +2,7 @@
 id: inlevering-van-het-reisdocument
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Inlevering van het reisdocument
 onderwerpen:
 - burgerzaken
@@ -11,7 +11,6 @@ beleidsdomein: Burgerzaken
 definitie: Het moment waarop een reisdocument bij een tot inhouding bevoegde autoriteit komt, doordat de houder het inlevert of het aan de balie wordt ingenomen.
 match:
   gemma: geen
-data_object: nee
 synoniemen:
 - Inleveren (wet)
 bronnen:
@@ -23,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling inlevering-van-het-reisdocument.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

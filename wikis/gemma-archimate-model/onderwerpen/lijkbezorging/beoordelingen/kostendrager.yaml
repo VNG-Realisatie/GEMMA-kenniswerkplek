@@ -20,9 +20,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Verantwoordelijkheid voor het dragen van de kosten van een voorziening of handeling.
 per_onderwerp:
   lijkbezorging:
@@ -41,7 +38,7 @@ relaties:
   vindplaats: art. 22
 beschrijving:
 - Een kostendrager betaalt voor een voorziening of handeling die een ander uitvoert of die hij zelf laat uitvoeren, en kan de kosten soms verhalen.
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -50,7 +47,6 @@ beslist:
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 10
   bronnen:

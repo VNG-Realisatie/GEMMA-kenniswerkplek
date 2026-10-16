@@ -22,7 +22,7 @@ Fase A kiest eerst het vak: de laag, het aspect en intern of extern, zoals in Ar
 | Laag | Actief intern | Actief extern | Gedrag intern | Gedrag extern | Passief | Samengesteld |
 |---|---|---|---|---|---|---|
 | bedrijf | Actor, Rol, Bedrijfssamenwerking | Kanaal | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie | Dienst | Bedrijfsobject, Afspraak, Representatie (geen pagina) | Product |
-| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (nu een annotatie) | — |
+| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (afgeleid uit de GGM-match) | — |
 | technologie | weggefilterd: komt misschien nog | | | | | |
 | strategie | Capability (Vermogen): buiten dit model | | | | | |
 | motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |
@@ -62,7 +62,7 @@ Elementtypen zonder element: [weggefilterd](motivatie/weggefilterd.md) (uitkomst
 
 | Elementtype | ArchiMate | Paginatype | In Over GEMMA |
 |---|---|---|---|
-| [Data-object](applicatiearchitectuur/data-object-modelleerafspraken.md) | Data Object | annotatie | ja |
+| [Data-object](applicatiearchitectuur/data-object-modelleerafspraken.md) | Data Object | `data-object` | ja |
 
 Elementtypen zonder element: [weggefilterd](applicatiearchitectuur/weggefilterd.md) (applicatiecomponent, applicatieservice, applicatiefunctie, applicatie-interface, applicatieproces, applicatie-event).
 
@@ -90,7 +90,7 @@ Elementtypen zonder element: [weggefilterd](overig/weggefilterd.md) (locatie).
 | toegang | access | gedrag of een rol gebruikt een object, met een vaste handeling of verantwoordelijkheid; per paar elementen één relatie, met de vereniging van de toegangstypen |
 | triggering | triggering | het een start het ander, in de tijd |
 | stroom | flow | gedrag geeft iets door aan ander gedrag |
-| realisatie | realization | gedrag realiseert een dienst; een data-object realiseert een bedrijfsobject |
+| realisatie | realization | gedrag realiseert een dienst; een data-object realiseert een bedrijfsobject of afspraak |
 | bediening | serving | het een ondersteunt of bedient het ander |
 | invloed | influence | een motivatie-element beïnvloedt een ander, met een sterkte |
 
@@ -100,21 +100,22 @@ De vaste namen: een **handeling** van gedrag op een object (registreren: schrijv
 
 Per brontype (rij) en doeltype (kolom) de toegestane relaties; \* is een uitbreiding op het GEMMA-kennismodel. Een leeg vak: weggefilterd.
 
-| Van \ naar | Bedrijfsobject | Afspraak | Product | Dienst | Bedrijfsproces | Bedrijfsfunctie | Gebeurtenis | Actor | Rol | Bedrijfssamenwerking | Kanaal | Bedrijfsinteractie | Beleidskader |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Bedrijfsobject | associatie, aggregatie, compositie, specialisatie |  |  |  |  |  |  |  |  |  |  |  |  |
-| Afspraak | associatie* |  |  |  |  |  |  |  |  |  |  |  |  |
-| Product |  | aggregatie |  | aggregatie |  |  |  |  | bediening |  |  |  |  |
-| Dienst |  |  |  | aggregatie, specialisatie* | bediening |  |  |  | bediening |  |  |  |  |
-| Bedrijfsproces | toegang | toegang* |  | realisatie | aggregatie, specialisatie, triggering, stroom* | bediening | aggregatie*, triggering |  |  |  |  | bediening* |  |
-| Bedrijfsfunctie | toegang |  |  | realisatie, aggregatie* | bediening | aggregatie |  |  |  |  |  |  |  |
-| Gebeurtenis |  |  |  |  | triggering |  | triggering*, specialisatie* |  |  |  |  | triggering* |  |
-| Actor |  |  |  |  |  |  |  | aggregatie*, associatie* | toewijzing |  |  |  |  |
-| Rol | toegang | toegang* |  |  | toewijzing | toewijzing |  |  | aggregatie, specialisatie |  |  | toewijzing* |  |
-| Bedrijfssamenwerking | toegang* |  |  |  | toewijzing | toewijzing* |  | aggregatie | aggregatie |  |  | toewijzing* |  |
-| Kanaal |  |  |  | toewijzing |  |  |  |  | bediening |  |  |  |  |
-| Bedrijfsinteractie | toegang* |  |  |  |  |  |  |  |  |  |  |  |  |
-| Beleidskader | associatie* |  | associatie | associatie* | associatie* |  | associatie* |  | associatie* |  |  |  | associatie* |
+| Van \ naar | Bedrijfsobject | Afspraak | Product | Dienst | Bedrijfsproces | Bedrijfsfunctie | Gebeurtenis | Actor | Rol | Bedrijfssamenwerking | Kanaal | Bedrijfsinteractie | Beleidskader | Data-object |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Bedrijfsobject | associatie, aggregatie, compositie, specialisatie |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Afspraak | associatie* |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product |  | aggregatie |  | aggregatie |  |  |  |  | bediening |  |  |  |  |  |
+| Dienst |  |  |  | aggregatie, specialisatie* | bediening |  |  |  | bediening |  |  |  |  |  |
+| Bedrijfsproces | toegang | toegang* |  | realisatie | aggregatie, specialisatie, triggering, stroom* | bediening | aggregatie*, triggering |  |  |  |  | bediening* |  |  |
+| Bedrijfsfunctie | toegang |  |  | realisatie, aggregatie* | bediening | aggregatie |  |  |  |  |  |  |  |  |
+| Gebeurtenis |  |  |  |  | triggering |  | triggering*, specialisatie* |  |  |  |  | triggering* |  |  |
+| Actor |  |  |  |  |  |  |  | aggregatie*, associatie* | toewijzing |  |  |  |  |  |
+| Rol | toegang | toegang* |  |  | toewijzing | toewijzing |  |  | aggregatie, specialisatie |  |  | toewijzing* |  |  |
+| Bedrijfssamenwerking | toegang* |  |  |  | toewijzing | toewijzing* |  | aggregatie | aggregatie |  |  | toewijzing* |  |  |
+| Kanaal |  |  |  | toewijzing |  |  |  |  | bediening |  |  |  |  |  |
+| Bedrijfsinteractie | toegang* |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Beleidskader | associatie* |  | associatie | associatie* | associatie* |  | associatie* |  | associatie* |  |  |  | associatie* |  |
+| Data-object | realisatie | realisatie* |  |  |  |  | associatie* | associatie* | associatie* |  |  |  |  |  |
 
 ## Indelingen
 

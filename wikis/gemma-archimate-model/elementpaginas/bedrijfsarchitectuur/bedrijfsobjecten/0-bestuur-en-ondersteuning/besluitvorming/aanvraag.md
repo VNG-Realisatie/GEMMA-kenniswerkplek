@@ -2,7 +2,7 @@
 id: aanvraag
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Aanvraag
 onderwerpen:
 - besluitvorming
@@ -13,7 +13,8 @@ definitie: Verzoek van een belanghebbende aan een bestuursorgaan om een besluit 
 match:
   ggm: sterk
   gemma: sterk
-data_object: nee
+data_objecten:
+- Aanvraag-data
 objectniveau: generiek
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -46,7 +47,11 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling aanvraag.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- homoniem van Aanvraag (GGM, ICT): naamkeuze voorleggen
 
 ## Betekenis
 
@@ -118,6 +123,10 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 | [Behandelen aanvraag nadeelcompensatie](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-nadeelcompensatie.md) | neemt in behandeling *toegang (raadplegen)* | Aanvraag | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:127) |
 | [Uitvoeren uniforme openbare voorbereidingsprocedure](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md) | raadpleegt *toegang (raadplegen)* | Aanvraag | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 3:13, 3:18) |
 | [Vaststellen dwangsom bij niet tijdig beslissen](../../../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/vaststellen-dwangsom-bij-niet-tijdig-beslissen.md) | raadpleegt *toegang (raadplegen)* | Aanvraag | [Awb](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:17 lid 1, 5) |
+
+### Data-objecten
+
+- [Aanvraag-data](../../../../applicatiearchitectuur/data-objecten/aanvraag-data.md) *realisatie*: GGM-entiteit *Aanvraag*, match sterk.
 
 ## Herkomst
 

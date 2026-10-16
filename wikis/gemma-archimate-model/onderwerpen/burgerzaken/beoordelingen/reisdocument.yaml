@@ -33,12 +33,6 @@ kenmerken:
   invoer_van_een_ander:
     waarde: nee
     onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  geautomatiseerd_verwerkt:
-    waarde: ja
-    onderbouwing: Reisdocumentenadministratie, basisregister reisdocumenten en categorie 12 van de persoonslijst (Paspoortwet art. 3, 4c; LO BRP 4.4).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
 definitie: Document van het Koninkrijk op naam van een persoon waarmee hij kan reizen en zich kan identificeren, zoals een paspoort of identiteitskaart.
 definitie_formeel: 'Reisdocumenten van het Koninkrijk der Nederlanden zijn: nationaal paspoort; diplomatiek paspoort; dienstpaspoort; reisdocument voor vluchtelingen; reisdocument voor vreemdelingen; nooddocument: laissez-passer of noodpaspoort; andere reisdocumenten, bij of krachtens algemene maatregel van rijksbestuur vast te stellen.'
 definitie_formeel_bron:
@@ -92,7 +86,7 @@ bronnen:
 - 2025-rvig-logisch-ontwerp-brp-2025q1
 - 2026-rvig-hup-reisdocument
 - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -101,7 +95,6 @@ beslist:
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
-    data_object: ja
     objectniveau: kernobject
     generiek: false
     typeregel: 18
@@ -112,6 +105,12 @@ beslist:
   - 2026-rvig-hup-reisdocument
   - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
   herkomst: rijksregelgeving
+  data_objecten:
+  - id: reisdocument-data
+    naam: Reisdocument-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/reisdocument-data.md
   ggm:
     ggm_entiteit: Reisdocument
     ggm_guid: EAID_CA9BC1BB_D572_4e47_BECF_17CFD379BD6A

@@ -2,7 +2,7 @@
 id: uitvoeren-uniforme-openbare-voorbereidingsprocedure
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Uitvoeren uniforme openbare voorbereidingsprocedure
 onderwerpen:
 - besluitvorming
@@ -12,7 +12,6 @@ beleidsdomein: Besluitvorming
 definitie: Het voorbereiden van een besluit door het ontwerp ter inzage te leggen, belanghebbenden hun zienswijze te laten geven en daarna te besluiten.
 match:
   gemma: geen
-data_object: nee
 procesniveau: bedrijfsproces
 afnemer: extern
 synoniemen:
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling uitvoeren-uniforme-openbare-voorbereidingsprocedure.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

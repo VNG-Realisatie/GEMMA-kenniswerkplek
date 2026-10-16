@@ -8,17 +8,16 @@ toelichting: 'Onderdeel van Verzorgen gemeentebegrafenis: Stap in Verzorgen geme
 genoemd_begrip: Verzorgen gemeentebegrafenis
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
 beslist:
   uitkomst:
     soort: onderdeel
     regel: 5
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
-    data_object: nee
     genoemd_begrip: Verzorgen gemeentebegrafenis
     generiek: false
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   herkomst: rijksregelgeving
-bronnen:
-- 2026-rijk-wet-op-de-lijkbezorging-wettekst

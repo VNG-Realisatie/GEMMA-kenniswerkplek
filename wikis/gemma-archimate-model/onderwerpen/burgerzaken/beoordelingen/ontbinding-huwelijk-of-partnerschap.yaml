@@ -14,9 +14,6 @@ kenmerken:
     waarde: ja
     naar:
     - inschrijven-ontbinding-huwelijk-of-partnerschap
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het eindigen van een huwelijk door echtscheiding of van een geregistreerd partnerschap door beëindiging, anders dan door overlijden.
 beschrijving:
 - Scheiden gaat via de rechtbank met een advocaat; een geregistreerd partnerschap kan zonder rechter worden beëindigd met een verklaring van advocaten of notarissen, behalve bij minderjarige kinderen of onenigheid (BW 1 art. 80c; Utrecht). De advocaat of notaris stuurt de stukken naar de gemeente van de akte; de ontbinding geldt vanaf de inschrijving (Utrecht; BW 1 art. 163). Een huwelijk of partnerschap eindigt ook door overlijden; dat is de gebeurtenis Overlijden.
@@ -37,7 +34,7 @@ relaties:
   vindplaats: Utrecht inleiding; art. 163
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -46,7 +43,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

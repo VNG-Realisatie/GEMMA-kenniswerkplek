@@ -27,9 +27,6 @@ kenmerken:
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Wordt niet als ding behandeld.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 toelichting: 'Voorgelegd, samen met de minister van BZK: de IND beslist namens de minister van Justitie en Veiligheid over naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38: Onze Minister; Utrecht: de IND) en levert de verblijfstitels voor de BRP (HUP Verblijfstitel), maar is één organisatie en geen soort partij. Zolang de redacteur niet anders beslist: geen element; de rol Ketenpartner is toegewezen aan Beheren Nederlanderschap en de IND staat in de beschrijvingen.'
 synoniemen:
 - naam: IND
@@ -51,7 +48,6 @@ beslist:
     voorleggen: true
     redenen:
     - 'soort partij: nee'
-    data_object: nee
     generiek: false
     typeregel: 9
   voor_te_leggen:

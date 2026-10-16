@@ -2,7 +2,7 @@
 id: participatieplan
 type: bedrijfsobject
 archimate_type: business-object
-status: goedgekeurd
+status: review
 naam: Participatieplan
 onderwerpen:
 - participatie
@@ -12,7 +12,6 @@ definitie: Openbaar plan waarin een bestuursorgaan vooraf vastlegt waarom, hoe e
 match:
   ggm: geen
   gemma: geen
-data_object: nee
 objectniveau: kernobject
 synoniemen:
 - Plan voor inwonersparticipatie (VNG-modelverordening)
@@ -27,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling participatieplan.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 

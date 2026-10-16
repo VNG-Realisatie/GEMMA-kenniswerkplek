@@ -1,9 +1,6 @@
 begrip: Wet op de lijkbezorging
 vak: motivatie
 kenmerken:
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
   landelijk:
     waarde: ja
     onderbouwing: Rijkswet.
@@ -208,7 +205,7 @@ regelgever: rijk
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-vng-wet-op-de-lijkbezorging
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -217,7 +214,6 @@ beslist:
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 14
   bronnen:

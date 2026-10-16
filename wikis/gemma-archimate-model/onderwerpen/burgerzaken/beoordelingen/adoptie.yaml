@@ -17,9 +17,6 @@ kenmerken:
     - toevoegen-latere-vermelding
     - inschrijven-ingezetene
     - behandelen-verzoek-om-verwijdering-van-gegevens
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het door een uitspraak van de rechtbank ontstaan van de familierechtelijke betrekking tussen een kind en zijn adoptiefouders.
 beschrijving:
 - Adoptie geschiedt door een uitspraak van de rechtbank op verzoek van twee personen samen of één persoon alleen (BW 1 art. 227); een buitenlandse adoptie wordt erkend op grond van het Haags adoptieverdrag of een verklaring voor recht (HUP Adoptie). De adoptie zelf is geen gemeentelijk product; de gemeente verwerkt de uitspraak (Utrecht). Adoptiefouders krijgen het gezag van rechtswege; een herroeping van de adoptie wordt ook als latere vermelding verwerkt (HUP Adoptie; Besluit burgerlijke stand art. 53, 54).
@@ -52,7 +49,7 @@ relaties:
   vindplaats: art. 2.57
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -61,7 +58,6 @@ beslist:
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
-    data_object: nee
     generiek: false
     typeregel: 15
   bronnen:

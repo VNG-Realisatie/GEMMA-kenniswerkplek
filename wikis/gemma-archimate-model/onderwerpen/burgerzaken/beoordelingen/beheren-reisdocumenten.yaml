@@ -55,9 +55,6 @@ kenmerken:
   leidt_tot_gebeurtenis:
     waarde: nee
     onderbouwing: Niet bij dit gedrag aanwijsbaar; de bedrijfsprocessen leiden tot de gebeurtenissen.
-  geautomatiseerd_verwerkt:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen geautomatiseerde verwerking als gegevensstructuur.
 definitie: Het behandelen van aanvragen, verstrekken en uitreiken van reisdocumenten en het verwerken van vermissing, inhouding en verval ervan.
 beschrijving:
 - De burgemeester neemt de aanvraag in ontvangst, verstrekt het reisdocument binnen vier weken en reikt het binnen twee weken daarna uit, voor wie als ingezetene met een adres in zijn gemeente in de basisregistratie personen staat (Paspoortwet art. 26, 40, 41, 42). Een aangewezen gemeente behandelt ook aanvragen van niet-ingezetenen (Paspoortbesluit art. 3.2, 4.2). De Nederlandse identiteitskaart heeft een eigen wet, maar valt voor vermissing, signalering en inhouding ook onder de Paspoortwet (art. 1 onder u, 25, 50b).
@@ -141,7 +138,7 @@ bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
 beslist:
   uitkomst:
     soort: element
@@ -150,7 +147,6 @@ beslist:
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
-    data_object: nee
     procesniveau: levensloopproces
     generiek: false
     typeregel: 15
