@@ -2,7 +2,7 @@
 id: rni-loket
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: RNI-loket
 onderwerpen:
 - burgerzaken
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rni-loket.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

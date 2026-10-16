@@ -110,7 +110,7 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'De adviescommissie (Awb art. 7:13) is geen element: het bestuursorgaan kan haar instellen; zij staat in de beschrijving.'
   gevolg: verwerkt
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

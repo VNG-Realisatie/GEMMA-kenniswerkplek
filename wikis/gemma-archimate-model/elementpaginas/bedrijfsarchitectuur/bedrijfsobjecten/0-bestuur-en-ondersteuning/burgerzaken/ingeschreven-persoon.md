@@ -2,7 +2,7 @@
 id: ingeschreven-persoon
 type: bedrijfsobject
 archimate_type: business-object
-status: review
+status: goedgekeurd
 naam: Ingeschreven persoon
 onderwerpen:
 - burgerzaken
@@ -14,6 +14,9 @@ match:
   gemma: exact
 data_objecten:
 - Ingeschreven persoon-data
+- Gezag-data
+- Nationaliteit-data
+- Verblijfstitel-data
 objectniveau: kernobject
 synoniemen:
 - IngeschrevenPersoon (GGM)
@@ -114,7 +117,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ingeschreven-persoon.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
@@ -218,6 +221,9 @@ De kenmerken met ja; de andere zijn nee.
 ### Data-objecten
 
 - [Ingeschreven persoon-data](../../../../applicatiearchitectuur/data-objecten/ingeschreven-persoon-data.md) *realisatie*: GGM-entiteit *IngeschrevenPersoon*, match exact.
+- [Gezag-data](../../../../applicatiearchitectuur/data-objecten/gezag-data.md) *realisatie*: GGM-entiteit *Gezagsverhouding*, match sterk.
+- [Nationaliteit-data](../../../../applicatiearchitectuur/data-objecten/nationaliteit-data.md) *realisatie*: GGM-entiteit *Nationaliteit*, match exact.
+- [Verblijfstitel-data](../../../../applicatiearchitectuur/data-objecten/verblijfstitel-data.md) *realisatie*: GGM-entiteit *Verblijfstitel*, match sterk.
 
 ## Herkomst
 

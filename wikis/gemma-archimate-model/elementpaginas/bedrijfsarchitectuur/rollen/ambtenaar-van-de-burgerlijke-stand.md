@@ -2,7 +2,7 @@
 id: ambtenaar-van-de-burgerlijke-stand
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Ambtenaar van de burgerlijke stand
 onderwerpen:
 - burgerzaken
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ambtenaar-van-de-burgerlijke-stand.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

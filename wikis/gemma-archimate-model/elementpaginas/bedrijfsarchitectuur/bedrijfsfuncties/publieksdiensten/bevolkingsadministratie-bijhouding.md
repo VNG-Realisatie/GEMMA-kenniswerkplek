@@ -2,7 +2,7 @@
 id: bevolkingsadministratie-bijhouding
 type: bedrijfsfunctie
 archimate_type: business-function
-status: review
+status: goedgekeurd
 naam: Bevolkingsadministratie bijhouding
 onderwerpen:
 - burgerzaken
@@ -30,7 +30,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bevolkingsadministratie-bijhouding.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

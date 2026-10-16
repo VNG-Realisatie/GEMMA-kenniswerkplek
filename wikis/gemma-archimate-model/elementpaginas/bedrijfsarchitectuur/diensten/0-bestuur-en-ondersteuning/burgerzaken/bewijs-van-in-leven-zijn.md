@@ -2,7 +2,7 @@
 id: bewijs-van-in-leven-zijn
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Bewijs van in leven zijn
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bewijs-van-in-leven-zijn.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

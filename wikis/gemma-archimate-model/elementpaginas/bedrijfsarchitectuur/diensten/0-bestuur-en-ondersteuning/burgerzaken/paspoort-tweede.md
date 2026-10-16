@@ -2,7 +2,7 @@
 id: paspoort-tweede
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Paspoort tweede
 onderwerpen:
 - burgerzaken
@@ -26,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling paspoort-tweede.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

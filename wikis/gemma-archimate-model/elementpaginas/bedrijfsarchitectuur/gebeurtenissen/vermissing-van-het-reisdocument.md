@@ -2,7 +2,7 @@
 id: vermissing-van-het-reisdocument
 type: gebeurtenis
 archimate_type: business-event
-status: review
+status: goedgekeurd
 naam: Vermissing van het reisdocument
 onderwerpen:
 - burgerzaken
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vermissing-van-het-reisdocument.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

@@ -2,7 +2,7 @@
 id: aanvrager-van-de-verklaring-omtrent-het-gedrag
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Aanvrager van de verklaring omtrent het gedrag
 onderwerpen:
 - burgerzaken
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling aanvrager-van-de-verklaring-omtrent-het-gedrag.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

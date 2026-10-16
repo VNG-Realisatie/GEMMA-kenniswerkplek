@@ -2,7 +2,7 @@
 id: beschikking-data
 type: data-object
 archimate_type: data-object
-status: review
+status: goedgekeurd
 naam: Beschikking-data
 element: Beschikking
 relatie: realisatie
@@ -17,7 +17,7 @@ ggm_beleidsdomein: Generiek Jeugd en Wmo
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beschikking.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Beschikking](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md).
+**Status: goedgekeurd** door de redacteur. Volgt de status van [Beschikking](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md).
 
 ## Betekenis
 

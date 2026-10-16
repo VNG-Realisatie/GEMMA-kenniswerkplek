@@ -2,7 +2,7 @@
 id: gemeentebegrafenis-data
 type: data-object
 archimate_type: data-object
-status: review
+status: goedgekeurd
 naam: Gemeentebegrafenis-data
 element: Gemeentebegrafenis
 relatie: realisatie
@@ -17,7 +17,7 @@ ggm_beleidsdomein: Gemeentebegrafenissen
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeentebegrafenis.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Gemeentebegrafenis](../../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md).
+**Status: goedgekeurd** door de redacteur. Volgt de status van [Gemeentebegrafenis](../../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md).
 
 ## Betekenis
 

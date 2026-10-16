@@ -2,7 +2,7 @@
 id: beschikking-aanvragen
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Beschikking aanvragen
 onderwerpen:
 - besluitvorming
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beschikking-aanvragen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

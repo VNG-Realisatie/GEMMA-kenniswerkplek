@@ -88,7 +88,7 @@ homoniemen:
 bronnen:
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
 - 2026-rvig-hup-algemeen
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -101,8 +101,6 @@ beslist:
     generiek: false
     typeregel: 18
   voor_te_leggen:
-  - data-object zonder sterke GGM-match
-  open:
   - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493

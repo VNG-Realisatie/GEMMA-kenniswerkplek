@@ -2,7 +2,7 @@
 id: bewijs-van-nederlanderschap
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Bewijs van nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bewijs-van-nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

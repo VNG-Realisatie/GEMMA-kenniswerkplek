@@ -73,7 +73,7 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-vng-gemma-proceshierarchie
 - 2026-vng-gemma-impact-ketensamenwerking
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -87,8 +87,6 @@ beslist:
     generiek: false
     typeregel: 15
   voor_te_leggen:
-  - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
-  open:
   - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

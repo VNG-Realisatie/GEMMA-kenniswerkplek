@@ -83,6 +83,22 @@ gemma:
   id: id-8576c90ac5104cf8ade8acadf2764432
   sterkte: exact
   onderbouwing: 'GEMMA-bedrijfsobject IngeschrevenPersoon, overgenomen uit het GGM (zelfde GGM-guid en definitie). Nieuw: de naam met spatie en een herkenbare definitie.'
+data_objecten:
+- naam: Gezag-data
+  ggm:
+    guid: EAID_C18BB25F_536F_4b80_BC7C_7855DF2D7389
+    sterkte: sterk
+    onderbouwing: 'GGM-entiteit Gezagsverhouding (Sociaal domein generiek), met indicatie gezag minderjarige en indicatie curateleregister en een relatie naar IngeschrevenPersoon: de gegevens van categorie 11 Gezagsverhouding van de persoonslijst, ook over curatele. De GGM-definitie is breder (ook arbeidsrelaties).'
+- naam: Nationaliteit-data
+  ggm:
+    guid: EAID_69B41CDD_C3F1_449b_92B4_8F7657840646
+    sterkte: exact
+    onderbouwing: 'GGM-entiteit Nationaliteit (RSGBPlus), met de reden van verkrijging en verlies: de gegevens van categorie 04 Nationaliteit van de persoonslijst. De Nederlandse nationaliteit heeft een eigen data-object bij Nederlanderschap.'
+- naam: Verblijfstitel-data
+  ggm:
+    guid: EAID_0F51B100_1C60_4d54_9B60_1C9BF9C856A2
+    sterkte: sterk
+    onderbouwing: 'GGM-entiteit Verblijfstitel (RSGBPlus), met de geldigheid en de code van de verblijfstitel: de gegevens van categorie 10 Verblijfstitel van de persoonslijst, die de IND levert. De GGM-definitie is algemeen; het GGM heeft een tweede entiteit Verblijfstitel (EAID_A660422D_E9ED_47c9_9978_480E57572775) met dezelfde definitie.'
 specialisaties:
 - naam: Ingezetene
   omschrijving: Ingeschreven persoon van wie het college van de gemeente waar hij zijn adres heeft de gegevens bijhoudt (HUP Achtergronden; Besluit BRP art. 21). Geen eigen pagina.
@@ -129,7 +145,7 @@ bronnen:
 - 2025-rvig-logisch-ontwerp-brp-2025q1
 - 2026-rvig-hup-achtergronden-en-begrippen
 - 2023-rvig-circulaire-adresonderzoek-brp
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
@@ -158,6 +174,53 @@ beslist:
     relatie: realisatie
     ggm_sterkte: exact
     pad: elementpaginas/applicatiearchitectuur/data-objecten/ingeschreven-persoon-data.md
+  - id: gezag-data
+    naam: Gezag-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/gezag-data.md
+    ggm:
+      ggm_entiteit: Gezagsverhouding
+      ggm_guid: EAID_C18BB25F_536F_4b80_BC7C_7855DF2D7389
+      ggm_uml_type: Class
+      ggm_beleidsdomein: Sociaal Domein Generiek
+      ggm_taakveld: 6 Sociaal Domein
+      ggm_diagram:
+      - Gezag
+      ggm_diagram_ids:
+      - EAID_227EBDFE_6FD0_4a47_85A4_FAC4AEFE003E
+      ggm_definitie: Een gezagsverhouding is een juridische of feitelijke relatie tussen twee partijen, waarbij de ene partij (de gezagsdrager) bevoegd is om instructies of richtlijnen te geven, en de andere partij (de ondergeschikte) verplicht is deze op te volgen. Deze verhouding speelt een belangrijke rol in verschillende contexten, zoals arbeidsrelaties, waarbij een werkgever zeggenschap heeft over een werknemer, of familierecht, waar ouders gezag uitoefenen over hun minderjarige kinderen. Een gezagsverhouding impliceert doorgaans een zekere mate van hiërarchie en verantwoordelijkheid, waarbij de gezagsdrager verplicht is om zijn bevoegdheden zorgvuldig en in het belang van de ondergeschikte uit te oefenen.
+    onderbouwing: 'GGM-entiteit Gezagsverhouding (Sociaal domein generiek), met indicatie gezag minderjarige en indicatie curateleregister en een relatie naar IngeschrevenPersoon: de gegevens van categorie 11 Gezagsverhouding van de persoonslijst, ook over curatele. De GGM-definitie is breder (ook arbeidsrelaties).'
+  - id: nationaliteit-data
+    naam: Nationaliteit-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/nationaliteit-data.md
+    ggm:
+      ggm_entiteit: Nationaliteit
+      ggm_guid: EAID_69B41CDD_C3F1_449b_92B4_8F7657840646
+      ggm_uml_type: Class
+      ggm_beleidsdomein: RSGBPlus
+      ggm_taakveld: 99 Kern
+      ggm_diagram:
+      - Kern:Personen
+      ggm_diagram_ids:
+      - EAID_30391B0F_CF52_4dc1_BC1B_36D428BF0120
+      ggm_definitie: De hoedanigheid van tot een bepaalde natie te behoren. Het wettelijk onderdaan zijn van een bepaalde staat (staatsburgerschap). Nationale oorsprong. De rechtsverhouding tussen de betrokkene en de staat.
+    onderbouwing: 'GGM-entiteit Nationaliteit (RSGBPlus), met de reden van verkrijging en verlies: de gegevens van categorie 04 Nationaliteit van de persoonslijst. De Nederlandse nationaliteit heeft een eigen data-object bij Nederlanderschap.'
+  - id: verblijfstitel-data
+    naam: Verblijfstitel-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/verblijfstitel-data.md
+    ggm:
+      ggm_entiteit: Verblijfstitel
+      ggm_guid: EAID_0F51B100_1C60_4d54_9B60_1C9BF9C856A2
+      ggm_uml_type: Class
+      ggm_beleidsdomein: RSGBPlus
+      ggm_taakveld: 99 Kern
+      ggm_definitie: Rechtsgrond op basis waarvan men bevoegd is in een land te verblijven.
+    onderbouwing: 'GGM-entiteit Verblijfstitel (RSGBPlus), met de geldigheid en de code van de verblijfstitel: de gegevens van categorie 10 Verblijfstitel van de persoonslijst, die de IND levert. De GGM-definitie is algemeen; het GGM heeft een tweede entiteit Verblijfstitel (EAID_A660422D_E9ED_47c9_9978_480E57572775) met dezelfde definitie.'
   ggm:
     ggm_entiteit: IngeschrevenPersoon
     ggm_guid: EAID_AF9534B0_7CBD_4061_9276_A7B6698B383A
