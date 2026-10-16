@@ -2,7 +2,7 @@
 id: behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
 type: bedrijfsproces
 archimate_type: business-process
-status: review
+status: goedgekeurd
 naam: Behandelen aanvraag omwisseling buitenlands rijbewijs
 onderwerpen:
 - burgerzaken
@@ -27,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

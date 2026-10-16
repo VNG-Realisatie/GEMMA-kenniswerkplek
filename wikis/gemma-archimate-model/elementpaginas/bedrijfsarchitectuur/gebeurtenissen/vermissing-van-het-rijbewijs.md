@@ -2,7 +2,7 @@
 id: vermissing-van-het-rijbewijs
 type: gebeurtenis
 archimate_type: business-event
-status: review
+status: goedgekeurd
 naam: Vermissing van het rijbewijs
 onderwerpen:
 - burgerzaken
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vermissing-van-het-rijbewijs.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

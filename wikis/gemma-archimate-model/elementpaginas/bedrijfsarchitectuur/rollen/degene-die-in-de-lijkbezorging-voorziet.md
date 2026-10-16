@@ -2,7 +2,7 @@
 id: degene-die-in-de-lijkbezorging-voorziet
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Degene die in de lijkbezorging voorziet
 onderwerpen:
 - lijkbezorging
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling degene-die-in-de-lijkbezorging-voorziet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

@@ -2,7 +2,7 @@
 id: bezorgen-stoffelijk-overschot
 type: bedrijfsinteractie
 archimate_type: business-interaction
-status: review
+status: goedgekeurd
 naam: Bezorgen stoffelijk overschot
 onderwerpen:
 - lijkbezorging
@@ -25,11 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bezorgen-stoffelijk-overschot.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
-
-## Ter discussie
-
-- bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

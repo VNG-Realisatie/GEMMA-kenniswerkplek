@@ -2,7 +2,7 @@
 id: gemeentelijke-lijkschouwer
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Gemeentelijke lijkschouwer
 onderwerpen:
 - lijkbezorging
@@ -19,7 +19,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeentelijke-lijkschouwer.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

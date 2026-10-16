@@ -2,7 +2,7 @@
 id: houder-van-het-crematorium
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Houder van het crematorium
 onderwerpen:
 - lijkbezorging
@@ -19,7 +19,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling houder-van-het-crematorium.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

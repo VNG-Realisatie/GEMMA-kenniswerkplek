@@ -2,7 +2,7 @@
 id: officiele-documenten-verstrekking
 type: bedrijfsfunctie
 archimate_type: business-function
-status: review
+status: goedgekeurd
 naam: Officiële documenten verstrekking
 onderwerpen:
 - burgerzaken
@@ -31,7 +31,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling officiele-documenten-verstrekking.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

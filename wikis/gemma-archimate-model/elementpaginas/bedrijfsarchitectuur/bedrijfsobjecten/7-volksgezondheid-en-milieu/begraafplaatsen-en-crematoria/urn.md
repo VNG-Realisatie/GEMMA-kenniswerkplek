@@ -2,7 +2,7 @@
 id: urn
 type: bedrijfsobject
 archimate_type: business-object
-status: review
+status: goedgekeurd
 naam: Urn
 onderwerpen:
 - lijkbezorging
@@ -26,11 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling urn.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

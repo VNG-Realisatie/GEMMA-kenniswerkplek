@@ -2,7 +2,7 @@
 id: burgerlijke-stand-diensten
 type: bedrijfsfunctie
 archimate_type: business-function
-status: review
+status: goedgekeurd
 naam: Burgerlijke stand diensten
 onderwerpen:
 - burgerzaken
@@ -31,7 +31,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling burgerlijke-stand-diensten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

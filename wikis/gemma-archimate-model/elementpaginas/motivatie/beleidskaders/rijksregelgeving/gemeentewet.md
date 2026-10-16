@@ -2,7 +2,7 @@
 id: gemeentewet
 type: beleidskader
 archimate_type: driver
-status: review
+status: goedgekeurd
 naam: Gemeentewet
 onderwerpen:
 - bestuur-en-organisatie
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeentewet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

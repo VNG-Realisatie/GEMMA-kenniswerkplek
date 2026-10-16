@@ -2,7 +2,7 @@
 id: ambtenaar-burgerlijke-stand-aanvragen
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Ambtenaar burgerlijke stand aanvragen
 onderwerpen:
 - burgerzaken
@@ -27,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ambtenaar-burgerlijke-stand-aanvragen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

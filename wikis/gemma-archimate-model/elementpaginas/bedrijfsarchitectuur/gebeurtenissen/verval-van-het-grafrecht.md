@@ -2,7 +2,7 @@
 id: verval-van-het-grafrecht
 type: gebeurtenis
 archimate_type: business-event
-status: review
+status: goedgekeurd
 naam: Verval van het grafrecht
 onderwerpen:
 - lijkbezorging
@@ -19,7 +19,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verval-van-het-grafrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

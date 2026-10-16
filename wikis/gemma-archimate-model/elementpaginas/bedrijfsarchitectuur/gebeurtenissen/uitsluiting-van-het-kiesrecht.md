@@ -2,7 +2,7 @@
 id: uitsluiting-van-het-kiesrecht
 type: gebeurtenis
 archimate_type: business-event
-status: review
+status: goedgekeurd
 naam: Uitsluiting van het kiesrecht
 onderwerpen:
 - burgerzaken
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling uitsluiting-van-het-kiesrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

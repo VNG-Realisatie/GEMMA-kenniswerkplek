@@ -49,7 +49,7 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst Zienswijze; de Deelservice Inspraakprocedure (Vaststellen omgevingsplan) is een interne deeldienst voor het omgevingsplan. Nieuw voor GEMMA.
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: review
+status: goedgekeurd
 beslist:
   uitkomst:
     soort: element

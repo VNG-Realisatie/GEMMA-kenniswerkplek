@@ -2,7 +2,7 @@
 id: herbegraven-of-alsnog-cremeren
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Herbegraven of alsnog cremeren
 onderwerpen:
 - lijkbezorging
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling herbegraven-of-alsnog-cremeren.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

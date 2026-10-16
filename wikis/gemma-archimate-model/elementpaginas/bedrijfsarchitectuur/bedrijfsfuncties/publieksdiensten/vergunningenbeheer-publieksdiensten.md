@@ -2,7 +2,7 @@
 id: vergunningenbeheer-publieksdiensten
 type: bedrijfsfunctie
 archimate_type: business-function
-status: review
+status: goedgekeurd
 naam: Vergunningenbeheer Publieksdiensten
 onderwerpen:
 - lijkbezorging
@@ -30,7 +30,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vergunningenbeheer-publieksdiensten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

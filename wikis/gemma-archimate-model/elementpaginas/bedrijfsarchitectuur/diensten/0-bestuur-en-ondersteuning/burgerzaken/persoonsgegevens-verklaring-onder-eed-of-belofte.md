@@ -2,7 +2,7 @@
 id: persoonsgegevens-verklaring-onder-eed-of-belofte
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Persoonsgegevens verklaring onder eed of belofte
 onderwerpen:
 - burgerzaken
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling persoonsgegevens-verklaring-onder-eed-of-belofte.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

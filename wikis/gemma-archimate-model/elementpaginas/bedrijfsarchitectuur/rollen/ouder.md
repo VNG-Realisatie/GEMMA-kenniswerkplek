@@ -2,7 +2,7 @@
 id: ouder
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Ouder
 onderwerpen:
 - burgerzaken
@@ -35,7 +35,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ouder.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

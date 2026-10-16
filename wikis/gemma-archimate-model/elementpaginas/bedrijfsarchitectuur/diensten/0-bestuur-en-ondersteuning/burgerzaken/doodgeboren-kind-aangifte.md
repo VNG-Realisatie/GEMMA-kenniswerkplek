@@ -2,7 +2,7 @@
 id: doodgeboren-kind-aangifte
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Doodgeboren kind aangifte
 onderwerpen:
 - burgerzaken
@@ -28,7 +28,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling doodgeboren-kind-aangifte.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
