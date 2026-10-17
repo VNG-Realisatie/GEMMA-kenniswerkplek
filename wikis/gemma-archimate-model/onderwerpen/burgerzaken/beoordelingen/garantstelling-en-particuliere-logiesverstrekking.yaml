@@ -27,13 +27,13 @@ toelichting: 'Specialisatie zonder pagina van de dienst Legalisatie handtekening
 beslist:
   uitkomst:
     soort: specialisatie
-    regel: 21
+    regel: 22
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-service
     voorleggen: false
     genoemd_begrip: Legalisatie handtekening
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
   - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is

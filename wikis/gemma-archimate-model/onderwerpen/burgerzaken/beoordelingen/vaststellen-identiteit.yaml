@@ -68,13 +68,13 @@ synoniemen:
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 27
+    regel: 28
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     genoemd_begrip: Inschrijven ingezetene
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-nvvb-id-protocol-medewerkers
   - 2026-rvig-hup-immigratie

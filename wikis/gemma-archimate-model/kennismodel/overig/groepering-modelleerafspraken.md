@@ -40,3 +40,4 @@ gegenereerd: tools/kennismodel.py
 | aggregatie | [Rol](../bedrijfsarchitectuur/rol-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Doelgroepindeling |
 | aggregatie | [Bedrijfssamenwerking](../bedrijfsarchitectuur/bedrijfssamenwerking-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Doelgroepindeling |
 | aggregatie | [Kanaal](../bedrijfsarchitectuur/kanaal-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Doelgroepindeling |
+| aggregatie | [Capability](../strategie/capability-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Capabilitykaart |

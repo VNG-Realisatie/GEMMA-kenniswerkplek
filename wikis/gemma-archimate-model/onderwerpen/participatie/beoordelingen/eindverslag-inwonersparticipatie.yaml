@@ -52,7 +52,7 @@ status: afgewezen
 beslist:
   uitkomst:
     soort: element
-    regel: 35
+    regel: 36
     toelichting: 'Passief (kern ja, 1/2, ontbreekt: *levenscyclus*)'
     paginatype: bedrijfsobject
     archimate_type: business-object
@@ -60,7 +60,7 @@ beslist:
     redenen:
     - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
     generiek: false
-    typeregel: 18
+    typeregel: 19
   voor_te_leggen:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:

@@ -227,13 +227,13 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-rvo-aangifte-en-akte-van-overlijden
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

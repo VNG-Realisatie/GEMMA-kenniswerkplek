@@ -72,14 +72,14 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 32
+    regel: 33
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: kernobject
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

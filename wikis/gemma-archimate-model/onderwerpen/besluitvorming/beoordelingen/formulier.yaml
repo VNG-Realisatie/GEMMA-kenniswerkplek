@@ -16,7 +16,7 @@ toelichting: 'Representatie van de aanvraag, geen pagina: het bestuursorgaan kan
 beslist:
   uitkomst:
     soort: geen_pagina
-    regel: 16
+    regel: 17
     toelichting: Waarneembare vorm
     archimate_type: representation
     voorleggen: false

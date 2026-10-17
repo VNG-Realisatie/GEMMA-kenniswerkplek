@@ -49,6 +49,20 @@ Waar staat elk element in het model? Een **indeling** ordent naar één criteriu
 - Een product hangt via `domein` direct aan de domeingroepering: ArchiMate laat een functie geen product aggregeren. De diensten die het omvat, hangen onder hun functie.
 - Een functie bedient een proces; ze aggregeert geen proces.
 
+## Capabilitykaart
+
+|  |  |
+|---|---|
+| Deelt in | [Capability](strategie/capability-modelleerafspraken.md) |
+| Naar | het GEMMA-domein |
+| Niveaus | domein › capability › deelcapability |
+| Groepering | wiki |
+| In Archi | aggregatie vanuit de domeingroepering (een capability) of vanuit de capability (een deelcapability), in de map Capabilitykaart |
+| Eigenschappen | `domein` |
+
+- Een eigen kaart naast de Functie-indeling naar domein, met dezelfde domeingroeperingen: de functies zeggen welke activiteiten bij elkaar horen, de kaart wat de gemeente moet kunnen.
+- Een capability over meer domeinen hangt onder Niet domeingebonden.
+
 ## Procesindeling naar kernobject
 
 |  |  |

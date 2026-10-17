@@ -48,7 +48,7 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: Hoedanigheid (kern ja)
     paginatype: rol
     archimate_type: business-role

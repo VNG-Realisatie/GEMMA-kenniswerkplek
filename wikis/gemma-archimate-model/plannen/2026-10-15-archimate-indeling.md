@@ -189,6 +189,16 @@ Open voor stap 13:
 - **Brontype van een VNG-impactanalyse, een implementatieplan of een beleidsadvies**: in sources/index is dat nu `overig` (bijvoorbeeld de GEMMA-impactanalyse ketensamenwerking), niet `beleid`. Het brontype bepaalt de plaats in de regel Bronvoorrang. Dit wordt voorgelegd vóór de wijziging van de regel.
 - **De GEMMA-functies onder *Ontvangst***: een kandidaat voor een terugmelding (zie de bevindingen van de kalibratie). Dit punt staat los van het bouwen.
 
+## Uitkomst stap 13 (2026-10-17)
+
+Vastgelegd in ARCHITECTURE.md (§3.4, §4.1 met het kader als tabel, §4.4, §7), AGENTS.md (regel Elke claim een bron), [modelleerregels](../kennismodel/modelleerregels.md) en het kennismodel (`tools/kennismodel.py`, `tools/bepaal_type.py`), na akkoord van de redacteur:
+
+- **Brontype**: landelijke impactanalyses, implementatieplannen en beleidsadviezen zijn `richtlijn` (regel Bronvoorrang); geen nieuw brontype.
+- **Strategisch tegenover uitvoerend**: een capability is strategisch en verandert met de opgaven van de gemeente; een functie is uitvoerend en verandert met de clustering van het werk. Het staat in de vragen bij *vermogen* en *gegroepeerd gedrag* en in de duiding van beide typen. Een vermogen met een uitvoerder (*toegewezen partij*) of objecten (*gebruikt objecten*) geeft een conflict (stap 3), omdat die kenmerken alleen bij gedrag passen.
+- **Type**: kernrelatie *gerealiseerd door* (één kenmerk voor dienst en capability); *beoordeelbaar*, *onderscheidend* en *stabiel over tijd* zijn een eis. Laag Strategie: Resource, Waardestroom en Handelwijze zijn elementtypen zonder element; realisatie vanuit ander gedrag dan een functie valt buiten het kennismodel.
+- **Woordbudget**: kennismodel 17.100 (het kennismodel was eerst ingekort, commit 487489b; K8 vervalt), AGENTS.md 1.740.
+- **Nog niet**: de toets op ten minste twee realiserende functies (K3), de render, de export en de beoordelingen van capabilities: stap 14.
+
 ## Deel 1 — Matrix en lichtere kenmerken (denkniveau hoog)
 
 ### De matrix

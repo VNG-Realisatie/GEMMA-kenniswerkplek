@@ -27,7 +27,7 @@ Fase A kiest eerst het vak: de laag, het aspect en intern of extern, zoals in Ar
 | bedrijf | Actor, Rol, Bedrijfssamenwerking | Kanaal | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie | Dienst | Bedrijfsobject, Afspraak, Representatie (geen pagina) | Product |
 | applicatie | zonder element | zonder element | zonder element | zonder element | Data-object (afgeleid uit de GGM-match) | — |
 | technologie | zonder element: komt misschien nog | | | | | |
-| strategie | Capability (Vermogen): buiten dit model | | | | | |
+| strategie | Resource: zonder element | | Capability; Waardestroom en Handelwijze: zonder element | | | |
 | motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |
 | overig | | | | | | Locatie (geen pagina), Groepering (indeling) |
 
@@ -39,6 +39,7 @@ Fase A kiest eerst het vak: de laag, het aspect en intern of extern, zoals in Ar
 | `bedrijf/gedrag-extern` | Dienst | *gedrag* (volgt uit het vak) | *aangeboden gedrag* (volgt uit het vak) | — |
 | `bedrijf/passief` | Bedrijfsobject, Afspraak, Representatie (geen pagina) | `ding` (volgt uit het vak) | — | *afspraak*, *waarneembare vorm* |
 | `bedrijf/samengesteld` | Product | *aanbod als geheel* (volgt uit het vak) | — | — |
+| `strategie/gedrag` | Capability | *vermogen* (volgt uit het vak) | — | — |
 | `motivatie` | Beleidskader | *regeling als geheel* (volgt uit het vak) | — | *landelijk* |
 | `overig/samengesteld` | Locatie (geen pagina) | *plaats* (volgt uit het vak) | — | — |
 
@@ -54,7 +55,7 @@ Beantwoord de vragen op het pad, in twee fasen (`tools/bepaal_type.py vragen <id
 |---|---|---|---|---|---|
 | 1 | *herkenbaar* (standaard ja) | Kennen domeinexperts dit als een eigen begrip, onder deze of een gangbare naam? | het komt in wet, beleid of praktijk voor als zelfstandig begrip (Omgevingsvergunning) | technisch hulpgegeven of constructie van de modelleur (volgnummer van een dossierregel) | ArchiMate (concept in een domein); GEMMA (herkenbaar voor domeinexperts) |
 | 2 | *gemeentelijk* (standaard ja) | Ziet, doet of beslist de gemeente hierover; of werkt de gemeente structureel samen met deze partij (opdrachtgever, mede-eigenaar, prestatieafspraken, wettelijke overlegplicht)? | de gemeente voert uit, beslist, stelt vast, of is structureel partner (GGD; behandelende arts via de overlegplicht met de lijkschouwer) | alleen context (gedeputeerde staten als beroepsinstantie), of de interne zaak van een ketenpartner (de medische behandeling door de arts) | GEMMA (gemeentelijk perspectief) |
-| 3 | *buiten dit model* | Is het een doel, waarde, drijfveer, principe, losse norm of eis, vermogen of thema, en geen beleidskader? Noem het ArchiMate-type. | armoedebestrijding (doel); 'binnen acht weken beslissen' (norm uit één artikel) | bijstandsuitkering; Wet op de lijkbezorging (beleidskader) | ArchiMate (motivatie-, strategie- en overige lagen) |
+| 3 | *buiten dit model* | Is het een doel, waarde, drijfveer, principe, losse norm of eis, opgave of thema, en geen beleidskader? Noem het ArchiMate-type. | armoedebestrijding (doel); 'binnen acht weken beslissen' (norm uit één artikel) | bijstandsuitkering; Wet op de lijkbezorging (beleidskader) | ArchiMate (motivatie-, strategie- en overige lagen) |
 | 4 | *slechts eigenschap* | Is het alleen een eigenschap, status, waarde, classificatie of indeling van één ander begrip, ook een doelgroep? Noem dat begrip. | bouwjaar (van Pand); minima (indeling van Inwoner) | Pand | GEMMA (negatieve toets: eigenschap, status, classificatie) |
 | 5 | *eigen identiteit* (standaard ja) | Bestaat het los van één ander begrip, en is het meer dan een onderdeel, deelstap, processtap of handeling daarvan? Noem bij nee dat begrip. | Beschikking; uitgifte van een graf | ondertekening van een besluit (deelstap) | GEMMA (eigen bestaan; procesarchitectuur: processtap, handeling) |
 | 6 | *betekenis in onderwerp* (standaard ja) | Hoort het begrip primair bij dit onderwerp, het eerste in `onderwerpen` (het thuisonderwerp), en niet bij een ander onderwerp? Noem bij nee het onderwerp waar het thuishoort. | Graf in lijkbezorging | akte van overlijden in lijkbezorging (hoort bij de burgerlijke stand) | GEMMA (betekenis binnen het onderwerp) |
@@ -71,81 +72,89 @@ Beantwoord de vragen op het pad, in twee fasen (`tools/bepaal_type.py vragen <id
 | 12 | *plaats* | Is het een fysieke plaats als zodanig, en geen gebiedsindeling als gegeven? | stadskantoor als vestigingsplaats | wijk (indeling) | ArchiMate (Location) |
 | 13 | *aanbod als geheel* | Is het een gebundeld aanbod van diensten met bijbehorende afspraken, dat als geheel aan een afnemer wordt geleverd? | bewonersparkeervergunning zoals de productencatalogus haar aanbiedt | parkeren; één UPL-item als zodanig (een dienst) | GEMMA (definitie Product) |
 | 14 | *regeling als geheel* | Is het een concreet benoemde wet, AMvB, ministeriële regeling of verordening als geheel, en niet één artikel, een soort regeling of een richtlijn? | Wet op de lijkbezorging; modelverordening participatie | 'verordening' als soort (bedrijfsobject Regeling); artikel 16 (losse norm); Circulaire adresonderzoek BRP (richtlijn, blijft bron) | GEMMA (definitie Beleidskader) |
+| 15 | *vermogen* | Beschrijft het wat de gemeente moet kunnen om haar opgaven waar te maken, waarin zij investeert en wat met haar strategische opgaven verandert, los van hoe, door wie, in welke volgorde en met welk kanaal of systeem? | Identiteit vaststellen | Aanvraag controleren op volledigheid (te concreet: een processtap) | GEMMA (definitie Capability); wiki (kader Capability, functie en proces) |
 
 **Partij.** Alleen bij *handelende partij*, *hoedanigheid*, *samenwerkingsverband* of *toegangspunt*; *soort partij* bij *handelende partij* en *samenwerkingsverband*.
 
 | Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
 |---|---|---|---|---|---|
-| 15 | *los van verantwoordelijkheid* | Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | kerkgenootschap; burgemeester | houder van de begraafplaats | ArchiMate (actor tegenover rol) |
-| 16 | *eigen rechtspersoon* | Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | GGD (openbaar lichaam) | Zorg- en Veiligheidshuis | wiki (scheidslijn actor en bedrijfssamenwerking) |
-| 17 | *vervult een rol* † | Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? Noem de rol. | kerkgenootschap vervult Houder van de begraafplaats | partij die alleen genoemd wordt | GEMMA (actor wordt toegewezen aan rol) |
-| 18 | *voert gedrag uit* † | Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? Noem het. | Houder van de begraafplaats → Ruimen graf | rol zonder aanwijsbaar gedrag | GEMMA (rol wordt toegewezen aan functie); wiki (ook aan proces) |
-| 19 | *soort partij* | Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Gemeente; College van B&W; Kerkgenootschap; Rijk, Provincie en Waterschap (de bestuurslaag als geheel, ook al is er maar één Rijk) | gemeente Utrecht, provincie Utrecht (één exemplaar, niet elke gemeente heeft ermee te maken); een afzonderlijk ministerie of rijksdienst (minister van BZK, IND) is geen eigen actor maar staat in de beschrijving van Rijk | GEMMA (referentiemodel voor alle gemeenten); wiki (Rijk) |
-| 20 | *ontsluit een dienst* † | Komt via dit kanaal aanwijsbaar een gemeentelijke dienst beschikbaar? Noem de dienst. | website → Melding openbare ruimte doen | kanaal zonder aanwijsbare dienst | GEMMA (kanaal wordt toegewezen aan dienst) |
+| 16 | *los van verantwoordelijkheid* | Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | kerkgenootschap; burgemeester | houder van de begraafplaats | ArchiMate (actor tegenover rol) |
+| 17 | *eigen rechtspersoon* | Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | GGD (openbaar lichaam) | Zorg- en Veiligheidshuis | wiki (scheidslijn actor en bedrijfssamenwerking) |
+| 18 | *vervult een rol* † | Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? Noem de rol. | kerkgenootschap vervult Houder van de begraafplaats | partij die alleen genoemd wordt | GEMMA (actor wordt toegewezen aan rol) |
+| 19 | *voert gedrag uit* † | Is de rol of het verband aanwijsbaar toegewezen aan een gemeentelijk proces of een functie? Noem het. | Houder van de begraafplaats → Ruimen graf | rol zonder aanwijsbaar gedrag | GEMMA (rol wordt toegewezen aan functie); wiki (ook aan proces) |
+| 20 | *soort partij* | Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Gemeente; College van B&W; Kerkgenootschap; Rijk, Provincie en Waterschap (de bestuurslaag als geheel, ook al is er maar één Rijk) | gemeente Utrecht, provincie Utrecht (één exemplaar, niet elke gemeente heeft ermee te maken); een afzonderlijk ministerie of rijksdienst (minister van BZK, IND) is geen eigen actor maar staat in de beschrijving van Rijk | GEMMA (referentiemodel voor alle gemeenten); wiki (Rijk) |
+| 21 | *ontsluit een dienst* † | Komt via dit kanaal aanwijsbaar een gemeentelijke dienst beschikbaar? Noem de dienst. | website → Melding openbare ruimte doen | kanaal zonder aanwijsbare dienst | GEMMA (kanaal wordt toegewezen aan dienst) |
 
 **Soort gedrag.** Het keuzeveld `soort_gedrag`, alleen bij *gedrag*: één waarde uit het vak; valt weg bij gedrag extern (*aangeboden gedrag*).
 
 | Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
 |---|---|---|---|---|---|
-| 21 | *per keer doorlopen* | Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? | aanvraag omgevingsvergunning behandelen | vergunningverlening | GEMMA (definitie Bedrijfsproces) |
-| 22 | *groepeert processen* | Is het een groepering van bedrijfsprocessen van één soort werk, die niet per geval wordt doorlopen? | Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk) | Beheren grafrechten (loopt per grafrecht van begin tot eind door); Verzorgen lijkbezorging (een groepering naar taak is het beleidsdomein, geen proces) | GEMMA (definitie Procescluster, regel 409 en 419-420; processenlandschap naar soort werk); wiki (geen taak) |
-| 23 | *gegroepeerd gedrag* | Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'? | vergunningverlening; belastingheffing | aanslag opleggen | GEMMA (definitie Bedrijfsfunctie) |
-| 24 | *toestandsverandering* | Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? | verhuizing; aanvraag ontvangen; beslistermijn verstreken | verhuizing doorgeven | GEMMA (definitie Gebeurtenis) |
-| 25 | *aangeboden gedrag* | Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | melding openbare ruimte doen | melding afhandelen | NORA (definitie Dienst) |
-| 26 | *gezamenlijk gedrag* | Kan het alleen door twee of meer partijen samen worden uitgevoerd, zoals een ketensamenwerking waarin de bedrijfsprocessen van de partijen samenkomen? | Bezorgen stoffelijk overschot (ketensamenwerking van gemeente, arts en uitvaartondernemer); keukentafelgesprek | beschikking opstellen; Treffen maatregel bij besmet lijk (de GGD adviseert alleen) | ArchiMate (Business Interaction); GEMMA Online, Proceshiërarchie (ketensamenwerking als bedrijfsinteractie) |
+| 22 | *per keer doorlopen* | Is het een reeks opeenvolgende activiteiten die per geval van begin tot eind wordt doorlopen? | aanvraag omgevingsvergunning behandelen | vergunningverlening | GEMMA (definitie Bedrijfsproces) |
+| 23 | *groepeert processen* | Is het een groepering van bedrijfsprocessen van één soort werk, die niet per geval wordt doorlopen? | Behandelen vergunningaanvragen lijkbezorging (cluster naar soort werk) | Beheren grafrechten (loopt per grafrecht van begin tot eind door); Verzorgen lijkbezorging (een groepering naar taak is het beleidsdomein, geen proces) | GEMMA (definitie Procescluster, regel 409 en 419-420; processenlandschap naar soort werk); wiki (geen taak) |
+| 24 | *gegroepeerd gedrag* | Is het een doorlopende groepering van werk dat de organisatie uitvoert, op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd? Wat de gemeente moet kunnen, strategisch, is een capability (vak strategie). | vergunningverlening; belastingheffing | aanslag opleggen (proces) | GEMMA (definitie Bedrijfsfunctie) |
+| 25 | *toestandsverandering* | Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat gevolgen heeft? | verhuizing; aanvraag ontvangen; beslistermijn verstreken | verhuizing doorgeven | GEMMA (definitie Gebeurtenis) |
+| 26 | *aangeboden gedrag* | Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de behoefte van de afnemer en los van hoe zij wordt uitgevoerd? | melding openbare ruimte doen | melding afhandelen | NORA (definitie Dienst) |
+| 27 | *gezamenlijk gedrag* | Kan het alleen door twee of meer partijen samen worden uitgevoerd, zoals een ketensamenwerking waarin de bedrijfsprocessen van de partijen samenkomen? | Bezorgen stoffelijk overschot (ketensamenwerking van gemeente, arts en uitvaartondernemer); keukentafelgesprek | beschikking opstellen; Treffen maatregel bij besmet lijk (de GGD adviseert alleen) | ArchiMate (Business Interaction); GEMMA Online, Proceshiërarchie (ketensamenwerking als bedrijfsinteractie) |
 
-**Gedrag.** Alleen bij *gedrag*; *afnemer* en *benoembaar resultaat* ook bij *aanbod als geheel*.
+**Gedrag.** Alleen bij *gedrag*; *afnemer* en *benoembaar resultaat* ook bij *aanbod als geheel*, *stabiel over tijd* en *gerealiseerd door* ook bij *vermogen*.
 
 | Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
 |---|---|---|---|---|---|
-| 27 | *toegewezen partij* † | Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? Noem de rol. | Ruimen graf (Houder van de begraafplaats) | draagvlak creëren | ArchiMate (toewijzing van rol aan gedrag) |
-| 28 | *gebruikt objecten* † | Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? Noem object en handeling. | Inspraak (registreert zienswijze) | burgerberaad | ArchiMate (toegang van gedrag tot object); wiki (handelingen) |
-| 29 | *aanleiding* † | Start het door een aanwijsbare gebeurtenis, verzoek of termijn? Noem die. | overheidsparticipatie (verzoek ingediend) | kennisdeling | ArchiMate (triggering); GEMMA (procesarchitectuur) |
-| 30 | *benoembaar resultaat* | Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? Noem het. | opgraving (opgegraven lijk) | informeren | GEMMA (definities Bedrijfsproces en Product: resultaat, waarde voor de afnemer) |
-| 31 | *komt herhaald voor* | Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | inspraak (per ontwerpbesluit); overlijden | invoeren van de participatieverordening | GEMMA (proces als herhaalbare werkwijze) |
-| 32 | *eigen normering* | Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? Noem het artikel. | inspraak (afdeling 3.4 Awb) | burgerberaad (vormvrij) | GEMMA (proces met eigen spelregels) |
-| 33 | *stabiel over tijd* | Blijft deze groepering bestaan als de organisatie of de werkwijze verandert? | participatie; belastingheffing | projectteam Omgevingswet | ArchiMate en GEMMA (bedrijfsfunctiemodel) |
-| 34 | *afnemer* | Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? Noem die. | melding openbare ruimte doen (inwoner) | interne registratiestap | NORA (definitie Dienst); GEMMA (definitie Product, rol Klant) |
-| 35 | *gerealiseerd door* † | Is er een proces of functie aanwijsbaar dat de dienst uitvoert? Noem het. | Onderhoud van graven (gerealiseerd door het proces dat graven onderhoudt) | dienst zonder aanwijsbare uitvoering | GEMMA (proces en functie realiseren dienst) |
-| 36 | *leidt tot gedrag* † | Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? Noem het. | Overlijden → Uitvoeren lijkbezorging | voorval zonder gemeentelijk gevolg | GEMMA (gebeurtenis triggert proces) |
-| 37 | *bijdrage aan groter proces* † | Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? Noem dat proces. | Verlenen grafrecht (in Beheren grafrechten); toetsen indieningsvereisten (in behandelen aanvraag) | Beheren grafrechten (omvat zelf de hele levensloop) | GEMMA Online, Proceshiërarchie (bedrijfsproces en deelproces) |
-| 38 | *klant tot klant* | Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? Noem begin en eind. | Behandelen aanvraag reisdocument (van de aanvraag tot de uitreiking of weigering) | Uitreiken reisdocument (volgt op de verstrekking, voor hetzelfde geval) | GEMMA Online, Proceshiërarchie (bedrijfsproces klant-tot-klant, PH 81; deelproces levert een deeldienst, PH 83) |
-| 39 | *omvat processen* † | Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? Noem ze. | Behandelen vergunningaanvragen lijkbezorging (Verlenen verlof tot begraving of crematie, Opgraven stoffelijk overschot) | een proces met één stap | GEMMA (procescluster aggregeert bedrijfsprocessen, regel 419-420) |
-| 40 | *omvat levensloop* | Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? Noem het object. | Beheren grafrechten (Grafrecht: van uitgifte tot verval); Toestaan lijkbezorging (het deel van de gemeente als overheid in de levensloop van het stoffelijk overschot) | Verlenen grafrecht (één mutatie in die levensloop) | GEMMA Online, Proceshiërarchie (cluster van bedrijfsprocessen over één thema, PH 91); wiki (levensloopproces; één per partij binnen een ketensamenwerking) |
-| 41 | *eigen besluit* | Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. | Verlenen grafrecht (college, Wlb art. 28) | Onderhouden graf (feitelijk handelen) | GEMMA (procesbouwstenen: besluiten) |
-| 42 | *levert aanbod* † | Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). | Onderhouden graf (grafonderhoud) | interne registratiestap | GEMMA (Product en dienst procesarchitectuur, UPL) |
-| 43 | *bedient gedrag* † | Ondersteunt de functie aanwijsbaar een proces? Noem het. | Exploiteren van begraafplaatsen bedient Ruimen graf | functie zonder aanwijsbaar proces | GEMMA (functie bedient proces, regel 597 en 604) |
-| 44 | *in functie-indeling* † | Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. | Exploiteren van begraafplaatsen (onder Exploitatie fysieke leefomgeving) | Lijkbezorging als functie | GEMMA (Functie-indeling naar domein) |
-| 45 | *leidt tot gebeurtenis* † | Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. | Vervallen verklaren grafrecht → Verval van het grafrecht | een tussenstap zonder eigen uitkomst | GEMMA (proces triggert gebeurtenis, regel 924) |
+| 28 | *toegewezen partij* † | Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? Noem de rol. | Ruimen graf (Houder van de begraafplaats) | draagvlak creëren | ArchiMate (toewijzing van rol aan gedrag) |
+| 29 | *gebruikt objecten* † | Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? Noem object en handeling. | Inspraak (registreert zienswijze) | burgerberaad | ArchiMate (toegang van gedrag tot object); wiki (handelingen) |
+| 30 | *aanleiding* † | Start het door een aanwijsbare gebeurtenis, verzoek of termijn? Noem die. | overheidsparticipatie (verzoek ingediend) | kennisdeling | ArchiMate (triggering); GEMMA (procesarchitectuur) |
+| 31 | *benoembaar resultaat* | Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? Noem het. | opgraving (opgegraven lijk) | informeren | GEMMA (definities Bedrijfsproces en Product: resultaat, waarde voor de afnemer) |
+| 32 | *komt herhaald voor* | Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | inspraak (per ontwerpbesluit); overlijden | invoeren van de participatieverordening | GEMMA (proces als herhaalbare werkwijze) |
+| 33 | *eigen normering* | Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? Noem het artikel. | inspraak (afdeling 3.4 Awb) | burgerberaad (vormvrij) | GEMMA (proces met eigen spelregels) |
+| 34 | *stabiel over tijd* | Blijft het bestaan als de organisatie, de werkwijze of de systemen veranderen, en is het geen opgave met een einde? | participatie; belastingheffing; Identiteit vaststellen | projectteam Omgevingswet; invoering van de Omgevingswet (een opgave) | ArchiMate en GEMMA (bedrijfsfunctiemodel); wiki (kader Capability) |
+| 35 | *afnemer* | Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? Noem die. | melding openbare ruimte doen (inwoner) | interne registratiestap | NORA (definitie Dienst); GEMMA (definitie Product, rol Klant) |
+| 36 | *gerealiseerd door* † | Is er een proces of functie aanwijsbaar dat de dienst uitvoert, of een bedrijfsfunctie die het vermogen realiseert? Noem ze. | Onderhoud van graven (gerealiseerd door het proces dat graven onderhoudt); Personen registreren (Bevolkingsadministratie bijhouding, Burgerlijke stand diensten) | dienst of vermogen zonder aanwijsbare uitvoering | GEMMA (proces en functie realiseren dienst; functie realiseert capability) |
+| 37 | *leidt tot gedrag* † | Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? Noem het. | Overlijden → Uitvoeren lijkbezorging | voorval zonder gemeentelijk gevolg | GEMMA (gebeurtenis triggert proces) |
+| 38 | *bijdrage aan groter proces* † | Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? Noem dat proces. | Verlenen grafrecht (in Beheren grafrechten); toetsen indieningsvereisten (in behandelen aanvraag) | Beheren grafrechten (omvat zelf de hele levensloop) | GEMMA Online, Proceshiërarchie (bedrijfsproces en deelproces) |
+| 39 | *klant tot klant* | Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? Noem begin en eind. | Behandelen aanvraag reisdocument (van de aanvraag tot de uitreiking of weigering) | Uitreiken reisdocument (volgt op de verstrekking, voor hetzelfde geval) | GEMMA Online, Proceshiërarchie (bedrijfsproces klant-tot-klant, PH 81; deelproces levert een deeldienst, PH 83) |
+| 40 | *omvat processen* † | Omvat het minstens twee bedrijfsprocessen van dezelfde soort werk? Noem ze. | Behandelen vergunningaanvragen lijkbezorging (Verlenen verlof tot begraving of crematie, Opgraven stoffelijk overschot) | een proces met één stap | GEMMA (procescluster aggregeert bedrijfsprocessen, regel 419-420) |
+| 41 | *omvat levensloop* | Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? Noem het object. | Beheren grafrechten (Grafrecht: van uitgifte tot verval); Toestaan lijkbezorging (het deel van de gemeente als overheid in de levensloop van het stoffelijk overschot) | Verlenen grafrecht (één mutatie in die levensloop) | GEMMA Online, Proceshiërarchie (cluster van bedrijfsprocessen over één thema, PH 91); wiki (levensloopproces; één per partij binnen een ketensamenwerking) |
+| 42 | *eigen besluit* | Eindigt het in een besluit van een bevoegd orgaan of een mandataris? Noem orgaan en artikel. | Verlenen grafrecht (college, Wlb art. 28) | Onderhouden graf (feitelijk handelen) | GEMMA (procesbouwstenen: besluiten) |
+| 43 | *levert aanbod* † | Realiseert het een dienst of levert het een product aan een afnemer? Noem het (referentie: de UPL). | Onderhouden graf (grafonderhoud) | interne registratiestap | GEMMA (Product en dienst procesarchitectuur, UPL) |
+| 44 | *bedient gedrag* † | Ondersteunt de functie aanwijsbaar een proces? Noem het. | Exploiteren van begraafplaatsen bedient Ruimen graf | functie zonder aanwijsbaar proces | GEMMA (functie bedient proces, regel 597 en 604) |
+| 45 | *in functie-indeling* † | Heeft de functie een plaats in de Functie-indeling naar domein: onder een bovenliggende GEMMA-functie, of op domeinniveau onder het domein? Noem de bovenliggende functie of het domein. | Exploiteren van begraafplaatsen (onder Exploitatie fysieke leefomgeving) | Lijkbezorging als functie | GEMMA (Functie-indeling naar domein) |
+| 46 | *leidt tot gebeurtenis* † | Eindigt het in een toestandsverandering die domeinexperts benoemen, of die een ander proces start? Noem die. | Vervallen verklaren grafrecht → Verval van het grafrecht | een tussenstap zonder eigen uitkomst | GEMMA (proces triggert gebeurtenis, regel 924) |
 
 **Passief.** Bij een ding (geen hoofdkenmerk); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; *omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.
 
 | Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
 |---|---|---|---|---|---|
-| 46 | *onderscheidbare exemplaren* | Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | aanvraag (elke aanvraag apart) | gemeentefonds (er is er één) | GEMMA (kan in meervoud bestaan) |
-| 47 | *levenscyclus* | Ontstaan, veranderen en eindigen de exemplaren? | vergunning (verleend, gewijzigd, ingetrokken) | kadastrale gemeentecode | GEMMA (eigen levenscyclus) |
-| 48 | *wordt bewerkt* † | Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? Noem het gedrag. | aanvraag (geregistreerd, beoordeeld) | preventieakkoord (alleen beleidsmatig) | GEMMA (proces en functie benaderen bedrijfsobject) |
-| 49 | *afspraak* | Is het een overeenkomst tussen twee of meer partijen met rechten en plichten, en geen eenzijdig besluit of regeling? | subsidieovereenkomst; uitvoeringsovereenkomst | subsidiebeschikking; verordening | GEMMA (definitie Afspraak) |
-| 50 | *waarneembare vorm* | Is het de vorm (document, formulier, register, bericht) waarin informatie van een ander begrip wordt vastgelegd of overgebracht? Noem dat begrip. | aanslagbiljet (van Aanslag); register van begraven lijken | aanslag | ArchiMate (Representation) |
-| 51 | *deel van object* | Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? Noem dat object. | grafbedekking (van Graf) | Graf | GEMMA (negatieve toets: eigen identiteit) |
-| 52 | *invoer van een ander* | Maakt en beheert een andere partij het, terwijl de gemeente het alleen ontvangt of raadpleegt? Noem de maker. | verklaring van overlijden (de arts of lijkschouwer) | vergunning (de gemeente verleent haar) | wiki (abstractieniveau) |
-| 53 | *zelfstandig aanbod* | Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product? | bewonersparkeervergunning | bezoekersparkeervergunning als tarief van parkeervergunning | UPL (één naam per aanbod) |
-| 54 | *omvat diensten en afspraken* † | Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze. | parkeervergunning (dienst parkeren, voorwaarden) | losse dienst | GEMMA (product bundelt dienst en afspraak) |
+| 47 | *onderscheidbare exemplaren* | Zijn de afzonderlijke exemplaren van elkaar te onderscheiden? | aanvraag (elke aanvraag apart) | gemeentefonds (er is er één) | GEMMA (kan in meervoud bestaan) |
+| 48 | *levenscyclus* | Ontstaan, veranderen en eindigen de exemplaren? | vergunning (verleend, gewijzigd, ingetrokken) | kadastrale gemeentecode | GEMMA (eigen levenscyclus) |
+| 49 | *wordt bewerkt* † | Wordt het door aanwijsbaar gemeentelijk gedrag geregistreerd, bijgewerkt, beëindigd, geraadpleegd of verstrekt, operationeel en niet alleen beleidsmatig? Noem het gedrag. | aanvraag (geregistreerd, beoordeeld) | preventieakkoord (alleen beleidsmatig) | GEMMA (proces en functie benaderen bedrijfsobject) |
+| 50 | *afspraak* | Is het een overeenkomst tussen twee of meer partijen met rechten en plichten, en geen eenzijdig besluit of regeling? | subsidieovereenkomst; uitvoeringsovereenkomst | subsidiebeschikking; verordening | GEMMA (definitie Afspraak) |
+| 51 | *waarneembare vorm* | Is het de vorm (document, formulier, register, bericht) waarin informatie van een ander begrip wordt vastgelegd of overgebracht? Noem dat begrip. | aanslagbiljet (van Aanslag); register van begraven lijken | aanslag | ArchiMate (Representation) |
+| 52 | *deel van object* | Is het een onderdeel van één ander object, dat ermee ontstaat en eindigt? Noem dat object. | grafbedekking (van Graf) | Graf | GEMMA (negatieve toets: eigen identiteit) |
+| 53 | *invoer van een ander* | Maakt en beheert een andere partij het, terwijl de gemeente het alleen ontvangt of raadpleegt? Noem de maker. | verklaring van overlijden (de arts of lijkschouwer) | vergunning (de gemeente verleent haar) | wiki (abstractieniveau) |
+| 54 | *zelfstandig aanbod* | Wordt het onder een eigen naam aangeboden, en niet als variant of tarief van een ander product? | bewonersparkeervergunning | bezoekersparkeervergunning als tarief van parkeervergunning | UPL (één naam per aanbod) |
+| 55 | *omvat diensten en afspraken* † | Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze. | parkeervergunning (dienst parkeren, voorwaarden) | losse dienst | GEMMA (product bundelt dienst en afspraak) |
+
+**Capability.** Alleen bij *vermogen*.
+
+| Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
+|---|---|---|---|---|---|
+| 56 | *beoordeelbaar* | Kun je er volwassenheid of ontwikkelbehoefte van bepalen en er apart in investeren? Noem de investeringsvraag. | Identiteit vaststellen (fraudebestrijding, biometrie) | Dienstverlening (te breed) | wiki (kader Capability: beoordeelbaar) |
+| 57 | *onderscheidend* | Is het af te grenzen van de andere capabilities, zonder dat een functie er voor een deel in valt? Noem de naaste capability. | Personen registreren naast Identiteit vaststellen | Burgers helpen naast Dienstverlening | wiki (kader Capability: onderscheidend) |
 
 **Beleidskader.** Alleen bij *regeling als geheel*.
 
 | Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
 |---|---|---|---|---|---|
-| 55 | *landelijk* | Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Wet op de lijkbezorging; AVG; modelverordening | beheersverordening of beleidsnota van één gemeente (blijft bron) | GEMMA (definitie Beleidskader); wiki |
-| 56 | *in werking* | Is de regeling geldend recht, of als modelverordening actueel? | Archiefwet 1995 | ingetrokken wet | wiki |
-| 57 | *is grondslag voor* † | Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. | Wet op de lijkbezorging art. 28 → Verlenen grafrecht | BW boek 2, gebruikt voor één definitie | GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader) |
+| 58 | *landelijk* | Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Wet op de lijkbezorging; AVG; modelverordening | beheersverordening of beleidsnota van één gemeente (blijft bron) | GEMMA (definitie Beleidskader); wiki |
+| 59 | *in werking* | Is de regeling geldend recht, of als modelverordening actueel? | Archiefwet 1995 | ingetrokken wet | wiki |
+| 60 | *is grondslag voor* † | Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? Noem het artikel of de paragraaf en het gedrag. | Wet op de lijkbezorging art. 28 → Verlenen grafrecht | BW boek 2, gebruikt voor één definitie | GEMMA (beleidskader geeft grondslag; product heeft associatie met beleidskader) |
 
 **Specialisatie.** Altijd, als het type een pagina heeft; zonder antwoord *zelfstandige specialisatie* ja en *generiek* nee.
 
 | Nr | Kenmerk | Vraag | Ja | Nee | Herkomst |
 |---|---|---|---|---|---|
-| 58 | *zelfstandige specialisatie* (standaard ja) | Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. | Omgevingsvergunning naast Vergunning (eigen wet en procedure); Houder van het crematorium naast Houder van de begraafplaats (eigen plichten) | vergunning tot opgraving (variant van Vergunning); aanvrager van een vergunning tot opgraving (variant van Aanvrager) | GEMMA (zelfstandig ding waar beleid op gemaakt wordt; specialisatie) |
-| 59 | *generiek* | Komt het met dezelfde betekenis in veel onderwerpen voor? | Besluit; Beschikking; aanvraag ontvangen; Klant | Graf; Ruimen graf | wiki (abstractieniveau; GEMMA generieke elementen) |
+| 61 | *zelfstandige specialisatie* (standaard ja) | Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? Noem het bredere begrip; is er geen breder begrip, dan ja. | Omgevingsvergunning naast Vergunning (eigen wet en procedure); Houder van het crematorium naast Houder van de begraafplaats (eigen plichten) | vergunning tot opgraving (variant van Vergunning); aanvrager van een vergunning tot opgraving (variant van Aanvrager) | GEMMA (zelfstandig ding waar beleid op gemaakt wordt; specialisatie) |
+| 62 | *generiek* | Komt het met dezelfde betekenis in veel onderwerpen voor? | Besluit; Beschikking; aanvraag ontvangen; Klant | Graf; Ruimen graf | wiki (abstractieniveau; GEMMA generieke elementen) |
 
 ## Stappentabel
 
@@ -167,28 +176,29 @@ Stap 0–4 van boven naar beneden: de eerste passende regel beslist en levert he
 | 12 | 4 Type | *toegangspunt* | Kanaal: koppelen aan de centrale set; voorleggen |
 | 13 | 4 Type | *plaats* | Locatie: geen pagina |
 | 14 | 4 Type | *regeling als geheel* | *landelijk*: ja Beleidskader, nee bron (geen element) |
-| 15 | 4 Type | *gedrag* | naar de soort gedrag: Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Dienst of Bedrijfsinteractie |
-| 16 | 4 Type | ding, *waarneembare vorm* | Representatie: geen pagina; vermelden bij het genoemde object |
-| 17 | 4 Type | ding, *afspraak* | Afspraak (Contract) |
-| 18 | 4 Type | ding, overig | Bedrijfsobject |
-| 19 | 5 Drempel | kernrelatie of eis van het type nee | geen element: voorleggen met de ontbrekende relatie |
-| 20 | 5 Drempel | meer dan 1 van de overige drempelcriteria nee | geen element: voorleggen met de ontbrekende criteria |
-| 21 | 6 Specialisatie | niet *zelfstandige specialisatie*, met `genoemd_begrip` | specialisatie zonder pagina; relaties naar het genoemde, bredere begrip |
-| 22 | 6 Specialisatie | niet *zelfstandige specialisatie*, zonder `genoemd_begrip` | voorleggen: noem het bredere begrip |
-| 23 | 6 Specialisatie | anders | element van het voorlopige type |
-| 24 | 7 Indeling | procescluster (*groepeert processen*) | procesniveau cluster naar soort werk; `gemma_generiek` verplicht, anders voorleggen: een taak is geen procesniveau, de groepering naar taak is het beleidsdomein |
-| 25 | 7 Indeling | *omvat levensloop* | procesniveau levensloopproces; `kernobject` verplicht. Per kernobject één levensloopproces, met het beleidsdomein van het kernobject; meer alleen als ze samen een bedrijfsinteractie met dat kernobject bedienen, elk het deel van één partij |
-| 26 | 7 Indeling | *bijdrage aan groter proces* met *klant tot klant* | procesniveau bedrijfsproces; `kernobject` verplicht; geaggregeerd door één levensloopproces |
-| 27 | 7 Indeling | *bijdrage aan groter proces* zonder *klant tot klant* | deelproces of processtap: onderdeel, geen pagina; `genoemd_begrip` is het bedrijfsproces, de tekst naar zijn `deelprocessen`; met *levert aanbod* voorleggen |
-| 28 | 7 Indeling | geen levensloop en geen bijdrage aan een groter proces | voorleggen: procesniveau niet te bepalen |
-| 29 | 7 Indeling | bedrijfsobject met *generiek* | objectniveau generiek (thuis in een thematisch gedeeld onderwerp of Kern) |
-| 30 | 7 Indeling | bedrijfsobject met *invoer van een ander* | onderdeel: geen pagina; vermelden bij het genoemde proces |
-| 31 | 7 Indeling | gebeurtenis, rol of dienst met *generiek* | specialisatie van een generiek GEMMA-element (exacte match) |
-| 32 | 7 Indeling | bedrijfsobject dat `kernobject` is van een levensloopproces | objectniveau kernobject; per kernobject één levensloopproces, of één per partij in een ketensamenwerking |
-| 33 | 7 Indeling | bedrijfsobject met *deel van object* en een eigen bedrijfsproces | objectniveau subobject |
-| 34 | 7 Indeling | bedrijfsobject met *deel van object* zonder eigen bedrijfsproces | onderdeel: geen pagina |
-| 35 | 7 Indeling | ander bedrijfsobject | voorleggen: geen proces bepaalt zijn levensloop |
-| 36 | 7 Indeling | bedrijfsinteractie | `kernobject` verplicht; voorleggen: ketensamenwerking (estafette) of orkestratie (de gemeente levert een dienst aan derden) |
+| 15 | 4 Type | *vermogen* | Capability |
+| 16 | 4 Type | *gedrag* | naar de soort gedrag: Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Dienst of Bedrijfsinteractie |
+| 17 | 4 Type | ding, *waarneembare vorm* | Representatie: geen pagina; vermelden bij het genoemde object |
+| 18 | 4 Type | ding, *afspraak* | Afspraak (Contract) |
+| 19 | 4 Type | ding, overig | Bedrijfsobject |
+| 20 | 5 Drempel | kernrelatie of eis van het type nee | geen element: voorleggen met de ontbrekende relatie |
+| 21 | 5 Drempel | meer dan 1 van de overige drempelcriteria nee | geen element: voorleggen met de ontbrekende criteria |
+| 22 | 6 Specialisatie | niet *zelfstandige specialisatie*, met `genoemd_begrip` | specialisatie zonder pagina; relaties naar het genoemde, bredere begrip |
+| 23 | 6 Specialisatie | niet *zelfstandige specialisatie*, zonder `genoemd_begrip` | voorleggen: noem het bredere begrip |
+| 24 | 6 Specialisatie | anders | element van het voorlopige type |
+| 25 | 7 Indeling | procescluster (*groepeert processen*) | procesniveau cluster naar soort werk; `gemma_generiek` verplicht, anders voorleggen: een taak is geen procesniveau, de groepering naar taak is het beleidsdomein |
+| 26 | 7 Indeling | *omvat levensloop* | procesniveau levensloopproces; `kernobject` verplicht. Per kernobject één levensloopproces, met het beleidsdomein van het kernobject; meer alleen als ze samen een bedrijfsinteractie met dat kernobject bedienen, elk het deel van één partij |
+| 27 | 7 Indeling | *bijdrage aan groter proces* met *klant tot klant* | procesniveau bedrijfsproces; `kernobject` verplicht; geaggregeerd door één levensloopproces |
+| 28 | 7 Indeling | *bijdrage aan groter proces* zonder *klant tot klant* | deelproces of processtap: onderdeel, geen pagina; `genoemd_begrip` is het bedrijfsproces, de tekst naar zijn `deelprocessen`; met *levert aanbod* voorleggen |
+| 29 | 7 Indeling | geen levensloop en geen bijdrage aan een groter proces | voorleggen: procesniveau niet te bepalen |
+| 30 | 7 Indeling | bedrijfsobject met *generiek* | objectniveau generiek (thuis in een thematisch gedeeld onderwerp of Kern) |
+| 31 | 7 Indeling | bedrijfsobject met *invoer van een ander* | onderdeel: geen pagina; vermelden bij het genoemde proces |
+| 32 | 7 Indeling | gebeurtenis, rol of dienst met *generiek* | specialisatie van een generiek GEMMA-element (exacte match) |
+| 33 | 7 Indeling | bedrijfsobject dat `kernobject` is van een levensloopproces | objectniveau kernobject; per kernobject één levensloopproces, of één per partij in een ketensamenwerking |
+| 34 | 7 Indeling | bedrijfsobject met *deel van object* en een eigen bedrijfsproces | objectniveau subobject |
+| 35 | 7 Indeling | bedrijfsobject met *deel van object* zonder eigen bedrijfsproces | onderdeel: geen pagina |
+| 36 | 7 Indeling | ander bedrijfsobject | voorleggen: geen proces bepaalt zijn levensloop |
+| 37 | 7 Indeling | bedrijfsinteractie | `kernobject` verplicht; voorleggen: ketensamenwerking (estafette) of orkestratie (de gemeente levert een dienst aan derden) |
 | — | Aanvulling | `homoniem_van` ingevuld | voorleggen: naamkeuze; `## Homoniemen` bij beide; bij een GGM-homoniem een terugmelding |
 | — | Aanvulling | Actor of Rol met *onderscheidbare exemplaren*, *levenscyclus* en *wordt bewerkt* | ook een bedrijfsobjectpagina (tegenhanger) |
 | — | Aanvulling | Bedrijfsobject, afspraak, rol, actor of gebeurtenis met een GGM-match, of met sterkte geen en een GGM-terugmelding hiaat | het data-object *<naam>-data* (tools/beslissen.py); `data_objecten` voor een extra GGM-entiteit |

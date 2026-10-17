@@ -25,11 +25,19 @@ Fase A kiest eerst het vak: de laag, het aspect en intern of extern, zoals in Ar
 | bedrijf | Actor, Rol, Bedrijfssamenwerking | Kanaal | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie | Dienst | Bedrijfsobject, Afspraak, Representatie (geen pagina) | Product |
 | applicatie | zonder element | zonder element | zonder element | zonder element | Data-object (afgeleid uit de GGM-match) | — |
 | technologie | zonder element: komt misschien nog | | | | | |
-| strategie | Capability (Vermogen): buiten dit model | | | | | |
+| strategie | Resource: zonder element | | Capability; Waardestroom en Handelwijze: zonder element | | | |
 | motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |
 | overig | | | | | | Locatie (geen pagina), Groepering (indeling) |
 
 Wat fase A per vak vraagt, staat in [kenmerken en beslistabel](kenmerken-en-beslistabel.md).
+
+## Strategie
+
+| Elementtype | ArchiMate | Paginatype | In Over GEMMA |
+|---|---|---|---|
+| [Capability](strategie/capability-modelleerafspraken.md) | Capability | `capability` | ja |
+
+Elementtypen zonder element: resource, waardestroom, handelwijze.
 
 ## Bedrijfsarchitectuur
 
@@ -57,7 +65,7 @@ Elementtypen zonder element: representatie.
 | [Beleidskader](motivatie/beleidskader-modelleerafspraken.md) | Driver | `beleidskader` | ja |
 | [Kwaliteitsdoel](motivatie/kwaliteitsdoel-modelleerafspraken.md) | Goal | matchdoel (GEMMA) | ja |
 
-Elementtypen zonder element: uitkomst, principe, eis, beperking, waarde, kernwaarde, vermogen.
+Elementtypen zonder element: uitkomst, principe, eis, beperking, waarde, kernwaarde.
 
 ## Applicatiearchitectuur
 
@@ -85,7 +93,7 @@ Elementtypen zonder element: locatie.
 |---|---|---|
 | `kernobject` | het bedrijfsobject waarvan het proces de levensloop omvat (levensloopproces), waarin het een mutatie doet (bedrijfsproces), of dat door de keten gaat (bedrijfsinteractie) |  |
 | `afnemer` | voor wie het is: extern of intern (de bovenste laag van het processenlandschap, de rol Klant en de externe en interne UPL-lijst) | extern, intern |
-| `domein` | het GEMMA-domein, de plaats in de Functie-indeling naar domein | Bestuur, Fysieke leefomgeving, Niet domeingebonden, Openbare orde en veiligheid, Ondersteuning, Publieksdiensten, Sociaal domein |
+| `domein` | het GEMMA-domein, de plaats in de Functie-indeling naar domein of de Capabilitykaart | Bestuur, Fysieke leefomgeving, Niet domeingebonden, Openbare orde en veiligheid, Ondersteuning, Publieksdiensten, Sociaal domein |
 | `doelgroep` | gemeente, inwoners en ondernemers of ketenpartners: de plaats in de Doelgroepindeling | gemeente, inwoners en ondernemers, ketenpartners |
 | `regelgever` | EU, rijk of VNG-modelverordening: bepaalt de groep in de Grondslagindeling | EU, rijk, VNG-modelverordening |
 | `kwaliteitsdoelen` | de GEMMA-kwaliteitsdoelen waaraan het beleidskader grondslag geeft, met de sterkte van die invloed, een onderbouwing en de bronnen |  |
@@ -120,22 +128,23 @@ De vaste namen: een **handeling** van gedrag op een object (registreren: schrijv
 
 Per brontype (rij) en doeltype (kolom) de toegestane relaties; \* is een uitbreiding op het GEMMA-kennismodel. Een leeg vak: buiten het kennismodel.
 
-| Van \ naar | Bedrijfsobject | Afspraak | Product | Dienst | Bedrijfsproces | Bedrijfsfunctie | Gebeurtenis | Actor | Rol | Bedrijfssamenwerking | Kanaal | Bedrijfsinteractie | Beleidskader | Data-object |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Bedrijfsobject | associatie, aggregatie, compositie, specialisatie |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Afspraak | associatie* |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Product |  | aggregatie |  | aggregatie |  |  |  |  | bediening |  |  |  |  |  |
-| Dienst |  |  |  | aggregatie, specialisatie* | bediening |  |  |  | bediening |  |  |  |  |  |
-| Bedrijfsproces | toegang | toegang* |  | realisatie | aggregatie, specialisatie, triggering, stroom* | bediening | aggregatie*, triggering |  |  |  |  | bediening* |  |  |
-| Bedrijfsfunctie | toegang |  |  | realisatie, aggregatie* | bediening | aggregatie |  |  |  |  |  |  |  |  |
-| Gebeurtenis |  |  |  |  | triggering |  | triggering*, specialisatie* |  |  |  |  | triggering* |  |  |
-| Actor |  |  |  |  |  |  |  | aggregatie*, associatie* | toewijzing |  |  |  |  |  |
-| Rol | toegang | toegang* |  |  | toewijzing | toewijzing |  |  | aggregatie, specialisatie |  |  | toewijzing* |  |  |
-| Bedrijfssamenwerking | toegang* |  |  |  | toewijzing | toewijzing* |  | aggregatie | aggregatie |  |  | toewijzing* |  |  |
-| Kanaal |  |  |  | toewijzing |  |  |  |  | bediening |  |  |  |  |  |
-| Bedrijfsinteractie | toegang* |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Beleidskader | associatie* |  | associatie | associatie* | associatie* |  | associatie* |  | associatie* |  |  |  | associatie* |  |
-| Data-object | realisatie | realisatie* |  |  |  |  | associatie* | associatie* | associatie* |  |  |  |  |  |
+| Van \ naar | Bedrijfsobject | Afspraak | Product | Dienst | Bedrijfsproces | Bedrijfsfunctie | Gebeurtenis | Actor | Rol | Bedrijfssamenwerking | Kanaal | Bedrijfsinteractie | Beleidskader | Data-object | Capability |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Bedrijfsobject | associatie, aggregatie, compositie, specialisatie |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Afspraak | associatie* |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Product |  | aggregatie |  | aggregatie |  |  |  |  | bediening |  |  |  |  |  |  |
+| Dienst |  |  |  | aggregatie, specialisatie* | bediening |  |  |  | bediening |  |  |  |  |  |  |
+| Bedrijfsproces | toegang | toegang* |  | realisatie | aggregatie, specialisatie, triggering, stroom* | bediening | aggregatie*, triggering |  |  |  |  | bediening* |  |  |  |
+| Bedrijfsfunctie | toegang |  |  | realisatie, aggregatie* | bediening | aggregatie |  |  |  |  |  |  |  |  | realisatie |
+| Gebeurtenis |  |  |  |  | triggering |  | triggering*, specialisatie* |  |  |  |  | triggering* |  |  |  |
+| Actor |  |  |  |  |  |  |  | aggregatie*, associatie* | toewijzing |  |  |  |  |  |  |
+| Rol | toegang | toegang* |  |  | toewijzing | toewijzing |  |  | aggregatie, specialisatie |  |  | toewijzing* |  |  |  |
+| Bedrijfssamenwerking | toegang* |  |  |  | toewijzing | toewijzing* |  | aggregatie | aggregatie |  |  | toewijzing* |  |  |  |
+| Kanaal |  |  |  | toewijzing |  |  |  |  | bediening |  |  |  |  |  |  |
+| Bedrijfsinteractie | toegang* |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Beleidskader | associatie* |  | associatie | associatie* | associatie* |  | associatie* |  | associatie* |  |  |  | associatie* |  |  |
+| Data-object | realisatie | realisatie* |  |  |  |  | associatie* | associatie* | associatie* |  |  |  |  |  |  |
+| Capability |  |  |  |  |  |  |  |  |  |  |  |  |  |  | aggregatie* |
 
 ## Indelingen
 
@@ -143,6 +152,7 @@ Per brontype (rij) en doeltype (kolom) de toegestane relaties; \* is een uitbrei
 |---|---|---|---|
 | [Beleidsdomeinindeling](indelingen.md) | objecten, aanbod, beleidskaders, en de bovenste knoop van de processen | het taakveld (Iv3) en het beleidsdomein | GEMMA |
 | [Functie-indeling naar domein](indelingen.md) | functies, producten en diensten | het GEMMA-domein | GEMMA |
+| [Capabilitykaart](indelingen.md) | capabilities | het GEMMA-domein | wiki |
 | [Procesindeling naar kernobject](indelingen.md) | processen, gebeurtenissen en ketensamenwerkingen | het kernobject | wiki |
 | [Procesindeling naar soort werk](indelingen.md) | bedrijfsprocessen; via generieke GEMMA-elementen ook gebeurtenissen, diensten en rollen | de soort werk (het processenlandschap van GEMMA) | GEMMA, uitgebreid |
 | [Doelgroepindeling](indelingen.md) | partijen en kanalen | de doelgroep | wiki |

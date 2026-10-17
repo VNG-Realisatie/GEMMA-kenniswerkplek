@@ -24,7 +24,9 @@ Een begrip van zo'n type krijgt de uitkomst uit de beslistabel: geen pagina, of 
 | Motivatie | Beperking (Constraint) | Standaard | Buiten dit model, als een eis. |
 | Motivatie | Waarde (Value) | — | Buiten dit model. |
 | Motivatie | Kernwaarde (Driver) | Kernwaarde | Buiten dit model: een fundamentele overtuiging waaraan overheidsdienstverlening moet voldoen. Ook een Driver; alleen het beleidskader is een element. |
-| Motivatie | Vermogen (Capability) | Capability | Buiten dit model (strategielaag): "wat de gemeente kan" is geen bedrijfsfunctie. |
+| Strategie | Resource (Resource) | Resources | Buiten dit model: de houder van een capability is altijd de gemeente. |
+| Strategie | Waardestroom (Value Stream) | — | Buiten dit model: de waarde voor de afnemer volgt uit dienst en product. |
+| Strategie | Handelwijze (Course of Action) | Strategie | Buiten dit model: een opgave met een einde, geen vermogen. |
 | Applicatiearchitectuur | Applicatiecomponent (Application Component) | Applicatiecomponent | De applicatielaag is nog niet gebouwd. |
 | Applicatiearchitectuur | Applicatieservice (Application Service) | Applicatieservice | De applicatielaag is nog niet gebouwd. |
 | Applicatiearchitectuur | Applicatiefunctie (Application Function) | Applicatiefunctie | De applicatielaag is nog niet gebouwd. |
@@ -51,4 +53,5 @@ Geldig in ArchiMate, en een beoordeling legt ze vast als de bron ze noemt; de ex
 | [Bedrijfsfunctie](../../kennismodel/bedrijfsarchitectuur/bedrijfsfunctie-modelleerafspraken.md) | aggregatie of compositie | [Bedrijfsproces](../../kennismodel/bedrijfsarchitectuur/bedrijfsproces-modelleerafspraken.md) | een functie bedient een proces; processen groeperen in een cluster naar soort werk |
 | [Dienst](../../kennismodel/bedrijfsarchitectuur/dienst-modelleerafspraken.md) | toegang | [Bedrijfsobject](../../kennismodel/bedrijfsarchitectuur/bedrijfsobject-modelleerafspraken.md), [Afspraak](../../kennismodel/bedrijfsarchitectuur/afspraak-modelleerafspraken.md) | een dienst heeft geen toegang tot een object; het proces dat haar realiseert wel |
 | [Gebeurtenis](../../kennismodel/bedrijfsarchitectuur/gebeurtenis-modelleerafspraken.md) | associatie | [Bedrijfsobject](../../kennismodel/bedrijfsarchitectuur/bedrijfsobject-modelleerafspraken.md), [Afspraak](../../kennismodel/bedrijfsarchitectuur/afspraak-modelleerafspraken.md) | het object volgt uit het levensloopproces waaronder de gebeurtenis hangt |
+| [Bedrijfsproces](../../kennismodel/bedrijfsarchitectuur/bedrijfsproces-modelleerafspraken.md), [Gebeurtenis](../../kennismodel/bedrijfsarchitectuur/gebeurtenis-modelleerafspraken.md), [Dienst](../../kennismodel/bedrijfsarchitectuur/dienst-modelleerafspraken.md), [Bedrijfsinteractie](../../kennismodel/bedrijfsarchitectuur/bedrijfsinteractie-modelleerafspraken.md) | realisatie | [Capability](../../kennismodel/strategie/capability-modelleerafspraken.md) | alleen een bedrijfsfunctie realiseert een capability; ander gedrag hangt eraan via de functie |
 | [Bedrijfsobject](../../kennismodel/bedrijfsarchitectuur/bedrijfsobject-modelleerafspraken.md), [Afspraak](../../kennismodel/bedrijfsarchitectuur/afspraak-modelleerafspraken.md) | associatie | [Dienst](../../kennismodel/bedrijfsarchitectuur/dienst-modelleerafspraken.md) | een object hangt via het proces dat de dienst realiseert (toegang) aan een dienst |

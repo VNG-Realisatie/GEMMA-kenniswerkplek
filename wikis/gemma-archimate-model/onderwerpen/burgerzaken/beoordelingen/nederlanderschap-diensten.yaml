@@ -92,13 +92,13 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: 'Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *toegewezen partij*)'
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2025-vng-upl-producten-en-diensten-extern

@@ -60,13 +60,13 @@ onderwerpen:
 beslist:
   uitkomst:
     soort: specialisatie
-    regel: 21
+    regel: 22
     toelichting: Specialisatie zonder pagina (kern ja)
     archimate_type: business-process
     voorleggen: false
     genoemd_begrip: Uitvoeren lijkbezorging
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   herkomst: gemeentelijke-regelgeving

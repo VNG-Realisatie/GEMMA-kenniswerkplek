@@ -146,6 +146,12 @@
         "omvat_diensten_en_afspraken": {
           "$ref": "#/$defs/antwoord"
         },
+        "beoordeelbaar": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "onderscheidend": {
+          "$ref": "#/$defs/antwoord"
+        },
         "landelijk": {
           "$ref": "#/$defs/antwoord"
         },
@@ -173,6 +179,7 @@
         "bedrijf/gedrag-extern",
         "bedrijf/passief",
         "bedrijf/samengesteld",
+        "strategie/gedrag",
         "motivatie",
         "overig/samengesteld"
       ],
@@ -188,6 +195,7 @@
         "plaats",
         "aanbod_als_geheel",
         "regeling_als_geheel",
+        "vermogen",
         "ding"
       ],
       "description": "Fase A: het dominante kenmerk binnen het vak, of `ding` in het passieve vak; alleen nodig als het vak er meer heeft"
@@ -944,6 +952,7 @@
                       "bedrijfsproces",
                       "bedrijfssamenwerking",
                       "beleidskader",
+                      "capability",
                       "dienst",
                       "gebeurtenis",
                       "kanaal",

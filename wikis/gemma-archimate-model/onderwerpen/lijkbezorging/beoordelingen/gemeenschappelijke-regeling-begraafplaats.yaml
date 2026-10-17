@@ -25,7 +25,7 @@ bronnen:
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 19
+    regel: 20
     toelichting: Kernrelatie ontbreekt voor Bedrijfssamenwerking
     archimate_type: business-collaboration
     voorleggen: true

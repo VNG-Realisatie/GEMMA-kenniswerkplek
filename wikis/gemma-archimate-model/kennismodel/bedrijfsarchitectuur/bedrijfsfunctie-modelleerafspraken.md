@@ -13,7 +13,7 @@ gegenereerd: tools/kennismodel.py
 |---|---|
 | Definitie | Activiteiten die zijn gegroepeerd omdat daarvoor vergelijkbare bedrijfsmiddelen, kennis of competenties nodig zijn. (GEMMA) |
 | In Over GEMMA | ja (Bedrijfsfunctie) |
-| Duiding | Doorlopende groepering van gedrag; bedient processen. Niet "wat de gemeente kan": dat is een vermogen. |
+| Duiding | Uitvoerend: een doorlopende groepering van het werk naar aard, kennis en middelen; bedient processen, en verandert als het werk anders wordt geclusterd. Wat de gemeente moet kunnen, is strategisch: een capability, die functies realiseren. |
 | Herken je aan | *gedrag* en *gegroepeerd gedrag*. Moet ja: *bedient gedrag* (kernrelatie); hoogstens 1 nee: *toegewezen partij*, *gebruikt objecten*, *stabiel over tijd*, *in functie-indeling*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfsfunctie ─bediening→ Bedrijfsproces |
 | Eigenschappen | `domein` (verplicht) · `gemma_functie` · `gemma` ([betekenis](../README.md#eigenschappen)) |
@@ -36,5 +36,6 @@ gegenereerd: tools/kennismodel.py
 | bediening | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | bedient | *bedient gedrag* | ja |  |
 | aggregatie | [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) | omvat |  | ja | de GEMMA-functieketen |
 | aggregatie | [Dienst](dienst-modelleerafspraken.md) | omvat |  | nee | Functie-indeling naar domein |
+| realisatie | [Capability](../strategie/capability-modelleerafspraken.md) | realiseert | *gerealiseerd door* | ja |  |
 
 Inkomend, bij het brontype: [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) (toewijzing); [Rol](rol-modelleerafspraken.md) (toewijzing); [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) (bediening); [Groepering](../overig/groepering-modelleerafspraken.md) (aggregatie).

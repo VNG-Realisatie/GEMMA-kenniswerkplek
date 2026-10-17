@@ -47,13 +47,13 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven

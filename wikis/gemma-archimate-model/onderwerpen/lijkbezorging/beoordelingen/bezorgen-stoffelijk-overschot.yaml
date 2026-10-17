@@ -77,7 +77,7 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 36
+    regel: 37
     toelichting: Gedrag, *gezamenlijk gedrag* (kern ja, 2/2)
     paginatype: bedrijfsinteractie
     archimate_type: business-interaction
@@ -85,7 +85,7 @@ beslist:
     redenen:
     - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
     generiek: false
-    typeregel: 15
+    typeregel: 16
   voor_te_leggen:
   - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
   bronnen:

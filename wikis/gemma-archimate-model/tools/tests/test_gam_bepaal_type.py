@@ -40,6 +40,7 @@ PRODUCT = BASIS | {"aanbod_als_geheel", "omvat_diensten_en_afspraken", "afnemer"
 SAMENWERKING = BASIS | {"samenwerkingsverband", "voert_gedrag_uit", "soort_partij"}
 KANAAL = BASIS | {"toegangspunt", "ontsluit_een_dienst"}
 BELEIDSKADER = BASIS | {"regeling_als_geheel", "landelijk", "in_werking", "is_grondslag_voor"}
+CAPABILITY = BASIS | {"vermogen", "gerealiseerd_door", "beoordeelbaar", "onderscheidend", "stabiel_over_tijd"}
 
 
 def test_elke_regel_van_stap_0_tot_4_heeft_een_geval():
@@ -58,6 +59,7 @@ def test_elke_regel_van_stap_0_tot_4_heeft_een_geval():
         beoordeling(KANAAL),
         beoordeling(BASIS | {"plaats"}),
         beoordeling(BELEIDSKADER),
+        beoordeling(CAPABILITY),
         beoordeling(PROCES),
         beoordeling(BASIS | {"waarneembare_vorm"}, genoemd_begrip="Aanslag"),
         beoordeling(BO | {"afspraak"}),
@@ -100,7 +102,8 @@ def test_drempel_kernrelatie_moet_ja():
     for ja, kern in [(BO, "wordt_bewerkt"), (PROCES, "toegewezen_partij"), (FUNCTIE, "bedient_gedrag"),
                      (DIENST, "gerealiseerd_door"), (GEBEURTENIS, "leidt_tot_gedrag"), (ACTOR, "vervult_een_rol"),
                      (ROL, "voert_gedrag_uit"), (PRODUCT, "omvat_diensten_en_afspraken"),
-                     (SAMENWERKING, "voert_gedrag_uit"), (KANAAL, "ontsluit_een_dienst"), (BELEIDSKADER, "is_grondslag_voor")]:
+                     (SAMENWERKING, "voert_gedrag_uit"), (KANAAL, "ontsluit_een_dienst"), (BELEIDSKADER, "is_grondslag_voor"),
+                     (CAPABILITY, "gerealiseerd_door")]:
         u = bt.evalueer(beoordeling(ja - {kern}))
         assert (u.soort, u.regel, u.voorleggen) == ("geen_element", bt.EERSTE_DREMPELREGEL, True), kern
         assert f"{bt.NAAM[kern]}: nee" in u.redenen
@@ -121,10 +124,22 @@ def test_drempel_hoogstens_een_overig_nee():
 def test_eis_naast_de_kernrelatie():
     """Actor, bedrijfssamenwerking en product hebben een eis: een soort partij, en een zelfstandig aanbod."""
     for ja, eis in [(ACTOR, "soort_partij"), (SAMENWERKING, "soort_partij"), (PRODUCT, "zelfstandig_aanbod"),
-                    (PROCES, "aanleiding"), (PROCES, "benoembaar_resultaat")]:
+                    (PROCES, "aanleiding"), (PROCES, "benoembaar_resultaat"), (CAPABILITY, "beoordeelbaar"),
+                    (CAPABILITY, "onderscheidend"), (CAPABILITY, "stabiel_over_tijd")]:
         u = bt.evalueer(beoordeling(ja - {eis}))
         assert (u.soort, u.regel, u.voorleggen) == ("geen_element", bt.EERSTE_DREMPELREGEL, True), eis
         assert f"{bt.NAAM[eis]}: nee" in u.redenen
+
+
+def test_capability_in_vak_strategie():
+    """Een vermogen is een capability in het vak strategie; een functie of proces met *vermogen* is een conflict."""
+    b = beoordeling(CAPABILITY)
+    assert (b["vak"], "hoofdkenmerk" in b) == ("strategie/gedrag", False)
+    u = bt.evalueer(b)
+    assert (u.soort, u.paginatype, u.archimate_type) == ("element", "capability", "capability")
+    assert bt.evalueer({**beoordeling(CAPABILITY), "vak": "bedrijf/gedrag-intern", "hoofdkenmerk": "vermogen"}).soort \
+        == "conflict"
+    assert bt.evalueer(beoordeling(CAPABILITY | {"aanleiding"})).soort == "conflict"
 
 
 def test_specialisatieniveau():

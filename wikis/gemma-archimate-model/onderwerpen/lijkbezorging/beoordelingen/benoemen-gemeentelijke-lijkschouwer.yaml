@@ -54,14 +54,14 @@ besluiten:
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 19
+    regel: 20
     toelichting: Eis ontbreekt voor Bedrijfsproces
     archimate_type: business-process
     voorleggen: true
     redenen:
     - 'aanleiding: nee'
     generiek: false
-    typeregel: 15
+    typeregel: 16
   voor_te_leggen:
   - 'aanleiding: nee'
   bronnen:

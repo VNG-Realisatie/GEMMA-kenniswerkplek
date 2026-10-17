@@ -37,13 +37,13 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rvig-hup-vaststelling-ouderschap

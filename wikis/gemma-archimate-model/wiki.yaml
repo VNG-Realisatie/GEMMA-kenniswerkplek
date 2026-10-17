@@ -68,6 +68,10 @@ page_types:                          # pagina's van curated typen en onderwerpen
   data-object:                       # Data Object (applicatielaag); afgeleid uit de GGM-match van het element (tools/beslissen.py)
     dir: elementpaginas/applicatiearchitectuur/data-objecten
     curated: true
+  capability:                        # Capability (strategielaag); een element als ten minste twee functies haar realiseren
+    dir: elementpaginas/strategie/capabilities
+    submappen: [domein]
+    curated: true
   beleidskader:                      # Driver (motivatielaag); Europese of rijksregelgeving of VNG-modelverordening
     dir: elementpaginas/motivatie/beleidskaders
     submappen: [grondslag]           # de groep in de Grondslagindeling, afgeleid uit de regelgever (het brontype van de regeling)
@@ -110,8 +114,8 @@ kennismodel:
 # Woordbudget (llmwiki lint): per groep het maximum aan woorden. Een nieuwe regel of tekst gaat eerst naar de redacteur; pas daarna gaat het budget omhoog.
 lint:
   woordbudget:
-    AGENTS.md: 1720
-    "kennismodel/**/*.md": 16500
+    AGENTS.md: 1740
+    "kennismodel/**/*.md": 17100
     ".agents/skills/gemma-archimate-model-archimate-export/**/*.md": 1300
     ".agents/skills/gemma-archimate-model-beoordelen/**/*.md": 6750
     ".agents/skills/gemma-archimate-model-criteria/**/*.md": 950

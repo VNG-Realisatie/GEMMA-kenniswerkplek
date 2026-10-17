@@ -63,7 +63,7 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: Samenwerkingsverband met eigen rechtspersoon (kern ja)
     paginatype: actor
     archimate_type: business-actor

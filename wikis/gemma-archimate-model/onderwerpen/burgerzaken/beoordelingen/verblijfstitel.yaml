@@ -40,13 +40,13 @@ bronnen:
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 30
+    regel: 31
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
     genoemd_begrip: Ingeschreven persoon
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   - 2026-rvig-hup-verblijfstitel

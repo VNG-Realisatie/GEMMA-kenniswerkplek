@@ -81,14 +81,14 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 33
+    regel: 34
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: subobject
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2026-rvig-hup-verblijfplaats
   - 2025-rvig-logisch-ontwerp-brp-2025q1

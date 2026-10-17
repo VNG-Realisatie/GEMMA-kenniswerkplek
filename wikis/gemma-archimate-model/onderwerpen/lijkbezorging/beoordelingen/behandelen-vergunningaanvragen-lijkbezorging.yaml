@@ -80,14 +80,14 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 24
+    regel: 25
     toelichting: Gedrag, *groepeert processen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: cluster naar soort werk
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst

@@ -43,13 +43,13 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
     paginatype: gebeurtenis
     archimate_type: business-event
     voorleggen: false
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2023-rvig-circulaire-adresonderzoek-brp
   - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland

@@ -71,6 +71,7 @@ PASSIEF = {"business-object", "contract", "representation"}
 SAMENGESTELD = {"product"}
 DATA = {"data-object"}  # applicatielaag: alleen het data-object, afgeleid uit de GGM-match
 GROEPERING = {"grouping"}
+STRATEGIE = {"capability"}
 
 # Deelverzameling van de ArchiMate-relatietabel voor de business-laag (conservatief).
 # (relatie, categorie bron, categorie doel); 'zelfde' = hetzelfde ArchiMate-type.
@@ -89,6 +90,9 @@ TOEGESTAAN = {
     ("serving", "gedrag", "gedrag"), ("serving", "gedrag", "actief"),
     ("serving", "samengesteld", "actief"),  # Product → bediening → Klant (kennismodel regel 596)
     ("influence", "motivatie", "motivatie"),
+    ("realization", "gedrag", "strategie"),  # gedrag realiseert een capability
+    ("composition", "strategie", "strategie"), ("aggregation", "strategie", "strategie"),
+    ("serving", "strategie", "strategie"), ("triggering", "strategie", "strategie"), ("flow", "strategie", "strategie"),
     ("composition", "groepering", "*"), ("aggregation", "groepering", "*"),  # een groepering groepeert elk concept
 }
 STERKTE = {"composition": 3, "aggregation": 2, "association": 1}
@@ -98,7 +102,8 @@ DEEL_GEHEEL_WERKWOORDEN = ("bevat", "bestaat uit", "omvat", "onderdeel van", "de
 
 def categorie(archimate_type: str) -> str:
     for naam, typen in (("actief", ACTIEF), ("gedrag", GEDRAG), ("passief", PASSIEF), ("samengesteld", SAMENGESTELD),
-                        ("data", DATA), ("motivatie", MOTIVATIE), ("groepering", GROEPERING)):
+                        ("data", DATA), ("motivatie", MOTIVATIE), ("groepering", GROEPERING),
+                        ("strategie", STRATEGIE)):
         if archimate_type in typen:
             return naam
     return "onbekend"

@@ -35,13 +35,13 @@ toelichting: 'Invoer van een andere partij: de minister (via de IND) doet de med
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 30
+    regel: 31
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
     genoemd_begrip: Inschrijven ingezetene
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
   herkomst: richtlijn

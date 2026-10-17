@@ -52,7 +52,7 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: Handelende partij (kern ja)
     paginatype: actor
     archimate_type: business-actor

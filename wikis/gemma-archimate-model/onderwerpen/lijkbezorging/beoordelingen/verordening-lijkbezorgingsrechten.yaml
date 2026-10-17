@@ -41,13 +41,13 @@ onderwerpen:
 beslist:
   uitkomst:
     soort: specialisatie
-    regel: 21
+    regel: 22
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-object
     voorleggen: false
     genoemd_begrip: Heffingsverordening
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2026-vng-retributies
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

@@ -35,7 +35,7 @@ besluiten:
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 19
+    regel: 20
     toelichting: Kernrelatie ontbreekt voor Bedrijfsobject
     archimate_type: business-object
     voorleggen: true
@@ -43,7 +43,7 @@ beslist:
     - 'wordt bewerkt: nee'
     - 'levenscyclus: nee'
     generiek: false
-    typeregel: 18
+    typeregel: 19
   voor_te_leggen:
   - 'wordt bewerkt: nee'
   - 'levenscyclus: nee'

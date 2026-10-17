@@ -101,7 +101,7 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: 'Regeling als geheel, landelijk (kern ja, 0/1, ontbreekt: *in werking*)'
     paginatype: beleidskader
     archimate_type: driver

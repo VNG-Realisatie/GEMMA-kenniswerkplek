@@ -43,7 +43,7 @@ bronnen:
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 19
+    regel: 20
     toelichting: Eis ontbreekt voor Actor
     archimate_type: business-actor
     voorleggen: true

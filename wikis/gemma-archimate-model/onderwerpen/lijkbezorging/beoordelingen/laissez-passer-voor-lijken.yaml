@@ -46,13 +46,13 @@ onderwerpen:
 beslist:
   uitkomst:
     soort: specialisatie
-    regel: 21
+    regel: 22
     toelichting: Specialisatie zonder pagina (kern ja, 2/2)
     archimate_type: business-object
     voorleggen: false
     genoemd_begrip: Vergunning
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern

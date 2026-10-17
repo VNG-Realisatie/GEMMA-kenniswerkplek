@@ -43,13 +43,13 @@ ggm:
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 34
+    regel: 35
     toelichting: Onderdeel van een ander object, zonder eigen proces
     archimate_type: business-object
     voorleggen: false
     genoemd_begrip: Ingeschreven persoon
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2026-rvig-hup-nationaliteit
   - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp

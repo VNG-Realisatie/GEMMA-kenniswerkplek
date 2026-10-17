@@ -44,13 +44,13 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622

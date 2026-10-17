@@ -105,14 +105,14 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 25
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2025-vng-upl-producten-en-diensten-extern

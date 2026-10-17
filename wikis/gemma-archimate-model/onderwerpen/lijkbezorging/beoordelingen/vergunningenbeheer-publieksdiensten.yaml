@@ -81,13 +81,13 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2023-vng-model-apv
   - 2026-rvo-aangifte-en-akte-van-overlijden

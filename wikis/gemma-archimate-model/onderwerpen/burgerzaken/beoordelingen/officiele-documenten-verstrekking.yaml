@@ -152,13 +152,13 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 23
+    regel: 24
     toelichting: 'Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *toegewezen partij*)'
     paginatype: bedrijfsfunctie
     archimate_type: business-function
     voorleggen: false
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622

@@ -97,14 +97,14 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 26
+    regel: 27
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen

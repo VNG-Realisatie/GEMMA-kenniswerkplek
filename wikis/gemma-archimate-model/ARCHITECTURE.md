@@ -65,9 +65,9 @@ Een indeling uit een model, zoals de GEMMA-functiehiërarchie of een beleidsdome
 
 ### 3.4 Voor alle gemeenten
 
-Het GEMMA-model geldt voor alle gemeenten; elementen die van gemeente tot gemeente verschillen, horen er niet in. Daarom heeft elk element een landelijke wettelijke grondslag: een bron van brontype `europese-regelgeving` of `rijksregelgeving`, met het artikel (regel Wettelijke grondslag). Gemeentelijke regelgeving is geen grondslag, ook een VNG-modelverordening niet: een VNG-modelverordening werkt de wet uit in de vorm die gemeenten gemeenschappelijk hebben (§2); de verordening van één gemeente is een voorbeeld en een bron voor taal, niet voor het model, en een afwijking ervan is een afwijking in de praktijk. Richtlijnen, beleid en praktijk dienen voor taal, voorbeelden, werkwijze en het vinden van lacunes, niet als onderbouwing.
+Het GEMMA-model geldt voor alle gemeenten; elementen die van gemeente tot gemeente verschillen, horen er niet in. Daarom heeft elk element een landelijke wettelijke grondslag: een bron van brontype `europese-regelgeving` of `rijksregelgeving`, met het artikel (regel Wettelijke grondslag). Gemeentelijke regelgeving is geen grondslag, ook een VNG-modelverordening niet: een VNG-modelverordening werkt de wet uit in de vorm die gemeenten gemeenschappelijk hebben (§2); de verordening van één gemeente is een voorbeeld en een bron voor taal, niet voor het model, en een afwijking ervan is een afwijking in de praktijk. Richtlijnen, beleid en praktijk dienen voor taal, voorbeelden, werkwijze en het vinden van lacunes, niet als onderbouwing; alleen het oordeel over een capability (beoordeelbaar, onderscheidend) mag op een landelijke richtlijn steunen.
 
-Eén uitzondering, de hoek *zonder grondslag*: een dienst uit de UPL blijft, ook zonder landelijke grondslag, want een UPL-item valt nooit weg. Zij is dan geen wettelijke taak. De wiki werkt haar uit voor zover mogelijk (een element met pagina, zonder processen, objecten, gebeurtenissen of rollen, want die zouden per gemeente verschillen), meldt haar terug aan de werkgroep procesarchitectuur en exporteert haar niet: wat geen wettelijke taak is, hoort niet in een model voor alle gemeenten (§6.3, §6.5). Een bedrijfsfunctie volgt de grondslag van wat zij omvat of bedient. Een relatie heeft geen eigen grondslag nodig: dat is te gedetailleerd, en een bron volstaat, zoals bij elke claim.
+Eén uitzondering, de hoek *zonder grondslag*: een dienst uit de UPL blijft, ook zonder landelijke grondslag, want een UPL-item valt nooit weg. Zij is dan geen wettelijke taak. De wiki werkt haar uit voor zover mogelijk (een element met pagina, zonder processen, objecten, gebeurtenissen of rollen, want die zouden per gemeente verschillen), meldt haar terug aan de werkgroep procesarchitectuur en exporteert haar niet: wat geen wettelijke taak is, hoort niet in een model voor alle gemeenten (§6.3, §6.5). Een bedrijfsfunctie volgt de grondslag van wat zij omvat of bedient, een capability die van de functies die haar realiseren. Een relatie heeft geen eigen grondslag nodig: dat is te gedetailleerd, en een bron volstaat, zoals bij elke claim.
 
 ### 3.5 GEMMA volgen, of afwijken en terugmelden
 
@@ -102,6 +102,15 @@ Het [kennismodel](kennismodel/README.md) beschrijft wat het model is: per archit
 - **Namen uit het GEMMA-kennismodel.** De typen heten zoals in Over GEMMA, met de GEMMA-definities waar die passen. De bedrijfsinteractie is een uitbreiding: GEMMA kent haar als element (*Ketensamenwerking*), niet in het kennismodel.
 - **Een UPL-item is een dienst.** De UPL noemt per naam één aanbod van de overheid aan een afnemer. Een product is een gebundeld aanbod van diensten met afspraken (Over GEMMA) en komt dus nooit uit één UPL-item; de UPL zelf maakt geen onderscheid tussen product en dienst.
 - **Een regeling.** Een concreet benoemde regeling als geheel wordt een beleidskader, de soort regeling het bedrijfsobject Regeling, en een los artikel valt buiten het model. Een landelijke richtlijn wordt nooit een beleidskader: zij geeft de gemeente geen taak, bevoegdheid of plicht, maar beschrijft hoe zij die uitvoert (§3.4).
+- **Capability: wat de gemeente moet kunnen.** Een bedrijfsfunctie zegt welke activiteiten bij elkaar horen, een capability wat de gemeente moet kunnen, los van hoe en door wie. Een capability is strategisch en verandert met de opgaven van de gemeente; een functie is uitvoerend en verandert als het werk anders wordt geclusterd. Het teken: een functie heeft een rol die haar uitvoert en objecten die zij gebruikt, een capability niet; de beslistabel geeft dan een conflict. GEMMA heeft alleen capabilities van de informatievoorziening (de 26 uit de thema-architectuur Common Ground) en geen kaart van de bedrijfslaag; de wiki leidt die af uit de functies van de onderwerpen. Een capability is pas een element als ten minste twee functies haar realiseren: valt zij samen met één functie, dan voegt zij niets toe aan de functie-indeling. Alleen een functie realiseert haar, zoals in Over GEMMA, en de houder is altijd de gemeente (plan 2026-10-15, stap 12).
+
+  | | Capability | Bedrijfsfunctie | Bedrijfsproces |
+  |---|---|---|---|
+  | Vraag | Wat moet de gemeente kunnen? | Welke activiteiten horen inhoudelijk bij elkaar? | Hoe wordt een dienst gerealiseerd? |
+  | Afbakening | vermogen | gedeelde aard van activiteiten, kennis of middelen | dienst, resultaat en kernobject |
+  | Verandert bij | andere strategische opgaven | andere clustering van activiteiten | andere uitvoering van de dienst |
+  | Niveau | strategisch/tactisch | tactisch, uitvoerend | tactisch/operationeel |
+
 - **Wat geen element wordt.** Het kennismodel noemt per laag de typen die niet tot een element leiden, met de reden. Een groepering is geen begrip uit een bron maar de knoop van een indeling, zonder pagina en zonder beoordeling. Zij staat toch in het kennismodel, omdat de indelingen zonder groeperingen geen relaties in GEMMA hebben.
 
 ### 4.2 Relaties
@@ -134,6 +143,7 @@ Welke indelingen er zijn, met hun niveaus en hun plaats in Archi, staat in [inde
 - **Doelgroep als groepering.** GEMMA modelleert een doelgroep als rol. Een doelgroep is een ordening en geen hoedanigheid; in de wiki is zij daarom een groepering. De afwijking is teruggemeld.
 - **Alles ingedeeld, met dekking.** Elk element staat in minstens één indeling, ook in Archi. De indelingspagina's tonen de hele indeling met de wiki-elementen eronder, zodat te zien is welke gaten de bronnen nog niet hebben gevonden.
 - **Specialisatie of aggregatie.** Specialisatie koppelt aan een indeling van GEMMA (wat voor soort is het?), aggregatie aan een eigen indeling (waar hoort het bij?). Hergebruik gaat boven een nieuwe indeling, en de indelingen zijn strikt hiërarchisch waar het kan.
+- **Een eigen Capabilitykaart.** De capabilities staan naar GEMMA-domein, met dezelfde domeingroeperingen als de Functie-indeling, maar in een eigen kaart: de twee beantwoorden een andere vraag en moeten naast elkaar te lezen zijn.
 - Afwijken van de UPL-indeling of het GEMMA-domein mag, mits teruggemeld (regel Afwijken mits teruggemeld).
 
 ### 4.5 Synoniemen en homoniemen
@@ -237,6 +247,7 @@ De AI kiest de match op betekenis; het script haalt bij elke run de letterlijke 
 
 - De applicatielaag: nu alleen het data-object. Het is de schakel van een element naar het informatiemodel: het script leidt het af uit de GGM-match van een bedrijfsobject, afspraak, rol, actor of gebeurtenis (of uit sterkte geen met een terugmelding hiaat), zodat de AI er niets voor schrijft; alleen een extra GGM-entiteit staat in `data_objecten`. De registratie en haar wettelijke grondslag blijven in de bedrijfslaag, bij het element. Naar een rol, actor of gebeurtenis is de relatie een associatie, omdat ArchiMate daar geen realisatie kent.
 - De overgenomen indelingen as-is (§4.4): de functiehiërarchie uit het model, de plek van een wiki-element erin (`gemma_functie`), de pagina per indeling met dekking, en de export tot en met de wortel met `--volledig`. Nu hebben de functies boven het niveau van een onderwerp nog een beoordeling.
+- De capabilities zelf: het kennismodel en de kenmerken staan; de beoordelingen, de render, de export en de toets op ten minste twee realiserende functies volgen (plan 2026-10-15, stap 14).
 - De vergelijking met een momentopname van GEMMA Online (§2).
 - Views in de export naar Archi; de wiki maakt wel overzichten per indeling.
 - Een dekkingsanalyse van het GGM per beleidsdomein.

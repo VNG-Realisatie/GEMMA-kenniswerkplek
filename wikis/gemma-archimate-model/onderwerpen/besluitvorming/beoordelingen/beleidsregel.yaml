@@ -56,14 +56,14 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 29
+    regel: 30
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: generiek
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving

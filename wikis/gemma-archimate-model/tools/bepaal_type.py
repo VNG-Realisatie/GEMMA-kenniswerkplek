@@ -48,7 +48,7 @@ from kennismodel import AFNEMERS, DOELGROEPEN, DOMEINEN, REGELGEVERS, VERPLICHT,
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = WIKI_ROOT / "schemas" / "beoordeling.schema.json"
-CRITERIA_VERSIE = "2026-10-16"
+CRITERIA_VERSIE = "2026-10-17"
 
 GEEN_AARD = ""  # in `bij`: ja mag ook als het begrip geen hoofdkenmerk heeft (een ding)
 
@@ -84,7 +84,7 @@ KENMERKEN: list[Kenmerk] = [
             "alleen context (gedeputeerde staten als beroepsinstantie), of de interne zaak van een ketenpartner (de medische behandeling door de arts)",
             "GEMMA (gemeentelijk perspectief)"),
     Kenmerk("buiten_dit_model", "buiten dit model", "Poort",
-            "Is het een doel, waarde, drijfveer, principe, losse norm of eis, vermogen of thema, en geen beleidskader? "
+            "Is het een doel, waarde, drijfveer, principe, losse norm of eis, opgave of thema, en geen beleidskader? "
             "Noem het ArchiMate-type.",
             "armoedebestrijding (doel); 'binnen acht weken beslissen' (norm uit één artikel)",
             "bijstandsuitkering; Wet op de lijkbezorging (beleidskader)",
@@ -137,6 +137,12 @@ KENMERKEN: list[Kenmerk] = [
             "'verordening' als soort (bedrijfsobject Regeling); artikel 16 (losse norm); Circulaire adresonderzoek BRP "
             "(richtlijn, blijft bron)",
             "GEMMA (definitie Beleidskader)"),
+    Kenmerk("vermogen", "vermogen", "Hoofdkenmerk",
+            "Beschrijft het wat de gemeente moet kunnen om haar opgaven waar te maken, waarin zij investeert en wat met "
+            "haar strategische opgaven verandert, los van hoe, door wie, in welke volgorde en met welk kanaal of "
+            "systeem?",
+            "Identiteit vaststellen", "Aanvraag controleren op volledigheid (te concreet: een processtap)",
+            "GEMMA (definitie Capability); wiki (kader Capability, functie en proces)"),
     # Partij
     Kenmerk("los_van_verantwoordelijkheid", "los van verantwoordelijkheid", "Partij",
             "Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen?",
@@ -185,9 +191,10 @@ KENMERKEN: list[Kenmerk] = [
             "GEMMA (definitie Procescluster, regel 409 en 419-420; processenlandschap naar soort werk); wiki (geen "
             "taak)", GEDRAG_BIJ),
     Kenmerk("gegroepeerd_gedrag", "gegroepeerd gedrag", "Soort gedrag",
-            "Is het een doorlopende groepering van activiteiten op grond van vergelijkbare middelen, kennis of "
-            "competenties, zonder eigen volgorde of doorlooptijd, en niet 'wat de gemeente kan'?",
-            "vergunningverlening; belastingheffing", "aanslag opleggen", "GEMMA (definitie Bedrijfsfunctie)",
+            "Is het een doorlopende groepering van werk dat de organisatie uitvoert, op grond van vergelijkbare "
+            "middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd? Wat de gemeente moet kunnen, "
+            "strategisch, is een capability (vak strategie).",
+            "vergunningverlening; belastingheffing", "aanslag opleggen (proces)", "GEMMA (definitie Bedrijfsfunctie)",
             GEDRAG_BIJ),
     Kenmerk("toestandsverandering", "toestandsverandering", "Soort gedrag",
             "Is het iets dat binnen of buiten de gemeente gebeurt, op één moment en zonder eigen duur, en dat "
@@ -236,17 +243,22 @@ KENMERKEN: list[Kenmerk] = [
             "inspraak (afdeling 3.4 Awb)", "burgerberaad (vormvrij)", "GEMMA (proces met eigen spelregels)",
             GEDRAG_BIJ),
     Kenmerk("stabiel_over_tijd", "stabiel over tijd", "Gedrag",
-            "Blijft deze groepering bestaan als de organisatie of de werkwijze verandert?",
-            "participatie; belastingheffing", "projectteam Omgevingswet",
-            "ArchiMate en GEMMA (bedrijfsfunctiemodel)", GEDRAG_BIJ),
+            "Blijft het bestaan als de organisatie, de werkwijze of de systemen veranderen, en is het geen opgave met "
+            "een einde?",
+            "participatie; belastingheffing; Identiteit vaststellen",
+            "projectteam Omgevingswet; invoering van de Omgevingswet (een opgave)",
+            "ArchiMate en GEMMA (bedrijfsfunctiemodel); wiki (kader Capability)", _bij("gedrag", "vermogen")),
     Kenmerk("afnemer", "afnemer", "Gedrag",
             "Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? Noem die.",
             "melding openbare ruimte doen (inwoner)", "interne registratiestap",
             "NORA (definitie Dienst); GEMMA (definitie Product, rol Klant)", _bij("gedrag", "aanbod_als_geheel")),
     Kenmerk("gerealiseerd_door", "gerealiseerd door", "Gedrag",
-            "Is er een proces of functie aanwijsbaar dat de dienst uitvoert? Noem het.",
-            "Onderhoud van graven (gerealiseerd door het proces dat graven onderhoudt)",
-            "dienst zonder aanwijsbare uitvoering", "GEMMA (proces en functie realiseren dienst)", GEDRAG_BIJ),
+            "Is er een proces of functie aanwijsbaar dat de dienst uitvoert, of een bedrijfsfunctie die het vermogen "
+            "realiseert? Noem ze.",
+            "Onderhoud van graven (gerealiseerd door het proces dat graven onderhoudt); Personen registreren "
+            "(Bevolkingsadministratie bijhouding, Burgerlijke stand diensten)",
+            "dienst of vermogen zonder aanwijsbare uitvoering",
+            "GEMMA (proces en functie realiseren dienst; functie realiseert capability)", _bij("gedrag", "vermogen")),
     Kenmerk("leidt_tot_gedrag", "leidt tot gedrag", "Gedrag",
             "Start, onderbreekt of beëindigt de gebeurtenis aanwijsbaar gemeentelijk gedrag? Noem het.",
             "Overlijden → Uitvoeren lijkbezorging", "voorval zonder gemeentelijk gevolg",
@@ -337,6 +349,17 @@ KENMERKEN: list[Kenmerk] = [
             "Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze.",
             "parkeervergunning (dienst parkeren, voorwaarden)", "losse dienst",
             "GEMMA (product bundelt dienst en afspraak)", _bij("aanbod_als_geheel")),
+    # Capability
+    Kenmerk("beoordeelbaar", "beoordeelbaar", "Capability",
+            "Kun je er volwassenheid of ontwikkelbehoefte van bepalen en er apart in investeren? Noem de "
+            "investeringsvraag.",
+            "Identiteit vaststellen (fraudebestrijding, biometrie)", "Dienstverlening (te breed)",
+            "wiki (kader Capability: beoordeelbaar)", _bij("vermogen")),
+    Kenmerk("onderscheidend", "onderscheidend", "Capability",
+            "Is het af te grenzen van de andere capabilities, zonder dat een functie er voor een deel in valt? Noem de "
+            "naaste capability.",
+            "Personen registreren naast Identiteit vaststellen", "Burgers helpen naast Dienstverlening",
+            "wiki (kader Capability: onderscheidend)", _bij("vermogen")),
     # Beleidskader
     Kenmerk("landelijk", "landelijk", "Beleidskader",
             "Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, "
@@ -385,7 +408,9 @@ GROEP_ALS = {
     "Partij": "Alleen bij *handelende partij*, *hoedanigheid*, *samenwerkingsverband* of *toegangspunt*; *soort partij* bij *handelende partij* en *samenwerkingsverband*.",
     "Soort gedrag": "Het keuzeveld `soort_gedrag`, alleen bij *gedrag*: één waarde uit het vak; valt weg bij gedrag "
                     "extern (*aangeboden gedrag*).",
-    "Gedrag": "Alleen bij *gedrag*; *afnemer* en *benoembaar resultaat* ook bij *aanbod als geheel*.",
+    "Gedrag": "Alleen bij *gedrag*; *afnemer* en *benoembaar resultaat* ook bij *aanbod als geheel*, *stabiel over "
+              "tijd* en *gerealiseerd door* ook bij *vermogen*.",
+    "Capability": "Alleen bij *vermogen*.",
     "Passief": "Bij een ding (geen hoofdkenmerk); *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* en "
                "bij elk begrip; *deel van object* en *invoer van een ander* bij een ding; "
                "*omvat diensten en afspraken* en *zelfstandig aanbod* bij *aanbod als geheel*.",
@@ -439,6 +464,7 @@ VAKKEN: list[Vak] = [
     Vak("bedrijf/gedrag-extern", "bedrijf", "gedrag", True, ("gedrag",), ("aangeboden_gedrag",)),
     Vak("bedrijf/passief", "bedrijf", "passief", None, (DING,)),
     Vak("bedrijf/samengesteld", "bedrijf", "samengesteld", None, ("aanbod_als_geheel",)),
+    Vak("strategie/gedrag", "strategie", "gedrag", None, ("vermogen",)),
     Vak("motivatie", "motivatie", "", None, ("regeling_als_geheel",)),
     Vak("overig/samengesteld", "overig", "samengesteld", None, ("plaats",)),
 ]
@@ -592,6 +618,9 @@ TYPEN: list[Typedef] = [
             "*gedrag* en *gezamenlijk gedrag*", {"gedrag": "ja", "gezamenlijk_gedrag": "ja"}, "toegewezen_partij",
             ("aanleiding", "benoembaar_resultaat"), {"gebruikt_objecten": "annotatie"},
             "Bezorgen stoffelijk overschot (ketensamenwerking; voorleggen)", "Inter"),
+    Typedef(*km.typevelden("capability"), "pagina", "*vermogen*", {"vermogen": "ja"}, "gerealiseerd_door", (), {},
+            "Identiteit vaststellen; Personen registreren", "Cap", eis=("beoordeelbaar", "onderscheidend",
+                                                                        "stabiel_over_tijd")),
     Typedef(*km.typevelden("representatie"), "geen pagina", "*waarneembare vorm*",
             {"waarneembare_vorm": "ja"}, None, (), {}, "register van begraven lijken (vermelden bij Graf)", "Repr"),
     Typedef(*km.typevelden("locatie"), "geen pagina", "*plaats*", {"plaats": "ja"}, None, (), {},
@@ -799,6 +828,9 @@ REGELS: list[Regel] = [
           lambda k, e, nr: _element(nr, "location", "Fysieke plaats")),
     Regel("4 Type", "*regeling als geheel*", "*landelijk*: ja Beleidskader, nee bron (geen element)",
           lambda k, e: _aard(k) == {"regeling_als_geheel"}, _regeling),
+    Regel("4 Type", "*vermogen*", "Capability",
+          lambda k, e: _aard(k) == {"vermogen"},
+          lambda k, e, nr: _element(nr, "capability", "Vermogen")),
     Regel("4 Type", "*gedrag*", "naar de soort gedrag: Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Dienst of "
           "Bedrijfsinteractie",
           lambda k, e: _aard(k) == {"gedrag"} and len(_soorten(k)) == 1, _gedrag),
@@ -1488,7 +1520,7 @@ def doc_matrix(per_vak: bool = True) -> list[str]:
               "| applicatie | zonder element | zonder element | zonder element | zonder element | Data-object (afgeleid uit de GGM-match) | "
               "— |",
               "| technologie | zonder element: komt misschien nog | | | | | |",
-              "| strategie | Capability (Vermogen): buiten dit model | | | | | |",
+              "| strategie | Resource: zonder element | | Capability; Waardestroom en Handelwijze: zonder element | | | |",
               "| motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |",
               "| overig | | | | | | Locatie (geen pagina), Groepering (indeling) |", ""]
     if not per_vak:

@@ -42,13 +42,13 @@ toelichting: 'Invoer van een andere partij: de ouder of andere gezaghebber geeft
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 30
+    regel: 31
     toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
     archimate_type: business-object
     voorleggen: false
     genoemd_begrip: Behandelen aanvraag reisdocument
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

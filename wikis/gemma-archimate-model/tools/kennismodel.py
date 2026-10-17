@@ -33,7 +33,7 @@ MAP = "kennismodel"
 BUITEN = "elementpaginas/overig/buiten-het-kennismodel.md"  # naslag voor de redacteur, buiten het woordbudget
 HANDMATIG = ("modelleerregels.md",)  # met de hand geschreven; render beheert ze niet
 
-LAGEN = {"bedrijfsarchitectuur": "Bedrijfsarchitectuur", "motivatie": "Motivatie",
+LAGEN = {"strategie": "Strategie", "bedrijfsarchitectuur": "Bedrijfsarchitectuur", "motivatie": "Motivatie",
          "applicatiearchitectuur": "Applicatiearchitectuur", "technologiearchitectuur": "Technologiearchitectuur",
          "overig": "Overig"}
 
@@ -57,7 +57,7 @@ EIGENSCHAPPEN = {  # veld in de beoordeling → wat het vastlegt
                   "mutatie doet (bedrijfsproces), of dat door de keten gaat (bedrijfsinteractie)",
     "afnemer": "voor wie het is: extern of intern (de bovenste laag van het processenlandschap, de rol Klant en de "
                "externe en interne UPL-lijst)",
-    "domein": "het GEMMA-domein, de plaats in de Functie-indeling naar domein",
+    "domein": "het GEMMA-domein, de plaats in de Functie-indeling naar domein of de Capabilitykaart",
     "doelgroep": "gemeente, inwoners en ondernemers of ketenpartners: de plaats in de Doelgroepindeling",
     "regelgever": "EU, rijk of VNG-modelverordening: bepaalt de groep in de Grondslagindeling",
     "kwaliteitsdoelen": "de GEMMA-kwaliteitsdoelen waaraan het beleidskader grondslag geeft, met de sterkte van die "
@@ -279,7 +279,9 @@ ELEMENTTYPEN: list[Elementtype] = [
         "bedrijfsfunctie", "Bedrijfsfunctie", "Business Function", "business-function", "bedrijfsarchitectuur",
         "bedrijfsfunctie", "Activiteiten die zijn gegroepeerd omdat daarvoor vergelijkbare bedrijfsmiddelen, kennis of "
                            "competenties nodig zijn.", "GEMMA", True,
-        "Doorlopende groepering van gedrag; bedient processen. Niet \"wat de gemeente kan\": dat is een vermogen.",
+        "Uitvoerend: een doorlopende groepering van het werk naar aard, kennis en middelen; bedient processen, en "
+        "verandert als het werk anders wordt geclusterd. Wat de gemeente moet kunnen, is strategisch: een capability, "
+        "die functies realiseren.",
         "een zelfstandig naamwoord voor een doorlopend gebied van gedrag, vaak op -ing, -beheer of -verlening "
         "(Vergunningverlening); een functie en een proces hebben nooit dezelfde naam",
         (GGM_GEEN, ("GEMMA-model", "bij voorkeur een exacte match met een GEMMA-functie; een functie zonder match breidt "
@@ -445,6 +447,29 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "beleidsdomeinen.",
                    "Een begrip dat alleen een thema is, wordt geen groepering en geen element."),
         zonder_pagina="indeling"),
+    Elementtype(
+        "capability", "Capability", "Capability", "capability", "strategie", "capability",
+        "Een vermogen waarover een organisatie, persoon of systeem beschikt.", "GEMMA", True,
+        "Strategisch: wat de gemeente moet kunnen om haar opgaven waar te maken, los van hoe, door wie, in welke "
+        "volgorde en met welk kanaal of systeem. Het verandert met de strategische opgaven en stuurt waarin zij "
+        "investeert en wat zij ontwikkelt. Heeft het een uitvoerder of gebruikt het objecten, dan is het uitvoerend: "
+        "een functie of proces.",
+        "object en werkwoord in de onbepaalde wijs (Identiteit vaststellen); nooit dezelfde naam als een functie of "
+        "proces",
+        (GGM_GEEN, ("GEMMA-model", "optioneel, op betekenis: de capabilities van GEMMA beschrijven de "
+                                   "informatievoorziening; een zwakke match voorleggen")),
+        "Identiteit vaststellen; Personen registreren; Lijkbezorging waarborgen",
+        "Verkiezingen organiseren (valt samen met één functie); Dienstverlening (te breed); Aanvraag controleren op "
+        "volledigheid (te concreet)",
+        niveaus=("capability: het grofste niveau dat genoeg onderscheid geeft",
+                 "deelcapability: een deel dat apart ontwikkeld, beoordeeld of bestuurd wordt"),
+        eigenschappen=("domein", "gemma"), verplicht=("domein",),
+        afspraken=("Een element alleen als ten minste twee bedrijfsfuncties haar realiseren; valt zij samen met één "
+                   "functie, dan volstaat de functie.",
+                   "Alleen een bedrijfsfunctie realiseert een capability. De houder is altijd de gemeente: geen relatie "
+                   "naar een actor, rol of resource.",
+                   "De realisatie steunt op de bronnen van de functies; *beoordeelbaar* en *onderscheidend* op een "
+                   "landelijke richtlijn, of op een oordeel met onderbouwing."), vak="strategie/gedrag"),
 ]
 ELEMENTTYPE = {e.sleutel: e for e in ELEMENTTYPEN}
 VAN_ARCHIMATE = {e.archimate_type: e for e in ELEMENTTYPEN}
@@ -500,8 +525,12 @@ ZONDER_ELEMENT: list[ZonderElement] = [
     ZonderElement("kernwaarde", "Kernwaarde", "Driver", "driver", "motivatie",
                   "Buiten dit model: een fundamentele overtuiging waaraan overheidsdienstverlening moet voldoen. Ook een "
                   "Driver; alleen het beleidskader is een element.", "Kernwaarde"),
-    ZonderElement("vermogen", "Vermogen", "Capability", "capability", "motivatie",
-                  "Buiten dit model (strategielaag): \"wat de gemeente kan\" is geen bedrijfsfunctie.", "Capability"),
+    ZonderElement("resource", "Resource", "Resource", "resource", "strategie",
+                  "Buiten dit model: de houder van een capability is altijd de gemeente.", "Resources"),
+    ZonderElement("waardestroom", "Waardestroom", "Value Stream", "value-stream", "strategie",
+                  "Buiten dit model: de waarde voor de afnemer volgt uit dienst en product."),
+    ZonderElement("handelwijze", "Handelwijze", "Course of Action", "course-of-action", "strategie",
+                  "Buiten dit model: een opgave met een einde, geen vermogen.", "Strategie"),
     ZonderElement("applicatiecomponent", "Applicatiecomponent", "Application Component", "application-component",
                   "applicatiearchitectuur", "De applicatielaag is nog niet gebouwd.", "Applicatiecomponent"),
     ZonderElement("applicatieservice", "Applicatieservice", "Application Service", "application-service",
@@ -621,6 +650,9 @@ RELATIES: list[Relatie] = [
     Relatie("data-object", "realisatie", "afspraak", False),
     *[Relatie("data-object", "associatie", doel, False, (), (), "ArchiMate: geen realisatie")
       for doel in ("rol", "actor", "gebeurtenis")],
+    # Strategie
+    Relatie("bedrijfsfunctie", "realisatie", "capability", True, ("realiseert",), ("gerealiseerd_door",)),
+    Relatie("capability", "aggregatie", "capability", False, ("omvat",), (), "capability → deelcapability"),
     # Indelingen: de groeperingen van de Beleidsdomeinindeling, de Functie-indeling naar domein en de Grondslagindeling
     Relatie("groepering", "aggregatie", "groepering", True, (), (), "taakveld → beleidsdomein; domein → beleidsdomein"),
     *[Relatie("groepering", "aggregatie", doel, doel in ("bedrijfsobject", "bedrijfsfunctie", "rol"), (), (), toelichting)
@@ -636,7 +668,8 @@ RELATIES: list[Relatie] = [
         ("actor", "Doelgroepindeling"),
         ("rol", "Doelgroepindeling"),
         ("bedrijfssamenwerking", "Doelgroepindeling"),
-        ("kanaal", "Doelgroepindeling"))],
+        ("kanaal", "Doelgroepindeling"),
+        ("capability", "Capabilitykaart"))],
 ]
 
 
@@ -672,6 +705,8 @@ WEGGEFILTERD: list[Weggefilterd] = [
                  "een dienst heeft geen toegang tot een object; het proces dat haar realiseert wel"),
     Weggefilterd(("gebeurtenis",), ("associatie",), OBJECT,
                  "het object volgt uit het levensloopproces waaronder de gebeurtenis hangt"),
+    Weggefilterd(("bedrijfsproces", "gebeurtenis", "dienst", "bedrijfsinteractie"), ("realisatie",), ("capability",),
+                 "alleen een bedrijfsfunctie realiseert een capability; ander gedrag hangt eraan via de functie"),
     Weggefilterd(OBJECT, ("associatie",), ("dienst",),
                  "een object hangt via het proces dat de dienst realiseert (toegang) aan een dienst"),
 ]
@@ -790,6 +825,13 @@ INDELINGEN: list[Indeling] = [
               "Een product hangt via `domein` direct aan de domeingroepering: ArchiMate laat een functie geen product "
               "aggregeren. De diensten die het omvat, hangen onder hun functie.",
               "Een functie bedient een proces; ze aggregeert geen proces.")),
+    Indeling("Capabilitykaart", "capabilities", "het GEMMA-domein", {"capability": None},
+             "domein › capability › deelcapability", "wiki",
+             "aggregatie vanuit de domeingroepering (een capability) of vanuit de capability (een deelcapability), "
+             "in de map Capabilitykaart", ("domein",),
+             ("Een eigen kaart naast de Functie-indeling naar domein, met dezelfde domeingroeperingen: de functies "
+              "zeggen welke activiteiten bij elkaar horen, de kaart wat de gemeente moet kunnen.",
+              "Een capability over meer domeinen hangt onder Niet domeingebonden.")),
     Indeling("Procesindeling naar kernobject", "processen, gebeurtenissen en ketensamenwerkingen", "het kernobject",
              {"bedrijfsproces": "levensloopproces en bedrijfsproces", "gebeurtenis": None, "bedrijfsinteractie": None},
              "levensloopproces (per kernobject) › bedrijfsproces; een gebeurtenis onder het levensloopproces van het "

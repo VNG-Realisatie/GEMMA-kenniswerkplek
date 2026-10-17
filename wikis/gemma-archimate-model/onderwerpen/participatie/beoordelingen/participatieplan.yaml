@@ -56,14 +56,14 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 32
+    regel: 33
     toelichting: Passief (kern ja, 2/2)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: kernobject
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2026-rijk-gemeentewet-wettekst

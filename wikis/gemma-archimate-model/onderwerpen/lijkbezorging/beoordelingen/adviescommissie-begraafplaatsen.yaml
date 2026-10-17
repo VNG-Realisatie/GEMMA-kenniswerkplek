@@ -32,7 +32,7 @@ besluiten:
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 19
+    regel: 20
     toelichting: Kernrelatie ontbreekt voor Actor
     archimate_type: business-actor
     voorleggen: true

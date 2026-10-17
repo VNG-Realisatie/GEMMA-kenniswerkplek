@@ -121,14 +121,14 @@ status: afgewezen
 beslist:
   uitkomst:
     soort: element
-    regel: 25
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738

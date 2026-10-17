@@ -117,14 +117,14 @@ status: goedgekeurd
 beslist:
   uitkomst:
     soort: element
-    regel: 25
+    regel: 26
     toelichting: Gedrag, *per keer doorlopen* (kern ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen

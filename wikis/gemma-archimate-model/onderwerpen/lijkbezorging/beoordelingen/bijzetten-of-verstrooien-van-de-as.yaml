@@ -66,13 +66,13 @@ toelichting: 'Deelproces zonder pagina van Uitvoeren lijkbezorging: het geven va
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 27
+    regel: 28
     toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
     archimate_type: business-process
     voorleggen: false
     genoemd_begrip: Uitvoeren lijkbezorging
     generiek: false
-    typeregel: 15
+    typeregel: 16
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

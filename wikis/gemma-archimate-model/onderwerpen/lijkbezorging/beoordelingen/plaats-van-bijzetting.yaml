@@ -55,13 +55,13 @@ genoemd_begrip: Begraafplaats
 beslist:
   uitkomst:
     soort: onderdeel
-    regel: 34
+    regel: 35
     toelichting: Onderdeel van een ander object, zonder eigen proces
     archimate_type: business-object
     voorleggen: false
     genoemd_begrip: Begraafplaats
     generiek: false
-    typeregel: 18
+    typeregel: 19
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

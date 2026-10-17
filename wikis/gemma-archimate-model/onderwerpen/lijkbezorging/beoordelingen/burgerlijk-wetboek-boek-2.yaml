@@ -24,7 +24,7 @@ besluiten:
 beslist:
   uitkomst:
     soort: geen_element
-    regel: 19
+    regel: 20
     toelichting: Kernrelatie ontbreekt voor Beleidskader
     archimate_type: driver
     voorleggen: true
