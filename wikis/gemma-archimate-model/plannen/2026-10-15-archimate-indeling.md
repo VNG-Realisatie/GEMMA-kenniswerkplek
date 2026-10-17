@@ -96,6 +96,99 @@ Uitvoering:
 - Uitkomst: 18 afgeleide data-objecten. Dat zijn de 13 elementen met *geautomatiseerd verwerkt* ja, plus Aanvraag, Beschikking en Besluit (GGM sterk) en Bezwaarschrift en Schriftelijke klacht (hiaat 20 en 21). Bij Ingeschreven persoon komen er 3 extra bij: Gezag-data (Gezagsverhouding, sterk; ook curatele), Nationaliteit-data (exact) en Verblijfstitel-data (sterk). Signalering heeft geen GGM-entiteit; Akte van overlijden valt onder Akte van de burgerlijke stand-data.
 - De 285 goedgekeurde elementen staan weer op review, omdat het akkoord-hash de kenmerken telt: een nieuw AKKOORD.
 
+## Voorstel stap 12: Capability (ter bespreking, 2026-10-16)
+
+Een voorstel zonder code, binnen het kader van de redacteur (deel 3). De keuzes K1–K8 worden voorgelegd; de besluiten komen in *Uitkomst stap 12*.
+
+### Wat er nu staat
+
+- **Over GEMMA** (kennismodel, regel 565): Capability is "Een vermogen waarover een organisatie, persoon of systeem beschikt", in de strategielaag. Relaties: Bedrijfsfunctie ─realisatie→ Capability, Resource ─toewijzing→ Capability, Capability ─invloed→ Waarde.
+- **GEMMA-model** (2026-10-02): 26 capabilities, alle met bron *Thema-architectuur Common Ground*. Ze hangen alleen aan 8 groeperingen (Kanalen en toegang, Authenticatie en autorisatie, Verantwoording dienstgebruik, Connectiviteit, Datadiensten, Data-integratie, Gemeente en keten- en netwerkpartijen, Processen en bedrijfsregels); geen enkele wordt door een bedrijfsfunctie gerealiseerd. Het zijn vermogens van de informatievoorziening ("Dienstenafnemers moeten …"), geen kaart van wat de gemeente als organisatie moet kunnen.
+- **De wiki**: Capability is *buiten dit model* (`tools/kennismodel.py`, poortkenmerk 3 noemt "vermogen", *gegroepeerd gedrag* sluit "wat de gemeente kan" uit). Geen beoordeling heeft Capability als uitkomst. Er zijn 7 bedrijfsfuncties (5 in burgerzaken, 2 in lijkbezorging) en 86 diensten; de 9 diensten van besluitvorming hebben geen functie.
+- **Woordbudget** kennismodel: 20.874 van 21.100.
+
+### Het voorstel
+
+- **Definitie**: die van Over GEMMA, letterlijk. Duiding: wat de gemeente moet kunnen, los van hoe, door wie en in welke volgorde; het vermogen waarin zij investeert en waarvan zij de volwassenheid beoordeelt.
+- **Vak** `strategie/gedrag`: in ArchiMate is Capability gedrag in de strategielaag. Hoofdkenmerk *vermogen* (volgt uit het vak), geen soort gedrag. Resource, Waardestroom (Value Stream) en Handelwijze (Course of Action) staan als weggefilterd in de laag strategie.
+- **Fase A maakt het onderscheid met de functie**: het vak volgt uit de vraag die het begrip beantwoordt (kader: "Wat moet de gemeente kunnen?" tegenover "Welke activiteiten horen inhoudelijk bij elkaar?"). Een begrip met *gegroepeerd gedrag* dat die eerste vraag beantwoordt, is een conflict (regel 7) en wordt voorgelegd.
+- **Kenmerken (fase B)**, de criteria uit het kader; *ontleedbaar* is de relatie naar een deelcapability, *niet uitvoeringsgericht* zit in het hoofdkenmerk:
+
+| Kenmerk | Vraag | Ja | Nee | Bij nee |
+|---|---|---|---|---|
+| *vermogen* (hoofdkenmerk) | Beschrijft het wat de gemeente moet kunnen, los van hoe, door wie, in welke volgorde en met welk kanaal of systeem? | Identiteit vaststellen | Aanvraag controleren op volledigheid | te concreet: een functie, proces of processtap |
+| *beoordeelbaar* (nieuw) | Kun je er volwassenheid of ontwikkelbehoefte van bepalen en er apart in investeren? Noem de investeringsvraag. | Identiteit vaststellen (fraudebestrijding, biometrie) | Dienstverlening | te breed: geen element |
+| *onderscheidend* (nieuw) | Is het af te grenzen van de andere capabilities, zonder dat een functie er voor een deel in valt? Noem de naaste capability. | Personen registreren tegenover Identiteit vaststellen | Burgers helpen tegenover Dienstverlening | samenvoegen of splitsen: voorleggen |
+| *stabiel over tijd* (bestaand, aangescherpt) | Blijft het bestaan als de organisatie, de werkwijze of de systemen veranderen, en is het geen opgave met een einde? | belastingheffing; Identiteit vaststellen | projectteam Omgevingswet; invoering van de Omgevingswet | een opgave: buiten dit model (doel of handelwijze) |
+| *gerealiseerd door* † (bestaand, kernrelatie) | Realiseert een aanwijsbare bedrijfsfunctie het vermogen (en bij een dienst: een proces of functie)? Noem ze. | Personen registreren ← Bevolkingsadministratie bijhouding, Burgerlijke stand diensten | vermogen zonder functie | kernrelatie ontbreekt: signaal |
+
+- **Splitsregel** (kader): splits een capability als de delen apart ontwikkeld, beoordeeld of bestuurd worden; het deel wordt een deelcapability (aggregatie). **Beslisregel** (kader): het grofste niveau dat genoeg onderscheid geeft.
+- **Aanscherping van *gegroepeerd gedrag*** (kenmerk 23): "… op grond van vergelijkbare middelen, kennis of competenties, zonder eigen volgorde of doorlooptijd. Wat de gemeente moet kunnen, is een capability (vak strategie)." Het voorbeeld nee wordt "aanslag opleggen (proces)".
+- **Kernrelatie** Bedrijfsfunctie ─realisatie→ Capability (K2); Capability ─aggregatie→ Capability voor de deelcapability (uitbreiding op het GEMMA-kennismodel). Welke diensten van hetzelfde vermogen afhangen, volgt uit dienst ← functie → capability; de render toont het op de pagina.
+- **Gevolgen in het kennismodel**: Capability gaat van `motivatie/weggefilterd` naar een elementtype in de laag strategie, met een pagina `kennismodel/strategie/capability-modelleerafspraken.md` en `strategie/weggefilterd.md`; poortkenmerk 3 noemt "vermogen" niet meer; de duiding van de bedrijfsfunctie verwijst naar de capability. De elementpagina's komen in `elementpaginas/strategie/capabilities/`, de export zet ze in `Strategy / wiki-gemma-model`.
+
+### Kalibratie op de 26 GEMMA-capabilities
+
+| Groepering (aantal) | Voorbeelden | Oordeel |
+|---|---|---|
+| Kanalen en toegang (5) | Melden en doen van aanvragen door burgers en bedrijven; Bieden van 'regie op gegevens' aan burgers en bedrijven; Authenticeren en Autoriseren van eindgebruikers; Bieden van gebruikersinterfaces | de eerste twee zijn bedrijfsvermogens richting inwoner en ondernemer: kandidaat voor een match; de andere drie zijn systeemvermogens |
+| Datadiensten (4, één ook in Verantwoording) | Vastleggen en verstrekken van data; Terugmelden van mogelijke datafouten; Abonneren en notificeren | informatievoorziening; Terugmelden raakt de terugmeldplicht van de gemeente als afnemer: hoogstens partieel |
+| Gemeente en keten- en netwerkpartijen (4), Data-integratie (3) | Gestandaardiseerd vastleggen; Historie; Metadata; Protocolleren; Integreren; Transformeren; Pseudonimiseren | informatievoorziening |
+| Authenticatie en autorisatie (2), Verantwoording dienstgebruik (3), Connectiviteit (4) | Autoriseren van dienstenafnemers; Controleren van doel en grondslag; Verbinden van afnemers en aanbieders | informatievoorziening en techniek |
+| Processen en bedrijfsregels (2) | Bijhouden en toepassen van bedrijfsregels; Inrichten en uitvoeren van processen | vermogen om bedrijfsregels en workflow te ondersteunen: applicatie |
+
+Toetsvragen: *waar investeren* en *welke competenties hergebruiken* zijn voor alle 26 ja, maar in de informatievoorziening; *welke diensten afhangen van hetzelfde vermogen* geeft bij allemaal "alle diensten": ze zijn horizontaal. Uitkomst: GEMMA heeft geen capabilitykaart van de bedrijfslaag. De wiki maakt bedrijfsvermogens; van de 26 komen er hoogstens 2 à 3 in aanmerking voor een match (K7).
+
+### Kalibratie op diensten (22 diensten uit burgerzaken, lijkbezorging en besluitvorming)
+
+| Kandidaat-capability | Gerealiseerd door (functie in de wiki) | Diensten | Waar investeren? | Competenties hergebruiken | Oordeel |
+|---|---|---|---|---|---|
+| Personen registreren | Bevolkingsadministratie bijhouding; Burgerlijke stand diensten | Verhuismelding, BRP-inschrijving, Geboorteaangifte, Overlijdensaangifte, Erkenning kind | kwaliteit van BRP en akten, adresonderzoek | registers bijhouden, brondocumenten beoordelen, personen- en familierecht | capability: bundelt twee functies onder één investeringsvraag |
+| Identiteit vaststellen | Officiële documenten verstrekking; Bevolkingsadministratie bijhouding; Nederlanderschap diensten | Paspoort, Identiteitskaart, Rijbewijs aanvragen, BRP-inschrijving, Naturalisatieverzoek | identiteitsfraude, biometrie | documentcontrole, gezichtsvergelijking | capability, over functies heen: het inzicht dat de functie-indeling niet geeft; GEMMA-functie Identiteitvaststelling (Ontvangst) realiseert haar ook; Authenticeren van eindgebruikers is de digitale kant (partieel) |
+| Lijkbezorging waarborgen | Exploiteren van begraafplaatsen; Vergunningenbeheer Publieksdiensten; Burgerlijke stand diensten | Grafuitgifte, Verlof tot begraven, Uitvaart vervroegen of uitstellen, Overlijdensakte | capaciteit van begraafplaatsen, termijnen | Wet op de lijkbezorging | capability over twee domeinen; tegenover "Lijkbezorging als functie" (niet) |
+| Verkiezingen organiseren | Verkiezingen gerelateerde diensten | Kiezerspas, Stempas ontvangen, Volmachtbewijs verkiezingen | ja, apart (verkiezingsorganisatie) | weinig | één op één met een functie: K3 |
+| Nationaliteit verlenen | Nederlanderschap diensten | Naturalisatieverzoek, Naturalisatieoptie | nauwelijks apart: de IND beslist | — | geen capability: niet apart ontwikkeld; valt onder Personen registreren en Identiteit vaststellen |
+| Rechtsbescherming bieden | geen functie in de wiki (GEMMA: Klachten afhandeling) | Bezwaar, Beroep, Klacht, Dwangsom bij niet tijdig beslissen, Nadeelcompensatie | juridische kwaliteit | over alle domeinen | capability, maar zonder realiserende functie: eerst een functie (K2) |
+
+Bevindingen:
+
+- Een capability voegt het meest toe waar zij functies en domeinen overspant (Identiteit vaststellen, Lijkbezorging waarborgen, Personen registreren). Daar beantwoordt zij de drie toetsvragen anders dan de functie-indeling.
+- Bij één op één met een functie (Verkiezingen, Nederlanderschap, Officiële documenten) is de capability bijna een kopie van de functie: K3.
+- Een dienst hangt vaak van meer vermogens af (Paspoort: Identiteit vaststellen en het verstrekken van documenten); via de functies is dat zichtbaar.
+- De diensten van besluitvorming hebben geen functie; een capability daar vraagt eerst een functie (GEMMA: Klachten afhandeling, Besluitvormings verantwoording).
+- Bijvangst voor een terugmelding later: de GEMMA-functies onder *Ontvangst* (Identiteitvaststelling, Autorisatievaststelling, Voorwaardentoetsing, Vormacceptatie, Zelfredzaamheidbepaling) staan alleen in het domein Fysieke leefomgeving, maar zijn domeinoverstijgend en lijken op vermogens.
+
+### Keuzes
+
+| # | Keuze | Advies |
+|---|---|---|
+| K1 | Hoe een capability ontstaat | een beoordeling van de AI, afgeleid uit de functies en diensten van een onderwerp, met fase A en B, voorleggen en AKKOORD |
+| K2 | Welk gedrag een capability realiseert | alleen de bedrijfsfunctie, zoals Over GEMMA |
+| K3 | Wanneer een capability een element is | de criteria beslissen; één op één met een functie alleen als de toetsvragen een ander antwoord geven dan de functie |
+| K4 | Naamvorm | object en werkwoord in de onbepaalde wijs (Identiteit vaststellen) |
+| K5 | Indeling | een eigen capabilitykaart naar het GEMMA-domein: domein › capability › deelcapability |
+| K6 | Bron | de bronnen van de realiserende functies (relationeel, `naar`); *beoordeelbaar* en *onderscheidend* zijn een oordeel met onderbouwing |
+| K7 | GEMMA-match | optioneel, op betekenis; de 26 blijven matchdoel; één terugmelding aan het GEMMA-team over de ontbrekende capabilitykaart van de bedrijfslaag |
+| K8 | Woordbudget kennismodel | ongeveer 700 woorden erbij (een pagina capability, weggefilterd in strategie, twee kenmerken): het budget naar 21.800 |
+
+## Uitkomst stap 12 (2026-10-17)
+
+Besluiten van de redacteur over het voorstel; de rest van het voorstel (definitie, vak `strategie/gedrag`, hoofdkenmerk *vermogen*, de kenmerken, de aanscherpingen en de gevolgen in het kennismodel) geldt zoals voorgesteld.
+
+- **K1, ontstaan**: een beoordeling van de AI, afgeleid uit de functies en diensten van een onderwerp, met fase A en B, voorleggen en AKKOORD.
+- **K2, relatie**: alleen de bedrijfsfunctie realiseert een capability (Bedrijfsfunctie ─realisatie→ Capability), plus Capability ─aggregatie→ Capability voor een deelcapability. De houder is altijd de gemeente: "uiteindelijk is alles gerelateerd aan de gemeente". Er komt dus geen relatie naar een actor of resource; Resource blijft weggefilterd.
+- **K3, drempel: alleen bij bundeling.** Een capability is een element als ten minste twee bedrijfsfuncties haar realiseren. Valt zij één op één samen met een functie, dan is het geen element: de functie volstaat. De regel is toetsbaar *(script)*. In de kalibratie worden Personen registreren, Identiteit vaststellen en Lijkbezorging waarborgen een element. Verkiezingen organiseren en Nationaliteit verlenen worden het niet. Rechtsbescherming bieden wacht op realiserende functies.
+- **K4, naamvorm**: object en werkwoord in de onbepaalde wijs (Identiteit vaststellen). Een capability heeft nooit dezelfde naam als een functie of proces.
+- **K5, indeling**: een eigen *Capabilitykaart* naar het GEMMA-domein: domein › capability › deelcapability, met de bestaande domeingroeperingen van GEMMA en `domein` als verplicht veld. Een capability over meer domeinen komt onder Niet domeingebonden.
+- **K6, bron: beide.** De realisatie steunt op de bronnen van de realiserende functies (relationeel, `naar`). Daarnaast zijn strategische bronnen die voor alle gemeenten gelden de bron van het vermogen zelf (*beoordeelbaar*, *onderscheidend*): VNG-impactanalyses, implementatieplannen en beleidsadviezen. Zonder zo'n bron zijn die kenmerken een oordeel met onderbouwing. Regel Elke claim een bron krijgt deze uitzondering in stap 13.
+- **K7, GEMMA-match**: `gemma` is optioneel en matcht op betekenis; de 26 GEMMA-capabilities blijven matchdoel. Een zwakke match wordt voorgelegd. Er komt één terugmelding aan het GEMMA-team: GEMMA heeft geen capabilitykaart van de bedrijfslaag, en de import voegt die toe naast de 26.
+- **K8, woordbudget**: kennismodel van 21.100 naar 21.800.
+
+Open voor stap 13:
+
+- **Brontype van een VNG-impactanalyse, een implementatieplan of een beleidsadvies**: in sources/index is dat nu `overig` (bijvoorbeeld de GEMMA-impactanalyse ketensamenwerking), niet `beleid`. Het brontype bepaalt de plaats in de regel Bronvoorrang. Dit wordt voorgelegd vóór de wijziging van de regel.
+- **De GEMMA-functies onder *Ontvangst***: een kandidaat voor een terugmelding (zie de bevindingen van de kalibratie). Dit punt staat los van het bouwen.
+
 ## Deel 1 — Matrix en lichtere kenmerken (denkniveau hoog)
 
 ### De matrix

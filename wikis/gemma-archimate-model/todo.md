@@ -13,7 +13,7 @@ De uitkomst staat in [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-
 
 ## ArchiMate-indeling, lichtere kenmerken, data-object en capability (plan 2026-10-15)
 
-Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 (matrix en lichtere kenmerken), deel 2 (data-object als element), deel 3 (Capability, eerst samen bepalen). Deel 1 en 2 zijn omgezet (Uitkomst stap 3–7 en 8–11); volgende stap: deel 3, Capability, eerst als bespreking.
+Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 (matrix en lichtere kenmerken), deel 2 (data-object als element), deel 3 (Capability, eerst samen bepalen). Deel 1 en 2 zijn omgezet (Uitkomst stap 3–7 en 8–11). Voor deel 3 zijn de besluiten over Capability genomen (Uitkomst stap 12); volgende stap: stap 13, de besluiten vastleggen in ARCHITECTURE.md en het kennismodel, en daarna stap 14, bouwen.
 
 - **Potentiële relaties vastleggen.** 239 relationele kenmerken ja hebben geen relatie (bij elementen 104: vooral *aanleiding*, *toegewezen partij*, *bijdrage aan groter proces*, *gebruikt objecten*). Noem bij de volgende herbeoordeling per onderwerp de tegenpartij in `naar`: een element met de relatie, of naam en type. Het signaal over de kernrelatie wijst ze aan.
 
