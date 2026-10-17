@@ -2,11 +2,10 @@
 id: kwaliteitsdoel-modelleerafspraken
 type: kennismodel
 titel: Kwaliteitsdoel — modelleerafspraken
+gegenereerd: tools/kennismodel.py
 ---
 
 # Kwaliteitsdoel — modelleerafspraken
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 *Goal* in ArchiMate · laag Motivatie · geen pagina (matchdoel (GEMMA))
 
@@ -26,8 +25,4 @@ titel: Kwaliteitsdoel — modelleerafspraken
 
 ## Relaties
 
-In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee betekent: een uitbreiding op het GEMMA-kennismodel, in de export gemarkeerd en een kandidaat voor een terugmelding over het kennismodel.
-
-| Richting | Relatie | Ander type | Namen | Kern | In Over GEMMA | Toelichting |
-|---|---|---|---|---|---|---|
-| in | invloed | [Beleidskader](beleidskader-modelleerafspraken.md) | geeft grondslag aan |  | ja | met een sterkte; het kwaliteitsdoel is een element van GEMMA (veld `kwaliteitsdoelen`) |
+Inkomend, bij het brontype: [Beleidskader](beleidskader-modelleerafspraken.md) (invloed).

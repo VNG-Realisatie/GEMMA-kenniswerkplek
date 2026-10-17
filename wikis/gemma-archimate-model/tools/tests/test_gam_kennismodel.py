@@ -16,12 +16,11 @@ WIKI = TOOLS.parent
 MET_ELEMENT = [e for e in km.ELEMENTTYPEN if e.paginatype and e.vak]  # het data-object is afgeleid, zonder indeling
 
 
-def test_elk_type_heeft_modelleerafspraken_en_elke_laag_weggefilterd():
+def test_elk_type_heeft_modelleerafspraken_en_er_is_een_pagina_buiten_het_kennismodel():
     paginas = km.paginas()
     for e in km.ELEMENTTYPEN:
         assert f"kennismodel/{e.laag}/{e.sleutel}-modelleerafspraken.md" in paginas, e.sleutel
-    for laag in km.LAGEN:
-        assert f"kennismodel/{laag}/weggefilterd.md" in paginas, laag
+    assert km.BUITEN in paginas
     for z in km.ZONDER_ELEMENT:
         assert z.laag in km.LAGEN, z.sleutel
 

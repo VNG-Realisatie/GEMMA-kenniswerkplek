@@ -27,6 +27,10 @@
       "items": {
         "type": "string"
       }
+    },
+    "gegenereerd": {
+      "type": "string",
+      "description": "Het script dat de pagina maakt; wijzig de bron, niet de pagina."
     }
   },
   "additionalProperties": false

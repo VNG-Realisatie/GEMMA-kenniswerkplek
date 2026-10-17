@@ -2,11 +2,10 @@
 id: actor-modelleerafspraken
 type: kennismodel
 titel: Actor — modelleerafspraken
+gegenereerd: tools/kennismodel.py
 ---
 
 # Actor — modelleerafspraken
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 *Business Actor* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/actief-intern` · paginatype `actor`
 
@@ -17,7 +16,7 @@ titel: Actor — modelleerafspraken
 | Duiding | Persoon, organisatie of eenheid, ook extern of generiek (inwoner), en een samenwerkingsverband met eigen rechtspersoon (GGD). Hangt alleen via een rol aan gedrag en objecten. |
 | Herken je aan | *handelende partij* met *los van verantwoordelijkheid*; of *samenwerkingsverband* met *eigen rechtspersoon*. Moet ja: *vervult een rol* (kernrelatie), *soort partij*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Actor ─toewijzing→ Rol |
-| Eigenschappen | `doelgroep` (verplicht): gemeente, inwoners en ondernemers of ketenpartners: de plaats in de Doelgroepindeling (gemeente, inwoners en ondernemers, ketenpartners) · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `ggm`: de match met het GGM: entiteit, sterkte en onderbouwing · `data_objecten`: een extra data-object voor een andere GGM-entiteit: naam en GGM-match |
+| Eigenschappen | `doelgroep` (verplicht) · `gemma` · `ggm` · `data_objecten` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Doelgroepindeling](../indelingen.md) |
 | Naamvorm | de soort partij in de gangbare term (College van B&W; Kerkgenootschap) |
 | Afstemming | GGM: matchdoel voor het data-object (`ggm`, niet verplicht) · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen |
@@ -31,23 +30,10 @@ titel: Actor — modelleerafspraken
 
 ## Relaties
 
-In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee betekent: een uitbreiding op het GEMMA-kennismodel, in de export gemarkeerd en een kandidaat voor een terugmelding over het kennismodel.
+| Relatie | Naar | Namen | Kern | In Over GEMMA | Toelichting |
+|---|---|---|---|---|---|
+| toewijzing | [Rol](rol-modelleerafspraken.md) | vervult | *vervult een rol* | ja |  |
+| aggregatie | [Actor](actor-modelleerafspraken.md) | omvat |  | nee | structureel: deel van, lid van |
+| associatie (gericht) | [Actor](actor-modelleerafspraken.md) | is voorzitter van |  | nee | alleen een structurele relatie |
 
-| Richting | Relatie | Ander type | Namen | Kern | In Over GEMMA | Toelichting |
-|---|---|---|---|---|---|---|
-| uit | toewijzing | [Rol](rol-modelleerafspraken.md) | vervult | *vervult een rol* | ja |  |
-| uit | aggregatie | [Actor](actor-modelleerafspraken.md) | omvat |  | nee: uitbreiding op het GEMMA-kennismodel | structureel: deel van, lid van |
-| uit | associatie (gericht) | [Actor](actor-modelleerafspraken.md) | is voorzitter van |  | nee: uitbreiding op het GEMMA-kennismodel | alleen een structurele relatie |
-| in | aggregatie | [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) | vrij, uit de bron |  | ja |  |
-| in | associatie | [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel | ArchiMate: geen realisatie |
-| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Doelgroepindeling |
-
-## Weggefilterd
-
-Niet in het kennismodel van de wiki, ook al is de relatie in ArchiMate geldig; de export laat haar weg. Een relatie die nergens in het kennismodel staat, is ook weggefilterd.
-
-| Relatie | Reden |
-|---|---|
-| Actor ─toewijzing of toegang of associatie→ Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Dienst, Bedrijfsinteractie, Bedrijfsobject, Afspraak | een actor hangt via een rol aan gedrag en objecten: actor → toewijzing → rol |
-| Actor ─toewijzing→ Actor, Bedrijfssamenwerking, Kanaal | tussen partijen is alleen *actor vervult rol* een toewijzing |
-| Rol, Bedrijfssamenwerking ─toewijzing→ Actor | tussen partijen is alleen *actor vervult rol* een toewijzing |
+Inkomend, bij het brontype: [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) (aggregatie); [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) (associatie); [Groepering](../overig/groepering-modelleerafspraken.md) (aggregatie).

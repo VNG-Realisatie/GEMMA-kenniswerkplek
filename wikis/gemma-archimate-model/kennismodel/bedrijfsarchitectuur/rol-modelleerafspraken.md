@@ -2,11 +2,10 @@
 id: rol-modelleerafspraken
 type: kennismodel
 titel: Rol — modelleerafspraken
+gegenereerd: tools/kennismodel.py
 ---
 
 # Rol — modelleerafspraken
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 *Business Role* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/actief-intern` · paginatype `rol`
 
@@ -17,7 +16,7 @@ titel: Rol — modelleerafspraken
 | Duiding | Verantwoordelijkheid of hoedanigheid (aanvrager, belastingplichtige, heffingsambtenaar). |
 | Herken je aan | *hoedanigheid*, niet *los van verantwoordelijkheid*. Moet ja: *voert gedrag uit* (kernrelatie). Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Rol ─toewijzing→ Bedrijfsproces; Rol ─toewijzing→ Bedrijfsfunctie; Rol ─toewijzing→ Bedrijfsinteractie |
-| Eigenschappen | `doelgroep` (verplicht): gemeente, inwoners en ondernemers of ketenpartners: de plaats in de Doelgroepindeling (gemeente, inwoners en ondernemers, ketenpartners) · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `gemma_generiek`: het generieke GEMMA-element waarvan dit een specialisatie is (exacte match) · `ggm`: de match met het GGM: entiteit, sterkte en onderbouwing · `data_objecten`: een extra data-object voor een andere GGM-entiteit: naam en GGM-match |
+| Eigenschappen | `doelgroep` (verplicht) · `gemma` · `gemma_generiek` · `ggm` · `data_objecten` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Procesindeling naar soort werk](../indelingen.md) (bij *generiek*); [Doelgroepindeling](../indelingen.md) |
 | Naamvorm | de hoedanigheid in de gangbare term (Houder van de begraafplaats; Rechthebbende op het graf) |
 | Afstemming | GGM: matchdoel voor het data-object (`ggm`, niet verplicht) · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen · generiek GEMMA-element: bij *generiek*: specialisatie van een generieke GEMMA-rol (`gemma_generiek`, exacte match), zoals Klant |
@@ -31,33 +30,14 @@ titel: Rol — modelleerafspraken
 
 ## Relaties
 
-In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee betekent: een uitbreiding op het GEMMA-kennismodel, in de export gemarkeerd en een kandidaat voor een terugmelding over het kennismodel.
+| Relatie | Naar | Namen | Kern | In Over GEMMA | Toelichting |
+|---|---|---|---|---|---|
+| toewijzing | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit*, *toegewezen partij* | ja |  |
+| toewijzing | [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit* | ja |  |
+| toewijzing | [Bedrijfsinteractie](bedrijfsinteractie-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit*, *toegewezen partij* | nee |  |
+| toegang | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | een [verantwoordelijkheid](../README.md#relatietypen) |  | ja | een verantwoordelijkheid; *partij* alleen naar een afspraak |
+| toegang | [Afspraak](afspraak-modelleerafspraken.md) | een [verantwoordelijkheid](../README.md#relatietypen) |  | nee |  |
+| aggregatie | [Rol](rol-modelleerafspraken.md) | vrij, uit de bron |  | ja |  |
+| specialisatie | [Rol](rol-modelleerafspraken.md) | is een |  | ja |  |
 
-| Richting | Relatie | Ander type | Namen | Kern | In Over GEMMA | Toelichting |
-|---|---|---|---|---|---|---|
-| in | toewijzing | [Actor](actor-modelleerafspraken.md) | vervult | *vervult een rol* | ja |  |
-| in | aggregatie | [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) | vrij, uit de bron |  | ja |  |
-| uit | toewijzing | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit*, *toegewezen partij* | ja |  |
-| uit | toewijzing | [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit* | ja |  |
-| uit | toewijzing | [Bedrijfsinteractie](bedrijfsinteractie-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit*, *toegewezen partij* | nee: uitbreiding op het GEMMA-kennismodel |  |
-| uit | toegang | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | een verantwoordelijkheid: houder (lezen-schrijven), bronhouder (schrijven), beheerder (lezen-schrijven), verstrekker (lezen), afnemer (lezen), toezichthouder (lezen), betrokkene (lezen), partij (lezen-schrijven) |  | ja | een verantwoordelijkheid; *partij* alleen naar een afspraak |
-| uit | toegang | [Afspraak](afspraak-modelleerafspraken.md) | een verantwoordelijkheid: houder (lezen-schrijven), bronhouder (schrijven), beheerder (lezen-schrijven), verstrekker (lezen), afnemer (lezen), toezichthouder (lezen), betrokkene (lezen), partij (lezen-schrijven) |  | nee: uitbreiding op het GEMMA-kennismodel |  |
-| uit | aggregatie | [Rol](rol-modelleerafspraken.md) | vrij, uit de bron |  | ja |  |
-| uit | specialisatie | [Rol](rol-modelleerafspraken.md) | is een |  | ja |  |
-| in | bediening | [Kanaal](kanaal-modelleerafspraken.md) | vrij, uit de bron |  | ja |  |
-| in | bediening | [Dienst](dienst-modelleerafspraken.md) | bedient |  | ja | de rol van de afnemer |
-| in | bediening | [Product](product-modelleerafspraken.md) | bedient |  | ja | de rol van de afnemer, een specialisatie van Klant |
-| in | associatie (gericht) | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | is grondslag voor |  | nee: uitbreiding op het GEMMA-kennismodel | de regeling die de rol regelt |
-| in | associatie | [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel | ArchiMate: geen realisatie |
-| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Doelgroepindeling |
-
-## Weggefilterd
-
-Niet in het kennismodel van de wiki, ook al is de relatie in ArchiMate geldig; de export laat haar weg. Een relatie die nergens in het kennismodel staat, is ook weggefilterd.
-
-| Relatie | Reden |
-|---|---|
-| Rol ─toewijzing→ Actor, Rol, Bedrijfssamenwerking, Kanaal | tussen partijen is alleen *actor vervult rol* een toewijzing |
-| Rol ─toewijzing→ Dienst | een dienst krijgt geen rol toegewezen: de rol hangt aan het proces of de functie die de dienst realiseert |
-| Rol ─associatie→ Bedrijfsobject, Afspraak | wat een rol met een object is, is toegang met een verantwoordelijkheid; een handeling is een toewijzing van de rol aan het proces |
-| Rol ─associatie→ Rol | een handeling tussen rollen loopt via een proces (toewijzing), een stroom of een gebeurtenis, zoals tussen actoren |
+Inkomend, bij het brontype: [Actor](actor-modelleerafspraken.md) (toewijzing); [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) (aggregatie); [Kanaal](kanaal-modelleerafspraken.md) (bediening); [Dienst](dienst-modelleerafspraken.md) (bediening); [Product](product-modelleerafspraken.md) (bediening); [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) (associatie); [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) (associatie); [Groepering](../overig/groepering-modelleerafspraken.md) (aggregatie).

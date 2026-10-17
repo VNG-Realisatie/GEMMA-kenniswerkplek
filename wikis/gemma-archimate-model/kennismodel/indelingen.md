@@ -2,11 +2,10 @@
 id: indelingen
 type: kennismodel
 titel: Indelingen
+gegenereerd: tools/kennismodel.py
 ---
 
 # Indelingen
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 Waar staat elk element in het model? Een **indeling** ordent naar één criterium, met benoemde niveaus. Een view toont één indeling voor één of meer elementtypen.
 

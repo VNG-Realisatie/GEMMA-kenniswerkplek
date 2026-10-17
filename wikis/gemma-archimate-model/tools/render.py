@@ -20,6 +20,7 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 | `ter-beoordeling.md` | Wat wacht op akkoord (review), en wat nog moet worden voorgelegd |
 | `voortgang.md` | Aantallen per onderwerp, type en status |
 | `kennismodel/**` | Het kennismodel uit tools/kennismodel.py (behalve `kennismodel/modelleerregels.md`, met de hand) |
+| `elementpaginas/overig/buiten-het-kennismodel.md` | Wat buiten het kennismodel valt (elementtypen zonder element, relaties buiten de export), naslag voor de redacteur (tools/kennismodel.py) |
 
 Opbouw van een elementpagina (vaste volgorde; een sectie zonder inhoud vervalt): frontmatter (gegevens en de
 letterlijke `ggm_*`/`gemma_*`-velden), titel en status, Ter discussie; Betekenis (Definitie, Beschrijving, Deelprocessen, Per
@@ -1091,6 +1092,7 @@ def beheerd(wiki_root: Path) -> set[str]:
         bestaand |= {p.relative_to(wiki_root).as_posix() for p in (wiki_root / gam_gemeen.ONDERWERPEN).glob(f"*/{naam}")}
     bestaand |= {p.relative_to(wiki_root).as_posix() for p in (wiki_root / indelingspaginas.MAP).glob("*.md")}
     bestaand |= {ZONDER_GRONDSLAG.as_posix()} if (wiki_root / ZONDER_GRONDSLAG).exists() else set()
+    bestaand |= {kennismodel.BUITEN} if (wiki_root / kennismodel.BUITEN).exists() else set()
     return bestaand
 
 

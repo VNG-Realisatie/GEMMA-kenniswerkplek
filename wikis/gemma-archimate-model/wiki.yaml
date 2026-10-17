@@ -111,7 +111,7 @@ kennismodel:
 lint:
   woordbudget:
     AGENTS.md: 1720
-    "kennismodel/**/*.md": 21100
+    "kennismodel/**/*.md": 16500
     ".agents/skills/gemma-archimate-model-archimate-export/**/*.md": 1300
     ".agents/skills/gemma-archimate-model-beoordelen/**/*.md": 6750
     ".agents/skills/gemma-archimate-model-criteria/**/*.md": 950

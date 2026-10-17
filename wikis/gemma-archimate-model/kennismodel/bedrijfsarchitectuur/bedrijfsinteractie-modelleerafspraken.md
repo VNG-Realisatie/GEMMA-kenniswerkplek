@@ -2,11 +2,10 @@
 id: bedrijfsinteractie-modelleerafspraken
 type: kennismodel
 titel: Bedrijfsinteractie — modelleerafspraken
+gegenereerd: tools/kennismodel.py
 ---
 
 # Bedrijfsinteractie — modelleerafspraken
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 *Business Interaction* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/gedrag-intern` · paginatype `bedrijfsinteractie`
 
@@ -17,7 +16,7 @@ titel: Bedrijfsinteractie — modelleerafspraken
 | Duiding | Gezamenlijk gedrag, zoals een ketensamenwerking waarin de bedrijfsprocessen van de partijen samenkomen (in het GEMMA-model het element Ketensamenwerking), of een keukentafelgesprek. |
 | Herken je aan | *gedrag* en *gezamenlijk gedrag*. Moet ja: *toegewezen partij* (kernrelatie); hoogstens 1 nee: *aanleiding*, *benoembaar resultaat*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Rol ─toewijzing→ Bedrijfsinteractie |
-| Eigenschappen | `kernobject`: het bedrijfsobject waarvan het proces de levensloop omvat (levensloopproces), waarin het een mutatie doet (bedrijfsproces), of dat door de keten gaat (bedrijfsinteractie) · `taakveld`: het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling · `beleidsdomein`: het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling · `gemma`: de match met het GEMMA-model: het id gaat mee in de export |
+| Eigenschappen | `kernobject` · `taakveld` · `beleidsdomein` · `gemma` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Beleidsdomeinindeling](../indelingen.md) (onder het beleidsdomein van haar kernobject); [Procesindeling naar kernobject](../indelingen.md) |
 | Naamvorm | als bij een bedrijfsproces: infinitief met het object (Bezorgen stoffelijk overschot) |
 | Afstemming | GGM: geen match: het GGM modelleert gegevens · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen |
@@ -30,21 +29,8 @@ titel: Bedrijfsinteractie — modelleerafspraken
 
 ## Relaties
 
-In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee betekent: een uitbreiding op het GEMMA-kennismodel, in de export gemarkeerd en een kandidaat voor een terugmelding over het kennismodel.
+| Relatie | Naar | Namen | Kern | In Over GEMMA | Toelichting |
+|---|---|---|---|---|---|
+| toegang | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | een [handeling](../README.md#relatietypen) | *wordt bewerkt* | nee |  |
 
-| Richting | Relatie | Ander type | Namen | Kern | In Over GEMMA | Toelichting |
-|---|---|---|---|---|---|---|
-| in | toewijzing | [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit* | nee: uitbreiding op het GEMMA-kennismodel |  |
-| in | toewijzing | [Rol](rol-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit*, *toegewezen partij* | nee: uitbreiding op het GEMMA-kennismodel |  |
-| uit | toegang | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | een handeling: registreren (schrijven), bijwerken (lezen-schrijven), beëindigen (schrijven), raadplegen (lezen), verstrekken (lezen), bewaren (lezen-schrijven), overbrengen (lezen), vernietigen (schrijven) | *wordt bewerkt* | nee: uitbreiding op het GEMMA-kennismodel |  |
-| in | bediening | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel | de bedrijfsprocessen van de partijen bedienen de ketensamenwerking |
-| in | triggering | [Gebeurtenis](gebeurtenis-modelleerafspraken.md) | start | *leidt tot gedrag* | nee: uitbreiding op het GEMMA-kennismodel |  |
-| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling |
-
-## Weggefilterd
-
-Niet in het kennismodel van de wiki, ook al is de relatie in ArchiMate geldig; de export laat haar weg. Een relatie die nergens in het kennismodel staat, is ook weggefilterd.
-
-| Relatie | Reden |
-|---|---|
-| Actor ─toewijzing of toegang of associatie→ Bedrijfsinteractie | een actor hangt via een rol aan gedrag en objecten: actor → toewijzing → rol |
+Inkomend, bij het brontype: [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) (toewijzing); [Rol](rol-modelleerafspraken.md) (toewijzing); [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) (bediening); [Gebeurtenis](gebeurtenis-modelleerafspraken.md) (triggering); [Groepering](../overig/groepering-modelleerafspraken.md) (aggregatie).

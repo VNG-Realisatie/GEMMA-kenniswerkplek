@@ -66,7 +66,7 @@ Bij het beoordelen vaak tegelijk, uit dezelfde wettekst:
 5. de GGM-match van de relatie, alleen bij bedrijfsobjecten, data-objecten en beleidsdomeinen;
 6. GEMMA (geen match: de relatie gaat als nieuw mee in de export).
 
-Welke relaties tussen twee typen toegestaan of weggefilterd zijn, met de reden, staat in de modelleerafspraken van het type.
+Welke relaties toegestaan zijn, staat in de modelleerafspraken van het brontype; een relatie buiten het kennismodel krijgt een signaal met de reden.
 
 ## Oordeel
 

@@ -2,11 +2,10 @@
 id: kenmerken-en-beslistabel
 type: kennismodel
 titel: Kenmerken en beslistabel
+gegenereerd: tools/kennismodel.py
 ---
 
 # Kenmerken en beslistabel
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 Elk begrip uit een bron krijgt één keer dezelfde vragen. Fase A kiest het vak in de ArchiMate-matrix, het hoofdkenmerk en bij gedrag de soort gedrag; de kenmerken controleren die keuze en bepalen het type. De beslistabel past daar vaste regels op toe; de uitkomst is het type, of de reden waarom het begrip geen eigen pagina krijgt. Een type wordt nooit direct gekozen. Per elementtype staat in zijn modelleerafspraken welke kenmerken het type bepalen, welke de kernrelatie is en welke drempel geldt.
 
@@ -26,8 +25,8 @@ Fase A kiest eerst het vak: de laag, het aspect en intern of extern, zoals in Ar
 | Laag | Actief intern | Actief extern | Gedrag intern | Gedrag extern | Passief | Samengesteld |
 |---|---|---|---|---|---|---|
 | bedrijf | Actor, Rol, Bedrijfssamenwerking | Kanaal | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie | Dienst | Bedrijfsobject, Afspraak, Representatie (geen pagina) | Product |
-| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (afgeleid uit de GGM-match) | — |
-| technologie | weggefilterd: komt misschien nog | | | | | |
+| applicatie | zonder element | zonder element | zonder element | zonder element | Data-object (afgeleid uit de GGM-match) | — |
+| technologie | zonder element: komt misschien nog | | | | | |
 | strategie | Capability (Vermogen): buiten dit model | | | | | |
 | motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |
 | overig | | | | | | Locatie (geen pagina), Groepering (indeling) |

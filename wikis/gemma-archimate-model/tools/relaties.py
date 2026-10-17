@@ -113,7 +113,8 @@ def archimate_geldig(relatie: str, bron_type: str, doel_type: str) -> bool:
 
 
 def toegestaan(relatie: str, bron_type: str, doel_type: str) -> bool:
-    """ArchiMate-toets, aangescherpt met de GEMMA-modelleerafspraken; die staan in het kennismodel als weggefilterd.
+    """ArchiMate-toets, aangescherpt met de GEMMA-modelleerafspraken; die staan in het kennismodel als relaties buiten
+    de export (WEGGEFILTERD).
 
     Een actor hangt alleen via een rol aan gedrag en objecten; een kanaal is toegewezen aan een dienst en bedient een
     rol; een functie bedient een proces (geen aggregatie); een dienst heeft geen toegang tot een object en krijgt geen

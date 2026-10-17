@@ -2,11 +2,10 @@
 id: groepering-modelleerafspraken
 type: kennismodel
 titel: Groepering — modelleerafspraken
+gegenereerd: tools/kennismodel.py
 ---
 
 # Groepering — modelleerafspraken
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 *Grouping* in ArchiMate · laag Overig · geen pagina (indeling)
 
@@ -26,20 +25,18 @@ titel: Groepering — modelleerafspraken
 
 ## Relaties
 
-In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee betekent: een uitbreiding op het GEMMA-kennismodel, in de export gemarkeerd en een kandidaat voor een terugmelding over het kennismodel.
-
-| Richting | Relatie | Ander type | Namen | Kern | In Over GEMMA | Toelichting |
-|---|---|---|---|---|---|---|
-| uit | aggregatie | [Groepering](groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | taakveld → beleidsdomein; domein → beleidsdomein |
-| uit | aggregatie | [Bedrijfsobject](../bedrijfsarchitectuur/bedrijfsobject-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Beleidsdomeinindeling |
-| uit | aggregatie | [Afspraak](../bedrijfsarchitectuur/afspraak-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling |
-| uit | aggregatie | [Product](../bedrijfsarchitectuur/product-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling; Functie-indeling naar domein |
-| uit | aggregatie | [Dienst](../bedrijfsarchitectuur/dienst-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling |
-| uit | aggregatie | [Bedrijfsproces](../bedrijfsarchitectuur/bedrijfsproces-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling: alleen een levensloopproces of een generiek bedrijfsproces |
-| uit | aggregatie | [Bedrijfsinteractie](../bedrijfsarchitectuur/bedrijfsinteractie-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling |
-| uit | aggregatie | [Bedrijfsfunctie](../bedrijfsarchitectuur/bedrijfsfunctie-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Functie-indeling naar domein: alleen een functie op domeinniveau |
-| uit | aggregatie | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling; Grondslagindeling |
-| uit | aggregatie | [Actor](../bedrijfsarchitectuur/actor-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Doelgroepindeling |
-| uit | aggregatie | [Rol](../bedrijfsarchitectuur/rol-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Doelgroepindeling |
-| uit | aggregatie | [Bedrijfssamenwerking](../bedrijfsarchitectuur/bedrijfssamenwerking-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Doelgroepindeling |
-| uit | aggregatie | [Kanaal](../bedrijfsarchitectuur/kanaal-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Doelgroepindeling |
+| Relatie | Naar | Namen | Kern | In Over GEMMA | Toelichting |
+|---|---|---|---|---|---|
+| aggregatie | [Groepering](groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | taakveld → beleidsdomein; domein → beleidsdomein |
+| aggregatie | [Bedrijfsobject](../bedrijfsarchitectuur/bedrijfsobject-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Beleidsdomeinindeling |
+| aggregatie | [Afspraak](../bedrijfsarchitectuur/afspraak-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Beleidsdomeinindeling |
+| aggregatie | [Product](../bedrijfsarchitectuur/product-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Beleidsdomeinindeling; Functie-indeling naar domein |
+| aggregatie | [Dienst](../bedrijfsarchitectuur/dienst-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Beleidsdomeinindeling |
+| aggregatie | [Bedrijfsproces](../bedrijfsarchitectuur/bedrijfsproces-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Beleidsdomeinindeling: alleen een levensloopproces of een generiek bedrijfsproces |
+| aggregatie | [Bedrijfsinteractie](../bedrijfsarchitectuur/bedrijfsinteractie-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Beleidsdomeinindeling |
+| aggregatie | [Bedrijfsfunctie](../bedrijfsarchitectuur/bedrijfsfunctie-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Functie-indeling naar domein: alleen een functie op domeinniveau |
+| aggregatie | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Beleidsdomeinindeling; Grondslagindeling |
+| aggregatie | [Actor](../bedrijfsarchitectuur/actor-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Doelgroepindeling |
+| aggregatie | [Rol](../bedrijfsarchitectuur/rol-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Doelgroepindeling |
+| aggregatie | [Bedrijfssamenwerking](../bedrijfsarchitectuur/bedrijfssamenwerking-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Doelgroepindeling |
+| aggregatie | [Kanaal](../bedrijfsarchitectuur/kanaal-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee | Doelgroepindeling |

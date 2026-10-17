@@ -2,11 +2,10 @@
 id: beleidskader-modelleerafspraken
 type: kennismodel
 titel: Beleidskader — modelleerafspraken
+gegenereerd: tools/kennismodel.py
 ---
 
 # Beleidskader — modelleerafspraken
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 *Driver* in ArchiMate · laag Motivatie · vak `motivatie` · paginatype `beleidskader`
 
@@ -17,7 +16,7 @@ titel: Beleidskader — modelleerafspraken
 | Duiding | Een concreet benoemde regeling als geheel die voor alle gemeenten geldt: Europese regelgeving, rijksregelgeving of een VNG-modelverordening van gemeentelijke regelgeving. |
 | Herken je aan | *regeling als geheel* en *landelijk*. Moet ja: *is grondslag voor* (kernrelatie); hoogstens 1 nee: *in werking*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Beleidskader ─associatie (gericht)→ Product; Beleidskader ─associatie (gericht)→ Dienst; Beleidskader ─associatie (gericht)→ Bedrijfsproces |
-| Eigenschappen | `regelgever` (verplicht): EU, rijk of VNG-modelverordening: bepaalt de groep in de Grondslagindeling (EU, rijk, VNG-modelverordening) · `taakveld`: het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling · `beleidsdomein`: het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling · `gemma`: de match met het GEMMA-model: het id gaat mee in de export · `kwaliteitsdoelen`: de GEMMA-kwaliteitsdoelen waaraan het beleidskader grondslag geeft, met de sterkte van die invloed, een onderbouwing en de bronnen |
+| Eigenschappen | `regelgever` (verplicht) · `taakveld` · `beleidsdomein` · `gemma` · `kwaliteitsdoelen` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Beleidsdomeinindeling](../indelingen.md); [Grondslagindeling](../indelingen.md) |
 | Naamvorm | de officiële citeertitel (Wet op de lijkbezorging); de afkorting wordt een synoniem |
 | Afstemming | GGM: geen match: het GGM modelleert gegevens · GEMMA-model: match op betekenis; de motivatielaag van het GEMMA-model bevat nog vooral kernwaarden |
@@ -32,16 +31,15 @@ titel: Beleidskader — modelleerafspraken
 
 ## Relaties
 
-In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee betekent: een uitbreiding op het GEMMA-kennismodel, in de export gemarkeerd en een kandidaat voor een terugmelding over het kennismodel.
+| Relatie | Naar | Namen | Kern | In Over GEMMA | Toelichting |
+|---|---|---|---|---|---|
+| associatie (gericht) | [Product](../bedrijfsarchitectuur/product-modelleerafspraken.md) | is grondslag voor, werkt uit voor | *is grondslag voor* | ja | de grondslag; bij voorkeur naar een product |
+| associatie (gericht) | [Dienst](../bedrijfsarchitectuur/dienst-modelleerafspraken.md) | is grondslag voor, werkt uit voor | *is grondslag voor* | nee | de grondslag; bij voorkeur naar een product |
+| associatie (gericht) | [Bedrijfsproces](../bedrijfsarchitectuur/bedrijfsproces-modelleerafspraken.md) | is grondslag voor, werkt uit voor | *is grondslag voor* | nee | de grondslag; bij voorkeur naar een product |
+| associatie (gericht) | [Beleidskader](beleidskader-modelleerafspraken.md) | werkt uit, verwijst naar |  | nee | een AMvB of VNG-modelverordening werkt een wet uit |
+| associatie (gericht) | [Rol](../bedrijfsarchitectuur/rol-modelleerafspraken.md) | is grondslag voor |  | nee | de regeling die de rol regelt |
+| associatie (gericht) | [Gebeurtenis](../bedrijfsarchitectuur/gebeurtenis-modelleerafspraken.md) | is grondslag voor |  | nee | de regeling die de gebeurtenis regelt |
+| associatie (gericht) | [Bedrijfsobject](../bedrijfsarchitectuur/bedrijfsobject-modelleerafspraken.md) | is grondslag voor, is model voor |  | nee | de regeling die het object regelt; *is model voor*: een VNG-modelverordening voor de soort regeling (Regeling) |
+| invloed | [Kwaliteitsdoel](kwaliteitsdoel-modelleerafspraken.md) | geeft grondslag aan |  | ja | met een sterkte; het kwaliteitsdoel is een element van GEMMA (veld `kwaliteitsdoelen`) |
 
-| Richting | Relatie | Ander type | Namen | Kern | In Over GEMMA | Toelichting |
-|---|---|---|---|---|---|---|
-| uit | associatie (gericht) | [Product](../bedrijfsarchitectuur/product-modelleerafspraken.md) | is grondslag voor, werkt uit voor | *is grondslag voor* | ja | de grondslag; bij voorkeur naar een product |
-| uit | associatie (gericht) | [Dienst](../bedrijfsarchitectuur/dienst-modelleerafspraken.md) | is grondslag voor, werkt uit voor | *is grondslag voor* | nee: uitbreiding op het GEMMA-kennismodel | de grondslag; bij voorkeur naar een product |
-| uit | associatie (gericht) | [Bedrijfsproces](../bedrijfsarchitectuur/bedrijfsproces-modelleerafspraken.md) | is grondslag voor, werkt uit voor | *is grondslag voor* | nee: uitbreiding op het GEMMA-kennismodel | de grondslag; bij voorkeur naar een product |
-| uit | associatie (gericht) | [Beleidskader](beleidskader-modelleerafspraken.md) | werkt uit, verwijst naar |  | nee: uitbreiding op het GEMMA-kennismodel | een AMvB of VNG-modelverordening werkt een wet uit |
-| uit | associatie (gericht) | [Rol](../bedrijfsarchitectuur/rol-modelleerafspraken.md) | is grondslag voor |  | nee: uitbreiding op het GEMMA-kennismodel | de regeling die de rol regelt |
-| uit | associatie (gericht) | [Gebeurtenis](../bedrijfsarchitectuur/gebeurtenis-modelleerafspraken.md) | is grondslag voor |  | nee: uitbreiding op het GEMMA-kennismodel | de regeling die de gebeurtenis regelt |
-| uit | associatie (gericht) | [Bedrijfsobject](../bedrijfsarchitectuur/bedrijfsobject-modelleerafspraken.md) | is grondslag voor, is model voor |  | nee: uitbreiding op het GEMMA-kennismodel | de regeling die het object regelt; *is model voor*: een VNG-modelverordening voor de soort regeling (Regeling) |
-| uit | invloed | [Kwaliteitsdoel](kwaliteitsdoel-modelleerafspraken.md) | geeft grondslag aan |  | ja | met een sterkte; het kwaliteitsdoel is een element van GEMMA (veld `kwaliteitsdoelen`) |
-| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling; Grondslagindeling |
+Inkomend, bij het brontype: [Groepering](../overig/groepering-modelleerafspraken.md) (aggregatie).

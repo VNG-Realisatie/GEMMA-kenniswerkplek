@@ -15,7 +15,7 @@ relaties in ArchiMate geldig zijn, toetst tools/relaties.py. tools/bepaal_type.p
 tools/archimate_export.py lezen hun typen, eigenschappen, namen en indelingen hieruit.
 
 De pagina's in kennismodel/ worden hieruit gegenereerd (`paginas()`), behalve modelleerregels.md, die met de hand
-geschreven is. tools/render.py schrijft ze mee; de pre-commit (`tools/render.py --check`) bewaakt dat ze gelijk zijn
+geschreven is; ook de naslag voor de redacteur over wat buiten het kennismodel valt (BUITEN), die de AI niet leest. tools/render.py schrijft ze mee; de pre-commit (`tools/render.py --check`) bewaakt dat ze gelijk zijn
 aan deze bron.
 
 Gebruik (vanuit de wikimap):
@@ -30,6 +30,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 MAP = "kennismodel"
+BUITEN = "elementpaginas/overig/buiten-het-kennismodel.md"  # naslag voor de redacteur, buiten het woordbudget
 HANDMATIG = ("modelleerregels.md",)  # met de hand geschreven; render beheert ze niet
 
 LAGEN = {"bedrijfsarchitectuur": "Bedrijfsarchitectuur", "motivatie": "Motivatie",
@@ -889,7 +890,6 @@ def indeling_tekst(paginatype: str) -> str:
 
 # --- Pagina's ---
 
-GEGENEREERD = "<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->"
 ARCHI_SPECIALISATIE = "In de export: specialisatie naar het GEMMA-element."
 
 
@@ -906,7 +906,7 @@ def _pagina(pid: str, titel: str, regels: list[str]) -> str:
     body = "\n".join(regels).strip("\n")
     while "\n\n\n" in body:
         body = body.replace("\n\n\n", "\n\n")
-    return f"---\nid: {pid}\ntype: kennismodel\ntitel: {titel}\n---\n\n# {titel}\n\n{GEGENEREERD}\n\n{body}\n"
+    return f"---\nid: {pid}\ntype: kennismodel\ntitel: {titel}\ngegenereerd: tools/kennismodel.py\n---\n\n# {titel}\n\n{body}\n"
 
 
 def _naam(sleutel: str) -> str:
@@ -926,9 +926,9 @@ def _link(sleutel: str, van: str = "") -> str:
 
 def _namen(r: Relatie) -> str:
     if r.namen == H:
-        return "een handeling: " + ", ".join(f"{n} ({HANDELINGEN[n]})" for n in H)
+        return "een [handeling](../README.md#relatietypen)"
     if r.namen == V:
-        return "een verantwoordelijkheid: " + ", ".join(f"{n} ({VERANTWOORDELIJKHEDEN[n]})" for n in V)
+        return "een [verantwoordelijkheid](../README.md#relatietypen)"
     if r.bron == "groepering":
         return "geen: het script maakt de relatie uit de indelingsvelden"
     return ", ".join(r.namen) if r.namen else "vrij, uit de bron"
@@ -976,9 +976,9 @@ def modelleerafspraken(e: Elementtype) -> str:
     if e.niveaus:
         kaart.append(["Niveaus", " · ".join(e.niveaus)])
     if e.eigenschappen:
-        kaart.append(["Eigenschappen", " · ".join(
-            f"`{v}`{' (verplicht)' if v in e.verplicht else ''}: {EIGENSCHAPPEN[v]}"
-            + (f" ({', '.join(WAARDEN[v])})" if v in WAARDEN else "") for v in e.eigenschappen)])
+        kaart.append(["Eigenschappen", " · ".join(f"`{v}`{' (verplicht)' if v in e.verplicht else ''}"
+                                                   for v in e.eigenschappen)
+                      + " ([betekenis](../README.md#eigenschappen))"])
     ind = indelingen_van(e.sleutel)
     if ind:
         kaart.append(["Indelingen", "; ".join(f"[{i.naam}](../indelingen.md)" + (f" ({w})" if w else "")
@@ -991,45 +991,50 @@ def modelleerafspraken(e: Elementtype) -> str:
               *_tabel(["Afspraak", "Inhoud"], kaart)]
     if e.afspraken:
         regels += ["## Afspraken", "", *[f"- {a}" for a in e.afspraken], ""]
-    rijen = []
+    rijen = [[r.soort, _link(r.doel, van) if r.doel in ELEMENTTYPE else _naam(r.doel), _namen(r),
+              ", ".join(f"*{_kenmerknaam(k)}*" for k in r.kern) if r.kern else "", "ja" if r.over_gemma else "nee",
+              r.toelichting] for r in RELATIES if r.bron == e.sleutel]
+    inkomend: dict[str, list[str]] = {}
     for r in RELATIES:
-        for richting, ander in (("uit", r.doel), ("in", r.bron)):
-            if (r.bron if richting == "uit" else r.doel) != e.sleutel or (richting == "in" and r.bron == r.doel):
-                continue
-            rijen.append([richting, r.soort, _link(ander, van) if ander in ELEMENTTYPE else _naam(ander), _namen(r),
-                          ", ".join(f"*{_kenmerknaam(k)}*" for k in r.kern) if r.kern else "",
-                          "ja" if r.over_gemma else f"nee: {UITBREIDING}", r.toelichting])
-    if rijen:
+        if r.doel == e.sleutel and r.bron != e.sleutel and kale_soort(r.soort) not in inkomend.setdefault(r.bron, []):
+            inkomend[r.bron].append(kale_soort(r.soort))
+    if rijen or inkomend:
         regels += ["## Relaties", "",
-                   "In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee betekent: een "
-                   "uitbreiding op het GEMMA-kennismodel, in de export gemarkeerd en een kandidaat voor een "
-                   "terugmelding over het kennismodel.", "",
-                   *_tabel(["Richting", "Relatie", "Ander type", "Namen", "Kern", "In Over GEMMA", "Toelichting"], rijen)]
-    weg = [w for w in WEGGEFILTERD if e.sleutel in w.bron or e.sleutel in w.doel]
-    if weg:
-        regels += ["## Weggefilterd", "",
-                   "Niet in het kennismodel van de wiki, ook al is de relatie in ArchiMate geldig; de export laat haar "
-                   "weg. Een relatie die nergens in het kennismodel staat, is ook weggefilterd.", "",
-                   *_tabel(["Relatie", "Reden"], [[_weg_tekst(w, e.sleutel), w.reden] for w in weg])]
+                   *(_tabel(["Relatie", "Naar", "Namen", "Kern", "In Over GEMMA", "Toelichting"], rijen) if rijen else []),
+                   *(["Inkomend, bij het brontype: " + "; ".join(
+                       f"{_link(b, van) if b in ELEMENTTYPE else _naam(b)} ({', '.join(soorten)})"
+                       for b, soorten in inkomend.items()) + "."] if inkomend else [])]
     return _pagina(f"{e.sleutel}-modelleerafspraken", f"{e.naam} — modelleerafspraken", regels)
 
 
-def _weg_tekst(w: Weggefilterd, sleutel: str) -> str:
-    """De weggefilterde relatie, vanuit het type van de pagina: aan de andere kant alleen dat type."""
-    def kant(t, alleen_dit):
-        return _naam(sleutel) if alleen_dit else ("elk type" if t == ALLE else ", ".join(_naam(s) for s in t))
-
-    soort = "andere relatie" if w.soort == ALLE else " of ".join(w.soort)
-    bron_hier = sleutel in w.bron
-    return f"{kant(w.bron, bron_hier and len(w.bron) > 1)} ─{soort}→ {kant(w.doel, not bron_hier)}"
+def _buiten_link(sleutel: str) -> str:
+    """Link vanaf BUITEN naar de modelleerafspraken van een elementtype."""
+    return f"[{_naam(sleutel)}](../../{MAP}/{_pad(ELEMENTTYPE[sleutel])})" if sleutel in ELEMENTTYPE else _naam(sleutel)
 
 
-def weggefilterd_pagina(laag: str) -> str:
-    rijen = [[f"{z.naam} ({z.engels})", z.over_gemma or "—", z.reden] for z in ZONDER_ELEMENT if z.laag == laag]
-    regels = [f"Elementtypen van de laag {LAGEN[laag]} die niet tot een element van dit model leiden. Een begrip "
-              "van zo'n type krijgt de uitkomst uit de beslistabel (geen pagina, of buiten dit model).", "",
-              *_tabel(["Elementtype", "In Over GEMMA", "Reden"], rijen)]
-    return _pagina(f"{laag}-weggefilterd", f"{LAGEN[laag]} — weggefilterd", regels)
+def buiten_pagina() -> str:
+    """De naslag over wat buiten het kennismodel valt: elementtypen zonder element en relaties buiten de export."""
+    def kant(t):
+        return "elk type" if t == ALLE else ", ".join(_buiten_link(s) for s in t)
+
+    elementtypen = [[LAGEN[z.laag], f"{z.naam} ({z.engels})", z.over_gemma or "—", z.reden] for z in ZONDER_ELEMENT]
+    relaties = [[kant(w.bron), "elke andere relatie" if w.soort == ALLE else " of ".join(w.soort), kant(w.doel), w.reden]
+                for w in WEGGEFILTERD]
+    regels = ["# Buiten het kennismodel", "",
+              "<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->", "",
+              "Wat in ArchiMate bestaat of geldig is, maar niet in het [kennismodel](../../kennismodel/README.md) van de "
+              "wiki staat. Naslag voor de redacteur; de AI leest deze pagina niet: de beslistabel geeft een begrip van "
+              "een type zonder element zijn uitkomst, en een signaal geeft de reden bij een vastgelegde relatie buiten "
+              "het kennismodel.", "",
+              "## Elementtypen zonder element", "",
+              "Een begrip van zo'n type krijgt de uitkomst uit de beslistabel: geen pagina, of buiten dit model.", "",
+              *_tabel(["Laag", "Elementtype", "In Over GEMMA", "Reden"], elementtypen),
+              "## Relaties buiten de export", "",
+              "Geldig in ArchiMate, en een beoordeling legt ze vast als de bron ze noemt; de export laat ze weg. Een "
+              "relatie die nergens in het kennismodel staat, valt er ook buiten.", "",
+              *_tabel(["Van", "Relatie", "Naar", "Reden"], relaties)]
+    body = "\n".join(regels).strip("\n")
+    return "---\nid: buiten-het-kennismodel\ntype: lijst\ntitel: Buiten het kennismodel\n---\n\n" + body + "\n"
 
 
 def readme() -> str:
@@ -1039,11 +1044,13 @@ def readme() -> str:
               "[modelleerregels](modelleerregels.md); de vragen die een begrip een type geven in "
               "[kenmerken en beslistabel](kenmerken-en-beslistabel.md).", "",
               "Twee markeringen zijn verschillend:", "",
-              "- **Weggefilterd**: niet in het kennismodel van de wiki. Een beoordeling legt elke gevonden relatie "
-              "vast; de export laat een weggefilterde relatie weg, met de reden.",
+              "- **Buiten het kennismodel**: niet in het kennismodel van de wiki: elementtypen zonder element, en "
+              "relaties die de export weglaat. Een beoordeling legt elke gevonden relatie vast; een signaal geeft de "
+              f"reden. Het overzicht, voor de redacteur: [Buiten het kennismodel](../{BUITEN}).",
               "- **Niet in Over GEMMA**: wel in het kennismodel van de wiki, maar niet in het GEMMA-kennismodel (Over "
               f"GEMMA): een {UITBREIDING}. Het gaat mee in de export, gemarkeerd, en is een kandidaat voor een "
-              "terugmelding over het kennismodel.", ""]
+              "terugmelding over het kennismodel.", "",
+              "Een typepagina toont de relaties waarvan het type de bron is; de inkomende staan bij het brontype.", ""]
     import bepaal_type
 
     matrix = bepaal_type.doc_matrix(per_vak=False)
@@ -1054,9 +1061,12 @@ def readme() -> str:
                   "ja" if e.over_gemma else "nee"] for e in ELEMENTTYPEN if e.laag == laag]
         regels += [f"## {laagnaam}", "",
                    *(_tabel(["Elementtype", "ArchiMate", "Paginatype", "In Over GEMMA"], rijen) if rijen else []),
-                   f"Elementtypen zonder element: [weggefilterd]({laag}/weggefilterd.md) ("
-                   + ", ".join(z.naam.lower() for z in ZONDER_ELEMENT if z.laag == laag) + ").", ""]
-    regels += ["## Relatietypen", "",
+                   f"Elementtypen zonder element: " + ", ".join(z.naam.lower() for z in ZONDER_ELEMENT if z.laag == laag)
+                   + ".", ""]
+    regels += ["## Eigenschappen", "",
+               *_tabel(["Eigenschap", "Betekenis", "Waarden"],
+                       [[f"`{v}`", t, ", ".join(WAARDEN.get(v, ()))] for v, t in EIGENSCHAPPEN.items()]),
+               "## Relatietypen", "",
                *_tabel(["Relatie", "ArchiMate", "Betekenis"],
                        [[n, RELATIETYPEN[n], RELATIETYPE_UITLEG[n]] for n in RELATIETYPEN]),
                "De vaste namen: een **handeling** van gedrag op een object ("
@@ -1072,7 +1082,7 @@ def readme() -> str:
             cellen.setdefault((r.bron, r.doel), []).append(kale_soort(r.soort) + ("" if r.over_gemma else "*"))
     regels += ["## Relatiematrix", "",
                "Per brontype (rij) en doeltype (kolom) de toegestane relaties; \\* is een uitbreiding op het "
-               "GEMMA-kennismodel. Een leeg vak: weggefilterd.", "",
+               "GEMMA-kennismodel. Een leeg vak: buiten het kennismodel.", "",
                *_tabel(["Van \\ naar", *[kort[t] for t in typen]],
                        [[kort[b], *[", ".join(cellen.get((b, d), [])) for d in typen]] for b in typen])]
     regels += ["## Indelingen", "", *_tabel(["Indeling", "Deelt in", "Naar", "Groepering"],
@@ -1117,8 +1127,7 @@ def paginas() -> dict[str, str]:
            f"{MAP}/kenmerken-en-beslistabel.md": kenmerken_pagina()}
     for e in ELEMENTTYPEN:
         uit[f"{MAP}/{_pad(e)}"] = modelleerafspraken(e)
-    for laag in LAGEN:
-        uit[f"{MAP}/{laag}/weggefilterd.md"] = weggefilterd_pagina(laag)
+    uit[BUITEN] = buiten_pagina()
     return uit
 
 

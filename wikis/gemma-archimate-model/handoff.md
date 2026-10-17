@@ -10,7 +10,7 @@ Overdracht naar de volgende Sessie (2026-10-17). Wordt bij elke overdracht overs
 
 ## Volgende klus
 
-Stap 13: de besluiten vastleggen in ARCHITECTURE.md en het kennismodel (`tools/kennismodel.py`: Capability van `motivatie/weggefilterd` naar laag strategie; pagina's strategie; de kenmerken *beoordeelbaar* en *onderscheidend*; de aanscherping van *gegroepeerd gedrag* en *stabiel over tijd*; poortkenmerk 3 zonder "vermogen"; de Capabilitykaart in de indelingen; de uitzondering in regel Elke claim een bron; budget in `wiki.yaml`). Leg eerst het open punt voor: het brontype van VNG-impactanalyses, implementatieplannen en beleidsadviezen (nu `overig`, of `beleid`). Daarna stap 14: bouwen zoals in deel 2, de capabilities afleiden, voorleggen en AKKOORD.
+Stap 13: de besluiten vastleggen in ARCHITECTURE.md en het kennismodel (`tools/kennismodel.py`: Capability van de elementtypen zonder element (motivatie) naar laag strategie; pagina's strategie; de kenmerken *beoordeelbaar* en *onderscheidend*; de aanscherping van *gegroepeerd gedrag* en *stabiel over tijd*; poortkenmerk 3 zonder "vermogen"; de Capabilitykaart in de indelingen; de uitzondering in regel Elke claim een bron; budget in `wiki.yaml`). Leg eerst het open punt voor: het brontype van VNG-impactanalyses, implementatieplannen en beleidsadviezen (nu `overig`, of `beleid`). Daarna stap 14: bouwen zoals in deel 2, de capabilities afleiden, voorleggen en AKKOORD.
 
 ## Modeladvies
 

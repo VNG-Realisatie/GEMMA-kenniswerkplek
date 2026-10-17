@@ -1485,9 +1485,9 @@ def doc_matrix(per_vak: bool = True) -> list[str]:
               "| Laag | Actief intern | Actief extern | Gedrag intern | Gedrag extern | Passief | Samengesteld |",
               "|---|---|---|---|---|---|---|",
               "| bedrijf | " + " | ".join(cel("bedrijf", a, e) for a, e in kolommen) + " |",
-              "| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (afgeleid uit de GGM-match) | "
+              "| applicatie | zonder element | zonder element | zonder element | zonder element | Data-object (afgeleid uit de GGM-match) | "
               "— |",
-              "| technologie | weggefilterd: komt misschien nog | | | | | |",
+              "| technologie | zonder element: komt misschien nog | | | | | |",
               "| strategie | Capability (Vermogen): buiten dit model | | | | | |",
               "| motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |",
               "| overig | | | | | | Locatie (geen pagina), Groepering (indeling) |", ""]

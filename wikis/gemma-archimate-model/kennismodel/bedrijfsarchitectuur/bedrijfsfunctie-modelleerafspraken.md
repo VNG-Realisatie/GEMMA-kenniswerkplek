@@ -2,11 +2,10 @@
 id: bedrijfsfunctie-modelleerafspraken
 type: kennismodel
 titel: Bedrijfsfunctie — modelleerafspraken
+gegenereerd: tools/kennismodel.py
 ---
 
 # Bedrijfsfunctie — modelleerafspraken
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 *Business Function* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/gedrag-intern` · paginatype `bedrijfsfunctie`
 
@@ -17,7 +16,7 @@ titel: Bedrijfsfunctie — modelleerafspraken
 | Duiding | Doorlopende groepering van gedrag; bedient processen. Niet "wat de gemeente kan": dat is een vermogen. |
 | Herken je aan | *gedrag* en *gegroepeerd gedrag*. Moet ja: *bedient gedrag* (kernrelatie); hoogstens 1 nee: *toegewezen partij*, *gebruikt objecten*, *stabiel over tijd*, *in functie-indeling*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfsfunctie ─bediening→ Bedrijfsproces |
-| Eigenschappen | `domein` (verplicht): het GEMMA-domein, de plaats in de Functie-indeling naar domein (Bestuur, Fysieke leefomgeving, Niet domeingebonden, Openbare orde en veiligheid, Ondersteuning, Publieksdiensten, Sociaal domein) · `gemma_functie`: de bovenliggende GEMMA-functie in de functiehiërarchie, die zelf geen element is: het id, met de GEMMA-relatie of een bron met vindplaats · `gemma`: de match met het GEMMA-model: het id gaat mee in de export |
+| Eigenschappen | `domein` (verplicht) · `gemma_functie` · `gemma` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Functie-indeling naar domein](../indelingen.md) |
 | Naamvorm | een zelfstandig naamwoord voor een doorlopend gebied van gedrag, vaak op -ing, -beheer of -verlening (Vergunningverlening); een functie en een proces hebben nooit dezelfde naam |
 | Afstemming | GGM: geen match: het GGM modelleert gegevens · GEMMA-model: bij voorkeur een exacte match met een GEMMA-functie; een functie zonder match breidt de GEMMA-functieketen uit |
@@ -30,25 +29,12 @@ titel: Bedrijfsfunctie — modelleerafspraken
 
 ## Relaties
 
-In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee betekent: een uitbreiding op het GEMMA-kennismodel, in de export gemarkeerd en een kandidaat voor een terugmelding over het kennismodel.
+| Relatie | Naar | Namen | Kern | In Over GEMMA | Toelichting |
+|---|---|---|---|---|---|
+| toegang | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | een [handeling](../README.md#relatietypen) | *wordt bewerkt* | ja |  |
+| realisatie | [Dienst](dienst-modelleerafspraken.md) | realiseert | *gerealiseerd door* | ja |  |
+| bediening | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | bedient | *bedient gedrag* | ja |  |
+| aggregatie | [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) | omvat |  | ja | de GEMMA-functieketen |
+| aggregatie | [Dienst](dienst-modelleerafspraken.md) | omvat |  | nee | Functie-indeling naar domein |
 
-| Richting | Relatie | Ander type | Namen | Kern | In Over GEMMA | Toelichting |
-|---|---|---|---|---|---|---|
-| in | toewijzing | [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit* | nee: uitbreiding op het GEMMA-kennismodel |  |
-| in | toewijzing | [Rol](rol-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit* | ja |  |
-| uit | toegang | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | een handeling: registreren (schrijven), bijwerken (lezen-schrijven), beëindigen (schrijven), raadplegen (lezen), verstrekken (lezen), bewaren (lezen-schrijven), overbrengen (lezen), vernietigen (schrijven) | *wordt bewerkt* | ja |  |
-| uit | realisatie | [Dienst](dienst-modelleerafspraken.md) | realiseert | *gerealiseerd door* | ja |  |
-| uit | bediening | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | bedient | *bedient gedrag* | ja |  |
-| in | bediening | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | bedient |  | ja |  |
-| uit | aggregatie | [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) | omvat |  | ja | de GEMMA-functieketen |
-| uit | aggregatie | [Dienst](dienst-modelleerafspraken.md) | omvat |  | nee: uitbreiding op het GEMMA-kennismodel | Functie-indeling naar domein |
-| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | ja | Functie-indeling naar domein: alleen een functie op domeinniveau |
-
-## Weggefilterd
-
-Niet in het kennismodel van de wiki, ook al is de relatie in ArchiMate geldig; de export laat haar weg. Een relatie die nergens in het kennismodel staat, is ook weggefilterd.
-
-| Relatie | Reden |
-|---|---|
-| Actor ─toewijzing of toegang of associatie→ Bedrijfsfunctie | een actor hangt via een rol aan gedrag en objecten: actor → toewijzing → rol |
-| Bedrijfsfunctie ─aggregatie of compositie→ Bedrijfsproces | een functie bedient een proces; processen groeperen in een cluster naar soort werk |
+Inkomend, bij het brontype: [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) (toewijzing); [Rol](rol-modelleerafspraken.md) (toewijzing); [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) (bediening); [Groepering](../overig/groepering-modelleerafspraken.md) (aggregatie).

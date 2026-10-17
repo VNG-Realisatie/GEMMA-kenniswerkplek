@@ -2,18 +2,19 @@
 id: kennismodel
 type: kennismodel
 titel: Kennismodel
+gegenereerd: tools/kennismodel.py
 ---
 
 # Kennismodel
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 Wat het model is: de elementtypen per architectuurlaag, de relaties ertussen en de indelingen. Het kennismodel is metadata; het telt niets. Waarom het model zo is, staat in [ARCHITECTURE.md](../ARCHITECTURE.md); de regels voor het modelleren, met de voorrang, in [modelleerregels](modelleerregels.md); de vragen die een begrip een type geven in [kenmerken en beslistabel](kenmerken-en-beslistabel.md).
 
 Twee markeringen zijn verschillend:
 
-- **Weggefilterd**: niet in het kennismodel van de wiki. Een beoordeling legt elke gevonden relatie vast; de export laat een weggefilterde relatie weg, met de reden.
+- **Buiten het kennismodel**: niet in het kennismodel van de wiki: elementtypen zonder element, en relaties die de export weglaat. Een beoordeling legt elke gevonden relatie vast; een signaal geeft de reden. Het overzicht, voor de redacteur: [Buiten het kennismodel](../elementpaginas/overig/buiten-het-kennismodel.md).
 - **Niet in Over GEMMA**: wel in het kennismodel van de wiki, maar niet in het GEMMA-kennismodel (Over GEMMA): een uitbreiding op het GEMMA-kennismodel. Het gaat mee in de export, gemarkeerd, en is een kandidaat voor een terugmelding over het kennismodel.
+
+Een typepagina toont de relaties waarvan het type de bron is; de inkomende staan bij het brontype.
 
 ## De ArchiMate-matrix
 
@@ -22,8 +23,8 @@ Fase A kiest eerst het vak: de laag, het aspect en intern of extern, zoals in Ar
 | Laag | Actief intern | Actief extern | Gedrag intern | Gedrag extern | Passief | Samengesteld |
 |---|---|---|---|---|---|---|
 | bedrijf | Actor, Rol, Bedrijfssamenwerking | Kanaal | Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie | Dienst | Bedrijfsobject, Afspraak, Representatie (geen pagina) | Product |
-| applicatie | weggefilterd | weggefilterd | weggefilterd | weggefilterd | Data-object (afgeleid uit de GGM-match) | — |
-| technologie | weggefilterd: komt misschien nog | | | | | |
+| applicatie | zonder element | zonder element | zonder element | zonder element | Data-object (afgeleid uit de GGM-match) | — |
+| technologie | zonder element: komt misschien nog | | | | | |
 | strategie | Capability (Vermogen): buiten dit model | | | | | |
 | motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |
 | overig | | | | | | Locatie (geen pagina), Groepering (indeling) |
@@ -47,7 +48,7 @@ Wat fase A per vak vraagt, staat in [kenmerken en beslistabel](kenmerken-en-besl
 | [Kanaal](bedrijfsarchitectuur/kanaal-modelleerafspraken.md) | Business Interface | `kanaal` | ja |
 | [Bedrijfsinteractie](bedrijfsarchitectuur/bedrijfsinteractie-modelleerafspraken.md) | Business Interaction | `bedrijfsinteractie` | nee |
 
-Elementtypen zonder element: [weggefilterd](bedrijfsarchitectuur/weggefilterd.md) (representatie).
+Elementtypen zonder element: representatie.
 
 ## Motivatie
 
@@ -56,7 +57,7 @@ Elementtypen zonder element: [weggefilterd](bedrijfsarchitectuur/weggefilterd.md
 | [Beleidskader](motivatie/beleidskader-modelleerafspraken.md) | Driver | `beleidskader` | ja |
 | [Kwaliteitsdoel](motivatie/kwaliteitsdoel-modelleerafspraken.md) | Goal | matchdoel (GEMMA) | ja |
 
-Elementtypen zonder element: [weggefilterd](motivatie/weggefilterd.md) (uitkomst, principe, eis, beperking, waarde, kernwaarde, vermogen).
+Elementtypen zonder element: uitkomst, principe, eis, beperking, waarde, kernwaarde, vermogen.
 
 ## Applicatiearchitectuur
 
@@ -64,11 +65,11 @@ Elementtypen zonder element: [weggefilterd](motivatie/weggefilterd.md) (uitkomst
 |---|---|---|---|
 | [Data-object](applicatiearchitectuur/data-object-modelleerafspraken.md) | Data Object | `data-object` | ja |
 
-Elementtypen zonder element: [weggefilterd](applicatiearchitectuur/weggefilterd.md) (applicatiecomponent, applicatieservice, applicatiefunctie, applicatie-interface, applicatieproces, applicatie-event).
+Elementtypen zonder element: applicatiecomponent, applicatieservice, applicatiefunctie, applicatie-interface, applicatieproces, applicatie-event.
 
 ## Technologiearchitectuur
 
-Elementtypen zonder element: [weggefilterd](technologiearchitectuur/weggefilterd.md) (node, systeemsoftware, technologieservice).
+Elementtypen zonder element: node, systeemsoftware, technologieservice.
 
 ## Overig
 
@@ -76,7 +77,26 @@ Elementtypen zonder element: [weggefilterd](technologiearchitectuur/weggefilterd
 |---|---|---|---|
 | [Groepering](overig/groepering-modelleerafspraken.md) | Grouping | indeling | ja |
 
-Elementtypen zonder element: [weggefilterd](overig/weggefilterd.md) (locatie).
+Elementtypen zonder element: locatie.
+
+## Eigenschappen
+
+| Eigenschap | Betekenis | Waarden |
+|---|---|---|
+| `kernobject` | het bedrijfsobject waarvan het proces de levensloop omvat (levensloopproces), waarin het een mutatie doet (bedrijfsproces), of dat door de keten gaat (bedrijfsinteractie) |  |
+| `afnemer` | voor wie het is: extern of intern (de bovenste laag van het processenlandschap, de rol Klant en de externe en interne UPL-lijst) | extern, intern |
+| `domein` | het GEMMA-domein, de plaats in de Functie-indeling naar domein | Bestuur, Fysieke leefomgeving, Niet domeingebonden, Openbare orde en veiligheid, Ondersteuning, Publieksdiensten, Sociaal domein |
+| `doelgroep` | gemeente, inwoners en ondernemers of ketenpartners: de plaats in de Doelgroepindeling | gemeente, inwoners en ondernemers, ketenpartners |
+| `regelgever` | EU, rijk of VNG-modelverordening: bepaalt de groep in de Grondslagindeling | EU, rijk, VNG-modelverordening |
+| `kwaliteitsdoelen` | de GEMMA-kwaliteitsdoelen waaraan het beleidskader grondslag geeft, met de sterkte van die invloed, een onderbouwing en de bronnen |  |
+| `taakveld` | het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling |  |
+| `beleidsdomein` | het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling |  |
+| `gemma_generiek` | het generieke GEMMA-element waarvan dit een specialisatie is (exacte match) |  |
+| `gemma_functie` | de bovenliggende GEMMA-functie in de functiehiërarchie, die zelf geen element is: het id, met de GEMMA-relatie of een bron met vindplaats |  |
+| `deelprocessen` | de deelprocessen in volgorde, elk met één of twee zinnen en een bron (geen eigen pagina) |  |
+| `gemma` | de match met het GEMMA-model: het id gaat mee in de export |  |
+| `ggm` | de match met het GGM: entiteit, sterkte en onderbouwing |  |
+| `data_objecten` | een extra data-object voor een andere GGM-entiteit: naam en GGM-match |  |
 
 ## Relatietypen
 
@@ -98,7 +118,7 @@ De vaste namen: een **handeling** van gedrag op een object (registreren: schrijv
 
 ## Relatiematrix
 
-Per brontype (rij) en doeltype (kolom) de toegestane relaties; \* is een uitbreiding op het GEMMA-kennismodel. Een leeg vak: weggefilterd.
+Per brontype (rij) en doeltype (kolom) de toegestane relaties; \* is een uitbreiding op het GEMMA-kennismodel. Een leeg vak: buiten het kennismodel.
 
 | Van \ naar | Bedrijfsobject | Afspraak | Product | Dienst | Bedrijfsproces | Bedrijfsfunctie | Gebeurtenis | Actor | Rol | Bedrijfssamenwerking | Kanaal | Bedrijfsinteractie | Beleidskader | Data-object |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|

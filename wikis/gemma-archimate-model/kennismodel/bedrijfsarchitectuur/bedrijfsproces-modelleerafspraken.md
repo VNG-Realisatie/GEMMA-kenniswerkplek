@@ -2,11 +2,10 @@
 id: bedrijfsproces-modelleerafspraken
 type: kennismodel
 titel: Bedrijfsproces — modelleerafspraken
+gegenereerd: tools/kennismodel.py
 ---
 
 # Bedrijfsproces — modelleerafspraken
-
-<!-- Gegenereerd door tools/kennismodel.py; wijzig de bron, niet deze pagina. -->
 
 *Business Process* in ArchiMate · laag Bedrijfsarchitectuur · vak `bedrijf/gedrag-intern` · paginatype `bedrijfsproces`
 
@@ -18,7 +17,7 @@ titel: Bedrijfsproces — modelleerafspraken
 | Herken je aan | Bedrijfsproces: *gedrag* en *per keer doorlopen*. Moet ja: *toegewezen partij* (kernrelatie), *aanleiding*, *benoembaar resultaat*. Procescluster: *gedrag* en *groepeert processen*. Moet ja: *omvat processen* (kernrelatie). Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Rol ─toewijzing→ Bedrijfsproces; Bedrijfsproces ─aggregatie→ Bedrijfsproces |
 | Niveaus | levensloopproces: het gedrag over de hele levensloop van één exemplaar van een kernobject, van begin tot eind (*omvat levensloop*); in GEMMA een cluster van bedrijfsprocessen over één thema, GEMMA type *Bedrijfsproces (cluster)* · bedrijfsproces: klant tot klant, onder verantwoordelijkheid van één organisatie; één mutatie in de levensloop van een kernobject, en het levert een product, dienst of besluit (*bijdrage aan groter proces* met *klant tot klant*) · deelproces: binnen één bedrijfsfunctie, levert een deeldienst; geen pagina, de tekst staat in `deelprocessen` van het bedrijfsproces · processtap en handeling: geen pagina · cluster naar soort werk: de bedrijfsprocessen van één soort werk, als specialisatie van een generiek GEMMA-bedrijfsproces (*groepeert processen*) |
-| Eigenschappen | `kernobject`: het bedrijfsobject waarvan het proces de levensloop omvat (levensloopproces), waarin het een mutatie doet (bedrijfsproces), of dat door de keten gaat (bedrijfsinteractie) · `afnemer` (verplicht): voor wie het is: extern of intern (de bovenste laag van het processenlandschap, de rol Klant en de externe en interne UPL-lijst) (extern, intern) · `gemma_generiek`: het generieke GEMMA-element waarvan dit een specialisatie is (exacte match) · `deelprocessen`: de deelprocessen in volgorde, elk met één of twee zinnen en een bron (geen eigen pagina) · `taakveld`: het Iv3-taakveld: de bovenste laag van de Beleidsdomeinindeling · `beleidsdomein`: het beleidsdomein (GGM, of gemeentelijk met een terugmelding) in de Beleidsdomeinindeling · `gemma`: de match met het GEMMA-model: het id gaat mee in de export |
+| Eigenschappen | `kernobject` · `afnemer` (verplicht) · `gemma_generiek` · `deelprocessen` · `taakveld` · `beleidsdomein` · `gemma` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Beleidsdomeinindeling](../indelingen.md) (alleen een levensloopproces of een generiek bedrijfsproces, onder het beleidsdomein van zijn kernobject); [Procesindeling naar kernobject](../indelingen.md) (levensloopproces en bedrijfsproces); [Procesindeling naar soort werk](../indelingen.md) (cluster naar soort werk en bedrijfsproces) |
 | Naamvorm | infinitief met het object in GEMMA-volgorde, werkwoord eerst, zonder lidwoord (Behandelen aanvraag); bestaat er een GEMMA-proces met dezelfde betekenis, dan de GEMMA-naam; het zelfstandig naamwoord uit de bron wordt een synoniem met context "beleid" |
 | Afstemming | GGM: geen match: het GGM modelleert gegevens · GEMMA-model: match op betekenis; het GEMMA-id gaat mee in de export en overschrijft naam en definitie van het GEMMA-element; een zwakke of partiële match voorleggen · generiek GEMMA-element: een bedrijfsproces specialiseert vaak een generiek GEMMA-bedrijfsproces (`gemma_generiek`, exacte match); een cluster naar soort werk altijd |
@@ -35,34 +34,18 @@ titel: Bedrijfsproces — modelleerafspraken
 
 ## Relaties
 
-In het kennismodel van de wiki; ze gaan mee in de export. *In Over GEMMA* nee betekent: een uitbreiding op het GEMMA-kennismodel, in de export gemarkeerd en een kandidaat voor een terugmelding over het kennismodel.
+| Relatie | Naar | Namen | Kern | In Over GEMMA | Toelichting |
+|---|---|---|---|---|---|
+| toegang | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | een [handeling](../README.md#relatietypen) | *wordt bewerkt* | ja |  |
+| toegang | [Afspraak](afspraak-modelleerafspraken.md) | een [handeling](../README.md#relatietypen) | *wordt bewerkt* | nee |  |
+| realisatie | [Dienst](dienst-modelleerafspraken.md) | realiseert | *gerealiseerd door* | ja |  |
+| bediening | [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) | bedient |  | ja |  |
+| bediening | [Bedrijfsinteractie](bedrijfsinteractie-modelleerafspraken.md) | vrij, uit de bron |  | nee | de bedrijfsprocessen van de partijen bedienen de ketensamenwerking |
+| aggregatie | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | omvat | *omvat processen* | ja | levensloopproces of cluster naar soort werk → bedrijfsproces |
+| aggregatie | [Gebeurtenis](gebeurtenis-modelleerafspraken.md) | omvat |  | nee | levensloopproces → gebeurtenis van zijn kernobject |
+| specialisatie | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | is een |  | ja |  |
+| triggering | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | leidt tot |  | ja |  |
+| triggering | [Gebeurtenis](gebeurtenis-modelleerafspraken.md) | leidt tot |  | ja |  |
+| stroom | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | vrij, uit de bron |  | nee | geeft iets door aan een ander proces |
 
-| Richting | Relatie | Ander type | Namen | Kern | In Over GEMMA | Toelichting |
-|---|---|---|---|---|---|---|
-| in | toewijzing | [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit* | ja |  |
-| in | toewijzing | [Rol](rol-modelleerafspraken.md) | vrij, uit de bron | *voert gedrag uit*, *toegewezen partij* | ja |  |
-| uit | toegang | [Bedrijfsobject](bedrijfsobject-modelleerafspraken.md) | een handeling: registreren (schrijven), bijwerken (lezen-schrijven), beëindigen (schrijven), raadplegen (lezen), verstrekken (lezen), bewaren (lezen-schrijven), overbrengen (lezen), vernietigen (schrijven) | *wordt bewerkt* | ja |  |
-| uit | toegang | [Afspraak](afspraak-modelleerafspraken.md) | een handeling: registreren (schrijven), bijwerken (lezen-schrijven), beëindigen (schrijven), raadplegen (lezen), verstrekken (lezen), bewaren (lezen-schrijven), overbrengen (lezen), vernietigen (schrijven) | *wordt bewerkt* | nee: uitbreiding op het GEMMA-kennismodel |  |
-| uit | realisatie | [Dienst](dienst-modelleerafspraken.md) | realiseert | *gerealiseerd door* | ja |  |
-| in | bediening | [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) | bedient | *bedient gedrag* | ja |  |
-| uit | bediening | [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) | bedient |  | ja |  |
-| uit | bediening | [Bedrijfsinteractie](bedrijfsinteractie-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel | de bedrijfsprocessen van de partijen bedienen de ketensamenwerking |
-| uit | aggregatie | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | omvat | *omvat processen* | ja | levensloopproces of cluster naar soort werk → bedrijfsproces |
-| uit | aggregatie | [Gebeurtenis](gebeurtenis-modelleerafspraken.md) | omvat |  | nee: uitbreiding op het GEMMA-kennismodel | levensloopproces → gebeurtenis van zijn kernobject |
-| uit | specialisatie | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | is een |  | ja |  |
-| uit | triggering | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | leidt tot |  | ja |  |
-| uit | triggering | [Gebeurtenis](gebeurtenis-modelleerafspraken.md) | leidt tot |  | ja |  |
-| uit | stroom | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | vrij, uit de bron |  | nee: uitbreiding op het GEMMA-kennismodel | geeft iets door aan een ander proces |
-| in | triggering | [Gebeurtenis](gebeurtenis-modelleerafspraken.md) | leidt tot | *leidt tot gedrag* | ja |  |
-| in | bediening | [Dienst](dienst-modelleerafspraken.md) | bedient |  | ja |  |
-| in | associatie (gericht) | [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) | is grondslag voor, werkt uit voor | *is grondslag voor* | nee: uitbreiding op het GEMMA-kennismodel | de grondslag; bij voorkeur naar een product |
-| in | aggregatie | [Groepering](../overig/groepering-modelleerafspraken.md) | geen: het script maakt de relatie uit de indelingsvelden |  | nee: uitbreiding op het GEMMA-kennismodel | Beleidsdomeinindeling: alleen een levensloopproces of een generiek bedrijfsproces |
-
-## Weggefilterd
-
-Niet in het kennismodel van de wiki, ook al is de relatie in ArchiMate geldig; de export laat haar weg. Een relatie die nergens in het kennismodel staat, is ook weggefilterd.
-
-| Relatie | Reden |
-|---|---|
-| Actor ─toewijzing of toegang of associatie→ Bedrijfsproces | een actor hangt via een rol aan gedrag en objecten: actor → toewijzing → rol |
-| Bedrijfsfunctie ─aggregatie of compositie→ Bedrijfsproces | een functie bedient een proces; processen groeperen in een cluster naar soort werk |
+Inkomend, bij het brontype: [Bedrijfssamenwerking](bedrijfssamenwerking-modelleerafspraken.md) (toewijzing); [Rol](rol-modelleerafspraken.md) (toewijzing); [Bedrijfsfunctie](bedrijfsfunctie-modelleerafspraken.md) (bediening); [Gebeurtenis](gebeurtenis-modelleerafspraken.md) (triggering); [Dienst](dienst-modelleerafspraken.md) (bediening); [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) (associatie); [Groepering](../overig/groepering-modelleerafspraken.md) (aggregatie).
