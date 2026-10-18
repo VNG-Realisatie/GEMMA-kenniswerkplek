@@ -15,6 +15,9 @@ kenmerken:
     onderbouwing: Een verzoek van de ingeschrevene, een overheidsorgaan of een derde (NVVB Schema, stap 1).
     bronnen:
     - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+    naar:
+    - naam: Verzoek om gegevensverstrekking ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de verstrekking of de weigering.
@@ -87,4 +90,4 @@ bronnen:
 - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
 - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
 - 2026-rijk-besluit-brp-bwbr0034306
-status: goedgekeurd
+status: review

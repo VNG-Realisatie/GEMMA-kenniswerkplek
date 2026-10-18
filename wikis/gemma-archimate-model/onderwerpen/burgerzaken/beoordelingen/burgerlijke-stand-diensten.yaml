@@ -15,11 +15,18 @@ kenmerken:
     onderbouwing: Raadpleegt de verklaring van overlijden en legt het verlof vast (art. 11–13).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - vergunning
+    - naam: Verklaring van overlijden
+      type: bedrijfsobject
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
     gemma_relatie:
     - id-efd77657-f6f9-457c-a9e8-93d6d11647df
+    naar:
+    - naam: Producten- en dienstenrealisatie publieksdiensten
+      type: bedrijfsfunctie
 definitie: Het bijhouden van de burgerlijke staat van personen naar aanleiding van geboorte, overlijden, huwelijk en verhuizing.
 per_onderwerp:
   lijkbezorging:
@@ -218,8 +225,15 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 11
+- soort: toegang (registreren)
+  naar: vergunning
+  naam: legt het verlof vast
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 11-13
 beschrijving:
 - De ambtenaar van de burgerlijke stand maakt akten op van geboorte, huwelijk en overlijden en verleent het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11; RVO). De functie bedient de processen daarvoor.
 bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
-status: goedgekeurd
+status: review

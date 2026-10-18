@@ -12,6 +12,9 @@ kenmerken:
     onderbouwing: Aanvraag van de rechthebbende bij de burgemeester (Groningen art. 28 lid 1).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - naam: Aanvraag opgraving ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot het opgegraven lijk.
@@ -65,4 +68,4 @@ kernobject: stoffelijk-overschot
 afnemer: extern
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

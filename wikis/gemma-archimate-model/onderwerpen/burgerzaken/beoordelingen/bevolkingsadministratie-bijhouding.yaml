@@ -13,11 +13,17 @@ kenmerken:
     onderbouwing: Werkt de ingeschreven persoon en zijn verblijfplaats bij (HUP Achtergronden).
     bronnen:
     - 2026-rvig-hup-achtergronden-en-begrippen
+    naar:
+    - ingeschreven-persoon
+    - verblijfplaats
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
     gemma_relatie:
     - id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb
+    naar:
+    - naam: Producten- en dienstenrealisatie publieksdiensten
+      type: bedrijfsfunctie
 definitie: Het uitvoeren van taken om de basisregistratie personen actueel en betrouwbaar te houden.
 beschrijving:
 - De functie omvat de bijhouding van de BRP (inschrijving, adreswijziging, emigratie, adresonderzoek, correctie) en de diensten die daaruit voortkomen, zoals uittreksels, geheimhouding en de verhuismelding (HUP Achtergronden; UPL).
@@ -177,7 +183,21 @@ relaties:
   bronnen:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: art. 2.4 lid 3
+- soort: toegang (bijwerken)
+  naar: ingeschreven-persoon
+  naam: werkt bij
+  ggm_match: geen
+  bronnen:
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  vindplaats: HUP Achtergronden
+- soort: toegang (bijwerken)
+  naar: verblijfplaats
+  naam: werkt bij
+  ggm_match: geen
+  bronnen:
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  vindplaats: HUP Achtergronden
 bronnen:
 - 2026-rvig-hup-achtergronden-en-begrippen
 - 2026-rijk-wet-brp-bwbr0033715
-status: goedgekeurd
+status: review

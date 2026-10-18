@@ -2,7 +2,7 @@
 id: rechthebbende-op-het-graf
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Rechthebbende op het graf
 onderwerpen:
 - lijkbezorging
@@ -22,7 +22,11 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rechthebbende-op-het-graf.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
+
+## Ter discussie
+
+- homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen
 
 ## Betekenis
 
@@ -82,6 +86,8 @@ De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in 
 | Rechthebbende op het graf | heeft *toegang (partij)* | [Grafrecht](../bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md) | [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (Wlb art. 28; Groningen art. 1 w) |
 | Rechthebbende op het graf | geeft toestemming voor *toewijzing* | [Ruimen graf](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md) | [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) (art. 31 lid 2) |
 | Rechthebbende op het graf | machtigt tot begraving in het particulier graf *toewijzing* | [Uitvoeren lijkbezorging](../bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md) | [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md), [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md), [VNG Model-beheersverordening begraafplaatsen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2010-vng-model-beheersverordening-begraafplaatsen.md) (Wlb art. 23 lid 2; Groningen art. 9 lid 2; VNG-modelverordening art. 9 lid 2) |
+| Rechthebbende op het graf | verzoekt om onderhoud *toewijzing* | Onderhouden graf | [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 23 lid 1) |
+| Rechthebbende op het graf | vraagt de vergunning aan *toewijzing* | Verlenen vergunning grafbedekking | [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 22 lid 1-2) |
 
 #### Inkomend
 

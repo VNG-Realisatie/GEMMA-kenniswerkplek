@@ -14,6 +14,9 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
     - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+    naar:
+    - naam: Aanvraag verklaring omtrent het gedrag ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van de verklaring: aanvraag, ontvangst, onderzoek, afgifte of weigering (Wet justitiële en strafvorderlijke gegevens art. 30 tot en met 37).'
@@ -65,4 +68,4 @@ bronnen:
 - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
-status: goedgekeurd
+status: review

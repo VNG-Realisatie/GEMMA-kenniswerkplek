@@ -14,6 +14,9 @@ kenmerken:
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
     - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+    naar:
+    - naam: Aanvraag omwisseling buitenlands rijbewijs ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag aan de balie tot het afgegeven of geweigerde rijbewijs.
@@ -81,4 +84,4 @@ deelprocessen:
   begrip: uitreiken-rijbewijs
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

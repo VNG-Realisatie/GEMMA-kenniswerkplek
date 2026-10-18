@@ -13,6 +13,11 @@ kenmerken:
     onderbouwing: Het voornemen tot vestiging van een gemeentelijk crematorium, of een aanvraag om vergunning voor een bijzonder crematorium (art. 53, 54).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - naam: Voornemen tot vestiging crematorium gemeld
+      type: gebeurtenis
+    - naam: Aanvraag vergunning bijzonder crematorium ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van het crematorium: vestiging, uitbreiding of wijziging, en opheffing (art. 50 lid 3, 53, 54).'
@@ -45,4 +50,4 @@ relaties:
   vindplaats: art. 50, 51, 54
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

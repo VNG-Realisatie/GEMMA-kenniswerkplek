@@ -15,6 +15,9 @@ kenmerken:
     bronnen:
     - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
     - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+    naar:
+    - naam: Verzoek om correctie ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de gecorrigeerde gegevens of de weigering.
@@ -62,4 +65,4 @@ relaties:
   vindplaats: UPL nr. 95; Wet BRP art. 2.58
 bronnen:
 - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-status: goedgekeurd
+status: review

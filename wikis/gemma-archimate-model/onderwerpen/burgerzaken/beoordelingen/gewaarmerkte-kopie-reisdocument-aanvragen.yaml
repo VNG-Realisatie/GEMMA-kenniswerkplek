@@ -8,6 +8,9 @@ kenmerken:
     onderbouwing: 'Producten- en dienstenrealisatie publieksdiensten: de medewerker aan de balie maakt en waarmerkt de kopie direct, op afspraak en met het origineel (Utrecht).'
     bronnen:
     - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
+    naar:
+    - naam: Producten- en dienstenrealisatie publieksdiensten
+      type: bedrijfsfunctie
 definitie: Het laten maken van een kopie van een Nederlands paspoort of identiteitskaart waarvan de gemeente verklaart dat ze gelijk is aan het origineel.
 beschrijving:
 - De aanvrager komt op afspraak met het originele document; er zijn leges. Een rijbewijs waarmerkt de gemeente niet (RDW), een buitenlands paspoort of buitenlandse identiteitskaart laat men waarmerken bij ambassade, consulaat of notaris (Utrecht). De dienst staat niet in de Paspoortwet en niet in de UPL; zie de terugmelding. GEMMA kent de algemene bedrijfsfunctie Waarmerking, het toevoegen van een waarmerk aan een document om de echtheid te bekrachtigen.

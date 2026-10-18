@@ -13,6 +13,13 @@ kenmerken:
     onderbouwing: Een optieverklaring, een naturalisatieverzoek of een verklaring van afstand (Besluit art. 3, 7, 33, 63).
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    naar:
+    - naam: Optieverklaring afgelegd
+      type: gebeurtenis
+    - naam: Naturalisatieverzoek ingediend
+      type: gebeurtenis
+    - naam: Verklaring van afstand ondertekend
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van het Nederlanderschap waarbij de gemeente handelt: verkrijging door optie of naturalisatie, uitreiking met de verklaring van verbondenheid, en verlies door afstand (Rijkswet art. 6, 7, 15; Besluit art. 60a, 60b, 63).'
@@ -99,4 +106,4 @@ bronnen:
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
 - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

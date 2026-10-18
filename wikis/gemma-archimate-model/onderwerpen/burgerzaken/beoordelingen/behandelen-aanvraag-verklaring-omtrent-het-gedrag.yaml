@@ -14,6 +14,9 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
     - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+    naar:
+    - naam: Aanvraag verklaring omtrent het gedrag ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot de doorgezonden aanvraag, het deel van de gemeente.
@@ -65,4 +68,4 @@ bronnen:
 - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
 - 2026-vng-gemma-impact-ketensamenwerking
-status: goedgekeurd
+status: review

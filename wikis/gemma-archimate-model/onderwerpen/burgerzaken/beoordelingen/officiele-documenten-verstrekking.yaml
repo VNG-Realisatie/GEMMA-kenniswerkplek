@@ -14,11 +14,16 @@ kenmerken:
     onderbouwing: Registreert en werkt het reisdocument bij (Paspoortwet art. 40, 42).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
+    naar:
+    - reisdocument
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
     gemma_relatie:
     - id-1f944d4b-41d8-40cb-be75-8706806e07cc
+    naar:
+    - naam: Producten- en dienstenrealisatie publieksdiensten
+      type: bedrijfsfunctie
 definitie: Het op aanvraag verstrekken van persoonlijke documenten zoals paspoort of rijbewijs.
 beschrijving:
 - 'GEMMA rekent er rijbewijzen, identiteitsbewijzen en reisdocumenten toe: documenten die de gemeente op aanvraag op naam van een persoon verstrekt (GEMMA, toelichting bij de functie).'
@@ -139,7 +144,14 @@ relaties:
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   vindplaats: art. 28 lid 1
+- soort: toegang (bijwerken)
+  naar: reisdocument
+  naam: registreert en werkt bij
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 40, 42
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review

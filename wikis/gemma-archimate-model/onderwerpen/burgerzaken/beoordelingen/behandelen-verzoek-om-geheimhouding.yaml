@@ -14,6 +14,9 @@ kenmerken:
     onderbouwing: Schriftelijk verzoek van de ingeschrevene van 16 jaar of ouder, of van ouder, voogd of curator (HUP Verstrekkingsbeperking).
     bronnen:
     - 2026-rvig-hup-verstrekkingsbeperking
+    naar:
+    - naam: Verzoek om geheimhouding ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de aantekening en de bevestiging.
@@ -52,4 +55,4 @@ relaties:
   vindplaats: UPL nr. 87; Wet BRP art. 2.59
 bronnen:
 - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-status: goedgekeurd
+status: review

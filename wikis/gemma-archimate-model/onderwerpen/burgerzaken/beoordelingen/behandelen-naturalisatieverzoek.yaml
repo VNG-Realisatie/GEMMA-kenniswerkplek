@@ -14,6 +14,9 @@ kenmerken:
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
     - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+    naar:
+    - naam: Naturalisatieverzoek ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de bevestiging van het Nederlanderschap op de ceremonie.
@@ -105,4 +108,4 @@ besluiten:
   besluit: 'Leidt tot gebeurtenis is ja: de triggering naar verkrijging-van-het-nederlanderschap staat met bron en vindplaats in de beoordeling; de nee was een vergissing (omzetting naar de ArchiMate-indeling).'
   gevolg: verwerkt
   zekerheid: logica
-status: goedgekeurd
+status: review

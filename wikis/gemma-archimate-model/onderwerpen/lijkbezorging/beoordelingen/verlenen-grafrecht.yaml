@@ -13,6 +13,9 @@ kenmerken:
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
+    naar:
+    - naam: Aanvraag grafrecht ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot het verleende grafrecht.
@@ -83,4 +86,4 @@ bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
 - 2026-vng-retributies
-status: goedgekeurd
+status: review

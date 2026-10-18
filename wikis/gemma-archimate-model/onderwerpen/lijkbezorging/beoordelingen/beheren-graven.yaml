@@ -10,12 +10,17 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - houder-van-de-begraafplaats
   aanleiding:
     waarde: ja
     onderbouwing: De uitgifte van een graf voor een begraving of bijzetting (art. 23; Groningen art. 13–16).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - naam: Aanvraag grafrecht ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: Omvat de levensloop van het graf, van uitgifte via begraving, bijzetting en onderhoud tot ruiming (art. 23, 27, 31).
@@ -52,4 +57,4 @@ relaties:
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-status: goedgekeurd
+status: review

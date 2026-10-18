@@ -14,6 +14,9 @@ kenmerken:
     onderbouwing: Het verzoekschrift van de kiezer op een formulier, met de verklaring van de gemachtigde (Kieswet art. L 8).
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - naam: Verzoek om volmacht ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoekschrift tot het volmachtbewijs of de afwijzing.
@@ -47,4 +50,4 @@ relaties:
   vindplaats: UPL nr. 453
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
-status: goedgekeurd
+status: review

@@ -9,11 +9,17 @@ kenmerken:
     onderbouwing: Beslisser (college) en Nabestaande, die het verzoek doet (APV Groningen art. 5:27 lid 3).
     bronnen:
     - 2025-groningen-algemene-plaatselijke-verordening
+    naar:
+    - beslisser
+    - nabestaande
   aanleiding:
     waarde: ja
     onderbouwing: Een verzoek van de nabestaande die zorgdraagt voor de asbus (APV Groningen art. 5:27 lid 3).
     bronnen:
     - 2025-groningen-algemene-plaatselijke-verordening
+    naar:
+    - naam: Verzoek om toestemming asverstrooiing ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: 'Ja, van het verzoek tot de toestemming of de weigering. Draagt bij aan het levensloopproces Toestaan lijkbezorging: een besluit over de bestemming van de as (APV Groningen art. 5:27; Wlb art. 59–66b).'

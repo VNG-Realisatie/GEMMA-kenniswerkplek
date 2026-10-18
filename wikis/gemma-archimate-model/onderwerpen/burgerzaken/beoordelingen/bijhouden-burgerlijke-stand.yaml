@@ -13,6 +13,13 @@ kenmerken:
     onderbouwing: Een aangifte (geboorte, overlijden), een verklaring of kennisgeving (erkenning, naamskeuze, voornemen te trouwen) of een rechterlijke uitspraak of besluit (BW 1 art. 19e, 19h, 44, 203, 20).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - naam: Aangifte van geboorte of overlijden gedaan
+      type: gebeurtenis
+    - naam: Kennisgeving of verklaring voor de burgerlijke stand ingediend
+      type: gebeurtenis
+    - naam: Rechterlijke uitspraak ontvangen
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van de akte: opmaken, latere vermeldingen, aanvulling of verbetering, afsluiten en overbrengen van de registers (BW 1 art. 18, 20, 24; Besluit burgerlijke stand art. 6, 7, 31).'
@@ -181,4 +188,4 @@ bronnen:
 - 2026-rvig-hup-algemeen
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

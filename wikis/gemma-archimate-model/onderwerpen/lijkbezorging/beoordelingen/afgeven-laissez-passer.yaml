@@ -13,6 +13,9 @@ kenmerken:
     onderbouwing: Vervoer van een stoffelijk overschot naar een staat die partij is bij de Overeenkomst van Straatsburg (Besluit op de lijkbezorging art. 11 lid 1).
     bronnen:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    naar:
+    - naam: Lijkvervoer naar verdragsstaat voorgenomen
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek voor vervoer naar een verdragsstaat tot het afgegeven laissez-passer.
@@ -54,4 +57,4 @@ relaties:
   vindplaats: Besluit op de lijkbezorging art. 11; UPL nr. 445
 bronnen:
 - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

@@ -15,6 +15,9 @@ kenmerken:
     bronnen:
     - 2026-rvig-hup-wijziging-naamgebruik
     - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
+    naar:
+    - naam: Verzoek om wijziging naamgebruik ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de gewijzigde aanduiding of de weigering.
@@ -56,4 +59,4 @@ bronnen:
 - 2026-rvig-hup-wijziging-naamgebruik
 - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

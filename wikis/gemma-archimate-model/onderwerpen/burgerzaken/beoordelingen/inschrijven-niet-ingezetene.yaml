@@ -14,6 +14,9 @@ kenmerken:
     bronnen:
     - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
     - 2026-rvig-hup-achtergronden-en-begrippen
+    naar:
+    - naam: Verzoek om inschrijving als niet-ingezetene ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de inschrijving in de RNI.
@@ -57,4 +60,4 @@ relaties:
 bronnen:
 - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

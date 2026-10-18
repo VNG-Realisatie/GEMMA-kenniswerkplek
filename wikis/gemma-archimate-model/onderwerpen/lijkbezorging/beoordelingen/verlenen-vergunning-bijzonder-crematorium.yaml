@@ -13,6 +13,9 @@ kenmerken:
     onderbouwing: Een aanvraag om vergunning voor het vestigen, uitbreiden of wijzigen van een bijzonder crematorium (art. 53).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - naam: Aanvraag vergunning bijzonder crematorium ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot de vergunning.
@@ -46,4 +49,4 @@ relaties:
   vindplaats: art. 53
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

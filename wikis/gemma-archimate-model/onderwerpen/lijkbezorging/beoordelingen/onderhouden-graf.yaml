@@ -4,14 +4,20 @@ soort_gedrag: per_keer_doorlopen
 kenmerken:
   toegewezen_partij:
     waarde: ja
-    onderbouwing: Gemeente; de Rechthebbende op het graf verzoekt erom (Groningen art. 23).
+    onderbouwing: Houder van de begraafplaats (de gemeente), en de Rechthebbende op het graf die erom verzoekt (Groningen art. 23).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - houder-van-de-begraafplaats
+    - rechthebbende-op-het-graf
   aanleiding:
     waarde: ja
     onderbouwing: Schriftelijk verzoek van de rechthebbende, of op sommige begraafplaatsen altijd (Groningen art. 23 lid 1).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - naam: Verzoek om grafonderhoud ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: 'Ja, van het verzoek van de rechthebbende tot het onderhouden graf. Draagt bij aan Beheren graven: het onderhoud van de grafbedekking op het graf (Groningen art. 23).'

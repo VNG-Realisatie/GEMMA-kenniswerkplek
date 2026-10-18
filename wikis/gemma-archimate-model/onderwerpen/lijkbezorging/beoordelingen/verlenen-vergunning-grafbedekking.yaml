@@ -9,11 +9,17 @@ kenmerken:
     onderbouwing: Beslisser (college) en Rechthebbende op het graf, die de vergunning aanvraagt (Groningen art. 22 lid 1–2).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - beslisser
+    - rechthebbende-op-het-graf
   aanleiding:
     waarde: ja
     onderbouwing: Een aanvraag van de rechthebbende van een particulier graf (Groningen art. 22 lid 2).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - naam: Aanvraag vergunning grafbedekking ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: 'Ja, van de aanvraag tot de vergunning of de weigering. Draagt bij aan het bedrijfsproces Beheren graven: een mutatie in de grafbedekking op een graf (Groningen art. 22).'

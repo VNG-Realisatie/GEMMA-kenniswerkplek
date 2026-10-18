@@ -74,10 +74,17 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 33, 37
+- soort: toewijzing
+  naar: onderhouden-graf
+  naam: onderhoudt op verzoek van de rechthebbende
+  ggm_match: geen
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 23
 onderwerpen:
 - lijkbezorging
 doelgroep: gemeente
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review

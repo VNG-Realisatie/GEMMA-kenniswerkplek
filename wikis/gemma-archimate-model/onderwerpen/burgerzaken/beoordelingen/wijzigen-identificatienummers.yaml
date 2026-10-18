@@ -15,6 +15,9 @@ kenmerken:
     bronnen:
     - 2026-rvig-hup-wijzigen-bsn
     - 2026-rvig-hup-wijzigen-administratienummer
+    naar:
+    - naam: Foutvermoeden BSN of A-nummer gemeld
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, ambtshalve, van de melding van de dubbele inschrijving of de fout tot het gewijzigde nummer.
@@ -60,4 +63,4 @@ besluiten:
   besluit: 'Leidt tot gebeurtenis is ja: de triggering naar verval-van-het-reisdocument staat met bron en vindplaats in de beoordeling; de nee was een vergissing (omzetting naar de ArchiMate-indeling).'
   gevolg: verwerkt
   zekerheid: logica
-status: goedgekeurd
+status: review

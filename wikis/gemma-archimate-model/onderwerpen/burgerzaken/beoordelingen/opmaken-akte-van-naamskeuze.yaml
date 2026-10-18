@@ -14,6 +14,9 @@ kenmerken:
     onderbouwing: De verklaring van de ouders, vóór de geboorte, bij de erkenning of uiterlijk bij de geboorteaangifte (Utrecht).
     bronnen:
     - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+    naar:
+    - naam: Verklaring van naamskeuze afgelegd
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de verklaring van de ouders tot de akte.
@@ -49,4 +52,4 @@ beleidsdomein: Burgerzaken
 bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-status: goedgekeurd
+status: review

@@ -15,11 +15,17 @@ kenmerken:
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
     - 2026-rvig-hup-kiesrecht
+    naar:
+    - stempas
+    - ingeschreven-persoon
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onder Producten- en dienstenrealisatie publieksdiensten (GEMMA).
     gemma_relatie:
     - id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff
+    naar:
+    - naam: Producten- en dienstenrealisatie publieksdiensten
+      type: bedrijfsfunctie
 domein: Publieksdiensten
 definitie: Het lokaal organiseren van verkiezingen.
 beschrijving:
@@ -79,7 +85,22 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 398 (GEMMA-domein Publieksdiensten)
+- soort: toegang (bijwerken)
+  naar: stempas
+  naam: registreert en beëindigt
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  vindplaats: art. J 7, J 7a
+- soort: toegang (bijwerken)
+  naar: ingeschreven-persoon
+  naam: werkt kiesrechtgegevens bij
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2026-rvig-hup-kiesrecht
+  vindplaats: art. J 7, J 7a; HUP Kiesrecht
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
 - 2026-rvig-hup-kiesrecht
-status: goedgekeurd
+status: review

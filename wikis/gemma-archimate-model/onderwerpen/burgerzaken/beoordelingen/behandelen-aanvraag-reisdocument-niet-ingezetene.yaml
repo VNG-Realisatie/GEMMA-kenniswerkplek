@@ -15,6 +15,9 @@ kenmerken:
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+    naar:
+    - naam: Aanvraag reisdocument niet-ingezetene ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot de uitreiking of de weigering.
@@ -92,4 +95,4 @@ deelprocessen:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-paspoortbesluit-bwbr0044308
-status: goedgekeurd
+status: review

@@ -9,11 +9,22 @@ kenmerken:
     onderbouwing: Beslisser (burgemeester), Optant en Verzoeker om naturalisatie (Besluit art. 7, 11, 33, 60a, 63).
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    naar:
+    - beslisser
+    - optant
+    - verzoeker-om-naturalisatie
   aanleiding:
     waarde: ja
     onderbouwing: Een optieverklaring, naturalisatieverzoek of verklaring van afstand bij de burgemeester (Besluit art. 7, 33, 63).
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+    naar:
+    - naam: Optieverklaring afgelegd
+      type: gebeurtenis
+    - naam: Naturalisatieverzoek ingediend
+      type: gebeurtenis
+    - naam: Verklaring van afstand ondertekend
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: 'Omvat het deel van de gemeente in de levensloop van het Nederlanderschap: verkrijging door optie of naturalisatie, het in werking treden door de uitreiking, en verlies door afstand (Rijkswet art. 6, 7, 15; Besluit art. 11, 36-38, 60a, 60b, 63).'

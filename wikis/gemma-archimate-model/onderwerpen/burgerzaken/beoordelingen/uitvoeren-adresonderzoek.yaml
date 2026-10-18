@@ -16,6 +16,9 @@ kenmerken:
     bronnen:
     - 2023-rvig-circulaire-adresonderzoek-brp
     - 2026-nvvb-handreiking-adresonderzoek
+    naar:
+    - naam: Signaal over onjuiste inschrijving ontvangen
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de melding, het signaal of de eigen constatering tot het besluit.
@@ -57,4 +60,4 @@ bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
 - 2026-rijk-besluit-brp-bwbr0034306
-status: goedgekeurd
+status: review

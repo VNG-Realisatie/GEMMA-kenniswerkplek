@@ -13,6 +13,9 @@ kenmerken:
     onderbouwing: Een verzoek om een afschrift, uittreksel of verklaring (Utrecht Uittreksel of akte aanvragen).
     bronnen:
     - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+    naar:
+    - naam: Verzoek om uittreksel of verklaring ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot het afschrift, uittreksel of de verklaring.
@@ -90,4 +93,4 @@ beleidsdomein: Burgerzaken
 bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-status: goedgekeurd
+status: review

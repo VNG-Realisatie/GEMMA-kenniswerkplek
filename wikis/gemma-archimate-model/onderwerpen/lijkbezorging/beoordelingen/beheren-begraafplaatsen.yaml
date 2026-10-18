@@ -13,6 +13,11 @@ kenmerken:
     onderbouwing: Het voornemen tot aanleg of uitbreiding, of een verzoek om toestemming (art. 36, 40, 41).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - naam: Voornemen tot aanleg of uitbreiding begraafplaats gemeld
+      type: gebeurtenis
+    - naam: Verzoek om toestemming begraafplaats ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van de begraafplaats: aanleg of uitbreiding, ingebruikneming, sluiting en opheffing (art. 36, 40, 41, 43, 44, 47).'
@@ -52,4 +57,4 @@ relaties:
   vindplaats: art. 33, 36, 43, 47
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

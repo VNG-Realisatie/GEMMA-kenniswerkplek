@@ -13,6 +13,9 @@ kenmerken:
     onderbouwing: Het schriftelijke of mondelinge verzoek van de kiezer (Kieswet art. K 3).
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - naam: Verzoek om kiezerspas ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de uitgereikte of verzonden kiezerspas.
@@ -49,4 +52,4 @@ relaties:
   vindplaats: UPL nr. 208
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

@@ -13,6 +13,9 @@ kenmerken:
     onderbouwing: Verzoek van de ingeschrevene (Utrecht).
     bronnen:
     - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+    naar:
+    - naam: Verzoek om overzicht gegevensverstrekkingen ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot het overzicht.
@@ -49,4 +52,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2025-rvig-logisch-ontwerp-brp-2025q1
 - 2026-rijk-besluit-brp-bwbr0034306
-status: goedgekeurd
+status: review

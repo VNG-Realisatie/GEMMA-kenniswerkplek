@@ -14,6 +14,9 @@ kenmerken:
     onderbouwing: Een aanvraag van de nabestaanden, via de uitvaartondernemer, bij de gemeente waar de persoon is overleden (RVO).
     bronnen:
     - 2026-rvo-aangifte-en-akte-van-overlijden
+    naar:
+    - naam: Aanvraag andere termijn voor uitvaart ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot de vergunning voor een andere termijn.
@@ -63,4 +66,4 @@ besluiten:
   gevolg: verwerkt
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

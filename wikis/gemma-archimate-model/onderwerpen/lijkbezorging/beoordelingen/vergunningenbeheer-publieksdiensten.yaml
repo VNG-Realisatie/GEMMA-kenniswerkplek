@@ -13,11 +13,16 @@ kenmerken:
     onderbouwing: Legt de vergunning vast die nabestaanden aanvragen bij de gemeente waar de persoon is overleden (RVO, § Uitvaart vervroegen, § Uitvaart uitstellen).
     bronnen:
     - 2026-rvo-aangifte-en-akte-van-overlijden
+    naar:
+    - vergunning
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
     gemma_relatie:
     - id-e9c3ffeb-f96c-4bcd-8e74-cf5c866bb1cc
+    naar:
+    - naam: Producten- en dienstenrealisatie publieksdiensten
+      type: bedrijfsfunctie
   generiek:
     waarde: ja
     onderbouwing: 'Komt met dezelfde betekenis voor bij elke vergunning voor een lokale activiteit. Zo in de Model-APV: evenementen (art. 2:25), inzameling van geld of goederen (art. 5:13) en standplaatsen (art. 5:18).'
@@ -66,7 +71,14 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 17
+- soort: toegang (registreren)
+  naar: vergunning
+  naam: legt vast
+  ggm_match: geen
+  bronnen:
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  vindplaats: § Uitvaart vervroegen, § Uitvaart uitstellen
 bronnen:
 - 2023-vng-model-apv
 - 2026-rvo-aangifte-en-akte-van-overlijden
-status: goedgekeurd
+status: review

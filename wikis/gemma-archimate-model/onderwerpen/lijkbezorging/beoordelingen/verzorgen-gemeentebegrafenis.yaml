@@ -12,6 +12,9 @@ kenmerken:
     onderbouwing: Melding dat niemand in de lijkbezorging voorziet, uiterlijk de derde dag na het overlijden (art. 20).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - naam: Melding dat niemand in de lijkbezorging voorziet gedaan
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van de gemeentebegrafenis: de melding dat niemand in de lijkbezorging voorziet (art. 20), de zorg door de burgemeester (art. 21), het kostenverhaal (art. 22) en de afdoening (GGM-attributen datumGemeld, datumBegrafenis, verhaaldBedrag, datumAfgedaan).'
@@ -56,4 +59,4 @@ kernobject: gemeentebegrafenis
 afnemer: extern
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

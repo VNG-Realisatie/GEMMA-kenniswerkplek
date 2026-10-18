@@ -13,6 +13,11 @@ kenmerken:
     onderbouwing: 'Een voornemen van het college, of een termijn: tien jaar zonder begraving (art. 43, 44).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - naam: Voornemen tot sluiting begraafplaats gemeld
+      type: gebeurtenis
+    - naam: Termijn van tien jaar zonder begraving verstreken
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, ambtshalve, van het voornemen of de termijn tot het besluit.
@@ -46,4 +51,4 @@ relaties:
   vindplaats: art. 43, 44
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

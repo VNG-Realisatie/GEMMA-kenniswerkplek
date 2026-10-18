@@ -13,6 +13,9 @@ kenmerken:
     onderbouwing: Een aanvraag om verlof tot ontleding (Besluit op de lijkbezorging art. 17).
     bronnen:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+    naar:
+    - naam: Aanvraag verlof tot ontleding ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot het verlof.
@@ -55,4 +58,4 @@ relaties:
   vindplaats: Wlb art. 68; UPL nr. 306
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

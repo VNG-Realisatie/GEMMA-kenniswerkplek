@@ -14,6 +14,9 @@ kenmerken:
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-utrecht-burgerzaken-trouwen-in-utrecht
+    naar:
+    - naam: Melding van voorgenomen huwelijk gedaan
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de melding van het voorgenomen huwelijk tot de voltrekking en de huwelijksakte.
@@ -111,4 +114,4 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-utrecht-burgerzaken-trouwen-in-utrecht
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-status: goedgekeurd
+status: review

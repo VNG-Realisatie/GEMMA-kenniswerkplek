@@ -13,6 +13,13 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - naam: Verwaarlozing van het graf geconstateerd
+      type: gebeurtenis
+    - naam: Wanbetaling of verzuim door de rechthebbende
+      type: gebeurtenis
+    - naam: Grafrecht niet overgeschreven na overlijden rechthebbende
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, ambtshalve, van de verwaarlozing, wanbetaling of het verzuim tot het vervallen grafrecht.
@@ -60,4 +67,4 @@ bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review

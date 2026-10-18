@@ -340,6 +340,20 @@ relaties:
   bronnen:
   - 2024-vng-model-participatieverordening
   vindplaats: var. 1 art. [8]; var. 2 art. [13]
+- soort: toewijzing
+  naar: verlenen-toestemming-asverstrooiing
+  naam: beslist op het verzoek
+  ggm_match: geen
+  bronnen:
+  - 2025-groningen-algemene-plaatselijke-verordening
+  vindplaats: art. 5:27 lid 3
+- soort: toewijzing
+  naar: verlenen-vergunning-grafbedekking
+  naam: verleent de vergunning
+  ggm_match: geen
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 22 lid 1-2
 onderwerpen:
 - bestuur-en-organisatie
 - lijkbezorging
@@ -361,4 +375,4 @@ bronnen:
 - 2024-rijk-gemeentewet-wettekst
 - 2025-groningen-algemene-plaatselijke-verordening
 - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

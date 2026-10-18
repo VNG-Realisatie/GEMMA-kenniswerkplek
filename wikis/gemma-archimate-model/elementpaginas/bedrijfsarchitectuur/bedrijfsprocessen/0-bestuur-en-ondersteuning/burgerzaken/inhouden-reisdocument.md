@@ -72,7 +72,7 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 - **Procesniveau**: bedrijfsproces.
 - **Procesindeling naar kernobject, onderdeel van**: [Beheren reisdocumenten](beheren-reisdocumenten.md).
 - **Kernobject**: [Reisdocument](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md).
-- **Gestart door gebeurtenis**: [Inlevering van het reisdocument](../../../gebeurtenissen/inlevering-van-het-reisdocument.md).
+- **Gestart door gebeurtenis**: [Inlevering van het reisdocument](../../../gebeurtenissen/inlevering-van-het-reisdocument.md), [Verval van het reisdocument](../../../gebeurtenissen/verval-van-het-reisdocument.md).
 - **Afnemer**: extern.
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
@@ -109,6 +109,7 @@ De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in 
 | [Inlevering van het reisdocument](../../../gebeurtenissen/inlevering-van-het-reisdocument.md) | leidt tot *triggering* | Inhouden reisdocument | [Paspoortwet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Inhouding, inlevering of vermissing](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-inhouding-inlevering-vermissing.md) (Paspoortwet art. 54, 56; HUP Inhouding) |
 | [Paspoortbesluit](../../../../motivatie/beleidskaders/rijksregelgeving/paspoortbesluit.md) | is grondslag voor *associatie (gericht)* | Inhouden reisdocument | [Paspoortbesluit](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) (art. 6.1, 7.1) |
 | [Paspoortwet](../../../../motivatie/beleidskaders/rijksregelgeving/paspoortwet.md) | is grondslag voor *associatie (gericht)* | Inhouden reisdocument | [Paspoortwet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) (art. 50b-57; art. 44-46) |
+| [Verval van het reisdocument](../../../gebeurtenissen/verval-van-het-reisdocument.md) | start *triggering* | Inhouden reisdocument | [Paspoortwet](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Van rechtswege vervallen reisdocument](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) (art. 54 lid 1 onder a, 56) |
 | [Wet op de Nederlandse identiteitskaart](../../../../motivatie/beleidskaders/rijksregelgeving/wet-op-de-nederlandse-identiteitskaart.md) | is grondslag voor *associatie (gericht)* | Inhouden reisdocument | [Wet op de Nederlandse identiteitskaart](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951.md) (art. 35-39) |
 
 ## Herkomst

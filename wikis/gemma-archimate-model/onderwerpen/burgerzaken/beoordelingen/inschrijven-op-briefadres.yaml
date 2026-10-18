@@ -17,6 +17,9 @@ kenmerken:
     bronnen:
     - 2026-rvig-hup-verblijfplaats
     - 2026-nvvb-beleidsregel-briefadres
+    naar:
+    - naam: Aangifte briefadres gedaan
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aangifte, of ambtshalve, tot de inschrijving op het briefadres.
@@ -60,4 +63,4 @@ relaties:
 bronnen:
 - 2026-nvvb-beleidsregel-briefadres
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

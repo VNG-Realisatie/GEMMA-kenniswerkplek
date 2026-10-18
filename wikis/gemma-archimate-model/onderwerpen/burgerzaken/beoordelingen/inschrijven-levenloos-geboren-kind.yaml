@@ -13,6 +13,9 @@ kenmerken:
     onderbouwing: Een verzoek van een ouder, met formulier, online met DigiD of aan de balie (Utrecht).
     bronnen:
     - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+    naar:
+    - naam: Verzoek om inschrijving levenloos geboren kind ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de opname op de persoonslijst of de weigering.
@@ -50,4 +53,4 @@ beleidsdomein: Burgerzaken
 bronnen:
 - 2026-rijk-wet-brp-bwbr0033715
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

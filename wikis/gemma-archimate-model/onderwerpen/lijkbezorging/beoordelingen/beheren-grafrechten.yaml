@@ -10,11 +10,17 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - beslisser
+    - houder-van-de-begraafplaats
   aanleiding:
     waarde: ja
     onderbouwing: Schriftelijke aanvraag van een graf (Groningen art. 16 lid 1).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+    naar:
+    - naam: Aanvraag grafrecht ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: Omvat de levensloop van het grafrecht, van verlening via verlenging en overschrijving tot verval (art. 28; Groningen art. 16–20).
@@ -67,4 +73,4 @@ relaties:
 bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review

@@ -9,11 +9,17 @@ kenmerken:
     onderbouwing: 'Beslisser: de burgemeester beslist op het verzoek om volmacht (Kieswet art. L 11); Kiezer: ontvangt de stempas en doet verzoeken (art. J 8, K 3, L 8).'
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - beslisser
+    - kiezer
   aanleiding:
     waarde: ja
     onderbouwing: De dag van de kandidaatstelling voor een verkiezing (Kieswet art. J 7 lid 1).
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
+    naar:
+    - naam: Kandidaatstelling voor verkiezing
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van de stempas: vaststelling, verstrekking, vervanging, omzetting in kiezerspas of volmachtbewijs, ongeldigheid en vernietiging van het register (Kieswet art. J 7, J 7a, J 8, K 4, L 14).'
@@ -66,4 +72,4 @@ besluiten:
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

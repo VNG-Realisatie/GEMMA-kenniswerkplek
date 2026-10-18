@@ -14,6 +14,9 @@ kenmerken:
     onderbouwing: Het verzoek van de erkenner, voor of na de geboorte (Utrecht).
     bronnen:
     - 2026-utrecht-burgerzaken-kind-erkennen
+    naar:
+    - naam: Verzoek om erkenning ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek van de erkenner tot de akte.
@@ -52,4 +55,4 @@ bronnen:
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
 - 2026-utrecht-burgerzaken-kind-erkennen
 - 2026-rvig-hup-erkenning
-status: goedgekeurd
+status: review

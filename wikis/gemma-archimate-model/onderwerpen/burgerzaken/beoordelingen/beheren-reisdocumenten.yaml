@@ -9,11 +9,17 @@ kenmerken:
     onderbouwing: 'Beslisser: de burgemeester is bevoegd tot verstrekking, uitreiking, weigering, vervallenverklaring en inhouding (Paspoortwet art. 40, 42, 44, 50b); de Houder van het reisdocument vraagt aan en levert in (art. 1, 28, 32).'
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
+    naar:
+    - beslisser
+    - houder-van-het-reisdocument
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag van een reisdocument (Paspoortwet art. 27).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
+    naar:
+    - naam: Aanvraag reisdocument ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van het reisdocument: aanvraag, verstrekking, uitreiking, wijziging, vermissing, inhouding, vervallenverklaring, verval en definitieve onttrekking aan het verkeer (Paspoortwet art. 1).'
@@ -102,4 +108,4 @@ bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

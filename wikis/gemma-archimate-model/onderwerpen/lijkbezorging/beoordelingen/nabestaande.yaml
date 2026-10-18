@@ -27,6 +27,13 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 62 lid 2
+- soort: toewijzing
+  naar: verlenen-toestemming-asverstrooiing
+  naam: verzoekt om toestemming
+  ggm_match: geen
+  bronnen:
+  - 2025-groningen-algemene-plaatselijke-verordening
+  vindplaats: art. 5:27 lid 3
 onderwerpen:
 - lijkbezorging
 doelgroep: inwoners en ondernemers
@@ -35,4 +42,4 @@ bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
 - 2025-groningen-algemene-plaatselijke-verordening
-status: goedgekeurd
+status: review

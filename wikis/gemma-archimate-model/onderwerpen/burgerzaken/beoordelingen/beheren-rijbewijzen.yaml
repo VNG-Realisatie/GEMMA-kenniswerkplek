@@ -10,12 +10,18 @@ kenmerken:
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+    naar:
+    - beslisser
+    - houder-van-het-rijbewijs
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag van een rijbewijs, op afspraak aan de balie of online bij de RDW (Reglement rijbewijzen art. 27; Utrecht).
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
     - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+    naar:
+    - naam: Aanvraag rijbewijs ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van het rijbewijs voor zover de gemeente handelt: aanvraag, afgifte, uitreiking, vervanging bij vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 113 tot en met 123).'
@@ -94,4 +100,4 @@ bronnen:
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
 - 2026-rijk-reglement-rijbewijzen-bwbr0008074
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

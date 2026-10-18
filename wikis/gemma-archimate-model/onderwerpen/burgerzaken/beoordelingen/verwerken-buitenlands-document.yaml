@@ -15,6 +15,11 @@ kenmerken:
     bronnen:
     - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
     - 2026-rvig-hup-overlijden-buitenland
+    naar:
+    - naam: Verzoek om inschrijving buitenlands document ingediend
+      type: gebeurtenis
+    - naam: Gebeurtenis in het buitenland gemeld
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek of de melding tot de verwerking of het besluit.
@@ -58,4 +63,4 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

@@ -14,6 +14,9 @@ kenmerken:
     onderbouwing: De aangifte van de persoon, met een deskundigenverklaring van hoogstens zes maanden oud (BW 1 art. 28, 28a).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
+    naar:
+    - naam: Aangifte geslachtswijziging gedaan
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aangifte tot de latere vermelding.
@@ -79,4 +82,4 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
 - 2026-rvig-hup-geslachtswijziging
-status: goedgekeurd
+status: review

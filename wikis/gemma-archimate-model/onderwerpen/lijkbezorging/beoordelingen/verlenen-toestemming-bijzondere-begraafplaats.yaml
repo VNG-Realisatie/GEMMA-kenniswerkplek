@@ -13,6 +13,9 @@ kenmerken:
     onderbouwing: Het voornemen van een kerkgenootschap of andere particuliere houder om een bijzondere begraafplaats aan te leggen, uit te breiden of in gebruik te nemen (art. 37, 40, 41).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+    naar:
+    - naam: Voornemen bijzondere begraafplaats gemeld
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van het voornemen van de houder tot de aanwijzing en de toestemming.
@@ -62,4 +65,4 @@ relaties:
   vindplaats: Wlb art. 40, 41; UPL nr. 71
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

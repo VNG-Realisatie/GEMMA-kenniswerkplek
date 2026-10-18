@@ -2,7 +2,7 @@
 id: beslisser
 type: rol
 archimate_type: business-role
-status: goedgekeurd
+status: review
 naam: Beslisser
 onderwerpen:
 - bestuur-en-organisatie
@@ -54,7 +54,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beslisser.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -157,6 +157,8 @@ De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in 
 | Beslisser | beslist op de aanvraag en geeft de beschikking *toewijzing* | [Behandelen aanvraag beschikking](../bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-beschikking.md) | [Awb](../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-algemene-wet-bestuursrecht-wettekst.md) (art. 4:1, 4:13) |
 | Beslisser | besluit over inwonersparticipatie en stelt plan en eindverslag op *toewijzing* | [Betrekken inwoners bij beleid](../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md) | [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. 2 lid 1, 3 lid 1, 5 lid 1; var. 2 art. [3], [7], [10]) |
 | Beslisser | reageert op het verzoek en wijst het toe of af *toewijzing* | [Behandelen verzoek uitdaagrecht](../bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md) | [VNG Model Participatieverordening](../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) (var. 1 art. [8]; var. 2 art. [13]) |
+| Beslisser | beslist op het verzoek *toewijzing* | Verlenen toestemming asverstrooiing | [APV Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2025-groningen-algemene-plaatselijke-verordening.md) (art. 5:27 lid 3) |
+| Beslisser | verleent de vergunning *toewijzing* | Verlenen vergunning grafbedekking | [Beheersverordening begraafplaatsen Groningen](../../../onderwerpen/lijkbezorging/bronduidingen/gemeentelijke-regelgeving/2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen.md) (art. 22 lid 1-2) |
 
 #### Inkomend
 

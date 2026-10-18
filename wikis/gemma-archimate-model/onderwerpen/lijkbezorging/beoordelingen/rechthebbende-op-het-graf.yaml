@@ -66,9 +66,23 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   - 2010-vng-model-beheersverordening-begraafplaatsen
   vindplaats: Wlb art. 23 lid 2; Groningen art. 9 lid 2; VNG-modelverordening art. 9 lid 2
+- soort: toewijzing
+  naar: onderhouden-graf
+  naam: verzoekt om onderhoud
+  ggm_match: geen
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 23 lid 1
+- soort: toewijzing
+  naar: verlenen-vergunning-grafbedekking
+  naam: vraagt de vergunning aan
+  ggm_match: geen
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  vindplaats: art. 22 lid 1-2
 onderwerpen:
 - lijkbezorging
 doelgroep: inwoners en ondernemers
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

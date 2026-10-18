@@ -58,6 +58,13 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   vindplaats: Paspoortwet art. 47 lid 1 onder f; HUP Van rechtswege vervallen
+- soort: triggering
+  naar: toestaan-lijkbezorging
+  naam: start
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 3, 11, 18
 onderwerpen:
 - burgerzaken
 - lijkbezorging
@@ -80,4 +87,4 @@ bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rvig-hup-overlijden-nederland
-status: goedgekeurd
+status: review

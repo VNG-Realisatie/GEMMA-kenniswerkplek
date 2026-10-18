@@ -15,6 +15,9 @@ kenmerken:
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
     - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+    naar:
+    - naam: Aanvraag rijbewijs ingediend
+      type: gebeurtenis
   procesniveau:
     waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot de uitreiking of de weigering.
@@ -101,4 +104,4 @@ deelprocessen:
   begrip: uitreiken-rijbewijs
 bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review
