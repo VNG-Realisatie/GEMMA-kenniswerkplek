@@ -15,6 +15,9 @@ kenmerken:
     - besluit
   aanleiding:
     waarde: ja
+    naar:
+    - naam: Beroep ingesteld
+      type: gebeurtenis
     onderbouwing: 'Een beroep bij de bestuursrechter: de rechter zendt de gronden van het beroepschrift aan het bestuursorgaan (art. 8:42 lid 1).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -35,6 +38,9 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
+    naar:
+    - naam: Beheren besluiten
+      type: bedrijfsproces
     onderbouwing: 'Eén mutatie in de levensloop van een besluit: de rechterlijke toetsing, met zo nodig een nieuw besluit (art. 8:72).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst

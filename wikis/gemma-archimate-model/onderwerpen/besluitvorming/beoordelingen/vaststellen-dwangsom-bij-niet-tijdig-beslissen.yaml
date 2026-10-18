@@ -16,6 +16,9 @@ kenmerken:
     - aanvraag
   aanleiding:
     waarde: ja
+    naar:
+    - naam: Ingebrekestelling ontvangen
+      type: gebeurtenis
     onderbouwing: Een schriftelijke ingebrekestelling door de aanvrager na het verstrijken van de beslistermijn (art. 4:17 lid 3).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -36,6 +39,9 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
+    naar:
+    - naam: Beheren beschikkingen
+      type: bedrijfsproces
     onderbouwing: 'Eén mutatie in de levensloop van een beschikking: de vaststelling van de dwangsom bij een te late beschikking (art. 4:18).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst

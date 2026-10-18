@@ -16,6 +16,9 @@ kenmerken:
     - aanvraag
   aanleiding:
     waarde: ja
+    naar:
+    - naam: Aanvraag nadeelcompensatie ingediend
+      type: gebeurtenis
     onderbouwing: Een aanvraag van de benadeelde, met de schadeveroorzakende gebeurtenis en de schade (art. 4:127).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -36,6 +39,9 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
+    naar:
+    - naam: Beheren beschikkingen
+      type: bedrijfsproces
     onderbouwing: 'Eén mutatie in de levensloop van een beschikking: het besluit over de vergoeding (art. 4:126, 4:130).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst

@@ -16,6 +16,9 @@ kenmerken:
     - besluit
   aanleiding:
     waarde: ja
+    naar:
+    - naam: Bezwaarschrift ingediend
+      type: gebeurtenis
     onderbouwing: Een bezwaarschrift tegen een besluit, ingediend binnen zes weken na de bekendmaking (art. 6:4, 6:7, 6:8).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -36,7 +39,10 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
-    onderbouwing: 'Eén mutatie in de levensloop van een besluit: de heroverweging van het bestreden besluit (art. 7:11).'
+    naar:
+    - naam: Beheren bezwaarschriften
+      type: bedrijfsproces
+    onderbouwing: 'Eén mutatie in de levensloop van een bezwaarschrift: van indiening tot de beslissing, met de heroverweging van het bestreden besluit (art. 6:4, 7:11, 7:12).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   klant_tot_klant:

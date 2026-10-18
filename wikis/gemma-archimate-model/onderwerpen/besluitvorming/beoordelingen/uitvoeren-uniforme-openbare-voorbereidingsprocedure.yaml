@@ -37,6 +37,9 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
+    naar:
+    - naam: Beheren besluiten
+      type: bedrijfsproces
     onderbouwing: 'Eén mutatie in de levensloop van een besluit: van ontwerp tot genomen besluit (art. 3:11, 3:18).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst

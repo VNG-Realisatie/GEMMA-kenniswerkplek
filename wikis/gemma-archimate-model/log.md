@@ -2668,3 +2668,11 @@ Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen o
 | 2026-10-18 | promote | bekendmaken-besluit | Mark Backer | bff7a695 |
 | 2026-10-18 | promote | beleidsregel | Mark Backer | c53b2be6 |
 | 2026-10-18 | promote | heffingsverordening | Mark Backer | a7661445 |
+| 2026-10-18 | promote | behandelen-aanvraag-beschikking | Mark Backer | 55a2c3f0 |
+| 2026-10-18 | promote | behandelen-aanvraag-nadeelcompensatie | Mark Backer | c97de618 |
+| 2026-10-18 | promote | behandelen-bezwaar | Mark Backer | b5d93d1f |
+| 2026-10-18 | promote | behandelen-klacht | Mark Backer | c05c4b4b |
+| 2026-10-18 | promote | bekendmaken-besluit | Mark Backer | ee4ab035 |
+| 2026-10-18 | promote | uitvoeren-uniforme-openbare-voorbereidingsprocedure | Mark Backer | 2b9020e1 |
+| 2026-10-18 | promote | vaststellen-dwangsom-bij-niet-tijdig-beslissen | Mark Backer | 4b356010 |
+| 2026-10-18 | promote | voeren-verweer-in-beroep | Mark Backer | 06bb7421 |

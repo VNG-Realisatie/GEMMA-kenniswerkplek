@@ -15,6 +15,9 @@ kenmerken:
     - schriftelijke-klacht
   aanleiding:
     waarde: ja
+    naar:
+    - naam: Schriftelijke klacht ingediend
+      type: gebeurtenis
     onderbouwing: Een klacht over een gedraging van het bestuursorgaan, voor de procedure van afdeling 9.1.2 een schriftelijke klacht (art. 9:1, 9:4).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -35,6 +38,9 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
+    naar:
+    - naam: Beheren schriftelijke klachten
+      type: bedrijfsproces
     onderbouwing: Eén afhandeling binnen de klachtbehandeling van het bestuursorgaan, dat alle schriftelijke klachten bijhoudt en jaarlijks publiceert (art. 9:2, 9:12a).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst

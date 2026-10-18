@@ -16,6 +16,9 @@ kenmerken:
     - beleidsregel
   aanleiding:
     waarde: ja
+    naar:
+    - naam: Besluit genomen
+      type: gebeurtenis
     onderbouwing: Een genomen besluit of vastgestelde regeling, die pas na bekendmaking in werking treedt (Awb art. 3:40; Bekendmakingswet art. 8).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -39,6 +42,9 @@ kenmerken:
     - 2026-rijk-bekendmakingswet-wettekst
   bijdrage_aan_groter_proces:
     waarde: ja
+    naar:
+    - naam: Beheren besluiten
+      type: bedrijfsproces
     onderbouwing: 'Eén mutatie in de levensloop van een besluit: van genomen tot in werking (Awb art. 3:40).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
