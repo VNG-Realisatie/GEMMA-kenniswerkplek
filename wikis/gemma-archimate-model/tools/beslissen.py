@@ -1,6 +1,7 @@
 """Beslissen: van het oordeel van de AI naar type, status en modelgegevens, met harde controles.
 
-Leest elke beoordeling in `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` (het oordeel van de AI) en vult per beoordeling:
+Leest elke beoordeling in `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` (het oordeel van de AI) en vult per beoordeling
+(`beslist` in `onderwerpen/<thuisonderwerp>/beslist.yaml`, `curation.beslist`; de lezers krijgen het samengevoegd):
 - `beslist.uitkomst`: de uitkomst van de beslistabel (tools/bepaal_type.py) uit de kenmerken;
 - `beslist.voor_te_leggen` en `beslist.open`: waarom de redacteur moet beslissen, en wat daarvan nog voorligt (bij een
   element tot het akkoord, bij een begrip zonder pagina tot een besluit `afwijzen`);
@@ -790,9 +791,14 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
     if not schrijven:
         res.gewijzigd = sorted(nieuw)  # wat een run met schrijven zou bijwerken: niet leeg = beslist is verouderd
         return res
-    for bid, data in nieuw.items():
-        beoordeling.schrijf(alle[bid][0], data)
-        res.gewijzigd.append(bid)
+    # Elke beoordeling die op schijf afwijkt: beslist staat in het bestand naast de map, niet in de beoordeling.
+    definitief = {bid: (pad, nieuw.get(bid, data)) for bid, (pad, data) in alle.items()}
+    for bid, (pad, data) in definitief.items():
+        if pad.read_text(encoding="utf-8") != beoordeling.tekst(data, ctx.wiki_yaml):
+            beoordeling.schrijf(pad, data, ctx.wiki_yaml)
+            res.gewijzigd.append(bid)
+    for pad in beoordeling.schrijf_beslist(definitief, ctx.wiki_yaml):
+        res.gewijzigd.append(str(pad.relative_to(wiki_root)))
     for reg, rel in ((register, TERUGMELDINGEN), (pa_register, PA_TERUGMELDINGEN), (gemma_register, GEMMA_TERUGMELDINGEN)):
         if reg is None:
             continue

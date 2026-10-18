@@ -22,8 +22,6 @@ Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15
 
 - **GGM-match voor rollen, actoren en gebeurtenissen.** Op naam zijn er GGM-entiteiten voor Belanghebbende, Aangever (RSGBPlus), Indiener, Rechthebbende (Archief), Gemeente en de BRP-gebeurtenissen (GeboorteIngeschrevenPersoon, OverlijdenIngeschrevenPersoon, SluitingOfAangaanHuwelijkOfGeregistreerdPartnerschap, OntbindingHuwelijk/geregistreerdPartnerschap, MigratieIngeschrevenNatuurlijkPersoon). Kies de match op betekenis bij de herbeoordeling van het onderwerp; een match geeft vanzelf een data-object.
 
-- **`beslist` uit de beoordeling halen** (uit de analyse van het plan): het blok is 23.000 woorden en wordt meegelezen bij elk precedent; het kan naar een gegenereerd bestand per onderwerp.
-
 ## Herbeoordeling met de nieuwe werkwijze
 
 De werkwijze is omgezet naar beoordelingen (oordeel van de AI) en gegenereerde pagina's; de elementpagina's van vóór de herziening staan in Git onder tag `voor-herbeoordeling`.

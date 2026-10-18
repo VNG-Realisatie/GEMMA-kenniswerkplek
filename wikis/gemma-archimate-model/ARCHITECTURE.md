@@ -43,7 +43,7 @@ Elk element, elk kenmerk en elke relatie is herleidbaar tot een bron, met de vin
 |---|---|---|
 | AI | het **oordeel** per begrip: kenmerken met onderbouwing en bron, naam, definitie, beschrijving, matches op betekenis, relaties, open vragen | `onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml` |
 | redacteur | **besluiten** over wat is voorgelegd; vastgelegd door de AI | `besluiten:` in de beoordeling of het onderwerp |
-| script | **beslissen**: type uit de beslistabel, status, letterlijke modelvelden, paginapad; harde controles en signalen | `status:` en `beslist:` in de beoordeling ([tools/beslissen.py](tools/beslissen.py)) |
+| script | **beslissen**: type uit de beslistabel, status, letterlijke modelvelden, paginapad; harde controles en signalen | `status:` in de beoordeling en `beslist` per onderwerp in `beslist.yaml` ([tools/beslissen.py](tools/beslissen.py)) |
 | script | **renderen**: alle leesbare pagina's en overzichten | [tools/render.py](tools/render.py) |
 | redacteur | **akkoord**, met het woord AKKOORD in de chat | `llmwiki promote`, `log.md` |
 

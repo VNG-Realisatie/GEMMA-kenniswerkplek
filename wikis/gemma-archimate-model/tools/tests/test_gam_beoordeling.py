@@ -6,7 +6,7 @@ import beoordeling as cli
 import beslissen
 import archimate_export
 from gam_hulp import KENMERKEN_BO, VELDEN_BO, WIKI
-from llmwiki import beoordeling
+from llmwiki import beoordeling, paths
 
 
 def _kenmerken():
@@ -25,7 +25,10 @@ def wiki(archimate_repo):
                              ("aanvraag-reisdocument", "Aanvraag reisdocument", {}), ("besluit", "Besluit", {})]:
         data = {"begrip": naam, "onderwerpen": ["demo"], **VELDEN_BO, "kenmerken": _kenmerken(), "definitie": f"Definitie {naam}.",
                 **extra, "beslist": {"uitkomst": {"soort": "element", "archimate_type": "business-object"}}, "status": "review"}
-        beoordeling.schrijf(wiki / "onderwerpen" / "demo" / "beoordelingen" / f"{bid}.yaml", data)
+        beoordeling.schrijf(wiki / "onderwerpen" / "demo" / "beoordelingen" / f"{bid}.yaml", data)  # nog met beslist erin
+    beoordeling.schrijf_beslist(beoordeling.alle(wiki, paths.load_wiki_yaml(wiki)), paths.load_wiki_yaml(wiki))
+    for p in (wiki / "onderwerpen" / "demo" / "beoordelingen").glob("*.yaml"):
+        beoordeling.schrijf(p, beoordeling.laad(p), paths.load_wiki_yaml(wiki))
     return wiki
 
 
@@ -59,7 +62,8 @@ def test_zet_valideert_en_weigert_scriptvelden(wiki):
     cli.zet(wiki, "aanvraag", "kenmerken.herkenbaar.onderbouwing", "Anders.")
     data = beoordeling.laad(wiki / "onderwerpen" / "demo" / "beoordelingen" / "aanvraag.yaml")
     assert data["definitie"] == "Nieuwe definitie." and data["kenmerken"]["herkenbaar"]["onderbouwing"] == "Anders."
-    assert data["status"] == "review" and "beslist" in data
+    assert data["status"] == "review" and "beslist" not in data       # beslist staat in beslist.yaml naast de map
+    assert cli._alle(wiki)["aanvraag"][1]["beslist"]["uitkomst"]["archimate_type"] == "business-object"
     with pytest.raises(cli.Fout):
         cli.zet(wiki, "aanvraag", "status", "goedgekeurd")
     with pytest.raises(cli.Fout, match="schemafout"):
@@ -234,3 +238,18 @@ def test_sjabloon_weigert_onbekend_onderwerp_kernobject_en_foute_opties(archimat
     with pytest.raises(cli.Fout, match="niet beide"):
         cli.sjabloon(wiki, "upl-dienst", sjablonen.Params(**{**basis, "proces": "x"}))
     assert not list((wiki / "onderwerpen" / "demo" / "beoordelingen").glob("*.yaml"))
+
+
+def test_beslist_staat_apart_en_alle_voegt_het_samen(wiki):
+    yaml_ = paths.load_wiki_yaml(wiki)
+    bestand = wiki / "onderwerpen" / "demo" / "beslist.yaml"
+    assert set(yaml.safe_load(bestand.read_text(encoding="utf-8"))) == {"aanvraag", "aanvraag-reisdocument", "besluit"}
+    assert bestand.read_text(encoding="utf-8").startswith("# Gegenereerd")
+    alle = beoordeling.alle(wiki, yaml_)
+    assert all(d["beslist"]["uitkomst"]["soort"] == "element" for _, d in alle.values())
+    assert beoordeling.schrijf_beslist(alle, yaml_) == []                  # ongewijzigd: niets geschreven
+    assert "beslist" not in beoordeling.laad(wiki / "onderwerpen" / "demo" / "beoordelingen" / "besluit.yaml")
+    hash_ = beoordeling.inhoud_hash(alle["besluit"][1])
+    alle["besluit"][1]["beslist"]["open"] = ["iets"]                       # een ander blok: wel het bestand, niet het akkoord-hash
+    assert beoordeling.schrijf_beslist(alle, yaml_) == [bestand]
+    assert beoordeling.inhoud_hash(beoordeling.alle(wiki, yaml_)["besluit"][1]) == hash_

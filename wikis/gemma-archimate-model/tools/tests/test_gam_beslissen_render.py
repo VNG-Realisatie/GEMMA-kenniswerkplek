@@ -7,7 +7,7 @@ import beslissen
 import bepaal_type as bt
 import render
 from gam_hulp import nieuwe_vorm
-from llmwiki import beoordeling, logbook, modellen
+from llmwiki import beoordeling, logbook, modellen, paths
 
 WET = "2026-overheid-gemeentewet"
 
@@ -64,7 +64,8 @@ def _schrijf(wiki, bid, data):
 
 
 def _lees(wiki, bid):
-    return beoordeling.laad(next(wiki.glob(f"onderwerpen/*/beoordelingen/{bid}.yaml")))
+    """De beoordeling met haar `beslist` (dat staat in het bestand naast de map, niet in de beoordeling)."""
+    return beoordeling.alle(wiki, paths.load_wiki_yaml(wiki))[bid][1]
 
 
 def _beslissen(wiki):

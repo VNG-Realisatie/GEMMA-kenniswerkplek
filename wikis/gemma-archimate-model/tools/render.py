@@ -1,7 +1,7 @@
 """Render: alle leesbare pagina's van deze wiki uit de beoordelingen.
 
-Invoer (alleen lezen): `onderwerpen/<onderwerp>/beoordelingen/<id>.yaml` (het oordeel van de AI, met `status` en `beslist` van
-tools/beslissen.py), `onderwerpen/<onderwerp>/afbakening.yaml`, `modellen/ggm/terugmeldingen.yaml`,
+Invoer (alleen lezen): `onderwerpen/<onderwerp>/beoordelingen/<id>.yaml` (het oordeel van de AI, met `status` en, samengevoegd uit
+`onderwerpen/<onderwerp>/beslist.yaml`, `beslist` van tools/beslissen.py), `onderwerpen/<onderwerp>/afbakening.yaml`, `modellen/ggm/terugmeldingen.yaml`,
 `modellen/gemma/terugmeldingen/{procesarchitectuur,gemma-team}.yaml`, `modellen/gemma/indelingen/beleidsdomeinen.yaml`, `log.md`, `wiki.yaml`,
 de bronduidingen en `sources/index` (titels). Het script oordeelt niet en schrijft nooit in een map `beoordelingen/`.
 

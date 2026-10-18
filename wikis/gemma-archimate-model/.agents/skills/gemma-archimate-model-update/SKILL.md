@@ -65,7 +65,7 @@ Je bent beoordelingsagent voor het cluster <kernobject> van het onderwerp <onder
 ## Grenzen
 
 - Pagina's bewerk je nooit met de hand: `elementpaginas/` (ook `elementpaginas/overig/`), `onderwerpen/<onderwerp>/begrippen.md` en `overzicht.md`, de lijsten bij `modellen/*/terugmeldingen`, `ter-beoordeling.md`, `voortgang.md` en alles met paginatype `lijst`. Wijzig de beoordeling of het register en draai `tools/beslissen.py`.
-- `status:` en `beslist:` in een beoordeling vul je nooit zelf in; de scripts zetten ze.
+- `status:` in een beoordeling en `beslist.yaml` vul je nooit zelf in; de scripts zetten ze.
 - Bij hernoemen, samenvoegen of splitsen van een element leg je in `object_van` vast welk Archi-object het voortzet (regel Objectbehoud). Bij samenvoegen en splitsen vraag je het eerst aan de redacteur.
 - Typ nooit zelf AKKOORD, en draai `promote apply` nooit zonder dat de redacteur letterlijk AKKOORD typte.
 

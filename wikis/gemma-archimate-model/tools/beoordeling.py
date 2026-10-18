@@ -13,7 +13,7 @@ Subcommando's:
 - `normaliseer <id>… | --alle`: de kenmerken in de opgeslagen vorm (de schrijfvorm van één regel, `herkenbaar: ja —
   onderbouwing [bron-id]`, wordt een object; een nee buiten het pad valt weg), met wat op het pad nog open staat.
 
-Het wijzigen valideert tegen het schema en raakt `status` en `beslist` niet aan; draai daarna `tools/beslissen.py`.
+Het wijzigen valideert tegen het schema en raakt `status` en `beslist` niet aan (`beslist.yaml`); draai daarna `tools/beslissen.py`.
 Het akkoord van de redacteur blijft buiten bereik: dit gereedschap zet nooit een status.
 
 Gebruik (vanuit de wikimap):
@@ -205,7 +205,7 @@ def sjabloon(wiki: Path, patroon: str, params: sjablonen.Params) -> list[str]:
         pad = wiki / "onderwerpen" / params.onderwerp / "beoordelingen" / f"{bid}.yaml"
         _valideer(wiki, bid, data)
         pad.parent.mkdir(parents=True, exist_ok=True)
-        beoordeling.schrijf(pad, data)
+        beoordeling.schrijf(pad, data, gam_gemeen.wiki_yaml(wiki))
         uit.append(f"{bid}: klaargezet, {len(sjablonen.open_todo(data))} TODO's")
     if params.proces:
         r = nieuw[params.proces]["relaties"][0]
@@ -228,7 +228,7 @@ def _valideer(wiki: Path, bid: str, data: dict) -> None:
 
 def _opslaan(wiki: Path, bid: str, pad: Path, data: dict) -> None:
     _valideer(wiki, bid, data)
-    beoordeling.schrijf(pad, data)
+    beoordeling.schrijf(pad, data, gam_gemeen.wiki_yaml(wiki))
 
 
 def _zet_sleutel(data: dict, sleutel: str, waarde) -> dict:

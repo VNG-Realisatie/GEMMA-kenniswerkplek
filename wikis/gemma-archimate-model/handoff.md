@@ -4,24 +4,24 @@ Overdracht naar de volgende Sessie (2026-10-18). Wordt bij elke overdracht overs
 
 ## Stand van zaken
 
-- Plan [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md) is uitgevoerd: deel 1, 2 en 3, zie *Uitkomst stap 14*.
-- Commit ab65582: stap 13 (Capability in het kennismodel). Commit d3bcbd6: de capability gebouwd (toets op twee functies, grondslag, render, Capabilitykaart, export, tests, skills).
-- Commit van deze overdracht (`add:`): de capabilities Personen registreren, Identiteit vaststellen en Lijkbezorging waarborgen, de realisaties vanuit zes functies, de GEMMA-terugmelding nummer 9, en het AKKOORD voor die negen elementen.
+- Plan [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md) is uitgevoerd (Uitkomst stap 14).
+- Gedaan in deze Sessie: `beslist` staat niet meer in de beoordeling maar in `onderwerpen/<onderwerp>/beslist.yaml` (gegenereerd door `tools/beslissen.py`, `curation.beslist` in wiki.yaml). `llmwiki.beoordeling.alle()` voegt het blok samen, zodat render, export, relaties en werkpakket ongewijzigd lezen; `schrijf(pad, data, wiki_yaml)` laat het weg. De migratie liet de 484 akkoord-hashes, de pagina's en de export ongewijzigd (geen nieuw AKKOORD).
+- Een agent die een beoordeling als precedent leest, krijgt nu 22.000 woorden minder; `beslist.yaml` leest alleen wie het nodig heeft.
 
 ## Volgende klus
 
 Kies uit [todo.md](todo.md), sectie ArchiMate-indeling en Herbeoordeling:
 
-1. **`beslist` uit de beoordeling halen** (tools, denkniveau middel): het blok is 23.000 woorden en wordt bij elk precedent meegelezen; het kan naar een gegenereerd bestand per onderwerp. Dat maakt elke volgende beoordeling goedkoper. Advies: deze eerst.
-2. **Potentiële relaties vastleggen** (inhoud, middel): 239 relationele kenmerken ja zonder relatie.
-3. **Participatie herbeoordelen** met de lichtere werkwijze (inhoud, hoog voor de beoordeling).
+1. **Potentiële relaties vastleggen** (inhoud, middel): 239 relationele kenmerken ja zonder relatie.
+2. **Participatie herbeoordelen** met de lichtere werkwijze (inhoud, hoog voor de beoordeling).
+3. **GEMMA-functies onder *Ontvangst*** terugmelden (inhoud, middel), of **GGM-match voor rollen, actoren en gebeurtenissen**.
 
 ## Modeladvies
 
-Optie 1 is scriptwerk met een migratie van alle beoordelingen: denkniveau middel, een sterk model voor de code (de migratie raakt 481 bestanden en het akkoord-hash). Begin een nieuwe Sessie: het is een ander onderwerp.
+Optie 1 is inhoudelijk werk met een bekende werkwijze (middel). Optie 2 vraagt oordelen en afwegen (hoog): een sterker model of hogere redeneerinspanning. Begin een nieuwe Sessie: de context van dit scriptwerk helpt niet bij de inhoud. Meet bij de volgende beoordeling met agenten of het lezen van precedenten (zonder `beslist`) is afgenomen.
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en todo.md. Voer het todo-punt "`beslist` uit de beoordeling halen" uit: stel eerst in een korte opzet voor waar het gegenereerde blok komt, hoe beslissen.py, render.py, archimate_export.py en het akkoord-hash het lezen, en hoe de migratie gaat zonder nieuw AKKOORD (de uitkomsten, de pagina's en archimate_export.py --check blijven gelijk). Leg de opzet voor vóór je bouwt. Houd je aan de woordbudgetten in wiki.yaml.
+Lees wikis/gemma-archimate-model/handoff.md en todo.md. Voer het todo-punt "Potentiële relaties vastleggen" uit voor één onderwerp: stel eerst voor welk onderwerp en hoe je de tegenpartij in `naar` bepaalt, en leg dat voor vóór je schrijft. Houd je aan de woordbudgetten in wiki.yaml.
 ```

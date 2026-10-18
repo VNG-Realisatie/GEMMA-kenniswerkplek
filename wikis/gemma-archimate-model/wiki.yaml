@@ -80,6 +80,7 @@ page_types:                          # pagina's van curated typen en onderwerpen
 curation:
   beoordelingen: onderwerpen/*/beoordelingen   # het oordeel van de AI per begrip (YAML), in de map van het thuisonderwerp; zie ARCHITECTURE.md
   beslissen: tools/beslissen.py              # type, status en modelvelden; daarna de render
+  beslist: beslist.yaml                    # `beslist` per beoordeling, gegenereerd door beslissen: naast de map met beoordelingen, één bestand per onderwerp
   render: tools/render.py                  # alle pagina's uit de beoordelingen
   states: [kandidaat, review, goedgekeurd, afgewezen]
   gated: [goedgekeurd]

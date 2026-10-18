@@ -102,7 +102,7 @@ def apply(wiki_root: Path, wiki_yaml: dict, akkoord_woord: str | None, door: str
     door = door or git_naam(wiki_root) or "redacteur"
     for bid, (bestand, data) in sorted(selectie.items()):
         data["status"] = "goedgekeurd"
-        beoordeling.schrijf(bestand, data)
+        beoordeling.schrijf(bestand, data, wiki_yaml)
         logbook.append_log(wiki_root, "promote", bid, door, beoordeling.inhoud_hash(data))
     draai_script(wiki_root, wiki_yaml, "render")
     pad.unlink()
