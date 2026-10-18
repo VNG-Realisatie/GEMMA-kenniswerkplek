@@ -2676,3 +2676,5 @@ Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen o
 | 2026-10-18 | promote | uitvoeren-uniforme-openbare-voorbereidingsprocedure | Mark Backer | 2b9020e1 |
 | 2026-10-18 | promote | vaststellen-dwangsom-bij-niet-tijdig-beslissen | Mark Backer | 4b356010 |
 | 2026-10-18 | promote | voeren-verweer-in-beroep | Mark Backer | 06bb7421 |
+| 2026-10-18 | promote | behandelen-verzoek-uitdaagrecht | Mark Backer | dfdf0365 |
+| 2026-10-18 | promote | betrekken-inwoners-bij-beleid | Mark Backer | 1fe09665 |

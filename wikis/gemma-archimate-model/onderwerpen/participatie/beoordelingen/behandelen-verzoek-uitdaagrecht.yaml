@@ -18,6 +18,9 @@ kenmerken:
     - participatieverordening
   aanleiding:
     waarde: ja
+    naar:
+    - naam: Verzoek uitdaagrecht ingediend
+      type: gebeurtenis
     onderbouwing: Het verzoek dat inwoners of maatschappelijke partijen bij het college indienen (var. 1 art. 6 lid 1; var. 2 art. [11] lid 1).
     bronnen:
     - 2024-vng-model-participatieverordening

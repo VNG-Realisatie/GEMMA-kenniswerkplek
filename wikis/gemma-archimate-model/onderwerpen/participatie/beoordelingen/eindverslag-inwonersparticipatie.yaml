@@ -13,6 +13,8 @@ kenmerken:
     onderbouwing: Wordt eenmaal opgesteld en openbaar gemaakt; de bronnen noemen geen wijziging of einde.
   wordt_bewerkt:
     waarde: ja
+    naar:
+    - betrekken-inwoners-bij-beleid
     onderbouwing: Het bestuursorgaan stelt het verslag op en maakt het openbaar, binnen Betrekken inwoners bij beleid (var. 1 art. 5 lid 1; var. 2 art. [10] lid 1).
     bronnen:
     - 2024-vng-model-participatieverordening
