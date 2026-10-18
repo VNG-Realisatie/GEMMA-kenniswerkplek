@@ -60,4 +60,4 @@ besluiten:
   besluit: 'Leidt tot gebeurtenis is ja: de triggering naar verval-van-het-reisdocument staat met bron en vindplaats in de beoordeling; de nee was een vergissing (omzetting naar de ArchiMate-indeling).'
   gevolg: verwerkt
   zekerheid: logica
-status: review
+status: goedgekeurd

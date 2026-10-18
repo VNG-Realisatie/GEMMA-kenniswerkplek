@@ -2,7 +2,7 @@
 id: adoptie-aangifte
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Adoptie aangifte
 onderwerpen:
 - burgerzaken
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling adoptie-aangifte.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

@@ -2,7 +2,7 @@
 id: vestiging-vanuit-het-buitenland
 type: gebeurtenis
 archimate_type: business-event
-status: review
+status: goedgekeurd
 naam: Vestiging vanuit het buitenland
 onderwerpen:
 - burgerzaken
@@ -21,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vestiging-vanuit-het-buitenland.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

@@ -2,7 +2,7 @@
 id: brp-inschrijving-buitenlandse-akte
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: BRP-inschrijving buitenlandse akte
 onderwerpen:
 - burgerzaken
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling brp-inschrijving-buitenlandse-akte.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

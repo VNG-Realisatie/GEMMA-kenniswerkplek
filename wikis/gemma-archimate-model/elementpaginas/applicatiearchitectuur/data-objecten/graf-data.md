@@ -2,7 +2,7 @@
 id: graf-data
 type: data-object
 archimate_type: data-object
-status: review
+status: goedgekeurd
 naam: Graf-data
 element: Graf
 relatie: realisatie
@@ -14,7 +14,7 @@ match:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling graf.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Graf](../../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md).
+**Status: goedgekeurd** door de redacteur. Volgt de status van [Graf](../../bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md).
 
 ## Betekenis
 

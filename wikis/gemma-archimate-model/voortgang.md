@@ -38,16 +38,16 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 | Type | review | goedgekeurd | afgewezen |
 |---|---|---|---|
-| actor | 12 | 0 | 0 |
-| bedrijfsfunctie | 7 | 0 | 0 |
-| bedrijfsinteractie | 1 | 0 | 0 |
-| bedrijfsobject | 31 | 0 | 0 |
-| bedrijfsproces | 81 | 0 | 6 |
-| beleidskader | 20 | 0 | 0 |
+| actor | 0 | 12 | 0 |
+| bedrijfsfunctie | 0 | 7 | 0 |
+| bedrijfsinteractie | 0 | 1 | 0 |
+| bedrijfsobject | 0 | 31 | 0 |
+| bedrijfsproces | 0 | 81 | 6 |
+| beleidskader | 0 | 20 | 0 |
 | capability | 0 | 3 | 0 |
-| dienst | 85 | 0 | 1 |
-| gebeurtenis | 20 | 0 | 0 |
-| rol | 27 | 0 | 0 |
+| dienst | 0 | 85 | 1 |
+| gebeurtenis | 0 | 20 | 0 |
+| rol | 0 | 27 | 0 |
 
 ## GGM-terugmeldingen
 

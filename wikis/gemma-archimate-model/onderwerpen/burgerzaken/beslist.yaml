@@ -174,8 +174,6 @@ akte-van-de-burgerlijke-stand:
     typeregel: 22
   voor_te_leggen:
   - data-object zonder sterke GGM-match
-  open:
-  - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   - 2026-rvig-hup-algemeen
@@ -3226,8 +3224,6 @@ rijbewijs:
     typeregel: 22
   voor_te_leggen:
   - data-object zonder sterke GGM-match
-  open:
-  - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   - 2025-vng-upl-producten-en-diensten-extern
@@ -3425,8 +3421,6 @@ stempas:
     generiek: false
     typeregel: 22
   voor_te_leggen:
-  - data-object zonder sterke GGM-match
-  open:
   - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627

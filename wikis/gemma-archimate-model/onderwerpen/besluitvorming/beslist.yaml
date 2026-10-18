@@ -14,8 +14,6 @@ aanvraag:
     typeregel: 22
   voor_te_leggen:
   - 'homoniem van Aanvraag (GGM, ICT): naamkeuze voorleggen'
-  open:
-  - 'homoniem van Aanvraag (GGM, ICT): naamkeuze voorleggen'
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving
@@ -463,8 +461,6 @@ bezwaarschrift:
     typeregel: 22
   voor_te_leggen:
   - data-object zonder sterke GGM-match
-  open:
-  - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving
@@ -568,8 +564,6 @@ regeling:
     typeregel: 22
   voor_te_leggen:
   - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
-  open:
-  - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-vng-wet-op-de-lijkbezorging
@@ -601,8 +595,6 @@ schriftelijke-klacht:
     generiek: false
     typeregel: 22
   voor_te_leggen:
-  - data-object zonder sterke GGM-match
-  open:
   - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst

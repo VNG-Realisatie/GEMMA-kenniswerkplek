@@ -26,8 +26,8 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 
 | Begrip | Reden | Herkomst |
 |---|---|---|
-| [Heffing](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) *Bedrijfsobject, review* | Passief, object (3 toetskenmerken ja) | rijksregelgeving; GGM: Heffing |
-| [Heffingsverordening](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md) *Bedrijfsobject, review* | Passief, object (3 toetskenmerken ja) | rijksregelgeving; GGM: Heffingsverordening |
+| [Heffing](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md) *Bedrijfsobject, goedgekeurd* | Passief, object (3 toetskenmerken ja) | rijksregelgeving; GGM: Heffing |
+| [Heffingsverordening](../../elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md) *Bedrijfsobject, goedgekeurd* | Passief, object (3 toetskenmerken ja) | rijksregelgeving; GGM: Heffingsverordening |
 
 ## Besluiten
 

@@ -2,7 +2,7 @@
 id: ingeschreven-persoon-data
 type: data-object
 archimate_type: data-object
-status: review
+status: goedgekeurd
 naam: Ingeschreven persoon-data
 element: Ingeschreven persoon
 relatie: realisatie
@@ -17,7 +17,7 @@ ggm_beleidsdomein: RSGBPlus
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ingeschreven-persoon.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Ingeschreven persoon](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md).
+**Status: goedgekeurd** door de redacteur. Volgt de status van [Ingeschreven persoon](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md).
 
 ## Betekenis
 

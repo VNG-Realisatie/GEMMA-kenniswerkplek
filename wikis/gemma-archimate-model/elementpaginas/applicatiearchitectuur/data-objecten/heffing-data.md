@@ -2,7 +2,7 @@
 id: heffing-data
 type: data-object
 archimate_type: data-object
-status: review
+status: goedgekeurd
 naam: Heffing-data
 element: Heffing
 relatie: realisatie
@@ -17,7 +17,7 @@ ggm_beleidsdomein: RGBZPlus
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling heffing.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Heffing](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md).
+**Status: goedgekeurd** door de redacteur. Volgt de status van [Heffing](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md).
 
 ## Betekenis
 

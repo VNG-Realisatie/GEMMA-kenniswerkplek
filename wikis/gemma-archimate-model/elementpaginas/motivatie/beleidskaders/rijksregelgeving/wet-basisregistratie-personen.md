@@ -2,7 +2,7 @@
 id: wet-basisregistratie-personen
 type: beleidskader
 archimate_type: driver
-status: review
+status: goedgekeurd
 naam: Wet basisregistratie personen
 onderwerpen:
 - burgerzaken
@@ -26,7 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling wet-basisregistratie-personen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

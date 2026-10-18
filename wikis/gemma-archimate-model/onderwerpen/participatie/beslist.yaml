@@ -24,8 +24,6 @@ afspraak-over-uitvoering:
     typeregel: 21
   voor_te_leggen:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2024-vng-model-participatieverordening
@@ -340,8 +338,6 @@ participatieverordening:
     generiek: false
     typeregel: 22
   voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-gemeentewet-wettekst

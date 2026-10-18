@@ -2,7 +2,7 @@
 id: nederlanderschap-diensten
 type: bedrijfsfunctie
 archimate_type: business-function
-status: review
+status: goedgekeurd
 naam: Nederlanderschap diensten
 onderwerpen:
 - burgerzaken
@@ -27,7 +27,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling nederlanderschap-diensten.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

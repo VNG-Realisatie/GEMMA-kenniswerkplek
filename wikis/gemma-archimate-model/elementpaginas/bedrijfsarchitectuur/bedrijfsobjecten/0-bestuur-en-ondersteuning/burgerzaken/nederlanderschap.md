@@ -2,7 +2,7 @@
 id: nederlanderschap
 type: bedrijfsobject
 archimate_type: business-object
-status: review
+status: goedgekeurd
 naam: Nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -38,7 +38,7 @@ ggm_definitie: Gegevens over de nationaliteit.
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

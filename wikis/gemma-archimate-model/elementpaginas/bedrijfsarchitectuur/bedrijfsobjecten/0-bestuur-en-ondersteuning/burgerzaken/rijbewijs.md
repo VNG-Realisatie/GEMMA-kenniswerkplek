@@ -2,7 +2,7 @@
 id: rijbewijs
 type: bedrijfsobject
 archimate_type: business-object
-status: review
+status: goedgekeurd
 naam: Rijbewijs
 onderwerpen:
 - burgerzaken
@@ -26,11 +26,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rijbewijs.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
-
-## Ter discussie
-
-- data-object zonder sterke GGM-match
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

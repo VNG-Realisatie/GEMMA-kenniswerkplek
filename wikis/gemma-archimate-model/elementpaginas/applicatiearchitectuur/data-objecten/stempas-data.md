@@ -2,7 +2,7 @@
 id: stempas-data
 type: data-object
 archimate_type: data-object
-status: review
+status: goedgekeurd
 naam: Stempas-data
 element: Stempas
 relatie: realisatie
@@ -14,7 +14,7 @@ match:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling stempas.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Stempas](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/stempas.md).
+**Status: goedgekeurd** door de redacteur. Volgt de status van [Stempas](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/stempas.md).
 
 ## Betekenis
 

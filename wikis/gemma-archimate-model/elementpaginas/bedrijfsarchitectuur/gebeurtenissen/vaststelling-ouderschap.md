@@ -2,7 +2,7 @@
 id: vaststelling-ouderschap
 type: gebeurtenis
 archimate_type: business-event
-status: review
+status: goedgekeurd
 naam: Vaststelling ouderschap
 onderwerpen:
 - burgerzaken
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vaststelling-ouderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

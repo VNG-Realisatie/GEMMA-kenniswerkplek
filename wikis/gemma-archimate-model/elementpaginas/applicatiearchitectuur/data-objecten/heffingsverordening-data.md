@@ -2,7 +2,7 @@
 id: heffingsverordening-data
 type: data-object
 archimate_type: data-object
-status: review
+status: goedgekeurd
 naam: Heffingsverordening-data
 element: Heffingsverordening
 relatie: realisatie
@@ -17,7 +17,7 @@ ggm_beleidsdomein: 1 Veiligheid en Vergunningen
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling heffingsverordening.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Heffingsverordening](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md).
+**Status: goedgekeurd** door de redacteur. Volgt de status van [Heffingsverordening](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md).
 
 ## Betekenis
 

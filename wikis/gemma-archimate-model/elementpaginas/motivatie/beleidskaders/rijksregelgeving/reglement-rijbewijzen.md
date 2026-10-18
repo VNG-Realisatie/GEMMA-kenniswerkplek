@@ -2,7 +2,7 @@
 id: reglement-rijbewijzen
 type: beleidskader
 archimate_type: driver
-status: review
+status: goedgekeurd
 naam: Reglement rijbewijzen
 onderwerpen:
 - burgerzaken
@@ -21,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling reglement-rijbewijzen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

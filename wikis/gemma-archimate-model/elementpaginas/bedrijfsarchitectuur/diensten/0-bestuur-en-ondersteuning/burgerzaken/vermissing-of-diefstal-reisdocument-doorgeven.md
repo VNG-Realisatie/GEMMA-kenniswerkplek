@@ -2,7 +2,7 @@
 id: vermissing-of-diefstal-reisdocument-doorgeven
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Vermissing of diefstal reisdocument doorgeven
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vermissing-of-diefstal-reisdocument-doorgeven.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

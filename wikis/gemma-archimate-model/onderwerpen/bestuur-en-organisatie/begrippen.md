@@ -26,10 +26,10 @@ Een begrip met een link is een element; cursief staat de uitkomst.
 
 | Begrip | Reden | Herkomst |
 |---|---|---|
-| [Beslisser](../../elementpaginas/bedrijfsarchitectuur/rollen/beslisser.md) *Rol, review* | Hoedanigheid (1 toetskenmerken ja) | rijksregelgeving |
-| [Burgemeester](../../elementpaginas/bedrijfsarchitectuur/actoren/burgemeester.md) *Actor, review* | Handelende partij (1 toetskenmerken ja) | rijksregelgeving |
-| [College van B&W](../../elementpaginas/bedrijfsarchitectuur/actoren/college-van-b-w.md) *Actor, review* | Handelende partij (1 toetskenmerken ja) | rijksregelgeving |
-| [Gemeente](../../elementpaginas/bedrijfsarchitectuur/actoren/gemeente.md) *Actor, review* | Handelende partij (1 toetskenmerken ja) | rijksregelgeving |
-| [Gemeenteraad](../../elementpaginas/bedrijfsarchitectuur/actoren/gemeenteraad.md) *Actor, review* | Handelende partij (1 toetskenmerken ja) | rijksregelgeving |
-| [Gemeentewet](../../elementpaginas/motivatie/beleidskaders/rijksregelgeving/gemeentewet.md) *Beleidskader, review* | Regeling als geheel, landelijk (2 toetskenmerken ja) | rijksregelgeving |
-| [Rijk](../../elementpaginas/bedrijfsarchitectuur/actoren/rijk.md) *Actor, review* | Handelende partij (1 toetskenmerken ja) | rijksregelgeving |
+| [Beslisser](../../elementpaginas/bedrijfsarchitectuur/rollen/beslisser.md) *Rol, goedgekeurd* | Hoedanigheid (1 toetskenmerken ja) | rijksregelgeving |
+| [Burgemeester](../../elementpaginas/bedrijfsarchitectuur/actoren/burgemeester.md) *Actor, goedgekeurd* | Handelende partij (1 toetskenmerken ja) | rijksregelgeving |
+| [College van B&W](../../elementpaginas/bedrijfsarchitectuur/actoren/college-van-b-w.md) *Actor, goedgekeurd* | Handelende partij (1 toetskenmerken ja) | rijksregelgeving |
+| [Gemeente](../../elementpaginas/bedrijfsarchitectuur/actoren/gemeente.md) *Actor, goedgekeurd* | Handelende partij (1 toetskenmerken ja) | rijksregelgeving |
+| [Gemeenteraad](../../elementpaginas/bedrijfsarchitectuur/actoren/gemeenteraad.md) *Actor, goedgekeurd* | Handelende partij (1 toetskenmerken ja) | rijksregelgeving |
+| [Gemeentewet](../../elementpaginas/motivatie/beleidskaders/rijksregelgeving/gemeentewet.md) *Beleidskader, goedgekeurd* | Regeling als geheel, landelijk (2 toetskenmerken ja) | rijksregelgeving |
+| [Rijk](../../elementpaginas/bedrijfsarchitectuur/actoren/rijk.md) *Actor, goedgekeurd* | Handelende partij (1 toetskenmerken ja) | rijksregelgeving |

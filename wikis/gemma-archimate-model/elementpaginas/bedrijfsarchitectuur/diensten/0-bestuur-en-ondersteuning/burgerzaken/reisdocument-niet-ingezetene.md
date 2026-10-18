@@ -2,7 +2,7 @@
 id: reisdocument-niet-ingezetene
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Reisdocument niet-ingezetene
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling reisdocument-niet-ingezetene.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

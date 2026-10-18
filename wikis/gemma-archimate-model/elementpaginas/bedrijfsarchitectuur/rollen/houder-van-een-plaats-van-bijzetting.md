@@ -2,7 +2,7 @@
 id: houder-van-een-plaats-van-bijzetting
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Houder van een plaats van bijzetting
 onderwerpen:
 - lijkbezorging
@@ -19,7 +19,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling houder-van-een-plaats-van-bijzetting.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

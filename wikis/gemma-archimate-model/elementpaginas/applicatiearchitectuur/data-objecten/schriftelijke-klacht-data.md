@@ -2,7 +2,7 @@
 id: schriftelijke-klacht-data
 type: data-object
 archimate_type: data-object
-status: review
+status: goedgekeurd
 naam: Schriftelijke klacht-data
 element: Schriftelijke klacht
 relatie: realisatie
@@ -14,7 +14,7 @@ match:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling schriftelijke-klacht.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Schriftelijke klacht](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/schriftelijke-klacht.md).
+**Status: goedgekeurd** door de redacteur. Volgt de status van [Schriftelijke klacht](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/schriftelijke-klacht.md).
 
 ## Betekenis
 

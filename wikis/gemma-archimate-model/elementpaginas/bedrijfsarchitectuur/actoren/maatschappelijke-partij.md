@@ -2,7 +2,7 @@
 id: maatschappelijke-partij
 type: actor
 archimate_type: business-actor
-status: review
+status: goedgekeurd
 naam: Maatschappelijke partij
 onderwerpen:
 - participatie
@@ -20,7 +20,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling maatschappelijke-partij.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

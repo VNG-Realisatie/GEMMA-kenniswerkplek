@@ -875,8 +875,6 @@ graf:
     typeregel: 22
   voor_te_leggen:
   - data-object zonder sterke GGM-match
-  open:
-  - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -944,8 +942,6 @@ grafrecht:
     generiek: false
     typeregel: 21
   voor_te_leggen:
-  - data-object zonder sterke GGM-match
-  open:
   - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -1568,8 +1564,6 @@ rechthebbende-op-het-graf:
     typeregel: 13
   voor_te_leggen:
   - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
-  open:
-  - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -1913,8 +1907,6 @@ urn:
     generiek: false
     typeregel: 22
   voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
-  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst

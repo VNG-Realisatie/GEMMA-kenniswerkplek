@@ -2,7 +2,7 @@
 id: echtscheiding-inschrijving
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Echtscheiding inschrijving
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling echtscheiding-inschrijving.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

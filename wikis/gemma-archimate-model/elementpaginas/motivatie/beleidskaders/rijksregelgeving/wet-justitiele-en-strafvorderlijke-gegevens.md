@@ -2,7 +2,7 @@
 id: wet-justitiele-en-strafvorderlijke-gegevens
 type: beleidskader
 archimate_type: driver
-status: review
+status: goedgekeurd
 naam: Wet justitiële en strafvorderlijke gegevens
 onderwerpen:
 - burgerzaken
@@ -21,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling wet-justitiele-en-strafvorderlijke-gegevens.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

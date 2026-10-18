@@ -2,7 +2,7 @@
 id: geboorteakte-levenloos-kind
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Geboorteakte levenloos kind
 onderwerpen:
 - burgerzaken
@@ -22,7 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling geboorteakte-levenloos-kind.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

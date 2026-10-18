@@ -2,7 +2,7 @@
 id: vluchtelingenpaspoort
 type: dienst
 archimate_type: business-service
-status: review
+status: goedgekeurd
 naam: Vluchtelingenpaspoort
 onderwerpen:
 - burgerzaken
@@ -25,7 +25,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling vluchtelingenpaspoort.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

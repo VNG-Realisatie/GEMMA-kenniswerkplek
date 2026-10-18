@@ -2,7 +2,7 @@
 id: verblijfplaats-data
 type: data-object
 archimate_type: data-object
-status: review
+status: goedgekeurd
 naam: Verblijfplaats-data
 element: Verblijfplaats
 relatie: realisatie
@@ -17,7 +17,7 @@ ggm_beleidsdomein: RSGBPlus
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verblijfplaats.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Verblijfplaats](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verblijfplaats.md).
+**Status: goedgekeurd** door de redacteur. Volgt de status van [Verblijfplaats](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verblijfplaats.md).
 
 ## Betekenis
 

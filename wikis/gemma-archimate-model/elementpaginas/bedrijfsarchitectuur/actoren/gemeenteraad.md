@@ -2,7 +2,7 @@
 id: gemeenteraad
 type: actor
 archimate_type: business-actor
-status: review
+status: goedgekeurd
 naam: Gemeenteraad
 onderwerpen:
 - bestuur-en-organisatie
@@ -28,7 +28,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeenteraad.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

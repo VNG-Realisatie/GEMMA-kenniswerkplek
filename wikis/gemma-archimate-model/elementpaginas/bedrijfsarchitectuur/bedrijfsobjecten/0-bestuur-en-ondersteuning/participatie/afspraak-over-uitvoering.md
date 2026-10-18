@@ -2,7 +2,7 @@
 id: afspraak-over-uitvoering
 type: bedrijfsobject
 archimate_type: contract
-status: review
+status: goedgekeurd
 naam: Afspraak over uitvoering
 onderwerpen:
 - participatie
@@ -22,11 +22,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling afspraak-over-uitvoering.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur. De beslistabel legt dit element voor (zie *Ter discussie*).
-
-## Ter discussie
-
-- geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
