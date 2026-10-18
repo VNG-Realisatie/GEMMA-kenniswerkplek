@@ -209,3 +209,12 @@ Elk apart voorgelegd (regel Per geval), en op 2026-10-18 door de redacteur genom
 | *eigen besluit*, *eigen normering*, *komt herhaald voor*, *leidt tot gebeurtenis*, *levert aanbod*, *gebruikt objecten* (proces en interactie) | vervallen; de relaties blijven | V5 |
 | *onderscheidbare exemplaren*, *levenscyclus*, *wordt bewerkt* (actor en rol) | vervallen; het veld `tegenhanger` | V6 |
 | *generiek* | stap 6, afwijking | — |
+
+## 10 Uitkomst van stap 2 tot en met 5 (2026-10-18)
+
+- **Stap 2:** `tools/bepaal_type.py` heeft de vier fasen, de keuzekenmerken *afhankelijkheid*, *procesniveau* en *interactievorm* (in `kenmerken`, met onderbouwing en bron), de toetskenmerken per type en de nieuwe regelnummers; stap 4 (grondslag) doet `tools/beslissen.py`. `normaliseer` vult de tegenpartij uit de relaties (137 kenmerken), de pagina toont alle kenmerken met hun bron, en de herkomst in het kennismodel is een link naar de bronduiding. De tests zijn herschreven (262).
+- **Besluiten tijdens de uitvoering.** *Toegewezen partij* is geen toetskenmerk meer van Bedrijfsfunctie (drie GEMMA-functies in burgerzaken hadden die ene nee; de rollen hangen aan de processen). Een cluster naar soort werk is *procesniveau* met soort gedrag *per keer doorlopen*; zonder `gemma_generiek` blijft het niveau leeg en wordt het voorgelegd, zoals voorheen.
+- **Vergelijking van `beslist.yaml` vóór en na de omzetting** (soort, type, procesniveau, objectniveau per begrip): 482 van 484 gelijk. De twee verschillen, apart voorgelegd: Eindverslag inwonersparticipatie (levenscyclus nee; geen element, zoals het besluit van 2026-10-15 al zei; de toegang van Betrekken inwoners bij beleid vervalt) en Model-beheersverordening begraafplaatsen (in werking nee; open tot de actuele versie is gecontroleerd). V4 raakte vijf begrippen, niet twee: de drie functies bleven element door de aangepaste toets.
+- **Stap 3:** NORA Online (Dienstverlening, Kanalen) is bron met bronduiding. ArchiMate niet: de specificatie van The Open Group is alleen na inloggen op te halen; NORA kent geen definitie van Kanaal of Dienst.
+- **Stap 4:** ARCHITECTURE.md (3.1, 3.2, 3.3, 3.7, 4.1, 4.3, 6.3), de regel Thuishoren (met de criteria van het niveau), AGENTS.md en de skills criteria, beoordelen, update en ingest, binnen de woordbudgetten.
+- **Stap 5:** 458 van 484 beoordelingen veranderd; kenmerken 2.894 → 736, woorden in hun onderbouwing 27.951 → 7.836. Alle elementen staan weer op review.
