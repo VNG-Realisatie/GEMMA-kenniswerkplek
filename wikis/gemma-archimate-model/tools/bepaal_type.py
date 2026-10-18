@@ -1548,10 +1548,11 @@ def _cel(tekst: str) -> str:
 
 
 # De bronduiding (laag 3) van de bronnen van de aanpak, waar de herkomst van een kenmerk naar linkt (A5): de naam in de
-# herkomst, en bij NORA het woord erachter. ArchiMate en UPL hebben (nog) geen bronduiding: die blijven tekst.
+# herkomst, en bij NORA het woord erachter. UPL en de wiki zelf hebben geen bronduiding: die blijven tekst.
 HERKOMST_BRON = (("GEMMA Online, Proceshiërarchie", None, "2026-vng-gemma-proceshierarchie"),
                  ("GEMMA Online, Impact ketensamenwerking", None, "2026-vng-gemma-impact-ketensamenwerking"),
                  ("GEMMA", None, "2026-vng-over-gemma"),
+                 ("ArchiMate", None, "2022-opengroup-archimate-3-2-referentiekaarten"),
                  ("NORA", "Kanalen", "2026-noraonline-kanalen"),
                  ("NORA", "Dienstverlening", "2026-noraonline-dienstverlening"))
 BRONDUIDING_MAP = "modellen/gemma/bronduidingen/overig"
