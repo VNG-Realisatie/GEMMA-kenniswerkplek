@@ -1,4 +1,4 @@
-"""De pagina's van de indelingen: de onderwerpen, de beleidsdomeinen en de bedrijfsfuncties, met dekking.
+"""De pagina's van de indelingen: de onderwerpen, de beleidsdomeinen, de bedrijfsfuncties en de capabilities, met dekking.
 
 Een pagina toont een indeling as-is: een overgenomen indeling (beleidsdomeinen, bedrijfsfuncties) letterlijk uit het
 GEMMA-model, de ontstane indeling van de onderwerpen uit de afbakeningen, en per knoop de elementen van de wiki eronder.
@@ -8,6 +8,9 @@ gegenereerd door tools/render.py, dat de paginatekst, de tellingen en de links m
 Een knoop van de functiehiërarchie is een functie die zelf geen element van de wiki is (een knoop zonder beoordeling).
 Een element hangt in de hiërarchie op de plek van zijn GEMMA-match (een functie), of onder de bovenliggende functie
 (`gemma_functie`, of de aggregatie vanaf een functie van de wiki). Een product hangt aan de domeingroepering.
+
+De Capabilitykaart is een indeling van de wiki zelf (geen overname uit GEMMA): domein › capability › deelcapability, met
+per capability de bedrijfsfuncties die haar realiseren.
 
 Gebruik: alleen via tools/render.py (`paginas`).
 """
@@ -20,9 +23,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import gam_gemeen  # noqa: E402
 import gemma as gemmatool  # noqa: E402
+import kennismodel as km  # noqa: E402
 
 MAP = "elementpaginas/overig/indelingen"
-NAMEN = ("onderwerpen", "beleidsdomeinen", "bedrijfsfuncties")
+NAMEN = ("onderwerpen", "beleidsdomeinen", "bedrijfsfuncties", "capabilities")
 GEMMA_TYPE_TAAKVELD = "Taakveld Iv3"
 GEMMA_TYPE_BELEIDSDOMEIN = "Beleidsdomein"
 
@@ -263,9 +267,45 @@ def regel_(wortel: str, regel, h: dict, el: dict) -> list[str]:
     return uit
 
 
+# --- De Capabilitykaart (van de wiki) ---
+
+
+def capabilities_pagina(w) -> tuple[dict, list[str]]:
+    """Domein › capability › deelcapability, met per capability de realiserende functies en de diensten daarvan."""
+    van = pad("capabilities")
+    capabilities = [b for b in elementen(w) if w.paginatype(b) == "capability"]
+    delen = {b: [n for n in w.uitgaand(b, "aggregatie") if w.paginatype(n) == "capability"] for b in capabilities}
+    deel_van = {n for lijst in delen.values() for n in lijst}
+
+    def regel(b: str, diepte: int) -> list[str]:
+        functies = [f for f in w.inkomend_van(b, "realisatie") if w.paginatype(f) == "bedrijfsfunctie"]
+        diensten = [d for f in functies for s in ("aggregatie", "realisatie") for d in w.uitgaand(f, s)
+                    if w.paginatype(d) == "dienst"]
+        tekst = "  " * diepte + f"- **{w.link(van, b)}**"
+        regels = [tekst + (f", gerealiseerd door {_links(w, van, functies)}" if functies else "")]
+        if diensten:
+            regels.append("  " * (diepte + 1) + f"- {len(set(diensten))} diensten van die functies (zie de capability)")
+        for n in sorted(delen[b], key=lambda x: w.naam(x).lower()):
+            regels += regel(n, diepte + 1)
+        return regels
+
+    r = []
+    for domein in km.DOMEINEN:
+        top = [b for b in capabilities if b not in deel_van and w.begrippen[b].get("domein") == domein]
+        if top:
+            r += [f"## {domein}", ""]
+            for b in sorted(top, key=lambda x: w.naam(x).lower()):
+                r += regel(b, 0)
+            r.append("")
+    kop = ["De Capabilitykaart van de wiki: wat de gemeente moet kunnen, naar het GEMMA-domein. Een capability is een "
+           "element als ten minste twee bedrijfsfuncties haar realiseren. Een capability over meer domeinen staat onder "
+           "Niet domeingebonden.", "", f"Capabilities: {len(capabilities)}; deelcapabilities: {len(deel_van)}.", ""]
+    return _koppen("capabilities", "capabilities", kop + (r or ["Nog geen capability beoordeeld.", ""]), "de beoordelingen")
+
+
 def paginas(w, gemma_data: dict | None) -> dict[str, tuple[dict, list[str]]]:
     """Naam → (frontmatter, regels). De pagina's van het GEMMA-model alleen als het model aanwezig is."""
-    uit = {"onderwerpen": onderwerpen_pagina(w)}
+    uit = {"onderwerpen": onderwerpen_pagina(w), "capabilities": capabilities_pagina(w)}
     if gemma_data:
         uit["beleidsdomeinen"] = beleidsdomeinen_pagina(w, gemma_data)
         uit["bedrijfsfuncties"] = bedrijfsfuncties_pagina(w, gemma_data)

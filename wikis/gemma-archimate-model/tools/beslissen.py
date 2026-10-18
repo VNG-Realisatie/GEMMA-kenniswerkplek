@@ -683,6 +683,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
                                       "het kenmerk of de relatie de bron van de bewering (regel Bronvoorrang)")
         zonder_bron = [bepaal_type.NAAM[s] for s, a in bepaal_type.antwoorden(data).items()
                        if a["waarde"] == "ja" and not a.get("bronnen") and not a.get("gemma_relatie")
+                       and s not in bepaal_type.ORDEEL_ZONDER_BRON
                        and not bepaal_type.steunt_op_relatie(bid, s, a, alle_data)]
         if zonder_bron:
             res.fouten.append(f"{bid}: kenmerk 'ja' zonder bron: {', '.join(zonder_bron)} (regel Elke claim een bron)")

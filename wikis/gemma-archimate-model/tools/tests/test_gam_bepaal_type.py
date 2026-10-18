@@ -41,6 +41,15 @@ SAMENWERKING = BASIS | {"samenwerkingsverband", "voert_gedrag_uit", "soort_parti
 KANAAL = BASIS | {"toegangspunt", "ontsluit_een_dienst"}
 BELEIDSKADER = BASIS | {"regeling_als_geheel", "landelijk", "in_werking", "is_grondslag_voor"}
 CAPABILITY = BASIS | {"vermogen", "gerealiseerd_door", "beoordeelbaar", "onderscheidend", "stabiel_over_tijd"}
+TWEE_FUNCTIES = ["bevolkingsadministratie-bijhouding", "burgerlijke-stand-diensten"]
+
+
+def capability(ja: set[str] = CAPABILITY, naar: list = TWEE_FUNCTIES) -> dict:
+    """Een capability-beoordeling waarvan *gerealiseerd door* de functies in `naar` noemt."""
+    b = beoordeling(ja)
+    if "gerealiseerd_door" in ja:
+        b["kenmerken"]["gerealiseerd_door"]["naar"] = naar
+    return b
 
 
 def test_elke_regel_van_stap_0_tot_4_heeft_een_geval():
@@ -126,20 +135,32 @@ def test_eis_naast_de_kernrelatie():
     for ja, eis in [(ACTOR, "soort_partij"), (SAMENWERKING, "soort_partij"), (PRODUCT, "zelfstandig_aanbod"),
                     (PROCES, "aanleiding"), (PROCES, "benoembaar_resultaat"), (CAPABILITY, "beoordeelbaar"),
                     (CAPABILITY, "onderscheidend"), (CAPABILITY, "stabiel_over_tijd")]:
-        u = bt.evalueer(beoordeling(ja - {eis}))
+        u = bt.evalueer(capability(ja - {eis}) if ja is CAPABILITY else beoordeling(ja - {eis}))
         assert (u.soort, u.regel, u.voorleggen) == ("geen_element", bt.EERSTE_DREMPELREGEL, True), eis
         assert f"{bt.NAAM[eis]}: nee" in u.redenen
 
 
 def test_capability_in_vak_strategie():
     """Een vermogen is een capability in het vak strategie; een functie of proces met *vermogen* is een conflict."""
-    b = beoordeling(CAPABILITY)
+    b = capability()
     assert (b["vak"], "hoofdkenmerk" in b) == ("strategie/gedrag", False)
     u = bt.evalueer(b)
     assert (u.soort, u.paginatype, u.archimate_type) == ("element", "capability", "capability")
-    assert bt.evalueer({**beoordeling(CAPABILITY), "vak": "bedrijf/gedrag-intern", "hoofdkenmerk": "vermogen"}).soort \
+    assert bt.evalueer({**capability(), "vak": "bedrijf/gedrag-intern", "hoofdkenmerk": "vermogen"}).soort \
         == "conflict"
-    assert bt.evalueer(beoordeling(CAPABILITY | {"aanleiding"})).soort == "conflict"
+    assert bt.evalueer(capability(CAPABILITY | {"aanleiding"})).soort == "conflict"
+
+
+def test_capability_alleen_bij_bundeling_van_ten_minste_twee_functies():
+    """K3: een capability die samenvalt met één functie is geen element; de functie volstaat. Een nog niet bestaande
+    functie (naam en type) telt mee, een ander type niet."""
+    for naar in (TWEE_FUNCTIES[:1], [{"naam": "Verkiezingen", "type": "bedrijfsproces"}, TWEE_FUNCTIES[0]]):
+        u = bt.evalueer(capability(naar=naar))
+        assert (u.soort, u.regel, u.voorleggen) == ("geen_element", bt.EERSTE_DREMPELREGEL, True)
+        assert any("minder dan 2 bedrijfsfuncties" in r for r in u.redenen)
+    nieuw = {"naam": "Identiteitvaststelling", "type": "bedrijfsfunctie"}
+    assert bt.evalueer(capability(naar=[TWEE_FUNCTIES[0], nieuw])).soort == "element"
+    assert bt.evalueer(capability(naar=TWEE_FUNCTIES + ["officiele-documenten-verstrekking"])).paginatype == "capability"
 
 
 def test_specialisatieniveau():

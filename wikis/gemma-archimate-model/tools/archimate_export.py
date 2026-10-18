@@ -46,6 +46,10 @@ Een data-object (`beslist.data_objecten`, afgeleid uit de GGM-match) gaat mee me
 `Application / wiki-gemma-model / Data-objecten`, met de GGM-entiteit als eigenschap, en een realisatie naar een
 bedrijfsobject of afspraak, of een associatie naar een rol, actor of gebeurtenis (ArchiMate kent daar geen realisatie).
 
+Een capability (laag Strategie) gaat naar `Strategy / wiki-gemma-model / Capabilitykaart`, per domein. Ze hangt aan de
+domeingroepering van haar `domein` (een aggregatie met de indeling Capabilitykaart); een deelcapability hangt aan haar
+capability. De realisatie door de bedrijfsfuncties staat in hun beoordeling, als elke andere relatie.
+
 Een UPL-dienst zonder landelijke wettelijke grondslag (`beslist.zonder_grondslag`, regel Wettelijke grondslag) gaat niet
 mee: ze is geen wettelijke taak. Het rapport noemt haar.
 
@@ -135,7 +139,7 @@ def xsi_type(archimate_type: str) -> str:
 
 
 def bovenste_map(archimate_type: str) -> str:
-    return "motivation" if archimate_type in MOTIVATIE else "business"
+    return "motivation" if archimate_type in MOTIVATIE else "strategy" if archimate_type == "capability" else "business"
 
 
 def relatie_archimate(soort: str) -> tuple[str, str | None]:
@@ -353,6 +357,7 @@ def _relatie(b: Bouwer, uit: Uitkomst, gemma_relaties: dict, rtype: str, bron: s
 
 EIGENSCHAPPEN_INDELING = ("afnemer", "domein", "doelgroep", "regelgever", "kernobject", "taakveld", "beleidsdomein")
 PROCESINDELING = "Procesindeling naar kernobject"
+CAPABILITYKAART = "Capabilitykaart"
 GEMMA_TYPE_LEVENSLOOP = "Bedrijfsproces (cluster)"  # GEMMA type van de clusters in het processenlandschap
 
 
@@ -428,6 +433,8 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
                 map_naam = PROCESINDELING
             if beslist["uitkomst"].get("paginatype") == "bedrijfsinteractie":
                 map_naam = "Ketensamenwerking"
+            if beslist["uitkomst"].get("paginatype") == "capability":
+                map_naam = CAPABILITYKAART
             submappen = page_types.get(beslist["uitkomst"].get("paginatype"), {}).get("submappen", ["taakveld", "beleidsdomein"])
             doel = b.eigen_map(bovenste_map(atype), [n for n in (map_naam, *(bepaal_type.submap(data, s) for s in submappen)) if n])
         _eigenschappen(el, paren)
@@ -498,6 +505,8 @@ def bouw(gemma_data: dict, begrippen: dict[str, dict], gemma_bron: str, tijdstem
             if rtype == "aggregation-relationship" and bron_u.get("paginatype") == "bedrijfsfunctie" \
                     and doel_u.get("paginatype") in ("bedrijfsfunctie", "product", "dienst"):
                 paren.append((eig("indeling"), "Functie-indeling naar domein"))
+            if rtype == "aggregation-relationship" and bron_u.get("paginatype") == doel_u.get("paginatype") == "capability":
+                paren.append((eig("indeling"), CAPABILITYKAART))
             if r.get("via"):
                 paren.append((eig("specialisatie"), "; ".join((begrippen.get(v) or {}).get("begrip", v)
                                                                for v in r["via"].split("; "))))
@@ -651,6 +660,7 @@ def _kwaliteitsdoelen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict,
 # beleidsdomein van hun kernobject: daarboven staat in de Procesindeling naar kernobject niets.
 BELEIDSDOMEIN_TYPEN = km.paginatypen_in("Beleidsdomeinindeling")
 DOMEIN_TYPEN = km.paginatypen_in("Functie-indeling naar domein")
+CAPABILITYKAART_TYPEN = km.paginatypen_in(CAPABILITYKAART)
 DOELGROEP_TYPEN = km.paginatypen_in("Doelgroepindeling")
 GRONDSLAGINDELING = "Grondslagindeling"
 DOELGROEPINDELING = "Doelgroepindeling"
@@ -731,6 +741,16 @@ def _indelingen(b: Bouwer, uit: Uitkomst, gemma_data: dict, gekozen: dict, ids: 
                 uit.overgeslagen.append(f"{data['begrip']}: domein '{data['domein']}' bestaat niet als groepering in GEMMA")
             else:
                 aggregatie(groep["id"], element, "Functie-indeling naar domein", bid, groep)
+        if paginatype in CAPABILITYKAART_TYPEN and data.get("domein") and not any(
+                r["soort"] == "aggregatie" and r["naar"] == bid and ids.get(van)
+                and gekozen[van]["beslist"]["uitkomst"].get("paginatype") == "capability"
+                for van in gekozen for r in gekozen[van].get("relaties", [])):
+            # een capability hangt aan de domeingroepering; een deelcapability aan haar capability (een relatie)
+            groep = _vind_groepering(gemma_data, None, data["domein"], "Domeinen")
+            if groep is None:
+                uit.overgeslagen.append(f"{data['begrip']}: domein '{data['domein']}' bestaat niet als groepering in GEMMA")
+            else:
+                aggregatie(groep["id"], element, CAPABILITYKAART, bid, groep)
         naam = km.grondslaggroep(data) if paginatype == "beleidskader" else None
         if naam:
             if naam not in nieuwe_regelgeving:

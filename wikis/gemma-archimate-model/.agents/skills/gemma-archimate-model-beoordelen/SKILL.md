@@ -25,6 +25,7 @@ De AI schrijft alleen het oordeel. Type, status, letterlijke modelvelden, pagina
    - *zelfstandige specialisatie*: kijk eerst naar boven, naar de generalisaties in de wiki, in het GGM (`tools/ggm.py generalisaties`) en in GEMMA (`tools/gemma.py zoek`), en noteer de keten (Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Kies het hoogste niveau dat domeinexperts herkennen; bedenk nooit een kunstmatige verzamelnaam. Bij nee is `genoemd_begrip` het bredere begrip (`references/hierarchie.md`).
    - *gebruikt objecten* en *wordt bewerkt*: noem de handeling uit de vaste reeks ([kennismodel](../../../kennismodel/README.md), Relatietypen).
    - Het procesniveau, het objectniveau en de velden van het type (zie Velden; ook `deelprocessen`) volgen de modelleerafspraken van het type; *soort partij* die van Actor. Bij *generiek* (gebeurtenis, rol, dienst, bedrijfsproces) vul je `gemma_generiek` in: een specialisatie van een GEMMA-element met een exacte match. Ontbreekt dat element, meld het dan als voorstel aan GEMMA.
+   - Een capability leid je af uit de functies en diensten van een onderwerp: `references/capability.md`.
    - Een vervallen of samengevoegd element krijgt het besluit `afwijzen`.
 3. **Tekst** (alleen bij een element). `definitie`, `definitie_formeel`, `beschrijving` en `per_onderwerp`: `references/definitie.md`; wat alleen in één onderwerp geldt, staat onder `per_onderwerp` (regel Los van het onderwerp). De naam, `synoniemen`, `naamkeuze` en `homoniemen`: `references/naamgeving.md`, alleen bij een naamconflict, bij hernoemen of bij een bredere GGM-entiteit.
 4. **Match op betekenis.** Gebruik de kandidaten uit het werkpakket; heb je er meer nodig, dan `uv run python tools/ggm.py kandidaten <naam> [--synoniemen a,b]` en `uv run python tools/gemma.py kandidaten <naam> [--ggm-guid <guid>]`. Vul alleen `guid` of `id`, `sterkte` en `onderbouwing` in; de letterlijke velden haalt `tools/beslissen.py` op. GGM (bij bedrijfsobjecten; bij een rol, actor of gebeurtenis mag het) en data-objecten: `references/ggm-match.md`. GEMMA (altijd), met `gemma_relatie` en `gemma_functie`: `references/gemma-match.md`. Bij een beleidskader kies je de `kwaliteitsdoelen` uit `uv run python tools/gemma.py kwaliteitsdoelen`, en onderbouw je de sterkte met de bepalingen uit de regeling die eisen of normen voor het doel stellen (modelleerafspraken van Kwaliteitsdoel).
@@ -59,7 +60,7 @@ gemma: {sterkte: geen, onderbouwing: "Nieuw voor GEMMA."}                       
 # Alleen waar het type erom vraagt (modelleerafspraken, Afspraken):
 kernobject: graf                              # levensloopproces, bedrijfsproces, bedrijfsinteractie
 afnemer: extern                               # proces, product, dienst
-domein: Fysieke leefomgeving                  # functie, product, dienst
+domein: Fysieke leefomgeving                  # functie, product, dienst, capability
 doelgroep: gemeente                           # actor, rol, samenwerking, kanaal
 regelgever: rijk                              # beleidskader
 kwaliteitsdoelen: [{id: id-…, sterkte: "++", onderbouwing: "De wet regelt de taak.", bronnen: [2026-rijk-…], vindplaats: art. 1}]   # beleidskader

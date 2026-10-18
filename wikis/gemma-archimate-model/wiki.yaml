@@ -15,7 +15,7 @@ page_types:                          # pagina's van curated typen en onderwerpen
   overzicht:
     files: onderwerpen/*/overzicht.md   # overzicht per onderwerp: de views op de indelingen (gegenereerd)
   indeling:
-    files: elementpaginas/overig/indelingen/*.md   # de indelingen as-is met dekking (onderwerpen, beleidsdomeinen, bedrijfsfuncties; gegenereerd)
+    files: elementpaginas/overig/indelingen/*.md   # de indelingen as-is met dekking (onderwerpen, beleidsdomeinen, bedrijfsfuncties, capabilities; gegenereerd)
   bronduiding:
     files:                           # laag 3: wat een bron betekent vanuit het perspectief van de wiki
       - onderwerpen/*/bronduidingen/*/*.md
@@ -117,8 +117,8 @@ lint:
     AGENTS.md: 1740
     "kennismodel/**/*.md": 17100
     ".agents/skills/gemma-archimate-model-archimate-export/**/*.md": 1300
-    ".agents/skills/gemma-archimate-model-beoordelen/**/*.md": 6750
-    ".agents/skills/gemma-archimate-model-criteria/**/*.md": 950
+    ".agents/skills/gemma-archimate-model-beoordelen/**/*.md": 7050
+    ".agents/skills/gemma-archimate-model-criteria/**/*.md": 981
     ".agents/skills/gemma-archimate-model-gemma-release/**/*.md": 520
     ".agents/skills/gemma-archimate-model-ggm-release/**/*.md": 490
     ".agents/skills/gemma-archimate-model-ingest/**/*.md": 1300

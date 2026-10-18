@@ -1,6 +1,6 @@
 """tools/beslissen.py en tools/render.py: van beoordeling naar status en pagina's."""
 import pytest
-from test_gam_bepaal_type import (ACTOR, BELEIDSKADER, BO, DIENST, FUNCTIE, GEBEURTENIS, KANAAL, PROCES, PRODUCT, ROL,
+from test_gam_bepaal_type import (ACTOR, BELEIDSKADER, BO, CAPABILITY, DIENST, FUNCTIE, GEBEURTENIS, KANAAL, PROCES, PRODUCT, ROL,
                                   SAMENWERKING)
 
 import beslissen
@@ -1203,3 +1203,66 @@ def test_dienst_zonder_grondslag_krijgt_melding_en_staat_op_de_lijst(wiki):
     assert "| Test | ontbreekt |" in lijst and "Legaliseren" in lijst
     # een tweede run vindt niets verouderd (de vlag blijft staan)
     assert beslissen.beslissen(wiki, schrijven=False).gewijzigd == []
+
+
+def _capability(naar: list[str], **extra) -> dict:
+    data = _element("Lijkbezorging waarborgen", CAPABILITY, domein="Niet domeingebonden", **extra)
+    data["kenmerken"]["gerealiseerd_door"] = {"waarde": "ja", "naar": naar, "onderbouwing": "De functies realiseren haar.",
+                                              "bronnen": [WET]}
+    data["kenmerken"]["onderscheidend"] = {"waarde": "ja", "onderbouwing": "Naast Personen registreren, zonder overlap."}
+    return data
+
+
+def _functie(begrip: str, **extra) -> dict:
+    return _element(begrip, FUNCTIE, relaties=[_rel("realisatie", "lijkbezorging-waarborgen")],
+                    domein="Fysieke leefomgeving", **extra)
+
+
+def test_capability_met_twee_functies_is_een_element_met_kaart_en_pagina(wiki):
+    """K3: ten minste twee realiserende functies. De pagina staat per domein, de functies verwijzen erheen, de
+    Capabilitykaart toont haar, en *beoordeelbaar* en *onderscheidend* hebben geen bron nodig (oordeel met onderbouwing)."""
+    _schrijf(wiki, "exploiteren", _functie("Exploiteren van begraafplaatsen"))
+    _schrijf(wiki, "vergunningen", _functie("Vergunningenbeheer"))
+    _schrijf(wiki, "lijkbezorging-waarborgen", _capability(["exploiteren", "vergunningen"]))
+    res = _beslissen(wiki)
+    d = _lees(wiki, "lijkbezorging-waarborgen")
+    assert (d["beslist"]["uitkomst"]["soort"], d["beslist"]["uitkomst"]["paginatype"], d["status"]) == \
+        ("element", "capability", "review")
+    assert d["beslist"]["pad"] == "elementpaginas/strategie/capabilities/niet-domeingebonden/lijkbezorging-waarborgen.md"
+    pagina = (wiki / d["beslist"]["pad"]).read_text(encoding="utf-8")
+    assert "**Gerealiseerd door**: [Exploiteren van begraafplaatsen]" in pagina and "domein Niet domeingebonden" in pagina
+    functie = (wiki / _lees(wiki, "exploiteren")["beslist"]["pad"]).read_text(encoding="utf-8")
+    assert "**Realiseert capability**: [Lijkbezorging waarborgen]" in functie
+    kaart = (wiki / "elementpaginas/overig/indelingen/capabilities.md").read_text(encoding="utf-8")
+    assert "## Niet domeingebonden" in kaart and "Capabilities: 1; deelcapabilities: 0." in kaart
+    assert not [w for w in res.waarschuwingen if "lijkbezorging-waarborgen" in w and "registr" in w]
+
+
+def test_capability_met_een_functie_is_geen_element_en_ligt_voor(wiki):
+    """K3: een capability die samenvalt met één functie is geen element: de functie volstaat."""
+    _schrijf(wiki, "exploiteren", _element("Exploiteren van begraafplaatsen", FUNCTIE, domein="Fysieke leefomgeving"))
+    _schrijf(wiki, "lijkbezorging-waarborgen", _capability(["exploiteren"]))
+    _beslissen(wiki)
+    d = _lees(wiki, "lijkbezorging-waarborgen")
+    assert d["beslist"]["uitkomst"]["soort"] == "geen_element"
+    assert any("minder dan 2 bedrijfsfuncties" in r for r in d["beslist"]["uitkomst"]["redenen"])
+    assert "pad" not in d["beslist"]
+
+
+def test_capability_steunt_op_de_grondslag_van_haar_functies():
+    import signalen
+
+    def el(paginatype):
+        return {"paginatype": paginatype, "soort": "element"}
+    alle = {
+        "functie-a": {"beslist": {"bronnen": ["wet"]}, "relaties": [{"soort": "realisatie", "naar": "cap-met"}]},
+        "functie-b": {"beslist": {"bronnen": ["site"]}, "relaties": [{"soort": "realisatie", "naar": "cap-met"},
+                                                                      {"soort": "realisatie", "naar": "cap-zonder"}]},
+        "functie-c": {"beslist": {"bronnen": ["site"]}, "relaties": [{"soort": "realisatie", "naar": "cap-zonder"}]},
+        "cap-met": {"beslist": {"bronnen": ["site"]}},
+        "cap-zonder": {"beslist": {"bronnen": ["site"]}},
+    }
+    elementen = {"functie-a": el("bedrijfsfunctie"), "functie-b": el("bedrijfsfunctie"), "functie-c": el("bedrijfsfunctie"),
+                 "cap-met": el("capability"), "cap-zonder": el("capability")}
+    _, signalen_ = signalen.wettelijke_grondslag(alle, elementen, {"wet": "rijksregelgeving", "site": "overig"}.get)
+    assert [s.split(":")[0] for s in signalen_] == ["cap-zonder"]

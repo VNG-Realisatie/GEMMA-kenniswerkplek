@@ -67,7 +67,8 @@ def _begrippen():
     }
 
 
-WIKI_YAML = {"page_types": {"bedrijfsobject": {"dir": "elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten"}}}
+WIKI_YAML = {"page_types": {"bedrijfsobject": {"dir": "elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten"},
+                            "capability": {"dir": "elementpaginas/strategie/capabilities", "submappen": ["domein"]}}}
 
 
 def _export(tmp_path, concept=False, tijd="2026-10-02T12:00:00", begrippen=None):
@@ -865,3 +866,33 @@ def test_data_object_in_de_applicatielaag_met_realisatie(tmp_path):
     assert realisatie.get("{http://www.w3.org/2001/XMLSchema-instance}type") == "archimate:RealizationRelationship"
     assert realisatie.get("target") == ae.vast_id("element", "urn")
     assert uit.data_objecten == ["Urn-data → Urn (realisatie; GGM: geen, hiaat)"]
+
+
+def test_capability_staat_in_de_capabilitykaart_onder_de_domeingroepering(tmp_path):
+    """Een capability gaat naar Strategy / wiki-gemma-model / Capabilitykaart en hangt aan de groepering van haar domein;
+    een deelcapability hangt aan haar capability, en de functie realiseert haar."""
+    begrippen = _indeling_begrippen()
+
+    def capability(naam, **extra):
+        data = _begrip(naam, "capability", status="review", **extra)
+        data["beslist"]["uitkomst"]["paginatype"] = "capability"
+        return data
+
+    begrippen["lijkbezorging-waarborgen"] = capability("Lijkbezorging waarborgen", domein="Fysieke leefomgeving", relaties=[
+        {"soort": "aggregatie", "naar": "graven-beheersen", "ggm_match": "geen", "bronnen": ["2026-bron"]}])
+    begrippen["graven-beheersen"] = capability("Graven beheersen", domein="Fysieke leefomgeving")
+    begrippen["exploiteren"]["relaties"] = [
+        {"soort": "realisatie", "naar": "lijkbezorging-waarborgen", "ggm_match": "geen", "bronnen": ["2026-bron"]}]
+    uit, root = _export_indeling(tmp_path, begrippen)
+    cap, deel = (ae.vast_id("element", s) for s in ("lijkbezorging-waarborgen", "graven-beheersen"))
+    assert [n for n, _ in _pad(root, cap)] == ["Strategy", "wiki-gemma-model", "Capabilitykaart", "Fysieke leefomgeving"]
+    assert _el(root, cap).get("{http://www.w3.org/2001/XMLSchema-instance}type") == "archimate:Capability"
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", cap)
+    assert _props(agg)["wiki-gemma-model indeling"] == "Capabilitykaart"
+    # een deelcapability hangt aan haar capability, niet aan de domeingroepering
+    assert not _relaties_van(root, "archimate:AggregationRelationship", "id-domein-fl", deel)
+    (agg,) = _relaties_van(root, "archimate:AggregationRelationship", cap, deel)
+    assert _props(agg)["wiki-gemma-model indeling"] == "Capabilitykaart"
+    (real,) = _relaties_van(root, "archimate:RealizationRelationship", ae.vast_id("element", "exploiteren"), cap)
+    assert real is not None
+    assert not any("Capability" in z or "capability" in z for z in uit.zonder_plaats)

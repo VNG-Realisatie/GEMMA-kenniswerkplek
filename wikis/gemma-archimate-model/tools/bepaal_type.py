@@ -970,10 +970,23 @@ def steunt_op_relatie(bid: str, sleutel: str, a: dict, alle: dict[str, dict]) ->
                for ander in naar_ids(a) for r in relaties_bij(bid, sleutel, ander, alle))
 
 
+# Kenmerken van een capability die op een oordeel met onderbouwing steunen als er geen landelijke richtlijn is (K6)
+ORDEEL_ZONDER_BRON = ("beoordeelbaar", "onderscheidend")
+MIN_FUNCTIES_CAPABILITY = 2  # K3: een capability is een element als ten minste twee bedrijfsfuncties haar realiseren
+
+
+def _realiserende_functies(beoordeling: dict) -> int:
+    """Het aantal tegenpartijen van *gerealiseerd door*: een element-id, of een nog niet bestaande bedrijfsfunctie
+    (naam en type). Of een id een bedrijfsfunctie is, volgt uit de relatie (tools/beslissen.py)."""
+    a = antwoord(beoordeling.get("kenmerken") or {}, "gerealiseerd_door")
+    return sum(1 for x in a.get("naar") or [] if isinstance(x, str) or x.get("type") == "bedrijfsfunctie")
+
+
 def extra_velden(beoordeling: dict) -> dict:
     extra = {s: beoordeling.get(s) for s in EXTRA_VELDEN}
     extra["soort_werk_van"] = (beoordeling.get("gemma_generiek") or {}).get("id")
     extra["vak_conflict"] = _vak_conflict(beoordeling)
+    extra["realiserende_functies"] = _realiserende_functies(beoordeling)
     return extra
 
 
@@ -1190,12 +1203,17 @@ def _stap_5_en_6(u: Uitkomst, k: dict, extra: dict) -> Uitkomst:
     ontbrekend = [s for s in overig if not _ja(k, s)]
     score = f"kern ja, {len(overig) - len(ontbrekend)}/{len(overig)}" if overig else "kern ja"
     eis_nee = [s for s in t.eis if not _ja(k, s)]
-    if (t.kern and not _ja(k, t.kern)) or eis_nee:
+    te_weinig = t.paginatype == "capability" and _ja(k, "gerealiseerd_door") \
+        and extra.get("realiserende_functies", 0) < MIN_FUNCTIES_CAPABILITY
+    if (t.kern and not _ja(k, t.kern)) or eis_nee or te_weinig:
         wat = [t.kern] * bool(t.kern and not _ja(k, t.kern)) + eis_nee
+        redenen = [f"{NAAM[s]}: nee" for s in wat] + [f"{NAAM[s]}: nee" for s in ontbrekend]
+        if te_weinig:
+            redenen.append(f"{NAAM['gerealiseerd_door']}: minder dan {MIN_FUNCTIES_CAPABILITY} bedrijfsfuncties; een "
+                           "capability die samenvalt met één functie is geen element: de functie volstaat")
         return Uitkomst("geen_element", EERSTE_DREMPELREGEL,
                         f"{'Kernrelatie' if t.kern and not _ja(k, t.kern) else 'Eis'} ontbreekt voor {t.naam}",
-                        archimate_type=u.archimate_type, voorleggen=True, typeregel=u.regel,
-                        redenen=[f"{NAAM[s]}: nee" for s in wat] + [f"{NAAM[s]}: nee" for s in ontbrekend])
+                        archimate_type=u.archimate_type, voorleggen=True, typeregel=u.regel, redenen=redenen)
     if len(ontbrekend) > DREMPEL_ONTBREKEND:
         return Uitkomst("geen_element", EERSTE_DREMPELREGEL + 1, f"Drempel niet gehaald voor {t.naam} ({score})",
                         archimate_type=u.archimate_type, voorleggen=True, typeregel=u.regel,

@@ -39,8 +39,9 @@ def per_begrip(bid: str, data: dict, uitkomst: dict, onderwerpnamen: list[str], 
     for zin in VERBODEN_ZINNEN:
         if zin in laag:
             w.append(f"{bid}: '{zin}': alleen met een concrete, domeinspecifieke reden (regel Geen absolute taal)")
-    # bij een bedrijfsobject (of afspraak) mag de tekst de registratie noemen; registratie is nooit een argument voor het type
-    registratietaal = set() if uitkomst.get("archimate_type") in ("business-object", "contract") \
+    # bij een bedrijfsobject (of afspraak) of een capability mag de tekst de registratie noemen; registratie is nooit een
+    # argument voor het type
+    registratietaal = set() if uitkomst.get("archimate_type") in ("business-object", "contract", "capability") \
         else {m.group(0) for m in REGISTR_RE.finditer(tekst)}
     for woord in sorted(registratietaal):
         w.append(f"{bid}: '{woord}': is dit een argument voor het type? (regel Beslistabel beslist)")
@@ -488,7 +489,8 @@ UPL_BRON = re.compile(r"-(vng|logius)-upl-")  # de aangevulde lijsten van GEMMA 
 def _grondslag(alle: dict[str, dict], elementen: dict[str, dict], brontype):
     """(elementen zonder vervallen, landelijk(b), upl(b)): of een element een landelijke wettelijke grondslag heeft (een
     bron van `europese-regelgeving` of `rijksregelgeving`, of een relatie *is grondslag voor* van een beleidskader van de
-    EU of het Rijk), en of het een UPL-dienst is (de UPL als bron)."""
+    EU of het Rijk; bij een capability die van een van haar realiserende functies), en of het een UPL-dienst is (de UPL
+    als bron)."""
     elementen = {b: u for b, u in elementen.items() if alle[b].get("status") != "afgewezen"}
     gegrond = {r["naar"] for b, u in elementen.items()
                if u["paginatype"] == "beleidskader" and alle[b].get("regelgever") in ("EU", "rijk")
@@ -501,8 +503,17 @@ def _grondslag(alle: dict[str, dict], elementen: dict[str, dict], brontype):
             ids |= set(r.get("bronnen") or [])
         return ids
 
+    # een capability steunt op de grondslag van haar realiserende functies (K6)
+    realiseerders: dict[str, list[str]] = {}
+    for van, u in elementen.items():
+        if u["paginatype"] == "bedrijfsfunctie":
+            for r in alle[van].get("relaties", []):
+                if r["soort"] == "realisatie" and elementen.get(r["naar"], {}).get("paginatype") == "capability":
+                    realiseerders.setdefault(r["naar"], []).append(van)
+
     def landelijk(b: str) -> bool:
-        return b in gegrond or any(brontype(i) in LANDELIJK for i in bronnen(b))
+        return b in gegrond or any(brontype(i) in LANDELIJK for i in bronnen(b)) \
+            or any(landelijk(f) for f in realiseerders.get(b, []))
 
     def upl(b: str) -> bool:
         return elementen[b]["paginatype"] in ("product", "dienst") and any(UPL_BRON.search(i) for i in bronnen(b))

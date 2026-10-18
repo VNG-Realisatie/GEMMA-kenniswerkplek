@@ -12,7 +12,7 @@ Uitvoer (gegenereerd; nooit met de hand bewerken, de pre-commit-controle `--chec
 | `<map van het type>/<taakveld>/<beleidsdomein>/<id>.md` (pad uit `beslist.pad`) | Elementpagina |
 | `onderwerpen/<onderwerp>/begrippen.md` | Begrippenlijst: per begrip de uitkomst, de reden, de herkomst en de GGM-entiteit, en de besluiten over het onderwerp |
 | `onderwerpen/<onderwerp>/overzicht.md` | Overzicht per onderwerp: de views op de indelingen (processen naar kernobject en naar soort werk, ketensamenwerking, objecten, functies, doelgroepen, producten en diensten, beleidskaders) |
-| `elementpaginas/overig/indelingen/{onderwerpen,beleidsdomeinen,bedrijfsfuncties}.md` | De indelingen as-is (onderwerpen uit de afbakeningen; beleidsdomeinen en functiehiërarchie uit het GEMMA-model), per knoop de elementen van de wiki eronder, met dekking (tools/indelingspaginas.py) |
+| `elementpaginas/overig/indelingen/{onderwerpen,beleidsdomeinen,bedrijfsfuncties,capabilities}.md` | De indelingen as-is (onderwerpen uit de afbakeningen; beleidsdomeinen en functiehiërarchie uit het GEMMA-model) en de Capabilitykaart van de wiki, per knoop de elementen van de wiki eronder, met dekking (tools/indelingspaginas.py) |
 | `modellen/ggm/terugmeldingen.md` | Doorlopende lijst van GGM-terugmeldingen |
 | `modellen/gemma/terugmeldingen/procesarchitectuur.md` | Doorlopende lijst van terugmeldingen aan de GEMMA-procesarchitectuur (UPL-lijsten, kennismodel) |
 | `modellen/gemma/terugmeldingen/gemma-team.md` | Doorlopende lijst van terugmeldingen aan het GEMMA-team over het GEMMA-model |
@@ -362,6 +362,25 @@ def indelingen(w: Wiki, van: str, bid: str, d: dict) -> list[str]:
             regels.append(_gemma_functie_regel(w, van, d))
         if onder:
             regels.append(f"- **Functie-indeling naar domein, omvat**: {_links(w, van, onder)}.")
+    if u.get("paginatype") == "capability":
+        functies = [v for v in w.inkomend_van(bid, "realisatie") if w.paginatype(v) == "bedrijfsfunctie"]
+        diensten = [x for f in functies for s in ("aggregatie", "realisatie") for x in w.uitgaand(f, s)
+                    if w.paginatype(x) == "dienst"]
+        boven = [v for v in w.inkomend_van(bid, "aggregatie") if w.paginatype(v) == "capability"]
+        onder = [n for n in w.uitgaand(bid, "aggregatie") if w.paginatype(n) == "capability"]
+        if d.get("domein"):
+            regels.append(f"- **Capabilitykaart**: domein {d['domein']}.")
+        if boven:
+            regels.append(f"- **Capabilitykaart, onderdeel van**: {_links(w, van, boven)}.")
+        if onder:
+            regels.append(f"- **Capabilitykaart, omvat**: {_links(w, van, onder)}.")
+        regels.append(f"- **Gerealiseerd door**: {_links(w, van, functies) or '—'}.")
+        if diensten:
+            regels.append(f"- **Diensten die van dit vermogen afhangen**: {_links(w, van, diensten)} (via de functies).")
+    if u.get("paginatype") == "bedrijfsfunctie":
+        realiseert = [n for n in w.uitgaand(bid, "realisatie") if w.paginatype(n) == "capability"]
+        if realiseert:
+            regels.append(f"- **Realiseert capability**: {_links(w, van, realiseert)}.")
     if u.get("paginatype") == "bedrijfsfunctie" and w.uitgaand(bid, "bediening"):
         regels.append(f"- **Bedient**: {_links(w, van, w.uitgaand(bid, 'bediening'))}.")
     start = [v for v in w.inkomend_van(bid, "triggering") if w.paginatype(v) == "gebeurtenis"]
