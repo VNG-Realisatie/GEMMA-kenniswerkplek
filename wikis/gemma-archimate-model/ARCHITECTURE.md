@@ -81,7 +81,7 @@ Een betere modellering gaat voor het vermijden van herbeoordeling. Wordt het res
 
 Bij het modelleren geldt een vaste voorrang; de regels staan in de [modelleerregels](kennismodel/modelleerregels.md).
 
-- **Bronnen:** europese-regelgeving › rijksregelgeving › informatiemodel › richtlijn › gemeentelijke-regelgeving › beleid › overig. Voorrang bepaalt wat formeel geldt en welke begrippen er zijn, nooit óf iets een element is. De naam komt uit de gangbare taal; de wetsterm wordt een synoniem.
+- **Bronnen:** europese-regelgeving › rijksregelgeving › informatiemodel › richtlijn › gemeentelijke-regelgeving › beleid › overig. Voorrang bepaalt wat formeel geldt en welke begrippen er zijn, nooit óf iets een element is. NORA (overheidsbreed) wijkt bij een conflict voor GEMMA (gemeentespecifiek). De naam komt uit de gangbare taal; de wetsterm wordt een synoniem.
 - **Een element modelleren:** welk begrip (synoniem of homoniem) › afbakening › type › grondslag › onderbouwing (toetskenmerken, kernrelaties) › indeling › overige relaties › matches. De grondslag volgt op het type, want ze hangt ervan af: een functie volgt wat zij omvat, een UPL-dienst mag zonder.
 - **Matchen:** op betekenis, niet op naam; een zwakke of partiële GEMMA-match wordt voorgelegd, omdat de export dan een GEMMA-element overschrijft.
 - **Relaties:** grondslag › kernrelatie › indelingsrelaties › overige relaties uit de bronduiding › GGM-match van de relatie › GEMMA.

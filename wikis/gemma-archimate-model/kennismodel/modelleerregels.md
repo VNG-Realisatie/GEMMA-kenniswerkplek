@@ -27,6 +27,7 @@ Voor welke begrippen er zijn en wat ze formeel betekenen, gaat het hogere bronty
 - Voorrang bepaalt nooit of iets een element is.
 - Naam en herkenbare definitie komen uit de gangbare taal van `richtlijn`, `beleid` en `overig`; de wetsterm wordt een synoniem met context "wet". Precedent: Urn, niet Asbus.
 - `europese-regelgeving` en `rijksregelgeving` heten samen landelijke regelgeving.
+- NORA is overheidsbreed, GEMMA gemeentespecifiek: bij een conflict tussen een definitie of principe uit NORA en GEMMA gaat GEMMA voor, en de afwijking van NORA wordt niet teruggemeld.
 - Een matchdoel (brontype `model`: het GGM, het GEMMA-model en GEMMA Online, ook de redactionele tekst) is geen bron en valt buiten de volgorde: het dient voor matchen en, zoals gemeentelijke beleidsstukken, voor termen en taal, niet voor een claim. *(signaal; ook bij een bron van brontype `model` in een kenmerk of relatie)*
 - Wat een functie is, steunt op de wet die de groep taken aan de gemeente toewijst, niet op GEMMA. De UPL is bron én matchdoel.
 - Een bron voor de methode (Over GEMMA, Proceshiërarchie, Impact van ketensamenwerking; brontype `overig`) onderbouwt het kennismodel en een keuze voor type of niveau, niet de inhoud (ARCHITECTURE.md, sectie 2).
