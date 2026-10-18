@@ -15,7 +15,11 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   wordt_bewerkt:
     waarde: ja
-    onderbouwing: 'Het bestuursorgaan stelt haar vast (art. 4:81) en past haar toe bij het nemen van besluiten: het handelt ernaar en mag ernaar verwijzen ter motivering (art. 4:82, 4:84).'
+    naar:
+    - bekendmaken-besluit
+    - naam: Vaststellen beleidsregel
+      type: bedrijfsproces
+    onderbouwing: 'Het bestuursorgaan stelt haar vast (art. 4:81), maakt haar bekend (art. 3:42, 4:83) en past haar toe bij het nemen van besluiten: het handelt ernaar en mag ernaar verwijzen ter motivering (art. 4:82, 4:84).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   afspraak:

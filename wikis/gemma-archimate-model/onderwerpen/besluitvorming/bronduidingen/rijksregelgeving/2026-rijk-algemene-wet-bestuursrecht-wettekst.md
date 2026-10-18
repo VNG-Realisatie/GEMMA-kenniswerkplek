@@ -100,6 +100,7 @@ De Awb is beleidskader (deel 1). De UPL noemt de Awb als grondslag van gemeentel
 | bestuursorgaan | beslist op | aanvraag | art. 4:1 |
 | bestuursorgaan | stelt vast | formulier | art. 4:4 |
 | bestuursorgaan | stelt vast | beleidsregel | art. 4:81 |
+| bestuursorgaan | maakt bekend | besluit, inhoudende een beleidsregel | art. 3:42; art. 4:83 |
 | bestuursorgaan | legt ter inzage | ontwerp van het te nemen besluit | art. 3:11 lid 1 |
 | bestuursorgaan | geeft kennis van | ontwerp van het te nemen besluit | art. 3:12 lid 1 |
 | bestuursorgaan | zendt toe aan belanghebbenden | ontwerp van het te nemen besluit | art. 3:13 lid 1 |
@@ -191,6 +192,8 @@ De Awb is beleidskader (deel 1). De UPL noemt de Awb als grondslag van gemeentel
 > De bekendmaking van besluiten die tot een of meer belanghebbenden zijn gericht, geschiedt door toezending of uitreiking aan hen, onder wie begrepen de aanvrager. (art. 3:41 lid 1)
 
 > De bekendmaking van besluiten die niet tot een of meer belanghebbenden zijn gericht, geschiedt op de in de artikelen 5 onderscheidenlijk 6 van de Bekendmakingswet bepaalde wijze. (art. 3:42)
+
+> Bij de bekendmaking van het besluit, inhoudende een beleidsregel, wordt zo mogelijk het wettelijk voorschrift vermeld waaruit de bevoegdheid waarop het besluit, inhoudende een beleidsregel, betrekking heeft voortvloeit. (art. 4:83)
 
 > Tegelijkertijd met of zo spoedig mogelijk na de bekendmaking wordt van het besluit mededeling gedaan aan degenen die bij de voorbereiding ervan hun zienswijze naar voren hebben gebracht. (art. 3:43 lid 1)
 

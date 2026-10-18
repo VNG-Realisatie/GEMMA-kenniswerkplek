@@ -4,24 +4,23 @@ Overdracht naar de volgende Sessie (2026-10-18). Wordt bij elke overdracht overs
 
 ## Stand van zaken
 
-- Plan [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md) is uitgevoerd (Uitkomst stap 14).
-- Gedaan in deze Sessie: `beslist` staat niet meer in de beoordeling maar in `onderwerpen/<onderwerp>/beslist.yaml` (gegenereerd door `tools/beslissen.py`, `curation.beslist` in wiki.yaml). `llmwiki.beoordeling.alle()` voegt het blok samen, zodat render, export, relaties en werkpakket ongewijzigd lezen; `schrijf(pad, data, wiki_yaml)` laat het weg. De migratie liet de 484 akkoord-hashes, de pagina's en de export ongewijzigd (geen nieuw AKKOORD).
-- Een agent die een beoordeling als precedent leest, krijgt nu 22.000 woorden minder; `beslist.yaml` leest alleen wie het nodig heeft.
+- Gedaan in deze Sessie (todo "Potentiële relaties vastleggen", deel 1): de twee kenmerken *wordt bewerkt* zonder relatie zijn opgelost, met AKKOORD. Beleidsregel heeft een toegang vanuit Bekendmaken besluit (Awb art. 3:42, 4:83) en de potentiële relatie "Vaststellen beleidsregel" (bedrijfsproces, art. 4:81); Heffingsverordening de potentiële relatie "Heffen van belastingen en rechten" (bedrijfsproces), volgens het besluit van 2026-10-10.
+- Inzicht: het getal 239 in de todo telde kenmerken zonder `naar`, niet zonder relatie. De regel (kennismodel/kenmerken-en-beslistabel.md) vraagt bij elk relationeel kenmerk `ja` een `naar`; het kernrelatie-signaal controleert alleen of de relatie bestaat. Nu nog 243 zonder `naar`, alle met relatie: burgerzaken 116, lijkbezorging 109, besluitvorming 15, participatie 3.
 
 ## Volgende klus
 
 Kies uit [todo.md](todo.md), sectie ArchiMate-indeling en Herbeoordeling:
 
-1. **Potentiële relaties vastleggen** (inhoud, middel): 239 relationele kenmerken ja zonder relatie.
+1. **Potentiële relaties vastleggen**, deel 2: de `naar` aanvullen bij de bestaande relaties, per onderwerp (besluitvorming eerst, 15; dan participatie, lijkbezorging, burgerzaken), elk onderwerp met een eigen AKKOORD en commit.
 2. **Participatie herbeoordelen** met de lichtere werkwijze (inhoud, hoog voor de beoordeling).
 3. **GEMMA-functies onder *Ontvangst*** terugmelden (inhoud, middel), of **GGM-match voor rollen, actoren en gebeurtenissen**.
 
 ## Modeladvies
 
-Optie 1 is inhoudelijk werk met een bekende werkwijze (middel). Optie 2 vraagt oordelen en afwegen (hoog): een sterker model of hogere redeneerinspanning. Begin een nieuwe Sessie: de context van dit scriptwerk helpt niet bij de inhoud. Meet bij de volgende beoordeling met agenten of het lezen van precedenten (zonder `beslist`) is afgenomen.
+Optie 1 is vooral nauwkeurig vastleggen (middel): een sneller model volstaat, met een sterker model alleen als een `naar` naar een ander element wijst dan de relatie suggereert. Dit kan in een nieuwe Sessie; het tellen gaat met de kenmerken uit `tools/bepaal_type.py` (RELATIONEEL) zonder `naar`. Overweeg een signaal in `tools/signalen.py` voor een relationeel kenmerk `ja` zonder `naar` (leg dat eerst voor: een nieuw signaal is een rules-wijziging).
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en todo.md. Voer het todo-punt "Potentiële relaties vastleggen" uit voor één onderwerp: stel eerst voor welk onderwerp en hoe je de tegenpartij in `naar` bepaalt, en leg dat voor vóór je schrijft. Houd je aan de woordbudgetten in wiki.yaml.
+Lees wikis/gemma-archimate-model/handoff.md en todo.md. Voer deel 2 van het todo-punt "Potentiële relaties vastleggen" uit voor het onderwerp besluitvorming: vul bij elk relationeel kenmerk ja zonder `naar` het id van het element met de relatie in, en leg elk geval waar de relatie twijfel geeft apart voor vóór je schrijft. Daarna beslissen, voorleggen, AKKOORD, afronden.py. Houd je aan de woordbudgetten in wiki.yaml.
 ```

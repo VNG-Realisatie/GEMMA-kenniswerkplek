@@ -26,7 +26,7 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 | Onderwerp | Elementen | Gebruikt uit andere | Relaties binnen | Relaties met andere |
 |---|---|---|---|---|
-| Besluitvorming | 30 | 1 | 45 | Bestuur en organisatie 11, Heffingen en betalingen 1, Lijkbezorging 16, Participatie 3 |
+| Besluitvorming | 30 | 1 | 46 | Bestuur en organisatie 11, Heffingen en betalingen 1, Lijkbezorging 16, Participatie 3 |
 | Bestuur en organisatie | 7 | 0 | 8 | Besluitvorming 11, Burgerzaken 20, Heffingen en betalingen 2, Kern 1, Lijkbezorging 15, Participatie 6 |
 | Burgerzaken | 171 | 9 | 505 | Bestuur en organisatie 20, Kern 2, Lijkbezorging 8 |
 | Heffingen en betalingen | 2 | 0 | 1 | Besluitvorming 1, Bestuur en organisatie 2, Lijkbezorging 4 |

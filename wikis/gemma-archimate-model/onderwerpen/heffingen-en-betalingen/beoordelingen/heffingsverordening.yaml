@@ -13,6 +13,9 @@ kenmerken:
     - 2024-rijk-gemeentewet-wettekst
   wordt_bewerkt:
     waarde: ja
+    naar:
+    - naam: Heffen van belastingen en rechten
+      type: bedrijfsproces
     onderbouwing: Geraadpleegd voor de tarieven bij uitgifte en onderhoud (Groningen art. 8, 23, 24).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

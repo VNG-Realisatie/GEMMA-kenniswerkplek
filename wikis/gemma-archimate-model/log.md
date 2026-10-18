@@ -2665,3 +2665,6 @@ Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen o
 | 2026-10-18 | promote | officiele-documenten-verstrekking | Mark Backer | 4da2b781 |
 | 2026-10-18 | promote | personen-registreren | Mark Backer | 7c4ef18d |
 | 2026-10-18 | promote | vergunningenbeheer-publieksdiensten | Mark Backer | fa5df53f |
+| 2026-10-18 | promote | bekendmaken-besluit | Mark Backer | bff7a695 |
+| 2026-10-18 | promote | beleidsregel | Mark Backer | c53b2be6 |
+| 2026-10-18 | promote | heffingsverordening | Mark Backer | a7661445 |

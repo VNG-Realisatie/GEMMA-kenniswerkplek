@@ -13,6 +13,7 @@ kenmerken:
     naar:
     - besluit
     - regeling
+    - beleidsregel
   aanleiding:
     waarde: ja
     onderbouwing: Een genomen besluit of vastgestelde regeling, die pas na bekendmaking in werking treedt (Awb art. 3:40; Bekendmakingswet art. 8).
@@ -119,4 +120,11 @@ relaties:
   bronnen:
   - 2026-rijk-bekendmakingswet-wettekst
   vindplaats: art. 6, 8
+- soort: toegang (verstrekken)
+  naar: beleidsregel
+  naam: maakt bekend
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  vindplaats: art. 3:42, 4:83
 status: goedgekeurd
