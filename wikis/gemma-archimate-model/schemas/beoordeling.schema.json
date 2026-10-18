@@ -35,12 +35,6 @@
         "buiten_dit_model": {
           "$ref": "#/$defs/antwoord"
         },
-        "slechts_eigenschap": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "eigen_identiteit": {
-          "$ref": "#/$defs/antwoord"
-        },
         "betekenis_in_onderwerp": {
           "$ref": "#/$defs/antwoord"
         },
@@ -50,22 +44,13 @@
         "eigen_rechtspersoon": {
           "$ref": "#/$defs/antwoord"
         },
-        "vervult_een_rol": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "voert_gedrag_uit": {
-          "$ref": "#/$defs/antwoord"
-        },
         "soort_partij": {
           "$ref": "#/$defs/antwoord"
         },
-        "ontsluit_een_dienst": {
+        "landelijk": {
           "$ref": "#/$defs/antwoord"
         },
         "toegewezen_partij": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "gebruikt_objecten": {
           "$ref": "#/$defs/antwoord"
         },
         "aanleiding": {
@@ -74,49 +59,40 @@
         "benoembaar_resultaat": {
           "$ref": "#/$defs/antwoord"
         },
-        "komt_herhaald_voor": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "eigen_normering": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "stabiel_over_tijd": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "afnemer": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "gerealiseerd_door": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "leidt_tot_gedrag": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "bijdrage_aan_groter_proces": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "klant_tot_klant": {
-          "$ref": "#/$defs/antwoord"
-        },
         "omvat_processen": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "omvat_levensloop": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "eigen_besluit": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "levert_aanbod": {
           "$ref": "#/$defs/antwoord"
         },
         "bedient_gedrag": {
           "$ref": "#/$defs/antwoord"
         },
+        "gebruikt_objecten": {
+          "$ref": "#/$defs/antwoord"
+        },
         "in_functie_indeling": {
           "$ref": "#/$defs/antwoord"
         },
-        "leidt_tot_gebeurtenis": {
+        "stabiel_over_tijd": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "leidt_tot_gedrag": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "komt_herhaald_voor": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "gerealiseerd_door": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "afnemer": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "omvat_diensten_en_afspraken": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "zelfstandig_aanbod": {
+          "$ref": "#/$defs/antwoord"
+        },
+        "wordt_bewerkt": {
           "$ref": "#/$defs/antwoord"
         },
         "onderscheidbare_exemplaren": {
@@ -125,25 +101,19 @@
         "levenscyclus": {
           "$ref": "#/$defs/antwoord"
         },
-        "wordt_bewerkt": {
+        "vervult_een_rol": {
           "$ref": "#/$defs/antwoord"
         },
-        "afspraak": {
+        "voert_gedrag_uit": {
           "$ref": "#/$defs/antwoord"
         },
-        "waarneembare_vorm": {
+        "ontsluit_een_dienst": {
           "$ref": "#/$defs/antwoord"
         },
-        "deel_van_object": {
+        "is_grondslag_voor": {
           "$ref": "#/$defs/antwoord"
         },
-        "invoer_van_een_ander": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "zelfstandig_aanbod": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "omvat_diensten_en_afspraken": {
+        "in_werking": {
           "$ref": "#/$defs/antwoord"
         },
         "beoordeelbaar": {
@@ -152,24 +122,95 @@
         "onderscheidend": {
           "$ref": "#/$defs/antwoord"
         },
-        "landelijk": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "in_werking": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "is_grondslag_voor": {
-          "$ref": "#/$defs/antwoord"
-        },
-        "zelfstandige_specialisatie": {
-          "$ref": "#/$defs/antwoord"
-        },
         "generiek": {
           "$ref": "#/$defs/antwoord"
+        },
+        "afhankelijkheid": {
+          "type": "object",
+          "required": [
+            "waarde"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "waarde": {
+              "enum": [
+                "zelfstandig",
+                "eigenschap",
+                "onderdeel",
+                "deelproces",
+                "variant",
+                "invoer_van_een_ander"
+              ]
+            },
+            "onderbouwing": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bronnen": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "Keuzekenmerk (stap 2): precies één waarde, met onderbouwing en bron"
+        },
+        "procesniveau": {
+          "type": "object",
+          "required": [
+            "waarde"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "waarde": {
+              "enum": [
+                "levensloopproces",
+                "bedrijfsproces",
+                "cluster naar soort werk"
+              ]
+            },
+            "onderbouwing": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bronnen": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "Keuzekenmerk (stap 3): precies één waarde, met onderbouwing en bron"
+        },
+        "interactievorm": {
+          "type": "object",
+          "required": [
+            "waarde"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "waarde": {
+              "enum": [
+                "estafette",
+                "orkestratie"
+              ]
+            },
+            "onderbouwing": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bronnen": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "Keuzekenmerk (stap 3): precies één waarde, met onderbouwing en bron"
         }
       },
       "additionalProperties": false,
-      "description": "De kenmerken op het pad (tools/bepaal_type.py vragen); een poortkenmerk alleen bij een afwijking. Buiten het pad leidt het script de standaardwaarde af"
+      "description": "De kenmerken op het pad (tools/bepaal_type.py vragen): de keuzekenmerken en de relatiekenmerken; een kenmerk in Afbakenen en Indelen alleen bij een afwijking, een toetskenmerk dat geen relatie is alleen bij een nee. Buiten het pad leidt het script het standaardantwoord af"
     },
     "vak": {
       "enum": [
@@ -183,7 +224,7 @@
         "motivatie",
         "overig/samengesteld"
       ],
-      "description": "Fase A, eerste keuze: het vak in de ArchiMate-matrix (laag, aspect, intern of extern)"
+      "description": "Stap 3, eerste keuze: het vak in de ArchiMate-matrix (laag, aspect, intern of extern)"
     },
     "hoofdkenmerk": {
       "enum": [
@@ -196,20 +237,21 @@
         "aanbod_als_geheel",
         "regeling_als_geheel",
         "vermogen",
-        "ding"
+        "object",
+        "afspraak",
+        "representatie"
       ],
-      "description": "Fase A: het dominante kenmerk binnen het vak, of `ding` in het passieve vak; alleen nodig als het vak er meer heeft"
+      "description": "Stap 3: het dominante kenmerk binnen het vak; alleen nodig als het vak er meer heeft"
     },
     "soort_gedrag": {
       "enum": [
         "per_keer_doorlopen",
-        "groepeert_processen",
         "gegroepeerd_gedrag",
         "toestandsverandering",
         "aangeboden_gedrag",
         "gezamenlijk_gedrag"
       ],
-      "description": "Fase A, bij gedrag: de soort gedrag binnen het vak; alleen nodig als het vak er meer heeft"
+      "description": "Stap 3, bij gedrag: de soort gedrag binnen het vak; alleen nodig als het vak er meer heeft"
     },
     "synoniem_van": {
       "type": "string",
@@ -221,7 +263,7 @@
     },
     "genoemd_begrip": {
       "type": "string",
-      "description": "Het begrip waarvan dit een eigenschap, onderdeel, bredere specialisatie of waarneembare vorm is"
+      "description": "Het begrip waarvan dit afhangt (eigenschap, onderdeel, deelproces, variant, invoer van een ander: de naam van het begrip) of waarvan dit de representatie is"
     },
     "archimate_buiten_model": {
       "type": "string",
@@ -229,14 +271,14 @@
     },
     "kernobject": {
       "type": "string",
-      "description": "Stap 7: het bedrijfsobject waarvan dit proces de levensloop omvat (levensloopproces), waarin het een mutatie doet (bedrijfsproces), of dat door de keten gaat (bedrijfsinteractie)"
+      "description": "Stap 3 en 6: het bedrijfsobject waarvan dit proces de levensloop omvat (levensloopproces), waarin het een mutatie doet (bedrijfsproces), of dat door de keten gaat (bedrijfsinteractie)"
     },
     "afnemer": {
       "enum": [
         "extern",
         "intern"
       ],
-      "description": "Indelingsveld: de plaats in de indelingen (stap 7)"
+      "description": "Indelingsveld: de plaats in de indelingen (stap 6)"
     },
     "domein": {
       "enum": [
@@ -248,7 +290,7 @@
         "Publieksdiensten",
         "Sociaal domein"
       ],
-      "description": "Indelingsveld: de plaats in de indelingen (stap 7)"
+      "description": "Indelingsveld: de plaats in de indelingen (stap 6)"
     },
     "doelgroep": {
       "enum": [
@@ -256,7 +298,7 @@
         "inwoners en ondernemers",
         "ketenpartners"
       ],
-      "description": "Indelingsveld: de plaats in de indelingen (stap 7)"
+      "description": "Indelingsveld: de plaats in de indelingen (stap 6)"
     },
     "regelgever": {
       "enum": [
@@ -264,7 +306,7 @@
         "rijk",
         "VNG-modelverordening"
       ],
-      "description": "Indelingsveld: de plaats in de indelingen (stap 7)"
+      "description": "Indelingsveld: de plaats in de indelingen (stap 6)"
     },
     "toelichting": {
       "type": "string",
@@ -913,7 +955,7 @@
         "onderbouwing": {
           "type": "string",
           "minLength": 1,
-          "description": "Verplicht, behalve bij een relationeel kenmerk met ja waarvan `naar` alleen element-id's noemt (script)"
+          "description": "Verplicht, behalve bij een relatiekenmerk met ja waarvan `naar` alleen element-id's noemt (script)"
         },
         "bronnen": {
           "type": "array",
@@ -966,7 +1008,7 @@
               }
             ]
           },
-          "description": "Alleen bij een relationeel kenmerk (vervult_een_rol, voert_gedrag_uit, ontsluit_een_dienst, toegewezen_partij, gebruikt_objecten, aanleiding, gerealiseerd_door, leidt_tot_gedrag, bijdrage_aan_groter_proces, omvat_processen, levert_aanbod, bedient_gedrag, in_functie_indeling, leidt_tot_gebeurtenis, wordt_bewerkt, omvat_diensten_en_afspraken, is_grondslag_voor) met ja: de tegenpartij van de relatie (O3)"
+          "description": "Alleen bij een relatiekenmerk (vervult_een_rol, voert_gedrag_uit, ontsluit_een_dienst, toegewezen_partij, gebruikt_objecten, aanleiding, gerealiseerd_door, leidt_tot_gedrag, omvat_processen, bedient_gedrag, in_functie_indeling, wordt_bewerkt, omvat_diensten_en_afspraken, is_grondslag_voor) met ja: de tegenpartij van de relatie (O3)"
         },
         "gemma_relatie": {
           "type": "array",
@@ -975,7 +1017,7 @@
             "type": "string",
             "pattern": "^id-"
           },
-          "description": "Alleen bij in_functie_indeling, zelfstandige_specialisatie: de GEMMA-relaties waarop de plek in een GEMMA-indeling steunt, in plaats van een bron (regel Elke claim een bron); het script toetst ze aan het model"
+          "description": "Alleen bij in_functie_indeling: de GEMMA-relaties waarop de plek in een GEMMA-indeling steunt, in plaats van een bron (regel Elke claim een bron); het script toetst ze aan het model"
         }
       },
       "additionalProperties": false

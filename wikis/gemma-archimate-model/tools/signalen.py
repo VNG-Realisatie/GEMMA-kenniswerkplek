@@ -317,12 +317,6 @@ def kennismodel(alle: dict[str, dict], uitkomsten: dict[str, dict | None], zonde
         if bid not in sleutel or bid in zonder:
             continue
         for kenmerk, k in bepaal_type.antwoorden(d).items():
-            if k["waarde"] == "nee" and kenmerk in bepaal_type.RELATIONEEL:
-                met = [x for x in sleutel if x != bid and bepaal_type.relaties_bij(bid, kenmerk, x, alle)]
-                if met:
-                    w.append(f"{bid}: kenmerk {kenmerk} is nee, maar er is een relatie met {', '.join(met)}: is het "
-                             "kenmerk ja, met de tegenpartij in `naar`? (regel Beslistabel beslist)")
-                continue
             kern = km.kernrelaties(kenmerk)
             if k["waarde"] != "ja" or not kern or any(isinstance(x, dict) for x in k.get("naar") or []):
                 continue  # een potentiële relatie met naam en type is vastgelegd

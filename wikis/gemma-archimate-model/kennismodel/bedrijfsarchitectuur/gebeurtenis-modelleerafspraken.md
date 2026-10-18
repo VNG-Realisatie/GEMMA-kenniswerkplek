@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Iets dat binnen of buiten een organisatie is gebeurd en binnen die organisatie of daarbuiten gevolgen heeft. (GEMMA) |
 | In Over GEMMA | ja (Gebeurtenis) |
 | Duiding | Ogenblikkelijk voorval dat gedrag start of afsluit (verhuizing, aanvraag ontvangen). |
-| Herken je aan | *gedrag* en *toestandsverandering*. Moet ja: *leidt tot gedrag* (kernrelatie); hoogstens 1 nee: *komt herhaald voor*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *gedrag* en *toestandsverandering*. Toetskenmerken, alle ja: *leidt tot gedrag* †, *komt herhaald voor*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Gebeurtenis ─triggering→ Bedrijfsproces; Gebeurtenis ─triggering→ Bedrijfsinteractie |
 | Eigenschappen | `gemma` · `gemma_generiek` · `ggm` · `data_objecten` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Procesindeling naar kernobject](../indelingen.md); [Procesindeling naar soort werk](../indelingen.md) (bij *generiek*) |

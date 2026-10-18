@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Een organisatie, afdeling daarbinnen of persoon die activiteiten kan uitvoeren. (GEMMA) |
 | In Over GEMMA | ja (Actor) |
 | Duiding | Persoon, organisatie of eenheid, ook extern of generiek (inwoner), en een samenwerkingsverband met eigen rechtspersoon (GGD). Hangt alleen via een rol aan gedrag en objecten. |
-| Herken je aan | *handelende partij* met *los van verantwoordelijkheid*; of *samenwerkingsverband* met *eigen rechtspersoon*. Moet ja: *vervult een rol* (kernrelatie), *soort partij*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *handelende partij* met *los van verantwoordelijkheid*; of *samenwerkingsverband* met *eigen rechtspersoon*. Toetskenmerken, alle ja: *vervult een rol* †. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Actor ─toewijzing→ Rol |
 | Eigenschappen | `doelgroep` (verplicht) · `gemma` · `ggm` · `data_objecten` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Doelgroepindeling](../indelingen.md) |

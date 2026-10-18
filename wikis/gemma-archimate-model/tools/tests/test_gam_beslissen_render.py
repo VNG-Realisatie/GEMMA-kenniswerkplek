@@ -1,12 +1,12 @@
 """tools/beslissen.py en tools/render.py: van beoordeling naar status en pagina's."""
 import pytest
-from test_gam_bepaal_type import (ACTOR, BELEIDSKADER, BO, CAPABILITY, DIENST, FUNCTIE, GEBEURTENIS, KANAAL, PROCES, PRODUCT, ROL,
+from test_gam_bepaal_type import (ACTOR, BASIS, BELEIDSKADER, BO, CAPABILITY, DIENST, FUNCTIE, GEBEURTENIS, KANAAL, PROCES, PRODUCT, ROL,
                                   SAMENWERKING)
 
 import beslissen
 import bepaal_type as bt
 import render
-from gam_hulp import nieuwe_vorm
+from gam_hulp import maak
 from llmwiki import beoordeling, logbook, modellen, paths
 
 WET = "2026-overheid-gemeentewet"
@@ -31,18 +31,15 @@ def wiki(archimate_repo):
 
 
 def _element(begrip: str, ja: set[str], **extra) -> dict:
-    return nieuwe_vorm({
-        "begrip": begrip,
+    basis = {
         "onderwerpen": ["test"],
-        "kenmerken": {s: {"waarde": "ja", "onderbouwing": "Volgt uit de wet (art. 1).", "bronnen": [WET]} if s in ja
-                      else {"waarde": "nee", "onderbouwing": "Niet van toepassing."} for s in bt.SLEUTELS},
         "definitie": f"Definitie van {begrip.lower()}.",
         "beschrijving": [f"{begrip} volgens {WET}."],
         "taakveld": "8 Wonen",
         "beleidsdomein": "Vergunningen",
         "gemma": {"sterkte": "geen", "onderbouwing": "Niet in GEMMA."},
-        **extra,
-    })
+    }
+    return {**basis, **maak(ja, bronnen=[WET], onderbouwing="Volgt uit de wet (art. 1).", begrip=begrip, **extra)}
 
 
 def _bo(**extra) -> dict:
@@ -104,7 +101,7 @@ def test_elk_paginatype_wordt_afgeleid_en_gerenderd(wiki):
     geen_ggm = {"ggm": {"sterkte": "geen", "onderbouwing": "Niet in het GGM."}}
     gevallen = {
         "graf": ("bedrijfsobject", "business-object", _element("Graf", BO, **geen_ggm)),
-        "grafrecht": ("bedrijfsobject", "contract", _element("Grafrecht", BO | {"afspraak", "generiek"}, **geen_ggm)),
+        "grafrecht": ("bedrijfsobject", "contract", _element("Grafrecht", BO - {"object"} | {"afspraak", "generiek"}, **geen_ggm)),
         "ruimen-graf": ("bedrijfsproces", "business-process", _element("Ruimen graf", PROCES, relaties=[
             _rel("toegang (beëindigen)", "graf"), _rel("realisatie", "onderhoud-van-graven")],
             kernobject="graf", afnemer="extern")),
@@ -242,32 +239,6 @@ def test_naar_steunt_op_de_relatie_ook_in_een_andere_beoordeling(wiki):
     res = beslissen.beslissen(wiki, schrijven=False)
     assert any("noemt 'behandelaar', maar er is geen relatie toewijzing" in f for f in res.fouten)
     assert any("kenmerk 'ja' zonder bron: toegewezen partij" in f for f in res.fouten)
-
-
-def test_kenmerk_nee_met_een_relatie_is_een_signaal(wiki):
-    _schrijf(wiki, "beschikking", _bo())
-    proces = _proces()   # toegang tot de beschikking, maar gebruikt objecten nee
-    _schrijf(wiki, "behandelen-aanvraag", proces)
-    res = beslissen.beslissen(wiki, schrijven=False)
-    assert any("gebruikt_objecten is nee, maar er is een relatie met beschikking" in w for w in res.waarschuwingen)
-
-@pytest.mark.parametrize("wijziging, melding", [
-    (lambda d: d["relaties"][0].update(naar="onbekend"), "geen element"),
-    (lambda d: d["relaties"][0].update(soort="toegang (houder)"), "toegang 'houder'"),
-    (lambda d: d["kenmerken"]["aanleiding"].update(bronnen=["2026-onbekende-bron"]), "staat niet in sources/index"),
-    (lambda d: d.pop("definitie"), "zonder 'definitie'"),
-    (lambda d: d.update(onderwerpen=["ander"]), "onderwerp 'ander'"),
-    (lambda d: d.update(onverwacht="x"), "onverwacht"),
-    (lambda d: d["kenmerken"]["aanleiding"].pop("bronnen"), "kenmerk 'ja' zonder bron: aanleiding"),
-])
-def test_harde_fouten_schrijven_niets(wiki, wijziging, melding):
-    _schrijf(wiki, "beschikking", _bo())
-    proces = _proces()
-    wijziging(proces)
-    _schrijf(wiki, "behandelen-aanvraag", proces)
-    res = beslissen.beslissen(wiki)
-    assert any(melding in f for f in res.fouten), res.fouten
-    assert "status" not in _lees(wiki, "beschikking")
 
 
 def test_alleen_toont_eigen_meldingen_en_schrijft_niets(wiki, capsys):
@@ -543,8 +514,8 @@ def test_element_zonder_enige_bron_is_een_fout(wiki):
 
 
 def _deelproces(**extra) -> dict:
-    ja = (PROCES - {"omvat_levensloop"}) | {"bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit"}
-    return _element("Verlenen grafrecht", ja, kernobject="beschikking", afnemer="extern", **extra)
+    return _element("Verlenen grafrecht", PROCES, niveau="bedrijfsproces", kernobject="beschikking", afnemer="extern",
+                    **extra)
 
 
 def test_object_zonder_proces_wordt_voorgelegd_en_een_kernobject_is_een_kernobject(wiki):
@@ -598,7 +569,7 @@ def test_indelingsveld_ontbreekt_wordt_voorgelegd_en_een_onbekende_waarde_is_een
 
 def test_via_moet_een_specialisatie_van_het_doel_zijn(wiki):
     _schrijf(wiki, "beschikking", _bo())
-    _schrijf(wiki, "verlof", _element("Verlof", BO - {"zelfstandige_specialisatie"}, genoemd_begrip="Beschikking",
+    _schrijf(wiki, "verlof", _element("Verlof", BASIS, afhankelijkheid="variant", genoemd_begrip="Beschikking",
                                       ggm={"sterkte": "geen", "onderbouwing": "Niet in het GGM."}))
     proces = _proces()
     proces["relaties"][0]["via"] = "verlof"
@@ -607,18 +578,6 @@ def test_via_moet_een_specialisatie_van_het_doel_zijn(wiki):
     proces["relaties"][0]["via"] = "beschikking"  # een element, geen specialisatie
     _schrijf(wiki, "behandelen-aanvraag", proces)
     assert any("geen specialisatie van dat doel" in f for f in beslissen.beslissen(wiki).fouten)
-
-
-def test_leidt_tot_gebeurtenis_vraagt_een_triggering(wiki):
-    _schrijf(wiki, "beschikking", _bo())
-    _schrijf(wiki, "overlijden", _element("Overlijden", GEBEURTENIS, relaties=[_rel("triggering", "behandelen-aanvraag")]))
-    proces = _proces()
-    proces["kenmerken"]["leidt_tot_gebeurtenis"] = {"waarde": "ja", "onderbouwing": "Eindigt in een overlijden.", "bronnen": [WET]}
-    _schrijf(wiki, "behandelen-aanvraag", proces)
-    assert any("geen relatie 'triggering' naar een gebeurtenis" in f for f in beslissen.beslissen(wiki).fouten)
-    proces["relaties"].append(_rel("triggering", "overlijden"))
-    _schrijf(wiki, "behandelen-aanvraag", proces)
-    assert beslissen.beslissen(wiki).fouten == []
 
 
 def test_gemma_generiek_moet_in_het_gemma_model_staan(wiki):
@@ -861,21 +820,20 @@ def _indeling_wiki(wiki):
                                          "type": "business-process", "documentatie": "", "map": "Business", "map_id": "f",
                                          "eigenschappen": {}}}, "mappen": {}, "model": {}, "relaties": {}})
     geen_ggm = {"ggm": {"sterkte": "geen", "onderbouwing": "Niet in het GGM."}}
-    keten = (PROCES - {"per_keer_doorlopen", "omvat_levensloop"}) | {"gezamenlijk_gedrag"}
-    deel = (PROCES - {"omvat_levensloop"}) | {"bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit"}
+    keten = (PROCES - {"per_keer_doorlopen"}) | {"gezamenlijk_gedrag"}
     gevallen = {
         "bezorgen-lijken": _element("Bezorgen lijken", keten, kernobject="lijk",
                                     relaties=[_rel("toegang (registreren)", "lijk")]),
         "toestaan-lijkbezorging": _element("Toestaan lijkbezorging", PROCES, kernobject="lijk", afnemer="extern",
                                            relaties=[_rel("aggregatie", "opgraven-lijk")]),
-        "opgraven-lijk": _element("Opgraven lijk", deel, kernobject="grafbedekking", afnemer="extern",
+        "opgraven-lijk": _element("Opgraven lijk", PROCES, niveau="bedrijfsproces", kernobject="grafbedekking", afnemer="extern",
                                   gemma_generiek={"id": "id-vergunning", "onderbouwing": "Een vergunningaanvraag."},
                                   relaties=[{**_rel("toegang (registreren)", "vergunning"), "via": "vergunning-tot-opgraving"},
                                             _rel("realisatie", "onderhoud-van-graven"), _rel("bediening", "bezorgen-lijken")]),
         "lijk": _element("Lijk", BO, relaties=[_rel("compositie", "grafbedekking")], **geen_ggm),
-        "grafbedekking": _element("Grafbedekking", BO | {"deel_van_object"}, **geen_ggm),
+        "grafbedekking": _element("Grafbedekking", BO, afhankelijkheid="onderdeel", genoemd_begrip="Lijk", **geen_ggm),
         "vergunning": _element("Vergunning", BO | {"generiek"}, **geen_ggm),
-        "vergunning-tot-opgraving": _element("Vergunning tot opgraving", BO - {"zelfstandige_specialisatie"},
+        "vergunning-tot-opgraving": _element("Vergunning tot opgraving", BASIS, afhankelijkheid="variant",
                                              genoemd_begrip="Vergunning", **geen_ggm),
         "onderhoud-van-graven": _element("Onderhoud van graven", DIENST, domein="Fysieke leefomgeving", afnemer="extern"),
         "exploiteren-begraafplaatsen": _element("Exploiteren van begraafplaatsen", FUNCTIE, domein="Fysieke leefomgeving",

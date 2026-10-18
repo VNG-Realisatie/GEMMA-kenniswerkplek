@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Een Product is een gebundeld aanbod van diensten met bijbehorende afspraken, geleverd door een organisatie aan een afnemer en met waarde voor die afnemer. (GEMMA) |
 | In Over GEMMA | ja (Product) |
 | Duiding | Wat de gemeente als geheel aanbiedt, zoals in de productencatalogus: diensten met afspraken, geen losse objecten. Een verleend exemplaar is een bedrijfsobject, geen product. |
-| Herken je aan | *aanbod als geheel*. Moet ja: *omvat diensten en afspraken* (kernrelatie), *zelfstandig aanbod*; hoogstens 1 nee: *afnemer*, *benoembaar resultaat*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *aanbod als geheel*. Toetskenmerken, alle ja: *omvat diensten en afspraken* †, *zelfstandig aanbod*, *afnemer*, *benoembaar resultaat*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Product ─aggregatie→ Dienst; Product ─aggregatie→ Afspraak |
 | Eigenschappen | `afnemer` (verplicht) · `domein` (verplicht) · `taakveld` · `beleidsdomein` · `gemma` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Beleidsdomeinindeling](../indelingen.md); [Functie-indeling naar domein](../indelingen.md) |

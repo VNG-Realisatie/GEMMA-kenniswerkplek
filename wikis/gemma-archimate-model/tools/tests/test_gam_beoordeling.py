@@ -59,9 +59,9 @@ def test_toon_oordeel_laat_scriptvelden_en_standaard_nee_weg(wiki):
 
 def test_zet_valideert_en_weigert_scriptvelden(wiki):
     cli.zet(wiki, "aanvraag", "definitie", "Nieuwe definitie.")
-    cli.zet(wiki, "aanvraag", "kenmerken.herkenbaar.onderbouwing", "Anders.")
+    cli.zet(wiki, "aanvraag", "kenmerken.wordt_bewerkt.onderbouwing", "Anders.")
     data = beoordeling.laad(wiki / "onderwerpen" / "demo" / "beoordelingen" / "aanvraag.yaml")
-    assert data["definitie"] == "Nieuwe definitie." and data["kenmerken"]["herkenbaar"]["onderbouwing"] == "Anders."
+    assert data["definitie"] == "Nieuwe definitie." and data["kenmerken"]["wordt_bewerkt"]["onderbouwing"] == "Anders."
     assert data["status"] == "review" and "beslist" not in data       # beslist staat in beslist.yaml naast de map
     assert cli._alle(wiki)["aanvraag"][1]["beslist"]["uitkomst"]["archimate_type"] == "business-object"
     with pytest.raises(cli.Fout):
@@ -125,35 +125,56 @@ def test_regel_naar_antwoord():
             cli.regel_naar_antwoord("x", fout)
 
 
-def test_normaliseer_schrijfvorm_en_nee_buiten_het_pad(wiki):
+def test_normaliseer_schrijfvorm_en_standaardantwoord(wiki):
     pad = wiki / "onderwerpen" / "demo" / "beoordelingen" / "aanvraag.yaml"
     data = beoordeling.laad(pad)
-    data["kenmerken"]["herkenbaar"] = "ja — Komt in de Awb voor [2024-wet-a]"
-    data["kenmerken"]["afspraak"] = "nee — Geen overeenkomst"
-    data["kenmerken"]["eigen_besluit"]["bronnen"] = ["2024-wet-a"]  # buiten het pad, met bron: blijft
+    data["kenmerken"]["herkenbaar"] = "ja — Komt in de Awb voor [2024-wet-a]"      # het standaardantwoord, met een bron: blijft
+    data["kenmerken"]["onderscheidbare_exemplaren"] = "ja — Elke aanvraag apart"                           # een toetskenmerk dat standaard ja is: valt weg
+    data["kenmerken"]["afhankelijkheid"] = "zelfstandig — Eigen betekenis"         # het standaardantwoord: valt weg
+    data["kenmerken"]["levenscyclus"] = "nee — Eén exemplaar"                       # een nee op het pad blijft
     beoordeling.schrijf(pad, data)
     uit = cli.normaliseer(wiki, ["aanvraag"])
     assert uit[0].startswith("aanvraag: genormaliseerd (") and uit[-1] == "Draai tools/beslissen.py."
     kenmerken = beoordeling.laad(pad)["kenmerken"]
-    assert kenmerken["herkenbaar"] == {"waarde": "ja", "onderbouwing": "Komt in de Awb voor", "bronnen": ["2024-wet-a"]}
-    assert kenmerken["afspraak"] == {"waarde": "nee", "onderbouwing": "Geen overeenkomst"} and "eigen_besluit" in kenmerken
-    assert "klant_tot_klant" not in kenmerken and "afspraak" in kenmerken  # buiten het pad weg, op het pad blijft
+    assert "herkenbaar" not in kenmerken and "onderscheidbare_exemplaren" not in kenmerken and "afhankelijkheid" not in kenmerken
+    assert kenmerken["levenscyclus"] == {"waarde": "nee", "onderbouwing": "Eén exemplaar"}
     assert list(kenmerken) == [s for s in cli.bepaal_type.SLEUTELS if s in kenmerken]
     assert cli.normaliseer(wiki, ["aanvraag"]) == ["Niets te normaliseren."]
-    del kenmerken["afspraak"]
+    del kenmerken["wordt_bewerkt"]
     beoordeling.schrijf(pad, {**beoordeling.laad(pad), "kenmerken": kenmerken})
-    assert cli.normaliseer(wiki, ["aanvraag"]) == ["aanvraag: op het pad nog niet beantwoord: afspraak"]
+    assert cli.normaliseer(wiki, ["aanvraag"]) == ["aanvraag: op het pad nog niet beantwoord: wordt bewerkt"]
     with pytest.raises(cli.Fout):
         cli.normaliseer(wiki, [])
+
+
+def test_normaliseer_vult_de_tegenpartij_uit_de_relaties(wiki):
+    """V10: een relatiekenmerk met ja zonder `naar` krijgt de elementen uit de bestaande relaties; wat de AI noemt, blijft."""
+    proces = {"begrip": "Behandelen", "onderwerpen": ["demo"], "vak": "bedrijf/gedrag-intern", "soort_gedrag": "per_keer_doorlopen",
+              "kenmerken": {"procesniveau": {"waarde": "levensloopproces", "onderbouwing": "x"},
+                            "toegewezen_partij": {"waarde": "ja", "onderbouwing": "x"},
+                            "aanleiding": {"waarde": "ja", "naar": [{"naam": "Ontvangst", "type": "gebeurtenis"}],
+                                           "onderbouwing": "x", "bronnen": ["2026-overheid-gemeentewet"]}},
+              "kernobject": "aanvraag"}
+    alle = {"behandelen": {**proces, "relaties": []},
+            "behandelaar": {"begrip": "Behandelaar", "onderwerpen": ["demo"],
+                            "relaties": [{"soort": "toewijzing", "naar": "behandelen"}, {"soort": "toewijzing", "naar": "elders"}],
+                            "beslist": {"uitkomst": {"soort": "element", "paginatype": "rol"}}},
+            "ontvangst": {"begrip": "Ontvangst", "onderwerpen": ["demo"],
+                          "relaties": [{"soort": "triggering", "naar": "behandelen"}],
+                          "beslist": {"uitkomst": {"soort": "element", "paginatype": "gebeurtenis"}}}}
+    nieuw, _ = cli.normaliseer_data(proces, "behandelen", alle)
+    assert nieuw["kenmerken"]["toegewezen_partij"]["naar"] == ["behandelaar"]
+    assert nieuw["kenmerken"]["aanleiding"]["naar"] == [{"naam": "Ontvangst", "type": "gebeurtenis"}]
+    assert cli.tegenpartijen("behandelen", "aanleiding", alle) == ["ontvangst"]
 
 
 def test_zet_kenmerk_in_schrijfvorm(wiki):
     cli.normaliseer(wiki, ["besluit"])
     with pytest.raises(cli.Fout):
-        cli.zet(wiki, "besluit", "kenmerken.afspraak", "nee")   # een nee heeft een onderbouwing
-    cli.zet(wiki, "besluit", "kenmerken.afspraak", "nee — Een eenzijdig besluit")
+        cli.zet(wiki, "besluit", "kenmerken.levenscyclus", "nee")   # een nee heeft een onderbouwing
+    cli.zet(wiki, "besluit", "kenmerken.levenscyclus", "nee — Een eenzijdig besluit")
     kenmerken = beoordeling.laad(wiki / "onderwerpen" / "demo" / "beoordelingen" / "besluit.yaml")["kenmerken"]
-    assert kenmerken["afspraak"] == {"waarde": "nee", "onderbouwing": "Een eenzijdig besluit"}
+    assert kenmerken["levenscyclus"] == {"waarde": "nee", "onderbouwing": "Een eenzijdig besluit"}
 
 
 def _sjabloon_wiki(archimate_repo):
@@ -194,7 +215,6 @@ def test_sjabloon_dienst_met_nieuw_proces_komt_door_beslissen(archimate_repo):
     assert "status" not in dienst and "beslist" not in dienst
     assert dienst["vak"] == "bedrijf/gedrag-extern" and dienst["bronnen"] == ["2026-overheid-gemeentewet"]
     assert dienst["kenmerken"]["gerealiseerd_door"] == {"waarde": "ja", "naar": ["voeren-verweer-in-beroep"]}
-    assert dienst["kenmerken"]["afnemer"]["bronnen"] == ["2026-overheid-gemeentewet"]
     res = beslissen.beslissen(wiki, schrijven=False)
     assert any("beroep: nog een TODO" in f for f in res.fouten)          # de onderbouwing is verplicht
     assert not any("kenmerken" in f and "pad" in f for f in res.fouten)

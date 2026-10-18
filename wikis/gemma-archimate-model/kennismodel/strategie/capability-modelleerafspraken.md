@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Een vermogen waarover een organisatie, persoon of systeem beschikt. (GEMMA) |
 | In Over GEMMA | ja (Capability) |
 | Duiding | Strategisch: wat de gemeente moet kunnen om haar opgaven waar te maken, los van hoe, door wie, in welke volgorde en met welk kanaal of systeem. Het verandert met de strategische opgaven en stuurt waarin zij investeert en wat zij ontwikkelt. Heeft het een uitvoerder of gebruikt het objecten, dan is het uitvoerend: een functie of proces. |
-| Herken je aan | *vermogen*. Moet ja: *gerealiseerd door* (kernrelatie), *beoordeelbaar*, *onderscheidend*, *stabiel over tijd*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *vermogen*. Toetskenmerken, alle ja: *gerealiseerd door* †, *beoordeelbaar*, *onderscheidend*, *stabiel over tijd*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfsfunctie ─realisatie→ Capability |
 | Niveaus | capability: het grofste niveau dat genoeg onderscheid geeft · deelcapability: een deel dat apart ontwikkeld, beoordeeld of bestuurd wordt |
 | Eigenschappen | `domein` (verplicht) · `gemma` ([betekenis](../README.md#eigenschappen)) |

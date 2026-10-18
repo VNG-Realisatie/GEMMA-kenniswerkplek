@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Een concept dat binnen een bepaald domein wordt gebruikt en betekenis heeft. (GEMMA) |
 | In Over GEMMA | ja (Bedrijfsobject) |
 | Duiding | Een ding waar de gemeente mee werkt: het wordt geregistreerd, bijgewerkt of geraadpleegd door gemeentelijk gedrag. De soort regeling (Regeling) is ook een bedrijfsobject. |
-| Herken je aan | *ding*; *afspraak* en *waarneembare vorm* nee. Moet ja: *wordt bewerkt* (kernrelatie); hoogstens 1 nee: *onderscheidbare exemplaren*, *levenscyclus*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *object*. Toetskenmerken, alle ja: *wordt bewerkt* †, *onderscheidbare exemplaren*, *levenscyclus*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfsproces ─toegang→ Bedrijfsobject; Bedrijfsfunctie ─toegang→ Bedrijfsobject; Bedrijfsinteractie ─toegang→ Bedrijfsobject |
 | Niveaus | kernobject: het object waarvan één levensloopproces de hele levensloop omvat · subobject: een deel van een kernobject, met een eigen bedrijfsproces · generiek object: dezelfde betekenis in veel onderwerpen; domeinspecialisaties krijgen geen pagina en staan in relaties met `via` · onderdeel zonder eigen proces, en invoer die een andere partij maakt: geen pagina |
 | Eigenschappen | `taakveld` · `beleidsdomein` · `ggm` · `gemma` · `data_objecten` ([betekenis](../README.md#eigenschappen)) |

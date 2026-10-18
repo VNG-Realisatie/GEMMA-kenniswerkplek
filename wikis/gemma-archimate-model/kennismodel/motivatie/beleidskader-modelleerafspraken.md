@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Beleidskader is gebaseerd op bestaand overheidsbeleid (Nationaal en Europees) en op de instrumenten die in het kader van dat beleid zijn ontwikkeld, zoals wetten, regelgeving, Kamerstukken en bestuursakkoorden. (NORA) |
 | In Over GEMMA | ja (Beleidskader) |
 | Duiding | Een concreet benoemde regeling als geheel die voor alle gemeenten geldt: Europese regelgeving, rijksregelgeving of een VNG-modelverordening van gemeentelijke regelgeving. |
-| Herken je aan | *regeling als geheel* en *landelijk*. Moet ja: *is grondslag voor* (kernrelatie); hoogstens 1 nee: *in werking*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *regeling als geheel* en *landelijk*. Toetskenmerken, alle ja: *is grondslag voor* †, *in werking*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Beleidskader ─associatie (gericht)→ Product; Beleidskader ─associatie (gericht)→ Dienst; Beleidskader ─associatie (gericht)→ Bedrijfsproces |
 | Eigenschappen | `regelgever` (verplicht) · `taakveld` · `beleidsdomein` · `gemma` · `kwaliteitsdoelen` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Beleidsdomeinindeling](../indelingen.md); [Grondslagindeling](../indelingen.md) |

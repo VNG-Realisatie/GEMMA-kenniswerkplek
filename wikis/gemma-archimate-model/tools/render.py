@@ -75,8 +75,8 @@ STATUSREGEL = {
 UITKOMST = {"synoniem": "synoniem", "bron": "bron, geen begrip", "buiten_scope": "buiten scope",
             "buiten_model": "buiten het model", "eigenschap": "eigenschap", "onderdeel": "onderdeel",
             "verwijzing": "verwijzing", "specialisatie": "specialisatie zonder pagina", "geen_element": "geen element",
-            "conflict": "tegenstrijdige kenmerken", "herkend": "herkend, geen paginatype", "geen_pagina": "geen pagina"}
-ARCHIMATE_NAAM = {t.archimate_type: t.naam for t in bepaal_type.TYPEN if not t.keuze}
+            "conflict": "tegenstrijdige kenmerken", "geen_grondslag": "geen landelijke grondslag", "herkend": "herkend, geen paginatype", "geen_pagina": "geen pagina"}
+ARCHIMATE_NAAM = {t.archimate_type: t.naam for t in bepaal_type.TYPEN if not t.niveau}
 # De vraag per kenmerk, zonder de aanwijzingen ("Noem ..."): de pagina toont alleen de kenmerken met ja.
 VRAAG = {k.sleutel: re.sub(r"\s*Noem [^?.]*[.?]", "", k.vraag).strip() for k in bepaal_type.KENMERKEN}
 
@@ -219,40 +219,61 @@ class Wiki:
 
 
 def _kenmerken(w: Wiki, van: str, d: dict) -> list[str]:
-    """De sectie Kenmerken: de keuzevelden, de poort en de kenmerken met ja. Een relationeel kenmerk noemt zijn
-    tegenpartij (`naar`): een element met een link, of naam en type van een element dat (nog) niet bestaat."""
+    """De sectie Kenmerken: alle keuzekenmerken en kenmerken die tot het element leiden, ook de standaardantwoorden, elk
+    met zijn bron. Een relatiekenmerk noemt zijn tegenpartij (`naar`): een element met een link, of naam en type van een
+    element dat (nog) niet bestaat. Een antwoord zonder eigen bron steunt op de bronnen van de beoordeling."""
     expliciet = bepaal_type.antwoorden(d)
+    hoofdbronnen = w.bronnen(van, d.get("bronnen") or (d.get("beslist") or {}).get("bronnen") or [])
     keuze = []
     if d.get("vak"):
         v = bepaal_type.VAK[d["vak"]]
         keuze.append(f"**Vak**: {v.label} ({v.typen}).")
     hoofd, soort = bepaal_type.hoofdkenmerk(d), bepaal_type.soort_gedrag(d)
     if hoofd:
-        keuze.append(f"**Hoofdkenmerk**: {'ding' if hoofd == bepaal_type.DING else bepaal_type.NAAM[hoofd]}.")
+        keuze.append(f"**Hoofdkenmerk**: {bepaal_type.NAAM[hoofd]}.")
     if soort:
         keuze.append(f"**Soort gedrag**: {bepaal_type.NAAM[soort]}.")
-    afwijking = [s for s in bepaal_type.POORT if s in expliciet]
-    poort = [] if afwijking else ["De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit "
-                                  "onderwerp); dat steunt op de bronnen onder Herkomst."]
+    k, extra = bepaal_type.waarden(d), bepaal_type.extra_velden(d)
+    u = (d.get("beslist") or {}).get("uitkomst") or {}   # het type, ook bij een subobject (een onderdeel dat het script een element maakt)
+    t = bepaal_type.typedef(u["paginatype"], u["archimate_type"], k.get("procesniveau"))
     rijen = []
-    for s in bepaal_type.SLEUTELS:
-        a = expliciet.get(s)
-        if not a or a["waarde"] != "ja":
-            continue
-        tegenpartij = [w.link(van, x) if isinstance(x, str) else f"{x['naam']} ({x['type']}, nog geen element)"
-                       for x in a.get("naar") or []]
-        delen = ([f"Ja, met {', '.join(tegenpartij)}" + ("." if not a.get("onderbouwing") else ":")] if tegenpartij else [])
+
+    def rij(s: str, a: dict | None, standaard: bool) -> None:
+        a = a or {"waarde": bepaal_type.STANDAARD.get(s, "nee")}
+        if a["waarde"] == "nee" and not a.get("onderbouwing"):
+            return
+        if s in bepaal_type.KEUZEKENMERK:
+            tegenpartij, kop = [], f"**{bepaal_type.NAAM[s]}**: {a['waarde']}"
+            if s == "procesniveau" and d.get("kernobject"):
+                kop += f", kernobject {w.link(van, d['kernobject'])}"
+            label = kop
+        else:
+            tegenpartij = [w.link(van, x) if isinstance(x, str) else f"{x['naam']} ({x['type']}, nog geen element)"
+                           for x in a.get("naar") or []]
+            label = f"**{bepaal_type.NAAM[s]}**: {VRAAG[s]}"
+        delen = ([f"{'Ja' if s not in bepaal_type.KEUZEKENMERK else 'Gekozen'}, met {', '.join(tegenpartij)}"
+                  + ("." if not a.get("onderbouwing") else ":")] if tegenpartij else [])
         if a.get("onderbouwing"):
-            delen.append(w.tekst(van, a["onderbouwing"] if tegenpartij else _ja(a["onderbouwing"])))
-        delen += [w.bronnen(van, a.get("bronnen", [])),
+            delen.append(w.tekst(van, a["onderbouwing"] if tegenpartij or s in bepaal_type.KEUZEKENMERK
+                                 else _ja(a["onderbouwing"])))
+        elif not tegenpartij:
+            delen.append("Ja, standaard." if a["waarde"] == "ja" else f"{a['waarde'].capitalize()}, standaard.")
+        delen += [w.bronnen(van, a["bronnen"]) if a.get("bronnen") else hoofdbronnen if standaard else "",
                   f"(GEMMA {', '.join(a['gemma_relatie'])})" if a.get("gemma_relatie") else ""]
-        rijen.append([f"**{bepaal_type.NAAM[s]}**: {VRAAG[s]}", " ".join(x for x in delen if x)])
-    standaard = [bepaal_type.NAAM[s] for s, x in bepaal_type.STANDAARD.items()
-                 if x == "ja" and s not in bepaal_type.POORT and s not in expliciet]
-    uitleg = "De kenmerken met ja; de andere zijn nee" + (
-        f", behalve *{'*, *'.join(standaard)}* (standaard ja)." if standaard else ".")
-    return [" ".join(keuze + poort), "", uitleg, "", *_tabel(["Kenmerk", "Onderbouwing"], rijen)] if rijen else \
-        [" ".join(keuze + poort), "", uitleg, ""]
+        rijen.append([label, " ".join(x for x in delen if x)])
+
+    for s in ("afhankelijkheid", "procesniveau", "interactievorm"):
+        if s in expliciet or s == "afhankelijkheid":
+            rij(s, expliciet.get(s) or {"waarde": "zelfstandig"}, True)
+    for s in bepaal_type.typeren(k, extra):
+        if s in expliciet:
+            rij(s, expliciet[s], True)
+    for s in t.toets:
+        rij(s, expliciet.get(s), True)
+    tekst = ("De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle "
+             "toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de "
+             "beoordeling.")
+    return [" ".join(keuze), "", tekst, "", *_tabel(["Kenmerk", "Onderbouwing"], rijen)]
 
 
 def _ja(onderbouwing: str) -> str:

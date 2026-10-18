@@ -121,10 +121,14 @@ def oordeel(data: dict) -> dict:
 
 def regel_naar_antwoord(sleutel: str, tekst: str) -> dict | str:
     """De schrijfvorm van één regel, `ja — onderbouwing [bron-id, id-…]`, als antwoord: een id met `id-` is een
-    GEMMA-relatie (`gemma_relatie`), de andere zijn bronnen."""
-    m = re.fullmatch(r"\s*(ja|nee)\b(.*)", tekst, re.S)
+    GEMMA-relatie (`gemma_relatie`), de andere zijn bronnen. Bij een keuzekenmerk staat de waarde in plaats van ja of nee
+    (`variant — onderbouwing [bron-id]`)."""
+    waarden = [w for w, _ in bepaal_type.KEUZEKENMERK[sleutel].waarden] if sleutel in bepaal_type.KEUZEKENMERK \
+        else ["ja", "nee"]
+    m = re.fullmatch(r"\s*(" + "|".join(re.escape(w) for w in sorted(waarden, key=len, reverse=True)) + r")\b(.*)",
+                     tekst, re.S)
     if not m:
-        raise Fout(f"kenmerk {sleutel}: '{tekst}' begint niet met ja of nee")
+        raise Fout(f"kenmerk {sleutel}: '{tekst}' begint niet met {' of '.join(waarden)}")
     waarde, rest = m.group(1), m.group(2).strip()
     ids: list[str] = []
     lijst = re.fullmatch(r"(.*?)\s*\[([^\[\]]*)\]", rest, re.S)
@@ -141,25 +145,63 @@ def regel_naar_antwoord(sleutel: str, tekst: str) -> dict | str:
             **({"gemma_relatie": relaties} if relaties else {})}
 
 
-def normaliseer_data(data: dict) -> tuple[dict, list[str]]:
-    """De kenmerken in de opgeslagen vorm: de schrijfvorm van één regel wordt een object, een nee buiten het pad valt
-    weg (behalve met bronnen of een GEMMA-relatie), de volgorde is die van de vragenlijst. Geeft ook wat op het pad nog
-    open staat."""
+def tegenpartijen(bid: str, sleutel: str, alle: dict[str, dict]) -> list[str]:
+    """De elementen die de relatie van het relatiekenmerk `sleutel` van `bid` uitwerken (V10): in de richting en met een
+    soort van het kenmerk, en van een type dat het kenmerk toestaat (voor zover het type bekend is)."""
+    richting, soorten, typen = bepaal_type.RELATIONEEL[sleutel]
+    if richting == "uit":
+        kandidaten = [r["naar"] for r in (alle.get(bid) or {}).get("relaties") or []
+                      if r["soort"].split(" (")[0] in soorten]
+    else:
+        kandidaten = [van for van, d in alle.items() for r in d.get("relaties") or []
+                      if r["naar"] == bid and r["soort"].split(" (")[0] in soorten]
+    uit = []
+    for x in dict.fromkeys(kandidaten):
+        if x not in alle or x == bid:
+            continue
+        u = (alle[x].get("beslist") or {}).get("uitkomst") or {}
+        if u and (u.get("soort") != "element" or (typen and u.get("paginatype") not in typen)):
+            continue
+        uit.append(x)
+    return sorted(uit)
+
+
+def normaliseer_data(data: dict, bid: str | None = None, alle: dict[str, dict] | None = None) -> tuple[dict, list[str]]:
+    """De kenmerken in de opgeslagen vorm: de schrijfvorm van één regel wordt een object, een kenmerk met het
+    standaardantwoord valt weg (behalve met bronnen of een GEMMA-relatie), een nee buiten het pad valt weg, een
+    relatiekenmerk met ja zonder `naar` krijgt de tegenpartijen uit de bestaande relaties (`alle`: de beoordelingen), en
+    de volgorde is die van de vragenlijst. Geeft ook wat op het pad nog open staat."""
     kenmerken = {s: regel_naar_antwoord(s, a) if isinstance(a, str) else a
                  for s, a in (data.get("kenmerken") or {}).items()}
+    if bid and alle is not None:
+        for s, a in kenmerken.items():
+            if s in bepaal_type.RELATIONEEL and isinstance(a, dict) and a.get("waarde") == "ja" and not a.get("naar"):
+                gevonden = tegenpartijen(bid, s, alle)
+                if gevonden:
+                    kenmerken[s] = {**a, "naar": gevonden}
     tijdelijk = {**data, "kenmerken": kenmerken}
     a, b = bepaal_type.pad(bepaal_type.waarden(tijdelijk), bepaal_type.extra_velden(tijdelijk))
     op_pad = set(a) | set(b)
+    expliciet = bepaal_type._expliciet(bepaal_type.waarden(tijdelijk), bepaal_type.extra_velden(tijdelijk))
 
     def blijft(s: str, x) -> bool:
-        if s in op_pad or s not in bepaal_type.NAAM or bepaal_type.antwoord(kenmerken, s)["waarde"] == "ja":
+        if s not in bepaal_type.NAAM or s in expliciet:
             return True
-        return isinstance(x, dict) and bool(x.get("bronnen") or x.get("gemma_relatie"))
+        steun = isinstance(x, dict) and bool(x.get("bronnen") or x.get("gemma_relatie"))
+        if s in bepaal_type.RELATIONEEL:
+            return s in op_pad or bepaal_type.antwoord(kenmerken, s)["waarde"] == "ja" or steun
+        waarde = bepaal_type.antwoord(kenmerken, s)["waarde"]
+        if s in bepaal_type.STANDAARD and waarde == bepaal_type.STANDAARD[s]:
+            return False
+        if s == "los_van_verantwoordelijkheid":  # het volgt uit het hoofdkenmerk: alleen een afwijking
+            ander = {**tijdelijk, "kenmerken": {t: y for t, y in kenmerken.items() if t != s}}
+            return waarde != bepaal_type.waarden(ander)[s]
+        return s in op_pad or waarde == "ja" or steun
 
-    volgorde = {s: i for i, s in enumerate(bepaal_type.SLEUTELS)}
+    volgorde = {s: i for i, s in enumerate((*bepaal_type.SLEUTELS, *bepaal_type.KEUZEKENMERK))}
     nieuw = dict(sorted(((s, x) for s, x in kenmerken.items() if blijft(s, x)), key=lambda p: volgorde.get(p[0], 999)))
     open_ = [f"`{v}`" for v in bepaal_type.open_keuzevelden(tijdelijk)] \
-        + [bepaal_type.NAAM[s] for s in bepaal_type.te_beantwoorden(a + b) if s not in nieuw]
+        + [bepaal_type.NAAM[s] for s in bepaal_type.te_beantwoorden(a + b, expliciet) if s not in nieuw]
     return {**data, "kenmerken": nieuw}, ([f"op het pad nog niet beantwoord: {', '.join(open_)}"] if open_ else [])
 
 
@@ -170,11 +212,12 @@ def normaliseer(wiki: Path, ids: list[str], alles: bool = False) -> list[str]:
     uit: list[str] = []
     for bid in (sorted(alle) if alles else ids):
         pad, data = _vind(alle, bid)
-        nieuw, meldingen = normaliseer_data(data)
+        nieuw, meldingen = normaliseer_data(data, bid, {b: d for b, (_, d) in alle.items()})
         weg = len(data.get("kenmerken") or {}) - len(nieuw["kenmerken"])
         if nieuw != data:
             _opslaan(wiki, bid, pad, nieuw)
-            uit.append(f"{bid}: genormaliseerd ({weg} nee buiten het pad weggelaten)" if weg else f"{bid}: genormaliseerd")
+            uit.append(f"{bid}: genormaliseerd ({weg} kenmerken met het standaardantwoord weggelaten)" if weg
+                       else f"{bid}: genormaliseerd")
         uit += [f"{bid}: {m}" for m in meldingen]
     if not uit:
         uit.append("Niets te normaliseren.")

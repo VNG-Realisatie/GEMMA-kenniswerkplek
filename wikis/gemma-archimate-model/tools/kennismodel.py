@@ -994,12 +994,11 @@ def _herken(e: Elementtype) -> list[str]:
     regels = []
     for t in _typedefs(e):
         kop = "" if len(_typedefs(e)) == 1 else f"{t.naam}: "
-        moet = [f"*{_kenmerknaam(t.kern)}* (kernrelatie)"] + [f"*{_kenmerknaam(s)}*" for s in t.eis]
-        tekst = f"{kop}{t.bepaald_door}. Moet ja: {', '.join(moet)}"
-        if t.drempel:
-            tekst += f"; hoogstens {bepaal_type.DREMPEL_ONTBREKEND} nee: " + ", ".join(
-                f"*{_kenmerknaam(s)}*" for s in t.drempel)
-        regels.append(tekst + ".")
+        if not t.toets:
+            regels.append(f"{kop}{t.bepaald_door}.")
+            continue
+        moet = [f"*{_kenmerknaam(s)}*" + (" †" if s in bepaal_type.RELATIONEEL else "") for s in t.toets]
+        regels.append(f"{kop}{t.bepaald_door}. Toetskenmerken, alle ja: {', '.join(moet)}.")
     return regels
 
 
@@ -1012,7 +1011,7 @@ def modelleerafspraken(e: Elementtype) -> str:
     if herken:
         kaart.append(["Herken je aan", " ".join(herken) + " Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md)."])
     kern = [r for r in RELATIES if r.kern and (r.doel == e.sleutel or r.bron == e.sleutel)
-            and any(k in {t.kern for t in _typedefs(e)} for k in r.kern)]
+            and any(k in {s for t in _typedefs(e) for s in t.toets} for k in r.kern)]
     if kern:
         kaart.append(["Kernrelatie", "; ".join(f"{_naam(r.bron)} ─{r.soort}→ {_naam(r.doel)}" for r in kern)])
     if e.niveaus:
@@ -1152,13 +1151,15 @@ def indelingen_pagina() -> str:
 def kenmerken_pagina() -> str:
     import bepaal_type
 
-    regels = ["Elk begrip uit een bron krijgt één keer dezelfde vragen. Fase A kiest het vak in de ArchiMate-matrix, het "
-              "hoofdkenmerk en bij gedrag de soort gedrag; de kenmerken controleren die keuze en bepalen het type. De "
-              "beslistabel past daar vaste regels op toe; de uitkomst is het type, of de reden waarom het begrip geen "
-              "eigen pagina krijgt. Een type wordt nooit direct gekozen. Per elementtype staat in zijn "
-              "modelleerafspraken welke kenmerken het type bepalen, welke de kernrelatie is en welke drempel geldt.", "",
-              *bepaal_type.doc_stap0(), *bepaal_type.doc_matrix(), *bepaal_type.doc_vragentabel(),
-              *bepaal_type.doc_stappen()]
+    regels = ["De beslistabel heeft vier fasen, elk met één vraag: *Afbakenen* (wordt dit begrip een eigen element?), "
+              "*Typeren* (welk type en niveau?), *Onderbouwen* (voldoet het element aan zijn type?) en *Indelen* (waar "
+              "hoort het in de indelingen?). De AI kiest de keuzekenmerken en beantwoordt de relatiekenmerken; het script "
+              "past de vaste regels toe, toetst de toetskenmerken en leidt het type en de indeling af. De uitkomst is het "
+              "type, of de reden waarom het begrip geen eigen pagina krijgt. Een type wordt nooit direct gekozen. Per "
+              "elementtype staat in zijn modelleerafspraken welke toetskenmerken het type heeft; een relatiekenmerk "
+              "daaronder heet kernrelatie.", "",
+              *bepaal_type.doc_stap0(), *bepaal_type.doc_matrix(), *bepaal_type.doc_keuzekenmerken(),
+              *bepaal_type.doc_vragentabel(), *bepaal_type.doc_toetskenmerken(), *bepaal_type.doc_stappen()]
     regels = [r[1:] if r.startswith("### ") else r for r in regels]
     return _pagina("kenmerken-en-beslistabel", "Kenmerken en beslistabel", regels)
 

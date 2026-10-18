@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Communicatiekanaal dat bij de dienstverlening wordt gebruikt. Elk kanaal kent verschillende vormen waarin informatie kan worden gedeeld. (NORA) |
 | In Over GEMMA | ja (Kanaal) |
 | Duiding | Loket, website, telefoon. |
-| Herken je aan | *toegangspunt*. Moet ja: *ontsluit een dienst* (kernrelatie). Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *toegangspunt*. Toetskenmerken, alle ja: *ontsluit een dienst* †. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Kanaal ─toewijzing→ Dienst |
 | Eigenschappen | `doelgroep` (verplicht) · `gemma` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Doelgroepindeling](../indelingen.md) |

@@ -18,7 +18,7 @@ Een typepagina toont de relaties waarvan het type de bron is; de inkomende staan
 
 ## De ArchiMate-matrix
 
-Fase A kiest eerst het vak: de laag, het aspect en intern of extern, zoals in ArchiMate. Het vak bepaalt welke hoofdkenmerken en soorten gedrag er zijn, en welke vragen volgen. Motivatie kent geen aspecten.
+Typeren kiest eerst het vak: de laag, het aspect en intern of extern, zoals in ArchiMate. Het vak bepaalt welke hoofdkenmerken en soorten gedrag er zijn, en welke vragen volgen. Motivatie kent geen aspecten.
 
 | Laag | Actief intern | Actief extern | Gedrag intern | Gedrag extern | Passief | Samengesteld |
 |---|---|---|---|---|---|---|

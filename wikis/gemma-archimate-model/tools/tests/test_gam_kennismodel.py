@@ -41,10 +41,13 @@ def test_typen_van_de_beslistabel_staan_in_het_kennismodel():
 
 def test_elke_kernrelatie_staat_in_de_relaties_van_haar_type():
     for t in bt.TYPEN:
-        if not t.kern:
-            continue
+        relatiekenmerken = [s for s in t.toets if s in bt.RELATIONEEL]
+        assert relatiekenmerken or t.laag != "pagina", t.naam
         sleutel = km.sleutel_van(t.archimate_type)
-        assert any(sleutel in (r.bron, r.doel) for r in km.kernrelaties(t.kern)), f"{t.naam}: {t.kern}"
+        kernen = [s for s in relatiekenmerken if km.kernrelaties(s)]
+        assert kernen or not relatiekenmerken, f"{t.naam}: geen relatiekenmerk met een kernrelatie"
+        for kern in kernen:
+            assert any(sleutel in (r.bron, r.doel) for r in km.kernrelaties(kern)), f"{t.naam}: {kern}"
     for r in km.RELATIES:
         for k in r.kern:
             assert k in bt.NAAM, k

@@ -308,6 +308,26 @@ def herkomst(ctx: Context, bronnen: list[str]) -> str | None:
     return min(typen, key=volgorde.index) if typen else None
 
 
+def _geen_grondslag(wiki_root: Path, alle: dict[str, tuple[Path, dict]], uitkomsten: dict[str, dict | None]) -> None:
+    """Stap 4 van de beslistabel, de grondslag (regel Wettelijke grondslag): een element zonder landelijke bron
+    (`europese-regelgeving` of `rijksregelgeving`, of een relatie *is grondslag voor* van een beleidskader van de EU of het
+    Rijk) stopt. Uitgezonderd zijn een UPL-dienst (de hoek zonder grondslag), een bedrijfsfunctie en een beleidskader; een
+    capability volgt de functies die haar realiseren."""
+    elementen = {b: u for b, u in uitkomsten.items()
+                 if u and u["soort"] == "element" and not bepaal_type.is_afgewezen(alle[b][1])}
+    data = {b: {**d, "beslist": {"bronnen": bronnen_van(d)}} for b, (_, d) in alle.items()}
+    elementen, landelijk, upl = signalen._grondslag(data, elementen, lambda i: gam_gemeen.brontype(wiki_root, i))
+    for b, u in sorted(elementen.items()):
+        if u["paginatype"] in ("beleidskader", "bedrijfsfunctie") or landelijk(b) or upl(b) \
+                or not data[b]["beslist"]["bronnen"]:   # zonder enige bron: de fout "element zonder bron"
+            continue
+        uitkomsten[b] = asdict(bepaal_type.Uitkomst(
+            "geen_grondslag", 0, f"Geen landelijke grondslag voor {u['toelichting'].split(' (')[0]}",
+            archimate_type=u["archimate_type"], voorleggen=True, typeregel=u["regel"],
+            redenen=["geen landelijke wettelijke bron (europese-regelgeving of rijksregelgeving): voeg de wet met artikel "
+                     "toe, of het begrip valt af (regel Wettelijke grondslag)"]))
+
+
 def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], res: Resultaat,
                              namen: dict[str, str] | None = None) -> None:
     elementen = {i for i, u in uitkomsten.items() if u and u.get("soort") == "element"}
@@ -320,10 +340,6 @@ def _controleer_verwijzingen(bid: str, data: dict, uitkomsten: dict[str, dict], 
         doel = namen.get(r["naar"], r["naar"]).lower()
         if not u or u.get("soort") != "specialisatie" or str(u.get("genoemd_begrip") or "").lower() != doel:
             res.fouten.append(f"{bid}: via '{via}' bij de relatie naar '{r['naar']}' is geen specialisatie van dat doel")
-    if bepaal_type.waarden(data)["leidt_tot_gebeurtenis"] == "ja" and not any(
-            r["soort"] == "triggering" and (uitkomsten.get(r["naar"]) or {}).get("paginatype") == "gebeurtenis"
-            for r in data.get("relaties", [])):
-        res.fouten.append(f"{bid}: leidt tot gebeurtenis, maar geen relatie 'triggering' naar een gebeurtenis")
     van_type = uitkomsten[bid]["archimate_type"]
     for r in data.get("relaties", []):
         if r["naar"] not in elementen:
@@ -396,10 +412,6 @@ def _controleer_gemma_relaties(ctx: Context, bid: str, data: dict, alle: dict[st
             elif g["doel"] != eigen or g["type"] not in ("aggregation-relationship", "composition-relationship"):
                 res.fouten.append(f"{bid}: GEMMA-relatie {rid} bij {bepaal_type.NAAM[s]} is geen aggregatie of "
                                   "compositie naar de GEMMA-match van dit element")
-        if s == "zelfstandige_specialisatie" and a.get("gemma_relatie") and any(
-                g["bron"] == eigen and g["type"] == "specialization-relationship" for g in model.values()):
-            res.fouten.append(f"{bid}: zelfstandige specialisatie op grond van GEMMA, maar de GEMMA-match "
-                              "specialiseert in het model een ander element")
     for r in data.get("relaties", []):
         rid = r.get("gemma_relatie")
         if not rid:
@@ -662,6 +674,7 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             uitkomsten[bid] = None
 
     res.fouten += [f"{f}" for f in bepaal_type.indeling({b: d for b, (_, d) in alle.items()}, uitkomsten)]
+    _geen_grondslag(wiki_root, alle, uitkomsten)
 
     nieuw: dict[str, dict] = {}
     alle_data = {b: d for b, (_, d) in alle.items()}
@@ -683,14 +696,19 @@ def beslissen(wiki_root: Path = WIKI_ROOT, schrijven: bool = True) -> Resultaat:
             res.waarschuwingen.append(f"{bid}: {', '.join(modelbronnen)} is een model, matchdoel en geen bron; noem bij "
                                       "het kenmerk of de relatie de bron van de bewering (regel Bronvoorrang)")
         zonder_bron = [bepaal_type.NAAM[s] for s, a in bepaal_type.antwoorden(data).items()
-                       if a["waarde"] == "ja" and not a.get("bronnen") and not a.get("gemma_relatie")
+                       if a["waarde"] == "ja" and s in bepaal_type.NAAM and not a.get("bronnen") and not a.get("gemma_relatie")
                        and s not in bepaal_type.ORDEEL_ZONDER_BRON
                        and not bepaal_type.steunt_op_relatie(bid, s, a, alle_data)]
         if zonder_bron:
             res.fouten.append(f"{bid}: kenmerk 'ja' zonder bron: {', '.join(zonder_bron)} (regel Elke claim een bron)")
+        zonder_bron = [bepaal_type.NAAM[s] for s, a in bepaal_type.antwoorden(data).items()
+                       if s in bepaal_type.KEUZEKENMERK and a["waarde"] != bepaal_type.KEUZEKENMERK[s].standaard
+                       and not a.get("bronnen") and not bronnen]
+        if zonder_bron:
+            res.fouten.append(f"{bid}: keuzekenmerk zonder bron: {', '.join(zonder_bron)} (regel Elke claim een bron)")
         _controleer_naar(bid, data, alle_data, res)
         if not bronnen and uitkomst["soort"] != "synoniem" \
-                and bepaal_type.voorbij_poort(bepaal_type.waarden(data), bepaal_type.extra_velden(data)):
+                and bepaal_type.voorbij_afbakenen(bepaal_type.waarden(data), bepaal_type.extra_velden(data)):
             res.fouten.append(f"{bid}: de poort is doorlopen zonder bron in de beoordeling (regel Elke claim een bron)")
         if pad.parent.parent.name != gam_gemeen.thuis(data):
             res.fouten.append(f"{bid}: het thuisonderwerp is '{gam_gemeen.thuis(data)}' (het eerste in onderwerpen) en de "

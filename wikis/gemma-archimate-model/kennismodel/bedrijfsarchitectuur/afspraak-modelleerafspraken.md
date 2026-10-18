@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Overeenkomst tussen meerdere partijen betreffende een bepaald onderwerp. (GEMMA) |
 | In Over GEMMA | ja (Afspraak) |
 | Duiding | Een afspraak tussen partijen (overeenkomst, convenant). Een besluit of verordening is géén afspraak. Een afspraak is een bijzonder bedrijfsobject en heeft dezelfde pagina en indeling. |
-| Herken je aan | *afspraak*. Moet ja: *wordt bewerkt* (kernrelatie); hoogstens 1 nee: *onderscheidbare exemplaren*, *levenscyclus*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *afspraak*. Toetskenmerken, alle ja: *wordt bewerkt* †, *onderscheidbare exemplaren*, *levenscyclus*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfsproces ─toegang→ Afspraak |
 | Niveaus | als bij een bedrijfsobject: kernobject, subobject of generiek |
 | Eigenschappen | `taakveld` · `beleidsdomein` · `ggm` · `gemma` · `data_objecten` ([betekenis](../README.md#eigenschappen)) |

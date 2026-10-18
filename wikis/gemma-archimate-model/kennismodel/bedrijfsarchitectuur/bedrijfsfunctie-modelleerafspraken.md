@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Activiteiten die zijn gegroepeerd omdat daarvoor vergelijkbare bedrijfsmiddelen, kennis of competenties nodig zijn. (GEMMA) |
 | In Over GEMMA | ja (Bedrijfsfunctie) |
 | Duiding | Uitvoerend: een doorlopende groepering van het werk naar aard, kennis en middelen; bedient processen, en verandert als het werk anders wordt geclusterd. Wat de gemeente moet kunnen, is strategisch: een capability, die functies realiseren. |
-| Herken je aan | *gedrag* en *gegroepeerd gedrag*. Moet ja: *bedient gedrag* (kernrelatie); hoogstens 1 nee: *toegewezen partij*, *gebruikt objecten*, *stabiel over tijd*, *in functie-indeling*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *gedrag* en *gegroepeerd gedrag*. Toetskenmerken, alle ja: *bedient gedrag* †, *gebruikt objecten* †, *in functie-indeling* †, *stabiel over tijd*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfsfunctie ─bediening→ Bedrijfsproces |
 | Eigenschappen | `domein` (verplicht) · `gemma_functie` · `gemma` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Functie-indeling naar domein](../indelingen.md) |

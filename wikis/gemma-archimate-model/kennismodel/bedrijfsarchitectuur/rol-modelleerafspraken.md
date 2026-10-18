@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Een rol is de verantwoordelijkheid voor specifiek gedrag waar een actor aan toegewezen kan worden. (ArchiMate) |
 | In Over GEMMA | ja (Rol) |
 | Duiding | Verantwoordelijkheid of hoedanigheid (aanvrager, belastingplichtige, heffingsambtenaar). |
-| Herken je aan | *hoedanigheid*, niet *los van verantwoordelijkheid*. Moet ja: *voert gedrag uit* (kernrelatie). Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *hoedanigheid*, niet *los van verantwoordelijkheid*. Toetskenmerken, alle ja: *voert gedrag uit* †. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Rol ─toewijzing→ Bedrijfsproces; Rol ─toewijzing→ Bedrijfsfunctie; Rol ─toewijzing→ Bedrijfsinteractie |
 | Eigenschappen | `doelgroep` (verplicht) · `gemma` · `gemma_generiek` · `ggm` · `data_objecten` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Procesindeling naar soort werk](../indelingen.md) (bij *generiek*); [Doelgroepindeling](../indelingen.md) |

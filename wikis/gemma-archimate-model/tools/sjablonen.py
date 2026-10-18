@@ -23,12 +23,13 @@ import bepaal_type
 TODO = "TODO"
 PATRONEN = ("upl-dienst",)
 
-# De keuzevelden en de kenmerken met ja; de poort is doorlopen en *zelfstandige specialisatie* staat standaard op ja.
+# De keuzevelden, de keuzekenmerken en de relatiekenmerken met ja; de scope is doorlopen, het begrip is zelfstandig en
+# de toetskenmerken die geen relatie zijn, zijn standaard ja.
 DIENST_VELDEN = {"vak": "bedrijf/gedrag-extern"}
-DIENST_JA = ("benoembaar_resultaat", "komt_herhaald_voor", "eigen_normering", "afnemer", "gerealiseerd_door")
+DIENST_JA = ("gerealiseerd_door",)
 PROCES_VELDEN = {"vak": "bedrijf/gedrag-intern", "soort_gedrag": "per_keer_doorlopen"}
-PROCES_JA = ("toegewezen_partij", "gebruikt_objecten", "aanleiding", "benoembaar_resultaat", "komt_herhaald_voor",
-             "eigen_normering", "bijdrage_aan_groter_proces", "klant_tot_klant", "eigen_besluit", "levert_aanbod")
+PROCES_JA = ("toegewezen_partij", "aanleiding")
+PROCES_KEUZE = {"procesniveau": "bedrijfsproces"}
 
 
 class SjabloonFout(Exception):
@@ -60,20 +61,14 @@ def _regel(waarde: str, tekst: str, bronnen: list[str]) -> str:
     return f"{waarde} — {tekst}" + (f" [{', '.join(bronnen)}]" if bronnen else "")
 
 
-def _kenmerken(ja: tuple[str, ...], bronnen: list[str], soort: str, naar: dict[str, list[str]] | None = None) -> dict:
-    """De kenmerken zonder standaardwaarde, in de schrijfvorm van één regel; een relationeel kenmerk met een bekende
-    tegenpartij krijgt `naar`. `normaliseer_data` laat de nee's buiten het pad weg."""
+def _kenmerken(ja: tuple[str, ...], bronnen: list[str], naar: dict[str, list[str]] | None = None,
+               keuze: dict[str, str] | None = None) -> dict:
+    """De kenmerken die een antwoord nodig hebben, in de schrijfvorm van één regel; een relatiekenmerk met een bekende
+    tegenpartij krijgt `naar`. De andere kenmerken hebben een standaardantwoord."""
     naar = naar or {}
-    uit: dict = {}
-    for s in bepaal_type.SLEUTELS:
-        if s in bepaal_type.KEUZE or s in bepaal_type.STANDAARD:
-            continue
-        if s in naar:
-            uit[s] = {"waarde": "ja", "naar": naar[s]}
-        elif s in ja:
-            uit[s] = _regel("ja", f"{TODO}: {bepaal_type.NAAM[s]}", bronnen)
-        else:
-            uit[s] = _regel("nee", f"Niet van toepassing: {soort}.", [])
+    uit: dict = {s: _regel(w, f"{TODO}: {bepaal_type.NAAM[s]}", bronnen) for s, w in (keuze or {}).items()}
+    for s in ja:
+        uit[s] = {"waarde": "ja", "naar": naar[s]} if s in naar else _regel("ja", f"{TODO}: {bepaal_type.NAAM[s]}", bronnen)
     return uit
 
 
@@ -106,16 +101,15 @@ def bouw(patroon: str, p: Params) -> dict[str, dict]:
     upl = f"UPL nr. {p.upl_nr}" if p.upl_nr else "UPL"
     proces = p.proces or p.proces_id or slug(p.proces_naam)
     uit = {p.id: {**_basis(p, p.naam, f"wat de gemeente aanbiedt ({upl}), in één zin.", DIENST_VELDEN),
-                  "kenmerken": _kenmerken(DIENST_JA, p.bronnen, "dienst", {"gerealiseerd_door": [proces]})}}
+                  "kenmerken": _kenmerken(DIENST_JA, p.bronnen, {"gerealiseerd_door": [proces]})}}
     realisatie = _relatie("realisatie", p.id, "realiseert", p.bronnen)
     if p.proces:
         uit[p.proces] = {"relaties": [realisatie]}
         return uit
     toegang = [_relatie(f"toegang ({p.toegang})", p.kernobject, f"{TODO}: handeling", p.bronnen)] if p.toegang else []
-    naar = {"levert_aanbod": [p.id], **({"gebruikt_objecten": [p.kernobject]} if p.toegang else {})}
     uit[proces] = {
         **_basis(p, p.proces_naam, "wat het proces doet, van aanleiding tot resultaat.", PROCES_VELDEN),
-        "kernobject": p.kernobject, "kenmerken": _kenmerken(PROCES_JA, p.bronnen, "bedrijfsproces", naar),
+        "kernobject": p.kernobject, "kenmerken": _kenmerken(PROCES_JA, p.bronnen, keuze=PROCES_KEUZE),
         "relaties": [realisatie, *toegang]}
     return uit
 

@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | A unit of collective business behavior performed by two or more business actors, roles or collaborations. (ArchiMate) |
 | In Over GEMMA | nee: uitbreiding op het GEMMA-kennismodel |
 | Duiding | Gezamenlijk gedrag, zoals een ketensamenwerking waarin de bedrijfsprocessen van de partijen samenkomen (in het GEMMA-model het element Ketensamenwerking), of een keukentafelgesprek. |
-| Herken je aan | *gedrag* en *gezamenlijk gedrag*. Moet ja: *toegewezen partij* (kernrelatie); hoogstens 1 nee: *aanleiding*, *benoembaar resultaat*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *gedrag* en *gezamenlijk gedrag*. Toetskenmerken, alle ja: *toegewezen partij* †, *aanleiding* †, *benoembaar resultaat*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Rol ─toewijzing→ Bedrijfsinteractie |
 | Eigenschappen | `kernobject` · `taakveld` · `beleidsdomein` · `gemma` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Beleidsdomeinindeling](../indelingen.md) (onder het beleidsdomein van haar kernobject); [Procesindeling naar kernobject](../indelingen.md) |

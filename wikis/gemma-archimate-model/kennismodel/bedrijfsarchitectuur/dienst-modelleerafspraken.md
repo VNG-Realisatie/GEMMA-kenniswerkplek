@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Een afgebakende prestatie van een persoon of organisatie (de dienstverlener), die voorziet in een behoefte van haar omgeving (de dienstafnemer(s)). (NORA) |
 | In Over GEMMA | ja (Dienst) |
 | Duiding | Wat een afnemer van de gemeente kan krijgen, los van hoe het wordt uitgevoerd; gerealiseerd door een proces of functie. |
-| Herken je aan | *gedrag* en *aangeboden gedrag*. Moet ja: *gerealiseerd door* (kernrelatie); hoogstens 1 nee: *afnemer*, *benoembaar resultaat*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *gedrag* en *aangeboden gedrag*. Toetskenmerken, alle ja: *gerealiseerd door* †, *afnemer*, *benoembaar resultaat*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfsproces ─realisatie→ Dienst; Bedrijfsfunctie ─realisatie→ Dienst |
 | Eigenschappen | `afnemer` (verplicht) · `domein` (verplicht) · `gemma_functie` · `taakveld` · `beleidsdomein` · `gemma` · `gemma_generiek` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Beleidsdomeinindeling](../indelingen.md); [Functie-indeling naar domein](../indelingen.md); [Procesindeling naar soort werk](../indelingen.md) (bij *generiek*) |

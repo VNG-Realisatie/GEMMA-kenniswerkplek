@@ -14,7 +14,7 @@ gegenereerd: tools/kennismodel.py
 | Definitie | Een bedrijfssamenwerking is een (tijdelijke) samenstelling van twee of meer bedrijfsrollen resulterend in een specifiek collectief gedrag in een bepaalde context. (ArchiMate) |
 | In Over GEMMA | ja (Bedrijfssamenwerking) |
 | Duiding | Samenwerkingsverband zonder eigen rechtspersoon (Zorg- en Veiligheidshuis); met eigen rechtspersoon is het een actor. |
-| Herken je aan | *samenwerkingsverband* zonder *eigen rechtspersoon*. Moet ja: *voert gedrag uit* (kernrelatie), *soort partij*. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
+| Herken je aan | *samenwerkingsverband* zonder *eigen rechtspersoon*. Toetskenmerken, alle ja: *voert gedrag uit* †. Zie [kenmerken en beslistabel](../kenmerken-en-beslistabel.md). |
 | Kernrelatie | Bedrijfssamenwerking ─toewijzing→ Bedrijfsproces; Bedrijfssamenwerking ─toewijzing→ Bedrijfsfunctie; Bedrijfssamenwerking ─toewijzing→ Bedrijfsinteractie |
 | Eigenschappen | `doelgroep` (verplicht) · `gemma` ([betekenis](../README.md#eigenschappen)) |
 | Indelingen | [Doelgroepindeling](../indelingen.md) |
