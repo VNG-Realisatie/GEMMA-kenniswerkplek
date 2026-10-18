@@ -206,6 +206,14 @@ relaties:
   bronnen:
   - 2026-rvig-hup-nederlands-kiesrecht
   vindplaats: HUP Nederlands kiesrecht
+- soort: triggering
+  naar: verval-van-het-reisdocument
+  naam: registreert het verval van rechtswege
+  ggm_match: geen
+  bronnen:
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: HUP Van rechtswege vervallen; Paspoortwet art. 47 lid 1 onder a, b, e, f
 bronnen:
 - 2026-rvig-hup-algemeen
 - 2026-rvig-hup-achtergronden-en-begrippen
@@ -213,4 +221,5 @@ bronnen:
 - 2025-rvig-logisch-ontwerp-brp-2025q1
 - 2026-rvig-hup-intergemeentelijke-adreswijziging
 - 2026-rijk-besluit-brp-bwbr0034306
-status: goedgekeurd
+- 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+status: review

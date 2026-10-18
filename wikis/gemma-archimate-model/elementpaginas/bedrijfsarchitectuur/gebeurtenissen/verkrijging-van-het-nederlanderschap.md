@@ -2,7 +2,7 @@
 id: verkrijging-van-het-nederlanderschap
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Verkrijging van het Nederlanderschap
 onderwerpen:
 - burgerzaken
@@ -27,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling verkrijging-van-het-nederlanderschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -55,7 +55,7 @@ Gebeurtenis. Uitkomst van de beslistabel: Gedrag, *toestandsverandering* (2 toet
 
 ### Plaats in de indelingen
 
-- **Start**: [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md), [Verval van het reisdocument](verval-van-het-reisdocument.md).
+- **Start**: [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
@@ -77,7 +77,6 @@ De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Verkrijging van het Nederlanderschap | leidt tot bijhouding van nationaliteit, verblijfstitel en Europees kiesrecht *triggering* | [Bijhouden persoonsgegevens](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md) | [HUP Nederlandse nationaliteit](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nederlandse-nationaliteit.md), [HUP Verblijfstitel](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-verblijfstitel.md), [HUP Europees kiesrecht](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-europees-kiesrecht.md) (HUP Nederlandse nationaliteit; HUP Verblijfstitel; HUP Europees kiesrecht) |
-| Verkrijging van het Nederlanderschap | doet een reisdocument voor vluchtelingen of vreemdelingen vervallen *triggering* | [Verval van het reisdocument](verval-van-het-reisdocument.md) | [Paspoortwet](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Nederlandse nationaliteit](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-nederlandse-nationaliteit.md) (Paspoortwet art. 47 lid 1 onder b) |
 
 #### Inkomend
 

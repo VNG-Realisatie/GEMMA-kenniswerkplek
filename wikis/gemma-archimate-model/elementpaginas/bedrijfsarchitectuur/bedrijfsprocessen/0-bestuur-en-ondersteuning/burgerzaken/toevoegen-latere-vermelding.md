@@ -2,7 +2,7 @@
 id: toevoegen-latere-vermelding
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Toevoegen latere vermelding
 onderwerpen:
 - burgerzaken
@@ -19,6 +19,7 @@ bronnen:
 - 2026-rvig-hup-vaststelling-ouderschap
 - 2026-rvig-hup-ontkenning-ouderschap
 - 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rvig-hup-wijziging-voornaam
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
 - 2026-rvig-hup-adoptie
 - 2025-vng-upl-producten-en-diensten-extern
@@ -29,7 +30,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling toevoegen-latere-vermelding.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -72,11 +73,11 @@ De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in 
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [HUP BRP: Vaststelling ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-vaststelling-ouderschap.md), [HUP BRP: Ontkenning ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-ontkenning-ouderschap.md), [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [HUP BRP: Vaststelling ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-vaststelling-ouderschap.md), [HUP BRP: Ontkenning ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-ontkenning-ouderschap.md), [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [HUP BRP: Wijziging voornaam](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-wijziging-voornaam.md) |
 | **procesniveau**: bedrijfsproces, kernobject [Akte van de burgerlijke stand](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md) | Ja, van de uitspraak of het besluit dat de staat verandert tot de latere vermelding. [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [Besluit burgerlijke stand 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md), [HUP BRP: Adoptie](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-adoptie.md) |
-| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Ambtenaar van de burgerlijke stand](../../../rollen/ambtenaar-van-de-burgerlijke-stand.md). [HUP BRP: Vaststelling ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-vaststelling-ouderschap.md), [HUP BRP: Ontkenning ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-ontkenning-ouderschap.md), [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, met [Adoptie](../../../gebeurtenissen/adoptie.md), [Naamswijziging](../../../gebeurtenissen/naamswijziging.md), [Ontkenning ouderschap](../../../gebeurtenissen/ontkenning-ouderschap.md), [Vaststelling ouderschap](../../../gebeurtenissen/vaststelling-ouderschap.md). [HUP BRP: Vaststelling ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-vaststelling-ouderschap.md), [HUP BRP: Ontkenning ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-ontkenning-ouderschap.md), [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, standaard. [HUP BRP: Vaststelling ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-vaststelling-ouderschap.md), [HUP BRP: Ontkenning ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-ontkenning-ouderschap.md), [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
+| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Ambtenaar van de burgerlijke stand](../../../rollen/ambtenaar-van-de-burgerlijke-stand.md). [HUP BRP: Vaststelling ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-vaststelling-ouderschap.md), [HUP BRP: Ontkenning ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-ontkenning-ouderschap.md), [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [HUP BRP: Wijziging voornaam](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-wijziging-voornaam.md) |
+| **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, met [Adoptie](../../../gebeurtenissen/adoptie.md), [Naamswijziging](../../../gebeurtenissen/naamswijziging.md), [Ontkenning ouderschap](../../../gebeurtenissen/ontkenning-ouderschap.md), [Vaststelling ouderschap](../../../gebeurtenissen/vaststelling-ouderschap.md). [HUP BRP: Vaststelling ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-vaststelling-ouderschap.md), [HUP BRP: Ontkenning ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-ontkenning-ouderschap.md), [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [HUP BRP: Wijziging voornaam](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-wijziging-voornaam.md) |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, standaard. [HUP BRP: Vaststelling ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-vaststelling-ouderschap.md), [HUP BRP: Ontkenning ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-ontkenning-ouderschap.md), [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md), [HUP BRP: Wijziging voornaam](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-wijziging-voornaam.md) |
 
 ### Relaties
 
@@ -87,6 +88,7 @@ De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in 
 | Toevoegen latere vermelding | voegt latere vermelding toe aan *toegang (bijwerken)* | [Akte van de burgerlijke stand](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md) | [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) (art. 20) |
 | Toevoegen latere vermelding | realiseert *realisatie* | [Achternaamwijziging](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/achternaamwijziging.md) | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Voornaam of achternaam veranderen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen.md) (UPL nr. 5; Utrecht) |
 | Toevoegen latere vermelding | realiseert *realisatie* | [Voornaamwijziging](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/voornaamwijziging.md) | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Voornaam of achternaam veranderen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen.md) (UPL nr. 460; Utrecht) |
+| Toevoegen latere vermelding | zendt akte aan *stroom* | [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md) | [HUP BRP: Wijziging voornaam](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-wijziging-voornaam.md) (HUP Wijziging voornaam, kop Wijziging voornaam persoon) |
 
 #### Inkomend
 
@@ -108,6 +110,7 @@ De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in 
 | [HUP BRP: Vaststelling ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-vaststelling-ouderschap.md) | HUP BRP: Vaststelling ouderschap |
 | [HUP BRP: Ontkenning ouderschap](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-ontkenning-ouderschap.md) | HUP BRP: Ontkenning ouderschap |
 | [BW boek 1](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) | Burgerlijk Wetboek Boek 1 (Personen- en familierecht) |
+| [HUP BRP: Wijziging voornaam](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-wijziging-voornaam.md) | HUP BRP: Wijziging voornaam |
 | [Besluit burgerlijke stand 1994](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493.md) | Besluit burgerlijke stand 1994 |
 | [HUP BRP: Adoptie](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-adoptie.md) | HUP BRP: Adoptie |
 | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |

@@ -28,18 +28,10 @@ relaties:
   bronnen:
   - 2026-rvig-hup-nederlandse-nationaliteit
   vindplaats: HUP Nederlandse nationaliteit, kop Verlies
-- soort: triggering
-  naar: verval-van-het-reisdocument
-  naam: doet een Nederlands reisdocument vervallen
-  ggm_match: geen
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rvig-hup-nationaliteit
-  vindplaats: Paspoortwet art. 47 lid 1 onder a; HUP Nationaliteit
 bronnen:
 - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
 - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
 - 2026-rvig-hup-nederlandse-nationaliteit
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-rvig-hup-nationaliteit
-status: goedgekeurd
+status: review

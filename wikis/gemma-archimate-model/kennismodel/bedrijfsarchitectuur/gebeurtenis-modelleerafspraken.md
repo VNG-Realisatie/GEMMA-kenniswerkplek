@@ -25,7 +25,7 @@ gegenereerd: tools/kennismodel.py
 ## Afspraken
 
 - Een gebeurtenis van buiten (de klant, een derde, het recht of een termijn) start een bedrijfsproces, nooit een deelproces.
-- Een gebeurtenis die het resultaat is van een bedrijfsproces (een rechtsgevolg) kan elders een bedrijfsproces starten; een tussentoestand binnen één bedrijfsproces is geen element.
+- Een gebeurtenis die het resultaat is van een bedrijfsproces (een rechtsgevolg) kan elders een bedrijfsproces starten, nooit een andere gebeurtenis: daartussen staat altijd een bedrijfsproces; een tussentoestand binnen één bedrijfsproces is geen element.
 - Een gebeurtenis hangt onder het levensloopproces van het object waarvan de toestand verandert.
 
 ## Relaties
@@ -34,7 +34,6 @@ gegenereerd: tools/kennismodel.py
 |---|---|---|---|---|---|
 | triggering | [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) | leidt tot | *leidt tot gedrag* | ja |  |
 | triggering | [Bedrijfsinteractie](bedrijfsinteractie-modelleerafspraken.md) | start | *leidt tot gedrag* | nee |  |
-| triggering | [Gebeurtenis](gebeurtenis-modelleerafspraken.md) | vrij, uit de bron |  | nee | een rechtsgevolg dat een ander teweegbrengt |
 | specialisatie | [Gebeurtenis](gebeurtenis-modelleerafspraken.md) | is een |  | nee | naar een generieke gebeurtenis |
 
 Inkomend, bij het brontype: [Bedrijfsproces](bedrijfsproces-modelleerafspraken.md) (aggregatie, triggering); [Beleidskader](../motivatie/beleidskader-modelleerafspraken.md) (associatie); [Data-object](../applicatiearchitectuur/data-object-modelleerafspraken.md) (associatie).

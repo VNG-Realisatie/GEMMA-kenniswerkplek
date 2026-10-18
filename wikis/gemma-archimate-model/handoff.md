@@ -4,21 +4,21 @@ Overdracht naar de volgende Sessie (2026-10-18). Wordt bij elke overdracht overs
 
 ## Stand van zaken
 
-- Plan [plannen/2026-10-18-beslistabel.md](plannen/2026-10-18-beslistabel.md): stap 2 tot en met 6 zijn klaar en gecommit; het AKKOORD voor 284 elementen staat in [log.md](log.md) (commit a3270ebe) en het eenmalige omzetscript is verwijderd.
-- Stap 7 (potentiële relaties) is uitgevoerd in de volgende commit: de 82 relatiekenmerken `ja` zonder `naar` van elementen hebben hun tegenpartij (ca. 50 stand-in gebeurtenissen, de GEMMA-functies als bedrijfsfunctie, id's van rollen en objecten) en de ontbrekende relaties zijn toegevoegd (toewijzingen voor Onderhouden graf, Verlenen toestemming asverstrooiing en Verlenen vergunning grafbedekking; toegang voor zes functies; triggering Overlijden → Toestaan lijkbezorging).
-- Besluiten van de redacteur in deze Sessie: rollen van een levensloopproces blijven bij de deelprocessen (het kenmerk verwijst ernaar); een gebeurtenis mag geen gebeurtenis triggeren (Verval van het reisdocument triggert nu direct Inhouden reisdocument); Verklaring van overlijden wordt een nieuw bedrijfsobject (stand-in) naast Vergunning.
-- Alle elementen die stap 7 raakte, staan op review: `tools/afronden.py` en `archimate_export.py --check` slagen pas na een nieuw AKKOORD. Open punten: [todo.md](todo.md), "Potentiële relaties, wat open blijft".
+- Plan [plannen/2026-10-18-beslistabel.md](plannen/2026-10-18-beslistabel.md): stap 2 tot en met 7 zijn klaar en gecommit, met hun AKKOORD (commit a3270ebe en 75093b8d).
+- De regel "een gebeurtenis triggert geen gebeurtenis" staat in de volgende commit (rules): triggering Gebeurtenis → Gebeurtenis is weg uit de relatiematrix (`tools/kennismodel.py`), dus het bestaande signaal "buiten het kennismodel" meldt zo'n relatie; de afspraak bij Gebeurtenis zegt dat er altijd een bedrijfsproces tussen staat.
+- Besluit van de redacteur: het verval van rechtswege loopt via de BRP-bijhouding. De vier relaties Naamswijziging, Overlijden, Verkrijging en Verlies van het Nederlanderschap → Verval van het reisdocument zijn vervallen; nieuw zijn Bijhouden persoonsgegevens ─triggering→ Verval van het reisdocument (HUP Van rechtswege vervallen) en Toevoegen latere vermelding ─stroom→ Bijhouden persoonsgegevens, "zendt akte aan" (HUP Wijziging voornaam).
+- Zes elementen staan op review (`ter-beoordeling.md`): Bijhouden persoonsgegevens, Toevoegen latere vermelding en de vier gebeurtenissen. `archimate_export.py --check` en `tools/afronden.py` slagen pas na een nieuw AKKOORD.
 
 ## Volgende klus
 
-De redacteur bekijkt de pagina's (`uv run python -m llmwiki promote plan --wiki wikis/gemma-archimate-model`), typt AKKOORD, daarna `promote apply --akkoord-woord AKKOORD` en `uv run python tools/afronden.py --bericht "<prefix>: …"`. Daarna: de regel over gebeurtenissen die gebeurtenissen triggeren voorleggen (rules), en de 15 begrippen die nog zijn voor te leggen (`ter-beoordeling.md`).
+Het AKKOORD voor de zes elementen: `uv run python -m llmwiki promote plan --wiki wikis/gemma-archimate-model`, het woord AKKOORD van de redacteur, `promote apply --akkoord-woord AKKOORD` en `uv run python tools/afronden.py --bericht "update: …"`. Daarna: de open punten in [todo.md](todo.md), "Potentiële relaties, wat open blijft", en de begrippen die nog voor te leggen zijn (`ter-beoordeling.md`).
 
 ## Modeladvies
 
-Het AKKOORD en `afronden.py` zijn denkniveau laag: een sneller model volstaat en de lopende context is nog te gebruiken. De regelwijziging voor gebeurtenissen (matrix, signaal, de vier relaties) is denkniveau hoog; begin daarvoor een nieuwe Sessie.
+Het AKKOORD en `afronden.py` vragen denkniveau laag: een sneller model is genoeg, en de lopende context kan blijven. De open punten van de potentiële relaties (de stand-ins beoordelen, en een signaal voor `ja` zonder `naar`) vragen denkniveau hoog; begin daarvoor een nieuwe Sessie.
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en wikis/gemma-archimate-model/todo.md. Stap 7 van plan 2026-10-18 (potentiële relaties) is gecommit; de geraakte elementen staan op review. Vraag eerst het AKKOORD: toon `uv run python -m llmwiki promote plan --wiki wikis/gemma-archimate-model` in de chat en wacht op het woord AKKOORD van de redacteur. Rond daarna af met tools/afronden.py. Ga dan verder met het voorleggen van de regel dat een gebeurtenis geen gebeurtenis triggert (todo, "Potentiële relaties, wat open blijft", punt 1). Leg alleen echte twijfel voor, zoals voor een architect (references/besluiten.md), en commit per afgerond deel met een prefix en commit-check.
+Lees wikis/gemma-archimate-model/handoff.md en wikis/gemma-archimate-model/todo.md. De regel dat een gebeurtenis geen gebeurtenis triggert is gecommit (rules); zes elementen staan op review. Vraag eerst het AKKOORD: toon `uv run python -m llmwiki promote plan --wiki wikis/gemma-archimate-model` in de chat en wacht op het woord AKKOORD van de redacteur. Rond daarna af met tools/afronden.py. Ga dan verder met todo, "Potentiële relaties, wat open blijft". Leg alleen echte twijfel voor, zoals voor een architect (references/besluiten.md), met de bronpassage, de stand in GGM en GEMMA en de gevolgen per optie, en commit per afgerond deel met een prefix en commit-check.
 ```

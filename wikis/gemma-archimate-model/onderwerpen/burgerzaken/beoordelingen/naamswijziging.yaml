@@ -28,14 +28,6 @@ relaties:
   - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: Utrecht inleiding; art. 20
-- soort: triggering
-  naar: verval-van-het-reisdocument
-  naam: doet het reisdocument vervallen
-  ggm_match: geen
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-  vindplaats: Paspoortwet art. 47 lid 1 onder e; HUP Van rechtswege vervallen
 bronnen:
 - 2026-rvig-hup-wijziging-voornaam
 - 2026-rvig-hup-naamswijziging-en-naamgebruik
@@ -45,4 +37,4 @@ bronnen:
 - 2026-rvig-hup-wijziging-geslachtsnaam
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

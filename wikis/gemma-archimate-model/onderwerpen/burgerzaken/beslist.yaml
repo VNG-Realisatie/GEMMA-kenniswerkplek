@@ -849,6 +849,7 @@ bijhouden-persoonsgegevens:
   - 2025-rvig-logisch-ontwerp-brp-2025q1
   - 2026-rvig-hup-intergemeentelijke-adreswijziging
   - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   - 2026-rvig-hup-immigratie
   - 2026-rvig-hup-hervestiging
   - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
@@ -871,6 +872,7 @@ bijhouden-persoonsgegevens:
   - 2026-rijk-kieswet-bwbr0004627
   - 2026-rvig-hup-kiesrecht
   - 2026-rvig-hup-nederlands-kiesrecht
+  - 2026-rijk-paspoortwet-bwbr0005212
   herkomst: rijksregelgeving
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md
 bijhoudingsgemeente:
@@ -2354,8 +2356,6 @@ naamswijziging:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rvig-hup-vaststelling-geslachtsnaam
   - 2026-rvig-hup-wijziging-geslachtsnaam
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   herkomst: rijksregelgeving
   pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/naamswijziging.md
 nationaliteit:
@@ -2801,8 +2801,6 @@ overlijden:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   - 2026-rvig-hup-overlijden-nederland
   - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   herkomst: rijksregelgeving
   pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/overlijden.md
 overlijdensaangifte:
@@ -3490,6 +3488,7 @@ toevoegen-latere-vermelding:
   - 2026-rvig-hup-vaststelling-ouderschap
   - 2026-rvig-hup-ontkenning-ouderschap
   - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-wijziging-voornaam
   - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   - 2026-rvig-hup-adoptie
   - 2025-vng-upl-producten-en-diensten-extern
@@ -3926,7 +3925,6 @@ verlies-van-het-nederlanderschap:
   - 2026-rvig-hup-nederlandse-nationaliteit
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   - 2026-rvig-hup-nationaliteit
-  - 2026-rijk-paspoortwet-bwbr0005212
   herkomst: rijksregelgeving
   pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/verlies-van-het-nederlanderschap.md
 vermissing-of-diefstal-reisdocument-doorgeven:

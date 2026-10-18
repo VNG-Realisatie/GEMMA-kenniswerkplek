@@ -28,7 +28,7 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 |---|---|---|---|---|
 | Besluitvorming | 30 | 1 | 46 | Bestuur en organisatie 11, Burgerzaken 1, Heffingen en betalingen 1, Lijkbezorging 16, Participatie 3 |
 | Bestuur en organisatie | 7 | 0 | 8 | Besluitvorming 11, Burgerzaken 20, Heffingen en betalingen 2, Kern 1, Lijkbezorging 15, Participatie 6 |
-| Burgerzaken | 171 | 9 | 512 | Besluitvorming 1, Bestuur en organisatie 20, Kern 2, Lijkbezorging 9 |
+| Burgerzaken | 171 | 9 | 510 | Besluitvorming 1, Bestuur en organisatie 20, Kern 2, Lijkbezorging 9 |
 | Heffingen en betalingen | 2 | 0 | 1 | Besluitvorming 1, Bestuur en organisatie 2, Lijkbezorging 4 |
 | Kern | 1 | 0 | 0 | Bestuur en organisatie 1, Burgerzaken 2, Lijkbezorging 5 |
 | Lijkbezorging | 66 | 20 | 163 | Besluitvorming 16, Bestuur en organisatie 15, Burgerzaken 9, Heffingen en betalingen 4, Kern 5 |
@@ -42,11 +42,11 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | bedrijfsfunctie | 0 | 7 | 0 |
 | bedrijfsinteractie | 0 | 1 | 0 |
 | bedrijfsobject | 0 | 31 | 0 |
-| bedrijfsproces | 0 | 81 | 6 |
+| bedrijfsproces | 2 | 79 | 6 |
 | beleidskader | 0 | 20 | 0 |
 | capability | 0 | 3 | 0 |
 | dienst | 0 | 85 | 1 |
-| gebeurtenis | 0 | 20 | 0 |
+| gebeurtenis | 4 | 16 | 0 |
 | rol | 0 | 27 | 0 |
 
 ## GGM-terugmeldingen

@@ -307,7 +307,8 @@ ELEMENTTYPEN: list[Elementtype] = [
         afspraken=("Een gebeurtenis van buiten (de klant, een derde, het recht of een termijn) start een bedrijfsproces, "
                    "nooit een deelproces.",
                    "Een gebeurtenis die het resultaat is van een bedrijfsproces (een rechtsgevolg) kan elders een "
-                   "bedrijfsproces starten; een tussentoestand binnen één bedrijfsproces is geen element.",
+                   "bedrijfsproces starten, nooit een andere gebeurtenis: daartussen staat altijd een bedrijfsproces; een "
+                   "tussentoestand binnen één bedrijfsproces is geen element.",
                    "Een gebeurtenis hangt onder het levensloopproces van het object waarvan de toestand verandert."), vak="bedrijf/gedrag-intern"),
     Elementtype(
         "actor", "Actor", "Business Actor", "business-actor", "bedrijfsarchitectuur", "actor",
@@ -615,7 +616,6 @@ RELATIES: list[Relatie] = [
     Relatie("bedrijfsproces", "stroom", "bedrijfsproces", False, (), (), "geeft iets door aan een ander proces"),
     Relatie("gebeurtenis", "triggering", "bedrijfsproces", True, ("leidt tot",), ("leidt_tot_gedrag",)),
     Relatie("gebeurtenis", "triggering", "bedrijfsinteractie", False, ("start",), ("leidt_tot_gedrag",)),
-    Relatie("gebeurtenis", "triggering", "gebeurtenis", False, (), (), "een rechtsgevolg dat een ander teweegbrengt"),
     Relatie("gebeurtenis", "specialisatie", "gebeurtenis", False, ("is een",), (), "naar een generieke gebeurtenis"),
     Relatie("dienst", "bediening", "bedrijfsproces", True, ("bedient",)),
     Relatie("dienst", "bediening", "rol", True, ("bedient",), (), "de rol van de afnemer"),

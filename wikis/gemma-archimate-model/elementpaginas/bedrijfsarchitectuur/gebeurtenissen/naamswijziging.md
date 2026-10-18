@@ -2,7 +2,7 @@
 id: naamswijziging
 type: gebeurtenis
 archimate_type: business-event
-status: goedgekeurd
+status: review
 naam: Naamswijziging
 onderwerpen:
 - burgerzaken
@@ -21,15 +21,13 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rvig-hup-vaststelling-geslachtsnaam
 - 2026-rvig-hup-wijziging-geslachtsnaam
-- 2026-rijk-paspoortwet-bwbr0005212
-- 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
 ---
 
 # Naamswijziging
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling naamswijziging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -56,7 +54,7 @@ Gebeurtenis. Uitkomst van de beslistabel: Gedrag, *toestandsverandering* (2 toet
 
 ### Plaats in de indelingen
 
-- **Start**: [Toevoegen latere vermelding](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/toevoegen-latere-vermelding.md), [Verval van het reisdocument](verval-van-het-reisdocument.md).
+- **Start**: [Toevoegen latere vermelding](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/toevoegen-latere-vermelding.md).
 - **Beleidsdomeinindeling**: 0 Bestuur en Ondersteuning, Burgerzaken.
 
 ### Kenmerken
@@ -78,7 +76,6 @@ De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in 
 | Van | Relatie | Naar | Bron |
 |---|---|---|---|
 | Naamswijziging | leidt tot *triggering* | [Toevoegen latere vermelding](../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/toevoegen-latere-vermelding.md) | [Utrecht Voornaam of achternaam veranderen](../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen.md), [BW boek 1](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) (Utrecht inleiding; art. 20) |
-| Naamswijziging | doet het reisdocument vervallen *triggering* | [Verval van het reisdocument](verval-van-het-reisdocument.md) | [Paspoortwet](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [HUP Van rechtswege vervallen reisdocument](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) (Paspoortwet art. 47 lid 1 onder e; HUP Van rechtswege vervallen) |
 
 #### Inkomend
 
@@ -98,8 +95,6 @@ De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in 
 | [BW boek 1](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) | Burgerlijk Wetboek Boek 1 (Personen- en familierecht) |
 | [HUP BRP: Vaststelling geslachtsnaam](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-vaststelling-geslachtsnaam.md) | HUP BRP: Vaststelling geslachtsnaam |
 | [HUP BRP: Wijziging geslachtsnaam](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-wijziging-geslachtsnaam.md) | HUP BRP: Wijziging geslachtsnaam |
-| [Paspoortwet](../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) | Paspoortwet |
-| [HUP Van rechtswege vervallen reisdocument](../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-rvig-hup-van-rechtswege-vervallen-reisdocument.md) | HUP BRP: Van rechtswege vervallen reisdocument |
 
 ### Afstemming met GEMMA
 

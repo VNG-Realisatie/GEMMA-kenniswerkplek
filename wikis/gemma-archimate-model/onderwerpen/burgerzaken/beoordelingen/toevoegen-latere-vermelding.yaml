@@ -58,10 +58,18 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
   vindplaats: UPL nr. 460; Utrecht
+- soort: stroom
+  naar: bijhouden-persoonsgegevens
+  naam: zendt akte aan
+  ggm_match: geen
+  bronnen:
+  - 2026-rvig-hup-wijziging-voornaam
+  vindplaats: HUP Wijziging voornaam, kop Wijziging voornaam persoon
 bronnen:
 - 2026-rvig-hup-vaststelling-ouderschap
 - 2026-rvig-hup-ontkenning-ouderschap
 - 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rvig-hup-wijziging-voornaam
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

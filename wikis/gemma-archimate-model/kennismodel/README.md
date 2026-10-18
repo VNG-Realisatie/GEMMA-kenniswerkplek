@@ -136,7 +136,7 @@ Per brontype (rij) en doeltype (kolom) de toegestane relaties; \* is een uitbrei
 | Dienst |  |  |  | aggregatie, specialisatie* | bediening |  |  |  | bediening |  |  |  |  |  |  |
 | Bedrijfsproces | toegang | toegang* |  | realisatie | aggregatie, specialisatie, triggering, stroom* | bediening | aggregatie*, triggering |  |  |  |  | bediening* |  |  |  |
 | Bedrijfsfunctie | toegang |  |  | realisatie, aggregatie* | bediening | aggregatie |  |  |  |  |  |  |  |  | realisatie |
-| Gebeurtenis |  |  |  |  | triggering |  | triggering*, specialisatie* |  |  |  |  | triggering* |  |  |  |
+| Gebeurtenis |  |  |  |  | triggering |  | specialisatie* |  |  |  |  | triggering* |  |  |  |
 | Actor |  |  |  |  |  |  |  | aggregatie*, associatie* | toewijzing |  |  |  |  |  |  |
 | Rol | toegang | toegang* |  |  | toewijzing | toewijzing |  |  | aggregatie, specialisatie |  |  | toewijzing* |  |  |  |
 | Bedrijfssamenwerking | toegang* |  |  |  | toewijzing | toewijzing* |  | aggregatie | aggregatie |  |  | toewijzing* |  |  |  |
