@@ -94,28 +94,3 @@ besluiten:
   gevolg: afwijzen
 toelichting: 'Vervalt: geen landelijke wettelijke grondslag. Het proces realiseerde de dienst Grafonderhoud (UPL nr. 163), met grondslag in de Model beheersverordening begraafplaatsen art. 20; zo''n UPL-product blijft, maar wordt niet uitgewerkt in processen, objecten, gebeurtenissen of rollen (regel Wettelijke grondslag).'
 status: afgewezen
-beslist:
-  uitkomst:
-    soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: bedrijfsproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  - 2026-vng-retributies
-  herkomst: gemeentelijke-regelgeving
-  gemma_generiek:
-    gemma_id: id-1a739ba4-08d4-4b65-84d8-4ea89499b4ca
-    gemma_naam: Onderhouden
-    gemma_type: business-process
-    gemma_definitie: Het planmatig (preventief) onderhouden van de openbare ruimte, zoals het maaien van bermen, het onderhoud van plantsoenen, schilderen van gemeente-eigendommen en gebouwen.
-    gemma_map: Business / Procesarchitectuur / Processenlandschap
-    gemma_eigenschappen:
-      GEMMA type: Bedrijfsproces
-      Object ID: 1a739ba4-08d4-4b65-84d8-4ea89499b4ca

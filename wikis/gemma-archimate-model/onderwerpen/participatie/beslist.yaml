@@ -1,0 +1,389 @@
+# Gegenereerd door tools/beslissen.py (beslist per beoordeling); niet met de hand bewerken.
+adviesraad:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Betrekken inwoners bij beleid
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+afspraak-over-uitvoering:
+  uitkomst:
+    soort: element
+    regel: 36
+    toelichting: Passief, afspraak (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: contract
+    voorleggen: true
+    redenen:
+    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    generiek: false
+    typeregel: 18
+  voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2024-vng-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/afspraak-over-uitvoering.md
+behandelen-verzoek-uitdaagrecht:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md
+beoordeling-verzoek:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen verzoek uitdaagrecht
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+betrekken-inwoners-bij-beleid:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md
+burgerbegroting:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Betrekken inwoners bij beleid
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+burgerberaad:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Betrekken inwoners bij beleid
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+eindverslag-inwonersparticipatie:
+  uitkomst:
+    soort: element
+    regel: 36
+    toelichting: 'Passief (kern ja, 1/2, ontbreekt: *levenscyclus*)'
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: true
+    redenen:
+    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+evaluatie:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen verzoek uitdaagrecht
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+experimenteerprogramma:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Beleidsnota
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+indiener:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2024-vng-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/indiener.md
+inspraak:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Betrekken inwoners bij beleid
+    generiek: false
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: rijksregelgeving
+inwoner:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    generiek: false
+    typeregel: 9
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/actoren/inwoner.md
+kennisgeving-van-het-ontwerp:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Uitvoeren uniforme openbare voorbereidingsprocedure
+    generiek: false
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+maatschappelijke-partij:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    generiek: false
+    typeregel: 9
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/actoren/maatschappelijke-partij.md
+model-participatieverordening:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  kwaliteitsdoelen:
+  - gemma_id: id-d78c3f24-70bd-11e4-67ab-0050568a6200
+    gemma_naam: Transparant
+    gemma_definitie: Burgers en bedrijven kunnen gemakkelijk te weten komen hoe de overheid werkt en krijgen inzicht waarom ze voor bepaalde dienstverlening wel of niet in aanmerking komen. De overheid houdt hen op de hoogte van het verloop van procedures waarbij ze betrokken zijn. De overheid zorgt ervoor dat haar werkwijze transparant is, kan zich hierover verantwoorden en stelt de informatie die hiervoor nodig is actief beschikbaar. Burgers en bedrijven kunnen de prestaties van overheden vergelijken, controleren en beoordelen. De overheid stelt de informatie die daarvoor nodig is actief beschikbaar. Dit is belangrijk voor het vertrouwen van burgers en bedrijven in de overheid.
+  - gemma_id: id-d78c3f24-70bd-11e4-67ab-0050568a6202
+    gemma_naam: Ontvankelijk
+    gemma_definitie: Burgers en bedrijven kunnen gemakkelijk terecht bij de dienstverlener met verzoeken, ideeën voor verbetering, meldingen of klachten. De overheidsdienstverlener herstelt met deze inbreng fouten, compenseert tekortkomingen en leert hiervan om haar dienstverlening continu te verbeteren. Bij innovaties en het vernieuwen van diensten is het belangrijk om alle belanghebbenden in beeld te hebben en te betrekken. Bij inzet van nieuwe technologieën wordt rekening gehouden met de waarden, belangen, verwachtingen en zorgen van burgers en bedrijven.
+  pad: elementpaginas/motivatie/beleidskaders/gemeentelijke-regelgeving/model-participatieverordening.md
+ondernemer:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+ondersteuning:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen verzoek uitdaagrecht
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+ontwerp-van-het-te-nemen-besluit:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Besluit
+    generiek: false
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+participatie:
+  uitkomst:
+    soort: buiten_model
+    regel: 3
+    toelichting: Buiten dit model
+    archimate_type: Grouping
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  herkomst: rijksregelgeving
+participatiebeleid:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Beleidsnota
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+participatieladder:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Betrekken inwoners bij beleid
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+participatieparagraaf:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Begroting
+    generiek: false
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  herkomst: richtlijn
+participatieplan:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieplan.md
+participatieverordening:
+  uitkomst:
+    soort: element
+    regel: 36
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: true
+    redenen:
+    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2024-vng-model-participatieverordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieverordening.md
+terinzagelegging:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Uitvoeren uniforme openbare voorbereidingsprocedure
+    generiek: false
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+verslag-van-mondelinge-zienswijzen:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Uitvoeren uniforme openbare voorbereidingsprocedure
+    generiek: false
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+verzoek-uitdaagrecht:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-model-participatieverordening
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/verzoek-uitdaagrecht.md

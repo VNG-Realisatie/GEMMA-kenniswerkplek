@@ -40,18 +40,3 @@ relaties:
   - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   vindplaats: art. 54 lid 1 onder a, 56
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
-    paginatype: gebeurtenis
-    archimate_type: business-event
-    voorleggen: false
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/verval-van-het-reisdocument.md

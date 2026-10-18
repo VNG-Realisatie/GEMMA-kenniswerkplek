@@ -52,26 +52,3 @@ relaties: []
 naamkeuze:
 - 'Schriftelijke klacht: de gangbare term, die ook in de wet staat (Awb art. 9:2, 9:4 lid 1); de wetsterm Klaagschrift is een synoniem (regel Bronvoorrang). De naam Klacht is van de UPL-dienst.'
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 30
-    toelichting: Passief (kern ja, 2/2)
-    paginatype: bedrijfsobject
-    archimate_type: business-object
-    voorleggen: false
-    objectniveau: generiek
-    generiek: false
-    typeregel: 19
-  voor_te_leggen:
-  - data-object zonder sterke GGM-match
-  bronnen:
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  herkomst: rijksregelgeving
-  data_objecten:
-  - id: schriftelijke-klacht-data
-    naam: Schriftelijke klacht-data
-    relatie: realisatie
-    ggm_sterkte: geen
-    pad: elementpaginas/applicatiearchitectuur/data-objecten/schriftelijke-klacht-data.md
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/schriftelijke-klacht.md

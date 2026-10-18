@@ -52,24 +52,3 @@ bronnen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
-    paginatype: gebeurtenis
-    archimate_type: business-event
-    voorleggen: false
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rvig-hup-wijziging-voornaam
-  - 2026-rvig-hup-naamswijziging-en-naamgebruik
-  - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  - 2026-rijk-burgerlijk-wetboek-boek-1
-  - 2026-rvig-hup-vaststelling-geslachtsnaam
-  - 2026-rvig-hup-wijziging-geslachtsnaam
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/naamswijziging.md

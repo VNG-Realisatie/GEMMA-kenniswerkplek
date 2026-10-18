@@ -50,19 +50,3 @@ bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
-    paginatype: actor
-    archimate_type: business-actor
-    voorleggen: false
-    generiek: false
-    typeregel: 9
-  bronnen:
-  - 2024-vng-implementatiehandleiding-model-participatieverordening
-  - 2026-rijk-gemeentewet-wettekst
-  - 2024-vng-model-participatieverordening
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/actoren/maatschappelijke-partij.md

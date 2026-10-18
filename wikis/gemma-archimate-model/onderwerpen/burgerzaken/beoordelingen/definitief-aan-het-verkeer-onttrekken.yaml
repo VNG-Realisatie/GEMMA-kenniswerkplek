@@ -11,15 +11,3 @@ toelichting: 'Processtap zonder pagina: het vernietigen, of onbruikbaar maken en
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rijk-paspoortbesluit-bwbr0044308
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 5
-    toelichting: Onderdeel of deelstap van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Inhouden reisdocument
-    generiek: false
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rijk-paspoortbesluit-bwbr0044308
-  herkomst: rijksregelgeving

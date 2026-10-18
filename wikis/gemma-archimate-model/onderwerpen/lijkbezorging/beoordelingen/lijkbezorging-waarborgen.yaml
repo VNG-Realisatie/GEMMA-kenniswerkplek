@@ -35,18 +35,3 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen capability voor de lijkbezorging. De 26 capabilities zijn vermogens van de informatievoorziening.
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Vermogen (kern ja)
-    paginatype: capability
-    archimate_type: capability
-    voorleggen: false
-    generiek: false
-    typeregel: 15
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-vng-wet-op-de-lijkbezorging
-  herkomst: rijksregelgeving
-  pad: elementpaginas/strategie/capabilities/niet-domeingebonden/lijkbezorging-waarborgen.md

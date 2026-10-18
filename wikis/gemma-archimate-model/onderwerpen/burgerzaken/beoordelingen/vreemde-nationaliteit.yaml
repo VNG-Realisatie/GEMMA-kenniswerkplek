@@ -11,15 +11,3 @@ kenmerken:
 toelichting: 'Waarde van Nationaliteit, geen pagina: de gemeente neemt een vreemde nationaliteit op op grond van een brondocument of een mededeling van de minister van Justitie en Veiligheid (Wet BRP art. 2.17) en beëindigt haar bij verlies, afstand of verkrijging van het Nederlanderschap; naast de Nederlandse nationaliteit wordt geen vreemde nationaliteit opgenomen (HUP Vreemde nationaliteit). Een processtap van Bijhouden persoonsgegevens.'
 bronnen:
 - 2026-rvig-hup-vreemde-nationaliteit
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Nationaliteit
-    generiek: false
-  bronnen:
-  - 2026-rvig-hup-vreemde-nationaliteit
-  - 2026-rvig-hup-nationaliteit
-  herkomst: richtlijn

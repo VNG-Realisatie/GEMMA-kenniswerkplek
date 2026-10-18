@@ -158,20 +158,3 @@ besluiten:
   besluit: 'Afgewezen: één gemeentelijk deel met alle tien bedrijfsprocessen (bijna gelijk aan de ketensamenwerking, mengt overheid en houder) en groepen per fase (volgen de fase, niet de partij). Een groep arts vervalt: in het model schouwt alleen de gemeentelijke lijkschouwer, die de gemeente benoemt (Wlb art. 3, 4). Namen afgewezen: Toezien op lijkbezorging (homoniem met toezicht), Bezorgen en bestemmen (bijna de naam van de ketensamenwerking).'
   gevolg: verwerkt
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 26
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: levensloopproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2025-groningen-algemene-plaatselijke-verordening
-  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/toestaan-lijkbezorging.md

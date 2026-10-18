@@ -97,28 +97,3 @@ relaties:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 9:4, 9:6, 9:12a
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: bedrijfsproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: rijksregelgeving
-  gemma:
-    gemma_id: id-904ab005-ae79-48be-8200-14ccb6676a53
-    gemma_naam: Behandelen klacht
-    gemma_type: business-process
-    gemma_definitie: Het afhandelen van klachten tegen het "gedrag of een houding" van een gemeentelijke ambtenaar. Elke blijk van onvrede over gedrag en/of houding met betrekking tot dienstverlening, tussen een klant en een of meer ambtenaren in functie.
-    gemma_map: Business / Procesarchitectuur / Processenlandschap
-    gemma_eigenschappen:
-      GEMMA type: Bedrijfsproces
-      Object ID: 904ab005-ae79-48be-8200-14ccb6676a53
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-klacht.md

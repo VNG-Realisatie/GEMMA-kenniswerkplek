@@ -16,15 +16,3 @@ besluiten:
 - datum: '2026-10-08'
   besluit: 'Geen rol: geen landelijke wettelijke bron, de Wlb kent alleen de houder (regel Wettelijke grondslag). Synoniem (context beleid) van Houder van de begraafplaats.'
   gevolg: verwerkt
-beslist:
-  uitkomst:
-    soort: synoniem
-    regel: 1
-    toelichting: Ander woord voor een bestaand begrip
-    voorleggen: false
-    genoemd_begrip: Houder van de begraafplaats
-    generiek: false
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  herkomst: gemeentelijke-regelgeving

@@ -26,19 +26,3 @@ besluiten:
   gevolg: afwijzen
 bronnen:
 - 2010-vng-model-beheersverordening-begraafplaatsen
-beslist:
-  uitkomst:
-    soort: geen_element
-    regel: 20
-    toelichting: Kernrelatie ontbreekt voor Rol
-    archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'voert gedrag uit: nee'
-    generiek: false
-    typeregel: 10
-  voor_te_leggen:
-  - 'voert gedrag uit: nee'
-  bronnen:
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  herkomst: gemeentelijke-regelgeving

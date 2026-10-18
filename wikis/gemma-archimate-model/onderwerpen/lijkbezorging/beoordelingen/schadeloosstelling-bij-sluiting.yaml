@@ -32,21 +32,3 @@ besluiten:
   besluit: 'Geen element: gedeputeerde staten stellen haar vast; de gemeente betaalt alleen.'
   gevolg: afwijzen
   zekerheid: kennis
-beslist:
-  uitkomst:
-    soort: geen_element
-    regel: 20
-    toelichting: Kernrelatie ontbreekt voor Bedrijfsobject
-    archimate_type: business-object
-    voorleggen: true
-    redenen:
-    - 'wordt bewerkt: nee'
-    - 'levenscyclus: nee'
-    generiek: false
-    typeregel: 19
-  voor_te_leggen:
-  - 'wordt bewerkt: nee'
-  - 'levenscyclus: nee'
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving

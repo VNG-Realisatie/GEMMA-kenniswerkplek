@@ -9,14 +9,3 @@ toelichting: 'Eigenschap of indeling van Urn: Eigenschap van de urn: bijgezet, v
 genoemd_begrip: Urn
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Urn
-    generiek: false
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving

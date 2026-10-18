@@ -62,17 +62,3 @@ synoniemen:
   context: HUP
 bronnen:
 - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 28
-    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
-    archimate_type: business-process
-    voorleggen: false
-    genoemd_begrip: Bijhouden persoonsgegevens
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-  - 2026-rvig-hup-dubbelinschrijving
-  herkomst: richtlijn

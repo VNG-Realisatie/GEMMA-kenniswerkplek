@@ -33,18 +33,3 @@ relaties: []
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
-    paginatype: dienst
-    archimate_type: business-service
-    voorleggen: false
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzettingenregister.md

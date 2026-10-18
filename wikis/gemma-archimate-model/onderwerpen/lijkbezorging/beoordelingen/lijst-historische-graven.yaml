@@ -9,14 +9,3 @@ toelichting: 'Eigenschap of indeling van Graf: Indeling van graven naar historis
 genoemd_begrip: Graf
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Graf
-    generiek: false
-  bronnen:
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  herkomst: gemeentelijke-regelgeving

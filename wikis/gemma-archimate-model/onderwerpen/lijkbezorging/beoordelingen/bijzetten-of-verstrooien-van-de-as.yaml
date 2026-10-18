@@ -63,17 +63,3 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 genoemd_begrip: Uitvoeren lijkbezorging
 toelichting: 'Deelproces zonder pagina van Uitvoeren lijkbezorging: het geven van een bestemming aan de as na een crematie: bijzetten van de urn, verstrooien van de as of meegeven aan de nabestaande.'
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 28
-    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
-    archimate_type: business-process
-    voorleggen: false
-    genoemd_begrip: Uitvoeren lijkbezorging
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  herkomst: rijksregelgeving

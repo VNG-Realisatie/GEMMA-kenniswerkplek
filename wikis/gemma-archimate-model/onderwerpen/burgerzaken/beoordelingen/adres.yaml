@@ -16,13 +16,3 @@ ggm:
 vragen: []
 bronnen:
 - 2026-rvig-hup-verblijfplaats
-beslist:
-  uitkomst:
-    soort: verwijzing
-    regel: 6
-    toelichting: Hoort bij een ander onderwerp
-    voorleggen: false
-    generiek: false
-  bronnen:
-  - 2026-rvig-hup-verblijfplaats
-  herkomst: richtlijn

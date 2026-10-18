@@ -36,17 +36,3 @@ onderwerpen:
 - lijkbezorging
 doelgroep: gemeente
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: false
-    generiek: false
-    typeregel: 10
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/rollen/gemeentelijke-lijkschouwer.md

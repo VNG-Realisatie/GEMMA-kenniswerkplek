@@ -15,15 +15,3 @@ synoniemen:
 bronnen:
 - 2025-rvig-logisch-ontwerp-brp-2025q1
 - 2026-rvig-hup-achtergronden-en-begrippen
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Ingeschreven persoon
-    generiek: false
-  bronnen:
-  - 2025-rvig-logisch-ontwerp-brp-2025q1
-  - 2026-rvig-hup-achtergronden-en-begrippen
-  herkomst: informatiemodel

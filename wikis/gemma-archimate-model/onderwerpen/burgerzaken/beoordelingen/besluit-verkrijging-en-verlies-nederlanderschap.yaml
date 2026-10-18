@@ -83,19 +83,3 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
-    paginatype: beleidskader
-    archimate_type: driver
-    voorleggen: false
-    generiek: false
-    typeregel: 14
-  bronnen:
-  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
-  herkomst: rijksregelgeving
-  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/besluit-verkrijging-en-verlies-nederlanderschap.md

@@ -12,17 +12,3 @@ besluiten:
   gevolg: afwijzen
 bronnen:
 - 2010-vng-model-beheersverordening-begraafplaatsen
-beslist:
-  uitkomst:
-    soort: buiten_scope
-    regel: 2
-    toelichting: Niet herkenbaar of niet gemeentelijk
-    voorleggen: false
-    redenen:
-    - 'gemeentelijk: nee'
-    generiek: false
-  voor_te_leggen:
-  - 'gemeentelijk: nee'
-  bronnen:
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  herkomst: gemeentelijke-regelgeving

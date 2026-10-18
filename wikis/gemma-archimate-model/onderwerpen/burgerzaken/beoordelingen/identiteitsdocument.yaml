@@ -32,16 +32,3 @@ kenmerken:
     bronnen:
     - 2026-nvvb-id-protocol-medewerkers
 toelichting: 'Invoer: een toegelaten document dat een andere autoriteit verstrekt en dat de gemeente bij de balie controleert. Geen pagina; het Nederlandse reisdocument is het element Reisdocument.'
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 31
-    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Inschrijven ingezetene
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-nvvb-id-protocol-medewerkers
-  herkomst: richtlijn

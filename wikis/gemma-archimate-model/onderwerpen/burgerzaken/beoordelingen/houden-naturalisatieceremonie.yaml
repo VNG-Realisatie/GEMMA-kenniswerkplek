@@ -75,18 +75,3 @@ relaties: []
 bronnen:
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
 - 2025-vng-upl-producten-en-diensten-extern
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 28
-    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
-    archimate_type: business-process
-    voorleggen: false
-    genoemd_begrip: Behandelen naturalisatieverzoek
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  herkomst: rijksregelgeving

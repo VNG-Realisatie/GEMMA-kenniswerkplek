@@ -35,19 +35,3 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen capability voor het vaststellen van de identiteit van een persoon aan de balie. De capability Authenticeren van eindgebruikers is de digitale kant voor gebruikers van een gebruikersinterface (DigiD, eHerkenning), een vermogen van de informatievoorziening; een koppeling zou haar naam en definitie overschrijven. De GEMMA-bedrijfsfunctie Identiteitvaststelling (onder Ontvangst) is een functie, geen capability.
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Vermogen (kern ja)
-    paginatype: capability
-    archimate_type: capability
-    voorleggen: false
-    generiek: false
-    typeregel: 15
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rijk-wet-brp-bwbr0033715
-  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  herkomst: rijksregelgeving
-  pad: elementpaginas/strategie/capabilities/publieksdiensten/identiteit-vaststellen.md

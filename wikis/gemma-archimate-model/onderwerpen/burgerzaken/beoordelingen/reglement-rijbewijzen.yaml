@@ -89,18 +89,3 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
 regelgever: rijk
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
-    paginatype: beleidskader
-    archimate_type: driver
-    voorleggen: false
-    generiek: false
-    typeregel: 14
-  bronnen:
-  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: rijksregelgeving
-  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/reglement-rijbewijzen.md

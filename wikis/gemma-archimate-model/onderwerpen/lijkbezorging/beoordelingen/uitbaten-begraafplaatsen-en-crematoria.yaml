@@ -38,28 +38,3 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: art. 31; Groningen art. 27
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 25
-    toelichting: Gedrag, *groepeert processen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: cluster naar soort werk
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  herkomst: rijksregelgeving
-  gemma_generiek:
-    gemma_id: id-de88d348-dcce-4b8a-a3f6-cac6351a8311
-    gemma_naam: Uitbaten gemeentelijke voorzieningen
-    gemma_type: business-process
-    gemma_definitie: Het openhouden van gemeentelijke voorzieningen zoals sportvelden, musea, parkeergarages, wijkcentra en consultatiebureaus en het ter beschikking stellen van de daaraan gerelateerde middelen zoals ruimtes of dranghekken, bijvoorbeeld voor een zelfhulpgroep of een buurtfeest ten behoeve van het versterken van de sociale cohesie. Ook het tegen een vergoeding ter beschikking stellen van ruimte voor bijvoorbeeld de bibliotheek valt hieronder vanwege het maatschappelijke karakter.
-    gemma_map: Business / Procesarchitectuur / Processenlandschap
-    gemma_eigenschappen:
-      GEMMA type: Bedrijfsproces
-      Object ID: de88d348-dcce-4b8a-a3f6-cac6351a8311
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitbaten-begraafplaatsen-en-crematoria.md

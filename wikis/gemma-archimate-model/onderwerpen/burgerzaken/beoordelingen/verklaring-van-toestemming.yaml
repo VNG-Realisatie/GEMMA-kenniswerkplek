@@ -39,17 +39,3 @@ synoniemen:
 - naam: Toestemmingsverklaring
   context: beleid
 toelichting: 'Invoer van een andere partij: de ouder of andere gezaghebber geeft de verklaring, de gemeente ontvangt en toetst haar bij de aanvraag voor een kind jonger dan achttien jaar (paspoort) of twaalf jaar (identiteitskaart). Geen pagina; vermeld bij Behandelen aanvraag reisdocument (Paspoortwet art. 34; Utrecht).'
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 31
-    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Behandelen aanvraag reisdocument
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  herkomst: rijksregelgeving

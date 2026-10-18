@@ -18,15 +18,3 @@ kenmerken:
     bronnen:
     - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
 toelichting: 'Representatie, geen pagina: het dossier van de verstrekkende gemeente met het aanvraagformulier en de andere gegevens van een verstrekt reisdocument (HUP Uitreiking). Vermeld bij Reisdocument.'
-beslist:
-  uitkomst:
-    soort: geen_pagina
-    regel: 17
-    toelichting: Waarneembare vorm
-    archimate_type: representation
-    voorleggen: false
-    genoemd_begrip: Reisdocument
-    generiek: false
-  bronnen:
-  - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  herkomst: richtlijn

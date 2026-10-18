@@ -106,19 +106,3 @@ relaties:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 4:1, 4:5
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: bedrijfsproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-beschikking.md

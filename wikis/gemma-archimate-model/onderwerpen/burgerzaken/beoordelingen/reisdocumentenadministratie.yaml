@@ -18,15 +18,3 @@ kenmerken:
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
 toelichting: 'Representatie, geen pagina: de administratie van de uitreikende autoriteit met de gegevens over aanvraag, verstrekking en uitreiking van de reisdocumenten (Paspoortwet art. 3 lid 8). Vermeld bij Reisdocument; precedent Register van de burgerlijke stand.'
-beslist:
-  uitkomst:
-    soort: geen_pagina
-    regel: 17
-    toelichting: Waarneembare vorm
-    archimate_type: representation
-    voorleggen: false
-    genoemd_begrip: Reisdocument
-    generiek: false
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  herkomst: rijksregelgeving

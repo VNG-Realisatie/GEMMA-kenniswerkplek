@@ -57,25 +57,3 @@ onderwerpen:
 - lijkbezorging
 doelgroep: gemeente
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
-    paginatype: actor
-    archimate_type: business-actor
-    voorleggen: false
-    generiek: false
-    typeregel: 9
-  bronnen:
-  - 2024-rijk-gemeentewet-wettekst
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving
-  gemma:
-    gemma_id: id-b69cb101-8708-47de-9ac1-e138f205a49f
-    gemma_naam: Gemeenteraad
-    gemma_type: business-actor
-    gemma_map: Business / Procesarchitectuur / Actoren en rollen
-    gemma_eigenschappen:
-      Object ID: b69cb101-8708-47de-9ac1-e138f205a49f
-  pad: elementpaginas/bedrijfsarchitectuur/actoren/gemeenteraad.md

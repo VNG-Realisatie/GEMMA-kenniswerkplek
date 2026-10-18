@@ -51,17 +51,3 @@ genoemd_begrip: Verlenen verlof tot begraving of crematie
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rvo-aangifte-en-akte-van-overlijden
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 31
-    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Verlenen verlof tot begraving of crematie
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-rvo-aangifte-en-akte-van-overlijden
-  herkomst: rijksregelgeving

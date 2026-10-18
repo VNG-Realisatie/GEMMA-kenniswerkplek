@@ -1,0 +1,696 @@
+# Gegenereerd door tools/beslissen.py (beslist per beoordeling); niet met de hand bewerken.
+aanvraag:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: true
+    redenen:
+    - 'homoniem van Aanvraag (GGM, ICT): naamkeuze voorleggen'
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - 'homoniem van Aanvraag (GGM, ICT): naamkeuze voorleggen'
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: aanvraag-data
+    naam: Aanvraag-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/aanvraag-data.md
+  ggm:
+    ggm_entiteit: Aanvraag
+    ggm_guid: EAID_2F2A3590_9B34_4ec5_B0AE_B487ED241155
+    ggm_uml_type: Class
+    ggm_beleidsdomein: Archief
+    ggm_taakveld: Erfgoed
+    ggm_diagram:
+    - Archief Aanvragen
+    ggm_diagram_ids:
+    - EAID_8D468696_4B9D_40b4_92F0_3BED39502098
+    ggm_definitie: (officieel) verzoek, iets (officieel) vragen aan een bevoegde macht.
+  ggm_duplicaten:
+  - entiteit: Aanvraag
+    guid: EAID_208D605F_BDE5_700A_13F6_281C3303691F
+    beleidsdomein: Diensten
+    taakveld: Inkomen
+  gemma:
+    gemma_id: id-4c995e53fd534fb1895e557ad513c729
+    gemma_naam: Aanvraag
+    gemma_type: business-object
+    gemma_definitie: (officieel) verzoek, iets (officieel) vragen aan een bevoegde macht.
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      Alternate name: Aanvraag (Archief)
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-6c992a39-ca0b-4d4c-b749-fe8167af540d
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{2F2A3590-9B34-4ec5-B0AE-B487ED241155}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: 6c992a39-ca0b-4d4c-b749-fe8167af540d
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/aanvraag.md
+algemene-wet-bestuursrecht:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/algemene-wet-bestuursrecht.md
+behandelen-aanvraag-beschikking:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-beschikking.md
+behandelen-aanvraag-nadeelcompensatie:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-aanvraag-nadeelcompensatie.md
+behandelen-bezwaar:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-1e66364c-80c6-4d9f-9737-bab779a23119
+    gemma_naam: Behandelen bezwaar
+    gemma_type: business-process
+    gemma_definitie: 'Het afhandelen van bezwaren: door een wettelijk voorschrift bestaande bevoegdheid een voorziening tegen een besluit te vragen bij de gemeente dat het besluit heeft genomen. Een voorbeeld is het bezwaar tegen de hoogte van de WOZ-waarde of het niet toekennen van een bepaalde gevraagde Wmo-voorziening.'
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1e66364c-80c6-4d9f-9737-bab779a23119
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-bezwaar.md
+behandelen-klacht:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-904ab005-ae79-48be-8200-14ccb6676a53
+    gemma_naam: Behandelen klacht
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van klachten tegen het "gedrag of een houding" van een gemeentelijke ambtenaar. Elke blijk van onvrede over gedrag en/of houding met betrekking tot dienstverlening, tussen een klant en een of meer ambtenaren in functie.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 904ab005-ae79-48be-8200-14ccb6676a53
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-klacht.md
+bekendmaken-besluit:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-bekendmakingswet-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/bekendmaken-besluit.md
+bekendmaking:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-bekendmakingswet-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/bekendmaking.md
+bekendmaking-algemeen-verbindend-voorschrift:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-bekendmakingswet-wettekst
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/bekendmaking-algemeen-verbindend-voorschrift.md
+bekendmakingswet:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-bekendmakingswet-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/bekendmakingswet.md
+belanghebbende:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-bd369f13-44a4-41f0-8b95-7925a0c0eaa9
+    gemma_naam: Belanghebbende
+    gemma_type: business-role
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: bd369f13-44a4-41f0-8b95-7925a0c0eaa9
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/belanghebbende.md
+beleidsnota:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-gemeentewet-wettekst
+  - 2024-vng-implementatiehandleiding-model-participatieverordening
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsnota.md
+beleidsregel:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsregel.md
+beroep:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/beroep.md
+beschikking:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: beschikking-data
+    naam: Beschikking-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/beschikking-data.md
+  ggm:
+    ggm_entiteit: Beschikking
+    ggm_guid: EAID_71D7E96D_641A_4b6a_A325_DED07C3B5836
+    ggm_uml_type: Class
+    ggm_beleidsdomein: Generiek Jeugd en Wmo
+    ggm_taakveld: 6 Sociaal Domein
+    ggm_diagram:
+    - 'Sociaal Domein Beschikking en Voorziening: Domain Objects'
+    - Beperkingen
+    - AanvraagOfMelding
+    ggm_diagram_ids:
+    - EAID_5AE29494_3572_4924_B2B8_3206E55D71BB
+    - EAID_9B278A50_862A_4085_B362_C41392101916
+    - EAID_5F3782EB_C416_461c_A9FA_40991A7F0165
+    ggm_definitie: 'In het bestuursrecht: Een beslissing van een overheidsorgaan in een concreet geval, bijvoorbeeld het verlenen van een bouwvergunning. In het civiele recht: een rechterlijke uitspraak in een procedure die begint met een verzoekschrift.'
+  ggm_duplicaten:
+  - entiteit: Beschikking
+    guid: EAID_16ABCFF8_4817_6A73_59BA_281C3303F8D2
+    beleidsdomein: Diensten
+    taakveld: Inkomen
+  gemma:
+    gemma_id: id-3d9b45d27b6840b39b99e8ede85db6f4
+    gemma_naam: Beschikking
+    gemma_type: business-object
+    gemma_definitie: 'In het bestuursrecht: Een beslissing van een overheidsorgaan in een concreet geval, bijvoorbeeld het verlenen van een bouwvergunning. In het civiele recht: een rechterlijke uitspraak in een procedure die begint met een verzoekschrift.'
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-c481e8b8-f7d7-4979-b767-ebf2a9b04712
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{71D7E96D-641A-4b6a-A325-DED07C3B5836}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: c481e8b8-f7d7-4979-b767-ebf2a9b04712
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beschikking.md
+beschikking-aanvragen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-logius-upl-actueel
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/beschikking-aanvragen.md
+beslistermijn:
+  uitkomst:
+    soort: buiten_model
+    regel: 3
+    toelichting: Buiten dit model
+    archimate_type: Constraint
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+besluit:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: besluit-data
+    naam: Besluit-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/besluit-data.md
+  ggm:
+    ggm_entiteit: Besluit
+    ggm_guid: EAID_AFB100D2_8C68_4488_8949_13E945D15920
+    ggm_uml_type: Class
+    ggm_beleidsdomein: RGBZPlus
+    ggm_taakveld: 99 Kern
+    ggm_diagram:
+    - Diagram Vergunningen en Meldingen
+    - Diagram Aanvragen, Zaken en Besluiten
+    - Verkamering en Woonoverlast
+    - Referentiemodel Gemeentelijke Basisgegevens Zaken in schema
+    ggm_diagram_ids:
+    - EAID_BB52C835_0B2D_4164_AC9D_9D6EDBD7E267
+    - EAID_A2BA1F0D_8428_42fc_80D6_7184F243D268
+    - EAID_B039478A_DAF7_458f_A7C7_E4744EC08DBF
+    - EAID_8AC9A512_0538_48f7_B25E_5BC65B17A147
+    ggm_definitie: Een na overweging of beraadslaging vastgestelde beslissing voor een individueel of concreet geval.
+  ggm_duplicaten:
+  - entiteit: Besluit
+    guid: EAID_0CA08ED2_6990_8292_BBC7_281C33037374
+    beleidsdomein: Diensten
+    taakveld: Inkomen
+  gemma:
+    gemma_id: id-865c7c57c41b41b6847a258458c8421d
+    gemma_naam: Besluit
+    gemma_type: business-object
+    gemma_definitie: Een na overweging of beraadslaging vastgestelde beslissing voor een individueel of concreet geval.
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-10d36920-683f-4cb4-84bf-b00ac045674f
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{AFB100D2-8C68-4488-8949-13E945D15920}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: 10d36920-683f-4cb4-84bf-b00ac045674f
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md
+bestuursorgaan:
+  uitkomst:
+    soort: synoniem
+    regel: 1
+    toelichting: Ander woord voor een bestaand begrip
+    voorleggen: false
+    genoemd_begrip: Beslisser
+    generiek: false
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-gemeentewet-wettekst
+  herkomst: rijksregelgeving
+bezwaar:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/bezwaar.md
+bezwaarschrift:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: bezwaarschrift-data
+    naam: Bezwaarschrift-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/bezwaarschrift-data.md
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/bezwaarschrift.md
+dwangsom-bij-niet-tijdig-beslissen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-logius-upl-actueel
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/dwangsom-bij-niet-tijdig-beslissen.md
+formulier:
+  uitkomst:
+    soort: geen_pagina
+    regel: 17
+    toelichting: Waarneembare vorm
+    archimate_type: representation
+    voorleggen: false
+    genoemd_begrip: Aanvraag
+    generiek: false
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+klacht:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/klacht.md
+klager:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/klager.md
+nadeelcompensatie:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/nadeelcompensatie.md
+omgevingswet-nadeelcompensatie:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+regeling:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: true
+    redenen:
+    - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  - 2026-vng-wet-op-de-lijkbezorging
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-e5771904f7a442de8f07744a66d37ef0
+    gemma_naam: Regeling
+    gemma_type: business-object
+    gemma_definitie: Verzamelnaam voor AMvB’s, Ministeriële regelingen, lokale verordeningen, etc. De regeling is de meest concrete uitleg van de wet.
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-4613c364-53f2-445d-a392-3b6661533a71
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{C25455F3-FEB0-4c6d-9AA4-3B027718BEE3}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: 4613c364-53f2-445d-a392-3b6661533a71
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md
+schriftelijke-klacht:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: schriftelijke-klacht-data
+    naam: Schriftelijke klacht-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/schriftelijke-klacht-data.md
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/schriftelijke-klacht.md
+uitvoeren-uniforme-openbare-voorbereidingsprocedure:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-rijk-gemeentewet-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/uitvoeren-uniforme-openbare-voorbereidingsprocedure.md
+vaststellen-dwangsom-bij-niet-tijdig-beslissen:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2026-logius-upl-actueel
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/vaststellen-dwangsom-bij-niet-tijdig-beslissen.md
+vergunning:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/vergunning.md
+voeren-verweer-in-beroep:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/voeren-verweer-in-beroep.md
+zienswijze:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/zienswijze.md

@@ -13,15 +13,3 @@ kenmerken:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 genoemd_begrip: Aanvraag
 toelichting: 'Representatie van de aanvraag, geen pagina: het bestuursorgaan kan voor het indienen van aanvragen en het verstrekken van gegevens een formulier vaststellen, zonder gegevens te vragen die niet nodig zijn (Awb art. 4:4).'
-beslist:
-  uitkomst:
-    soort: geen_pagina
-    regel: 17
-    toelichting: Waarneembare vorm
-    archimate_type: representation
-    voorleggen: false
-    genoemd_begrip: Aanvraag
-    generiek: false
-  bronnen:
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  herkomst: rijksregelgeving

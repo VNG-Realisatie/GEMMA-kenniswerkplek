@@ -9,14 +9,3 @@ toelichting: 'Eigenschap of indeling van Lijk: Indeling van Lijk: een lijk is he
 genoemd_begrip: Stoffelijk overschot
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Stoffelijk overschot
-    generiek: false
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving

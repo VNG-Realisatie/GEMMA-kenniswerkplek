@@ -38,17 +38,3 @@ genoemd_begrip: Vergunning
 toelichting: 'Specialisatie zonder pagina van Vergunning: ontheffing van het college van het verbod op asverstrooiing buiten de begraafplaats (APV Groningen art. 5:27 lid 3) en toestemming voor verstrooiing op een aangewezen plek op de begraafplaats (Groningen art. 21).'
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: specialisatie
-    regel: 22
-    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Vergunning
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2025-groningen-algemene-plaatselijke-verordening
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  herkomst: gemeentelijke-regelgeving

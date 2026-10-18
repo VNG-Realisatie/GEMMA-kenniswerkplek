@@ -98,31 +98,3 @@ relaties:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: bedrijfsproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-burgerlijk-wetboek-boek-1
-  - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rvig-hup-geboorte
-  herkomst: rijksregelgeving
-  gemma_generiek:
-    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
-    gemma_naam: Behandelen aangifte of melding
-    gemma_type: business-process
-    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
-    gemma_map: Business / Procesarchitectuur / Processenlandschap
-    gemma_eigenschappen:
-      GEMMA type: Bedrijfsproces
-      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-geboorteakte.md

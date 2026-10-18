@@ -37,18 +37,3 @@ synoniemen:
   context: beleid
 bronnen:
 - 2026-nvvb-handreiking-adresonderzoek
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 31
-    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Uitvoeren adresonderzoek
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-nvvb-handreiking-adresonderzoek
-  - 2023-rvig-circulaire-adresonderzoek-brp
-  - 2026-rijk-besluit-brp-bwbr0034306
-  herkomst: rijksregelgeving

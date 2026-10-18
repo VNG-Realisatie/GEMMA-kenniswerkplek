@@ -206,18 +206,3 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-vng-wet-op-de-lijkbezorging
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
-    paginatype: beleidskader
-    archimate_type: driver
-    voorleggen: false
-    generiek: false
-    typeregel: 14
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-vng-wet-op-de-lijkbezorging
-  herkomst: rijksregelgeving
-  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/wet-op-de-lijkbezorging.md

@@ -10,15 +10,3 @@ kenmerken:
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
     - 2026-rijk-paspoortwet-bwbr0005212
 toelichting: 'Eigenschap van de aanvraag: dezelfde aanvraag met een kortere levertijd tegen een toeslag; ophalen de werkdag erna, bezorgen kan dan niet (Utrecht). Geen pagina; vermeld bij Behandelen aanvraag reisdocument.'
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Behandelen aanvraag reisdocument
-    generiek: false
-  bronnen:
-  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  - 2026-rijk-paspoortwet-bwbr0005212
-  herkomst: rijksregelgeving

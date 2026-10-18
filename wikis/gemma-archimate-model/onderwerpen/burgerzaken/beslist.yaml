@@ -1,0 +1,4704 @@
+# Gegenereerd door tools/beslissen.py (beslist per beoordeling); niet met de hand bewerken.
+aangever:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rvig-hup-verblijfplaats
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-emigratie
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/aangever.md
+aangifte-vertrek-buitenland:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-emigratie-doorgeven
+  - 2026-rvig-hup-emigratie
+  - 2026-rvig-hup-verblijfplaats
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/aangifte-vertrek-buitenland.md
+aanvraag-reisdocument:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen aanvraag reisdocument
+    generiek: false
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: rijksregelgeving
+aanvrager-van-de-verklaring-omtrent-het-gedrag:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/aanvrager-van-de-verklaring-omtrent-het-gedrag.md
+achternaamwijziging:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/achternaamwijziging.md
+administratienummer:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-wijzigen-identificatienummers
+  - 2026-rvig-hup-wijzigen-administratienummer
+  herkomst: richtlijn
+adoptie:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-adoptie
+  - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/adoptie.md
+adoptie-aangifte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/adoptie-aangifte.md
+adres:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-verblijfplaats
+  herkomst: richtlijn
+afgeven-verklaring-omtrent-het-gedrag:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  - 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/afgeven-verklaring-omtrent-het-gedrag.md
+afvoeren-persoonslijst:
+  uitkomst:
+    soort: onderdeel
+    regel: 28
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Bijhouden persoonsgegevens
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
+  - 2026-rvig-hup-dubbelinschrijving
+  herkomst: richtlijn
+akte-van-de-burgerlijke-stand:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  bronnen:
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rvig-hup-algemeen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: akte-van-de-burgerlijke-stand-data
+    naam: Akte van de burgerlijke stand-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/akte-van-de-burgerlijke-stand-data.md
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md
+akte-van-overlijden:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Akte van de burgerlijke stand
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-overlijden-nederland
+  herkomst: rijksregelgeving
+ambtenaar-burgerlijke-stand-aanvragen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-trouwen-in-utrecht
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/ambtenaar-burgerlijke-stand-aanvragen.md
+ambtenaar-van-de-burgerlijke-stand:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/ambtenaar-van-de-burgerlijke-stand.md
+basisregister-reisdocumenten:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Behandelen aanvraag reisdocument
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  herkomst: rijksregelgeving
+behandelen-aanvraag-omwisseling-buitenlands-rijbewijs:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md
+behandelen-aanvraag-reisdocument:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
+  - 2026-rvig-hup-reisdocument
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md
+behandelen-aanvraag-reisdocument-niet-ingezetene:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md
+behandelen-aanvraag-rijbewijs:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md
+behandelen-aanvraag-verklaring-omtrent-het-gedrag:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  - 2026-vng-gemma-impact-ketensamenwerking
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-874c14bc-24ec-409a-9d68-56d7c4f18eb7
+    gemma_naam: Leveren dienst aan derden
+    gemma_type: business-process
+    gemma_definitie: Het leveren van een dienst aan een (keten)partner conform eerder gemaakte samenwerkingsafspraken. Het kan bijvoorbeeld gaan om een (deel)proces dat aan de gemeente is uitbesteed, of om het geven van advies.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 874c14bc-24ec-409a-9d68-56d7c4f18eb7
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-verklaring-omtrent-het-gedrag.md
+behandelen-melding-voorgenomen-huwelijk-of-partnerschap:
+  uitkomst:
+    soort: onderdeel
+    regel: 28
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Voltrekken huwelijk
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
+  herkomst: rijksregelgeving
+behandelen-naturalisatieverzoek:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-874c14bc-24ec-409a-9d68-56d7c4f18eb7
+    gemma_naam: Leveren dienst aan derden
+    gemma_type: business-process
+    gemma_definitie: Het leveren van een dienst aan een (keten)partner conform eerder gemaakte samenwerkingsafspraken. Het kan bijvoorbeeld gaan om een (deel)proces dat aan de gemeente is uitbesteed, of om het geven van advies.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 874c14bc-24ec-409a-9d68-56d7c4f18eb7
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-naturalisatieverzoek.md
+behandelen-optieverklaring:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-optieverklaring.md
+behandelen-verklaring-van-afstand:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verklaring-van-afstand.md
+behandelen-verkrijging-en-verlies-nederlanderschap:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  herkomst: rijksregelgeving
+behandelen-verzoek-om-correctie:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
+  - 2018-nvvb-stappenplan-identiteitswijziging-brp
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-correctie.md
+behandelen-verzoek-om-geheimhouding:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
+  - 2026-rvig-hup-verstrekkingsbeperking
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-geheimhouding.md
+behandelen-verzoek-om-kiezerspas:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-kieswet-bwbr0004627
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-kiezerspas.md
+behandelen-verzoek-om-verwijdering-van-gegevens:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-verwijdering-van-gegevens.md
+behandelen-verzoek-om-volmacht:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-volmacht.md
+beheren-nederlanderschap:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-nederlanderschap.md
+beheren-reisdocumenten:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-reisdocumenten.md
+beheren-rijbewijzen:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-rijbewijzen.md
+beheren-stempassen:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-stempassen.md
+besluit-basisregistratie-personen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-besluit-brp-bwbr0034306
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/besluit-basisregistratie-personen.md
+besluit-burgerlijke-stand-1994:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/besluit-burgerlijke-stand-1994.md
+besluit-verkrijging-en-verlies-nederlanderschap:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/besluit-verkrijging-en-verlies-nederlanderschap.md
+bevestiging-van-de-optie:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen optieverklaring
+    generiek: false
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+bevolkingsadministratie-bijhouding:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rvig-hup-algemeen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-05ebfe88-2d7a-4093-bb4c-d9371baeb43c
+    gemma_naam: Bevolkingsadministratie bijhouding
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van taken om de Basisregistratie Personen actueel en betrouwbaar te houden
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: 05ebfe88-2d7a-4093-bb4c-d9371baeb43c
+      Toelichting: Bijv. het actualiseren van gegevens naar aanleiding van verleende diensten of het onderzoeken van persoons- en/of adres gegevens (bijv. n.a..v terugmeldingen)
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md
+bewijs-van-in-leven-zijn:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-in-leven-zijn.md
+bewijs-van-nederlanderschap:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md
+bezorgen-reisdocument:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen aanvraag reisdocument
+    generiek: false
+  bronnen:
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: overig
+bijhouden-burgerlijke-stand:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-algemeen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rvig-hup-vaststelling-ouderschap
+  - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-burgerlijke-stand.md
+bijhouden-persoonsgegevens:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-algemeen
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rvig-hup-immigratie
+  - 2026-rvig-hup-hervestiging
+  - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  - 2026-rvig-hup-emigratie
+  - 2026-rvig-hup-verblijfplaats
+  - 2026-rvig-hup-verstrekkingsbeperking
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
+  - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  - 2026-rvig-hup-wijzigen-identificatienummers
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rvig-hup-geboorte
+  - 2026-rvig-hup-wijziging-naamgebruik
+  - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  - 2026-rvig-hup-overlijden-buitenland
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2026-rvig-hup-kiesrecht
+  - 2026-rvig-hup-nederlands-kiesrecht
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-persoonsgegevens.md
+bijhoudingsgemeente:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  - 2026-rvig-hup-emigratie
+  - 2026-rvig-hup-wijzigen-bsn
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rvig-hup-wijziging-naamgebruik
+  - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  - 2026-rvig-hup-overlijden-buitenland
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/bijhoudingsgemeente.md
+bijzonder-nederlanderschap:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Nederlanderschap
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-bijzonder-nederlanderschap
+  - 2026-rvig-hup-nationaliteit
+  herkomst: richtlijn
+briefadres:
+  uitkomst:
+    soort: element
+    regel: 34
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: subobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rvig-hup-verblijfplaats
+  - 2026-nvvb-beleidsregel-briefadres
+  - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: briefadres-data
+    naam: Briefadres-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/briefadres-data.md
+  ggm:
+    ggm_entiteit: Briefadres
+    ggm_guid: EAID_3015DCE3_7C05_4160_A717_533553258C15
+    ggm_uml_type: Class
+    ggm_beleidsdomein: RSGBPlus
+    ggm_taakveld: 99 Kern
+    ggm_diagram:
+    - Diagram Gebied Vestiging en Adres
+    ggm_diagram_ids:
+    - EAID_19D888BE_5EC7_4590_BE67_8F66D91245F1
+    ggm_definitie: Een briefadres is een adres waar door de overheid verzonden stukken voor een persoon in ontvangst wordt genomen.
+  gemma:
+    gemma_id: id-69e3c6f1bdcc4824a0af6b45213b5c31
+    gemma_naam: Briefadres
+    gemma_type: business-object
+    gemma_definitie: Een briefadres is een adres waar door de overheid verzonden stukken voor een persoon in ontvangst wordt genomen.
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-af282ab4-d6c4-4a5f-8126-db9b70cff048
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{3015DCE3-7C05-4160-A717-533553258C15}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: af282ab4-d6c4-4a5f-8126-db9b70cff048
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/briefadres.md
+briefadres-aanvragen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-nvvb-beleidsregel-briefadres
+  - 2026-rvig-hup-verblijfplaats
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/briefadres-aanvragen.md
+briefadresgever:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rvig-hup-verblijfplaats
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/briefadresgever.md
+brondocument:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Bijhouden persoonsgegevens
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2026-nvvb-id-protocol-medewerkers
+  - 2026-rvig-hup-algemeen
+  herkomst: richtlijn
+brp-adoptie-uitschrijving:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-adoptie-uitschrijving.md
+brp-geheimhoudingsverzoek:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
+  - 2026-rvig-hup-verstrekkingsbeperking
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-geheimhoudingsverzoek.md
+brp-inschrijving:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  - 2026-rvig-hup-immigratie
+  - 2026-rvig-hup-verblijfplaats
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving.md
+brp-inschrijving-buitenlandse-akte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving-buitenlandse-akte.md
+brp-inschrijving-niet-in-leven-zijnd-kind:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inschrijving-niet-in-leven-zijnd-kind.md
+brp-inzagerecht:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inzagerecht.md
+brp-inzagerecht-gegevensverstrekking:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-inzagerecht-gegevensverstrekking.md
+brp-uittreksel:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-uittreksel.md
+brp-uittreksel-met-gezag:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-nvvb-handreiking-gezag
+  - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-uittreksel-met-gezag.md
+brp-wijzigingsverzoek:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+  - 2018-nvvb-stappenplan-identiteitswijziging-brp
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/brp-wijzigingsverzoek.md
+burgerlijk-wetboek-boek-1:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/burgerlijk-wetboek-boek-1.md
+burgerlijke-staat:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
+  - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+burgerlijke-stand-diensten:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-c689b2cc-4672-4474-a82f-44273c60d384
+    gemma_naam: Burgerlijke stand diensten
+    gemma_type: business-function
+    gemma_definitie: Het bijhouden van de burgerlijke staat van personen n.a.v. geboorte, overlijden, huwelijk en verhuizing
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: c689b2cc-4672-4474-a82f-44273c60d384
+      Toelichting: Bijv. het opmaken van akten bij geboorte, huwelijk, echtscheiding en overlijden.
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md
+burgerservicenummer:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-wijzigen-bsn
+  - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  - 2026-rvig-hup-wijzigen-identificatienummers
+  herkomst: richtlijn
+contactgegevens-aanpassing:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+curatele:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Bijhouden persoonsgegevens
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-gezagsverhouding
+  - 2026-rvig-hup-curatele
+  herkomst: rijksregelgeving
+definitief-aan-het-verkeer-onttrekken:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Inhouden reisdocument
+    generiek: false
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  herkomst: rijksregelgeving
+doodgeboren-kind-aangifte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/doodgeboren-kind-aangifte.md
+echtscheiding-inschrijving:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/echtscheiding-inschrijving.md
+emigratie:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-emigratie-doorgeven
+  - 2026-rvig-hup-emigratie
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/emigratie.md
+erkenning-kind:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-kind-erkennen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/erkenning-kind.md
+europees-kiesrecht:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-europees-kiesrecht
+  - 2026-rvig-hup-kiesrecht
+  herkomst: richtlijn
+garantstelling-en-particuliere-logiesverstrekking:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-service
+    voorleggen: false
+    genoemd_begrip: Legalisatie handtekening
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
+  - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
+  herkomst: overig
+geboorte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-geboorte
+  - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/geboorte.md
+geboorteaangifte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteaangifte.md
+geboorteakte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteakte.md
+geboorteakte-levenloos-kind:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geboorteakte-levenloos-kind.md
+geregistreerd-partnerschap-omzetting-in-huwelijk:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschap-omzetting-in-huwelijk.md
+geregistreerd-partnerschap-ontbinding:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschap-ontbinding.md
+geregistreerd-partnerschapaangifte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geregistreerd-partnerschapaangifte.md
+geslacht:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-geslachtswijziging
+  - 2026-rvig-hup-wijziging-geslachtsaanduiding
+  herkomst: rijksregelgeving
+geslachtsnaam:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
+  - 2026-rvig-hup-vaststelling-geslachtsnaam
+  herkomst: rijksregelgeving
+geslachtswijzigingsaangifte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/geslachtswijzigingsaangifte.md
+gewaarmerkte-kopie:
+  uitkomst:
+    soort: geen_pagina
+    regel: 17
+    toelichting: Waarneembare vorm
+    archimate_type: representation
+    voorleggen: false
+    genoemd_begrip: Reisdocument
+    generiek: false
+  bronnen:
+  - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
+  herkomst: overig
+gewaarmerkte-kopie-reisdocument-aanvragen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
+  herkomst: overig
+gezag:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Bijhouden persoonsgegevens
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-nvvb-handreiking-gezag
+  - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
+  - 2026-rvig-hup-gezagsverhouding
+  - 2026-rvig-hup-gezag-over-een-minderjarige
+  herkomst: rijksregelgeving
+hervestiging:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 1/1)
+    archimate_type: business-event
+    voorleggen: false
+    genoemd_begrip: Vestiging vanuit het buitenland
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-hervestiging
+  herkomst: richtlijn
+houden-naturalisatieceremonie:
+  uitkomst:
+    soort: onderdeel
+    regel: 28
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Behandelen naturalisatieverzoek
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+houder-van-het-reisdocument:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/houder-van-het-reisdocument.md
+houder-van-het-rijbewijs:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/houder-van-het-rijbewijs.md
+huwelijk:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-trouwen-in-utrecht
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/huwelijk.md
+huwelijksaangifte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/huwelijksaangifte.md
+identiteit-vaststellen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Vermogen (kern ja)
+    paginatype: capability
+    archimate_type: capability
+    voorleggen: false
+    generiek: false
+    typeregel: 15
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  pad: elementpaginas/strategie/capabilities/publieksdiensten/identiteit-vaststellen.md
+identiteitsdocument:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Inschrijven ingezetene
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-nvvb-id-protocol-medewerkers
+  herkomst: richtlijn
+identiteitskaart:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/identiteitskaart.md
+immigratie:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 1/1)
+    archimate_type: business-event
+    voorleggen: false
+    genoemd_begrip: Vestiging vanuit het buitenland
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-immigratie
+  herkomst: richtlijn
+immigratie-en-naturalisatiedienst:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Eis ontbreekt voor Actor
+    archimate_type: business-actor
+    voorleggen: true
+    redenen:
+    - 'soort partij: nee'
+    generiek: false
+    typeregel: 9
+  voor_te_leggen:
+  - 'soort partij: nee'
+  bronnen:
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2026-rvig-hup-verblijfstitel
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+ingeschreven-persoon:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2026-rvig-hup-immigratie
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rvig-hup-reisdocument
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-algemeen
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: ingeschreven-persoon-data
+    naam: Ingeschreven persoon-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/ingeschreven-persoon-data.md
+  - id: gezag-data
+    naam: Gezag-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/gezag-data.md
+    ggm:
+      ggm_entiteit: Gezagsverhouding
+      ggm_guid: EAID_C18BB25F_536F_4b80_BC7C_7855DF2D7389
+      ggm_uml_type: Class
+      ggm_beleidsdomein: Sociaal Domein Generiek
+      ggm_taakveld: 6 Sociaal Domein
+      ggm_diagram:
+      - Gezag
+      ggm_diagram_ids:
+      - EAID_227EBDFE_6FD0_4a47_85A4_FAC4AEFE003E
+      ggm_definitie: Een gezagsverhouding is een juridische of feitelijke relatie tussen twee partijen, waarbij de ene partij (de gezagsdrager) bevoegd is om instructies of richtlijnen te geven, en de andere partij (de ondergeschikte) verplicht is deze op te volgen. Deze verhouding speelt een belangrijke rol in verschillende contexten, zoals arbeidsrelaties, waarbij een werkgever zeggenschap heeft over een werknemer, of familierecht, waar ouders gezag uitoefenen over hun minderjarige kinderen. Een gezagsverhouding impliceert doorgaans een zekere mate van hiërarchie en verantwoordelijkheid, waarbij de gezagsdrager verplicht is om zijn bevoegdheden zorgvuldig en in het belang van de ondergeschikte uit te oefenen.
+    onderbouwing: 'GGM-entiteit Gezagsverhouding (Sociaal domein generiek), met indicatie gezag minderjarige en indicatie curateleregister en een relatie naar IngeschrevenPersoon: de gegevens van categorie 11 Gezagsverhouding van de persoonslijst, ook over curatele. De GGM-definitie is breder (ook arbeidsrelaties).'
+  - id: nationaliteit-data
+    naam: Nationaliteit-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/nationaliteit-data.md
+    ggm:
+      ggm_entiteit: Nationaliteit
+      ggm_guid: EAID_69B41CDD_C3F1_449b_92B4_8F7657840646
+      ggm_uml_type: Class
+      ggm_beleidsdomein: RSGBPlus
+      ggm_taakveld: 99 Kern
+      ggm_diagram:
+      - Kern:Personen
+      ggm_diagram_ids:
+      - EAID_30391B0F_CF52_4dc1_BC1B_36D428BF0120
+      ggm_definitie: De hoedanigheid van tot een bepaalde natie te behoren. Het wettelijk onderdaan zijn van een bepaalde staat (staatsburgerschap). Nationale oorsprong. De rechtsverhouding tussen de betrokkene en de staat.
+    onderbouwing: 'GGM-entiteit Nationaliteit (RSGBPlus), met de reden van verkrijging en verlies: de gegevens van categorie 04 Nationaliteit van de persoonslijst. De Nederlandse nationaliteit heeft een eigen data-object bij Nederlanderschap.'
+  - id: verblijfstitel-data
+    naam: Verblijfstitel-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/verblijfstitel-data.md
+    ggm:
+      ggm_entiteit: Verblijfstitel
+      ggm_guid: EAID_0F51B100_1C60_4d54_9B60_1C9BF9C856A2
+      ggm_uml_type: Class
+      ggm_beleidsdomein: RSGBPlus
+      ggm_taakveld: 99 Kern
+      ggm_definitie: Rechtsgrond op basis waarvan men bevoegd is in een land te verblijven.
+    onderbouwing: 'GGM-entiteit Verblijfstitel (RSGBPlus), met de geldigheid en de code van de verblijfstitel: de gegevens van categorie 10 Verblijfstitel van de persoonslijst, die de IND levert. De GGM-definitie is algemeen; het GGM heeft een tweede entiteit Verblijfstitel (EAID_A660422D_E9ED_47c9_9978_480E57572775) met dezelfde definitie.'
+  ggm:
+    ggm_entiteit: IngeschrevenPersoon
+    ggm_guid: EAID_AF9534B0_7CBD_4061_9276_A7B6698B383A
+    ggm_uml_type: Class
+    ggm_beleidsdomein: RSGBPlus
+    ggm_taakveld: 99 Kern
+    ggm_diagram:
+    - Burgerzaken
+    - 'Onderwijs: Relaties met Kern'
+    - Gemeente Begrafenissen
+    - 'Sociaal Domein Beschikking en Voorziening: Domain Objects'
+    - Schuldhulp Hoofdlijnen
+    - Vroegsignalering
+    - Relaties Sociaal Domein tot Kern
+    - Relaties tot kern details
+    - Huishouden en Huwelijk
+    - Gezag
+    - Sociale Relaties
+    - Vastgoed verankering RSGB IMBAG
+    - Relatie BRP en BAG
+    - Kern:Personen
+    - Kern:Gemeente Wijk en buurt
+    - 'Kern:Verwijzing naar Personen '
+    - 'Kern: Detaillering in Subjecten'
+    - Diagram Gebied Vestiging en Adres
+    - Detaillering subjecten op hoofdlijnen
+    - Detaillering WOZ-objecttypen op hoofdlijnen
+    - Detaillering WOZ-objecttypen met attributen
+    - Detaillering subjecten met attributen
+    - 'Detaillering Subjecten '
+    - NHR
+    - mGBA
+    - INGESCHREVEN NATUURLIJK  PERSOON
+    - NUMMERAANDUIDING
+    - REISDOCUMENT
+    - Ingeschreven natuurlijk persoon
+    ggm_diagram_ids:
+    - EAID_D9511F60_3CA7_43bd_B6C8_F66447D66DBA
+    - EAID_D33047E8_3A39_4171_A7EC_93B137023ED8
+    - EAID_949AE9E2_95EB_4063_B7C5_E81971D410B3
+    - EAID_5AE29494_3572_4924_B2B8_3206E55D71BB
+    - EAID_9060F49C_F450_4693_A636_0E1384D677AE
+    - EAID_07334A5A_E2F0_41ce_8510_B41BAF6876BD
+    - EAID_D7287848_8118_4aab_8823_D555A599063C
+    - EAID_9935A4BE_19B5_4fb3_8A0B_49800F527804
+    - EAID_CABB9F3F_A6ED_479a_A175_6F61BE2BE8F8
+    - EAID_227EBDFE_6FD0_4a47_85A4_FAC4AEFE003E
+    - EAID_69607C8F_8048_4516_BE75_80C681DFEAC0
+    - EAID_FDB58817_3F2A_4d73_A7DB_7906F9B9EB45
+    - EAID_0D12DCBF_E6A9_450e_B7F9_2C34E9D2818C
+    - EAID_30391B0F_CF52_4dc1_BC1B_36D428BF0120
+    - EAID_29EB3097_1D02_4f00_8E7D_74A901E0FFCB
+    - EAID_AF8FB811_01C2_4584_A905_9F1FCEC35184
+    - EAID_513E7AD3_1E8A_460f_9D78_2D8A6AA9EF98
+    - EAID_19D888BE_5EC7_4590_BE67_8F66D91245F1
+    - EAID_BE50EA2F_917E_434f_91ED_0EB06CCBEFB6
+    - EAID_3F813481_9A40_4b1b_9B24_1FD069230A45
+    - EAID_5E76FEEA_58F8_41fd_9FF1_B44274C80FA5
+    - EAID_EB4053EE_18A5_4578_8973_7FD5967CDFC8
+    - EAID_71A3B7DD_0097_4a32_8E4B_09735D7404E8
+    - EAID_A4A7A187_57B9_4ecb_9B3D_012C51E981E2
+    - EAID_9A447DCF_183C_4efc_819F_1C5CD48D9F83
+    - EAID_D6979B1E_19B7_405d_A366_0F319815E0A0
+    - EAID_5CA29BFA_5CFC_4680_9C7B_3B6E0FEEC213
+    - EAID_58363CF8_C242_4dca_8651_1DBB7B5D5BF7
+    - EAID_11FDAAAC_F865_4bf2_ADE2_9528E16A099B
+    ggm_definitie: Een INGEZETENE of NIET-INGEZETENE
+  gemma:
+    gemma_id: id-8576c90ac5104cf8ade8acadf2764432
+    gemma_naam: IngeschrevenPersoon
+    gemma_type: business-object
+    gemma_definitie: Een INGEZETENE of NIET-INGEZETENE
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-e1371e07-969e-4a34-be81-0a23ffd541dd
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{AF9534B0-7CBD-4061-9276-A7B6698B383A}'
+      GGM-specialisaties: Ingezetene, Client, Leerling, Ouder Of Verzorger
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: e1371e07-969e-4a34-be81-0a23ffd541dd
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md
+inhouden-reisdocument:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rvig-hup-reisdocument
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md
+inlevering-van-het-reisdocument:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/inlevering-van-het-reisdocument.md
+inschrijven-ingezetene:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  - 2026-rvig-hup-immigratie
+  - 2026-rvig-hup-hervestiging
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ingezetene.md
+inschrijven-levenloos-geboren-kind:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  - 2026-rvig-hup-geboorte
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-levenloos-geboren-kind.md
+inschrijven-niet-ingezetene:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-niet-ingezetene.md
+inschrijven-ontbinding-huwelijk-of-partnerschap:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-ontbinding-huwelijk-of-partnerschap.md
+inschrijven-op-briefadres:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-nvvb-beleidsregel-briefadres
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-verblijfplaats
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inschrijven-op-briefadres.md
+kandidaatstelling-verkiezingen:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+kiesrecht:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2026-rvig-hup-kiesrecht
+  herkomst: rijksregelgeving
+kieswet:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/kieswet.md
+kiezer:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2026-rvig-hup-europees-kiesrecht
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-d649e10e-d9a6-4ac7-b436-2d659cb4fdbf
+    gemma_naam: Kiezer
+    gemma_type: business-role
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: d649e10e-d9a6-4ac7-b436-2d659cb4fdbf
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/kiezer.md
+kiezerspas:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-kieswet-bwbr0004627
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/kiezerspas.md
+koning:
+  uitkomst:
+    soort: buiten_scope
+    regel: 2
+    toelichting: Niet herkenbaar of niet gemeentelijk
+    voorleggen: false
+    redenen:
+    - 'gemeentelijk: nee'
+    generiek: false
+  voor_te_leggen:
+  - 'gemeentelijk: nee'
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  herkomst: rijksregelgeving
+laa-signaal:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Uitvoeren adresonderzoek
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-nvvb-handreiking-adresonderzoek
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2026-rijk-besluit-brp-bwbr0034306
+  herkomst: rijksregelgeving
+latere-vermelding:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Akte van de burgerlijke stand
+    generiek: false
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  herkomst: rijksregelgeving
+legalisatie-handtekening:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
+  herkomst: informatiemodel
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/legalisatie-handtekening.md
+  zonder_grondslag: true
+leges-reisdocumenten:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Heffing
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: rijksregelgeving
+levenloze-geboorte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  - 2026-rvig-hup-geboorte
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/levenloze-geboorte.md
+mededeling-ex-artikel-2-17-wet-brp:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Inschrijven ingezetene
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
+  herkomst: richtlijn
+melding-openbare-ruimte-algemeen:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+melding-openbare-ruimte-groenvoorziening:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+melding-openbare-ruimte-straatmeubilair:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+melding-openbare-ruimte-straatverlichting:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+minister-van-binnenlandse-zaken-en-koninkrijksrelaties:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Eis ontbreekt voor Actor
+    archimate_type: business-actor
+    voorleggen: true
+    redenen:
+    - 'soort partij: nee'
+    generiek: false
+    typeregel: 9
+  voor_te_leggen:
+  - 'soort partij: nee'
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-signalering-verstrekking-reisdocument
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  herkomst: rijksregelgeving
+na-naturalisatie:
+  uitkomst:
+    soort: buiten_scope
+    regel: 2
+    toelichting: Niet herkenbaar of niet gemeentelijk
+    voorleggen: false
+    redenen:
+    - 'gemeentelijk: nee'
+    generiek: false
+  voor_te_leggen:
+  - 'gemeentelijk: nee'
+  bronnen:
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  herkomst: overig
+naamgebruik:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-wijziging-naamgebruik
+  - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
+  herkomst: rijksregelgeving
+naamgebruik-verzoek-aanduiding:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
+  - 2026-rvig-hup-wijziging-naamgebruik
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naamgebruik-verzoek-aanduiding.md
+naamskeuzeverklaring:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naamskeuzeverklaring.md
+naamswijziging:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-wijziging-voornaam
+  - 2026-rvig-hup-naamswijziging-en-naamgebruik
+  - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-vaststelling-geslachtsnaam
+  - 2026-rvig-hup-wijziging-geslachtsnaam
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/naamswijziging.md
+nationaliteit:
+  uitkomst:
+    soort: onderdeel
+    regel: 35
+    toelichting: Onderdeel van een ander object, zonder eigen proces
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rvig-hup-nationaliteit
+  - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
+  - 2026-rvig-hup-vreemde-nationaliteit
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  herkomst: informatiemodel
+naturalisatiebesluit:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen naturalisatieverzoek
+    generiek: false
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+naturalisatieceremonie:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieceremonie.md
+naturalisatieoptie:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieoptie.md
+naturalisatieverzoek:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieverzoek.md
+nederlanderschap:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  - 2026-rvig-hup-nationaliteit
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: nederlanderschap-data
+    naam: Nederlanderschap-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/nederlanderschap-data.md
+  ggm:
+    ggm_entiteit: NederlandseNationaliteitIngeschrevenPersoon
+    ggm_guid: EAID_BA5F2281_466D_4c69_9EB8_D10614C5CD8E
+    ggm_uml_type: Class
+    ggm_beleidsdomein: RSGBPlus
+    ggm_taakveld: 99 Kern
+    ggm_definitie: Gegevens over de nationaliteit.
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/nederlanderschap.md
+nederlanderschap-diensten:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: 'Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *toegewezen partij*)'
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-4c27c433-eded-46a9-bef1-002b82759ca9
+    gemma_naam: Nederlanderschap diensten
+    gemma_type: business-function
+    gemma_definitie: Het behandelen van aanvragen van de Nederlandse nationaliteit of het verkrijgen van bewijs daarvan
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: 4c27c433-eded-46a9-bef1-002b82759ca9
+      Toelichting: Bijv. het beoordelen of iemand in aanmerking komt voor naturalisatieprocedure of optieprocedure en het in gang zetten daarvan
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/nederlanderschap-diensten.md
+officiele-documenten-verstrekking:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: 'Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *toegewezen partij*)'
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-3668255a-275b-4c9a-9b61-f4a475600ed0
+    gemma_naam: Officiële documenten verstrekking
+    gemma_type: business-function
+    gemma_definitie: Het op aanvraag verstrekken van persoonlijke documenten zoals paspoort of rijbewijs
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: 3668255a-275b-4c9a-9b61-f4a475600ed0
+      Toelichting: Bijv. rijbewijzen, identiteitsbewijzen en reisdocumenten
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md
+onbekende-nationaliteit:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Nationaliteit
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-onbekende-nationaliteit
+  - 2026-rvig-hup-nationaliteit
+  herkomst: richtlijn
+onderzoeken-persoonsgegevens:
+  uitkomst:
+    soort: onderdeel
+    regel: 28
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Bijhouden persoonsgegevens
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-proceduregegevens
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  herkomst: richtlijn
+onjuiste-inschrijving-op-adres-melden:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/onjuiste-inschrijving-op-adres-melden.md
+ontbinding-huwelijk-of-partnerschap:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/ontbinding-huwelijk-of-partnerschap.md
+ontkenning-ouderschap:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rvig-hup-ontkenning-ouderschap
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/ontkenning-ouderschap.md
+opmaken-akte-levenloos-geboren-kind:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-levenloos-geboren-kind.md
+opmaken-akte-van-erkenning:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-utrecht-burgerzaken-kind-erkennen
+  - 2026-rvig-hup-erkenning
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-erkenning.md
+opmaken-akte-van-naamskeuze:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-naamskeuze.md
+opmaken-akte-van-overlijden:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-lijkvinding
+  - 2026-rvig-hup-overlijden-buitenland
+  - 2026-rvig-hup-rechtsvermoeden-van-overlijden
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-overlijden-nederland
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-akte-van-overlijden.md
+opmaken-geboorteakte:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-geboorte
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/opmaken-geboorteakte.md
+optant:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/optant.md
+optieverklaring:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen optieverklaring
+    generiek: false
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  herkomst: rijksregelgeving
+ouder:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-geboorte
+  - 2026-utrecht-burgerzaken-geboorteaangifte-doen
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-utrecht-burgerzaken-kind-erkennen
+  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+  - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/ouder.md
+overlijden:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-overlijden-nederland
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/overlijden.md
+overlijdensaangifte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/overlijdensaangifte.md
+overlijdensakte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/overlijdensakte.md
+overlijdensuitkering:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+paspoort:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort.md
+paspoort-tweede:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md
+paspoortbesluit:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/paspoortbesluit.md
+paspoortdossier:
+  uitkomst:
+    soort: geen_pagina
+    regel: 17
+    toelichting: Waarneembare vorm
+    archimate_type: representation
+    voorleggen: false
+    genoemd_begrip: Reisdocument
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
+  herkomst: richtlijn
+paspoortwet:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/paspoortwet.md
+personen-registreren:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Vermogen (kern ja)
+    paginatype: capability
+    archimate_type: capability
+    voorleggen: false
+    generiek: false
+    typeregel: 15
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/strategie/capabilities/publieksdiensten/personen-registreren.md
+persoonsgegevens-verklaring-onder-eed-of-belofte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-immigratie
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/persoonsgegevens-verklaring-onder-eed-of-belofte.md
+persoonslijst:
+  uitkomst:
+    soort: geen_pagina
+    regel: 17
+    toelichting: Waarneembare vorm
+    archimate_type: representation
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  herkomst: informatiemodel
+publiek-identificatiemiddel:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Reisdocument
+    generiek: false
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: rijksregelgeving
+rechtbank-den-haag:
+  uitkomst:
+    soort: buiten_scope
+    regel: 2
+    toelichting: Niet herkenbaar of niet gemeentelijk
+    voorleggen: false
+    redenen:
+    - 'gemeentelijk: nee'
+    generiek: false
+  voor_te_leggen:
+  - 'gemeentelijk: nee'
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  herkomst: rijksregelgeving
+reclamesticker:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+register-paspoortsignaleringen:
+  uitkomst:
+    soort: geen_pagina
+    regel: 17
+    toelichting: Waarneembare vorm
+    archimate_type: representation
+    voorleggen: false
+    genoemd_begrip: Signalering
+    generiek: false
+  bronnen:
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rvig-hup-signalering-verstrekking-reisdocument
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: rijksregelgeving
+register-van-de-burgerlijke-stand:
+  uitkomst:
+    soort: geen_pagina
+    regel: 17
+    toelichting: Waarneembare vorm
+    archimate_type: representation
+    voorleggen: false
+    genoemd_begrip: Akte van de burgerlijke stand
+    generiek: false
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  herkomst: rijksregelgeving
+register-van-ongeldige-stempassen:
+  uitkomst:
+    soort: geen_pagina
+    regel: 17
+    toelichting: Waarneembare vorm
+    archimate_type: representation
+    voorleggen: false
+    genoemd_begrip: Stempas
+    generiek: false
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  herkomst: rijksregelgeving
+register-vermiste-of-vervallen-reisdocumenten:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Verwerken vermissing reisdocument
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  herkomst: rijksregelgeving
+registreren-kiesgerechtigdheid:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-kiesrecht
+  - 2026-rvig-hup-europees-kiesrecht
+  - 2026-rvig-hup-nederlands-kiesrecht
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-kiesgerechtigdheid.md
+registreren-partnerschap:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/registreren-partnerschap.md
+reglement-rijbewijzen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/reglement-rijbewijzen.md
+reisdocument:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-reisdocument
+  - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: reisdocument-data
+    naam: Reisdocument-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/reisdocument-data.md
+  ggm:
+    ggm_entiteit: Reisdocument
+    ggm_guid: EAID_CA9BC1BB_D572_4e47_BECF_17CFD379BD6A
+    ggm_uml_type: Class
+    ggm_beleidsdomein: RSGBPlus
+    ggm_taakveld: 99 Kern
+    ggm_diagram:
+    - Burgerzaken
+    - Detaillering subjecten op hoofdlijnen
+    - Detaillering subjecten met attributen
+    - Reidoscumentsoorten referenties
+    - mGBA
+    - INGESCHREVEN NATUURLIJK  PERSOON
+    - REISDOCUMENT
+    ggm_diagram_ids:
+    - EAID_D9511F60_3CA7_43bd_B6C8_F66447D66DBA
+    - EAID_BE50EA2F_917E_434f_91ED_0EB06CCBEFB6
+    - EAID_EB4053EE_18A5_4578_8973_7FD5967CDFC8
+    - EAID_8FDA2EB0_1359_493c_B72E_751468C6153C
+    - EAID_9A447DCF_183C_4efc_819F_1C5CD48D9F83
+    - EAID_D6979B1E_19B7_405d_A366_0F319815E0A0
+    - EAID_58363CF8_C242_4dca_8651_1DBB7B5D5BF7
+    ggm_definitie: Een document dat vereist is voor reizen naar het buitenland
+  gemma:
+    gemma_id: id-07cb7da54dac4181839b23d677fefd4e
+    gemma_naam: Reisdocument
+    gemma_type: business-object
+    gemma_definitie: Een document dat vereist is voor reizen naar het buitenland
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      Bron: BRP
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-bd460a48-7720-465d-b12b-c15097ec620c
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{CA9BC1BB-D572-4e47-BECF-17CFD379BD6A}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: bd460a48-7720-465d-b12b-c15097ec620c
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument.md
+reisdocument-niet-ingezetene:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument-niet-ingezetene.md
+reisdocumentenadministratie:
+  uitkomst:
+    soort: geen_pagina
+    regel: 17
+    toelichting: Waarneembare vorm
+    archimate_type: representation
+    voorleggen: false
+    genoemd_begrip: Reisdocument
+    generiek: false
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: rijksregelgeving
+reisdocumentenstation:
+  uitkomst:
+    soort: buiten_model
+    regel: 3
+    toelichting: Buiten dit model
+    archimate_type: Application Component
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  herkomst: rijksregelgeving
+rijbewijs:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: rijbewijs-data
+    naam: Rijbewijs-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/rijbewijs-data.md
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs.md
+rijbewijs-aanvragen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  - 2026-utrecht-burgerzaken
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-aanvragen.md
+rijbewijs-buitenlands-omwisseling:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
+  - 2026-utrecht-burgerzaken
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-buitenlands-omwisseling.md
+rijbewijs-gezondheidsverklaring:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Rijbewijs aanvragen
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-gezondheidsverklaring-en-medische-keuring-voor-rijbewijs
+  - 2026-utrecht-burgerzaken
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  herkomst: rijksregelgeving
+rijbewijs-verlengen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-verlengen.md
+rijkswet-op-het-nederlanderschap:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/rijkswet-op-het-nederlanderschap.md
+rni-inschrijving:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rni-inschrijving.md
+rni-loket:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-nederlandwereldwijd-rni-hoe-kan-ik-mij-inschrijven
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/rni-loket.md
+signalering:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Behandelen aanvraag reisdocument
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-signalering-verstrekking-reisdocument
+  herkomst: rijksregelgeving
+spoedaanvraag:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen aanvraag reisdocument
+    generiek: false
+  bronnen:
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: rijksregelgeving
+staatloosheid:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Nationaliteit
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-staatloosheid
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rvig-hup-nationaliteit
+  herkomst: rijksregelgeving
+stembiljet:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+stemmen-identificatieplicht:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+stempas:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: stempas-data
+    naam: Stempas-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/stempas-data.md
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/stempas.md
+stempas-ontvangen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-kieswet-bwbr0004627
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/stempas-ontvangen.md
+stemrecht:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-kieswet-bwbr0004627
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/stemrecht.md
+terugmelding:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Uitvoeren adresonderzoek
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2026-rvig-hup-proceduregegevens
+  herkomst: richtlijn
+toevoegen-latere-vermelding:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-vaststelling-ouderschap
+  - 2026-rvig-hup-ontkenning-ouderschap
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-rvig-hup-adoptie
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/toevoegen-latere-vermelding.md
+toezichthouder-brp:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-54e7f48b-af2a-45cb-bcae-1e7bbb5ddd0a
+    gemma_naam: Toezichthouder
+    gemma_type: business-role
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: 54e7f48b-af2a-45cb-bcae-1e7bbb5ddd0a
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/toezichthouder-brp.md
+trouwlocatie:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/trouwlocatie.md
+uitreiken-reisdocument:
+  uitkomst:
+    soort: onderdeel
+    regel: 28
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Behandelen aanvraag reisdocument
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  - 2026-rijk-paspoortbesluit-bwbr0044308
+  herkomst: rijksregelgeving
+uitreiken-rijbewijs:
+  uitkomst:
+    soort: onderdeel
+    regel: 28
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Behandelen aanvraag rijbewijs
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  herkomst: rijksregelgeving
+uitsluiting-van-het-kiesrecht:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2026-rvig-hup-nederlands-kiesrecht
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/uitsluiting-van-het-kiesrecht.md
+uittreksel-burgerlijke-stand:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/uittreksel-burgerlijke-stand.md
+uitvoeren-adresonderzoek:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
+  - 2026-nvvb-handreiking-adresonderzoek
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/uitvoeren-adresonderzoek.md
+vaststellen-identiteit:
+  uitkomst:
+    soort: onderdeel
+    regel: 28
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Inschrijven ingezetene
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-nvvb-id-protocol-medewerkers
+  - 2026-rvig-hup-immigratie
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  herkomst: richtlijn
+vaststelling-ouderschap:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rvig-hup-vaststelling-ouderschap
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/vaststelling-ouderschap.md
+verblijfplaats:
+  uitkomst:
+    soort: element
+    regel: 34
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: subobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rvig-hup-verblijfplaats
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  - 2026-rvig-hup-emigratie
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  herkomst: informatiemodel
+  data_objecten:
+  - id: verblijfplaats-data
+    naam: Verblijfplaats-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/verblijfplaats-data.md
+  ggm:
+    ggm_entiteit: VerblijfadresIngeschrevenPersoon
+    ggm_guid: EAID_F6DAC299_3F19_45c6_BFFE_EB38C1C51459
+    ggm_uml_type: Class
+    ggm_beleidsdomein: RSGBPlus
+    ggm_taakveld: 99 Kern
+    ggm_definitie: De gegevens over het verblijf en adres van de INGESCHREVEN PERSOON
+  ggm_duplicaten:
+  - entiteit: VerblijfadresIngeschrevenNatuurlijkPersoon
+    guid: EAID_E5E010C2_C1F3_4986_AA9A_C71C19263606
+    beleidsdomein: RSGBPlus
+    taakveld: 99 Kern
+  gemma:
+    gemma_id: id-9a240ef1e16e476887b3c67526facb98
+    gemma_naam: Verblijfplaats
+    gemma_type: business-object
+    gemma_definitie: Een verblijfplaats is de locatie waar een persoon feitelijk woont of verblijft, ongeacht of dit permanent of tijdelijk is. Het kan een huis, appartement, kamer, opvanglocatie of andere woonruimte zijn, en wordt vaak gebruikt om iemands woonadres aan te duiden voor juridische, administratieve of sociale doeleinden. De verblijfplaats is doorgaans bepalend voor het ontvangen van voorzieningen, het uitoefenen van rechten, en het voldoen aan verplichtingen binnen een specifieke jurisdictie of gemeenschap.
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-397f0d07-8500-40ea-9d3a-a142dc9a94f9
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{0028CB85-5EF0-45aa-A06F-4A8F14E71AB8}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: 397f0d07-8500-40ea-9d3a-a142dc9a94f9
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verblijfplaats.md
+verblijfstitel:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-verblijfstitel
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  herkomst: informatiemodel
+verhuismelding:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  - 2026-rvig-hup-verblijfplaats
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verhuismelding.md
+verhuizing:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/verhuizing.md
+verkiezingen-gerelateerde-diensten:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: 'Gedrag, *gegroepeerd gedrag* (kern ja, 3/4, ontbreekt: *toegewezen partij*)'
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2026-rvig-hup-kiesrecht
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-78bbc144-8a22-43a4-8233-c4cfaf7b73c2
+    gemma_naam: Verkiezingen gerelateerde diensten
+    gemma_type: business-function
+    gemma_definitie: Het lokaal organiseren van verkiezingen
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: 78bbc144-8a22-43a4-8233-c4cfaf7b73c2
+      Toelichting: Bijv. het inrichten van stemlokalen en verstrekken van stempassen
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/verkiezingen-gerelateerde-diensten.md
+verklaring-omtrent-gedrag-aanvragen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  - 2026-utrecht-burgerzaken
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  herkomst: rijksregelgeving
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-omtrent-gedrag-aanvragen.md
+verklaring-omtrent-het-gedrag:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  - 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-omtrent-het-gedrag.md
+verklaring-van-afstand:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen verklaring van afstand
+    generiek: false
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  herkomst: rijksregelgeving
+verklaring-van-afstand-nederlandse-nationaliteit:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-afstand-nederlandse-nationaliteit.md
+verklaring-van-huwelijksbevoegdheid:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-huwelijksbevoegdheid.md
+verklaring-van-toestemming:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Behandelen aanvraag reisdocument
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: rijksregelgeving
+verklaring-van-verbondenheid:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen naturalisatieverzoek
+    generiek: false
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  herkomst: rijksregelgeving
+verkrijging-van-het-nederlanderschap:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rvig-hup-vreemde-nationaliteit
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-verblijfstitel
+  - 2026-rvig-hup-europees-kiesrecht
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/verkrijging-van-het-nederlanderschap.md
+verlies-van-het-nederlanderschap:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
+  - 2026-rvig-hup-nederlandse-nationaliteit
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rvig-hup-nationaliteit
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/verlies-van-het-nederlanderschap.md
+vermissing-of-diefstal-reisdocument-doorgeven:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  herkomst: richtlijn
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-reisdocument-doorgeven.md
+vermissing-of-diefstal-rijbewijs-doorgeven:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-rijbewijs-doorgeven.md
+vermissing-van-het-reisdocument:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/vermissing-van-het-reisdocument.md
+vermissing-van-het-rijbewijs:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/vermissing-van-het-rijbewijs.md
+verstrekken-overzicht-gegevensverstrekkingen:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rijk-besluit-brp-bwbr0034306
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-overzicht-gegevensverstrekkingen.md
+verstrekken-persoonsgegevens:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-persoonsgegevens.md
+verstrekken-stempas:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-stempas.md
+verstrekken-uittreksels-en-verklaringen-burgerlijke-stand:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verstrekken-uittreksels-en-verklaringen-burgerlijke-stand.md
+verstrekkingsbeperking:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-verstrekkingsbeperking
+  - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
+  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+  herkomst: richtlijn
+verval-van-het-reisdocument:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/verval-van-het-reisdocument.md
+vervallen-verklaren-reisdocument:
+  uitkomst:
+    soort: onderdeel
+    regel: 28
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Inhouden reisdocument
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: rijksregelgeving
+verwerken-adreswijziging:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-verhuizing-doorgeven
+  - 2026-rvig-hup-binnengemeentelijke-adreswijziging
+  - 2026-rvig-hup-intergemeentelijke-adreswijziging
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-adreswijziging.md
+verwerken-buitenlands-document:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
+  - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
+  - 2026-rvig-hup-overlijden-buitenland
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-buitenlands-document.md
+verwerken-emigratie:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-emigratie-doorgeven
+  - 2026-rvig-hup-emigratie
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-emigratie.md
+verwerken-vermissing-reisdocument:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+  - 2026-rvig-hup-inhouding-inlevering-vermissing
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-reisdocument
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md
+verwerken-vermissing-rijbewijs:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md
+verwijdering-van-reisdocumentgegevens:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Bijhouden persoonsgegevens
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  herkomst: informatiemodel
+verwijsgegevens:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Ingeschreven persoon
+    generiek: false
+  bronnen:
+  - 2025-rvig-logisch-ontwerp-brp-2025q1
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  herkomst: informatiemodel
+verzoeken-om-signalering:
+  uitkomst:
+    soort: verwijzing
+    regel: 6
+    toelichting: Hoort bij een ander onderwerp
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: rijksregelgeving
+verzoeker-om-naturalisatie:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/verzoeker-om-naturalisatie.md
+verzorgen-burgerzaken:
+  uitkomst:
+    soort: element
+    regel: 25
+    toelichting: Gedrag, *groepeert processen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: true
+    redenen:
+    - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
+    generiek: false
+    typeregel: 16
+  voor_te_leggen:
+  - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-rijk-kieswet-bwbr0004627
+  herkomst: rijksregelgeving
+vestiging-vanuit-het-buitenland:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2023-rvig-circulaire-adresonderzoek-brp
+  - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
+  - 2026-rvig-hup-immigratie
+  - 2026-rvig-hup-hervestiging
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/vestiging-vanuit-het-buitenland.md
+vluchtelingenpaspoort:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vluchtelingenpaspoort.md
+volmachtbewijs:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen verzoek om volmacht
+    generiek: false
+  bronnen:
+  - 2026-rijk-kieswet-bwbr0004627
+  herkomst: rijksregelgeving
+volmachtbewijs-verkiezingen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-kieswet-bwbr0004627
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/volmachtbewijs-verkiezingen.md
+voltrekken-huwelijk:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-trouwen-in-utrecht
+  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
+  - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap
+  - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/voltrekken-huwelijk.md
+voornaamwijziging:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/voornaamwijziging.md
+vreemde-nationaliteit:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Nationaliteit
+    generiek: false
+  bronnen:
+  - 2026-rvig-hup-vreemde-nationaliteit
+  - 2026-rvig-hup-nationaliteit
+  herkomst: richtlijn
+vreemdelingenpaspoort:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vreemdelingenpaspoort.md
+wegenverkeerswet-1994:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/wegenverkeerswet-1994.md
+weigering-reisdocument:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Behandelen aanvraag reisdocument
+    generiek: false
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: rijksregelgeving
+wet-basisregistratie-personen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-besluit-brp-bwbr0034306
+  - 2026-rvig-hup-algemeen
+  - 2026-rvig-hup-achtergronden-en-begrippen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/wet-basisregistratie-personen.md
+wet-justitiele-en-strafvorderlijke-gegevens:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/wet-justitiele-en-strafvorderlijke-gegevens.md
+wet-op-de-nederlandse-identiteitskaart:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/wet-op-de-nederlandse-identiteitskaart.md
+wijzigen-geslachtsvermelding:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
+  - 2026-rvig-hup-geslachtswijziging
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rvig-hup-overschrijven-gegevens-bij-geslachtswijziging
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-1d4d0829-9ed4-49a3-a661-e91c2fc25072
+    gemma_naam: Behandelen aangifte of melding
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van aangiften van de gebeurtenissen behorende bij de Burgerlijke Stand of een melding van een andere gebeurtenis die of feit dat o.a. tot gevolg heeft dat de (basis)registraties van de gemeente bijgewerkt dienen te worden. De klant of ketenpartner doet vrijwel altijd aangifte omdat hij/zij hiertoe verplicht is. De klant of ketenpartner krijgt steeds een antwoord ter verificatie van de gemeente wanneer de aangifte verwerkt is en het proces ten einde is.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1d4d0829-9ed4-49a3-a661-e91c2fc25072
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-geslachtsvermelding.md
+wijzigen-identificatienummers:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-wijzigen-identificatienummers
+  - 2026-rvig-hup-wijzigen-bsn
+  - 2026-rvig-hup-wijzigen-administratienummer
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-identificatienummers.md
+wijzigen-naamgebruik:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvig-hup-wijziging-naamgebruik
+  - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-brp-bwbr0033715
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-naamgebruik.md
+zakenpaspoort:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+  - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
+  - 2026-rijk-paspoortwet-bwbr0005212
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/zakenpaspoort.md

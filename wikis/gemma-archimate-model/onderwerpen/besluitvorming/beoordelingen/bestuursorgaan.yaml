@@ -13,15 +13,3 @@ besluiten:
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2026-rijk-gemeentewet-wettekst
-beslist:
-  uitkomst:
-    soort: synoniem
-    regel: 1
-    toelichting: Ander woord voor een bestaand begrip
-    voorleggen: false
-    genoemd_begrip: Beslisser
-    generiek: false
-  bronnen:
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  - 2026-rijk-gemeentewet-wettekst
-  herkomst: rijksregelgeving

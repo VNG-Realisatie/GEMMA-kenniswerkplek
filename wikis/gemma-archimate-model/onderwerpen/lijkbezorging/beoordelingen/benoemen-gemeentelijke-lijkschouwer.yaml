@@ -51,19 +51,3 @@ besluiten:
 - datum: '2026-10-01'
   besluit: 'Geen element: eenduidig uit de beslistabel (drie drempelcriteria nee).'
   gevolg: afwijzen
-beslist:
-  uitkomst:
-    soort: geen_element
-    regel: 20
-    toelichting: Eis ontbreekt voor Bedrijfsproces
-    archimate_type: business-process
-    voorleggen: true
-    redenen:
-    - 'aanleiding: nee'
-    generiek: false
-    typeregel: 16
-  voor_te_leggen:
-  - 'aanleiding: nee'
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving

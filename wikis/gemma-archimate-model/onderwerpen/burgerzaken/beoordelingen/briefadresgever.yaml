@@ -45,18 +45,3 @@ relaties:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: Briefadres; Wet BRP art. 2.45 lid 3
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: false
-    generiek: false
-    typeregel: 10
-  bronnen:
-  - 2026-rvig-hup-verblijfplaats
-  - 2026-rijk-wet-brp-bwbr0033715
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/rollen/briefadresgever.md

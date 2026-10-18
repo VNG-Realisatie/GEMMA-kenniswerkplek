@@ -13,16 +13,3 @@ toelichting: 'Waarde van Nationaliteit, geen pagina: sinds 1 oktober 2023 alleen
 bronnen:
 - 2026-rvig-hup-staatloosheid
 - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Nationaliteit
-    generiek: false
-  bronnen:
-  - 2026-rvig-hup-staatloosheid
-  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  - 2026-rvig-hup-nationaliteit
-  herkomst: rijksregelgeving

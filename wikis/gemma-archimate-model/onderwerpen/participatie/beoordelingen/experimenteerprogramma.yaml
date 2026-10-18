@@ -9,14 +9,3 @@ kenmerken:
     - 2024-vng-implementatiehandleiding-model-participatieverordening
 genoemd_begrip: Beleidsnota
 toelichting: 'Soort Beleidsnota, geen element: een facultatief programma voor participatie (variant 2 art. 6).'
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Beleidsnota
-    generiek: false
-  bronnen:
-  - 2024-vng-implementatiehandleiding-model-participatieverordening
-  herkomst: richtlijn

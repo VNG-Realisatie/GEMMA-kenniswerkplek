@@ -35,16 +35,3 @@ genoemd_begrip: Beschikking
 toelichting: 'Specialisatie zonder pagina van Beschikking: verklaring van de houder dat het onderhoud van een particulier graf kennelijk verwaarloosd is (art. 28 lid 4).'
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: specialisatie
-    regel: 22
-    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Beschikking
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving

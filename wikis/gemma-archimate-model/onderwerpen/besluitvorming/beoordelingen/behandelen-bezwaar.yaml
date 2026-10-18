@@ -111,28 +111,3 @@ besluiten:
   besluit: 'De adviescommissie (Awb art. 7:13) is geen element: het bestuursorgaan kan haar instellen; zij staat in de beschrijving.'
   gevolg: verwerkt
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: bedrijfsproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: rijksregelgeving
-  gemma:
-    gemma_id: id-1e66364c-80c6-4d9f-9737-bab779a23119
-    gemma_naam: Behandelen bezwaar
-    gemma_type: business-process
-    gemma_definitie: 'Het afhandelen van bezwaren: door een wettelijk voorschrift bestaande bevoegdheid een voorziening tegen een besluit te vragen bij de gemeente dat het besluit heeft genomen. Een voorbeeld is het bezwaar tegen de hoogte van de WOZ-waarde of het niet toekennen van een bepaalde gevraagde Wmo-voorziening.'
-    gemma_map: Business / Procesarchitectuur / Processenlandschap
-    gemma_eigenschappen:
-      GEMMA type: Bedrijfsproces
-      Object ID: 1e66364c-80c6-4d9f-9737-bab779a23119
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/behandelen-bezwaar.md

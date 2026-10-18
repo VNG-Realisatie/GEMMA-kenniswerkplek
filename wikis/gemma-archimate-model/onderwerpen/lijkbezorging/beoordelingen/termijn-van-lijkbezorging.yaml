@@ -9,14 +9,3 @@ toelichting: 'Buiten dit model (Constraint): Norm uit één artikel: niet eerder
 archimate_buiten_model: Constraint
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: buiten_model
-    regel: 3
-    toelichting: Buiten dit model
-    archimate_type: Constraint
-    voorleggen: false
-    generiek: false
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving

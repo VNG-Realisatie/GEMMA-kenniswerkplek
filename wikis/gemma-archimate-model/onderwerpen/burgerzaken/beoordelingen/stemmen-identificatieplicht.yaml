@@ -9,13 +9,3 @@ kenmerken:
 toelichting: 'Verwijzing: UPL-product nr. 396 (Kieswet art. J 24) staat onder Iv3-taakveld 0.2, maar valt buiten de afbakening van Burgerzaken (BRP, burgerlijke stand, reisdocumenten, kiesrecht en Nederlanderschap): de organisatie van de verkiezingen (kandidaatstelling, stembureaus, stemming, uitslag) valt buiten het onderwerp (afbakening Burgerzaken). Het product krijgt zijn pagina in een later onderwerp verkiezingen.'
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-beslist:
-  uitkomst:
-    soort: verwijzing
-    regel: 6
-    toelichting: Hoort bij een ander onderwerp
-    voorleggen: false
-    generiek: false
-  bronnen:
-  - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: informatiemodel

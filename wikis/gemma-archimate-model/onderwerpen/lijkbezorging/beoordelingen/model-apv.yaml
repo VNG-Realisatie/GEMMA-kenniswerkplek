@@ -56,18 +56,3 @@ onderwerpen:
 - lijkbezorging
 regelgever: VNG-modelverordening
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
-    paginatype: beleidskader
-    archimate_type: driver
-    voorleggen: false
-    generiek: false
-    typeregel: 14
-  bronnen:
-  - 2023-vng-model-apv
-  - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: informatiemodel
-  pad: elementpaginas/motivatie/beleidskaders/gemeentelijke-regelgeving/model-apv.md

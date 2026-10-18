@@ -66,18 +66,3 @@ besluiten:
 - datum: '2026-10-08'
   besluit: 'Onderdeel van Graf, zonder pagina en geen subobject: landelijk regelt alleen Wlb art. 32a het eigendom van wat op het graf is geplaatst.'
   gevolg: verwerkt
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 35
-    toelichting: Onderdeel van een ander object, zonder eigen proces
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Graf
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  herkomst: rijksregelgeving

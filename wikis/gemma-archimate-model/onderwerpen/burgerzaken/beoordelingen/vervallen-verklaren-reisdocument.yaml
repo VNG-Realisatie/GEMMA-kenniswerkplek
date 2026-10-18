@@ -68,16 +68,3 @@ gemma:
 genoemd_begrip: Inhouden reisdocument
 toelichting: 'Deelproces zonder pagina van Inhouden reisdocument: het beslissen dat een ingehouden reisdocument ongeldig is, omdat een tot signalering bevoegd orgaan daar gronden voor heeft.'
 relaties: []
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 28
-    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
-    archimate_type: business-process
-    voorleggen: false
-    genoemd_begrip: Inhouden reisdocument
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  herkomst: rijksregelgeving

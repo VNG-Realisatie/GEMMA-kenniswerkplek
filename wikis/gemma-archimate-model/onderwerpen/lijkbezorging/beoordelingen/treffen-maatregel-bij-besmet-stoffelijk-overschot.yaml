@@ -95,28 +95,3 @@ synoniemen:
 - naam: Treffen maatregel bij besmet lijk
   context: wet
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: bedrijfsproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-rijk-wet-publieke-gezondheid-wettekst
-  herkomst: rijksregelgeving
-  gemma_generiek:
-    gemma_id: id-729e05ea-f9f7-4583-a645-ec4e573b74ce
-    gemma_naam: Behandelen melding
-    gemma_type: business-process
-    gemma_definitie: 'Het in ontvangst nemen en afhandelen van een medeling en het resultaat hiervan terugkoppelen naar de melder. Bij een melding meldt men klant iets aan de gemeente en verwacht men dat de gemeente daar actie op onderneemt. Voorbeelden zijn een melding openbare ruimte, een melding omtrent overbewoning of een melding met betrekking tot het niet naleven van de leerplichtwet. Dit zijn andersoortige meldingen dan die bedoeld onder behandelen aangiften en meldingen om twee redenen: deze meldingen hebben betrekking op een al dan niet door de gemeente geleverde dienst (bv. beheren openbare ruimte) en het palet aan acties/antwoorden is diverser dan bij aangiften en meldingen, waar het vrijwel altijd het bijwerken van een registratie is.'
-    gemma_map: Business / Procesarchitectuur / Processenlandschap
-    gemma_eigenschappen:
-      GEMMA type: Bedrijfsproces
-      Object ID: 729e05ea-f9f7-4583-a645-ec4e573b74ce
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-stoffelijk-overschot.md

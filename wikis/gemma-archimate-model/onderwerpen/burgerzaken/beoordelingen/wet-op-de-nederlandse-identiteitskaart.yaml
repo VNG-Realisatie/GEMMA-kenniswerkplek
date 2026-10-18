@@ -71,17 +71,3 @@ relaties:
   vindplaats: art. 1, 5, 5a, 14
 synoniemen: []
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
-    paginatype: beleidskader
-    archimate_type: driver
-    voorleggen: false
-    generiek: false
-    typeregel: 14
-  bronnen:
-  - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-  herkomst: rijksregelgeving
-  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/wet-op-de-nederlandse-identiteitskaart.md

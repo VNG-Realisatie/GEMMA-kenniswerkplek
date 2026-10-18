@@ -9,14 +9,3 @@ kenmerken:
 toelichting: 'Onderdeel, geen pagina: het van rijkswege uitgegeven elektronische middel op het reisdocument voor authenticatie bij elektronische dienstverlening (Paspoortwet art. 1 onder r, 3a). Vermeld bij Reisdocument.'
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 5
-    toelichting: Onderdeel of deelstap van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Reisdocument
-    generiek: false
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  herkomst: rijksregelgeving

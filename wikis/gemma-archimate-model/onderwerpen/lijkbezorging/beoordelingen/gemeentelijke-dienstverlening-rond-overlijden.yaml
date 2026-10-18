@@ -10,14 +10,3 @@ toelichting: 'Buiten dit model (Grouping): Verzamelterm in de VNG-bron voor de d
 archimate_buiten_model: Grouping
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: buiten_model
-    regel: 3
-    toelichting: Buiten dit model
-    archimate_type: Grouping
-    voorleggen: false
-    generiek: false
-  bronnen:
-  - 2026-vng-wet-op-de-lijkbezorging
-  herkomst: overig

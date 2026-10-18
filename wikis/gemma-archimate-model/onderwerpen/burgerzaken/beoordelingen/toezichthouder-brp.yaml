@@ -40,25 +40,3 @@ relaties:
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: 4.5; Wet BRP art. 4.2
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: false
-    generiek: false
-    typeregel: 10
-  bronnen:
-  - 2023-rvig-circulaire-adresonderzoek-brp
-  - 2026-rijk-wet-brp-bwbr0033715
-  herkomst: rijksregelgeving
-  gemma_generiek:
-    gemma_id: id-54e7f48b-af2a-45cb-bcae-1e7bbb5ddd0a
-    gemma_naam: Toezichthouder
-    gemma_type: business-role
-    gemma_map: Business / Procesarchitectuur / Actoren en rollen
-    gemma_eigenschappen:
-      Object ID: 54e7f48b-af2a-45cb-bcae-1e7bbb5ddd0a
-  pad: elementpaginas/bedrijfsarchitectuur/rollen/toezichthouder-brp.md

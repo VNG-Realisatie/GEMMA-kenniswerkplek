@@ -8,13 +8,3 @@ kenmerken:
 toelichting: 'Verwijzing: de ondernemer wordt beoordeeld in een onderwerp over economische zaken.'
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
-beslist:
-  uitkomst:
-    soort: verwijzing
-    regel: 6
-    toelichting: Hoort bij een ander onderwerp
-    voorleggen: false
-    generiek: false
-  bronnen:
-  - 2024-vng-implementatiehandleiding-model-participatieverordening
-  herkomst: richtlijn

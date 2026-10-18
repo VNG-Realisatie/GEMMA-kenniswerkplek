@@ -86,28 +86,3 @@ relaties:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: bedrijfsproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rijk-kieswet-bwbr0004627
-  herkomst: rijksregelgeving
-  gemma_generiek:
-    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
-    gemma_naam: Behandelen aanvraag product
-    gemma_type: business-process
-    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
-    gemma_map: Business / Procesarchitectuur / Processenlandschap
-    gemma_eigenschappen:
-      GEMMA type: Bedrijfsproces
-      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-verzoek-om-kiezerspas.md

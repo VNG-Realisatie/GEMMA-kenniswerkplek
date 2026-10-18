@@ -29,21 +29,3 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Geen element: de commissie wordt in de VNG-modelverordening alleen voorgesteld (toelichting 2), dus geen soort partij bij elke gemeente.'
   gevolg: afwijzen
-beslist:
-  uitkomst:
-    soort: geen_element
-    regel: 20
-    toelichting: Kernrelatie ontbreekt voor Actor
-    archimate_type: business-actor
-    voorleggen: true
-    redenen:
-    - 'vervult een rol: nee'
-    - 'soort partij: nee'
-    generiek: false
-    typeregel: 9
-  voor_te_leggen:
-  - 'vervult een rol: nee'
-  - 'soort partij: nee'
-  bronnen:
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  herkomst: gemeentelijke-regelgeving

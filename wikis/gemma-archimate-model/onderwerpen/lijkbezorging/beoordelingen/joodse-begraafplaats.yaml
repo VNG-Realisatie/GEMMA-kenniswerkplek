@@ -35,16 +35,3 @@ genoemd_begrip: Begraafplaats
 toelichting: 'Specialisatie zonder pagina van Begraafplaats: deel van een gemeentelijke begraafplaats, beheerd door de besturen van die gezindte (Groningen art. 3 lid 3).'
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: specialisatie
-    regel: 22
-    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Begraafplaats
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  herkomst: gemeentelijke-regelgeving

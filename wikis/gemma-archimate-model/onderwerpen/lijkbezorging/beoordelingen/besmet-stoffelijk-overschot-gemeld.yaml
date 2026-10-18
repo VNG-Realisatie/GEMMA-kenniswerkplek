@@ -38,18 +38,3 @@ object_van:
   wijziging: hernoemd
   datum: '2026-10-05'
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
-    paginatype: gebeurtenis
-    archimate_type: business-event
-    voorleggen: false
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-wet-publieke-gezondheid-wettekst
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/besmet-stoffelijk-overschot-gemeld.md

@@ -15,17 +15,3 @@ besluiten:
   zekerheid: kennis
 bronnen:
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-beslist:
-  uitkomst:
-    soort: buiten_scope
-    regel: 2
-    toelichting: Niet herkenbaar of niet gemeentelijk
-    voorleggen: false
-    redenen:
-    - 'gemeentelijk: nee'
-    generiek: false
-  voor_te_leggen:
-  - 'gemeentelijk: nee'
-  bronnen:
-  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  herkomst: overig

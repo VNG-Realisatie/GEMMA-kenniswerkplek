@@ -95,19 +95,3 @@ relaties:
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 23, 27, 31; Groningen art. 11–16
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 26
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: levensloopproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-graven.md

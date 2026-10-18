@@ -36,18 +36,3 @@ relaties:
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
-    paginatype: gebeurtenis
-    archimate_type: business-event
-    voorleggen: false
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-kieswet-bwbr0004627
-  - 2026-rvig-hup-nederlands-kiesrecht
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/uitsluiting-van-het-kiesrecht.md

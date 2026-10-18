@@ -31,18 +31,3 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen capability voor het vastleggen van personen. De 26 capabilities zijn vermogens van de informatievoorziening, zoals het vastleggen en verstrekken van data, geen vermogen van de gemeente als organisatie.
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Vermogen (kern ja)
-    paginatype: capability
-    archimate_type: capability
-    voorleggen: false
-    generiek: false
-    typeregel: 15
-  bronnen:
-  - 2026-rijk-wet-brp-bwbr0033715
-  - 2026-rijk-burgerlijk-wetboek-boek-1
-  herkomst: rijksregelgeving
-  pad: elementpaginas/strategie/capabilities/publieksdiensten/personen-registreren.md

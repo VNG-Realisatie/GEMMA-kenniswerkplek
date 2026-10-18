@@ -44,16 +44,3 @@ besluiten:
   besluit: 'Vervalt (regel Wettelijke grondslag): geen UPL-product en geen landelijke wettelijke grondslag. De representatie Gewaarmerkte kopie gaat mee; procesarchitectuur-terugmelding 11 noemt de dienst niet meer als element. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen
 status: afgewezen
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
-    paginatype: dienst
-    archimate_type: business-service
-    voorleggen: false
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  herkomst: overig

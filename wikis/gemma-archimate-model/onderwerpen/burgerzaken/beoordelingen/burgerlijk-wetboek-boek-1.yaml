@@ -242,18 +242,3 @@ relaties:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
-    paginatype: beleidskader
-    archimate_type: driver
-    voorleggen: false
-    generiek: false
-    typeregel: 14
-  bronnen:
-  - 2026-rijk-burgerlijk-wetboek-boek-1
-  - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: rijksregelgeving
-  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/burgerlijk-wetboek-boek-1.md

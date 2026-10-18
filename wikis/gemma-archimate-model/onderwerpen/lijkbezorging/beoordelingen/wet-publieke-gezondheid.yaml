@@ -21,19 +21,3 @@ besluiten:
 - datum: '2026-10-01'
   besluit: Geen beleidskader in dit onderwerp; komt terug bij een onderwerp publieke gezondheid.
   gevolg: afwijzen
-beslist:
-  uitkomst:
-    soort: geen_element
-    regel: 20
-    toelichting: Kernrelatie ontbreekt voor Beleidskader
-    archimate_type: driver
-    voorleggen: true
-    redenen:
-    - 'is grondslag voor: nee'
-    generiek: false
-    typeregel: 14
-  voor_te_leggen:
-  - 'is grondslag voor: nee'
-  bronnen:
-  - 2026-rijk-wet-publieke-gezondheid-wettekst
-  herkomst: rijksregelgeving

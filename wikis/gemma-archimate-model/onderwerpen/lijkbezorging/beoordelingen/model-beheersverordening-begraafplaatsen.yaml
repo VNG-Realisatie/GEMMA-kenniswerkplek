@@ -98,19 +98,3 @@ onderwerpen:
 - lijkbezorging
 regelgever: VNG-modelverordening
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: 'Regeling als geheel, landelijk (kern ja, 0/1, ontbreekt: *in werking*)'
-    paginatype: beleidskader
-    archimate_type: driver
-    voorleggen: false
-    generiek: false
-    typeregel: 14
-  bronnen:
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  - 2026-vng-wet-op-de-lijkbezorging
-  - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: informatiemodel
-  pad: elementpaginas/motivatie/beleidskaders/gemeentelijke-regelgeving/model-beheersverordening-begraafplaatsen.md

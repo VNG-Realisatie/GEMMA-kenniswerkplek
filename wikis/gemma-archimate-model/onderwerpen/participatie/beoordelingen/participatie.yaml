@@ -12,15 +12,3 @@ toelichting: 'Thema, geen element: het onderwerp zelf, met Betrekken inwoners bi
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-beslist:
-  uitkomst:
-    soort: buiten_model
-    regel: 3
-    toelichting: Buiten dit model
-    archimate_type: Grouping
-    voorleggen: false
-    generiek: false
-  bronnen:
-  - 2024-vng-implementatiehandleiding-model-participatieverordening
-  - 2026-rijk-gemeentewet-wettekst
-  herkomst: rijksregelgeving

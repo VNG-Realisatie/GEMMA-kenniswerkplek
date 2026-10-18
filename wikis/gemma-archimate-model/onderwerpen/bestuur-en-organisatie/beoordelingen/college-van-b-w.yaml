@@ -63,26 +63,3 @@ besluiten:
   besluit: Naam *College van B&W*, de gangbare naam; de wetsterm *burgemeester en wethouders* en Groningen *college* zijn synoniemen.
   gevolg: verwerkt
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
-    paginatype: actor
-    archimate_type: business-actor
-    voorleggen: false
-    generiek: false
-    typeregel: 9
-  bronnen:
-  - 2024-rijk-gemeentewet-wettekst
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  herkomst: rijksregelgeving
-  gemma:
-    gemma_id: id-af1a85d2-b6d6-44da-b562-ef2ccd69108e
-    gemma_naam: College
-    gemma_type: business-actor
-    gemma_map: Business / Procesarchitectuur / Actoren en rollen
-    gemma_eigenschappen:
-      Object ID: af1a85d2-b6d6-44da-b562-ef2ccd69108e
-  pad: elementpaginas/bedrijfsarchitectuur/actoren/college-van-b-w.md

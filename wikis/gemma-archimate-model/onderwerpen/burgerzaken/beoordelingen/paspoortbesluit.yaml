@@ -78,17 +78,3 @@ relaties:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: art. 3.2, 4.2
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
-    paginatype: beleidskader
-    archimate_type: driver
-    voorleggen: false
-    generiek: false
-    typeregel: 14
-  bronnen:
-  - 2026-rijk-paspoortbesluit-bwbr0044308
-  herkomst: rijksregelgeving
-  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/paspoortbesluit.md

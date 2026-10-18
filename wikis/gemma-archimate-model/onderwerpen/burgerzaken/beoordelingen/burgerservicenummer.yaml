@@ -16,16 +16,3 @@ synoniemen:
 bronnen:
 - 2026-rvig-hup-wijzigen-bsn
 - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Ingeschreven persoon
-    generiek: false
-  bronnen:
-  - 2026-rvig-hup-wijzigen-bsn
-  - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  - 2026-rvig-hup-wijzigen-identificatienummers
-  herkomst: richtlijn

@@ -64,17 +64,3 @@ synoniemen:
 bronnen:
 - 2026-rvig-hup-proceduregegevens
 - 2023-rvig-circulaire-adresonderzoek-brp
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 28
-    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
-    archimate_type: business-process
-    voorleggen: false
-    genoemd_begrip: Bijhouden persoonsgegevens
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rvig-hup-proceduregegevens
-  - 2023-rvig-circulaire-adresonderzoek-brp
-  herkomst: richtlijn

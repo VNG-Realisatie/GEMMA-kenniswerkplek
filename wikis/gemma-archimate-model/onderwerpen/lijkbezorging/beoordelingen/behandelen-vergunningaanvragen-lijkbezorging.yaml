@@ -77,28 +77,3 @@ relaties:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: Besluit op de lijkbezorging art. 11
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 25
-    toelichting: Gedrag, *groepeert processen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: cluster naar soort werk
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving
-  gemma_generiek:
-    gemma_id: id-85fdb525-85a2-40d0-b90c-f4cfd4306ef7
-    gemma_naam: Behandelen aanvraag vergunning of ontheffing
-    gemma_type: business-process
-    gemma_definitie: Het behandelen van een verzoek van een klant om toestemming voor activiteiten die te boek staat als vergunning/ontheffing-plichtig.
-    gemma_map: Business / Procesarchitectuur / Processenlandschap
-    gemma_eigenschappen:
-      GEMMA type: Bedrijfsproces
-      Object ID: 85fdb525-85a2-40d0-b90c-f4cfd4306ef7
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/behandelen-vergunningaanvragen-lijkbezorging.md

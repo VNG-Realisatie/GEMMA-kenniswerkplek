@@ -9,14 +9,3 @@ kenmerken:
     - 2024-vng-implementatiehandleiding-model-participatieverordening
 genoemd_begrip: Beleidsnota
 toelichting: Specialisatie zonder pagina van Beleidsnota.
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Beleidsnota
-    generiek: false
-  bronnen:
-  - 2024-vng-implementatiehandleiding-model-participatieverordening
-  herkomst: richtlijn

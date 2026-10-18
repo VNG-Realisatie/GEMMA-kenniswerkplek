@@ -1,0 +1,2504 @@
+# Gegenereerd door tools/beslissen.py (beslist per beoordeling); niet met de hand bewerken.
+aanwijzing-van-grond-voor-bijzondere-begraafplaats:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Beschikking
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+adviescommissie-begraafplaatsen:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Kernrelatie ontbreekt voor Actor
+    archimate_type: business-actor
+    voorleggen: true
+    redenen:
+    - 'vervult een rol: nee'
+    - 'soort partij: nee'
+    generiek: false
+    typeregel: 9
+  voor_te_leggen:
+  - 'vervult een rol: nee'
+  - 'soort partij: nee'
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+adviseur:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-f3219a6a-532f-482d-897c-dafe0dc70bb0
+    gemma_naam: Adviseur
+    gemma_type: business-role
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: f3219a6a-532f-482d-897c-dafe0dc70bb0
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/adviseur.md
+afgeven-laissez-passer:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/afgeven-laissez-passer.md
+afstand-van-het-grafrecht:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Grafrecht
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+algemeen-graf:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+algemeen-kindergraf:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+algemeen-urnengraf:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+andere-termijn:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Beschikking
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: rijksregelgeving
+arts:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    generiek: false
+    typeregel: 9
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/actoren/arts.md
+as:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Urn
+    generiek: false
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+asverstrooiing:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2025-groningen-algemene-plaatselijke-verordening
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2023-vng-model-apv
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/asverstrooiing.md
+  zonder_grondslag: true
+begraafplaats:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-vng-wet-op-de-lijkbezorging
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaats.md
+begraafplaatsregister:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraafplaatsregister.md
+begraven-en-cremeren-stoffelijk-overschot:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/begraven-en-cremeren-stoffelijk-overschot.md
+begraving:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja)
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Uitvoeren lijkbezorging
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+behandelen-vergunningaanvragen-lijkbezorging:
+  uitkomst:
+    soort: element
+    regel: 25
+    toelichting: Gedrag, *groepeert processen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: cluster naar soort werk
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-85fdb525-85a2-40d0-b90c-f4cfd4306ef7
+    gemma_naam: Behandelen aanvraag vergunning of ontheffing
+    gemma_type: business-process
+    gemma_definitie: Het behandelen van een verzoek van een klant om toestemming voor activiteiten die te boek staat als vergunning/ontheffing-plichtig.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 85fdb525-85a2-40d0-b90c-f4cfd4306ef7
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/behandelen-vergunningaanvragen-lijkbezorging.md
+beheerder-van-de-begraafplaats:
+  uitkomst:
+    soort: synoniem
+    regel: 1
+    toelichting: Ander woord voor een bestaand begrip
+    voorleggen: false
+    genoemd_begrip: Houder van de begraafplaats
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+beheersverordening-begraafplaatsen:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Regeling
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-vng-wet-op-de-lijkbezorging
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+beheren-begraafplaatsen:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-begraafplaatsen.md
+beheren-crematoria:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-crematoria.md
+beheren-grafrechten:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-grafrechten.md
+beheren-graven:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/beheren-graven.md
+benoemen-gemeentelijke-lijkschouwer:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Eis ontbreekt voor Bedrijfsproces
+    archimate_type: business-process
+    voorleggen: true
+    redenen:
+    - 'aanleiding: nee'
+    generiek: false
+    typeregel: 16
+  voor_te_leggen:
+  - 'aanleiding: nee'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+beschikking-ter-bezorging-van-het-lijk:
+  uitkomst:
+    soort: buiten_scope
+    regel: 2
+    toelichting: Niet herkenbaar of niet gemeentelijk
+    voorleggen: false
+    redenen:
+    - 'gemeentelijk: nee'
+    generiek: false
+  voor_te_leggen:
+  - 'gemeentelijk: nee'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+besluit-op-de-lijkbezorging:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/besluit-op-de-lijkbezorging.md
+besmet-stoffelijk-overschot-gemeld:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/besmet-stoffelijk-overschot-gemeld.md
+bestemming-van-de-as:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Urn
+    generiek: false
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+bewaarplaats:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Plaats van bijzetting
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+bezorgen-stoffelijk-overschot:
+  uitkomst:
+    soort: element
+    regel: 37
+    toelichting: Gedrag, *gezamenlijk gedrag* (kern ja, 2/2)
+    paginatype: bedrijfsinteractie
+    archimate_type: business-interaction
+    voorleggen: true
+    redenen:
+    - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
+    generiek: false
+    typeregel: 16
+  voor_te_leggen:
+  - 'bedrijfsinteractie: ketensamenwerking (estafette, elke partij verantwoordelijk voor haar deel) of orkestratie (één partij verantwoordelijk; de gemeente levert een dienst aan derden)?'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-gemma-proceshierarchie
+  - 2026-vng-gemma-impact-ketensamenwerking
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsinteracties/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bezorgen-stoffelijk-overschot.md
+bijzetten-of-verstrooien-van-de-as:
+  uitkomst:
+    soort: onderdeel
+    regel: 28
+    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Uitvoeren lijkbezorging
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+bijzetting:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja)
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Uitvoeren lijkbezorging
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+bijzettingenregister:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzettingenregister.md
+bijzonder-crematorium:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Crematorium
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+bijzondere-begraafplaats:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Begraafplaats
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+bijzondere-begraafplaats-toestemming:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/bijzondere-begraafplaats-toestemming.md
+burgerlijk-wetboek-boek-2:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Kernrelatie ontbreekt voor Beleidskader
+    archimate_type: driver
+    voorleggen: true
+    redenen:
+    - 'is grondslag voor: nee'
+    generiek: false
+    typeregel: 14
+  voor_te_leggen:
+  - 'is grondslag voor: nee'
+  bronnen:
+  - 2026-rijk-bw2-rechtspersonen
+  herkomst: rijksregelgeving
+crematie:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja)
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Uitvoeren lijkbezorging
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+crematorium:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematorium.md
+crematoriumregister:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/crematoriumregister.md
+degene-die-in-de-lijkbezorging-voorziet:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/degene-die-in-de-lijkbezorging-voorziet.md
+doodgeborene:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Stoffelijk overschot
+    generiek: false
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+elektronische-weg:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Kernrelatie ontbreekt voor Kanaal
+    archimate_type: business-interface
+    voorleggen: true
+    redenen:
+    - 'ontsluit een dienst: nee'
+    generiek: false
+    typeregel: 12
+  voor_te_leggen:
+  - 'ontsluit een dienst: nee'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+  herkomst: rijksregelgeving
+exploiteren-van-begraafplaatsen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2023-vng-model-apv
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-30deba14-c60a-49b2-b6d2-740a6d2539f5
+    gemma_naam: Exploiteren van begraafplaatsen
+    gemma_type: business-function
+    gemma_definitie: Het exploiteren van begraafplaatsen, inclusief ondersteunende diensten die bij het uitvoeren van een begrafenis verzorgd worden.
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: 30deba14-c60a-49b2-b6d2-740a6d2539f5
+      Toelichting: 'Bijv. het uitgeven van grafrechten en verlenen van vergunningen voor plaatsen van grafstenen. BIj het verzorgen van diensten bij begrafenissen valt te denken aan: het graven van een graf, voorlopen, diverse diensten in de Aula e.d.'
+  gemma_functie:
+    gemma_id: id-a4504f6c-e588-45d3-bf6e-8d86515d7696
+    gemma_naam: Exploitatie fysieke leefomgeving
+    gemma_type: business-function
+    gemma_definitie: Het conform privaatrechtelijke grondslag exploiteren van de gemeentelijke voorzieningen zoals een zwembad, museum, parkeergarage of sportaccommodatie.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: a4504f6c-e588-45d3-bf6e-8d86515d7696
+    gemma_paden:
+    - Fysieke leefomgeving › Uitvoering fysieke leefomgeving › Exploitatie fysieke leefomgeving
+    - Uitvoering › Uitvoering fysieke leefomgeving › Exploitatie fysieke leefomgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/fysieke-leefomgeving/exploiteren-van-begraafplaatsen.md
+gebruiker:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Kernrelatie ontbreekt voor Rol
+    archimate_type: business-role
+    voorleggen: true
+    redenen:
+    - 'voert gedrag uit: nee'
+    generiek: false
+    typeregel: 10
+  voor_te_leggen:
+  - 'voert gedrag uit: nee'
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+gedenkteken-plaatsingsvergunning:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gedenkteken-plaatsingsvergunning.md
+  zonder_grondslag: true
+gedeputeerde-staten:
+  uitkomst:
+    soort: buiten_scope
+    regel: 2
+    toelichting: Niet herkenbaar of niet gemeentelijk
+    voorleggen: false
+    redenen:
+    - 'gemeentelijk: nee'
+    generiek: false
+  voor_te_leggen:
+  - 'gemeentelijk: nee'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+gemeenschappelijke-regeling-begraafplaats:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Kernrelatie ontbreekt voor Bedrijfssamenwerking
+    archimate_type: business-collaboration
+    voorleggen: true
+    redenen:
+    - 'voert gedrag uit: nee'
+    - 'soort partij: nee'
+    generiek: false
+    typeregel: 8
+  voor_te_leggen:
+  - 'voert gedrag uit: nee'
+  - 'soort partij: nee'
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+gemeentebegrafenis:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: gemeentebegrafenis-data
+    naam: Gemeentebegrafenis-data
+    relatie: realisatie
+    ggm_sterkte: sterk
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/gemeentebegrafenis-data.md
+  ggm:
+    ggm_entiteit: Gemeentebegrafenis
+    ggm_guid: EAID_F2DBE01F_7535_4f26_9DF2_081EF8632F36
+    ggm_uml_type: Class
+    ggm_beleidsdomein: Gemeentebegrafenissen
+    ggm_taakveld: 6 Sociaal Domein
+    ggm_diagram:
+    - Gemeente Begrafenissen
+    ggm_diagram_ids:
+    - EAID_949AE9E2_95EB_4063_B7C5_E81971D410B3
+    ggm_definitie: Teraardebestelling onder verantwoordelijjkheid van de gemeente.
+  gemma:
+    gemma_id: id-68085684cee7413c91bc027a0aaade82
+    gemma_naam: Gemeentebegrafenis
+    gemma_type: business-object
+    gemma_definitie: Teraardebestelling onder verantwoordelijjkheid van de gemeente.
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-a0f96391-4935-4c7a-be2b-2fa1b00da57f
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{F2DBE01F-7535-4f26-9DF2-081EF8632F36}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: a0f96391-4935-4c7a-be2b-2fa1b00da57f
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/gemeentebegrafenis.md
+gemeentelijk-crematorium:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Crematorium
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+gemeentelijke-begraafplaats:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Begraafplaats
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+gemeentelijke-dienstverlening-rond-overlijden:
+  uitkomst:
+    soort: buiten_model
+    regel: 3
+    toelichting: Buiten dit model
+    archimate_type: Grouping
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2026-vng-wet-op-de-lijkbezorging
+  herkomst: overig
+gemeentelijke-lijkschouwer:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/gemeentelijke-lijkschouwer.md
+gezindte:
+  uitkomst:
+    soort: synoniem
+    regel: 1
+    toelichting: Ander woord voor een bestaand begrip
+    voorleggen: false
+    genoemd_begrip: Kerkgenootschap
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+ggd:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Samenwerkingsverband met eigen rechtspersoon (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    generiek: false
+    typeregel: 8
+  bronnen:
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/actoren/ggd.md
+graf:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: graf-data
+    naam: Graf-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/graf-data.md
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/graf.md
+grafbedekking:
+  uitkomst:
+    soort: onderdeel
+    regel: 35
+    toelichting: Onderdeel van een ander object, zonder eigen proces
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: rijksregelgeving
+grafkelder:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+grafonderhoud:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-vng-retributies
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: informatiemodel
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafonderhoud.md
+  zonder_grondslag: true
+grafrecht:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief, afspraak (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: contract
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 18
+  voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-vng-retributies
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: grafrecht-data
+    naam: Grafrecht-data
+    relatie: realisatie
+    ggm_sterkte: geen
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/grafrecht-data.md
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafrecht.md
+grafrechten:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Heffing
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-vng-retributies
+  - 2024-rijk-gemeentewet-wettekst
+  herkomst: rijksregelgeving
+grafruimte:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+grafuitgifte:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-vng-retributies
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/grafuitgifte.md
+herbegraven-of-alsnog-cremeren:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/herbegraven-of-alsnog-cremeren.md
+houder-van-de-begraafplaats:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/houder-van-de-begraafplaats.md
+houder-van-een-plaats-van-bijzetting:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/houder-van-een-plaats-van-bijzetting.md
+houder-van-het-crematorium:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/houder-van-het-crematorium.md
+incidentele-asverstrooiing:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja)
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Uitvoeren lijkbezorging
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+joodse-begraafplaats:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Begraafplaats
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+kennisgeving-van-begraven-of-bijzetten:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Uitvoeren lijkbezorging
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+kerkgenootschap:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    generiek: false
+    typeregel: 9
+  bronnen:
+  - 2026-rijk-bw2-rechtspersonen
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/actoren/kerkgenootschap.md
+kostendrager:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/kostendrager.md
+kostenverhaal-lijkbezorging:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Verzorgen gemeentebegrafenis
+    generiek: false
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+laissez-passer-voor-lijken:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+lijkbezorging-waarborgen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Vermogen (kern ja)
+    paginatype: capability
+    archimate_type: capability
+    voorleggen: false
+    generiek: false
+    typeregel: 15
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-wet-op-de-lijkbezorging
+  herkomst: rijksregelgeving
+  pad: elementpaginas/strategie/capabilities/niet-domeingebonden/lijkbezorging-waarborgen.md
+lijkbezorgingsrechten:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Heffing
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-vng-retributies
+  herkomst: overig
+lijst-historische-graven:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+maatregel-bij-besmet-lijk:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Beschikking
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+machtiging:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Uitvoeren lijkbezorging
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+mededelingenbord:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Kernrelatie ontbreekt voor Kanaal
+    archimate_type: business-interface
+    voorleggen: true
+    redenen:
+    - 'ontsluit een dienst: nee'
+    generiek: false
+    typeregel: 12
+  voor_te_leggen:
+  - 'ontsluit een dienst: nee'
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+model-apv:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2023-vng-model-apv
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+  pad: elementpaginas/motivatie/beleidskaders/gemeentelijke-regelgeving/model-apv.md
+model-beheersverordening-begraafplaatsen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: 'Regeling als geheel, landelijk (kern ja, 0/1, ontbreekt: *in werking*)'
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-vng-wet-op-de-lijkbezorging
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+  pad: elementpaginas/motivatie/beleidskaders/gemeentelijke-regelgeving/model-beheersverordening-begraafplaatsen.md
+nabestaande:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2025-groningen-algemene-plaatselijke-verordening
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/nabestaande.md
+nader-onderzoek:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja)
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Schouwen stoffelijk overschot
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+nieuwe-vormen-van-lijkbezorging:
+  uitkomst:
+    soort: buiten_scope
+    regel: 2
+    toelichting: Niet herkenbaar of niet gemeentelijk
+    voorleggen: false
+    redenen:
+    - 'herkenbaar: nee'
+    generiek: false
+  voor_te_leggen:
+  - 'herkenbaar: nee'
+  bronnen:
+  - 2026-vng-wet-op-de-lijkbezorging
+  herkomst: overig
+officier-van-justitie:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    generiek: false
+    typeregel: 9
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/actoren/officier-van-justitie.md
+onderhouden-graf:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-vng-retributies
+  herkomst: gemeentelijke-regelgeving
+  gemma_generiek:
+    gemma_id: id-1a739ba4-08d4-4b65-84d8-4ea89499b4ca
+    gemma_naam: Onderhouden
+    gemma_type: business-process
+    gemma_definitie: Het planmatig (preventief) onderhouden van de openbare ruimte, zoals het maaien van bermen, het onderhoud van plantsoenen, schilderen van gemeente-eigendommen en gebouwen.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 1a739ba4-08d4-4b65-84d8-4ea89499b4ca
+ontleding:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja)
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Uitvoeren lijkbezorging
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+ontleding-stoffelijk-overschot-toestemming:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  gemma_functie:
+    gemma_id: id-9a066e58-f6b8-4761-8159-2f53b2ccf8c7
+    gemma_naam: Producten- en dienstenrealisatie fysieke leefomgeving
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen de fysieke leefomgeving.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 9a066e58-f6b8-4761-8159-2f53b2ccf8c7
+      Toelichting: Bijv. bodembeheer, afvalinzameling, begraafplaatsexploitatie.
+    gemma_paden:
+    - Fysieke leefomgeving › Uitvoering fysieke leefomgeving › Producten- en dienstenrealisatie fysieke leefomgeving
+    - Uitvoering › Uitvoering fysieke leefomgeving › Producten- en dienstenrealisatie fysieke leefomgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ontleding-stoffelijk-overschot-toestemming.md
+opgraven-stoffelijk-overschot:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/opgraven-stoffelijk-overschot.md
+overschrijving-van-het-grafrecht:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Grafrecht
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+particulier-foetusgraf:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+particulier-graf:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+particulier-graf-voor-bepaalde-tijd:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+particulier-graf-voor-onbepaalde-tijd:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+particulier-kindergraf:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+particulier-urnengraf:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+particuliere-gedenkplaats:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+particuliere-urnennis:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+partnergraf:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+plaats-van-bijzetting:
+  uitkomst:
+    soort: onderdeel
+    regel: 35
+    toelichting: Onderdeel van een ander object, zonder eigen proces
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Begraafplaats
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+plechtigheid:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Uitvoeren lijkbezorging
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+rechthebbende-op-het-graf:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: true
+    redenen:
+    - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
+    generiek: false
+    typeregel: 10
+  voor_te_leggen:
+  - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/rechthebbende-op-het-graf.md
+register-van-begraven-lijken:
+  uitkomst:
+    soort: geen_pagina
+    regel: 17
+    toelichting: Waarneembare vorm
+    archimate_type: representation
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+registratieformulier:
+  uitkomst:
+    soort: geen_pagina
+    regel: 17
+    toelichting: Waarneembare vorm
+    archimate_type: representation
+    voorleggen: false
+    genoemd_begrip: Stoffelijk overschot
+    generiek: false
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+retributie:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Heffing
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-vng-retributies
+  - 2024-rijk-gemeentewet-wettekst
+  herkomst: rijksregelgeving
+ruimen-graf:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/ruimen-graf.md
+schadeloosstelling-bij-sluiting:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Kernrelatie ontbreekt voor Bedrijfsobject
+    archimate_type: business-object
+    voorleggen: true
+    redenen:
+    - 'wordt bewerkt: nee'
+    - 'levenscyclus: nee'
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - 'wordt bewerkt: nee'
+  - 'levenscyclus: nee'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+schouwen-stoffelijk-overschot:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/schouwen-stoffelijk-overschot.md
+sluiten-begraafplaats:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/sluiten-begraafplaats.md
+sluiting-van-een-begraafplaats:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Beschikking
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+stellen-andere-termijn:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stellen-andere-termijn.md
+stichting-grafzorg-nederland:
+  uitkomst:
+    soort: buiten_scope
+    regel: 2
+    toelichting: Niet herkenbaar of niet gemeentelijk
+    voorleggen: false
+    redenen:
+    - 'gemeentelijk: nee'
+    generiek: false
+  voor_te_leggen:
+  - 'gemeentelijk: nee'
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+stoffelijk-overschot:
+  uitkomst:
+    soort: element
+    regel: 33
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: kernobject
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/stoffelijk-overschot.md
+termijn-van-lijkbezorging:
+  uitkomst:
+    soort: buiten_model
+    regel: 3
+    toelichting: Buiten dit model
+    archimate_type: Constraint
+    voorleggen: false
+    generiek: false
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+termijn-van-uitgifte:
+  uitkomst:
+    soort: eigenschap
+    regel: 4
+    toelichting: Eigenschap, status of indeling van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Grafrecht
+    generiek: false
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+toestaan-lijkbezorging:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2025-groningen-algemene-plaatselijke-verordening
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/toestaan-lijkbezorging.md
+toestemming-asverstrooiing:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2025-groningen-algemene-plaatselijke-verordening
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+toestemming-ingebruikneming-bijzondere-begraafplaats:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+treffen-maatregel-bij-besmet-stoffelijk-overschot:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-729e05ea-f9f7-4583-a645-ec4e573b74ce
+    gemma_naam: Behandelen melding
+    gemma_type: business-process
+    gemma_definitie: 'Het in ontvangst nemen en afhandelen van een medeling en het resultaat hiervan terugkoppelen naar de melder. Bij een melding meldt men klant iets aan de gemeente en verwacht men dat de gemeente daar actie op onderneemt. Voorbeelden zijn een melding openbare ruimte, een melding omtrent overbewoning of een melding met betrekking tot het niet naleven van de leerplichtwet. Dit zijn andersoortige meldingen dan die bedoeld onder behandelen aangiften en meldingen om twee redenen: deze meldingen hebben betrekking op een al dan niet door de gemeente geleverde dienst (bv. beheren openbare ruimte) en het palet aan acties/antwoorden is diverser dan bij aangiften en meldingen, waar het vrijwel altijd het bijwerken van een registratie is.'
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 729e05ea-f9f7-4583-a645-ec4e573b74ce
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/treffen-maatregel-bij-besmet-stoffelijk-overschot.md
+uitbaten-begraafplaatsen-en-crematoria:
+  uitkomst:
+    soort: element
+    regel: 25
+    toelichting: Gedrag, *groepeert processen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: cluster naar soort werk
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-de88d348-dcce-4b8a-a3f6-cac6351a8311
+    gemma_naam: Uitbaten gemeentelijke voorzieningen
+    gemma_type: business-process
+    gemma_definitie: Het openhouden van gemeentelijke voorzieningen zoals sportvelden, musea, parkeergarages, wijkcentra en consultatiebureaus en het ter beschikking stellen van de daaraan gerelateerde middelen zoals ruimtes of dranghekken, bijvoorbeeld voor een zelfhulpgroep of een buurtfeest ten behoeve van het versterken van de sociale cohesie. Ook het tegen een vergoeding ter beschikking stellen van ruimte voor bijvoorbeeld de bibliotheek valt hieronder vanwege het maatschappelijke karakter.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: de88d348-dcce-4b8a-a3f6-cac6351a8311
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitbaten-begraafplaatsen-en-crematoria.md
+uitvaart-vervroegen-of-uitstellen:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvaart-vervroegen-of-uitstellen.md
+uitvaartondernemer:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Handelende partij (kern ja)
+    paginatype: actor
+    archimate_type: business-actor
+    voorleggen: false
+    generiek: false
+    typeregel: 9
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/actoren/uitvaartondernemer.md
+uitvoeren-lijkbezorging:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/uitvoeren-lijkbezorging.md
+urn:
+  uitkomst:
+    soort: element
+    regel: 36
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: true
+    redenen:
+    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    generiek: false
+    typeregel: 19
+  voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-vng-retributies
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/urn.md
+urnenmuur:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Begraafplaats
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+vergunning-bewaarplaats:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+vergunning-bijzonder-crematorium:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+vergunning-grafbedekking:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+vergunning-grafkelder:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+vergunning-tot-opgraving:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+vergunning-verstrooiingsterrein:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+vergunningenbeheer-publieksdiensten:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *gegroepeerd gedrag* (kern ja, 4/4)
+    paginatype: bedrijfsfunctie
+    archimate_type: business-function
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2023-vng-model-apv
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-b7e4786e-cff2-40a8-ac4b-6c48a0abfbe0
+    gemma_naam: Vergunningenbeheer Publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het beheren en verlenen van vergunningen voor diverse soorten lokale activiteiten.
+    gemma_map: Business / Bedrijfsfuncties / Sub(sub)bedrijfsfuncties
+    gemma_eigenschappen:
+      Object ID: b7e4786e-cff2-40a8-ac4b-6c48a0abfbe0
+      Toelichting: Bijv. vergunningen voor loterijen, rommelmarkten, collectes, luchtbalonnen, textielinzameling. Andere domeinen waar andere typen vergunningen worden beheerd zijn de domeinen 'Veiligheid' en 'Ruimte'.
+  gemma_functie:
+    gemma_id: id-2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_naam: Producten- en dienstenrealisatie publieksdiensten
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen het domein Publieksdiensten.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 2b40d5bc-cd28-4b62-b0b1-a68f16b7aa64
+    gemma_paden:
+    - Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+    - Uitvoering › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/vergunningenbeheer-publieksdiensten.md
+verklaring-van-geen-bezwaar:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Verlenen verlof tot begraving of crematie
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: rijksregelgeving
+verklaring-van-overlijden:
+  uitkomst:
+    soort: onderdeel
+    regel: 31
+    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Verlenen verlof tot begraving of crematie
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: rijksregelgeving
+verklaring-van-verwaarlozing:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Beschikking
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+verlenen-grafrecht:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-vng-retributies
+  - 2024-rijk-gemeentewet-wettekst
+  herkomst: rijksregelgeving
+  gemma_generiek:
+    gemma_id: id-49fe8555-b001-4c86-9a81-20491e16af75
+    gemma_naam: Behandelen aanvraag product
+    gemma_type: business-process
+    gemma_definitie: Het afhandelen van aanvragen voor producten of diensten die min of meer "gereed op de plank" liggen. Hooguit worden deze producten nog gepersonifieerd. Deze producten zijn vaak "klaar terwijl u wacht"; ze kunnen direct worden meegenomen mits aan enkele direct toetsbare eisen wordt voldaan (uittreksel GBA, ja/nee sticker, ..) maar ook een rijbewijs of paspoort valt hieronder.
+    gemma_map: Business / Procesarchitectuur / Processenlandschap
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsproces
+      Object ID: 49fe8555-b001-4c86-9a81-20491e16af75
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-grafrecht.md
+verlenen-toestemming-asverstrooiing:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-groningen-algemene-plaatselijke-verordening
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+verlenen-toestemming-bijzondere-begraafplaats:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-toestemming-bijzondere-begraafplaats.md
+verlenen-vergunning-bijzonder-crematorium:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-vergunning-bijzonder-crematorium.md
+verlenen-vergunning-grafbedekking:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: informatiemodel
+verlenen-verlof-tot-begraving-of-crematie:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-begraving-of-crematie.md
+verlenen-verlof-tot-ontleding:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  - 2025-vng-upl-producten-en-diensten-extern
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-ontleding.md
+verlenging-van-het-grafrecht:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Grafrecht
+    generiek: false
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: rijksregelgeving
+verlof-tot-begraven:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: rijksregelgeving
+  gemma_functie:
+    gemma_id: id-9a066e58-f6b8-4761-8159-2f53b2ccf8c7
+    gemma_naam: Producten- en dienstenrealisatie fysieke leefomgeving
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen de fysieke leefomgeving.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 9a066e58-f6b8-4761-8159-2f53b2ccf8c7
+      Toelichting: Bijv. bodembeheer, afvalinzameling, begraafplaatsexploitatie.
+    gemma_paden:
+    - Fysieke leefomgeving › Uitvoering fysieke leefomgeving › Producten- en dienstenrealisatie fysieke leefomgeving
+    - Uitvoering › Uitvoering fysieke leefomgeving › Producten- en dienstenrealisatie fysieke leefomgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlof-tot-begraven.md
+verlof-tot-begraving-of-crematie:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: rijksregelgeving
+verlof-tot-ontleding:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Vergunning
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+verordening-lijkbezorgingsrechten:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Heffingsverordening
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2026-vng-retributies
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+verstrooiing:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja)
+    archimate_type: business-process
+    voorleggen: false
+    genoemd_begrip: Uitvoeren lijkbezorging
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+verstrooiingsplaats:
+  uitkomst:
+    soort: onderdeel
+    regel: 5
+    toelichting: Onderdeel of deelstap van een ander begrip
+    voorleggen: false
+    genoemd_begrip: Begraafplaats
+    generiek: false
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+verval-van-het-grafrecht:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
+    paginatype: gebeurtenis
+    archimate_type: business-event
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/verval-van-het-grafrecht.md
+vervallen-verklaren-grafrecht:
+  uitkomst:
+    soort: element
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: bedrijfsproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2010-vng-model-beheersverordening-begraafplaatsen
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervallen-verklaren-grafrecht.md
+vervoersdocumenten-stoffelijk-overschot:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    paginatype: dienst
+    archimate_type: business-service
+    voorleggen: false
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2025-vng-upl-producten-en-diensten-extern
+  - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+  - 2026-rvo-aangifte-en-akte-van-overlijden
+  herkomst: rijksregelgeving
+  gemma_functie:
+    gemma_id: id-9a066e58-f6b8-4761-8159-2f53b2ccf8c7
+    gemma_naam: Producten- en dienstenrealisatie fysieke leefomgeving
+    gemma_type: business-function
+    gemma_definitie: Het uitvoeren van activiteiten om producten en diensten te leveren binnen de fysieke leefomgeving.
+    gemma_map: Business / Bedrijfsfuncties / (Hoofd)bedrijfsfuncties
+    gemma_eigenschappen:
+      GEMMA type: Bedrijfsfunctie
+      Object ID: 9a066e58-f6b8-4761-8159-2f53b2ccf8c7
+      Toelichting: Bijv. bodembeheer, afvalinzameling, begraafplaatsexploitatie.
+    gemma_paden:
+    - Fysieke leefomgeving › Uitvoering fysieke leefomgeving › Producten- en dienstenrealisatie fysieke leefomgeving
+    - Uitvoering › Uitvoering fysieke leefomgeving › Producten- en dienstenrealisatie fysieke leefomgeving
+  pad: elementpaginas/bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervoersdocumenten-stoffelijk-overschot.md
+verzorgen-gemeentebegrafenis:
+  uitkomst:
+    soort: element
+    regel: 26
+    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: false
+    procesniveau: levensloopproces
+    generiek: false
+    typeregel: 16
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  herkomst: rijksregelgeving
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verzorgen-gemeentebegrafenis.md
+verzorgen-lijkbezorging:
+  uitkomst:
+    soort: element
+    regel: 25
+    toelichting: Gedrag, *groepeert processen* (kern ja)
+    paginatype: bedrijfsproces
+    archimate_type: business-process
+    voorleggen: true
+    redenen:
+    - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
+    generiek: false
+    typeregel: 16
+  voor_te_leggen:
+  - 'groepering van processen zonder soort werk (gemma_generiek): een taak is geen procesniveau; de groepering naar taak is het beleidsdomein'
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-wet-op-de-lijkbezorging
+  herkomst: rijksregelgeving
+vrije-veldgraf:
+  uitkomst:
+    soort: specialisatie
+    regel: 22
+    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
+    archimate_type: business-object
+    voorleggen: false
+    genoemd_begrip: Graf
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: gemeentelijke-regelgeving
+wet-op-de-lijkbezorging:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    paginatype: beleidskader
+    archimate_type: driver
+    voorleggen: false
+    generiek: false
+    typeregel: 14
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-wet-op-de-lijkbezorging
+  herkomst: rijksregelgeving
+  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/wet-op-de-lijkbezorging.md
+wet-publieke-gezondheid:
+  uitkomst:
+    soort: geen_element
+    regel: 20
+    toelichting: Kernrelatie ontbreekt voor Beleidskader
+    archimate_type: driver
+    voorleggen: true
+    redenen:
+    - 'is grondslag voor: nee'
+    generiek: false
+    typeregel: 14
+  voor_te_leggen:
+  - 'is grondslag voor: nee'
+  bronnen:
+  - 2026-rijk-wet-publieke-gezondheid-wettekst
+  herkomst: rijksregelgeving

@@ -48,18 +48,3 @@ relaties:
   - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
   vindplaats: art. 30, 33; Utrecht regel 37-53
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: false
-    generiek: false
-    typeregel: 10
-  bronnen:
-  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/rollen/aanvrager-van-de-verklaring-omtrent-het-gedrag.md

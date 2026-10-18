@@ -106,19 +106,3 @@ besluiten:
   besluit: De ingebrekestelling start het proces en is geen eigen element.
   gevolg: verwerkt
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: bedrijfsproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  - 2026-logius-upl-actueel
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/besluitvorming/vaststellen-dwangsom-bij-niet-tijdig-beslissen.md

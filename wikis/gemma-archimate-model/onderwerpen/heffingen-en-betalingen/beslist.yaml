@@ -1,0 +1,102 @@
+# Gegenereerd door tools/beslissen.py (beslist per beoordeling); niet met de hand bewerken.
+heffing:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  - 2026-vng-retributies
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: heffing-data
+    naam: Heffing-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/heffing-data.md
+  ggm:
+    ggm_entiteit: Heffing
+    ggm_guid: EAID_B3371695_97AD_49d2_9AF1_15591B422007
+    ggm_uml_type: Class
+    ggm_beleidsdomein: RGBZPlus
+    ggm_taakveld: 99 Kern
+    ggm_diagram:
+    - Diagram Vergunningen en Meldingen
+    - Verkamering en Woonoverlast
+    - Entiteiten Dienstverlening
+    ggm_diagram_ids:
+    - EAID_BB52C835_0B2D_4164_AC9D_9D6EDBD7E267
+    - EAID_B039478A_DAF7_458f_A7C7_E4744EC08DBF
+    - EAID_48B6C3F9_CCF1_4794_8252_FC6543409B78
+    ggm_definitie: Een door de overheid opgelegde verplichting tot betaling
+  gemma:
+    gemma_id: id-68bccce27b314b94a022ddd81d517d82
+    gemma_naam: Heffing
+    gemma_type: business-object
+    gemma_definitie: Een door de overheid opgelegde verplichting tot betaling
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-ff9366e3-dd65-48ce-9051-9d6b01b2c6db
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{B3371695-97AD-49d2-9AF1-15591B422007}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: ff9366e3-dd65-48ce-9051-9d6b01b2c6db
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md
+heffingsverordening:
+  uitkomst:
+    soort: element
+    regel: 30
+    toelichting: Passief (kern ja, 2/2)
+    paginatype: bedrijfsobject
+    archimate_type: business-object
+    voorleggen: false
+    objectniveau: generiek
+    generiek: false
+    typeregel: 19
+  bronnen:
+  - 2024-rijk-gemeentewet-wettekst
+  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+  - 2026-vng-retributies
+  herkomst: rijksregelgeving
+  data_objecten:
+  - id: heffingsverordening-data
+    naam: Heffingsverordening-data
+    relatie: realisatie
+    ggm_sterkte: exact
+    pad: elementpaginas/applicatiearchitectuur/data-objecten/heffingsverordening-data.md
+  ggm:
+    ggm_entiteit: Heffingsverordening
+    ggm_guid: EAID_C29CCD49_04E2_44b4_A6B0_AD8B10552628
+    ggm_uml_type: Class
+    ggm_beleidsdomein: 1 Veiligheid en Vergunningen
+    ggm_taakveld: 1 Veiligheid en Vergunningen
+    ggm_diagram:
+    - Diagram Vergunningen en Meldingen
+    - Verkamering en Woonoverlast
+    ggm_diagram_ids:
+    - EAID_BB52C835_0B2D_4164_AC9D_9D6EDBD7E267
+    - EAID_B039478A_DAF7_458f_A7C7_E4744EC08DBF
+    ggm_definitie: Een *heffingsverordening* is een door de gemeenteraad vastgestelde verordening die de **heffing en invordering van gemeentelijke belastingen en rechten** regelt, zoals afvalstoffenheffing, precariobelasting of marktgelden.
+    ggm_toelichting: Gemeenten mogen alleen heffingen vaststellen binnen de kaders die de wet hen geeft. Een heffingsverordening bevat de regels over **welke belastingen of rechten worden geheven, wie belastingplichtig is, wat de maatstaf en tarieven zijn, en hoe invordering plaatsvindt**. Dit is de lokale juridische basis voor het innen van gemeentelijke heffingen waarvoor de gemeenteraad een verordening opstelt.
+  gemma:
+    gemma_id: id-b5f50c54f1cf45b8b7b61a5929035919
+    gemma_naam: Heffingsverordening
+    gemma_type: business-object
+    gemma_definitie: Een vastgestelde regeling waarin de grondslagen, tarieven en voorwaarden voor belastingen en heffingen zijn vastgelegd.
+    gemma_map: Business / _Sync GEMMA en project / GGM / Bedrijfsobjecten
+    gemma_eigenschappen:
+      GEMMA URL: https://gemmaonline.nl/index.php/GEMMA/id-f94b299a-c9eb-4bdb-82e7-5752360494cd
+      GGM-datum-tijd-export: 10122024-112046
+      GGM-guid: '{C29CCD49-04E2-44b4-A6B0-AD8B10552628}'
+      GGM-uml-type: Class
+      Let op: '"ggm-" properties worden beheerd in het GGM informatiemodel'
+      Object ID: f94b299a-c9eb-4bdb-82e7-5752360494cd
+  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md

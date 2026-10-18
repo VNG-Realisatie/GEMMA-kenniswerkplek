@@ -83,19 +83,3 @@ besluiten:
   gevolg: verwerkt
 bronnen:
 - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 28
-    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
-    archimate_type: business-process
-    voorleggen: false
-    genoemd_begrip: Voltrekken huwelijk
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-  - 2026-rijk-burgerlijk-wetboek-boek-1
-  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  herkomst: rijksregelgeving

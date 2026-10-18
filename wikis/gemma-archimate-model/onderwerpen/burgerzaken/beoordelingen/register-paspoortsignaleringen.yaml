@@ -25,17 +25,3 @@ toelichting: 'Representatie, geen pagina: het register van de minister met de pe
 bronnen:
 - 2026-rijk-paspoortbesluit-bwbr0044308
 - 2026-rvig-hup-signalering-verstrekking-reisdocument
-beslist:
-  uitkomst:
-    soort: geen_pagina
-    regel: 17
-    toelichting: Waarneembare vorm
-    archimate_type: representation
-    voorleggen: false
-    genoemd_begrip: Signalering
-    generiek: false
-  bronnen:
-  - 2026-rijk-paspoortbesluit-bwbr0044308
-  - 2026-rvig-hup-signalering-verstrekking-reisdocument
-  - 2026-rijk-paspoortwet-bwbr0005212
-  herkomst: rijksregelgeving

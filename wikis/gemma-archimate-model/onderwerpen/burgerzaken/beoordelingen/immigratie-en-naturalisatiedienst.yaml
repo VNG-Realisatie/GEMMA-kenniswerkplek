@@ -39,21 +39,3 @@ besluiten:
   gevolg: afwijzen
 bronnen:
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-beslist:
-  uitkomst:
-    soort: geen_element
-    regel: 20
-    toelichting: Eis ontbreekt voor Actor
-    archimate_type: business-actor
-    voorleggen: true
-    redenen:
-    - 'soort partij: nee'
-    generiek: false
-    typeregel: 9
-  voor_te_leggen:
-  - 'soort partij: nee'
-  bronnen:
-  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  - 2026-rvig-hup-verblijfstitel
-  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  herkomst: rijksregelgeving

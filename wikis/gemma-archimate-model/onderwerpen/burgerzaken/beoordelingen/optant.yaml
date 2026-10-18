@@ -38,17 +38,3 @@ relaties:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 3, 6, 7; art. 60a lid 2 en 4
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: false
-    generiek: false
-    typeregel: 10
-  bronnen:
-  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/rollen/optant.md

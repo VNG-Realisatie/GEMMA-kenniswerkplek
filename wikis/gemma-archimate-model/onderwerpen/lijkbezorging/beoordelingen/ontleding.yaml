@@ -57,16 +57,3 @@ genoemd_begrip: Uitvoeren lijkbezorging
 toelichting: 'Specialisatie zonder pagina van Uitvoeren lijkbezorging: ontleden in het belang van de wetenschap, met verlof van de burgemeester (art. 67, 68).'
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: specialisatie
-    regel: 22
-    toelichting: Specialisatie zonder pagina (kern ja)
-    archimate_type: business-process
-    voorleggen: false
-    genoemd_begrip: Uitvoeren lijkbezorging
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving

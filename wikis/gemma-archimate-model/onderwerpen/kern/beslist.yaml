@@ -1,0 +1,26 @@
+# Gegenereerd door tools/beslissen.py (beslist per beoordeling); niet met de hand bewerken.
+ketenpartner:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Hoedanigheid (kern ja)
+    paginatype: rol
+    archimate_type: business-role
+    voorleggen: false
+    generiek: false
+    typeregel: 10
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
+  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+  - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
+  herkomst: rijksregelgeving
+  gemma:
+    gemma_id: id-e03a0402-1890-4a21-8143-c44a8ba53ea4
+    gemma_naam: Ketenpartner
+    gemma_type: business-role
+    gemma_map: Business / Procesarchitectuur / Actoren en rollen
+    gemma_eigenschappen:
+      Object ID: e03a0402-1890-4a21-8143-c44a8ba53ea4
+  pad: elementpaginas/bedrijfsarchitectuur/rollen/ketenpartner.md

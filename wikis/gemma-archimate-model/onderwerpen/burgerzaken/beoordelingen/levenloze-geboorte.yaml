@@ -39,19 +39,3 @@ bronnen:
 - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
 - 2026-rvig-hup-geboorte
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
-    paginatype: gebeurtenis
-    archimate_type: business-event
-    voorleggen: false
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-burgerlijk-wetboek-boek-1
-  - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  - 2026-rvig-hup-geboorte
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/levenloze-geboorte.md

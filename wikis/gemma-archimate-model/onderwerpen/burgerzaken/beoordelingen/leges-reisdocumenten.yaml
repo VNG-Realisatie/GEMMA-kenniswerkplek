@@ -41,17 +41,3 @@ toelichting: 'Specialisatie zonder pagina van Heffing: de rechten voor de aanvra
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-beslist:
-  uitkomst:
-    soort: specialisatie
-    regel: 22
-    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Heffing
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  herkomst: rijksregelgeving

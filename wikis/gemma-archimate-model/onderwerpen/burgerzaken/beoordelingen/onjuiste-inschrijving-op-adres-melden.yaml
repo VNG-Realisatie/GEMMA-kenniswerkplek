@@ -45,19 +45,3 @@ bronnen:
 - 2026-rijk-wet-brp-bwbr0033715
 - 2023-rvig-circulaire-adresonderzoek-brp
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
-    paginatype: dienst
-    archimate_type: business-service
-    voorleggen: false
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  - 2026-rijk-wet-brp-bwbr0033715
-  - 2023-rvig-circulaire-adresonderzoek-brp
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/onjuiste-inschrijving-op-adres-melden.md

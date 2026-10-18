@@ -41,17 +41,3 @@ besluiten:
   gevolg: verwerkt
   zekerheid: kennis
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: false
-    generiek: false
-    typeregel: 10
-  bronnen:
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/rollen/klager.md

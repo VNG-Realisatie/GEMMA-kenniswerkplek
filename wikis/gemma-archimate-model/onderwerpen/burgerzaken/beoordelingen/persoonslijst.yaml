@@ -17,16 +17,3 @@ toelichting: 'De vorm (representatie) waarin de gegevens van de ingeschreven per
 synoniemen:
 - naam: PL
   context: dagelijks gebruik
-beslist:
-  uitkomst:
-    soort: geen_pagina
-    regel: 17
-    toelichting: Waarneembare vorm
-    archimate_type: representation
-    voorleggen: false
-    genoemd_begrip: Ingeschreven persoon
-    generiek: false
-  bronnen:
-  - 2025-rvig-logisch-ontwerp-brp-2025q1
-  - 2026-rvig-hup-achtergronden-en-begrippen
-  herkomst: informatiemodel

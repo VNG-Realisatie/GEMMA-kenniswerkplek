@@ -72,21 +72,3 @@ onderwerpen:
 - burgerzaken
 doelgroep: gemeente
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
-    paginatype: actor
-    archimate_type: business-actor
-    voorleggen: false
-    generiek: false
-    typeregel: 9
-  bronnen:
-  - 2024-rijk-gemeentewet-wettekst
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/actoren/burgemeester.md

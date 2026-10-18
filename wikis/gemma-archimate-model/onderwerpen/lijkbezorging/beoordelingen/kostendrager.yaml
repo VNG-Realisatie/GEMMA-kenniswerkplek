@@ -39,17 +39,3 @@ relaties:
 beschrijving:
 - Een kostendrager betaalt voor een voorziening of handeling die een ander uitvoert of die hij zelf laat uitvoeren, en kan de kosten soms verhalen.
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: false
-    generiek: false
-    typeregel: 10
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/rollen/kostendrager.md

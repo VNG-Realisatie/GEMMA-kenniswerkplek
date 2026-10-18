@@ -36,19 +36,3 @@ toelichting: 'Invoer van een andere partij: het register van de minister met ont
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rijk-paspoortbesluit-bwbr0044308
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 31
-    toelichting: 'Invoer van een ander: de gemeente ontvangt of raadpleegt het alleen'
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Verwerken vermissing reisdocument
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rijk-paspoortbesluit-bwbr0044308
-  - 2026-rvig-hup-inhouding-inlevering-vermissing
-  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-  herkomst: rijksregelgeving

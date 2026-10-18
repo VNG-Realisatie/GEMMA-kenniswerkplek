@@ -76,18 +76,3 @@ gemma:
 genoemd_begrip: Behandelen aanvraag rijbewijs
 toelichting: 'Deelproces zonder pagina van Behandelen aanvraag rijbewijs, Behandelen aanvraag omwisseling buitenlands rijbewijs: het na de afgifte ter beschikking stellen van het rijbewijs aan de aanvrager, die daarbij zijn eerdere rijbewijs inlevert.'
 relaties: []
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 28
-    toelichting: 'Deelproces of processtap: een deel van een bedrijfsproces, niet klant tot klant'
-    archimate_type: business-process
-    voorleggen: false
-    genoemd_begrip: Behandelen aanvraag rijbewijs
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  herkomst: rijksregelgeving

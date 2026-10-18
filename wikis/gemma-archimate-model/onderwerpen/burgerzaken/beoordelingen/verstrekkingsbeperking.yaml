@@ -20,16 +20,3 @@ ggm:
 bronnen:
 - 2026-rvig-hup-verstrekkingsbeperking
 - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Ingeschreven persoon
-    generiek: false
-  bronnen:
-  - 2026-rvig-hup-verstrekkingsbeperking
-  - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-  - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-  herkomst: richtlijn

@@ -82,18 +82,3 @@ relaties:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. B 5, D 1-D 7
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
-    paginatype: beleidskader
-    archimate_type: driver
-    voorleggen: false
-    generiek: false
-    typeregel: 14
-  bronnen:
-  - 2026-rijk-kieswet-bwbr0004627
-  - 2025-vng-upl-producten-en-diensten-extern
-  herkomst: rijksregelgeving
-  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/kieswet.md

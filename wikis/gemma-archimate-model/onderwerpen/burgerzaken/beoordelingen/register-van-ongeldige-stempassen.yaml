@@ -13,15 +13,3 @@ kenmerken:
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
 toelichting: 'Representatie, geen pagina: het register legt de ongeldige stempassen vast; de burgemeester stelt de dag voor de stemming een uittreksel vast en vernietigt het register drie maanden na de toelating van de gekozenen (Kieswet art. J 7a). Vermeld bij Stempas. Precedent: Register van begraven lijken.'
-beslist:
-  uitkomst:
-    soort: geen_pagina
-    regel: 17
-    toelichting: Waarneembare vorm
-    archimate_type: representation
-    voorleggen: false
-    genoemd_begrip: Stempas
-    generiek: false
-  bronnen:
-  - 2026-rijk-kieswet-bwbr0004627
-  herkomst: rijksregelgeving

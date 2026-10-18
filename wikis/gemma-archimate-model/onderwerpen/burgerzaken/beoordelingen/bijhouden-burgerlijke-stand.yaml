@@ -218,22 +218,3 @@ bronnen:
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 26
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: levensloopproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rvig-hup-algemeen
-  - 2026-rijk-burgerlijk-wetboek-boek-1
-  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  - 2026-rvig-hup-vaststelling-ouderschap
-  - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/bijhouden-burgerlijke-stand.md

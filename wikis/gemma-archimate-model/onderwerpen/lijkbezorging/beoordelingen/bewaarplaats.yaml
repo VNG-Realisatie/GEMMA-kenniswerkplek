@@ -35,16 +35,3 @@ genoemd_begrip: Plaats van bijzetting
 toelichting: 'Specialisatie zonder pagina van Plaats van bijzetting: plaats van bijzetting buiten crematorium of begraafplaats (art. 62, 64).'
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: specialisatie
-    regel: 22
-    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Plaats van bijzetting
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving

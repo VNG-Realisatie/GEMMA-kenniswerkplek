@@ -84,23 +84,3 @@ doelgroep: inwoners en ondernemers
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: true
-    redenen:
-    - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
-    generiek: false
-    typeregel: 10
-  voor_te_leggen:
-  - 'homoniem van Rechthebbende (GGM, Archief): naamkeuze voorleggen'
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/rollen/rechthebbende-op-het-graf.md

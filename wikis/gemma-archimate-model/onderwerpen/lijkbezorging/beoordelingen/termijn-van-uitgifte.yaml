@@ -10,15 +10,3 @@ toelichting: 'Eigenschap of indeling van Grafrecht: Eigenschap van het grafrecht
 genoemd_begrip: Grafrecht
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: eigenschap
-    regel: 4
-    toelichting: Eigenschap, status of indeling van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Grafrecht
-    generiek: false
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  herkomst: rijksregelgeving

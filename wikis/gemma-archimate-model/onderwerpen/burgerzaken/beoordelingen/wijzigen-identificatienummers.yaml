@@ -101,22 +101,3 @@ besluiten:
   gevolg: verwerkt
   zekerheid: logica
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
-    paginatype: bedrijfsproces
-    archimate_type: business-process
-    voorleggen: false
-    procesniveau: bedrijfsproces
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rvig-hup-wijzigen-identificatienummers
-  - 2026-rvig-hup-wijzigen-bsn
-  - 2026-rvig-hup-wijzigen-administratienummer
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/wijzigen-identificatienummers.md

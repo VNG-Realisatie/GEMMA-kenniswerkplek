@@ -10,15 +10,3 @@ toelichting: 'Onderdeel, geen pagina: de uitkomst van Behandelen optieverklaring
 bronnen:
 - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 5
-    toelichting: Onderdeel of deelstap van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Behandelen optieverklaring
-    generiek: false
-  bronnen:
-  - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  herkomst: rijksregelgeving

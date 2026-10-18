@@ -38,17 +38,3 @@ genoemd_begrip: Heffing
 toelichting: 'Specialisatie zonder pagina van Heffing: heffing voor het gebruik van gemeentebezittingen of het genot van gemeentelijke diensten (Gemeentewet art. 229; VNG retributies).'
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: specialisatie
-    regel: 22
-    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Heffing
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-vng-retributies
-  - 2024-rijk-gemeentewet-wettekst
-  herkomst: rijksregelgeving

@@ -11,15 +11,3 @@ toelichting: 'Processtap zonder pagina: de gemeente verwijdert de gegevens van e
 bronnen:
 - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
 - 2025-rvig-logisch-ontwerp-brp-2025q1
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 5
-    toelichting: Onderdeel of deelstap van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Bijhouden persoonsgegevens
-    generiek: false
-  bronnen:
-  - 2026-rvig-hup-verwijdering-van-reisdocumentgegevens
-  - 2025-rvig-logisch-ontwerp-brp-2025q1
-  herkomst: informatiemodel

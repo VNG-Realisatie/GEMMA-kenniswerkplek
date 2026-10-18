@@ -35,16 +35,3 @@ genoemd_begrip: Crematorium
 toelichting: 'Specialisatie zonder pagina van Crematorium: crematorium van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52).'
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: specialisatie
-    regel: 22
-    toelichting: Specialisatie zonder pagina (kern ja, 2/2)
-    archimate_type: business-object
-    voorleggen: false
-    genoemd_begrip: Crematorium
-    generiek: false
-    typeregel: 19
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving

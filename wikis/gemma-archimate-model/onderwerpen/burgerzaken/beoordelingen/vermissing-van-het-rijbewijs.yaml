@@ -36,18 +36,3 @@ relaties:
 bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Gedrag, *toestandsverandering* (kern ja, 1/1)
-    paginatype: gebeurtenis
-    archimate_type: business-event
-    voorleggen: false
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/gebeurtenissen/vermissing-van-het-rijbewijs.md

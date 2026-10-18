@@ -10,14 +10,3 @@ kenmerken:
 toelichting: 'Processtap zonder pagina: een andere manier van uitreiken, per huishouden op een adres in Nederland, niet bij een spoedaanvraag (Utrecht). Vermeld bij Uitreiken reisdocument.'
 bronnen:
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 5
-    toelichting: Onderdeel of deelstap van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Behandelen aanvraag reisdocument
-    generiek: false
-  bronnen:
-  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  herkomst: overig

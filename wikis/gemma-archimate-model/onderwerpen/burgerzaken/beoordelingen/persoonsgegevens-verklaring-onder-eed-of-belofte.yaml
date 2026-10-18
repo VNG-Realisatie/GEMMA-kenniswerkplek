@@ -41,18 +41,3 @@ domein: Publieksdiensten
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
-    paginatype: dienst
-    archimate_type: business-service
-    voorleggen: false
-    generiek: false
-    typeregel: 16
-  bronnen:
-  - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rvig-hup-immigratie
-  herkomst: informatiemodel
-  pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/persoonsgegevens-verklaring-onder-eed-of-belofte.md

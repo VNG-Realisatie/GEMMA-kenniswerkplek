@@ -16,14 +16,3 @@ kenmerken:
 toelichting: Synoniem van Kerkgenootschap (Groningen art. 3 lid 3).
 onderwerpen:
 - lijkbezorging
-beslist:
-  uitkomst:
-    soort: synoniem
-    regel: 1
-    toelichting: Ander woord voor een bestaand begrip
-    voorleggen: false
-    genoemd_begrip: Kerkgenootschap
-    generiek: false
-  bronnen:
-  - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  herkomst: gemeentelijke-regelgeving

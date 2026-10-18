@@ -26,16 +26,3 @@ genoemd_begrip: Akte van de burgerlijke stand
 toelichting: 'Representatie, geen pagina: de registers zijn de vorm waarin de akten van de burgerlijke stand worden opgenomen en bewaard (BW 1 art. 17; Besluit burgerlijke stand art. 6). Vermeld bij Akte van de burgerlijke stand; precedent Register van begraven lijken.'
 bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
-beslist:
-  uitkomst:
-    soort: geen_pagina
-    regel: 17
-    toelichting: Waarneembare vorm
-    archimate_type: representation
-    voorleggen: false
-    genoemd_begrip: Akte van de burgerlijke stand
-    generiek: false
-  bronnen:
-  - 2026-rijk-burgerlijk-wetboek-boek-1
-  - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  herkomst: rijksregelgeving

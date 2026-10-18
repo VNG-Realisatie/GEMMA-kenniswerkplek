@@ -12,17 +12,3 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Buiten scope: beroep, ontheffing en geschilbeslechting per geval en op verzoek, geen structurele samenwerking met de gemeente; genoemd in de beschrijving van Sluiten begraafplaats, Verlenen toestemming bijzondere begraafplaats en Verlenen vergunning bijzonder crematorium. Beroepsinstanties blijven buiten het model.'
   gevolg: afwijzen
-beslist:
-  uitkomst:
-    soort: buiten_scope
-    regel: 2
-    toelichting: Niet herkenbaar of niet gemeentelijk
-    voorleggen: false
-    redenen:
-    - 'gemeentelijk: nee'
-    generiek: false
-  voor_te_leggen:
-  - 'gemeentelijk: nee'
-  bronnen:
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  herkomst: rijksregelgeving

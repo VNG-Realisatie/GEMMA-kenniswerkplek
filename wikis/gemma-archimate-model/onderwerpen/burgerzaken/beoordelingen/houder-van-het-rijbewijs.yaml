@@ -73,20 +73,3 @@ relaties:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 119 lid 4
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: false
-    generiek: false
-    typeregel: 10
-  bronnen:
-  - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  herkomst: rijksregelgeving
-  pad: elementpaginas/bedrijfsarchitectuur/rollen/houder-van-het-rijbewijs.md

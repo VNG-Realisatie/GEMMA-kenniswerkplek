@@ -100,26 +100,3 @@ besluiten:
   besluit: Aanvrager (Awb art. 1:3 lid 3, 4:2) is een specialisatie zonder pagina; in een onderwerp heet de rol naar het object, zoals Houder van het reisdocument.
   gevolg: verwerkt
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
-    paginatype: rol
-    archimate_type: business-role
-    voorleggen: false
-    generiek: false
-    typeregel: 10
-  bronnen:
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  - 2010-vng-model-beheersverordening-begraafplaatsen
-  herkomst: rijksregelgeving
-  gemma:
-    gemma_id: id-bd369f13-44a4-41f0-8b95-7925a0c0eaa9
-    gemma_naam: Belanghebbende
-    gemma_type: business-role
-    gemma_map: Business / Procesarchitectuur / Actoren en rollen
-    gemma_eigenschappen:
-      Object ID: bd369f13-44a4-41f0-8b95-7925a0c0eaa9
-  pad: elementpaginas/bedrijfsarchitectuur/rollen/belanghebbende.md

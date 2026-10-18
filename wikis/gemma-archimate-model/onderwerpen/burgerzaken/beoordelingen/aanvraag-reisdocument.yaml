@@ -10,15 +10,3 @@ toelichting: 'Onderdeel, geen pagina: het verzoek waarmee Behandelen aanvraag re
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-beslist:
-  uitkomst:
-    soort: onderdeel
-    regel: 5
-    toelichting: Onderdeel of deelstap van een ander begrip
-    voorleggen: false
-    genoemd_begrip: Behandelen aanvraag reisdocument
-    generiek: false
-  bronnen:
-  - 2026-rijk-paspoortwet-bwbr0005212
-  - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  herkomst: rijksregelgeving

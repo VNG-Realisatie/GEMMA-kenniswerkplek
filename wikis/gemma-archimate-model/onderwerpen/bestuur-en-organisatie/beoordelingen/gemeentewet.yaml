@@ -100,18 +100,3 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor de Gemeentewet; nieuw voor GEMMA.
 status: goedgekeurd
-beslist:
-  uitkomst:
-    soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
-    paginatype: beleidskader
-    archimate_type: driver
-    voorleggen: false
-    generiek: false
-    typeregel: 14
-  bronnen:
-  - 2026-rijk-gemeentewet-wettekst
-  - 2024-rijk-gemeentewet-wettekst
-  herkomst: rijksregelgeving
-  pad: elementpaginas/motivatie/beleidskaders/rijksregelgeving/gemeentewet.md

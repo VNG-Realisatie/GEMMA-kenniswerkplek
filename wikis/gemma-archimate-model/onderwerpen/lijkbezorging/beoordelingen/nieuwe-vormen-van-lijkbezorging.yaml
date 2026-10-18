@@ -12,17 +12,3 @@ besluiten:
   gevolg: afwijzen
 bronnen:
 - 2026-vng-wet-op-de-lijkbezorging
-beslist:
-  uitkomst:
-    soort: buiten_scope
-    regel: 2
-    toelichting: Niet herkenbaar of niet gemeentelijk
-    voorleggen: false
-    redenen:
-    - 'herkenbaar: nee'
-    generiek: false
-  voor_te_leggen:
-  - 'herkenbaar: nee'
-  bronnen:
-  - 2026-vng-wet-op-de-lijkbezorging
-  herkomst: overig
