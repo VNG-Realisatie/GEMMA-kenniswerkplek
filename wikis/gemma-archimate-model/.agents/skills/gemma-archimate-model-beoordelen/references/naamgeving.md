@@ -32,7 +32,7 @@ Bij een conflict: stel 2–3 namen voor en leg de keuze voor aan de redacteur:
 Bij een match *sterk* of *partieel* op een bredere GGM-entiteit (generalisatie/specialisatie):
 - STANDAARD blijft de naam het gemeentelijke, herkenbare begrip; NIET hernoemen naar de abstractere GGM-naam.
 - De afwijking staat in `ggm.onderbouwing`, NIET in `naamkeuze` (die is alleen voor naamconflicten).
-- UITZONDERING (zeldzaam, per geval): hernoemen naar de GGM-naam ALLEEN als het begrip geen eigen identiteit heeft: de bronnen gebruiken de GGM-entiteit nergens anders voor, én het is geen zelfstandig gedragen begrip. Toets: zou een domeinexpert dit begrip ooit anders noemen of voor iets anders gebruiken? Ja → niet hernoemen.
+- UITZONDERING (zeldzaam, per geval): hernoemen naar de GGM-naam ALLEEN als het begrip niet zelfstandig is: de bronnen gebruiken de GGM-entiteit nergens anders voor, én het is geen zelfstandig gedragen begrip. Toets: zou een domeinexpert dit begrip ooit anders noemen of voor iets anders gebruiken? Ja → niet hernoemen.
 - Bij hernoemen wordt de specifieke term een specialisatie: zonder pagina, of met pagina als die zelf een element is.
 - NOOIT in bulk hernoemen op grond van één eerder akkoord (regel Per geval); elk geval apart voorleggen.
 - Na hernoemen: het id in de relaties, specialisaties en terugmeldingen van andere beoordelingen bijwerken; de links volgen vanzelf.

@@ -242,16 +242,16 @@ ELEMENTTYPEN: list[Elementtype] = [
         "Uitreiken reisdocument (deelproces: volgt op de verstrekking, voor hetzelfde geval); Vergunningverlening "
         "(functie)",
         niveaus=("levensloopproces: het gedrag over de hele levensloop van één exemplaar van een kernobject, van begin "
-                 "tot eind (*omvat levensloop*); in GEMMA een cluster van bedrijfsprocessen over één thema, GEMMA type "
+                 "tot eind (*procesniveau* levensloopproces); in GEMMA een cluster van bedrijfsprocessen over één thema, GEMMA type "
                  "*Bedrijfsproces (cluster)*",
                  "bedrijfsproces: klant tot klant, onder verantwoordelijkheid van één organisatie; één mutatie in de "
-                 "levensloop van een kernobject, en het levert een product, dienst of besluit (*bijdrage aan groter "
-                 "proces* met *klant tot klant*)",
-                 "deelproces: binnen één bedrijfsfunctie, levert een deeldienst; geen pagina, de tekst staat in "
-                 "`deelprocessen` van het bedrijfsproces",
+                 "levensloop van een kernobject, en het levert een product, dienst of besluit (*procesniveau* "
+                 "bedrijfsproces)",
+                 "deelproces (*afhankelijkheid*): binnen één bedrijfsfunctie, levert een deeldienst; geen pagina, de "
+                 "tekst staat in `deelprocessen` van het bedrijfsproces",
                  "processtap en handeling: geen pagina",
                  "cluster naar soort werk: de bedrijfsprocessen van één soort werk, als specialisatie van een "
-                 "generiek GEMMA-bedrijfsproces (*groepeert processen*)"),
+                 "generiek GEMMA-bedrijfsproces (*procesniveau* cluster naar soort werk)"),
         eigenschappen=("kernobject", "afnemer", "gemma_generiek", "deelprocessen", "taakveld", "beleidsdomein",
                        "gemma"),
         verplicht=("afnemer",),
@@ -261,8 +261,7 @@ ELEMENTTYPEN: list[Elementtype] = [
                    "Een bedrijfsproces begint bij een aanleiding van buiten het proces (een verzoek of melding van een "
                    "klant, een gebeurtenis of een termijn) en loopt door tot het resultaat voor die klant, zonder de "
                    "voortzetting te zijn van een ander proces voor hetzelfde geval. *Eigen besluit* en *eigen "
-                   "normering* bepalen het procesniveau niet; *levert aanbod* zonder *klant tot klant* wordt "
-                   "voorgelegd.",
+                   "normering* bepalen het procesniveau niet en zijn geen kenmerk meer.",
                    "Een bedrijfsproces hangt onder één levensloopproces; een generiek bedrijfsproces, met een generiek "
                    "object als kernobject (Uitvoeren uniforme openbare voorbereidingsprocedure, kernobject Besluit), "
                    "hangt onder het beleidsdomein van zijn kernobject. Triggert een bedrijfsproces een ander "
@@ -1096,7 +1095,7 @@ def readme() -> str:
 
     matrix = bepaal_type.doc_matrix(per_vak=False)
     regels += ["## De ArchiMate-matrix", "", *matrix[2:],
-               "Wat fase A per vak vraagt, staat in [kenmerken en beslistabel](kenmerken-en-beslistabel.md).", ""]
+               "Wat Typeren per vak vraagt, staat in [kenmerken en beslistabel](kenmerken-en-beslistabel.md).", ""]
     for laag, laagnaam in LAGEN.items():
         rijen = [[_link(e.sleutel), e.engels, f"`{e.paginatype}`" if e.paginatype else e.zonder_pagina,
                   "ja" if e.over_gemma else "nee"] for e in ELEMENTTYPEN if e.laag == laag]

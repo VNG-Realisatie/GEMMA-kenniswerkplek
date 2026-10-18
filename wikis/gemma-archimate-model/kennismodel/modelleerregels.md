@@ -6,7 +6,7 @@ titel: Modelleerregels
 
 # Modelleerregels
 
-De regels die voor alle elementen gelden, met de voorrang. Wat per elementtype geldt (kernrelatie, niveaus, naamvorm, relaties), staat in zijn modelleerafspraken; het overzicht in het [kennismodel](README.md), de vragen in [kenmerken en beslistabel](kenmerken-en-beslistabel.md). De werkwijze van de AI staat in [AGENTS.md](../AGENTS.md), het waarom in [ARCHITECTURE.md](../ARCHITECTURE.md). Deze pagina is met de hand geschreven.
+De regels die voor alle elementen gelden, met de voorrang. Wat per elementtype geldt (toetskenmerken, niveaus, naamvorm, relaties), staat in zijn modelleerafspraken; het overzicht in het [kennismodel](README.md), de vragen in [kenmerken en beslistabel](kenmerken-en-beslistabel.md). De werkwijze van de AI staat in [AGENTS.md](../AGENTS.md), het waarom in [ARCHITECTURE.md](../ARCHITECTURE.md). Deze pagina is met de hand geschreven.
 
 Verwijs naar een regel met haar naam ("regel Thuishoren"). *(schema)* en *(script)* houden een fout tegen, *(signaal)* geeft een waarschuwing die de AI inhoudelijk beoordeelt; zonder markering is het een regel voor het oordeel van de AI.
 
@@ -60,7 +60,7 @@ De AI matcht op betekenis (regel Match op betekenis), met de kandidaten uit `too
 Bij het beoordelen vaak tegelijk, uit dezelfde wettekst:
 
 1. grondslag (*is grondslag voor* vanuit een beleidskader);
-2. kernrelatie van het type;
+2. kernrelatie van het type (een relatiekenmerk onder de toetskenmerken);
 3. indelingsrelaties (levensloopproces → aggregatie → bedrijfsproces, functieketen, kernobject);
 4. overige relaties uit de bronduiding (per partij wat zij houdt, beheert, uitvoert of vervult; toegang met een handeling of verantwoordelijkheid);
 5. de GGM-match van de relatie, alleen bij bedrijfsobjecten, data-objecten en beleidsdomeinen;
@@ -84,7 +84,7 @@ Welke relaties toegestaan zijn, staat in de modelleerafspraken van het brontype;
   - een bedrijfsobject: het eigen onderwerp waar het ontstaat en beheerd wordt; anders een thematisch gedeeld onderwerp (Besluitvorming, Bestuur en organisatie, Heffingen en betalingen …), ook voor een generiek element; anders Kern;
   - een proces, dienst of product: het onderwerp van zijn kernobject; een gebeurtenis: dat van het object waarvan de toestand verandert;
   - een actor, rol, functie, beleidskader of kanaal: het onderwerp dat het gebruikt, en een thematisch gedeeld onderwerp of Kern zodra meer onderwerpen het gebruiken; de organen en de organisatie van de gemeente: Bestuur en organisatie.
-  - Het `niveau` van een onderwerp: `eigen` (één taak uit landelijke regelgeving, met eigen kernobjecten), `thematisch` (begrippen die meer eigen onderwerpen op dezelfde manier gebruiken, uit een eigen algemene regeling) of `kern` (te breed voor een thema); criteria in ARCHITECTURE.md, sectie 3.3.
+  - Het `niveau` van een onderwerp: `eigen` (één samenhangende taak van de gemeente uit landelijke regelgeving, met eigen kernobjecten die de gemeente over hun hele levensloop beheert; het onderwerp heet naar die taak), `thematisch` (begrippen die meer eigen onderwerpen op dezelfde manier gebruiken, uit een eigen algemene regeling) of `kern` (wat overal voorkomt en te breed is voor een thema); het waarom in ARCHITECTURE.md, sectie 3.3.
   - Een indeling uit een model (de GEMMA-functiehiërarchie, een beleidsdomein) is geen onderwerp: een knoop daarvan krijgt geen beoordeling (ARCHITECTURE.md, sectie 4.4).
   - Het aantal relaties is een aanwijzing; de volgorde van inlezen is geen argument.
   - Volgt het thuis eenduidig uit de inhoud, dan verplaatst de AI zonder voorleggen en noemt het ter bevestiging; bij twijfel voorleggen. Verplaatsen gaat per geval (regel Per geval), via de volgorde van `onderwerpen`; het Archi-object blijft.

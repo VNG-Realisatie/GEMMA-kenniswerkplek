@@ -1,6 +1,6 @@
 ---
 name: gemma-archimate-model-beoordelen
-description: Fase B van de beoordeling in gemma-archimate-model — per begrip de kenmerken van het type, naam, definitie, beschrijving, GGM- en GEMMA-match op betekenis, relaties, hiërarchie en terugmeldingen, in onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml. Scripts leiden daaruit type en status af en maken de pagina's. Gebruik in fase 2 van gemma-archimate-model-update, door een beoordelingsagent per cluster of door de hoofdsessie, na fase A (gemma-archimate-model-criteria).
+description: Onderbouwen en tekst in de beoordeling van gemma-archimate-model — per begrip de toetskenmerken van het type, naam, definitie, beschrijving, GGM- en GEMMA-match op betekenis, relaties, hiërarchie en terugmeldingen, in onderwerpen/<thuisonderwerp>/beoordelingen/<id>.yaml. Scripts leiden daaruit type en status af en maken de pagina's. Gebruik in Sessie 2 van gemma-archimate-model-update, door een beoordelingsagent per cluster of door de hoofdsessie, na Afbakenen en Typeren (gemma-archimate-model-criteria).
 metadata:
   kind: capability
   scope: wiki
@@ -10,21 +10,20 @@ metadata:
   writes: "beoordeling"
 ---
 
-# Beoordelen: fase B
+# Beoordelen: Onderbouwen
 
-De AI schrijft alleen het oordeel. Type, status, letterlijke modelvelden, paginapad en de pagina zelf komen uit de scripts. Het formaat staat in `schemas/beoordeling.schema.json`; `tools/beslissen.py` toetst het. Je begint met de beoordelingen van fase A (skill `gemma-archimate-model-criteria`) en het werkpakket van je cluster; zoek niet ad hoc wat daarin staat. Lees een reference alleen als je het veld invult dat erbij hoort. Lees na het schrijven een bestand niet terug: de scripts controleren het.
+De AI schrijft alleen het oordeel. Type, status, letterlijke modelvelden, paginapad en de pagina zelf komen uit de scripts. Het formaat staat in `schemas/beoordeling.schema.json`; `tools/beslissen.py` toetst het. Je begint met de beoordelingen van Sessie 1 (skill `gemma-archimate-model-criteria`) en het werkpakket van je cluster; zoek niet ad hoc wat daarin staat. Lees een reference alleen als je het veld invult dat erbij hoort. Lees na het schrijven een bestand niet terug: de scripts controleren het.
 
 ## Stappen per begrip
 
 **Sjabloon.** Een UPL-product dat een extern gedrag aanbiedt en door een bedrijfsproces met een kernobject wordt gerealiseerd, zet je klaar met `uv run python tools/beoordeling.py sjabloon upl-dienst <id> --naam … --onderwerp … --kernobject <id> --bron <bron-id> (--proces <id> | --proces-naam …) [--upl-nr … --taakveld … --beleidsdomein … --domein … --toegang raadplegen|registreren]`. Met `--proces` krijgt een bestaand proces alleen de relatie realisatie; met `--proces-naam` komt er een nieuw proces bij. Het sjabloon zet de structuur en de bronnen, geen inhoud: elke `TODO` vervang je door de onderbouwing uit de bronnen (`toon <id>`, `zet <id> <veld> <waarde>`), of je past het kenmerk aan als het geval afwijkt. `beslissen.py` meldt een fout zolang er een TODO staat.
 
 1. **Wat al besloten is.** Een besluit met zekerheid `kennis` volg je als regel; wijk je af van een besluit met `logica` of `indruk`, zet dat dan met de reden in `vragen:` (regel Navragen). Een bestaande beoordeling bekijk je compact met `uv run python tools/beoordeling.py toon <id> --oordeel`.
-2. **Kenmerken van het type.** `uv run python tools/bepaal_type.py vragen <id>` geeft de vragen van fase B. Schrijf één regel per kenmerk, net als in fase A, met een onderbouwing bij elke nee. Draai daarna `uv run python tools/beoordeling.py normaliseer <id>`. Let op:
-   - Een relationeel kenmerk (†) met ja noemt zijn tegenpartij: `toegewezen_partij: {waarde: ja, naar: [houder-van-de-begraafplaats]}`; leg de relatie vast (stap 5), haar bron geldt voor het kenmerk. Is de tegenpartij (nog) geen element: onderbouwing, bron en `naar: [{naam: …, type: …}]`.
-   - *Zelfstandige specialisatie* (standaard ja) en *generiek* (standaard nee) alleen bij een afwijking.
-   - *zelfstandige specialisatie*: kijk eerst naar boven, naar de generalisaties in de wiki, in het GGM (`tools/ggm.py generalisaties`) en in GEMMA (`tools/gemma.py zoek`), en noteer de keten (Besluit → Beschikking → Vergunning → Vergunning tot opgraving). Kies het hoogste niveau dat domeinexperts herkennen; bedenk nooit een kunstmatige verzamelnaam. Bij nee is `genoemd_begrip` het bredere begrip (`references/hierarchie.md`).
+2. **Toetskenmerken van het type.** `uv run python tools/bepaal_type.py vragen <id>` geeft de toetskenmerken. Een relatiekenmerk (†) beantwoord je altijd; de andere zijn standaard ja en je schrijft ze alleen als nee, met onderbouwing en bron: een nee wordt voorgelegd. Draai daarna `uv run python tools/beoordeling.py normaliseer <id>`, dat de tegenpartij uit de relaties invult. Let op:
+   - Een relatiekenmerk met ja noemt zijn tegenpartij: `toegewezen_partij: {waarde: ja, naar: [houder-van-de-begraafplaats]}`; leg de relatie vast (stap 5), haar bron geldt voor het kenmerk. Is de tegenpartij (nog) geen element: onderbouwing, bron en `naar: [{naam: …, type: …}]`.
+   - *Generiek* (standaard nee) alleen bij een afwijking. Een variant (*afhankelijkheid*) kiest Sessie 1; het bredere begrip staat in `genoemd_begrip` (`references/hierarchie.md`).
    - *gebruikt objecten* en *wordt bewerkt*: noem de handeling uit de vaste reeks ([kennismodel](../../../kennismodel/README.md), Relatietypen).
-   - Het procesniveau, het objectniveau en de velden van het type (zie Velden; ook `deelprocessen`) volgen de modelleerafspraken van het type; *soort partij* die van Actor. Bij *generiek* (gebeurtenis, rol, dienst, bedrijfsproces) vul je `gemma_generiek` in: een specialisatie van een GEMMA-element met een exacte match. Ontbreekt dat element, meld het dan als voorstel aan GEMMA.
+   - De velden van het type (zie Velden; ook `deelprocessen`) volgen de modelleerafspraken van het type; het procesniveau en *soort partij* kiest Sessie 1, het objectniveau het script. Bij *generiek* (gebeurtenis, rol, dienst, bedrijfsproces) vul je `gemma_generiek` in: een specialisatie van een GEMMA-element met een exacte match. Ontbreekt dat element, meld het dan als voorstel aan GEMMA.
    - Een capability leid je af uit de functies en diensten van een onderwerp: `references/capability.md`.
    - Een vervallen of samengevoegd element krijgt het besluit `afwijzen`.
 3. **Tekst** (alleen bij een element). `definitie`, `definitie_formeel`, `beschrijving` en `per_onderwerp`: `references/definitie.md`; wat alleen in één onderwerp geldt, staat onder `per_onderwerp` (regel Los van het onderwerp). De naam, `synoniemen`, `naamkeuze` en `homoniemen`: `references/naamgeving.md`, alleen bij een naamconflict, bij hernoemen of bij een bredere GGM-entiteit.
@@ -40,11 +39,11 @@ Eén bestand per begrip. Elke tekst staat op één regel, en meer alinea's zijn 
 
 ```yaml
 begrip: Begraafplaats
-vak: bedrijf/passief                           # fase A
+vak: bedrijf/passief                           # Typeren
+hoofdkenmerk: object
 onderwerpen: [lijkbezorging]
 bronnen: [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen]
-kenmerken:                                     # één regel per kenmerk; normaliseer maakt er de opgeslagen vorm van
-  levenscyclus: ja — Aangelegd en gesloten (Groningen art. 3). [2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen]
+kenmerken:                                     # relatiekenmerken en afwijkingen; normaliseer maakt er de opgeslagen vorm van
   wordt_bewerkt: {waarde: ja, naar: [beheren-begraafplaatsen]}
 definitie: Terrein waar lijken worden begraven en urnen worden bijgezet.          # één zin, ≤160 tekens
 beschrijving:

@@ -29,7 +29,7 @@ Typeren kiest eerst het vak: de laag, het aspect en intern of extern, zoals in A
 | motivatie | Beleidskader (element); Kwaliteitsdoel (matchdoel); de andere typen buiten dit model | | | | | |
 | overig | | | | | | Locatie (geen pagina), Groepering (indeling) |
 
-Wat fase A per vak vraagt, staat in [kenmerken en beslistabel](kenmerken-en-beslistabel.md).
+Wat Typeren per vak vraagt, staat in [kenmerken en beslistabel](kenmerken-en-beslistabel.md).
 
 ## Strategie
 

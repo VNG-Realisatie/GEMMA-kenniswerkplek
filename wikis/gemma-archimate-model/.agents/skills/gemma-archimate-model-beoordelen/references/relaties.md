@@ -15,7 +15,7 @@ relaties:
 
 Leg per element alle relaties vast die de bronnen noemen en die geldig zijn in ArchiMate, ook als het kennismodel ze niet kent. Het kennismodel bepaalt niet wat je vastlegt maar wat de export meeneemt: een relatie erbuiten krijgt een signaal en een markering op de pagina (*niet in het kennismodel, gaat niet mee in de export*), en vervalt in de export. Welke relaties toegestaan zijn, staat in de modelleerafspraken van het brontype (`kennismodel/README.md`); herhaal die tabel hier niet. Wat buiten het kennismodel valt, hoef je niet op te zoeken: het signaal geeft de reden. Een signaal beoordeel je per geval: de relatie hoort bij een andere vorm van modelleren (leg dat de redacteur voor), of ze blijft staan omdat de bron haar noemt.
 
-De volgorde (grondslag, kernrelatie, indelingsrelaties, overige relaties, GGM-match, GEMMA) staat in `kennismodel/modelleerregels.md`, Relaties. Een relationeel kenmerk `ja` noemt zijn tegenpartij in `naar` en heeft die relatie bij het element of bij wat eronder ligt (regel Beslistabel beslist); anders volgt een signaal. De GGM-match van een relatie geldt alleen bij bedrijfsobjecten, data-objecten en beleidsdomeinen (`ggm-match.md`).
+De volgorde (grondslag, kernrelatie, indelingsrelaties, overige relaties, GGM-match, GEMMA) staat in `kennismodel/modelleerregels.md`, Relaties. Een relatiekenmerk `ja` noemt zijn tegenpartij in `naar` en heeft die relatie bij het element of bij wat eronder ligt (regel Beslistabel beslist); anders volgt een signaal. De GGM-match van een relatie geldt alleen bij bedrijfsobjecten, data-objecten en beleidsdomeinen (`ggm-match.md`).
 
 ## Kandidaten
 

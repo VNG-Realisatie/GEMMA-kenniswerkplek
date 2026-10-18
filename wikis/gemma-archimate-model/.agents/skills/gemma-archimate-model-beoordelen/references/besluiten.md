@@ -2,12 +2,16 @@
 
 ## Voorleggen
 
-Leg per fase in één tabel voor in de chat: in fase 1 de uitkomst van fase A voor het hele onderwerp, in fase 3 na `uv run python tools/beslissen.py` de begrippen met redenen om voor te leggen (`beslist.open`, ook in `ter-beoordeling.md`) en de `vragen:`. Spaar vragen op in `vragen:` van de beoordeling; alleen een blokkerende vraag (zonder het antwoord kun je niet verder) komt meteen. Voor te leggen is wat een keuze van de redacteur vraagt: een element met redenen om voor te leggen, een open vraag, twijfel over een kenmerk, een nieuw element of een afwijking van een eerder besluit.
+Leg per Sessie in één tabel voor in de chat: in Sessie 1 de uitkomst van Typeren voor het hele onderwerp, in Sessie 3 na `uv run python tools/beslissen.py` de begrippen met redenen om voor te leggen (`beslist.open`, ook in `ter-beoordeling.md`) en de `vragen:`. Spaar vragen op in `vragen:`; alleen een blokkerende vraag komt meteen.
 
-- Context: welk begrip, wat de beslistabel zegt, met de bronpassage.
-- In eenvoudige taal en analytisch, zoals voor een architect: de stand in GGM en GEMMA, de opties, het gevolg voor het model per optie, een advies, de bron als link en een concreet voorbeeld uit het model.
+**Alleen echte twijfel.** Een twijfelgeval is een keuze tussen verdedigbare alternatieven die niet volgt uit de beslistabel, een regel, een bron of een eerder besluit. Alleen dat leg je voor, zoals aan een architect, niet aan een jurist. De redacteur kent ArchiMate, GEMMA, de opbouw van het GGM, de beslistabel en de regels van deze wiki: leg die niet uit, en geef geen juridische uitleg, geen lange citaten (alleen een citaat dat de doorslag geeft) en niet de volledige kenmerkenlijst. Geef per twijfelgeval mee:
 
-Niet los voorleggen: een begrip zonder pagina waarvan de uitkomst eenduidig uit de beslistabel of een eerdere afbakening volgt (buiten scope, geen element zonder twijfel). Noem die in de samenvatting (skill gemma-archimate-model-update, stap 13). Ook zonder voorleggen, met een vermelding in de samenvatting ter bevestiging: een thuisonderwerp dat eenduidig uit de inhoud volgt (regel Thuishoren) en een landelijke grondslag die eenduidig in de nagelezen wettekst staat (regel Wettelijke grondslag).
+- het begrip in één zin in gewone taal: wie doet wat, met welk object, met welk resultaat;
+- wat de bron zegt, samengevat, met de bron als link en het artikel als vindplaats, en wat GEMMA en het GGM hebben;
+- de opties, met per optie het gevolg voor het model: welk element, welke relaties, welke pagina, wat de export in GEMMA verandert;
+- een concreet voorbeeld uit het model, een advies met de reden en een eerder besluit met zijn zekerheid.
+
+Wat eenduidig volgt, staat ter bevestiging in de samenvatting en leg je niet los voor: een stop in Afbakenen zonder twijfel, een toets die het script doet, een thuisonderwerp dat eenduidig uit de inhoud volgt (regel Thuishoren) en een landelijke grondslag die eenduidig in de nagelezen wettekst staat (regel Wettelijke grondslag).
 
 ## Vastleggen
 
@@ -60,7 +64,7 @@ Een besluit is nooit een bron in de inhoud: een kenmerk of beschrijving noemt de
 
 ## Zekerheid
 
-`kennis`: domeinkennis van de redacteur of een bron; geldt als regel en precedent. `logica`: afgeleid uit regels en samenhang; een uitgangspunt, opnieuw voorleggen als nieuwe informatie de redenering raakt. `indruk`: voorlopig; in fase 3 van hetzelfde onderwerp opnieuw aanbieden, geen precedent. Zonder veld: `logica`. De AI stelt het niveau voor, de redacteur bevestigt; `kennis` zet de AI nooit zelf. Een bevestiging die de zekerheid verhoogt, vervangt het besluit.
+`kennis`: domeinkennis van de redacteur of een bron; geldt als regel en precedent. `logica`: afgeleid uit regels en samenhang; een uitgangspunt, opnieuw voorleggen als nieuwe informatie de redenering raakt. `indruk`: voorlopig; in Sessie 3 van hetzelfde onderwerp opnieuw aanbieden, geen precedent. Zonder veld: `logica`. De AI stelt het niveau voor, de redacteur bevestigt; `kennis` zet de AI nooit zelf. Een bevestiging die de zekerheid verhoogt, vervangt het besluit.
 
 ## Wat al besloten is
 
