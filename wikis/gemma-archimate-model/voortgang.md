@@ -42,11 +42,11 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | bedrijfsfunctie | 0 | 7 | 0 |
 | bedrijfsinteractie | 0 | 1 | 0 |
 | bedrijfsobject | 0 | 31 | 0 |
-| bedrijfsproces | 2 | 79 | 6 |
+| bedrijfsproces | 0 | 81 | 6 |
 | beleidskader | 0 | 20 | 0 |
 | capability | 0 | 3 | 0 |
 | dienst | 0 | 85 | 1 |
-| gebeurtenis | 4 | 16 | 0 |
+| gebeurtenis | 0 | 20 | 0 |
 | rol | 0 | 27 | 0 |
 
 ## GGM-terugmeldingen

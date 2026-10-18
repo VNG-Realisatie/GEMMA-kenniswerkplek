@@ -3026,3 +3026,9 @@ Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen o
 | 2026-10-18 | promote | wijzigen-geslachtsvermelding | Mark Backer | dbad4d1a |
 | 2026-10-18 | promote | wijzigen-identificatienummers | Mark Backer | 281b3de8 |
 | 2026-10-18 | promote | wijzigen-naamgebruik | Mark Backer | 9f68dd72 |
+| 2026-10-18 | promote | bijhouden-persoonsgegevens | Mark Backer | 4f450e1e |
+| 2026-10-18 | promote | naamswijziging | Mark Backer | ceec6a1a |
+| 2026-10-18 | promote | overlijden | Mark Backer | 2a405a21 |
+| 2026-10-18 | promote | toevoegen-latere-vermelding | Mark Backer | d09293ec |
+| 2026-10-18 | promote | verkrijging-van-het-nederlanderschap | Mark Backer | 03981c9c |
+| 2026-10-18 | promote | verlies-van-het-nederlanderschap | Mark Backer | 420ab5df |
