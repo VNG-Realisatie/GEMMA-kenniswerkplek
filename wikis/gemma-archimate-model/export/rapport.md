@@ -1,7 +1,7 @@
-<!-- gegenereerd door tools/archimate_export.py; hash: c888b5a6cc257ea0696d88d4b8a5ac71a07b0e16fbdeb2e82faca7b3068c68b4 -->
+<!-- gegenereerd door tools/archimate_export.py; hash: 70d84a88c1246016618d16b5d8b077ec4165ba213a29305c8cdeca6244fff6a7 -->
 # Export naar Archi (definitief)
 
-Exportdatum: 2026-10-13T09:46:05. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 28 gekoppeld aan GEMMA, 242 nieuw. Relaties: 15 gekoppeld, 1029 nieuw, 19 overgeslagen. Indelingen: 217 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
+Exportdatum: 2026-10-18T17:40:33. GEMMA-bron: 2026-vng-gemma-2026-10-02. Elementen: 28 gekoppeld aan GEMMA, 255 nieuw. Relaties: 15 gekoppeld, 1107 nieuw, 23 overgeslagen. Indelingen: 231 aggregaties vanuit een groepering, 34 specialisaties naar een GEMMA-element.
 
 ## Dekking van de overgenomen indelingen
 
@@ -11,7 +11,7 @@ Kennismodel: 32 elementen en 68 relaties uit Over GEMMA, samengebracht in de gro
 
 ## Kennismodel-wiki
 
-Het kennismodel van de wiki: 16 elementtypen, 73 relaties en 6 indelingen, in de groep Kennismodel-wiki. Wat Over GEMMA niet kent, is een kandidaat voor een terugmelding over het kennismodel:
+Het kennismodel van de wiki: 17 elementtypen, 79 relaties en 7 indelingen, in de groep Kennismodel-wiki. Wat Over GEMMA niet kent, is een kandidaat voor een terugmelding over het kennismodel:
 
 - elementtype Bedrijfsinteractie (business-interaction)
 - relatie aggregatie Actor → Actor
@@ -28,7 +28,6 @@ Het kennismodel van de wiki: 16 elementtypen, 73 relaties en 6 indelingen, in de
 - relatie aggregatie Bedrijfsproces → Gebeurtenis
 - relatie stroom Bedrijfsproces → Bedrijfsproces
 - relatie triggering Gebeurtenis → Bedrijfsinteractie
-- relatie triggering Gebeurtenis → Gebeurtenis
 - relatie specialisatie Gebeurtenis → Gebeurtenis
 - relatie specialisatie Dienst → Dienst
 - relatie associatie Afspraak → Bedrijfsobject
@@ -38,6 +37,11 @@ Het kennismodel van de wiki: 16 elementtypen, 73 relaties en 6 indelingen, in de
 - relatie associatie Beleidskader → Rol
 - relatie associatie Beleidskader → Gebeurtenis
 - relatie associatie Beleidskader → Bedrijfsobject
+- relatie realisatie Data-object → Afspraak
+- relatie associatie Data-object → Rol
+- relatie associatie Data-object → Actor
+- relatie associatie Data-object → Gebeurtenis
+- relatie aggregatie Capability → Capability
 - relatie aggregatie Groep → Afspraak
 - relatie aggregatie Groep → Product
 - relatie aggregatie Groep → Dienst
@@ -47,6 +51,8 @@ Het kennismodel van de wiki: 16 elementtypen, 73 relaties en 6 indelingen, in de
 - relatie aggregatie Groep → Actor
 - relatie aggregatie Groep → Bedrijfssamenwerking
 - relatie aggregatie Groep → Kanaal
+- relatie aggregatie Groep → Capability
+- indeling Capabilitykaart
 - indeling Procesindeling naar kernobject
 - indeling Procesindeling naar soort werk
 - indeling Doelgroepindeling
@@ -58,22 +64,21 @@ Gebruikt in de elementen, in het kennismodel van de wiki, maar niet in Over GEMM
 
 - actor aggregatie actor: 3×
 - actor associatie actor: 2×
-- afspraak associatie bedrijfsobject: 1×
+- afspraak associatie bedrijfsobject: 2×
 - bedrijfsfunctie aggregatie dienst: 67×
 - bedrijfsinteractie toegang bedrijfsobject: 1×
 - bedrijfsproces aggregatie gebeurtenis: 20×
 - bedrijfsproces bediening bedrijfsinteractie: 3×
-- bedrijfsproces stroom bedrijfsproces: 7×
-- bedrijfsproces toegang afspraak: 3×
-- beleidskader associatie bedrijfsobject: 5×
-- beleidskader associatie bedrijfsproces: 55×
+- bedrijfsproces stroom bedrijfsproces: 8×
+- bedrijfsproces toegang afspraak: 4×
+- beleidskader associatie bedrijfsobject: 10×
+- beleidskader associatie bedrijfsproces: 56×
 - beleidskader associatie beleidskader: 7×
-- beleidskader associatie dienst: 88×
+- beleidskader associatie dienst: 87×
 - beleidskader associatie gebeurtenis: 3×
 - beleidskader associatie rol: 5×
 - gebeurtenis triggering bedrijfsinteractie: 1×
-- gebeurtenis triggering gebeurtenis: 5×
-- rol toegang afspraak: 1×
+- rol toegang afspraak: 2×
 - rol toewijzing bedrijfsinteractie: 1×
 
 ## Samengevoegde toegangsrelaties
@@ -155,6 +160,13 @@ Het GEMMA-element gaat letterlijk mee, zonder wiki-eigenschappen; er wordt niets
 - Wijzigen geslachtsvermelding → Behandelen aangifte of melding
 - Wijzigen naamgebruik → Behandelen aanvraag product
 
+## Kwaliteitsdoelen
+
+Beleidskaders die grondslag geven aan een kwaliteitsdoel van GEMMA (invloed, met de sterkte). Het kwaliteitsdoel gaat letterlijk mee.
+
+- Model Participatieverordening → Ontvankelijk (+)
+- Model Participatieverordening → Transparant (++)
+
 ## Nieuwe groeperingen
 
 Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder het GEMMA-taakveld als dat bestaat), de groepen van de Grondslagindeling en de doelgroepen.
@@ -167,6 +179,32 @@ Groeperingen die GEMMA niet kent, in de map van de wiki: beleidsdomeinen (onder 
 - Inwoners en ondernemers (Doelgroepindeling)
 - Ketenpartners (Doelgroepindeling)
 - Rijksregelgeving (Grondslagindeling)
+
+## Data-objecten
+
+Afgeleid uit de GGM-match van het element, in de applicatielaag van de wiki.
+
+- Aanvraag-data → Aanvraag (realisatie; GGM: Aanvraag)
+- Akte van de burgerlijke stand-data → Akte van de burgerlijke stand (realisatie; GGM: geen, hiaat)
+- Beschikking-data → Beschikking (realisatie; GGM: Beschikking)
+- Besluit-data → Besluit (realisatie; GGM: Besluit)
+- Bezwaarschrift-data → Bezwaarschrift (realisatie; GGM: geen, hiaat)
+- Briefadres-data → Briefadres (realisatie; GGM: Briefadres)
+- Gemeentebegrafenis-data → Gemeentebegrafenis (realisatie; GGM: Gemeentebegrafenis)
+- Gezag-data → Ingeschreven persoon (realisatie; GGM: Gezagsverhouding)
+- Graf-data → Graf (realisatie; GGM: geen, hiaat)
+- Grafrecht-data → Grafrecht (realisatie; GGM: geen, hiaat)
+- Heffing-data → Heffing (realisatie; GGM: Heffing)
+- Heffingsverordening-data → Heffingsverordening (realisatie; GGM: Heffingsverordening)
+- Ingeschreven persoon-data → Ingeschreven persoon (realisatie; GGM: IngeschrevenPersoon)
+- Nationaliteit-data → Ingeschreven persoon (realisatie; GGM: Nationaliteit)
+- Nederlanderschap-data → Nederlanderschap (realisatie; GGM: NederlandseNationaliteitIngeschrevenPersoon)
+- Reisdocument-data → Reisdocument (realisatie; GGM: Reisdocument)
+- Rijbewijs-data → Rijbewijs (realisatie; GGM: geen, hiaat)
+- Schriftelijke klacht-data → Schriftelijke klacht (realisatie; GGM: geen, hiaat)
+- Stempas-data → Stempas (realisatie; GGM: geen, hiaat)
+- Verblijfplaats-data → Verblijfplaats (realisatie; GGM: VerblijfadresIngeschrevenPersoon)
+- Verblijfstitel-data → Ingeschreven persoon (realisatie; GGM: Verblijfstitel)
 
 ## Zonder grondslag
 
@@ -187,6 +225,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Adoptie aangifte
 - Afgeven laissez-passer
 - Afgeven verklaring omtrent het gedrag
+- Afspraak over uitvoering
 - Akte van de burgerlijke stand
 - Algemene wet bestuursrecht
 - Ambtenaar burgerlijke stand aanvragen
@@ -211,6 +250,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Behandelen verzoek om kiezerspas
 - Behandelen verzoek om verwijdering van gegevens
 - Behandelen verzoek om volmacht
+- Behandelen verzoek uitdaagrecht
 - Beheren begraafplaatsen
 - Beheren crematoria
 - Beheren grafrechten
@@ -232,6 +272,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Besluit op de lijkbezorging
 - Besluit verkrijging en verlies Nederlanderschap
 - Besmet stoffelijk overschot gemeld
+- Betrekken inwoners bij beleid
 - Bewijs van in leven zijn
 - Bewijs van nederlanderschap
 - Bezorgen stoffelijk overschot
@@ -270,6 +311,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Geboorteakte levenloos kind
 - Gemeente
 - Gemeentelijke lijkschouwer
+- Gemeentewet
 - Geregistreerd partnerschap omzetting in huwelijk
 - Geregistreerd partnerschap ontbinding
 - Geregistreerd partnerschapaangifte
@@ -286,7 +328,9 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Houder van het rijbewijs
 - Huwelijk
 - Huwelijksaangifte
+- Identiteit vaststellen
 - Identiteitskaart
+- Indiener
 - Inhouden reisdocument
 - Inlevering van het reisdocument
 - Inschrijven ingezetene
@@ -294,6 +338,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Inschrijven niet-ingezetene
 - Inschrijven ontbinding huwelijk of partnerschap
 - Inschrijven op briefadres
+- Inwoner
 - Kerkgenootschap
 - Kieswet
 - Kiezerspas
@@ -301,8 +346,10 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Klager
 - Kostendrager
 - Levenloze geboorte
+- Lijkbezorging waarborgen
+- Maatschappelijke partij
+- Model Participatieverordening
 - Model-APV
-- Model-beheersverordening begraafplaatsen
 - Naamgebruik verzoek aanduiding
 - Naamskeuzeverklaring
 - Naamswijziging
@@ -328,10 +375,13 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Overlijden
 - Overlijdensaangifte
 - Overlijdensakte
+- Participatieplan
+- Participatieverordening
 - Paspoort
 - Paspoort tweede
 - Paspoortbesluit
 - Paspoortwet
+- Personen registreren
 - Persoonsgegevens verklaring onder eed of belofte
 - Rechthebbende op het graf
 - Registreren kiesgerechtigdheid
@@ -402,6 +452,7 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Verwerken emigratie
 - Verwerken vermissing reisdocument
 - Verwerken vermissing rijbewijs
+- Verzoek uitdaagrecht
 - Verzoeker om naturalisatie
 - Verzorgen gemeentebegrafenis
 - Vestiging vanuit het buitenland
@@ -424,6 +475,8 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 
 ## Overgeslagen relaties
 
+- Beslisser → verlenen-toestemming-asverstrooiing (toewijzing): het doel gaat niet mee in deze export
+- Beslisser → verlenen-vergunning-grafbedekking (toewijzing): het doel gaat niet mee in deze export
 - Exploiteren van begraafplaatsen → grafonderhoud (aggregatie): het doel gaat niet mee in deze export
 - Exploiteren van begraafplaatsen → gedenkteken-plaatsingsvergunning (aggregatie): het doel gaat niet mee in deze export
 - Exploiteren van begraafplaatsen → gedenkteken-plaatsingsvergunning (realisatie): het doel gaat niet mee in deze export
@@ -431,9 +484,11 @@ UPL-diensten zonder landelijke wettelijke grondslag: geen wettelijke taak, terug
 - Exploiteren van begraafplaatsen → asverstrooiing (aggregatie): het doel gaat niet mee in deze export
 - Exploiteren van begraafplaatsen → asverstrooiing (realisatie): het doel gaat niet mee in deze export
 - Heffingsverordening → grafonderhoud (associatie (gericht)): het doel gaat niet mee in deze export
+- Houder van de begraafplaats → onderhouden-graf (toewijzing): het doel gaat niet mee in deze export
 - Model-APV → asverstrooiing (associatie (gericht)): het doel gaat niet mee in deze export
-- Model-beheersverordening begraafplaatsen → gedenkteken-plaatsingsvergunning (associatie (gericht)): het doel gaat niet mee in deze export
-- Model-beheersverordening begraafplaatsen → grafonderhoud (associatie (gericht)): het doel gaat niet mee in deze export
+- Nabestaande → verlenen-toestemming-asverstrooiing (toewijzing): het doel gaat niet mee in deze export
+- Rechthebbende op het graf → onderhouden-graf (toewijzing): het doel gaat niet mee in deze export
+- Rechthebbende op het graf → verlenen-vergunning-grafbedekking (toewijzing): het doel gaat niet mee in deze export
 - Bekendmaking: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
 - Bekendmaking algemeen verbindend voorschrift: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
 - Beroep: geen plaats in de Functie-indeling naar domein (geen (bovenliggende) functie in deze export)
