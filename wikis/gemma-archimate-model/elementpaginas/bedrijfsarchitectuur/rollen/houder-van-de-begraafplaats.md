@@ -2,7 +2,7 @@
 id: houder-van-de-begraafplaats
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Houder van de begraafplaats
 onderwerpen:
 - lijkbezorging
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling houder-van-de-begraafplaats.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 

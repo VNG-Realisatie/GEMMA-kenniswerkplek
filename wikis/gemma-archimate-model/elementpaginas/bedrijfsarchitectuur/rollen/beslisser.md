@@ -2,7 +2,7 @@
 id: beslisser
 type: rol
 archimate_type: business-role
-status: review
+status: goedgekeurd
 naam: Beslisser
 onderwerpen:
 - bestuur-en-organisatie
@@ -54,7 +54,7 @@ gemma_eigenschappen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling beslisser.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: review.** Wacht op het akkoord van de redacteur.
+**Status: goedgekeurd** door de redacteur.
 
 ## Betekenis
 
