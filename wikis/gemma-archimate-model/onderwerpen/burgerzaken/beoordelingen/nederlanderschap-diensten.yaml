@@ -88,6 +88,13 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 62 (GEMMA-domein Publieksdiensten)
+- soort: realisatie
+  naar: identiteit-vaststellen
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  vindplaats: art. 63 lid 2
 status: goedgekeurd
 beslist:
   uitkomst:

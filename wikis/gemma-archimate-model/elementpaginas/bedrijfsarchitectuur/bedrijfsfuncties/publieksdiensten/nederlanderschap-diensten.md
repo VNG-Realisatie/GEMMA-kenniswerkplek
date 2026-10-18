@@ -55,6 +55,7 @@ Bedrijfsfunctie. Uitkomst van de beslistabel: Gedrag, *gegroepeerd gedrag* (kern
 
 - **Functie-indeling naar domein, onderdeel van**: GEMMA-functie *Producten- en dienstenrealisatie publieksdiensten* (geen element van de wiki; Publieksdiensten › Uitvoering Publieksdiensten › Producten- en dienstenrealisatie publieksdiensten), GEMMA-relatie `id-21417578-47f0-4f78-a4ba-50b4ee134815`.
 - **Functie-indeling naar domein, omvat**: [Bewijs van nederlanderschap](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md), [Naturalisatieceremonie](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieceremonie.md), [Naturalisatieoptie](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieoptie.md), [Naturalisatieverzoek](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieverzoek.md), [Verklaring van afstand nederlandse nationaliteit](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-afstand-nederlandse-nationaliteit.md).
+- **Realiseert capability**: [Identiteit vaststellen](../../../strategie/capabilities/publieksdiensten/identiteit-vaststellen.md).
 - **Bedient**: [Beheren Nederlanderschap](../../bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/beheren-nederlanderschap.md).
 - **Domein**: Publieksdiensten.
 
@@ -84,6 +85,7 @@ De kenmerken met ja; de andere zijn nee.
 | Nederlanderschap diensten | omvat *aggregatie* | [Naturalisatieceremonie](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/naturalisatieceremonie.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 261 (GEMMA-domein Publieksdiensten)) |
 | Nederlanderschap diensten | omvat *aggregatie* | [Verklaring van afstand nederlandse nationaliteit](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-van-afstand-nederlandse-nationaliteit.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 436 (GEMMA-domein Publieksdiensten)) |
 | Nederlanderschap diensten | omvat *aggregatie* | [Bewijs van nederlanderschap](../../diensten/0-bestuur-en-ondersteuning/burgerzaken/bewijs-van-nederlanderschap.md) | [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) (UPL nr. 62 (GEMMA-domein Publieksdiensten)) |
+| Nederlanderschap diensten | realiseert *realisatie* | [Identiteit vaststellen](../../../strategie/capabilities/publieksdiensten/identiteit-vaststellen.md) | [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) (art. 63 lid 2) |
 
 ## Herkomst
 

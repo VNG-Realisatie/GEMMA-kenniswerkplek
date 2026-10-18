@@ -2656,3 +2656,12 @@ Alleen aanvullen, altijd door `llmwiki promote apply`. Niet handmatig wijzigen o
 | 2026-10-16 | promote | wijzigen-naamgebruik | Mark Backer | 26d93b7b |
 | 2026-10-16 | promote | zakenpaspoort | Mark Backer | 28c581bc |
 | 2026-10-16 | promote | zienswijze | Mark Backer | 8a1df129 |
+| 2026-10-18 | promote | bevolkingsadministratie-bijhouding | Mark Backer | 24079354 |
+| 2026-10-18 | promote | burgerlijke-stand-diensten | Mark Backer | fdfec34d |
+| 2026-10-18 | promote | exploiteren-van-begraafplaatsen | Mark Backer | dc9eabc2 |
+| 2026-10-18 | promote | identiteit-vaststellen | Mark Backer | 2270bee4 |
+| 2026-10-18 | promote | lijkbezorging-waarborgen | Mark Backer | 6d377e6a |
+| 2026-10-18 | promote | nederlanderschap-diensten | Mark Backer | 460d4900 |
+| 2026-10-18 | promote | officiele-documenten-verstrekking | Mark Backer | 4da2b781 |
+| 2026-10-18 | promote | personen-registreren | Mark Backer | 7c4ef18d |
+| 2026-10-18 | promote | vergunningenbeheer-publieksdiensten | Mark Backer | fa5df53f |

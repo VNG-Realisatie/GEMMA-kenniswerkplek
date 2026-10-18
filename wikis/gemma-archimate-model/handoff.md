@@ -1,27 +1,27 @@
 # Handoff
 
-Overdracht naar de volgende Sessie (2026-10-17). Wordt bij elke overdracht overschreven. De regels staan in AGENTS.md en de skills; dit bestand verwijst naar de commits, het plan en de todo.
+Overdracht naar de volgende Sessie (2026-10-18). Wordt bij elke overdracht overschreven. De regels staan in AGENTS.md en de skills; dit bestand verwijst naar de commits, het plan en de todo.
 
 ## Stand van zaken
 
-- Plan [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 en 2 uitgevoerd; van deel 3 zijn stap 12 (besluiten K1–K8) en stap 13 (vastleggen) klaar, zie *Uitkomst stap 12* en *Uitkomst stap 13*.
-- Commit 487489b: het kennismodel een vijfde korter (relaties alleen bij het brontype, eigenschappen en vaste namen in de README, *Buiten het kennismodel* als naslag in `elementpaginas/overig/`).
-- Commit van stap 13: Capability staat in het kennismodel (laag Strategie, vak `strategie/gedrag`, hoofdkenmerk *vermogen*, kenmerken *beoordeelbaar* en *onderscheidend*, Capabilitykaart, paginatype `capability` in `wiki.yaml`), in de ArchiMate-toets (`tools/relaties.py`) en in ARCHITECTURE.md. Er is nog geen capability beoordeeld.
+- Plan [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md) is uitgevoerd: deel 1, 2 en 3, zie *Uitkomst stap 14*.
+- Commit ab65582: stap 13 (Capability in het kennismodel). Commit d3bcbd6: de capability gebouwd (toets op twee functies, grondslag, render, Capabilitykaart, export, tests, skills).
+- Commit van deze overdracht (`add:`): de capabilities Personen registreren, Identiteit vaststellen en Lijkbezorging waarborgen, de realisaties vanuit zes functies, de GEMMA-terugmelding nummer 9, en het AKKOORD voor die negen elementen.
 
 ## Volgende klus
 
-Stap 14, zoals deel 2 werd gebouwd:
+Kies uit [todo.md](todo.md), sectie ArchiMate-indeling en Herbeoordeling:
 
-1. Scripts (denkniveau middel): de toets op ten minste twee realiserende functies (K3: *gerealiseerd door* met minder dan twee functies in `naar` is geen element, voorleggen), de grondslag via de realiserende functies in de signalen, het sjabloon en de render van de elementpagina, de Capabilitykaart in de indelingspagina's, en de export (`Strategy / wiki-gemma-model`, map Capabilitykaart). Tests.
-2. Skills: in `gemma-archimate-model-criteria` en `-beoordelen` hoe de AI een capability afleidt uit de functies en diensten van een onderwerp (K1), met de bronnen (K6) en de GEMMA-match (K7). Let op het woordbudget van de skills.
-3. Afleiden (denkniveau hoog): de kandidaten uit de kalibratie (Personen registreren, Identiteit vaststellen, Lijkbezorging waarborgen; niet Verkiezingen organiseren en Nationaliteit verlenen), één tabel voorleggen, AKKOORD. De terugmelding aan het GEMMA-team over de ontbrekende capabilitykaart van de bedrijfslaag (K7).
+1. **`beslist` uit de beoordeling halen** (tools, denkniveau middel): het blok is 23.000 woorden en wordt bij elk precedent meegelezen; het kan naar een gegenereerd bestand per onderwerp. Dat maakt elke volgende beoordeling goedkoper. Advies: deze eerst.
+2. **Potentiële relaties vastleggen** (inhoud, middel): 239 relationele kenmerken ja zonder relatie.
+3. **Participatie herbeoordelen** met de lichtere werkwijze (inhoud, hoog voor de beoordeling).
 
 ## Modeladvies
 
-Stap 14 begint met scriptwerk (middel); het afleiden en voorleggen van de capabilities vraagt denkniveau hoog. Begin een nieuwe Sessie: bouwen is een andere fase, en deze Sessie heeft een volle context.
+Optie 1 is scriptwerk met een migratie van alle beoordelingen: denkniveau middel, een sterk model voor de code (de migratie raakt 481 bestanden en het akkoord-hash). Begin een nieuwe Sessie: het is een ander onderwerp.
 
 ## Startprompt
 
 ```text
-Lees wikis/gemma-archimate-model/handoff.md en plannen/2026-10-15-archimate-indeling.md (Uitkomst stap 12 en 13). Voer stap 14 uit: bouw de capability zoals deel 2 het data-object bouwde (toets op ten minste twee realiserende functies, signalen, render, Capabilitykaart, export, tests, skills), en leid daarna de capabilities af uit de functies van burgerzaken en lijkbezorging; leg ze in één tabel voor. Het kennismodel en de kenmerken staan vast; wijzig ze alleen na voorleggen. Houd je aan de woordbudgetten in wiki.yaml.
+Lees wikis/gemma-archimate-model/handoff.md en todo.md. Voer het todo-punt "`beslist` uit de beoordeling halen" uit: stel eerst in een korte opzet voor waar het gegenereerde blok komt, hoe beslissen.py, render.py, archimate_export.py en het akkoord-hash het lezen, en hoe de migratie gaat zonder nieuw AKKOORD (de uitkomsten, de pagina's en archimate_export.py --check blijven gelijk). Leg de opzet voor vóór je bouwt. Houd je aan de woordbudgetten in wiki.yaml.
 ```

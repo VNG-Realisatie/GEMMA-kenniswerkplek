@@ -178,6 +178,20 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 89 (GEMMA-domein Publieksdiensten)
+- soort: realisatie
+  naar: personen-registreren
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: art. 1.2 (BRP)
+- soort: realisatie
+  naar: identiteit-vaststellen
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  vindplaats: art. 2.4 lid 3
 bronnen:
 - 2026-rvig-hup-achtergronden-en-begrippen
 - 2026-rijk-wet-brp-bwbr0033715

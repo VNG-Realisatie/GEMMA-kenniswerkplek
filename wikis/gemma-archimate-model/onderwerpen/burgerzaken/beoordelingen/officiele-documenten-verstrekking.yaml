@@ -145,6 +145,13 @@ relaties:
   bronnen:
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   vindplaats: Utrecht regel 126-140; GEMMA-domein Publieksdiensten
+- soort: realisatie
+  naar: identiteit-vaststellen
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  vindplaats: art. 28 lid 1
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622

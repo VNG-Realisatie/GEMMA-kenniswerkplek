@@ -1,0 +1,53 @@
+begrip: Identiteit vaststellen
+vak: strategie/gedrag
+onderwerpen:
+- burgerzaken
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-wet-brp-bwbr0033715
+- 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+kenmerken:
+  stabiel_over_tijd:
+    waarde: ja
+    onderbouwing: De wet verlangt de vaststelling van de identiteit bij de inschrijving in de BRP, de aanvraag van een reisdocument en de afstand van het Nederlanderschap, los van de organisatie of het systeem (Wet BRP art. 2.4 lid 3; Paspoortwet art. 28 lid 1; Besluit verkrijging en verlies Nederlanderschap art. 63 lid 2).
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2026-rijk-paspoortwet-bwbr0005212
+    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  gerealiseerd_door:
+    waarde: ja
+    naar:
+    - officiele-documenten-verstrekking
+    - bevolkingsadministratie-bijhouding
+    - nederlanderschap-diensten
+  beoordeelbaar:
+    waarde: ja
+    onderbouwing: De gemeente kan de volwassenheid bepalen aan hoe betrouwbaar zij identiteitsfraude herkent, en investeren in documentcontrole, gezichtsvergelijking en de opname van biometrie bij de aanvraag van een reisdocument (Paspoortwet art. 3).
+  onderscheidend:
+    waarde: ja
+    onderbouwing: Naaste capability is Personen registreren. Identiteit vaststellen controleert bij een aanvraag, aangifte of verklaring dat iemand is wie hij zegt te zijn; Personen registreren legt de gegevens van die persoon vast. Drie functies komen erin samen, die de functie-indeling elk in een eigen tak zet.
+domein: Publieksdiensten
+definitie: Het vermogen om met voldoende zekerheid vast te stellen dat iemand is wie hij zegt te zijn.
+beschrijving:
+- De gemeente stelt de identiteit vast voordat zij iemand in de BRP inschrijft (Wet BRP art. 2.4 lid 3), voordat zij een reisdocument verstrekt (Paspoortwet art. 28 lid 1) en voordat zij een verklaring van afstand van het Nederlanderschap in ontvangst neemt (Besluit verkrijging en verlies Nederlanderschap art. 63 lid 2). Drie bedrijfsfuncties realiseren het vermogen, Officiële documenten verstrekking, Bevolkingsadministratie bijhouding en Nederlanderschap diensten.
+- In de processen is het vaststellen van de identiteit een processtap zonder pagina (Vaststellen identiteit, bij Inschrijven ingezetene); als capability is het het vermogen dat over die processen heen ontwikkeld en beoordeeld wordt.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen capability voor het vaststellen van de identiteit van een persoon aan de balie. De capability Authenticeren van eindgebruikers is de digitale kant voor gebruikers van een gebruikersinterface (DigiD, eHerkenning), een vermogen van de informatievoorziening; een koppeling zou haar naam en definitie overschrijven. De GEMMA-bedrijfsfunctie Identiteitvaststelling (onder Ontvangst) is een functie, geen capability.
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Vermogen (kern ja)
+    paginatype: capability
+    archimate_type: capability
+    voorleggen: false
+    generiek: false
+    typeregel: 15
+  bronnen:
+  - 2026-rijk-paspoortwet-bwbr0005212
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+  herkomst: rijksregelgeving
+  pad: elementpaginas/strategie/capabilities/publieksdiensten/identiteit-vaststellen.md

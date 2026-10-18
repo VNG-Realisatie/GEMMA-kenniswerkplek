@@ -219,6 +219,20 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 61 (GEMMA-domein Publieksdiensten)
+- soort: realisatie
+  naar: personen-registreren
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  vindplaats: art. 17
+- soort: realisatie
+  naar: lijkbezorging-waarborgen
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 11
 beschrijving:
 - De ambtenaar van de burgerlijke stand maakt akten op van geboorte, huwelijk en overlijden en verleent het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11; RVO). De functie bedient de processen daarvoor.
 bronnen:

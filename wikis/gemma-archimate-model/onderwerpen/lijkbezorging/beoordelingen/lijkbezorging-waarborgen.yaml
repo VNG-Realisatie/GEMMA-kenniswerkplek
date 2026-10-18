@@ -1,0 +1,52 @@
+begrip: Lijkbezorging waarborgen
+vak: strategie/gedrag
+onderwerpen:
+- lijkbezorging
+- burgerzaken
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-vng-wet-op-de-lijkbezorging
+kenmerken:
+  stabiel_over_tijd:
+    waarde: ja
+    onderbouwing: Een wettelijke taak, met een gemeentelijke begraafplaats (art. 33), het verlof tot begraving of crematie (art. 11) en de termijnen (art. 16 en 17), los van de organisatie of de werkwijze.
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  gerealiseerd_door:
+    waarde: ja
+    naar:
+    - exploiteren-van-begraafplaatsen
+    - burgerlijke-stand-diensten
+    - vergunningenbeheer-publieksdiensten
+  beoordeelbaar:
+    waarde: ja
+    onderbouwing: De gemeente kan de volwassenheid bepalen aan de capaciteit van haar begraafplaatsen en het halen van de wettelijke termijnen, en investeren in nieuwe vormen van lijkbezorging, waarvoor de VNG draagvlak, arbeidsomstandigheden en milieuveiligheid als voorwaarden noemt.
+    bronnen:
+    - 2026-vng-wet-op-de-lijkbezorging
+  onderscheidend:
+    waarde: ja
+    onderbouwing: Naaste capability is Personen registreren, dat het overlijden vastlegt in de akte; Lijkbezorging waarborgen zorgt dat het lijk binnen de termijn en volgens de wet wordt begraven of gecremeerd. Het bundelt functies uit twee domeinen, die de functie-indeling apart zet.
+domein: Niet domeingebonden
+definitie: Het vermogen om te zorgen dat elk lijk binnen de wettelijke termijn waardig en volgens de wet wordt begraven of gecremeerd.
+beschrijving:
+- De gemeente heeft ten minste één gemeentelijke begraafplaats (Wet op de lijkbezorging art. 33), de ambtenaar van de burgerlijke stand geeft het verlof tot begraving of crematie (art. 11), en de burgemeester kan een andere termijn stellen (art. 17). Drie bedrijfsfuncties uit twee domeinen realiseren het vermogen, Exploiteren van begraafplaatsen (Fysieke leefomgeving), en Burgerlijke stand diensten en Vergunningenbeheer Publieksdiensten (Publieksdiensten).
+- Volgens de VNG moet de wet ook waarborgen bieden voor de gemeentelijke dienstverlening rond overlijden (2026-vng-wet-op-de-lijkbezorging).
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen capability voor de lijkbezorging. De 26 capabilities zijn vermogens van de informatievoorziening.
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Vermogen (kern ja)
+    paginatype: capability
+    archimate_type: capability
+    voorleggen: false
+    generiek: false
+    typeregel: 15
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  - 2026-vng-wet-op-de-lijkbezorging
+  herkomst: rijksregelgeving
+  pad: elementpaginas/strategie/capabilities/niet-domeingebonden/lijkbezorging-waarborgen.md

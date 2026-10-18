@@ -130,3 +130,14 @@ terugmeldingen:
   - '**Voorstel:** geef Burger een definitie en beslis of Burger een generalisatie van Inwoner wordt, of vervalt ten gunste van Inwoner.'
   nummer: 8
   status: open
+- type: indeling
+  elementen:
+  - personen-registreren
+  - identiteit-vaststellen
+  - lijkbezorging-waarborgen
+  bevinding:
+  - '**GEMMA:** het GEMMA-model heeft 26 capabilities, alle met bron Thema-architectuur Common Ground, onder 8 groeperingen van de informatievoorziening, zoals Kanalen en toegang, Datadiensten en Connectiviteit. Geen enkele capability wordt door een bedrijfsfunctie gerealiseerd (2026-vng-gemma-2026-10-02).'
+  - '**Bevinding:** de 26 zijn vermogens van de informatievoorziening ("Dienstenafnemers moeten …"), geen kaart van wat de gemeente als organisatie moet kunnen. Op de toetsvraag welke diensten van hetzelfde vermogen afhangen, geven ze alle het antwoord "alle diensten". De wiki maakt daarom een Capabilitykaart van de bedrijfslaag naar GEMMA-domein, met capabilities die ten minste twee bedrijfsfuncties realiseren, zoals Personen registreren, Identiteit vaststellen en Lijkbezorging waarborgen. De import voegt die kaart toe naast de 26, in Strategy / wiki-gemma-model / Capabilitykaart.'
+  - '**Voorstel:** neem een capabilitykaart van de bedrijfslaag op naast de capabilities van de informatievoorziening, met de realisatie door de bedrijfsfuncties, en beslis of de 26 onder een eigen groepering informatievoorziening komen.'
+  status: open
+  nummer: 9

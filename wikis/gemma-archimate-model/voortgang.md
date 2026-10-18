@@ -14,10 +14,10 @@ titel: Voortgang
 |---|---|---|---|
 | [Besluitvorming](onderwerpen/besluitvorming/begrippen.md) | in-behandeling | 35 | 31 |
 | [Bestuur en organisatie](onderwerpen/bestuur-en-organisatie/begrippen.md) | in-behandeling | 7 | 7 |
-| [Burgerzaken](onderwerpen/burgerzaken/begrippen.md) | in-behandeling | 260 | 180 |
+| [Burgerzaken](onderwerpen/burgerzaken/begrippen.md) | in-behandeling | 263 | 183 |
 | [Heffingen en betalingen](onderwerpen/heffingen-en-betalingen/begrippen.md) | in-behandeling | 2 | 2 |
 | [Kern](onderwerpen/kern/begrippen.md) | in-behandeling | 1 | 1 |
-| [Lijkbezorging](onderwerpen/lijkbezorging/begrippen.md) | in-behandeling | 178 | 90 |
+| [Lijkbezorging](onderwerpen/lijkbezorging/begrippen.md) | in-behandeling | 179 | 91 |
 | [Participatie](onderwerpen/participatie/begrippen.md) | in-behandeling | 34 | 17 |
 
 ## Samenhang tussen onderwerpen
@@ -28,10 +28,10 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 |---|---|---|---|---|
 | Besluitvorming | 30 | 1 | 45 | Bestuur en organisatie 11, Heffingen en betalingen 1, Lijkbezorging 16, Participatie 3 |
 | Bestuur en organisatie | 7 | 0 | 8 | Besluitvorming 11, Burgerzaken 20, Heffingen en betalingen 2, Kern 1, Lijkbezorging 15, Participatie 6 |
-| Burgerzaken | 169 | 8 | 500 | Bestuur en organisatie 20, Kern 2, Lijkbezorging 7 |
+| Burgerzaken | 171 | 9 | 505 | Bestuur en organisatie 20, Kern 2, Lijkbezorging 8 |
 | Heffingen en betalingen | 2 | 0 | 1 | Besluitvorming 1, Bestuur en organisatie 2, Lijkbezorging 4 |
 | Kern | 1 | 0 | 0 | Bestuur en organisatie 1, Burgerzaken 2, Lijkbezorging 5 |
-| Lijkbezorging | 66 | 20 | 166 | Besluitvorming 16, Bestuur en organisatie 15, Burgerzaken 7, Heffingen en betalingen 4, Kern 5 |
+| Lijkbezorging | 67 | 20 | 168 | Besluitvorming 16, Bestuur en organisatie 15, Burgerzaken 8, Heffingen en betalingen 4, Kern 5 |
 | Participatie | 10 | 6 | 15 | Besluitvorming 3, Bestuur en organisatie 6 |
 
 ## Elementen per type en status
@@ -44,6 +44,7 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 | bedrijfsobject | 0 | 31 | 1 |
 | bedrijfsproces | 0 | 81 | 6 |
 | beleidskader | 0 | 21 | 0 |
+| capability | 0 | 3 | 0 |
 | dienst | 0 | 85 | 1 |
 | gebeurtenis | 0 | 20 | 0 |
 | rol | 0 | 27 | 0 |
@@ -58,4 +59,4 @@ Het thuisonderwerp is het eerste onderwerp van een element. Relaties tellen tuss
 
 ## GEMMA-terugmeldingen
 
-[8 terugmeldingen](modellen/gemma/terugmeldingen/gemma-team.md): open 8.
+[9 terugmeldingen](modellen/gemma/terugmeldingen/gemma-team.md): open 9.

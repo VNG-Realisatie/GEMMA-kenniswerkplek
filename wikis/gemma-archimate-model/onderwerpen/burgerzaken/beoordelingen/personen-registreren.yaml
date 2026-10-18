@@ -1,0 +1,48 @@
+begrip: Personen registreren
+vak: strategie/gedrag
+onderwerpen:
+- burgerzaken
+bronnen:
+- 2026-rijk-wet-brp-bwbr0033715
+- 2026-rijk-burgerlijk-wetboek-boek-1
+kenmerken:
+  stabiel_over_tijd:
+    waarde: ja
+    onderbouwing: Een wettelijke taak die blijft bestaan als de organisatie, de werkwijze of de systemen veranderen (Wet BRP art. 1.2; Burgerlijk Wetboek boek 1 art. 17).
+    bronnen:
+    - 2026-rijk-wet-brp-bwbr0033715
+    - 2026-rijk-burgerlijk-wetboek-boek-1
+  gerealiseerd_door:
+    waarde: ja
+    naar:
+    - bevolkingsadministratie-bijhouding
+    - burgerlijke-stand-diensten
+  beoordeelbaar:
+    waarde: ja
+    onderbouwing: De gemeente kan de volwassenheid bepalen aan de kwaliteit en actualiteit van de BRP en de registers van de burgerlijke stand, en investeren in adresonderzoek, terugmeldingen en het beoordelen van brondocumenten.
+  onderscheidend:
+    waarde: ja
+    onderbouwing: Naaste capability is Identiteit vaststellen. Personen registreren legt vast wie iemand is en wat zijn burgerlijke staat is; Identiteit vaststellen controleert bij een aanvraag dat de aanvrager die persoon is. Geen van beide functies valt er voor een deel in, elk realiseert het hele vermogen.
+domein: Publieksdiensten
+definitie: Het vermogen om personen en hun burgerlijke staat betrouwbaar en actueel vast te leggen.
+beschrijving:
+- De gemeente houdt de basisregistratie personen bij voor de ingezetenen (Wet BRP art. 1.2) en de registers van geboorten, huwelijken, geregistreerde partnerschappen en overlijden (Burgerlijk Wetboek boek 1 art. 17). Twee bedrijfsfuncties realiseren dit vermogen, Bevolkingsadministratie bijhouding en Burgerlijke stand diensten; samen leveren ze onder meer de inschrijving in de BRP, de verhuismelding en de akten.
+gemma:
+  sterkte: geen
+  onderbouwing: Het GEMMA-model kent geen capability voor het vastleggen van personen. De 26 capabilities zijn vermogens van de informatievoorziening, zoals het vastleggen en verstrekken van data, geen vermogen van de gemeente als organisatie.
+status: goedgekeurd
+beslist:
+  uitkomst:
+    soort: element
+    regel: 24
+    toelichting: Vermogen (kern ja)
+    paginatype: capability
+    archimate_type: capability
+    voorleggen: false
+    generiek: false
+    typeregel: 15
+  bronnen:
+  - 2026-rijk-wet-brp-bwbr0033715
+  - 2026-rijk-burgerlijk-wetboek-boek-1
+  herkomst: rijksregelgeving
+  pad: elementpaginas/strategie/capabilities/publieksdiensten/personen-registreren.md

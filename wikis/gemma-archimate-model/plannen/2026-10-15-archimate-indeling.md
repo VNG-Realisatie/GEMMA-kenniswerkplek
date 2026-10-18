@@ -199,6 +199,13 @@ Vastgelegd in ARCHITECTURE.md (§3.4, §4.1 met het kader als tabel, §4.4, §7)
 - **Woordbudget**: kennismodel 17.100 (het kennismodel was eerst ingekort, commit 487489b; K8 vervalt), AGENTS.md 1.740.
 - **Nog niet**: de toets op ten minste twee realiserende functies (K3), de render, de export en de beoordelingen van capabilities: stap 14.
 
+## Uitkomst stap 14 (2026-10-18)
+
+- **Gebouwd** (commit d3bcbd6): de toets op ten minste twee realiserende functies (`tools/bepaal_type.py`: minder is *geen element*, voorgelegd), de grondslag via de realiserende functies (`tools/signalen.py`), geen registr*-signaal bij een capability, geen bron nodig voor *beoordeelbaar* en *onderscheidend* (K6, `tools/beslissen.py`), de render (Capabilitykaart, Gerealiseerd door, Diensten die van dit vermogen afhangen; bij de functie Realiseert capability), de indelingspagina `capabilities.md`, de export naar `Strategy / wiki-gemma-model / Capabilitykaart` met de aggregatie vanuit de domeingroepering, tests, en `references/capability.md` in skill beoordelen. Woordbudget skill beoordelen 7.050, criteria 981.
+- **Afgeleid en goedgekeurd** (AKKOORD 2026-10-18): Personen registreren (Bevolkingsadministratie bijhouding, Burgerlijke stand diensten), Identiteit vaststellen (Officiële documenten verstrekking, Bevolkingsadministratie bijhouding, Nederlanderschap diensten) en Lijkbezorging waarborgen (Exploiteren van begraafplaatsen, Burgerlijke stand diensten, Vergunningenbeheer Publieksdiensten; Niet domeingebonden). Geen GEMMA-match: Authenticeren van eindgebruikers is de digitale kant, een koppeling zou haar overschrijven. Niet: Verkiezingen organiseren en Nationaliteit verlenen (K3). De zes functies kregen een realisatie en een nieuw akkoord.
+- **Terugmelding** aan het GEMMA-team nummer 9: geen capabilitykaart van de bedrijfslaag (K7).
+- **Bekend**: de diensten die van een capability afhangen, volgen uit de hele functie en zijn daardoor ruim (Lijkbezorging waarborgen telt via Burgerlijke stand diensten ook geboorte en huwelijk).
+
 ## Deel 1 — Matrix en lichtere kenmerken (denkniveau hoog)
 
 ### De matrix

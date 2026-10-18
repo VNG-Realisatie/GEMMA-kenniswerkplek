@@ -13,7 +13,10 @@ De uitkomst staat in [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-
 
 ## ArchiMate-indeling, lichtere kenmerken, data-object en capability (plan 2026-10-15)
 
-Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 (matrix en lichtere kenmerken), deel 2 (data-object als element), deel 3 (Capability, eerst samen bepalen). Deel 1 en 2 zijn omgezet (Uitkomst stap 3–7 en 8–11). Van deel 3 zijn de besluiten over Capability vastgelegd in ARCHITECTURE.md en het kennismodel (Uitkomst stap 12 en 13); volgende stap: stap 14, bouwen en de capabilities afleiden.
+Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 (matrix en lichtere kenmerken), deel 2 (data-object als element), deel 3 (Capability, eerst samen bepalen). Deel 1 en 2 zijn omgezet (Uitkomst stap 3–7 en 8–11). Deel 3 is uitgevoerd: de besluiten over Capability (Uitkomst stap 12 en 13), het bouwen en de eerste drie capabilities (Uitkomst stap 14).
+
+- **GEMMA-functies onder *Ontvangst*** (Identiteitvaststelling, Autorisatievaststelling, Voorwaardentoetsing, Vormacceptatie, Zelfredzaamheidbepaling): alleen in het domein Fysieke leefomgeving, maar domeinoverstijgend en lijkend op vermogens; een kandidaat voor een terugmelding aan het GEMMA-team (kalibratie stap 12).
+- **Rechtsbescherming bieden**: een capability zodra besluitvorming een realiserende functie heeft (GEMMA: Klachten afhandeling).
 
 - **Potentiële relaties vastleggen.** 239 relationele kenmerken ja hebben geen relatie (bij elementen 104: vooral *aanleiding*, *toegewezen partij*, *bijdrage aan groter proces*, *gebruikt objecten*). Noem bij de volgende herbeoordeling per onderwerp de tegenpartij in `naar`: een element met de relatie, of naam en type. Het signaal over de kernrelatie wijst ze aan.
 

@@ -74,6 +74,13 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 71 (GEMMA-domein Publieksdiensten)
+- soort: realisatie
+  naar: lijkbezorging-waarborgen
+  naam: realiseert
+  ggm_match: geen
+  bronnen:
+  - 2026-rijk-wet-op-de-lijkbezorging-wettekst
+  vindplaats: art. 17
 bronnen:
 - 2023-vng-model-apv
 - 2026-rvo-aangifte-en-akte-van-overlijden
