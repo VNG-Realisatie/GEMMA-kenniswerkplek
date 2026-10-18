@@ -4,33 +4,18 @@ soort_gedrag: gegroepeerd_gedrag
 onderwerpen:
 - burgerzaken
 kenmerken:
-  toegewezen_partij:
+  bedient_gedrag:
     waarde: ja
-    onderbouwing: Bijhoudingsgemeente (HUP Achtergronden).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
+    naar:
+    - bijhouden-persoonsgegevens
   gebruikt_objecten:
     waarde: ja
     onderbouwing: Werkt de ingeschreven persoon en zijn verblijfplaats bij (HUP Achtergronden).
     bronnen:
     - 2026-rvig-hup-achtergronden-en-begrippen
-  stabiel_over_tijd:
-    waarde: ja
-    onderbouwing: Volgt uit de wettelijke taak van het college in de BRP, los van de organisatie (HUP Achtergronden).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  bedient_gedrag:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
-    gemma_relatie:
-    - id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar.
     gemma_relatie:
     - id-29fd24fa-ed43-4bed-ae83-ff7205cb7fdb
 definitie: Het uitvoeren van taken om de basisregistratie personen actueel en betrouwbaar te houden.
@@ -195,4 +180,4 @@ relaties:
 bronnen:
 - 2026-rvig-hup-achtergronden-en-begrippen
 - 2026-rijk-wet-brp-bwbr0033715
-status: goedgekeurd
+status: review

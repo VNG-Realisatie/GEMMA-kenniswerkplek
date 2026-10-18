@@ -3,34 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De aanvrager krijgt het reisdocument uitgereikt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De aanvrager, een als vluchteling toegelaten vreemdeling (UPL: doelgroep burger).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-aanvraag-reisdocument
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: De UPL noemt het als eigen product.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het aanvragen en ophalen van een reisdocument voor vluchtelingen, voor wie als vluchteling in Nederland is toegelaten.
 beschrijving:
 - Voor wie een geldig verblijfsdocument asiel voor bepaalde of onbepaalde tijd heeft (Utrecht); het reisdocument voor vluchtelingen is vijf jaar geldig (Paspoortwet art. 11). Grondslag art. 11 Paspoortwet (UPL nr. 449).
@@ -50,4 +26,8 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+status: review

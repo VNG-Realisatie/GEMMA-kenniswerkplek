@@ -1,35 +1,9 @@
 begrip: Maatregel bij besmet stoffelijk overschot
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk exemplaar apart.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Zoals elk(e) beschikking.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Door de gemeente vastgesteld of verleend.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Variant van Beschikking: zelfde gegevens en behandeling, geen eigen levenscyclus.'
 genoemd_begrip: Beschikking
 toelichting: 'Specialisatie zonder pagina van Beschikking: maatregel van de burgemeester na advies van de GGD (art. 22a); het treffen ervan is het proces Treffen maatregel bij besmet stoffelijk overschot.'
@@ -39,3 +13,5 @@ besluiten:
 - datum: '2026-10-05'
   besluit: Naam Maatregel bij besmet stoffelijk overschot, in lijn met Treffen maatregel bij besmet stoffelijk overschot; geen vaste term (Wlb art. 22a). Het id blijft.
   gevolg: verwerkt
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst

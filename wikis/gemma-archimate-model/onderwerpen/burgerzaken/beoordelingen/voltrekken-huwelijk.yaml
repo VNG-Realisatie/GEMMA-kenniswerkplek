@@ -8,60 +8,18 @@ kenmerken:
     waarde: ja
     naar:
     - ambtenaar-van-de-burgerlijke-stand
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De melding van het voorgenomen huwelijk en de afgesproken datum en locatie (BW 1 art. 44, 62; Utrecht).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het voltrokken huwelijk en de huwelijksakte (BW 1 art. 63).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 62-67; Besluit burgerlijke stand art. 1, 57.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-burgerlijke-stand
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de melding van het voorgenomen huwelijk tot de voltrekking en de huwelijksakte.
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - huwelijk
-    - trouwlocatie
-    - ambtenaar-burgerlijke-stand-aanvragen
-    - huwelijksaangifte
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het behandelen van de melding van een voorgenomen huwelijk, het in het openbaar voltrekken ervan en het opmaken van de huwelijksakte.
 beschrijving:
 - 'Het huwelijk wordt in het openbaar voltrokken in het gemeentehuis, met twee tot vier meerderjarige getuigen; de partijen verschijnen in persoon (BW 1 art. 63, 65). Burgemeester en wethouders kunnen andere gebouwen als huis der gemeente aanwijzen: eigen locaties, vaste trouwlocaties en een locatie naar keuze die de gemeente goedkeurt (BW 1 art. 63, 64; Utrecht Trouwlocaties). De gemeente kiest de trouwambtenaar; een eigen trouwambtenaar voor één dag wordt als buitengewoon ambtenaar aangewezen (BW 1 art. 16; Utrecht).'
@@ -149,4 +107,8 @@ deelprocessen:
   bronnen:
   - 2026-rijk-burgerlijk-wetboek-boek-1
   vindplaats: art. 63-65
-status: goedgekeurd
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-utrecht-burgerzaken-trouwen-in-utrecht
+- 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+status: review

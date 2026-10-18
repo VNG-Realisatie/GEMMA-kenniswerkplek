@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De aanvrager krijgt een Nederlands rijbewijs in ruil voor zijn buitenlandse rijbewijs, als de RDW akkoord is.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De aanvrager, een inwoner (UPL: doelgroep burger).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: De UPL noemt het als eigen product.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het omwisselen van een buitenlands rijbewijs voor een Nederlands rijbewijs, voor wie in Nederland komt wonen.
 beschrijving:
 - 'De aanvrager maakt twee afspraken, voor het aanvragen en voor het afhalen, en levert het buitenlandse rijbewijs in; de afhaalafspraak volgt pas als de RDW laat weten dat het Nederlandse rijbewijs klaarligt (Utrecht). De UPL kent het product in persoon en met de digitale dienstverlening van de Single Digital Gateway (UPL nr. 361: kanaal In Persoon, SDG).'
@@ -48,4 +26,4 @@ bronnen:
 - 2026-utrecht-burgerzaken-rijbewijs-buitenland-omwisselen
 - 2026-utrecht-burgerzaken
 - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-status: goedgekeurd
+status: review

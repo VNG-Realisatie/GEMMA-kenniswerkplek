@@ -5,14 +5,11 @@ synoniem_van: Houder van de begraafplaats
 toelichting: Synoniem van Houder van de begraafplaats. De Wet op de lijkbezorging kent alleen de houder van de begraafplaats (art. 8, 23, 27, 28, 31); de beheerder is de ambtenaar die bij een gemeentelijke begraafplaats de dagelijkse leiding heeft en de taken van de houder met mandaat uitvoert, ingericht door de beheersverordening (2010-vng-model-beheersverordening-begraafplaatsen, toelichting 2; 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen, art. 1 e). Zonder landelijke wettelijke bron blijft hij geen eigen rol (regel Wettelijke grondslag).
 onderwerpen:
 - lijkbezorging
-kenmerken:
-  voert_gedrag_uit:
-    waarde: ja
-    onderbouwing: Toegewezen aan Uitvoeren lijkbezorging (bepaalt tijd en plaats), Ruimen graf (ziet toe) en Opgraven stoffelijk overschot (is belast met de werkzaamheden) (Groningen art. 7, 27, 28).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
+kenmerken: {}
 besluiten:
 - datum: '2026-10-08'
   besluit: 'Geen rol: geen landelijke wettelijke bron, de Wlb kent alleen de houder (regel Wettelijke grondslag). Synoniem (context beleid) van Houder van de begraafplaats.'
   gevolg: verwerkt
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2010-vng-model-beheersverordening-begraafplaatsen

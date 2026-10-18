@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: 'Rijksregelgeving: een algemene maatregel van bestuur.'
     bronnen:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht.
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -61,4 +56,4 @@ relaties:
 bronnen:
 - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

@@ -2,10 +2,12 @@ begrip: Participatiebeleid
 onderwerpen:
 - participatie
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: Specialisatie zonder pagina van Beleidsnota.
     bronnen:
     - 2024-vng-implementatiehandleiding-model-participatieverordening
 genoemd_begrip: Beleidsnota
 toelichting: Specialisatie zonder pagina van Beleidsnota.
+bronnen:
+- 2024-vng-implementatiehandleiding-model-participatieverordening

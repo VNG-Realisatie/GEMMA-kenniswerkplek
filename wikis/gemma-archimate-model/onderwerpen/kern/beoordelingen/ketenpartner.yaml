@@ -6,9 +6,6 @@ onderwerpen:
 - lijkbezorging
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
     naar:
@@ -17,15 +14,6 @@ kenmerken:
     - schouwen-stoffelijk-overschot
     - beheren-nederlanderschap
     - afgeven-verklaring-omtrent-het-gedrag
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Verantwoordelijkheid van een andere organisatie voor haar deel van een keten die zij met de gemeente uitvoert.
 per_onderwerp:
   lijkbezorging:
@@ -78,4 +66,4 @@ relaties:
   vindplaats: art. 30, 36, 37; Utrecht regel 59
 beschrijving:
 - Een ketenpartner is een andere organisatie die een eigen deel van een keten uitvoert, vanuit een eigen wettelijke taak, en niet als klant of alleen als adviseur. GEMMA kent de rol Ketenpartner in de procesarchitectuur en de doelgroep Ketenpartners.
-status: goedgekeurd
+status: review

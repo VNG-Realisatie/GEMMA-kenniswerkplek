@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De inschrijving van het adoptiekind in de BRP (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 6): de adoptiefouders.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
   gerealiseerd_door:
     waarde: ja
     naar:
     - inschrijven-ingezetene
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 6), apart van de BRP-inschrijving; geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het laten inschrijven van een adoptiekind uit het buitenland in de basisregistratie personen.
 beschrijving:
 - 'Binnen vijf werkdagen na aankomst, op afspraak, met de identiteitsbewijzen van ouders en kind, de buitenlandse geboorteakte en de adoptiebeschikking (Utrecht). De adoptie zelf is een uitspraak van de rechtbank (BW 1 art. 227), geen gemeentelijk product; een Nederlandse adoptie verwerkt de gemeente als latere vermelding. Grondslag in de UPL: art. 2.38 Wet BRP (nr. 6).'
@@ -44,4 +22,4 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

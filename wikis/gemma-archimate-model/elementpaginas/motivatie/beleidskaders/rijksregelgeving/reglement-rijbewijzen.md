@@ -2,7 +2,7 @@
 id: reglement-rijbewijzen
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Reglement rijbewijzen
 onderwerpen:
 - burgerzaken
@@ -21,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling reglement-rijbewijzen.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -43,7 +43,7 @@ Grondslag van de bedrijfsprocessen en diensten van het rijbewijs. Het is de wet 
 
 ### Typering
 
-Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern ja, 1/1).
+Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (2 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -52,15 +52,16 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, algemene maatregel van bestuur van het Rijk. [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Behandelen aanvraag rijbewijs](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md), [Behandelen aanvraag omwisseling buitenlands rijbewijs](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Verwerken vermissing rijbewijs](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md), [Rijbewijs aanvragen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-aanvragen.md), [Rijbewijs verlengen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-verlengen.md), [Rijbewijs buitenlands omwisseling](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-buitenlands-omwisseling.md), [Vermissing of diefstal rijbewijs doorgeven](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-rijbewijs-doorgeven.md). |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Behandelen aanvraag rijbewijs](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-rijbewijs.md), [Behandelen aanvraag omwisseling buitenlands rijbewijs](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-omwisseling-buitenlands-rijbewijs.md), [Verwerken vermissing rijbewijs](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-rijbewijs.md), [Rijbewijs aanvragen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-aanvragen.md), [Rijbewijs verlengen](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-verlengen.md), [Rijbewijs buitenlands omwisseling](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs-buitenlands-omwisseling.md), [Vermissing of diefstal rijbewijs doorgeven](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-rijbewijs-doorgeven.md). [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
+| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, standaard. [Reglement rijbewijzen](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-reglement-rijbewijzen-bwbr0008074.md) |
 
 ### Relaties
 

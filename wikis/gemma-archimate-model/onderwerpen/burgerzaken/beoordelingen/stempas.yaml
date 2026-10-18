@@ -1,18 +1,9 @@
 begrip: Stempas
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke stempas heeft een volgnummer (Kieswet art. J 7 lid 2).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt per verkiezing gepersonaliseerd en verstrekt, kan worden vervangen, omgezet in een volmachtbewijs of ongeldig worden, en het register wordt na de verkiezing vernietigd (Kieswet art. J 7, J 7a, J 8, L 14).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -20,22 +11,6 @@ kenmerken:
     - behandelen-verzoek-om-volmacht
     - beheren-stempassen
     - verstrekken-stempas
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: 'Geen vorm van een ander begrip: het bewijs van de kiezer om te stemmen, met een eigen levensloop (Kieswet art. J 7, J 7a).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De burgemeester stelt de gegevens vast en verstrekt de stempas; de minister stelt alleen het model vast en levert informatie voor de productie (Kieswet art. J 7 lid 1, 3 en 4).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
 definitie: Persoonlijk document waarmee een kiezer bij een verkiezing kan stemmen, toegezonden door de gemeente waar hij als kiezer is geregistreerd.
 beschrijving:
 - Daags na de kandidaatstelling stelt de burgemeester de gegevens vast van de kiezers die op die dag in de gemeente als kiezer zijn geregistreerd; ten minste veertien dagen voor de stemming ontvangt elke kiezer een stempas met een volgnummer, naar een model van de minister (Kieswet art. J 7). Wie zijn stempas kwijt is of niet heeft ontvangen, krijgt op een schriftelijk of mondeling verzoek met een kopie van een identiteitsbewijs een nieuwe (art. J 8).
@@ -71,4 +46,4 @@ relaties:
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

@@ -8,62 +8,18 @@ kenmerken:
     waarde: ja
     naar:
     - verzoeker-om-naturalisatie
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
-    - nederlanderschap
   aanleiding:
     waarde: ja
     onderbouwing: Het naturalisatieverzoek, schriftelijk en in persoon ingediend, of een online aanvraag bij de IND gevolgd door een afspraak bij de gemeente (Besluit art. 3, 33; Utrecht).
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
     - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: 'Het advies van de burgemeester, met het verzoek toegezonden aan de minister, en na diens besluit het uitgereikte uittreksel: de persoon is Nederlander (Besluit art. 36 lid 6, 37, 60b).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk naturalisatieverzoek.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Besluit art. 31-38: ontvangst, betaling van het naturalisatiegeld, toetsing aan de BRP (door andere autoriteiten binnen vier of tien weken), onderzoek van de verblijfsrechtelijke status, advies en toezending.'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - behandelen-verkrijging-en-verlies-nederlanderschap
-    - beheren-nederlanderschap
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de bevestiging van het Nederlanderschap op de ceremonie.
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
     - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Het besluit tot verlening neemt de Koning op voordracht van de minister; de burgemeester adviseert alleen (Rijkswet art. 7; Besluit art. 36 lid 6, 38).
-    bronnen:
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - naturalisatieverzoek
-    - naturalisatieceremonie
-  leidt_tot_gebeurtenis:
-    waarde: ja
-    naar:
-    - verkrijging-van-het-nederlanderschap
 kernobject: nederlanderschap
 afnemer: extern
 definitie: Het in ontvangst nemen en onderzoeken van een verzoek om naturalisatie, met het advies aan de minister, tot de uitreiking op de naturalisatieceremonie.
@@ -143,9 +99,10 @@ bronnen:
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
 besluiten:
 - datum: '2026-10-15'
   besluit: 'Leidt tot gebeurtenis is ja: de triggering naar verkrijging-van-het-nederlanderschap staat met bron en vindplaats in de beoordeling; de nee was een vergissing (omzetting naar de ArchiMate-indeling).'
   gevolg: verwerkt
   zekerheid: logica
-status: goedgekeurd
+status: review

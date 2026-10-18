@@ -8,12 +8,6 @@ kenmerken:
     waarde: ja
     naar:
     - beslisser
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - besluit
-    - regeling
-    - beleidsregel
   aanleiding:
     waarde: ja
     naar:
@@ -23,50 +17,11 @@ kenmerken:
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
     - 2026-rijk-bekendmakingswet-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het bekendgemaakte besluit, dat in werking treedt, met de vermelding van bezwaar en beroep; de mededelingen aan wie een zienswijze gaf (art. 3:40, 3:43, 3:45).
+  procesniveau:
+    waarde: bedrijfsproces
+    onderbouwing: 'Loopt van het genomen besluit tot het moment dat de belanghebbenden en ieder het kennen en het in werking treedt (art. 3:40–3:45). Eén mutatie in de levensloop van een besluit: van genomen tot in werking (Awb art. 3:40).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk besluit en elke regeling.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-bekendmakingswet-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Afdeling 3.6 Awb en de Bekendmakingswet: wijze van bekendmaken, mededeling, vermelding van bezwaar en beroep, inwerkingtreding, terinzagelegging (Awb art. 3:40–3:45; Bekendmakingswet art. 6, 8, 10, 12, 13).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-    - 2026-rijk-bekendmakingswet-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - naam: Beheren besluiten
-      type: bedrijfsproces
-    onderbouwing: 'Eén mutatie in de levensloop van een besluit: van genomen tot in werking (Awb art. 3:40).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  klant_tot_klant:
-    waarde: ja
-    onderbouwing: Loopt van het genomen besluit tot het moment dat de belanghebbenden en ieder het kennen en het in werking treedt (art. 3:40–3:45).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Maakt één besluit bekend; geen groepering van processen over de levensloop van een object.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Maakt een besluit bekend dat al genomen is; neemt zelf geen besluit.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - bekendmaking
-    - bekendmaking-algemeen-verbindend-voorschrift
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: De inwerkingtreding volgt uit de bekendmaking, maar is in de bronnen geen benoemde gebeurtenis die een ander proces start.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -133,4 +88,7 @@ relaties:
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 3:42, 4:83
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+- 2026-rijk-bekendmakingswet-wettekst
+status: review

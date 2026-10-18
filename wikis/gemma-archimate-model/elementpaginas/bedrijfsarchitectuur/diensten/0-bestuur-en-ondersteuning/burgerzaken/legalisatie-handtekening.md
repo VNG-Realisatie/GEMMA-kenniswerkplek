@@ -2,7 +2,7 @@
 id: legalisatie-handtekening
 type: dienst
 archimate_type: business-service
-status: goedgekeurd
+status: review
 naam: Legalisatie handtekening
 onderwerpen:
 - burgerzaken
@@ -24,7 +24,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling legalisatie-handtekening.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 **Zonder landelijke wettelijke grondslag.** Een UPL-dienst die geen wettelijke taak is: ze wordt beschreven voor zover mogelijk, zonder processen, objecten, gebeurtenissen of rollen, is teruggemeld aan de procesarchitectuur ([nr. 21](../../../../../modellen/gemma/terugmeldingen/procesarchitectuur.md)) en gaat niet naar het GEMMA-model ([lijst](../../../../overig/zonder-grondslag.md)).
 
@@ -48,7 +48,7 @@ De aanvrager tekent bij voorkeur aan de balie met een ambtenaar erbij en kan nie
 
 ### Typering
 
-Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
+Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (3 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -59,17 +59,16 @@ Dienst. Uitkomst van de beslistabel: Gedrag, *aangeboden gedrag* (kern ja, 2/2).
 
 ### Kenmerken
 
-**Vak**: bedrijfslaag, gedrag, extern (Dienst). **Hoofdkenmerk**: gedrag. **Soort gedrag**: aangeboden gedrag. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: bedrijfslaag, gedrag, extern (Dienst). **Hoofdkenmerk**: gedrag. **Soort gedrag**: aangeboden gedrag.
 
-De kenmerken met ja; de andere zijn nee.
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een gelegaliseerde handtekening, direct meegegeven (Utrecht). [Utrecht Handtekening laten legaliseren](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) |
-| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke afnemer die erom vraagt. [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Handtekening laten legaliseren](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) |
-| **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, burger (UPL nr. 226): wie een handtekening moet laten bewijzen, bijvoorbeeld voor een machtiging of het buitenland (Utrecht). [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Utrecht Handtekening laten legaliseren](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) |
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert, of een bedrijfsfunctie die het vermogen realiseert? | Ja, de functie Producten- en dienstenrealisatie publieksdiensten: de medewerker aan de balie legaliseert direct (Utrecht). [Utrecht Handtekening laten legaliseren](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is.md) |
-| **zelfstandige specialisatie**: Is dit een specialisatie van een breder begrip van hetzelfde type die de gemeente anders behandelt, met eigen gegevens, regels of werkwijze? | Ja, een eigen product in de UPL (UPL nr. 226); geen bredere dienst in deze wiki. [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **afnemer**: Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? | Ja, standaard. [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, standaard. [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Specialisaties
 

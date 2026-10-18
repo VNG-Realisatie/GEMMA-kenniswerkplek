@@ -10,62 +10,16 @@ kenmerken:
     - aangever
     - beslisser
     - bijhoudingsgemeente
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
-    - verblijfplaats
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     naar:
     - adoptie
     - vestiging-vanuit-het-buitenland
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een persoonslijst als ingezetene, met A-nummer en BSN, en binnen vier weken een overzicht van de persoonslijst (HUP Immigratie).
-    bronnen:
-    - 2026-rvig-hup-immigratie
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Aangifte binnen vijf dagen in persoon (Besluit BRP art. 30), criterium van rechtmatig verblijf, overzicht binnen vier weken (HUP Immigratie); bij hervestiging vaststellen van alle gegevens aan de hand van brondocumenten (HUP Hervestiging, art. 2.63 lid 3 Wet BRP).
-    bronnen:
-    - 2026-rijk-besluit-brp-bwbr0034306
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aangifte tot de persoonslijst en het overzicht.
     bronnen:
     - 2026-rvig-hup-immigratie
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college beslist over de inschrijving; bij een vreemdeling zendt het een afschrift van de beslissing aan de korpschef (Besluit BRP art. 24).
-    bronnen:
-    - 2026-rijk-besluit-brp-bwbr0034306
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - brp-inschrijving
-    - persoonsgegevens-verklaring-onder-eed-of-belofte
-    - adoptie-aangifte
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
 definitie: Het inschrijven van een persoon die zich vanuit het buitenland in de gemeente vestigt als ingezetene in de basisregistratie personen.
 beschrijving:
 - Wie zich vanuit het buitenland in de gemeente vestigt, doet uiterlijk de vijfde dag na aanvang van het verblijf in persoon aangifte van verblijf en adres (HUP Immigratie). De gemeente stelt de identiteit vast, toetst de criteria (waaronder rechtmatig verblijf), gaat na of de persoon al in de BRP of RNI voorkomt, verifieert het adres en schrijft de persoon in met een A-nummer en een BSN; binnen vier weken stuurt zij een volledig overzicht van de persoonslijst (HUP Immigratie; Utrecht Inschrijven vanuit het buitenland). Kan de geboortedatum of de vreemde nationaliteit niet uit de gewone bronnen worden ontleend, dan vraagt de gemeente een mededeling ex artikel 2.17 Wet BRP op bij de IND (NVVB mededeling art. 2.17). Ontbreekt een brondocument, dan neemt de gemeente een verklaring onder eed of belofte af (HUP Immigratie; UPL nr. 335).
@@ -132,4 +86,6 @@ relaties:
   vindplaats: UPL nr. 6; Utrecht inleiding
 bronnen:
 - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-status: goedgekeurd
+- 2026-rvig-hup-hervestiging
+- 2026-rijk-besluit-brp-bwbr0034306
+status: review

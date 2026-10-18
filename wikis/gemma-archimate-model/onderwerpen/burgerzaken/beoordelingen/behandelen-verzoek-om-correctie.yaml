@@ -9,62 +9,19 @@ kenmerken:
     naar:
     - beslisser
     - bijhoudingsgemeente
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Verzoek van de burger om correctie, met bewijsstukken (HUP Correcties; Utrecht).
     bronnen:
     - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
     - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: 'Een besluit: gecorrigeerde gegevens of een weigeringsbeschikking (Utrecht; NVVB Identiteitswijziging).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2018-nvvb-stappenplan-identiteitswijziging-brp
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
-    - 2018-nvvb-stappenplan-identiteitswijziging-brp
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet BRP art. 2.58 en verder en de Awb (HUP Correcties; UPL nr. 95).
-    bronnen:
-    - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
-    - 2025-vng-upl-producten-en-diensten-extern
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de gecorrigeerde gegevens of de weigering.
     bronnen:
     - 2026-rvig-hup-correcties-en-ten-onrechte-opgenomen-gegevens
     - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
     - 2018-nvvb-stappenplan-identiteitswijziging-brp
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college beslist binnen vier weken; bezwaar is mogelijk (Utrecht; NVVB Model weigeringsbeschikking).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2018-nvvb-stappenplan-identiteitswijziging-brp
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - brp-wijzigingsverzoek
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
 definitie: Het beslissen op een verzoek van een ingeschrevene om onjuiste gegevens in de basisregistratie personen te corrigeren.
 beschrijving:
 - 'De burger kan vragen gegevens te laten aanpassen: adresgegevens, zoals een onjuiste inschrijfdatum, of persoonsgegevens zoals naam, geslacht en geboortedatum, met bewijsstukken; de gemeente beoordeelt de bewijsstukken en neemt binnen vier weken een besluit waartegen bezwaar mogelijk is (Utrecht Persoonsgegevens aanpassen). Wijzigt daardoor in feite de identiteit, zoals bij een andere geboortedatum, dan zijn gemeenten bijzonder terughoudend; de NVVB heeft een stappenplan, een model rectificatieverzoek en een model weigeringsbeschikking (NVVB Identiteitswijziging). Correcties na een eigen constatering of een onderzoek zijn registratiestappen zonder eigen besluit (HUP Correcties).'
@@ -105,4 +62,4 @@ relaties:
   vindplaats: UPL nr. 95; Wet BRP art. 2.58
 bronnen:
 - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-status: goedgekeurd
+status: review

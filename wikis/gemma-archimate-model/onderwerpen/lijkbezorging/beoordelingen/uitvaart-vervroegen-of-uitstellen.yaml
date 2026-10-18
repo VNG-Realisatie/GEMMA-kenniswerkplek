@@ -1,17 +1,6 @@
 begrip: Uitvaart vervroegen of uitstellen
 vak: bedrijf/gedrag-extern
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een vergunning voor een andere termijn (art. 17; RVO).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  afnemer:
-    waarde: ja
-    onderbouwing: Nabestaande, via de uitvaartondernemer (RVO).
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -46,4 +35,4 @@ domein: Publieksdiensten
 afnemer: extern
 bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
-status: goedgekeurd
+status: review

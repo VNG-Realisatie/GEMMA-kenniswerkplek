@@ -3,33 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het voltrokken huwelijk en de huwelijksakte, eventueel met een trouwboekje (Utrecht; BW 1 art. 63).
-    bronnen:
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 184): de aanstaande echtgenoten.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
   gerealiseerd_door:
     waarde: ja
     naar:
     - voltrekken-huwelijk
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 184); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het laten voltrekken van een huwelijk door de ambtenaar van de burgerlijke stand, op een gekozen datum en locatie.
 beschrijving:
 - Na de melding van het voorgenomen huwelijk legt het paar locatie en datum vast, liefst drie maanden vooraf, met twee tot vier getuigen. Gemeenten bieden varianten met eigen tarieven, zoals gratis trouwen, eenvoudig trouwen, een flitshuwelijk of trouwen op een locatie naar keuze (Utrecht). Een geregistreerd partnerschap gaat op dezelfde manier. Grondslag art. 30 BW 1 (UPL nr. 184).
@@ -50,4 +27,4 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

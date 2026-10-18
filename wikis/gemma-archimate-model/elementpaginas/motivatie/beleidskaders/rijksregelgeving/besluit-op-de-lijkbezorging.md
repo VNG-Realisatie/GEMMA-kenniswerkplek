@@ -2,7 +2,7 @@
 id: besluit-op-de-lijkbezorging
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Besluit op de lijkbezorging
 onderwerpen:
 - lijkbezorging
@@ -21,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit-op-de-lijkbezorging.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -37,7 +37,7 @@ Het Besluit op de lijkbezorging (BWBR0009080) regelt de modellen van de verklari
 
 ### Typering
 
-Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern ja, 1/1).
+Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (2 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -46,15 +46,16 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijksregelgeving: een algemene maatregel van bestuur. [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Afgeven laissez-passer](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/afgeven-laissez-passer.md), [Verlenen verlof tot ontleding](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-ontleding.md), [Wet op de lijkbezorging](wet-op-de-lijkbezorging.md), [Vervoersdocumenten stoffelijk overschot](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervoersdocumenten-stoffelijk-overschot.md). |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Afgeven laissez-passer](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/afgeven-laissez-passer.md), [Verlenen verlof tot ontleding](../../../bedrijfsarchitectuur/bedrijfsprocessen/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/verlenen-verlof-tot-ontleding.md), [Wet op de lijkbezorging](wet-op-de-lijkbezorging.md), [Vervoersdocumenten stoffelijk overschot](../../../bedrijfsarchitectuur/diensten/7-volksgezondheid-en-milieu/begraafplaatsen-en-crematoria/vervoersdocumenten-stoffelijk-overschot.md). [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
+| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, standaard. [Besluit op de lijkbezorging](../../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-besluit-op-de-lijkbezorging-wettekst.md), [UPL-lijst extern](../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) |
 
 ### Relaties
 

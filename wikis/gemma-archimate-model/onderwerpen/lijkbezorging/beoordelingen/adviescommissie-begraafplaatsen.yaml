@@ -2,26 +2,12 @@ begrip: Adviescommissie begraafplaatsen
 vak: bedrijf/actief-intern
 hoofdkenmerk: handelende_partij
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: ja
-    onderbouwing: Bestaat als commissie los van één advies.
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  vervult_een_rol:
-    waarde: nee
-    onderbouwing: Alleen aanbevolen in de toelichting; geen aanwijsbare rol in gemeentelijk gedrag.
   soort_partij:
     waarde: nee
     onderbouwing: Een adviescommissie is alleen een aanbeveling in de VNG-modelverordening; niet bij elke gemeente.
-  onderscheidbare_exemplaren:
+  vervult_een_rol:
     waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+    onderbouwing: Alleen aanbevolen in de toelichting; geen aanwijsbare rol in gemeentelijk gedrag.
 toelichting: 'Geen element: de VNG-modelverordening beveelt de commissie alleen aan (toelichting 2).'
 onderwerpen:
 - lijkbezorging
@@ -29,3 +15,5 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Geen element: de commissie wordt in de VNG-modelverordening alleen voorgesteld (toelichting 2), dus geen soort partij bij elke gemeente.'
   gevolg: afwijzen
+bronnen:
+- 2010-vng-model-beheersverordening-begraafplaatsen

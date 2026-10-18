@@ -8,54 +8,16 @@ kenmerken:
     waarde: ja
     naar:
     - bijhoudingsgemeente
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Verzoek van de ingeschrevene (Utrecht).
     bronnen:
     - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een overzicht van de verstrekte gegevens sinds 6 januari 2013 (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-    - 2025-vng-upl-producten-en-diensten-extern
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet BRP art. 3.22 (UPL nr. 92); Besluit BRP art. 46 (uitzonderingen op de inzage).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-brp-bwbr0034306
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot het overzicht.
     bronnen:
     - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Tegen het ontvangen overzicht is geen bezwaar mogelijk (Utrecht); de bronnen noemen geen besluit.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - brp-inzagerecht-gegevensverstrekking
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
 definitie: Het op verzoek leveren van een overzicht aan een ingeschrevene van welke gegevens over hem aan wie zijn verstrekt.
 beschrijving:
 - Wie in de gemeente staat ingeschreven, kan een overzicht vragen van de persoonsgegevens die uit de BRP zijn verstrekt en wanneer; het Ministerie van BZK levert de gegevens (vanaf 6 januari 2013), de gemeente stuurt het overzicht met een begeleidende brief per beveiligde e-mail of aangetekende post (Utrecht Persoonsgegevens bekijken). Het overzicht wordt gemaakt met de ProtocolleringsOverzichtModule (LO BRP 1.5.2).
@@ -86,4 +48,5 @@ bronnen:
 - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
 - 2025-vng-upl-producten-en-diensten-extern
 - 2025-rvig-logisch-ontwerp-brp-2025q1
-status: goedgekeurd
+- 2026-rijk-besluit-brp-bwbr0034306
+status: review

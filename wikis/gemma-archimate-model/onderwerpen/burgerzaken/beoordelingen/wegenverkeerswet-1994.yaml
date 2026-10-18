@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: Wet van het Rijk.
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht; enkele onderdelen zijn nog niet in werking (wijzigingen zonder datum van inwerkingtreding).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -88,4 +83,4 @@ regelgever: rijk
 bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

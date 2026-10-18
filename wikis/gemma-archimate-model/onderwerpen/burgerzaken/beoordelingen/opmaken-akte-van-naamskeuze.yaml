@@ -9,57 +9,17 @@ kenmerken:
     naar:
     - ambtenaar-van-de-burgerlijke-stand
     - ouder
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     onderbouwing: De verklaring van de ouders, vóór de geboorte, bij de erkenning of uiterlijk bij de geboorteaangifte (Utrecht).
     bronnen:
     - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De akte van naamskeuze; de keuze geldt voor alle volgende kinderen van dezelfde ouders (BW 1 art. 5; Utrecht).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 5; Besluit burgerlijke stand art. 52a, 52b.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-burgerlijke-stand
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de verklaring van de ouders tot de akte.
     bronnen:
     - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
     - 2026-rijk-burgerlijk-wetboek-boek-1
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - naamskeuzeverklaring
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het opnemen van de gezamenlijke verklaring van de ouders over de achternaam van hun kind in een akte van naamskeuze.
 beschrijving:
 - Zonder keuze krijgt het kind de achternaam van de moeder, of van de vader bij gehuwde ouders; bij het eerste kind kunnen de ouders samen kiezen voor de achternaam van de andere ouder of, sinds 2024, een dubbele achternaam. Beide ouders zijn aanwezig met een geldig identiteitsbewijs (BW 1 art. 5; Utrecht). Een kind met een tweede nationaliteit kan de achternaam volgens die nationaliteit krijgen (Utrecht).
@@ -89,4 +49,4 @@ beleidsdomein: Burgerzaken
 bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-status: goedgekeurd
+status: review

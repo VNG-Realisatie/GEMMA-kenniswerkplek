@@ -2,7 +2,7 @@
 id: uitvoeren-adresonderzoek
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Uitvoeren adresonderzoek
 onderwerpen:
 - burgerzaken
@@ -18,8 +18,8 @@ synoniemen:
 bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-- 2026-nvvb-handreiking-adresonderzoek
 - 2026-rijk-besluit-brp-bwbr0034306
+- 2026-nvvb-handreiking-adresonderzoek
 - 2026-rijk-wet-brp-bwbr0033715
 ---
 
@@ -27,7 +27,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling uitvoeren-adresonderzoek.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -51,7 +51,7 @@ De uitkomst is: woont nog op het adres, inschrijving op een briefadres, vestigin
 
 ### Typering
 
-Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (3 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -63,22 +63,17 @@ Bedrijfsproces, niveau bedrijfsproces. Uitkomst van de beslistabel: Gedrag, *per
 
 ### Kenmerken
 
-**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: per keer doorlopen. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: per keer doorlopen.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Beslisser](../../../rollen/beslisser.md), [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md), [Toezichthouder BRP](../../../rollen/toezichthouder-brp.md). |
-| **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, met [Verblijfplaats](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verblijfplaats.md). |
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md), [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md), [Besluit BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
+| **procesniveau**: bedrijfsproces, kernobject [Verblijfplaats](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verblijfplaats.md) | Ja, van de melding, het signaal of de eigen constatering tot het besluit. [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md), [NVVB Handreiking adresonderzoek](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-nvvb-handreiking-adresonderzoek.md) |
+| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Beslisser](../../../rollen/beslisser.md), [Bijhoudingsgemeente](../../../rollen/bijhoudingsgemeente.md), [Toezichthouder BRP](../../../rollen/toezichthouder-brp.md). [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md), [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md), [Besluit BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
 | **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, een melding van een persoon of organisatie, een terugmelding, een LAA-signaal of een eigen constatering (Circulaire adresonderzoek par. 2; NVVB Handreiking adresonderzoek). [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md), [NVVB Handreiking adresonderzoek](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-nvvb-handreiking-adresonderzoek.md) |
-| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een besluit: woont nog op het adres, briefadres, ambtshalve verhuizing, ambtshalve vertrek of vestiging vanuit het buitenland (Circulaire adresonderzoek 4.8). [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) |
-| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk geval dat zich voordoet. [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md), [NVVB Handreiking adresonderzoek](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-nvvb-handreiking-adresonderzoek.md), [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) |
-| **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, circulaire adresonderzoek BRP: voornemen en besluit, terugkoppeling binnen vijf werkdagen of vier weken, richtlijn tien weken; Besluit BRP art. 28a tot en met 28g (LAA). [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md), [Besluit BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
-| **bijdrage aan groter proces**: Is het een deel van een groter proces: van het levensloopproces van een kernobject, of van een bedrijfsproces dat het eindresultaat levert? | Ja, met [Bijhouden persoonsgegevens](bijhouden-persoonsgegevens.md). |
-| **klant tot klant**: Begint het bij een aanleiding van buiten het proces (een verzoek of melding van een klant, een gebeurtenis of een termijn) en loopt het door tot het resultaat voor die klant, zonder dat het de voortzetting is van een ander proces voor hetzelfde geval? | Ja, ja, van de melding, het signaal of de eigen constatering tot het besluit. [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md), [NVVB Handreiking adresonderzoek](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-nvvb-handreiking-adresonderzoek.md) |
-| **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, het college neemt na een voornemen een besluit en maakt het bekend (Circulaire adresonderzoek 4.6). [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) |
-| **levert aanbod**: Realiseert het een dienst of levert het een product aan een afnemer? | Ja, met [Onjuiste inschrijving op adres melden](../../../diensten/0-bestuur-en-ondersteuning/burgerzaken/onjuiste-inschrijving-op-adres-melden.md). |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, standaard. [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md), [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md), [Besluit BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) |
 
 ### Relaties
 
@@ -107,8 +102,8 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 |---|---|
 | [RvIG Circulaire adresonderzoek BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2023-rvig-circulaire-adresonderzoek-brp.md) | Circulaire adresonderzoek BRP |
 | [Utrecht Onjuiste inschrijving melden (adresonderzoek)](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek.md) | Gemeente Utrecht: Adresonderzoek |
-| [NVVB Handreiking adresonderzoek](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-nvvb-handreiking-adresonderzoek.md) | NVVB: Adresonderzoek |
 | [Besluit BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-brp-bwbr0034306.md) | Besluit basisregistratie personen |
+| [NVVB Handreiking adresonderzoek](../../../../../onderwerpen/burgerzaken/bronduidingen/richtlijn/2026-nvvb-handreiking-adresonderzoek.md) | NVVB: Adresonderzoek |
 | [Wet BRP](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md) | Wet basisregistratie personen |
 
 ### Afstemming met GEMMA

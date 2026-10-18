@@ -1,38 +1,12 @@
 begrip: Heffing
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per belastingplichtige en belastbaar feit.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Opgelegd, betaald, ingevorderd (Gemeentewet hfst. XV).
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
   wordt_bewerkt:
     waarde: ja
     naar:
     - onderhouden-graf
     - verlenen-grafrecht
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Het hoogste herkenbare niveau voor lijkbezorgingsrechten en retributie.
-    bronnen:
-    - 2026-vng-retributies
   generiek:
     waarde: ja
     onderbouwing: 'Heffingen komen in veel onderwerpen voor: belastingen en rechten (Gemeentewet art. 216, 229).'
@@ -88,4 +62,4 @@ bronnen:
 - 2024-rijk-gemeentewet-wettekst
 - 2026-vng-retributies
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-status: goedgekeurd
+status: review

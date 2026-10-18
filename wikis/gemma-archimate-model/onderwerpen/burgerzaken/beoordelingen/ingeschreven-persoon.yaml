@@ -1,19 +1,9 @@
 begrip: Ingeschreven persoon
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke ingeschreven persoon heeft één persoonslijst met een eigen administratienummer en burgerservicenummer (HUP Achtergronden; HUP Immigratie).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-    - 2026-rvig-hup-immigratie
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Ontstaat bij de eerste inschrijving, verandert bij verhuizing, emigratie en hervestiging en wordt opgeschort bij emigratie, overlijden of fout (LO BRP 1.6).
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -45,23 +35,6 @@ kenmerken:
     - voltrekken-huwelijk
     - wijzigen-identificatienummers
     - wijzigen-naamgebruik
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van een ander object.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente schrijft de ingezetene zelf in en houdt de gegevens bij (HUP Achtergronden).
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een specialisatie van natuurlijk persoon (GGM) met eigen gegevens en een eigen behandeling in de BRP; ingezetene en niet-ingezetene zijn zijn specialisaties.
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
 definitie: Persoon die in de basisregistratie personen is ingeschreven, als ingezetene of als niet-ingezetene.
 beschrijving:
 - Van elke persoon is in de BRP één persoonslijst, de administratieve levensloop van die persoon (HUP Achtergronden). Een ingezetene woont in Nederland; het college van de gemeente waar hij zijn adres heeft houdt zijn gegevens bij. Een niet-ingezetene woont niet in Nederland; zijn gegevens staan in de registratie niet-ingezetenen (RNI), onder verantwoordelijkheid van de minister van BZK (HUP Achtergronden; LO BRP 1.5.2).
@@ -145,4 +118,4 @@ bronnen:
 - 2025-rvig-logisch-ontwerp-brp-2025q1
 - 2026-rvig-hup-achtergronden-en-begrippen
 - 2023-rvig-circulaire-adresonderzoek-brp
-status: goedgekeurd
+status: review

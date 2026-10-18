@@ -1,36 +1,13 @@
 begrip: Afspraak over uitvoering
 vak: bedrijf/passief
+hoofdkenmerk: afspraak
 onderwerpen:
 - participatie
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per toegewezen verzoek, met een eigen proces, resultaat, looptijd en budget (var. 1 art. [9] onder a en b; var. 2 art. [14] onder a en b).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Ontstaat bij toewijzing, loopt tijdens de uitvoering van de taak en eindigt na afloop of bij tussentijdse beëindiging, met een evaluatie (var. 1 art. [9] onder a, d en e; var. 2 art. [14] onder a, d en e).
-    bronnen:
-    - 2024-vng-model-participatieverordening
   wordt_bewerkt:
     waarde: ja
     naar:
     - behandelen-verzoek-uitdaagrecht
-  afspraak:
-    waarde: ja
-    onderbouwing: Afspraken tussen gemeente en indiener met rechten en plichten, ook bij niet nakomen (var. 1 art. 9).
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: De afspraak zelf.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Bestaat naast het verzoek en loopt door na de reactie op het verzoek, tot de uitvoering is beëindigd.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: Het bestuursorgaan maakt de afspraken samen met de indiener.
 definitie: Afspraken die het bestuursorgaan bij toewijzing van een verzoek uitdaagrecht met de indiener maakt over de uitvoering.
 beschrijving:
 - Wijst het bevoegde bestuursorgaan een verzoek toe, dan maakt het met de indiener afspraken over het proces, het resultaat en de looptijd, het budget en de financieringswijze, het contact met en de ondersteuning door het bestuursorgaan, de stappen bij het niet nakomen van de afspraken en het tussentijds beëindigen, en de evaluatie (2024-vng-model-participatieverordening, var. 1 art. [9]; var. 2 art. [14]). Variant 1 laat de onderwerpen facultatief, variant 2 noemt ze vast.
@@ -55,4 +32,4 @@ bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2024-vng-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review

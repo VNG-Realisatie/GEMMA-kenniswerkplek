@@ -9,54 +9,16 @@ kenmerken:
     naar:
     - aangever
     - ambtenaar-van-de-burgerlijke-stand
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     naar:
     - overlijden
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De akte van overlijden (BW 1 art. 19f).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 19f-19h; Besluit burgerlijke stand art. 61-65, 67a.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-burgerlijke-stand
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aangifte van het overlijden tot de akte.
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - overlijdensaangifte
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het ontvangen van de aangifte van een overlijden of lijkvinding en het opmaken van de akte van overlijden.
 beschrijving:
 - De ambtenaar van de burgerlijke stand van de gemeente van overlijden stelt de identiteit van de aangever vast en maakt de akte op, op grond van de verklaring van overlijden; de aangifte kan elektronisch, met het burgerservicenummer van de overledene en de verklaring van de arts (BW 1 art. 19f, 19h; Besluit burgerlijke stand art. 67a). Bij een lijkvinding maakt hij de akte op de schriftelijke aangifte van de hulpofficier van justitie; datum en plaats van de vinding gelden als datum en plaats van overlijden (Besluit burgerlijke stand art. 62; HUP Lijkvinding).
@@ -107,4 +69,4 @@ bronnen:
 - 2026-rvig-hup-rechtsvermoeden-van-overlijden
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

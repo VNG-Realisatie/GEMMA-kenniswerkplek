@@ -1,7 +1,7 @@
 begrip: Verstrooiingsplaats
 kenmerken:
-  eigen_identiteit:
-    waarde: nee
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: 'Onderdeel van Begraafplaats: Plaats op de begraafplaats waar as wordt verstrooid (Groningen art. 1 bb).'
 toelichting: 'Onderdeel van Begraafplaats: Plaats op de begraafplaats waar as wordt verstrooid (Groningen art. 1 bb).'
 genoemd_begrip: Begraafplaats

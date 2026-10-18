@@ -3,31 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Verwerking in de BRP binnen vier weken, met een bevestiging per brief (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 89).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - verwerken-buitenlands-document
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 89), apart van de BRP-inschrijving; geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het laten opnemen van een buitenlands document over een geboorte, huwelijk, overlijden, echtscheiding, erkenning of adoptie in de basisregistratie personen.
 beschrijving:
 - 'Op afspraak, met het gelegaliseerde en zo nodig vertaalde originele document (Utrecht). Wie Nederlander is, kan de buitenlandse akte daarna laten inschrijven in de registers van de gemeente Den Haag (BW 1 art. 25; Utrecht). Grondslag in de UPL: art. 2.38 Wet BRP (nr. 89).'
@@ -43,4 +22,4 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

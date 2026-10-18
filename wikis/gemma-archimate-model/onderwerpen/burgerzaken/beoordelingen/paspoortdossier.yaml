@@ -1,20 +1,10 @@
 begrip: Paspoortdossier
 vak: bedrijf/passief
+hoofdkenmerk: representatie
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Reisdocument
-kenmerken:
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Bewaren van de aanvraagstukken, zoals het aanvraagformulier (HUP Uitreiking).
-    bronnen:
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: ja
-    onderbouwing: Het dossier met de aanvullende gegevens en stukken van een verstrekt reisdocument (HUP Uitreiking).
-    bronnen:
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
+kenmerken: {}
 toelichting: 'Representatie, geen pagina: het dossier van de verstrekkende gemeente met het aanvraagformulier en de andere gegevens van een verstrekt reisdocument (HUP Uitreiking). Vermeld bij Reisdocument.'
+bronnen:
+- 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument

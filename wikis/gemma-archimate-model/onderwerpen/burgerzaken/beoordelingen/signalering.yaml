@@ -1,37 +1,12 @@
 begrip: Signalering
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Behandelen aanvraag reisdocument
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per persoon een vermelding, met de autoriteit, de bepaling, de reden en de datum (Paspoortwet art. 25 lid 3).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Vermeld, gewijzigd en verwijderd als de gronden vervallen of na twee jaar zonder kennisgeving (Paspoortwet art. 25 lid 3 en 5; HUP Signalering).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-signalering-verstrekking-reisdocument
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Raadplegen bij de aanvraag en de uitreiking, en bij elke aangifte van verblijf en adres; registreren en verwijderen in categorie 12 (Paspoortwet art. 41, 42 lid 3, 44 lid 2; HUP Signalering).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-signalering-verstrekking-reisdocument
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: 'De minister vermeldt de persoon in het register op verzoek van een tot signalering bevoegd orgaan en deelt dat de gemeente mee (Paspoortwet art. 25 lid 1, 3 en 4; HUP Signalering: Vb01-bericht van de RvIG).'
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212

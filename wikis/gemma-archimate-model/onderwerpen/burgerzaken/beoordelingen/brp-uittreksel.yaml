@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een gewaarmerkt uittreksel als officieel bewijs, bijvoorbeeld voor een woningcorporatie of werkgever (Utrecht Persoonsgegevens bekijken).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 93).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - verstrekken-persoonsgegevens
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 93); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Een gewaarmerkt uittreksel met de eigen gegevens uit de basisregistratie personen, als officieel bewijs van inschrijving.
 beschrijving:
 - Een uitdraai van de persoonslijst is alleen voor eigen gebruik en geen bewijs van inschrijving; een officieel bewijs is een gewaarmerkt uittreksel uit de BRP (Utrecht Persoonsgegevens bekijken). Grondslag is art. 2.55 Wet BRP (UPL nr. 93).
@@ -47,4 +25,5 @@ specialisaties:
   omschrijving: 'Uittreksel uit de RNI voor wie erin staat, gestuurd naar het adres in de RNI (Utrecht RNI). Geen eigen pagina: de UPL noemt het niet apart.'
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+- 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+status: review

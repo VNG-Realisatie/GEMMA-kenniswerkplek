@@ -1,37 +1,13 @@
 begrip: Particulier graf voor bepaalde tijd
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk graf apart.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Uitgegeven en geruimd zoals elk graf.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Uitgegeven en geruimd door de gemeente, zoals elk graf.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Variant van Graf: zelfde gegevens en behandeling, geen eigen levenscyclus.'
 genoemd_begrip: Graf
 toelichting: 'Specialisatie zonder pagina van Graf: Particulier graf voor een bepaald aantal jaren, te verlengen (Groningen art. 1 s, 16).'
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

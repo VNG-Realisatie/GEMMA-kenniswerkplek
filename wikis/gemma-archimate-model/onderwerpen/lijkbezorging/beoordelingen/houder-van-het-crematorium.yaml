@@ -2,28 +2,11 @@ begrip: Houder van het crematorium
 vak: bedrijf/actief-intern
 hoofdkenmerk: hoedanigheid
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
     naar:
     - uitvoeren-lijkbezorging
     - beheren-crematoria
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: 'Naast Houder van de begraafplaats: eigen plichten (bergen en bestemmen van de as, register van gecremeerde lijken); geen breder element.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 definitie: Verantwoordelijkheid voor een crematorium, het bergen van de as en de bestemming daarvan.
 beschrijving:
 - De houder van het crematorium bergt de as in asbussen, bewaart ze en zorgt voor de bestemming van de as, en houdt een openbaar register van gecremeerde stoffelijke overschotten (art. 50, 58, 59). Bij een gemeentelijk crematorium is de gemeente houder, bij een bijzonder crematorium een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52).
@@ -62,4 +45,6 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: gemeente
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+status: review

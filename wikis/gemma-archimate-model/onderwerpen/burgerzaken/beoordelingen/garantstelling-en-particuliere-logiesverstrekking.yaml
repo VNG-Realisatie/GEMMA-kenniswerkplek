@@ -4,23 +4,10 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Legalisatie handtekening
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een formulier met gelegaliseerde handtekening voor de visumaanvraag van de gast (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: De inwoner die een gast uit het buitenland ontvangt (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
-  gerealiseerd_door:
-    waarde: ja
-    onderbouwing: Dezelfde handeling als de legalisatie van een handtekening (Utrecht Handtekening legaliseren).
-    bronnen:
-    - 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
-    - 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: Een legalisatie van een handtekening op een ander formulier, zonder eigen handeling van de gemeente; de UPL noemt het niet apart onder taakveld 0.2.
 toelichting: 'Specialisatie zonder pagina van de dienst Legalisatie handtekening: de gemeente legaliseert de handtekening van de garantsteller op het formulier voor de visumaanvraag van een gast (Utrecht). Het raakt de BRP niet.'
+bronnen:
+- 2026-utrecht-burgerzaken-garantstelling-en-particuliere-logiesverstrekking-aanvragen
+- 2026-utrecht-burgerzaken-handtekening-laten-legaliseren-bewijzen-dat-de-handtekening-echt-is

@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: Algemene maatregel van bestuur van het Rijk.
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht.
-    bronnen:
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -88,4 +83,6 @@ gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen beleidskader voor deze regeling; nieuw voor GEMMA.
 regelgever: rijk
-status: goedgekeurd
+bronnen:
+- 2026-rijk-reglement-rijbewijzen-bwbr0008074
+status: review

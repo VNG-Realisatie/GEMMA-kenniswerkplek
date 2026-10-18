@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een aangepast adres in de BRP, doorgegeven aan organisaties (Utrecht Verhuizing doorgeven).
-    bronnen:
-    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 424): iedereen vanaf 16 jaar, en ouders voor hun kinderen (Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
   gerealiseerd_door:
     waarde: ja
     naar:
     - verwerken-adreswijziging
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 424); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het doorgeven van een verhuizing binnen of naar de gemeente, zodat het nieuwe adres in de basisregistratie personen komt.
 beschrijving:
 - De verhuizing wordt doorgegeven vanaf vier weken voor tot vijf dagen na de verhuisdatum, online met DigiD, per post of aan de balie; de gemeente past de gegevens binnen ongeveer een week aan en geeft de verhuizing door aan organisaties (Utrecht Verhuizing doorgeven). Grondslag is art. 2.39 Wet BRP (UPL nr. 424).
@@ -56,4 +34,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-verhuizing-doorgeven
 - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-status: goedgekeurd
+status: review

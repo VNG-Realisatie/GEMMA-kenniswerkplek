@@ -3,23 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De bevestiging van de verkrijging van het Nederlanderschap (Besluit art. 11, 60a).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De optant, extern (Besluit art. 3; UPL nr. 262: burger).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -49,4 +32,4 @@ relaties:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-status: goedgekeurd
+status: review

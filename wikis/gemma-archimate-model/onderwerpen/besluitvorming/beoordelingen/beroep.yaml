@@ -3,36 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een uitspraak van de bestuursrechter; bij een gegrond beroep is het besluit vernietigd en neemt de gemeente zo nodig een nieuw besluit (art. 8:72).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk besluit waartegen een belanghebbende beroep instelt.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Hoofdstuk 6 en 8 Awb: beroepschrift bij de bestuursrechter, termijn van zes weken, bezwaar vooraf, stukken en verweerschrift binnen vier weken (art. 6:4 lid 3, 6:7, 7:1, 8:42).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL nr. 54): de belanghebbende bij het besluit (art. 8:1).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
     - voeren-verweer-in-beroep
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 54); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -48,4 +22,4 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst en geen proces voor beroep; alleen de functie Bezwaar- en beroepafhandeling. Nieuw voor GEMMA.
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

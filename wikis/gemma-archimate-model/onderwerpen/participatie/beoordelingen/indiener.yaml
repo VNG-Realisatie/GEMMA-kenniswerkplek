@@ -4,29 +4,10 @@ hoofdkenmerk: hoedanigheid
 onderwerpen:
 - participatie
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: De rol bestaat alleen voor wie een verzoek wil indienen of heeft ingediend; een inwoner of maatschappelijke partij vervult haar (var. 1 art. 6 lid 1, 7 lid 1).
   voert_gedrag_uit:
     waarde: ja
     naar:
     - behandelen-verzoek-uitdaagrecht
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld; de bronnen noemen geen gegevens over indieners naast het verzoek.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Geen eigen levensloop naast het verzoek.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: De gemeente informeert en ondersteunt de indiener, maar de bronnen noemen geen gegevens die zij los van het verzoek over hem vastlegt.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: 'Geen specialisatie van Belanghebbende: indienen kunnen ingezetenen en maatschappelijke partijen (Gemeentewet art. 150 lid 3; var. 1 art. 6 lid 1), ook zonder een belang dat rechtstreeks bij een besluit is betrokken (Awb art. 1:2). Evenmin van Aanvrager zolang het verzoek geen aanvraag is (vraag bij Verzoek uitdaagrecht).'
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-model-participatieverordening
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van de inwoner of maatschappelijke partij die bij het college een verzoek uitdaagrecht indient of wil indienen.
 beschrijving:
@@ -53,4 +34,6 @@ relaties:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2024-vng-model-participatieverordening
-status: goedgekeurd
+- 2026-rijk-gemeentewet-wettekst
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

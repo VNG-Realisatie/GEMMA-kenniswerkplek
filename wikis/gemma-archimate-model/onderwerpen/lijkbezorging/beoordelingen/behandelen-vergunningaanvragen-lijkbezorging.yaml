@@ -1,6 +1,6 @@
 begrip: Behandelen vergunningaanvragen lijkbezorging
 vak: bedrijf/gedrag-intern
-soort_gedrag: groepeert_processen
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - lijkbezorging
 kenmerken:
@@ -14,6 +14,9 @@ kenmerken:
     - verlenen-vergunning-bijzonder-crematorium
     - verlenen-verlof-tot-ontleding
     - afgeven-laissez-passer
+  procesniveau:
+    waarde: cluster naar soort werk
+    onderbouwing: Groepering van bedrijfsprocessen van één soort werk.
 definitie: Het behandelen van aanvragen om een vergunning, verlof of toestemming voor de lijkbezorging en voor begraafplaatsen en crematoria.
 beschrijving:
 - 'Binnen de lijkbezorging verleent de gemeente op aanvraag verloven, vergunningen en toestemmingen: het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11), een andere termijn (art. 17), de vergunning tot opgraving (art. 29), de toestemming voor een bijzondere begraafplaats (art. 40, 41), de vergunning voor een bijzonder crematorium (art. 53), het verlof tot ontleding (art. 68) en het laissez-passer voor lijken (Besluit op de lijkbezorging art. 11). Het cluster groepeert deze bedrijfsprocessen als specialisatie van het GEMMA-proces Behandelen aanvraag vergunning of ontheffing.'
@@ -76,4 +79,4 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   vindplaats: Besluit op de lijkbezorging art. 11
-status: goedgekeurd
+status: review

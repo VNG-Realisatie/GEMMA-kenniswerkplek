@@ -4,11 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk reisdocument dat kwijtraakt of wordt gestolen.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -43,4 +38,4 @@ bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
 - 2026-rvig-hup-inhouding-inlevering-vermissing
-status: goedgekeurd
+status: review

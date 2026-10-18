@@ -4,12 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk reisdocument waarvan de geldigheid verloopt of de houder zijn gegevens wijzigt.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   leidt_tot_gedrag:
     waarde: ja
     onderbouwing: 'Leidt via de inlevering tot Inhouden reisdocument: de houder levert een van rechtswege vervallen reisdocument in en het wordt ingehouden (Paspoortwet art. 54 lid 1 onder a, 56; HUP Van rechtswege vervallen).'
@@ -39,4 +33,7 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
   vindplaats: art. 54 lid 1 onder a, 56
-status: goedgekeurd
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
+status: review

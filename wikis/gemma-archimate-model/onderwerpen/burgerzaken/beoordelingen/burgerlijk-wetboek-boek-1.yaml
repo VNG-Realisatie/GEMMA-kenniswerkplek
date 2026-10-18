@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: Rijkswet in formele zin (BWBR0002656).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -241,4 +236,6 @@ relaties:
   vindplaats: UPL nr. 437, art. 49a
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+status: review

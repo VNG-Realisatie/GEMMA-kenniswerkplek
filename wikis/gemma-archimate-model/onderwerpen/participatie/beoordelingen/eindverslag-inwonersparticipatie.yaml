@@ -1,16 +1,9 @@
 begrip: Eindverslag inwonersparticipatie
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - participatie
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Eén verslag per afgeronde inwonersparticipatie (var. 1 art. 5 lid 1).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt eenmaal opgesteld en openbaar gemaakt; de bronnen noemen geen wijziging of einde.
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -18,18 +11,9 @@ kenmerken:
     onderbouwing: Het bestuursorgaan stelt het verslag op en maakt het openbaar, binnen Betrekken inwoners bij beleid (var. 1 art. 5 lid 1; var. 2 art. [10] lid 1).
     bronnen:
     - 2024-vng-model-participatieverordening
-  afspraak:
+  levenscyclus:
     waarde: nee
-    onderbouwing: Een eenzijdig verslag.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Het verslag zelf.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Een eigen document na afloop, naast het participatieplan, dat dan al bestaat.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: Het bestuursorgaan stelt het op; bij een raadsbesluit het college (var. 1 art. 5 lid 3).
+    onderbouwing: Wordt eenmaal opgesteld en openbaar gemaakt; de bronnen noemen geen wijziging of einde.
 definitie: Openbaar verslag waarin een bestuursorgaan na afloop van inwonersparticipatie het proces, de uitkomsten, zijn reactie daarop en een evaluatie vastlegt.
 beschrijving:
 - Nadat inwonersparticipatie heeft plaatsgevonden stelt het bestuursorgaan het eindverslag op en maakt het openbaar; heeft het college het plan opgesteld, dan stelt het ook het eindverslag op en informeert het de raad over de inhoud (2024-vng-model-participatieverordening, var. 1 art. 5 lid 1, 3; var. 2 art. [10] lid 1, 3).
@@ -50,4 +34,3 @@ besluiten:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: afgewezen

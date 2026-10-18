@@ -2,7 +2,7 @@
 id: aanvraag-data
 type: data-object
 archimate_type: data-object
-status: goedgekeurd
+status: review
 naam: Aanvraag-data
 element: Aanvraag
 relatie: realisatie
@@ -17,7 +17,7 @@ ggm_beleidsdomein: Archief
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling aanvraag.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur. Volgt de status van [Aanvraag](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/aanvraag.md).
+**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Aanvraag](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/aanvraag.md).
 
 ## Betekenis
 

@@ -4,22 +4,10 @@ hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: Een hoedanigheid; de persoon bestaat los ervan, de rol niet.
   voert_gedrag_uit:
     waarde: ja
     naar:
     - behandelen-optieverklaring
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van degene die een optieverklaring aflegt om Nederlander te worden.
 beschrijving:
@@ -37,4 +25,4 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   vindplaats: art. 3, 6, 7; art. 60a lid 2 en 4
-status: goedgekeurd
+status: review

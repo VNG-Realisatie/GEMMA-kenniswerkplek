@@ -2,29 +2,15 @@ begrip: Gemeenteraad
 vak: bedrijf/actief-intern
 hoofdkenmerk: handelende_partij
 kenmerken:
-  los_van_verantwoordelijkheid:
+  soort_partij:
     waarde: ja
-    onderbouwing: Bestaat los van elke afzonderlijke bevoegdheid.
+    onderbouwing: Elke gemeente heeft een raad, een college van burgemeester en wethouders en een burgemeester (Gemeentewet art. 6).
     bronnen:
     - 2024-rijk-gemeentewet-wettekst
   vervult_een_rol:
     waarde: ja
     naar:
     - beslisser
-  soort_partij:
-    waarde: ja
-    onderbouwing: Elke gemeente heeft een raad, een college van burgemeester en wethouders en een burgemeester (Gemeentewet art. 6).
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
   generiek:
     waarde: ja
     onderbouwing: Komt in elk onderwerp voor als bestuursorgaan (Gemeentewet art. 6).
@@ -56,4 +42,6 @@ onderwerpen:
 - bestuur-en-organisatie
 - lijkbezorging
 doelgroep: gemeente
-status: goedgekeurd
+bronnen:
+- 2024-rijk-gemeentewet-wettekst
+status: review

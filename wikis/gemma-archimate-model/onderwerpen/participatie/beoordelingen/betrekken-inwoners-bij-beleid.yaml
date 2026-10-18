@@ -12,13 +12,6 @@ kenmerken:
     waarde: ja
     naar:
     - beslisser
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - participatieplan
-    - eindverslag-inwonersparticipatie
-    - beleidsnota
-    - participatieverordening
   aanleiding:
     waarde: ja
     naar:
@@ -27,44 +20,11 @@ kenmerken:
     onderbouwing: Het besluit van het bestuursorgaan dat over zijn beleid inwonersparticipatie plaatsvindt, voorafgaand aan de voorbereiding, uitvoering of evaluatie van dat beleid (var. 1 art. 2 lid 1, 3 lid 1).
     bronnen:
     - 2024-vng-model-participatieverordening
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het openbare eindverslag met proces, uitkomsten, een onderbouwde reactie en een evaluatie (var. 1 art. 5; var. 2 art. [10]).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk beleid waarover een bestuursorgaan inwonersparticipatie laat plaatsvinden (var. 1 art. 2 lid 1).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Art. 150 lid 1 en 2 (verordening, inspraak via afdeling 3.4 Awb); in de VNG-modelverordening plan, inspraak en eindverslag met termijnen (var. 1 art. 3–5; var. 2 art. [7]–[10]).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-model-participatieverordening
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Geen deel van een groter proces, ook niet van het vaststellen van beleid; eigen aanleiding, plan en eindverslag.
-  klant_tot_klant:
-    waarde: ja
-    onderbouwing: Van het besluit dat inwonersparticipatie plaatsvindt tot het openbare eindverslag (var. 1 art. 2 lid 1, 5 lid 1).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: Omvat de hele levensloop van één participatieplan, van opstellen en openbaar maken vóór de participatie tot het eindverslag na afloop (var. 1 art. 3, 5; var. 2 art. [7], [10]).
     bronnen:
     - 2024-vng-model-participatieverordening
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt in een eindverslag, niet in een besluit; het besluit over het beleid zelf valt buiten dit proces.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Realiseert geen dienst of product uit de UPL; het resultaat is een openbaar verslag en invloed op het beleid.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt in het openbare eindverslag, niet in een benoemde toestandsverandering.
 synoniemen:
 - naam: Inwonersparticipatie
   context: beleid
@@ -125,13 +85,6 @@ relaties:
   bronnen:
   - 2024-vng-model-participatieverordening
   vindplaats: var. 1 art. 2–5; var. 2 art. [3]–[10]
-- soort: toegang (registreren)
-  naar: eindverslag-inwonersparticipatie
-  naam: stelt op en maakt openbaar
-  ggm_match: geen
-  bronnen:
-  - 2024-vng-model-participatieverordening
-  vindplaats: var. 1 art. 5 lid 1; var. 2 art. [10] lid 1
 object_van:
   id: uitvoeren-inwonersparticipatie
   wijziging: hernoemd
@@ -148,4 +101,4 @@ besluiten:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review

@@ -6,11 +6,6 @@ kenmerken:
     onderbouwing: Rijkswet.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht, versie 2025-07-01.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -205,4 +200,4 @@ regelgever: rijk
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-vng-wet-op-de-lijkbezorging
-status: goedgekeurd
+status: review

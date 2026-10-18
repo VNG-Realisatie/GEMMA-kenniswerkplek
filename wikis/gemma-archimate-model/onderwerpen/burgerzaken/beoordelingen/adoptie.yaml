@@ -4,13 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Gebeurt bij veel personen, elk jaar opnieuw.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rvig-hup-adoptie
-    - 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -49,4 +42,8 @@ relaties:
   vindplaats: art. 2.57
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rvig-hup-adoptie
+- 2026-utrecht-burgerzaken-adoptie-kind-inschrijven
+status: review

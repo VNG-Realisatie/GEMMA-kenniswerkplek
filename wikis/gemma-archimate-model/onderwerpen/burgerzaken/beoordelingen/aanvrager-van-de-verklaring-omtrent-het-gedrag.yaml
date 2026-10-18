@@ -4,24 +4,10 @@ hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: 'Een hoedanigheid, geen partij: de persoon zelf is de ingeschreven persoon.'
   voert_gedrag_uit:
     waarde: ja
     naar:
     - behandelen-aanvraag-verklaring-omtrent-het-gedrag
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per aanvraag één aanvrager (Wet justitiële en strafvorderlijke gegevens art. 33).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: De gegevens van de persoon horen bij Ingeschreven persoon; de rol zelf wordt niet bijgehouden.
 definitie: Hoedanigheid van degene omtrent wiens gedrag een verklaring omtrent het gedrag wordt gevraagd en die de aanvraag indient.
 beschrijving:
 - De wet kent de aanvrager, degene omtrent wiens gedrag de verklaring wordt gevraagd, of een vertegenwoordiger van de rechtspersoon (Wet justitiële en strafvorderlijke gegevens art. 33). De aanvraag bevat de voornamen, de geboortedatum en het doel, en de aanvrager of degene te wiens behoeve de verklaring wordt gevraagd, geeft het risico voor de samenleving op (art. 32). In de praktijk heeft vaak een werkgever of een andere organisatie het aanvraagformulier ingevuld; de aanvrager zelf dient in en betaalt (Utrecht).
@@ -47,4 +33,6 @@ relaties:
   - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
   vindplaats: art. 30, 33; Utrecht regel 37-53
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
+status: review

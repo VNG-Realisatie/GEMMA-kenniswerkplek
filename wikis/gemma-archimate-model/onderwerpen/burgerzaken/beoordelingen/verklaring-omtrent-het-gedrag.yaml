@@ -1,37 +1,14 @@
 begrip: Verklaring omtrent het gedrag
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke verklaring is afgegeven aan één aanvrager voor een doel (Wet justitiële en strafvorderlijke gegevens art. 28, 32).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt aangevraagd, onderzocht en afgegeven of geweigerd, of niet in behandeling genomen (Wet justitiële en strafvorderlijke gegevens art. 30, 34, 35, 37).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
   wordt_bewerkt:
     waarde: ja
     naar:
     - afgeven-verklaring-omtrent-het-gedrag
     - behandelen-aanvraag-verklaring-omtrent-het-gedrag
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: 'Geen vorm van een ander begrip: de verklaring is zelf de uitkomst van het onderzoek van de minister.'
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De minister geeft de verklaring af binnen de keten die de gemeente met hem uitvoert; ze is geen invoer voor een gemeentelijk proces (Wet justitiële en strafvorderlijke gegevens art. 30, 37).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 definitie: Verklaring van de minister dat uit een onderzoek naar iemands gedrag geen bezwaren zijn gebleken, gelet op het doel waarvoor ze wordt gevraagd.
 definitie_formeel: een verklaring van Onze Minister dat uit een onderzoek met betrekking tot het gedrag van de betrokken natuurlijke persoon of rechtspersoon ingesteld, gelet op het risico voor de samenleving in verband met het doel waarvoor de afgifte is gevraagd en na afweging van het belang van betrokkene, niet is gebleken van bezwaren tegen die natuurlijke persoon of rechtspersoon
 definitie_formeel_bron:
@@ -77,4 +54,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
 - 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
-status: goedgekeurd
+status: review

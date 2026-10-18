@@ -2,7 +2,7 @@
 id: paspoortbesluit
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Paspoortbesluit
 onderwerpen:
 - burgerzaken
@@ -20,7 +20,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling paspoortbesluit.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -42,7 +42,7 @@ In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten me
 
 ### Typering
 
-Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern ja, 1/1).
+Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (2 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -51,15 +51,16 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijksregelgeving van het Koninkrijk. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Behandelen aanvraag reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Paspoort tweede](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md), [Reisdocument niet-ingezetene](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument-niet-ingezetene.md), [Paspoortwet](paspoortwet.md), [Inhouden reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md). |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Behandelen aanvraag reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Paspoort tweede](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md), [Reisdocument niet-ingezetene](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/reisdocument-niet-ingezetene.md), [Paspoortwet](paspoortwet.md), [Inhouden reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Behandelen aanvraag reisdocument niet-ingezetene](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument-niet-ingezetene.md). [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
+| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, standaard. [Paspoortbesluit](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortbesluit-bwbr0044308.md) |
 
 ### Relaties
 

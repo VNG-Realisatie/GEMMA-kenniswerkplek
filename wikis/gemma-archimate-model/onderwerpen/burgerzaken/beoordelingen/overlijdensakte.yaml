@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een uittreksel, internationaal uittreksel of afschrift van de akte van overlijden, nodig om banken en verzekeraars te informeren (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 316); de nabestaande (Utrecht).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
   gerealiseerd_door:
     waarde: ja
     naar:
     - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 316), apart van de akte van de burgerlijke stand (nr. 23); de UPL noemt varianten apart.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het verkrijgen van een uittreksel of afschrift van de akte van overlijden.
 beschrijving:
 - 'De UPL noemt als grondslag art. 19f BW 1, het opmaken van de akte van overlijden; de afnemer krijgt een uittreksel, een internationaal uittreksel of een afschrift (Utrecht: € 17,80 in 2026). De akte zelf is een specialisatie van Akte van de burgerlijke stand. Een afschrift bevat ook de latere vermeldingen, een uittreksel de toestand op het moment van afgifte (Besluit burgerlijke stand art. 26).'
@@ -50,4 +28,4 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-status: goedgekeurd
+status: review

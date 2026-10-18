@@ -3,17 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een vergunning tot opgraving met voorschriften over geneeskundig toezicht, vervoer en bestemming (Wlb art. 29 lid 2).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger en bedrijf (UPL); de rechthebbende dient de aanvraag in bij de burgemeester (Groningen art. 28 lid 1).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -39,4 +28,4 @@ relaties:
   vindplaats: art. 28 lid 1; Wlb art. 29 lid 1
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

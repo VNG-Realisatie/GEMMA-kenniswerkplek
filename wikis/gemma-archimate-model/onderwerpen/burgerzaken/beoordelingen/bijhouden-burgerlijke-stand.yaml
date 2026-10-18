@@ -8,53 +8,17 @@ kenmerken:
     waarde: ja
     naar:
     - ambtenaar-van-de-burgerlijke-stand
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     onderbouwing: Een aangifte (geboorte, overlijden), een verklaring of kennisgeving (erkenning, naamskeuze, voornemen te trouwen) of een rechterlijke uitspraak of besluit (BW 1 art. 19e, 19h, 44, 203, 20).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een akte of een latere vermelding in de registers, en afschriften en uittreksels daarvan (BW 1 art. 18, 20, 23).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Titel 4 Boek 1 BW (art. 16-29) en het Besluit burgerlijke stand 1994.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Het levensloopproces van een kernobject; geen deel van een groter proces.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van de akte: opmaken, latere vermeldingen, aanvulling of verbetering, afsluiten en overbrengen van de registers (BW 1 art. 18, 20, 24; Besluit burgerlijke stand art. 6, 7, 31).'
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het opmaken en bijhouden van de akten van de burgerlijke stand in de registers van de gemeente, van opmaken tot latere vermelding en afgifte.
 beschrijving:
 - De ambtenaar van de burgerlijke stand maakt de akten op van geboorte, erkenning, naamskeuze, huwelijk, geregistreerd partnerschap, omzetting en overlijden, schrijft rechterlijke uitspraken en buitenlandse akten in en voegt latere vermeldingen toe, zoals een naamswijziging, adoptie, geslachtswijziging of echtscheiding (BW 1 art. 16a, 18, 20). Hij weigert een akte bij ongenoegzame bescheiden of strijd met de openbare orde; de belanghebbende kan dan de rechtbank verzoeken (art. 18c, 27).
@@ -217,4 +181,4 @@ bronnen:
 - 2026-rvig-hup-algemeen
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

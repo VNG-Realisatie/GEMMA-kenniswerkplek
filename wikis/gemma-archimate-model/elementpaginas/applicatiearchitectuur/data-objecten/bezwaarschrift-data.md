@@ -2,7 +2,7 @@
 id: bezwaarschrift-data
 type: data-object
 archimate_type: data-object
-status: goedgekeurd
+status: review
 naam: Bezwaarschrift-data
 element: Bezwaarschrift
 relatie: realisatie
@@ -14,7 +14,7 @@ match:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling bezwaarschrift.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur. Volgt de status van [Bezwaarschrift](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/bezwaarschrift.md).
+**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Bezwaarschrift](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/bezwaarschrift.md).
 
 ## Betekenis
 

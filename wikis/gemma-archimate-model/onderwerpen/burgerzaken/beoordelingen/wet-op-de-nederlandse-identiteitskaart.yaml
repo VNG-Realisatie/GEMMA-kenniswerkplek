@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: Rijkswet (Stb. 2026/180).
     bronnen:
     - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht sinds 2026-10-01; hoofdstuk III en IV en art. 12 vervallen per 01-03-2027.
-    bronnen:
-    - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -70,4 +65,6 @@ relaties:
   - 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
   vindplaats: art. 1, 5, 5a, 14
 synoniemen: []
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-nederlandse-identiteitskaart-bwbr0052951
+status: review

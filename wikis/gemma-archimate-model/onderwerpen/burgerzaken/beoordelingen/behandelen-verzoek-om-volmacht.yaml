@@ -9,54 +9,16 @@ kenmerken:
     naar:
     - beslisser
     - kiezer
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - stempas
   aanleiding:
     waarde: ja
     onderbouwing: Het verzoekschrift van de kiezer op een formulier, met de verklaring van de gemachtigde (Kieswet art. L 8).
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De inwilliging met een volmachtbewijs voor de gemachtigde, of de afwijzing met redenen (Kieswet art. L 6, L 11).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk verzoek.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Kieswet art. L 1-L 15: wie gemachtigde kan zijn, termijnen, beslissing niet eerder dan op de dag van de kandidaatstelling.'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-stempassen
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoekschrift tot het volmachtbewijs of de afwijzing.
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Een beschikking van de burgemeester op het verzoek (Kieswet art. L 11 lid 1 en 4).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - volmachtbewijs-verkiezingen
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 kernobject: stempas
 afnemer: extern
 definitie: Het behandelen van het schriftelijke verzoek van een kiezer om bij volmacht te stemmen, tot inwilliging met een volmachtbewijs of afwijzing.
@@ -83,4 +45,6 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: UPL nr. 453
-status: goedgekeurd
+bronnen:
+- 2026-rijk-kieswet-bwbr0004627
+status: review

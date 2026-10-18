@@ -2,7 +2,7 @@
 id: ggd
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: GGD
 onderwerpen:
 - lijkbezorging
@@ -21,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling ggd.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -49,7 +49,7 @@ Een arts meldt een besmet stoffelijk overschot aan de GGD, die de melding doorge
 
 ### Typering
 
-Actor. Uitkomst van de beslistabel: Samenwerkingsverband met eigen rechtspersoon (kern ja).
+Actor. Uitkomst van de beslistabel: Samenwerkingsverband met eigen rechtspersoon (1 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -57,16 +57,16 @@ Actor. Uitkomst van de beslistabel: Samenwerkingsverband met eigen rechtspersoon
 
 ### Kenmerken
 
-**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: samenwerkingsverband. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: samenwerkingsverband.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **los van verantwoordelijkheid**: Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | Ja, bestaat los van de adviestaak bij een besmet lijk. [Wet publieke gezondheid](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) |
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [Wet publieke gezondheid](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) |
 | **eigen rechtspersoon**: Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | Ja, openbaar lichaam, ingesteld bij gemeenschappelijke regeling (art. 14 lid 2). [Wet publieke gezondheid](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) |
-| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, met [Adviseur](../rollen/adviseur.md). |
 | **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, elke gemeente is via een gemeenschappelijke regeling aangesloten bij een GGD (Wpg art. 14); een soort partij, geen individuele GGD. [Wet publieke gezondheid](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) |
+| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, met [Adviseur](../rollen/adviseur.md). [Wet publieke gezondheid](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-publieke-gezondheid-wettekst.md) |
 
 ### Relaties
 

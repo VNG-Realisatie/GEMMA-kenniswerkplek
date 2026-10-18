@@ -4,9 +4,6 @@ hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: Een verantwoordelijkheid; de partij die haar vervult kan ook andere rollen hebben.
   voert_gedrag_uit:
     waarde: ja
     naar:
@@ -18,15 +15,6 @@ kenmerken:
     - opmaken-geboorteakte
     - opmaken-akte-levenloos-geboren-kind
     - wijzigen-geslachtsvermelding
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Hoedanigheid van wie bij de gemeente aangifte doet van een feit voor de basisregistratie personen of de burgerlijke stand, voor zichzelf of een ander.
 beschrijving:
 - Een meerderjarige doet zelf aangifte van verblijf en adres, adreswijziging en vertrek; ouders, voogden en verzorgers zijn verplicht aangifte te doen voor minderjarigen; echtgenoten, partners en ouders met een meerderjarig kind zijn bevoegd voor elkaar; het hoofd van een instelling kan aangifte doen voor wie er verblijft (HUP Verblijfplaats). Het college kan verplichten in persoon te verschijnen (HUP Verblijfplaats; Besluit BRP art. 30).
@@ -99,4 +87,4 @@ bronnen:
 - 2026-rvig-hup-verblijfplaats
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rvig-hup-emigratie
-status: goedgekeurd
+status: review

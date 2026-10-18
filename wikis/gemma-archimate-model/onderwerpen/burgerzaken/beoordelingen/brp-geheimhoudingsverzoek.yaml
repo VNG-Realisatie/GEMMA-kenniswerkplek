@@ -3,33 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Geen verstrekking van gegevens aan bepaalde derden zonder toestemming (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-geheimhouden
-    - 2026-rvig-hup-verstrekkingsbeperking
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 87): de ingeschrevene van 16 jaar of ouder (HUP Verstrekkingsbeperking).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rvig-hup-verstrekkingsbeperking
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-verzoek-om-geheimhouding
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 87); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het verzoek om persoonsgegevens uit de basisregistratie personen niet aan bepaalde derden te verstrekken, of om dat stop te zetten.
 beschrijving:
 - Met geheimhouding krijgen onder meer advocaten, niet-commerciële instellingen en de Stichting Interkerkelijke Ledenadministratie geen gegevens zonder toestemming; instellingen met een wettelijke taak krijgen ze wel. De aanvraag kan online met DigiD of schriftelijk, en de geheimhouding gaat mee bij een verhuizing (Utrecht Persoonsgegevens geheimhouden). Grondslag is art. 2.59 Wet BRP (UPL nr. 87).
@@ -47,4 +24,4 @@ afnemer: extern
 domein: Publieksdiensten
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

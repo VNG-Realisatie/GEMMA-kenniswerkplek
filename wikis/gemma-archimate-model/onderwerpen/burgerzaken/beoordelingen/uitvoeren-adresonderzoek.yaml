@@ -10,59 +10,18 @@ kenmerken:
     - beslisser
     - bijhoudingsgemeente
     - toezichthouder-brp
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - verblijfplaats
   aanleiding:
     waarde: ja
     onderbouwing: Een melding van een persoon of organisatie, een terugmelding, een LAA-signaal of een eigen constatering (Circulaire adresonderzoek par. 2; NVVB Handreiking adresonderzoek).
     bronnen:
     - 2023-rvig-circulaire-adresonderzoek-brp
     - 2026-nvvb-handreiking-adresonderzoek
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: 'Een besluit: woont nog op het adres, briefadres, ambtshalve verhuizing, ambtshalve vertrek of vestiging vanuit het buitenland (Circulaire adresonderzoek 4.8).'
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-    - 2026-nvvb-handreiking-adresonderzoek
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Circulaire adresonderzoek BRP: voornemen en besluit, terugkoppeling binnen vijf werkdagen of vier weken, richtlijn tien weken; Besluit BRP art. 28a tot en met 28g (LAA).'
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-    - 2026-rijk-besluit-brp-bwbr0034306
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de melding, het signaal of de eigen constatering tot het besluit.
     bronnen:
     - 2023-rvig-circulaire-adresonderzoek-brp
     - 2026-nvvb-handreiking-adresonderzoek
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college neemt na een voornemen een besluit en maakt het bekend (Circulaire adresonderzoek 4.6).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - onjuiste-inschrijving-op-adres-melden
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
 definitie: Het onderzoeken of een persoon woont op het adres waarop hij is ingeschreven, en het besluiten over een juiste inschrijving.
 beschrijving:
 - Het adresonderzoek is het instrument waarmee de gemeente een verkeerde adresinschrijving verbetert; zij start het bij twijfel over de juistheid van adresgegevens (Circulaire adresonderzoek par. 2). Aanleidingen zijn een melding van een bewoner of organisatie, een terugmelding van een bestuursorgaan, een signaal uit de Landelijke Aanpak Adreskwaliteit (LAA), een eigen constatering of een aangifte van verhuizing (Circulaire adresonderzoek; NVVB Handreiking adresonderzoek). De gemeente legt een onderzoeksdossier aan, plaatst een aantekening in onderzoek, schrijft de persoon aan, kan een huisbezoek laten afleggen door een toezichthouder BRP en neemt na een voornemen een besluit; de melder wordt over het resultaat geïnformeerd (Circulaire adresonderzoek 3.2–4.7). Een richtlijn voor de doorlooptijd is tien weken.
@@ -97,4 +56,5 @@ relaties:
 bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-status: goedgekeurd
+- 2026-rijk-besluit-brp-bwbr0034306
+status: review

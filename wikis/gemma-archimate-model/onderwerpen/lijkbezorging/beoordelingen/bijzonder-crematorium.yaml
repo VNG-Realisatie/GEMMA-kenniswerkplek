@@ -1,37 +1,13 @@
 begrip: Bijzonder crematorium
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk exemplaar apart.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Zoals elk(e) crematorium.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Door de gemeente vastgesteld of verleend.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Variant van Crematorium: zelfde gegevens en behandeling, geen eigen levenscyclus.'
 genoemd_begrip: Crematorium
 toelichting: 'Specialisatie zonder pagina van Crematorium: crematorium van een kerkgenootschap, rechtspersoon of natuurlijk persoon (art. 51, 52).'
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst

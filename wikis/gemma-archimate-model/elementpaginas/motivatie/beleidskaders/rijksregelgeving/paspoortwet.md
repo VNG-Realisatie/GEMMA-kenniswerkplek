@@ -2,7 +2,7 @@
 id: paspoortwet
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Paspoortwet
 onderwerpen:
 - burgerzaken
@@ -21,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling paspoortwet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -43,7 +43,7 @@ In Burgerzaken is geen UPL-item een product: geen enkel item bundelt diensten me
 
 ### Typering
 
-Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern ja, 1/1).
+Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (2 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -52,15 +52,16 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijksregelgeving van het Koninkrijk. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Behandelen aanvraag reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Paspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort.md), [Paspoort tweede](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md), [Vluchtelingenpaspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vluchtelingenpaspoort.md), [Vreemdelingenpaspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vreemdelingenpaspoort.md), [Verwerken vermissing reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md), [Vermissing of diefstal reisdocument doorgeven](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-reisdocument-doorgeven.md), [Inhouden reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Zakenpaspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/zakenpaspoort.md). |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Behandelen aanvraag reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/behandelen-aanvraag-reisdocument.md), [Paspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort.md), [Paspoort tweede](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/paspoort-tweede.md), [Vluchtelingenpaspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vluchtelingenpaspoort.md), [Vreemdelingenpaspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vreemdelingenpaspoort.md), [Verwerken vermissing reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/verwerken-vermissing-reisdocument.md), [Vermissing of diefstal reisdocument doorgeven](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/vermissing-of-diefstal-reisdocument-doorgeven.md), [Inhouden reisdocument](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/burgerzaken/inhouden-reisdocument.md), [Zakenpaspoort](../../../bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/burgerzaken/zakenpaspoort.md). [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
+| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, standaard. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md) |
 
 ### Relaties
 

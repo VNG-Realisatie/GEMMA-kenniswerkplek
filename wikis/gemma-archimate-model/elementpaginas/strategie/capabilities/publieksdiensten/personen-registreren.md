@@ -35,7 +35,7 @@ De gemeente houdt de basisregistratie personen bij voor de ingezetenen (Wet BRP 
 
 ### Typering
 
-Capability. Uitkomst van de beslistabel: Vermogen (kern ja).
+Capability. Uitkomst van de beslistabel: Vermogen (4 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -46,16 +46,17 @@ Capability. Uitkomst van de beslistabel: Vermogen (kern ja).
 
 ### Kenmerken
 
-**Vak**: strategielaag, gedrag (Capability). **Hoofdkenmerk**: vermogen. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: strategielaag, gedrag (Capability). **Hoofdkenmerk**: vermogen.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert, of een bedrijfsfunctie die het vermogen realiseert? | Ja, met [Bevolkingsadministratie bijhouding](../../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md), [Burgerlijke stand diensten](../../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md). [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
+| **beoordeelbaar**: Kun je er volwassenheid of ontwikkelbehoefte van bepalen en er apart in investeren? | Ja, de gemeente kan de volwassenheid bepalen aan de kwaliteit en actualiteit van de BRP en de registers van de burgerlijke stand, en investeren in adresonderzoek, terugmeldingen en het beoordelen van brondocumenten. [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
+| **onderscheidend**: Is het af te grenzen van de andere capabilities, zonder dat een functie er voor een deel in valt? | Ja, naaste capability is Identiteit vaststellen. Personen registreren legt vast wie iemand is en wat zijn burgerlijke staat is; Identiteit vaststellen controleert bij een aanvraag dat de aanvrager die persoon is. Geen van beide functies valt er voor een deel in, elk realiseert het hele vermogen. [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
 | **stabiel over tijd**: Blijft het bestaan als de organisatie, de werkwijze of de systemen veranderen, en is het geen opgave met een einde? | Ja, een wettelijke taak die blijft bestaan als de organisatie, de werkwijze of de systemen veranderen (Wet BRP art. 1.2; Burgerlijk Wetboek boek 1 art. 17). [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [BW boek 1](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-burgerlijk-wetboek-boek-1.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert, of een bedrijfsfunctie die het vermogen realiseert? | Ja, met [Bevolkingsadministratie bijhouding](../../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md), [Burgerlijke stand diensten](../../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/burgerlijke-stand-diensten.md). |
-| **beoordeelbaar**: Kun je er volwassenheid of ontwikkelbehoefte van bepalen en er apart in investeren? | Ja, de gemeente kan de volwassenheid bepalen aan de kwaliteit en actualiteit van de BRP en de registers van de burgerlijke stand, en investeren in adresonderzoek, terugmeldingen en het beoordelen van brondocumenten. |
-| **onderscheidend**: Is het af te grenzen van de andere capabilities, zonder dat een functie er voor een deel in valt? | Ja, naaste capability is Identiteit vaststellen. Personen registreren legt vast wie iemand is en wat zijn burgerlijke staat is; Identiteit vaststellen controleert bij een aanvraag dat de aanvrager die persoon is. Geen van beide functies valt er voor een deel in, elk realiseert het hele vermogen. |
 
 ### Relaties
 

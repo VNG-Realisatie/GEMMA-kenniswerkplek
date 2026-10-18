@@ -2,7 +2,7 @@
 id: besluit-data
 type: data-object
 archimate_type: data-object
-status: goedgekeurd
+status: review
 naam: Besluit-data
 element: Besluit
 relatie: realisatie
@@ -17,7 +17,7 @@ ggm_beleidsdomein: RGBZPlus
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling besluit.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur. Volgt de status van [Besluit](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md).
+**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Besluit](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/besluit.md).
 
 ## Betekenis
 

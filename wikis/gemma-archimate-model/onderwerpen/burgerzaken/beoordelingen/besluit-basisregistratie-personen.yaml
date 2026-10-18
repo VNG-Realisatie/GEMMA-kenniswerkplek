@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: 'Rijksregelgeving: een algemene maatregel van bestuur.'
     bronnen:
     - 2026-rijk-besluit-brp-bwbr0034306
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht.
-    bronnen:
-    - 2026-rijk-besluit-brp-bwbr0034306
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -82,4 +77,6 @@ relaties:
   bronnen:
   - 2026-rijk-besluit-brp-bwbr0034306
   vindplaats: art. 36 (de gemeente waar de inschrijfvoorziening is ondergebracht)
-status: goedgekeurd
+bronnen:
+- 2026-rijk-besluit-brp-bwbr0034306
+status: review

@@ -7,9 +7,6 @@ kenmerken:
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2026-vng-wet-op-de-lijkbezorging
-  in_werking:
-    waarde: nee
-    onderbouwing: De openbare versie is van 2010; nieuwere versies staan in de betaalde Kennisbank decentrale regelgeving. De toelichting citeert Wlb art. 28 lid 7 nog met twintig jaar, waar de huidige wet tien jaar zegt. Of het model in deze vorm actueel is, is niet vast te stellen.
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -21,6 +18,9 @@ kenmerken:
     - grafuitgifte
     - gedenkteken-plaatsingsvergunning
     - grafonderhoud
+  in_werking:
+    waarde: nee
+    onderbouwing: De openbare versie is van 2010; nieuwere versies staan in de betaalde Kennisbank decentrale regelgeving. De toelichting citeert Wlb art. 28 lid 7 nog met twintig jaar, waar de huidige wet tien jaar zegt. Of het model in deze vorm actueel is, is niet vast te stellen.
 definitie: Model van de VNG voor de verordening waarin een gemeente het beheer en het gebruik van haar begraafplaatsen regelt.
 beschrijving:
 - De raad stelt de beheersverordening vast op grond van art. 35 Wet op de lijkbezorging en art. 149 Gemeentewet; het model geeft de begripsbepalingen (particulier en algemeen graf, urnengraf, urnennis, gedenkplaats, rechthebbende, gebruiker, beheerder) en de regels voor uitgifte, termijnen, overschrijving, afstand, grafbedekking, onderhoud en ruiming (aanhef, art. 1–24).
@@ -97,4 +97,6 @@ relaties:
 onderwerpen:
 - lijkbezorging
 regelgever: VNG-modelverordening
-status: goedgekeurd
+bronnen:
+- 2010-vng-model-beheersverordening-begraafplaatsen
+- 2026-vng-wet-op-de-lijkbezorging

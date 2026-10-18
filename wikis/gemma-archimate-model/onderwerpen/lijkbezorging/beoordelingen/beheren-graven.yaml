@@ -10,63 +10,18 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - graf
   aanleiding:
     waarde: ja
     onderbouwing: De uitgifte van een graf voor een begraving of bijzetting (art. 23; Groningen art. 13–16).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een graf dat in gebruik is, wordt onderhouden en na afloop wordt geruimd (art. 23, 31; Groningen art. 23, 27).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk graf.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet op de lijkbezorging art. 23, 27, 31; Groningen art. 11–16, 23, 27.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afnemer:
-    waarde: ja
-    onderbouwing: Rechthebbende op het graf en nabestaanden (art. 23, 31).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Levert zelf het eindresultaat voor zijn kernobject; geen deel van een groter proces.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_processen:
-    waarde: ja
-    naar:
-    - ruimen-graf
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: Omvat de levensloop van het graf, van uitgifte via begraving, bijzetting en onderhoud tot ruiming (art. 23, 27, 31).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar; Grafonderhoud wordt niet uitgewerkt in een proces (regel Wettelijke grondslag).
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt in een geruimd graf, niet in een benoemde toestandsverandering.
 definitie: 'Het beheer van een graf over de hele levensloop: uitgeven, begraven en bijzetten, onderhouden en ruimen.'
 beschrijving:
 - De houder van de begraafplaats bepaalt bij een algemeen graf wie erin wordt begraven, houdt het register van begraven lijken bij en ruimt graven na ten minste tien jaar grafrust (Wet op de lijkbezorging art. 23, 27, 31). Op de gemeentelijke begraafplaats regelt de beheersverordening de soorten graven, de uitgifte, het onderhoud en de ruiming (Groningen art. 11–16, 23, 27).
@@ -94,4 +49,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   vindplaats: Wlb art. 23, 27, 31; Groningen art. 11–16
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+status: review

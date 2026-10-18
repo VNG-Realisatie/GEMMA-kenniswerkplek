@@ -1,32 +1,9 @@
 begrip: Verklaring van overlijden
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per overledene.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Afgegeven, bij de akte gevoegd of bewaard (art. 7, 13).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Afgegeven door de gemeentelijke lijkschouwer, geraadpleegd en bewaard door de ambtenaar van de burgerlijke stand (art. 7, 12, 13).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: 'De behandelend arts of de gemeentelijke lijkschouwer geeft haar als arts af; de ambtenaar van de burgerlijke stand ontvangt en bewaart haar voor het verlof (art. 7, 12, 13; RVO: A-verklaring, doktersverklaring).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -52,3 +29,6 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Geen pagina: invoer van een andere partij (de arts); vermeld bij Verlenen verlof tot begraving of crematie en Schouwen lijk.'
   gevolg: verwerkt
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rvo-aangifte-en-akte-van-overlijden

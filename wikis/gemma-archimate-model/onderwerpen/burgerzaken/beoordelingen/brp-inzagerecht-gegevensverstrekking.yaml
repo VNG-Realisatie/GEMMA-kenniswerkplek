@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een overzicht van welke gegevens wanneer aan wie zijn verstrekt (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 92): de ingeschrevene in de gemeente.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
   gerealiseerd_door:
     waarde: ja
     naar:
     - verstrekken-overzicht-gegevensverstrekkingen
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 92); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Een overzicht voor de ingeschrevene van de verstrekkingen van zijn gegevens uit de basisregistratie personen.
 beschrijving:
 - Het overzicht loopt vanaf 6 januari 2013 en komt per beveiligde e-mail of aangetekende post (Utrecht Persoonsgegevens bekijken). Grondslag is art. 3.22 Wet BRP (UPL nr. 92).
@@ -44,4 +22,4 @@ afnemer: extern
 domein: Publieksdiensten
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

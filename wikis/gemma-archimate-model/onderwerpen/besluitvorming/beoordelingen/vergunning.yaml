@@ -1,17 +1,7 @@
 begrip: Vergunning
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke vergunning apart.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Aangevraagd, verleend, met voorschriften, ingetrokken (art. 29; Groningen art. 22 lid 5).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -24,24 +14,6 @@ kenmerken:
     - verlenen-vergunning-grafbedekking
     - verlenen-verlof-tot-begraving-of-crematie
     - verlenen-verlof-tot-ontleding
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Specialisatie van Beschikking met eigen werkwijze (aanvraag, voorschriften, intrekking); het gekozen niveau voor alle vergunningen en verloven in de lijkbezorging.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   generiek:
     waarde: ja
     onderbouwing: Vergunningen komen in veel onderwerpen voor; in de lijkbezorging alleen al negen soorten (Awb art. 1:3; Wlb art. 11, 29, 53, 64, 66b, 68).
@@ -111,4 +83,4 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-rvo-aangifte-en-akte-van-overlijden
-status: goedgekeurd
+status: review

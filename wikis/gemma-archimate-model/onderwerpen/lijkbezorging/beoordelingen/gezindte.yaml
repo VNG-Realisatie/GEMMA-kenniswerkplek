@@ -2,17 +2,9 @@ begrip: Gezindte
 vak: bedrijf/actief-intern
 hoofdkenmerk: handelende_partij
 synoniem_van: Kerkgenootschap
-kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: ja
-    onderbouwing: Bestaat los van het beheer.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  vervult_een_rol:
-    waarde: ja
-    onderbouwing: Houder van een deel van de begraafplaats.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+kenmerken: {}
 toelichting: Synoniem van Kerkgenootschap (Groningen art. 3 lid 3).
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

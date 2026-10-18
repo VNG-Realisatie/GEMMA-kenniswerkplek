@@ -3,7 +3,7 @@ aanvraag:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: true
@@ -11,8 +11,10 @@ aanvraag:
     - 'homoniem van Aanvraag (GGM, ICT): naamkeuze voorleggen'
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   voor_te_leggen:
+  - 'homoniem van Aanvraag (GGM, ICT): naamkeuze voorleggen'
+  open:
   - 'homoniem van Aanvraag (GGM, ICT): naamkeuze voorleggen'
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -57,13 +59,13 @@ aanvraag:
 algemene-wet-bestuursrecht:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    regel: 25
+    toelichting: Regeling als geheel, landelijk (2 toetskenmerken ja)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     generiek: false
-    typeregel: 14
+    typeregel: 17
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
@@ -72,14 +74,14 @@ algemene-wet-bestuursrecht:
 behandelen-aanvraag-beschikking:
   uitkomst:
     soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (3 toetskenmerken ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
@@ -88,14 +90,14 @@ behandelen-aanvraag-beschikking:
 behandelen-aanvraag-nadeelcompensatie:
   uitkomst:
     soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (3 toetskenmerken ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
@@ -104,14 +106,14 @@ behandelen-aanvraag-nadeelcompensatie:
 behandelen-bezwaar:
   uitkomst:
     soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (3 toetskenmerken ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
@@ -129,14 +131,14 @@ behandelen-bezwaar:
 behandelen-klacht:
   uitkomst:
     soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (3 toetskenmerken ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
@@ -154,14 +156,14 @@ behandelen-klacht:
 bekendmaken-besluit:
   uitkomst:
     soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (3 toetskenmerken ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-bekendmakingswet-wettekst
@@ -171,13 +173,13 @@ bekendmaken-besluit:
 bekendmaking:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    regel: 25
+    toelichting: Gedrag, *aangeboden gedrag* (3 toetskenmerken ja)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -187,13 +189,13 @@ bekendmaking:
 bekendmaking-algemeen-verbindend-voorschrift:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    regel: 25
+    toelichting: Gedrag, *aangeboden gedrag* (3 toetskenmerken ja)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-bekendmakingswet-wettekst
@@ -203,13 +205,13 @@ bekendmaking-algemeen-verbindend-voorschrift:
 bekendmakingswet:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    regel: 25
+    toelichting: Regeling als geheel, landelijk (2 toetskenmerken ja)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     generiek: false
-    typeregel: 14
+    typeregel: 17
   bronnen:
   - 2026-rijk-bekendmakingswet-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
@@ -218,13 +220,13 @@ bekendmakingswet:
 belanghebbende:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
+    regel: 25
+    toelichting: Hoedanigheid (1 toetskenmerken ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     generiek: false
-    typeregel: 10
+    typeregel: 13
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -242,13 +244,13 @@ beleidsnota:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
   - 2024-vng-implementatiehandleiding-model-participatieverordening
@@ -259,13 +261,13 @@ beleidsregel:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving
@@ -273,29 +275,28 @@ beleidsregel:
 beroep:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    regel: 25
+    toelichting: Gedrag, *aangeboden gedrag* (3 toetskenmerken ja)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  herkomst: rijksregelgeving
+  herkomst: informatiemodel
   pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/beroep.md
 beschikking:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -343,18 +344,17 @@ beschikking:
 beschikking-aanvragen:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    regel: 25
+    toelichting: Gedrag, *aangeboden gedrag* (3 toetskenmerken ja)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-logius-upl-actueel
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  herkomst: rijksregelgeving
+  herkomst: informatiemodel
   pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/beschikking-aanvragen.md
 beslistermijn:
   uitkomst:
@@ -371,13 +371,13 @@ besluit:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -439,30 +439,31 @@ bestuursorgaan:
 bezwaar:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    regel: 25
+    toelichting: Gedrag, *aangeboden gedrag* (3 toetskenmerken ja)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  herkomst: rijksregelgeving
+  herkomst: informatiemodel
   pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/bezwaar.md
 bezwaarschrift:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  open:
   - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -477,23 +478,22 @@ bezwaarschrift:
 dwangsom-bij-niet-tijdig-beslissen:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    regel: 25
+    toelichting: Gedrag, *aangeboden gedrag* (3 toetskenmerken ja)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2026-logius-upl-actueel
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  herkomst: rijksregelgeving
+  herkomst: informatiemodel
   pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/dwangsom-bij-niet-tijdig-beslissen.md
 formulier:
   uitkomst:
     soort: geen_pagina
-    regel: 17
-    toelichting: Waarneembare vorm
+    regel: 20
+    toelichting: Representatie
     archimate_type: representation
     voorleggen: false
     genoemd_begrip: Aanvraag
@@ -504,28 +504,27 @@ formulier:
 klacht:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    regel: 25
+    toelichting: Gedrag, *aangeboden gedrag* (3 toetskenmerken ja)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  herkomst: rijksregelgeving
+  herkomst: informatiemodel
   pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/klacht.md
 klager:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
+    regel: 25
+    toelichting: Hoedanigheid (1 toetskenmerken ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     generiek: false
-    typeregel: 10
+    typeregel: 13
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving
@@ -533,22 +532,21 @@ klager:
 nadeelcompensatie:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    regel: 25
+    toelichting: Gedrag, *aangeboden gedrag* (3 toetskenmerken ja)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  herkomst: rijksregelgeving
+  herkomst: informatiemodel
   pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/nadeelcompensatie.md
 omgevingswet-nadeelcompensatie:
   uitkomst:
     soort: verwijzing
-    regel: 6
+    regel: 4
     toelichting: Hoort bij een ander onderwerp
     voorleggen: false
     generiek: false
@@ -559,7 +557,7 @@ regeling:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: true
@@ -567,8 +565,10 @@ regeling:
     - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   voor_te_leggen:
+  - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
+  open:
   - 'homoniem van Regeling (GGM, Inkomen): naamkeuze voorleggen'
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
@@ -593,14 +593,16 @@ schriftelijke-klacht:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   voor_te_leggen:
+  - data-object zonder sterke GGM-match
+  open:
   - data-object zonder sterke GGM-match
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
@@ -615,14 +617,14 @@ schriftelijke-klacht:
 uitvoeren-uniforme-openbare-voorbereidingsprocedure:
   uitkomst:
     soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (3 toetskenmerken ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-rijk-gemeentewet-wettekst
@@ -632,14 +634,14 @@ uitvoeren-uniforme-openbare-voorbereidingsprocedure:
 vaststellen-dwangsom-bij-niet-tijdig-beslissen:
   uitkomst:
     soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (3 toetskenmerken ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2026-logius-upl-actueel
@@ -649,13 +651,13 @@ vergunning:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -666,14 +668,14 @@ vergunning:
 voeren-verweer-in-beroep:
   uitkomst:
     soort: element
-    regel: 27
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    regel: 28
+    toelichting: Gedrag, *per keer doorlopen* (3 toetskenmerken ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: bedrijfsproces
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
@@ -682,15 +684,14 @@ voeren-verweer-in-beroep:
 zienswijze:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Gedrag, *aangeboden gedrag* (kern ja, 2/2)
+    regel: 25
+    toelichting: Gedrag, *aangeboden gedrag* (3 toetskenmerken ja)
     paginatype: dienst
     archimate_type: business-service
     voorleggen: false
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
-  - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  herkomst: rijksregelgeving
+  herkomst: informatiemodel
   pad: elementpaginas/bedrijfsarchitectuur/diensten/0-bestuur-en-ondersteuning/besluitvorming/zienswijze.md

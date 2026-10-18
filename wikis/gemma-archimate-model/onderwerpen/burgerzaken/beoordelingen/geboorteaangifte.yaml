@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De geboorteakte, een gratis uittreksel en de inschrijving van het kind in de BRP met een burgerservicenummer (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 136): de ouders of andere aangever.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
   gerealiseerd_door:
     waarde: ja
     naar:
     - opmaken-geboorteakte
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 136); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het doen van aangifte van de geboorte van een kind bij de gemeente waar het is geboren, waarna de gemeente een geboorteakte opmaakt.
 beschrijving:
 - 'Aangifte binnen drie dagen na de geboortedag (BW 1 art. 19e). Kanalen: online met DigiD voor de moeder of de andere ouder als die al juridisch ouder is, met controle bij ziekenhuis of verloskundige, of aan de balie op afspraak; een afwijkende of dubbele achternaam kan alleen aan de balie met beide ouders (Utrecht). Grondslag art. 19e BW 1; digitaal kanaal (UPL nr. 136).'
@@ -48,4 +26,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-geboorteaangifte-doen
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

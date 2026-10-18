@@ -1,16 +1,7 @@
 begrip: Begraafplaats
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke begraafplaats apart, met naam (Groningen art. 3 lid 1).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Aangelegd, in gebruik genomen, gesloten, opgeheven (art. 41, 43, 47).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -18,18 +9,6 @@ kenmerken:
     - sluiten-begraafplaats
     - uitvoeren-lijkbezorging
     - verlenen-toestemming-bijzondere-begraafplaats
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Terrein waar stoffelijke overschotten worden begraven en urnen worden bijgezet, aangelegd en in stand gehouden door een houder.
@@ -68,4 +47,4 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-wet-op-de-lijkbezorging
-status: goedgekeurd
+status: review

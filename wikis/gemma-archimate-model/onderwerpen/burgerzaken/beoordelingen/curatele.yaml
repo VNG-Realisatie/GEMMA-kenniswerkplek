@@ -1,34 +1,11 @@
 begrip: Curatele
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per persoon onder curatele (HUP Curatele).
-    bronnen:
-    - 2026-rvig-hup-curatele
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt uitgesproken, gewijzigd en beëindigd (HUP Curatele).
-    bronnen:
-    - 2026-rvig-hup-curatele
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: De gemeente registreert, wijzigt en beëindigt de curatele in de BRP op een uittreksel uit het centraal curatele- en bewindregister (HUP Curatele).
-    bronnen:
-    - 2026-rvig-hup-curatele
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: De rechtbank spreekt de curatele uit en die staat in het centraal curatele- en bewindregister; de gemeente neemt haar alleen over (HUP Curatele).
     bronnen:
     - 2026-rvig-hup-curatele

@@ -3,8 +3,8 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Behandelen aanvraag reisdocument
 kenmerken:
-  eigen_identiteit:
-    waarde: nee
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: 'Bestaat niet los van Behandelen aanvraag reisdocument: het verzoek waarmee dat bedrijfsproces begint, met de gegevens die de aanvrager daarbij verstrekt (Paspoortwet art. 1 onder a, 27, 28).'
 toelichting: 'Onderdeel, geen pagina: het verzoek waarmee Behandelen aanvraag reisdocument begint, ook voor de wijziging van gegevens in een reisdocument (Paspoortwet art. 1 onder a, 43). De aanvraagstukken bewaart de verstrekkende gemeente in het paspoortdossier (HUP Uitreiking). Een algemeen bedrijfsobject Aanvraag kan later in Besluitvorming worden beoordeeld.'
 bronnen:

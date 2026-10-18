@@ -1,33 +1,12 @@
 begrip: Brondocument
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Bijhouden persoonsgegevens
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk document is apart (HUP Achtergronden).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Niet aanwijsbaar in de bronnen.
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: De gemeente raadpleegt het en legt een verwijzing ernaar vast (HUP Achtergronden).
-    bronnen:
-    - 2026-rvig-hup-achtergronden-en-begrippen
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: Een rechter, een buitenlandse autoriteit of de ambtenaar van de burgerlijke stand maakt het; de bijhouding van de BRP ontvangt en raadpleegt het (HUP Algemeen; NVVB ID-protocol 2.3).
     bronnen:
     - 2026-rvig-hup-algemeen

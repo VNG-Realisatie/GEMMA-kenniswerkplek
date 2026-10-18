@@ -9,54 +9,16 @@ kenmerken:
     naar:
     - aangever
     - bijhoudingsgemeente
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     naar:
     - emigratie
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De persoon is niet-ingezetene en staat in de RNI (Utrecht Emigratie doorgeven).
-    bronnen:
-    - 2026-utrecht-burgerzaken-emigratie-doorgeven
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rvig-hup-emigratie
-    - 2026-utrecht-burgerzaken-emigratie-doorgeven
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Verplicht bij een verblijf van ten minste twee derde van een jaar buiten Nederland (art. 2.43 Wet BRP; HUP Emigratie); aangifte in persoon of schriftelijk (Besluit BRP art. 29).
-    bronnen:
-    - 2026-rvig-hup-emigratie
-    - 2026-rijk-besluit-brp-bwbr0034306
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aangifte van vertrek tot de inschrijving in de RNI.
     bronnen:
     - 2026-rvig-hup-emigratie
     - 2026-utrecht-burgerzaken-emigratie-doorgeven
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: De verwerking van de aangifte eindigt niet in een apart besluit; het ambtshalve vertrek is een besluit in Uitvoeren adresonderzoek.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - aangifte-vertrek-buitenland
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
 definitie: Het verwerken van het vertrek van een ingezetene naar het buitenland, waarna hij als niet-ingezetene in de RNI staat.
 beschrijving:
 - Wie ten minste twee derde van een jaar in het buitenland gaat wonen, doet aangifte van vertrek, vanaf vijf dagen voor het vertrek; ook een verhuizing naar het Caribisch deel van het Koninkrijk is een emigratie, waarbij de persoon kosteloos een verhuisbericht krijgt (HUP Emigratie; Regeling BRP bijlage 9). Na verwerking verhuist de persoonslijst naar de RNI en blijft de laatste bijhoudingsgemeente verantwoordelijk voor rechtsfeiten van voor de emigratie (HUP Emigratie). Is de persoon niet te bereiken, dan neemt de gemeente het vertrek ambtshalve op na een adresonderzoek (HUP Emigratie; Circulaire adresonderzoek 4.8).
@@ -94,4 +56,4 @@ bronnen:
 - 2026-rvig-hup-emigratie
 - 2026-rijk-besluit-brp-bwbr0034306
 - 2025-rvig-logisch-ontwerp-brp-2025q1
-status: goedgekeurd
+status: review

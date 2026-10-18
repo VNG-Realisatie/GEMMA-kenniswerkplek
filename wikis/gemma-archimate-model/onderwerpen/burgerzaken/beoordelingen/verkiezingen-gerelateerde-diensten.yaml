@@ -4,33 +4,20 @@ soort_gedrag: gegroepeerd_gedrag
 onderwerpen:
 - burgerzaken
 kenmerken:
-  toegewezen_partij:
-    waarde: nee
-    onderbouwing: De bron wijst geen rol aan de functie toe; de rollen hangen aan de processen.
+  bedient_gedrag:
+    waarde: ja
+    naar:
+    - beheren-stempassen
+    - registreren-kiesgerechtigdheid
   gebruikt_objecten:
     waarde: ja
     onderbouwing: Registreert en beëindigt de stempas en werkt de kiesrechtgegevens van de ingeschreven persoon bij (Kieswet art. J 7, J 7a; HUP Kiesrecht).
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
     - 2026-rvig-hup-kiesrecht
-  stabiel_over_tijd:
-    waarde: ja
-    onderbouwing: De taak volgt uit de Kieswet en blijft bij een andere organisatie of werkwijze.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  bedient_gedrag:
-    waarde: ja
-    naar:
-    - beheren-stempassen
-    - registreren-kiesgerechtigdheid
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onder Producten- en dienstenrealisatie publieksdiensten (GEMMA).
-    gemma_relatie:
-    - id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen breder begrip van hetzelfde type in deze wiki; GEMMA-functie op het niveau van het onderwerp.
     gemma_relatie:
     - id-8fba2af8-119c-4bdd-b3eb-a0f18303b0ff
 domein: Publieksdiensten
@@ -92,4 +79,7 @@ relaties:
   bronnen:
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: UPL nr. 398 (GEMMA-domein Publieksdiensten)
-status: goedgekeurd
+bronnen:
+- 2026-rijk-kieswet-bwbr0004627
+- 2026-rvig-hup-kiesrecht
+status: review

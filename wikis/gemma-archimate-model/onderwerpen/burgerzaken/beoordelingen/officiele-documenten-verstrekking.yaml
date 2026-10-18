@@ -4,32 +4,19 @@ soort_gedrag: gegroepeerd_gedrag
 onderwerpen:
 - burgerzaken
 kenmerken:
-  toegewezen_partij:
-    waarde: nee
-    onderbouwing: De functie is niet aan een rol toegewezen; de rollen hangen aan de processen.
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: Registreert en werkt het reisdocument bij (Paspoortwet art. 40, 42).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  stabiel_over_tijd:
-    waarde: ja
-    onderbouwing: Volgt uit de wettelijke taak van de burgemeester, los van de organisatie (Paspoortwet art. 26, 40).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
   bedient_gedrag:
     waarde: ja
     naar:
     - beheren-reisdocumenten
     - beheren-rijbewijzen
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Registreert en werkt het reisdocument bij (Paspoortwet art. 40, 42).
+    bronnen:
+    - 2026-rijk-paspoortwet-bwbr0005212
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
-    gemma_relatie:
-    - id-1f944d4b-41d8-40cb-be75-8706806e07cc
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere functie van hetzelfde type; de bovenliggende functie aggregeert haar.
     gemma_relatie:
     - id-1f944d4b-41d8-40cb-be75-8706806e07cc
 definitie: Het op aanvraag verstrekken van persoonlijke documenten zoals paspoort of rijbewijs.
@@ -155,4 +142,4 @@ relaties:
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review

@@ -5,63 +5,20 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Inschrijven ingezetene
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: Bijhoudingsgemeente (medewerker Burgerzaken; NVVB ID-protocol).
-    bronnen:
-    - 2026-nvvb-id-protocol-medewerkers
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: Raadpleegt het identiteitsdocument en legt pas na vaststelling persoonsgegevens vast (NVVB ID-protocol 2.2, 2.3).
-    bronnen:
-    - 2026-nvvb-id-protocol-medewerkers
-  aanleiding:
-    waarde: ja
-    onderbouwing: Een aangifte of aanvraag aan de balie (NVVB ID-protocol; HUP Immigratie stap 1).
-    bronnen:
-    - 2026-nvvb-id-protocol-medewerkers
-    - 2026-rvig-hup-immigratie
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een vastgestelde identiteit (NVVB ID-protocol 2.2).
-    bronnen:
-    - 2026-nvvb-id-protocol-medewerkers
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval.
-    bronnen:
-    - 2026-nvvb-id-protocol-medewerkers
-    - 2026-rvig-hup-immigratie
-  eigen_normering:
-    waarde: nee
-    onderbouwing: Het ID-protocol is een werkinstructie van de NVVB; de wettelijke eisen horen bij de aangifte of aanvraag waarin de stap valt.
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    onderbouwing: Stap 1 van Inschrijven ingezetene en een stap in de andere bedrijfsprocessen (HUP Immigratie; HUP Binnengemeentelijke adreswijziging).
+  afhankelijkheid:
+    waarde: deelproces
+    onderbouwing: Stap 1 van Inschrijven ingezetene en een stap in de andere bedrijfsprocessen (HUP Immigratie; HUP Binnengemeentelijke adreswijziging). Nee, een stap in elke aangifte of aanvraag aan de balie, geen eigen klant-tot-klantproces.
     bronnen:
     - 2026-rvig-hup-immigratie
     - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: Nee, een stap in elke aangifte of aanvraag aan de balie, geen eigen klant-tot-klantproces.
-    bronnen:
     - 2026-nvvb-id-protocol-medewerkers
-    - 2026-rvig-hup-immigratie
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 toelichting: 'Processtap zonder pagina: de medewerker stelt bij elke aangifte of aanvraag de identiteit vast aan de hand van een identiteitsdocument, volgens het ID-protocol van de NVVB. Het is een stap in onder meer Inschrijven ingezetene en Verwerken adreswijziging, zonder eigen besluit, eigen wettelijke regels of eigen product. GEMMA kent daarnaast de generieke bedrijfsfunctie Identiteitvaststelling (Niet domeingebonden), die later in Kern kan worden beoordeeld.'
 synoniemen:
 - naam: Identiteitsvaststelling
   context: beleid
 - naam: ID-protocol
   context: beleid
+bronnen:
+- 2026-nvvb-id-protocol-medewerkers
+- 2026-rvig-hup-immigratie
+- 2026-rvig-hup-binnengemeentelijke-adreswijziging

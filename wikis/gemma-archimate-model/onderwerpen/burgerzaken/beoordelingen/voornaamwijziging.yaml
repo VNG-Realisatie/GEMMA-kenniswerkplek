@@ -3,31 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De nieuwe voornaam in de geboorteakte en de BRP (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 460).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - toevoegen-latere-vermelding
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 460); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het laten opnemen van een door de rechtbank gewijzigde voornaam in de geboorteakte en de basisregistratie personen.
 beschrijving:
 - Het verzoek gaat met een advocaat naar de rechtbank; de gemeente heeft een eigen handeling na de beschikking en het product wordt daarom opgenomen. Grondslag art. 4 BW 1 (UPL nr. 460).
@@ -42,4 +21,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

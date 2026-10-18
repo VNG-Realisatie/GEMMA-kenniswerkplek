@@ -3,17 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Schriftelijk verlof tot begraving of crematie, kosteloos (Wlb art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL): wie in de lijkbezorging voorziet, meestal via de uitvaartondernemer (RVO).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -48,4 +37,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review

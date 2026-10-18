@@ -1,17 +1,7 @@
 begrip: Verzorgen lijkbezorging
 vak: bedrijf/gedrag-intern
-soort_gedrag: groepeert_processen
+soort_gedrag: per_keer_doorlopen
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: De rollen Houder van de begraafplaats, Houder van het crematorium en Houder van een plaats van bijzetting, die de gemeente vervult (art. 33, 37, 52, 63).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: 'Raadpleegt en werkt bij: graf, grafrecht, begraafplaats, lijk, urn (art. 23, 27, 28).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   omvat_processen:
     waarde: ja
     naar:
@@ -20,6 +10,9 @@ kenmerken:
     - beheren-begraafplaatsen
     - beheren-crematoria
     - verzorgen-gemeentebegrafenis
+  procesniveau:
+    waarde: cluster naar soort werk
+    onderbouwing: Groepering van bedrijfsprocessen van één soort werk.
 definitie: 'Gemeentelijke taak rond de lijkbezorging: het bezorgen van stoffelijke overschotten en het beheer van graven en grafrechten.'
 beschrijving:
 - 'Lijkbezorging geschiedt door begraving, crematie of een andere wettelijke wijze (Wet op de lijkbezorging art. 1). De gemeente schouwt stoffelijke overschotten via de gemeentelijke lijkschouwer, geeft het verlof tot begraving of crematie af, heeft ten minste één gemeentelijke begraafplaats, geeft graven uit, staat opgraving en ruiming toe en draagt zorg voor de lijkbezorging als niemand daarin voorziet (art. 4, 11, 21, 28, 29, 31, 33). De taak groepeert de processen daarvoor, één per kernobject: het stoffelijk overschot, de gemeentebegrafenis, het grafrecht, het graf, de begraafplaats en het crematorium.'

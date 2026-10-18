@@ -3,37 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het algemeen verbindend voorschrift is in het gemeenteblad geplaatst en treedt in werking, zonder andere aanduiding op de achtste dag na de bekendmaking (art. 8, 10 lid 2).
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke verordening of andere algemeen verbindende regel van de gemeente.
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Bekendmakingswet: plaatsing in het gemeenteblad, inwerkingtreding na bekendmaking, kosteloze toegang (art. 3, 6, 8, 10).'
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL nr. 48): ieder die aan de regels gebonden is.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-bekendmakingswet-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
     - bekendmaken-besluit
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 48), met een eigen wet; geen specialisatie van Bekendmaking, die de Awb regelt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-bekendmakingswet-wettekst
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -52,4 +25,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-bekendmakingswet-wettekst
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-status: goedgekeurd
+status: review

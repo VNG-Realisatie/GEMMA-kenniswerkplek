@@ -1,28 +1,11 @@
 begrip: Register van de burgerlijke stand
 vak: bedrijf/passief
+hoofdkenmerk: representatie
 onderwerpen:
 - burgerzaken
-kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per soort en per jaar een register (Besluit burgerlijke stand art. 6, 7).
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: De ambtenaar neemt akten op, sluit het register af en brengt dubbelen over (Besluit burgerlijke stand art. 6, 7).
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: ja
-    onderbouwing: 'De vorm waarin de akten van de burgerlijke stand worden bewaard: losbladige registers per soort (BW 1 art. 17; Besluit burgerlijke stand art. 6).'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+kenmerken: {}
 genoemd_begrip: Akte van de burgerlijke stand
 toelichting: 'Representatie, geen pagina: de registers zijn de vorm waarin de akten van de burgerlijke stand worden opgenomen en bewaard (BW 1 art. 17; Besluit burgerlijke stand art. 6). Vermeld bij Akte van de burgerlijke stand; precedent Register van begraven lijken.'
 bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493

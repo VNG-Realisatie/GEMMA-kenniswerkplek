@@ -3,36 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De aanvrager krijgt een tweede paspoort uitgereikt en blijft houder van het eerste.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De aanvrager, een inwoner (UPL: doelgroep burger).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-aanvraag-reisdocument
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: De UPL noemt het als eigen product.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het aanvragen van een tweede paspoort naast het eerste, voor wie moet reizen terwijl het eerste voor een visum bij een buitenlandse vertegenwoordiging ligt.
 beschrijving:
 - Op verzoek van een houder van een nationaal paspoort die aantoont dat hij achtereenvolgens verschillende landen moet bezoeken of regelmatig dringend moet reizen terwijl zijn paspoort voor visering bij een buitenlandse vertegenwoordiging ligt; de burgemeester beslist op het verzoek (Paspoortwet art. 30; Paspoortbesluit art. 2.14, 2.15, 3.1, 4.1). Strengere voorwaarden dan een gewoon paspoort (Utrecht). Grondslag art. 30 Paspoortwet (UPL nr. 330).
@@ -46,4 +20,9 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-paspoortbesluit-bwbr0044308
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+status: review

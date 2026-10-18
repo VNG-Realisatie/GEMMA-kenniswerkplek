@@ -4,22 +4,10 @@ hoofdkenmerk: hoedanigheid
 onderwerpen:
 - besluitvorming
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: 'Een hoedanigheid tegenover een bestuursorgaan, geen zelfstandige partij: ieder kan klager zijn.'
   voert_gedrag_uit:
     waarde: ja
     naar:
     - behandelen-klacht
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van degene die een klacht indient over de manier waarop een bestuursorgaan zich heeft gedragen.
 beschrijving:
@@ -40,4 +28,4 @@ besluiten:
   besluit: 'Nieuwe generieke rol in Besluitvorming: ieder kan klagen, ook over een gedraging jegens een ander, dus de rol Belanghebbende past niet (Awb art. 9:1).'
   gevolg: verwerkt
   zekerheid: kennis
-status: goedgekeurd
+status: review

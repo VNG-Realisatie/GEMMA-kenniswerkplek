@@ -3,21 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een gewaarmerkte kopie van het paspoort of de identiteitskaart, in het Nederlands, Engels, Frans of Duits (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: De houder van het reisdocument, die de kopie bijvoorbeeld bij de koop van een huis gebruikt (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
   gerealiseerd_door:
     waarde: ja
     onderbouwing: 'Producten- en dienstenrealisatie publieksdiensten: de medewerker aan de balie maakt en waarmerkt de kopie direct, op afspraak en met het origineel (Utrecht).'
@@ -43,4 +28,6 @@ besluiten:
 - datum: '2026-10-08'
   besluit: 'Vervalt (regel Wettelijke grondslag): geen UPL-product en geen landelijke wettelijke grondslag. De representatie Gewaarmerkte kopie gaat mee; procesarchitectuur-terugmelding 11 noemt de dienst niet meer als element. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen
+bronnen:
+- 2026-utrecht-burgerzaken-waarmerken-kopie-nederlands-reisdocument-aanvragen
 status: afgewezen

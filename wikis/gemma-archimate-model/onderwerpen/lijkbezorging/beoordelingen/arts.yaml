@@ -2,31 +2,16 @@ begrip: Arts
 vak: bedrijf/actief-intern
 hoofdkenmerk: handelende_partij
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: ja
-    onderbouwing: 'Bestaat los van de lijkbezorging, als arts die de overledene behandelde (RVO: de verklaring krijgt u van een behandelend arts).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  vervult_een_rol:
-    waarde: ja
-    naar:
-    - ketenpartner
-    - gemeentelijke-lijkschouwer
   soort_partij:
     waarde: ja
     onderbouwing: Bij elk overlijden schouwt een arts het lijk, als behandelende arts of als gemeentelijke lijkschouwer (art. 3, 5); een soort partij, geen individuele arts.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+  vervult_een_rol:
+    waarde: ja
+    naar:
+    - ketenpartner
+    - gemeentelijke-lijkschouwer
 toelichting: Actor die als behandelende arts ketenpartner is (meld- en overlegplicht, art. 7, 10a) en als forensisch arts gemeentelijke lijkschouwer (art. 4, 5).
 onderwerpen:
 - lijkbezorging
@@ -65,4 +50,7 @@ besluiten:
 - datum: '2026-10-04'
   besluit: 'Actor Arts in plaats van Behandelende arts (synoniem, wet): behandelend is de hoedanigheid tegenover de overledene. Arts vervult Ketenpartner en Gemeentelijke lijkschouwer (art. 4, 5); Ketenpartner wordt ook toegewezen aan Schouwen lijk (art. 3). Geen directe relatie behandelt: de medische behandeling is de interne zaak van de ketenpartner en de overledene is geen element; de arts hangt via Schouwen lijk aan het Lijk.'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rvo-aangifte-en-akte-van-overlijden
+status: review

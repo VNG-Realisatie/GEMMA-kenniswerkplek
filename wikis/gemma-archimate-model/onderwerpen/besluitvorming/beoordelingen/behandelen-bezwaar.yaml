@@ -9,11 +9,6 @@ kenmerken:
     naar:
     - belanghebbende
     - beslisser
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - bezwaarschrift
-    - besluit
   aanleiding:
     waarde: ja
     naar:
@@ -22,49 +17,11 @@ kenmerken:
     onderbouwing: Een bezwaarschrift tegen een besluit, ingediend binnen zes weken na de bekendmaking (art. 6:4, 6:7, 6:8).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De gemotiveerde beslissing op het bezwaar, bekendgemaakt aan wie bezwaar maakte (art. 7:11, 7:12).
+  procesniveau:
+    waarde: bedrijfsproces
+    onderbouwing: 'Loopt van het bezwaarschrift van de belanghebbende tot de bekendmaking van de beslissing op bezwaar aan hem (art. 6:4, 7:12). Eén mutatie in de levensloop van een bezwaarschrift: van indiening tot de beslissing, met de heroverweging van het bestreden besluit (art. 6:4, 7:11, 7:12).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk bezwaarschrift tegen een besluit.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Afdeling 7.2 Awb: horen, stukken ter inzage, verslag, beslistermijn van zes of twaalf weken, heroverweging, motivering (art. 7:2–7:13).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - naam: Beheren bezwaarschriften
-      type: bedrijfsproces
-    onderbouwing: 'Eén mutatie in de levensloop van een bezwaarschrift: van indiening tot de beslissing, met de heroverweging van het bestreden besluit (art. 6:4, 7:11, 7:12).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  klant_tot_klant:
-    waarde: ja
-    onderbouwing: Loopt van het bezwaarschrift van de belanghebbende tot de bekendmaking van de beslissing op bezwaar aan hem (art. 6:4, 7:12).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Behandelt één bezwaarschrift tot de beslissing; geen groepering van processen over de levensloop van een object.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Eindigt in de beslissing op het bezwaar van het bestuursorgaan dat het besluit nam (art. 7:11, 7:12).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - bezwaar
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -116,4 +73,6 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'De adviescommissie (Awb art. 7:13) is geen element: het bestuursorgaan kan haar instellen; zij staat in de beschrijving.'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

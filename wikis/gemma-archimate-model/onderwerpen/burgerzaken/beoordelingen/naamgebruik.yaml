@@ -2,8 +2,8 @@ begrip: Naamgebruik
 onderwerpen:
 - burgerzaken
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: 'Een gegeven van de persoon: de aanduiding welke achternaam de overheid gebruikt, de eigen, die van de partner of een combinatie (HUP Wijziging naamgebruik). GGM: NaamgebruikNatuurlijkPersoon.'
     bronnen:
     - 2026-rvig-hup-wijziging-naamgebruik

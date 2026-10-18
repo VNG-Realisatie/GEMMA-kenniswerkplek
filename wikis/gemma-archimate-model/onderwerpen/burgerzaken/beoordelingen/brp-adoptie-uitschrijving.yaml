@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Verwijderde gegevens van vóór de adoptie of geslachtswijziging (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 86): het adoptiekind, de adoptieouders of de biologische ouders (Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-verzoek-om-verwijdering-van-gegevens
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 86); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het verzoek om gegevens van vóór een adoptie of geslachtswijziging van de persoonslijst te laten verwijderen.
 beschrijving:
 - Het verzoek kan alleen schriftelijk, door een bevoegde aanvrager (Utrecht Gegevens verwijderen). Grondslag is art. 2.57 Wet BRP; de aanvraag kan digitaal (UPL nr. 86). De UPL-naam noemt alleen de adoptie; het wetsartikel en Utrecht noemen ook de geslachtswijziging.
@@ -44,4 +22,4 @@ afnemer: extern
 domein: Publieksdiensten
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

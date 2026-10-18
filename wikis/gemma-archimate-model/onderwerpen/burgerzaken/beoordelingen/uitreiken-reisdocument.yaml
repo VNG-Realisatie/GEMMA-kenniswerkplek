@@ -4,64 +4,12 @@ soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: De Houder van het reisdocument haalt het persoonlijk op en levert zijn oude Nederlandse reisdocumenten in (Paspoortwet art. 32; Utrecht).
+  afhankelijkheid:
+    waarde: deelproces
+    onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het reisdocument komt in gebruik. Nee, volgt op de verstrekking in Behandelen aanvraag reisdocument, voor hetzelfde geval; pas met de uitreiking is de dienst geleverd (Paspoortwet art. 42 lid 2).'
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: 'Werkt het reisdocument bij: uitgereikt aan de houder; de ingeleverde oude reisdocumenten worden definitief aan het verkeer onttrokken (Paspoortwet art. 32, 42; Paspoortbesluit art. 7.1).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  aanleiding:
-    waarde: ja
-    onderbouwing: 'De verstrekking: het document ligt klaar, zes werkdagen na de aanvraag (Paspoortwet art. 42 lid 2; Utrecht).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het reisdocument in handen van de houder (Paspoortwet art. 1 onder e).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk verstrekt reisdocument.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Paspoortwet art. 32 en 42 (inlevering, termijn van twee weken, geen uitreiking bij een mededeling tot inhouding, onttrekking na drie maanden); Paspoortbesluit art. 4.6 (identiteit vaststellen in aanwezigheid).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het reisdocument komt in gebruik.'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: Nee, volgt op de verstrekking in Behandelen aanvraag reisdocument, voor hetzelfde geval; pas met de uitreiking is de dienst geleverd (Paspoortwet art. 42 lid 2).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: De uitreiking is een feitelijke handeling; de beslissing ligt bij de verstrekking (Paspoortwet art. 1 onder d en e).
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De diensten worden gerealiseerd door Behandelen aanvraag reisdocument; het ophalen of laten bezorgen is de levering daarvan (Utrecht).
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het na de verstrekking ter beschikking stellen van het reisdocument aan de aanvrager, die daarbij zijn oude Nederlandse reisdocumenten inlevert.
 synoniemen:
 - naam: Uitreiking
@@ -74,3 +22,7 @@ gemma:
 genoemd_begrip: Behandelen aanvraag reisdocument
 toelichting: 'Deelproces zonder pagina van Behandelen aanvraag reisdocument, Behandelen aanvraag reisdocument niet-ingezetene: het na de verstrekking ter beschikking stellen van het reisdocument aan de aanvrager, die daarbij zijn oude Nederlandse reisdocumenten inlevert.'
 relaties: []
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+- 2026-rijk-paspoortbesluit-bwbr0044308

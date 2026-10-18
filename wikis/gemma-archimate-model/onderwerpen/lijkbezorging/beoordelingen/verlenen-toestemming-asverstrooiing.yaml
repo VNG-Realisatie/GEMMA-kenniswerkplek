@@ -9,62 +9,18 @@ kenmerken:
     onderbouwing: Beslisser (college) en Nabestaande, die het verzoek doet (APV Groningen art. 5:27 lid 3).
     bronnen:
     - 2025-groningen-algemene-plaatselijke-verordening
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - vergunning
-    - urn
   aanleiding:
     waarde: ja
     onderbouwing: Een verzoek van de nabestaande die zorgdraagt voor de asbus (APV Groningen art. 5:27 lid 3).
     bronnen:
     - 2025-groningen-algemene-plaatselijke-verordening
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een ontheffing of toestemming, of een weigering (APV Groningen art. 5:27 lid 3; Groningen art. 21 lid 2).
+  procesniveau:
+    waarde: bedrijfsproces
+    onderbouwing: 'Ja, van het verzoek tot de toestemming of de weigering. Draagt bij aan het levensloopproces Toestaan lijkbezorging: een besluit over de bestemming van de as (APV Groningen art. 5:27; Wlb art. 59–66b).'
     bronnen:
     - 2025-groningen-algemene-plaatselijke-verordening
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk verzoek om as op een verboden of aangewezen plek te verstrooien (APV Groningen art. 5:27; Groningen art. 21).
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: APV Groningen art. 5:27 lid 3 (bijzondere omstandigheden, uitgezonderde plaatsen) en Groningen art. 21 (aangewezen plek, toezicht, weersomstandigheden).
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    onderbouwing: 'Draagt bij aan het levensloopproces Toestaan lijkbezorging: een besluit over de bestemming van de as (APV Groningen art. 5:27; Wlb art. 59–66b).'
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  klant_tot_klant:
-    waarde: ja
-    onderbouwing: Ja, van het verzoek tot de toestemming of de weigering.
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de bestemming van de as, binnen Bezorgen stoffelijk overschot.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college besluit over de ontheffing of toestemming (APV Groningen art. 5:27 lid 3; Groningen art. 21 lid 1).
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - asverstrooiing
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt in een besluit, niet in een benoemde toestandsverandering.
 definitie: Het beslissen op een verzoek om as te verstrooien op een plek waar dat zonder toestemming verboden is.
 beschrijving:
 - Buiten de begraafplaats verleent het college op verzoek van de nabestaande die zorgdraagt voor de asbus bij bijzondere omstandigheden ontheffing van het verbod op de plaatsen uit de APV (APV Groningen art. 5:27 lid 3). Op de gemeentelijke begraafplaats geeft het college toestemming voor verstrooiing op een aangewezen plek (Groningen art. 21 lid 1–2). Beslisser is het college.
@@ -106,4 +62,8 @@ besluiten:
   besluit: 'Vervalt (regel Wettelijke grondslag): het proces steunt alleen op gemeentelijke regelgeving en realiseert de dienst Asverstrooiing (UPL nr. 32), met grondslag in de Model-APV art. 5:36. De dienst blijft, het proces en zijn relaties vervallen. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen
 toelichting: 'Vervalt: geen landelijke wettelijke grondslag. Het proces realiseerde de dienst Asverstrooiing (UPL nr. 32), met grondslag in de Model-APV art. 5:36; zo''n UPL-product blijft, maar wordt niet uitgewerkt in processen, objecten, gebeurtenissen of rollen (regel Wettelijke grondslag).'
+bronnen:
+- 2025-groningen-algemene-plaatselijke-verordening
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
 status: afgewezen

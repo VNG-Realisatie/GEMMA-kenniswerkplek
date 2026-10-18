@@ -2,7 +2,7 @@
 id: gemeentewet
 type: beleidskader
 archimate_type: driver
-status: goedgekeurd
+status: review
 naam: Gemeentewet
 onderwerpen:
 - bestuur-en-organisatie
@@ -23,7 +23,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling gemeentewet.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -45,7 +45,7 @@ De raad stelt een verordening vast met regels over het betrekken van ingezetenen
 
 ### Typering
 
-Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern ja, 1/1).
+Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (2 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -54,16 +54,16 @@ Beleidskader. Uitkomst van de beslistabel: Regeling als geheel, landelijk (kern 
 
 ### Kenmerken
 
-**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: motivatie (Beleidskader). **Hoofdkenmerk**: regeling als geheel.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
 | **landelijk**: Geldt het voor alle gemeenten: Europese regelgeving of rijksregelgeving (EU-verordening, wet, AMvB, ministeriële regeling) of een VNG-modelverordening van gemeentelijke regelgeving, en geen regeling of beleid van één gemeente? | Ja, rijkswet voor alle gemeenten. [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
-| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, geldend recht; art. 150 in de versie sinds 1 januari 2025. [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
-| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Betrekken inwoners bij beleid](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md), [Behandelen verzoek uitdaagrecht](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md), [Participatieverordening](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieverordening.md), [Regeling](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md), [Heffingsverordening](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md), [Heffing](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md), [Beleidsnota](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsnota.md). |
-| **generiek**: Komt het met dezelfde betekenis in veel onderwerpen voor? | Ja, geldt met dezelfde betekenis in elk onderwerp waarin de gemeente een orgaan, een verordening of een heffing gebruikt (participatie art. 150, lijkbezorging art. 147, 149, 229). [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
+| **is grondslag voor**: Geeft de regeling de gemeente een taak, bevoegdheid of plicht, of werkt de VNG-modelverordening die uit, in een aanwijsbaar proces, dienst of product? | Ja, met [Betrekken inwoners bij beleid](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/betrekken-inwoners-bij-beleid.md), [Behandelen verzoek uitdaagrecht](../../../bedrijfsarchitectuur/bedrijfsprocessen/0-bestuur-en-ondersteuning/participatie/behandelen-verzoek-uitdaagrecht.md), [Participatieverordening](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieverordening.md), [Regeling](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/regeling.md), [Heffingsverordening](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffingsverordening.md), [Heffing](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/belastingen/heffing.md), [Beleidsnota](../../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/besluitvorming/beleidsnota.md). [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
+| **in werking**: Is de regeling geldend recht, of als modelverordening actueel? | Ja, standaard. [Gemeentewet](../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md) |
 
 ### Relaties
 

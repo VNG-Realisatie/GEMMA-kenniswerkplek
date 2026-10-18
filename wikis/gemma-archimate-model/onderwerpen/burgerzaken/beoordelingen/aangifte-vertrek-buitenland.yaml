@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een verwerkte emigratie en een inschrijving in de RNI (Utrecht Emigratie doorgeven).
-    bronnen:
-    - 2026-utrecht-burgerzaken-emigratie-doorgeven
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-emigratie-doorgeven
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 1): wie emigreert, vanaf 16 jaar, en ouders voor hun kinderen (Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-emigratie-doorgeven
   gerealiseerd_door:
     waarde: ja
     naar:
     - verwerken-emigratie
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 1); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het doorgeven aan de gemeente van een vertrek naar het buitenland voor acht maanden of langer per jaar.
 beschrijving:
 - Emigratie wordt doorgegeven online, aan de balie op afspraak of schriftelijk; de gemeente verwerkt haar binnen een week en geeft haar door aan andere instanties (Utrecht Emigratie doorgeven). Grondslag is art. 2.43 Wet BRP (UPL nr. 1).
@@ -54,4 +32,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-emigratie-doorgeven
 - 2026-rvig-hup-emigratie
-status: goedgekeurd
+status: review

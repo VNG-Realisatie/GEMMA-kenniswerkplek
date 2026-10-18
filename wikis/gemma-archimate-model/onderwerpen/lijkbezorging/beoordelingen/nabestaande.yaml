@@ -2,22 +2,10 @@ begrip: Nabestaande
 vak: bedrijf/actief-intern
 hoofdkenmerk: hoedanigheid
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
     naar:
     - uitvoeren-lijkbezorging
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Naaste van een overledene die zorg draagt voor de uitvaart of de urn.
 beschrijving:
 - De nabestaande draagt zorg voor de asbus, geeft opdracht tot bijzetting of verstrooiing en kan de as laten meegeven (art. 58–60, 62). Op de gemeentelijke begraafplaats kan hij werkzaamheden bij de begraving zelf verrichten en bij ruiming de resten laten herbegraven of cremeren (Groningen art. 7 lid 4, 27 lid 4; VNG-modelverordening art. 24 lid 4).
@@ -47,4 +35,4 @@ bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
 - 2025-groningen-algemene-plaatselijke-verordening
-status: goedgekeurd
+status: review

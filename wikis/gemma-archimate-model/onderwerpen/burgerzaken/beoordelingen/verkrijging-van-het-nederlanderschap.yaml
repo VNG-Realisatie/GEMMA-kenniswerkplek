@@ -4,11 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke persoon die Nederlander wordt.
-    bronnen:
-    - 2026-rvig-hup-nederlandse-nationaliteit
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -49,4 +44,4 @@ bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2026-rvig-hup-vreemde-nationaliteit
 - 2026-rijk-paspoortwet-bwbr0005212
-status: goedgekeurd
+status: review

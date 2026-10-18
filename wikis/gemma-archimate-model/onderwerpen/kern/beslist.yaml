@@ -2,13 +2,13 @@
 ketenpartner:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
+    regel: 25
+    toelichting: Hoedanigheid (1 toetskenmerken ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     generiek: false
-    typeregel: 10
+    typeregel: 13
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605

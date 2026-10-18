@@ -8,58 +8,17 @@ kenmerken:
     waarde: ja
     naar:
     - ouder
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Een verzoek van een ouder, met formulier, online met DigiD of aan de balie (Utrecht).
     bronnen:
     - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Opname van de gegevens van het kind op de persoonslijst van de ouder, of een besluit tot weigering (Wet BRP art. 2.56a, 2.60).
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet BRP art. 2.56a, 2.60.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de opname op de persoonslijst of de weigering.
     bronnen:
     - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
     - 2026-rijk-wet-brp-bwbr0033715
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college beslist op het verzoek; weigeren is een Awb-besluit (Wet BRP art. 2.60; HUP Geboorte).
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2026-rvig-hup-geboorte
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - brp-inschrijving-niet-in-leven-zijnd-kind
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het beslissen op het verzoek van een ouder om de gegevens van een levenloos geboren kind in de basisregistratie personen op te nemen.
 beschrijving:
 - Een levenloos geboren kind wordt alleen op verzoek van een ouder in de BRP opgenomen; een kind dat kort heeft geleefd wordt automatisch ingeschreven (HUP Geboorte; Utrecht). Het weigeren van de opname is een besluit in de zin van de Awb (Wet BRP art. 2.60; HUP Geboorte).
@@ -91,4 +50,4 @@ beleidsdomein: Burgerzaken
 bronnen:
 - 2026-rijk-wet-brp-bwbr0033715
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

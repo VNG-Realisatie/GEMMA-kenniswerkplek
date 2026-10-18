@@ -4,28 +4,14 @@ hoofdkenmerk: handelende_partij
 onderwerpen:
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: ja
-    onderbouwing: Bestaat los van deze taak; de minister heeft ook taken in de BRP.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
+  soort_partij:
+    waarde: nee
+    onderbouwing: Eén bestuursorgaan van het Rijk, geen soort partij die bij elke gemeente anders voorkomt.
   vervult_een_rol:
     waarde: ja
     onderbouwing: 'Ketenpartner: houdt de registers bij en doet de mededelingen waarop de burgemeester inhoudt en weigert (Paspoortwet art. 25, 53).'
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
-  soort_partij:
-    waarde: nee
-    onderbouwing: Eén bestuursorgaan van het Rijk, geen soort partij die bij elke gemeente anders voorkomt.
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 synoniemen:
 - naam: Onze Minister
   context: wet

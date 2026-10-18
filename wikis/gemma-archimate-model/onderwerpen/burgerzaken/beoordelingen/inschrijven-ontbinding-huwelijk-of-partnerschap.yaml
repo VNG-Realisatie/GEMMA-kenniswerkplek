@@ -8,56 +8,16 @@ kenmerken:
     waarde: ja
     naar:
     - ambtenaar-van-de-burgerlijke-stand
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     naar:
     - ontbinding-huwelijk-of-partnerschap
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De ingeschreven echtscheiding of beëindiging; vanaf die dag is zij definitief (Utrecht; BW 1 art. 163).
-    bronnen:
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 80c-80e, 163; Besluit burgerlijke stand art. 60.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-burgerlijke-stand
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de stukken van advocaat of notaris tot de ingeschreven ontbinding.
     bronnen:
     - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
     - 2026-rijk-burgerlijk-wetboek-boek-1
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - echtscheiding-inschrijving
-    - geregistreerd-partnerschap-ontbinding
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het inschrijven van een echtscheiding of van de beëindiging van een geregistreerd partnerschap in de registers van de burgerlijke stand.
 beschrijving:
 - De advocaat stuurt de echtscheidingsbeschikking naar de gemeente waar het huwelijk is gesloten, die de echtscheiding op de huwelijksakte zet; bij een partnerschap sturen advocaat of notaris de stukken naar de gemeente van registratie (Utrecht). Bij een huwelijk in het buitenland gaat het naar Den Haag. De woongemeente verwerkt de ontbinding in de BRP (Utrecht). Een buitenlandse echtscheiding wordt verwerkt als buitenlands document (Utrecht Scheiden).
@@ -98,4 +58,4 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

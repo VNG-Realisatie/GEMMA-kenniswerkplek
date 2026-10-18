@@ -1,19 +1,9 @@
 begrip: Verzorgen burgerzaken
 vak: bedrijf/gedrag-intern
-soort_gedrag: groepeert_processen
+soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: De rol Bijhoudingsgemeente, die de gemeente vervult (Wet BRP art. 1.1 onder h, 1.4).
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: 'Raadpleegt en werkt bij: ingeschreven persoon, verblijfplaats, briefadres (Wet BRP art. 2.7, 2.19–2.23).'
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
   omvat_processen:
     waarde: ja
     naar:
@@ -24,6 +14,9 @@ kenmerken:
     - beheren-stempassen
     - beheren-rijbewijzen
     - afgeven-verklaring-omtrent-het-gedrag
+  procesniveau:
+    waarde: cluster naar soort werk
+    onderbouwing: Groepering van bedrijfsprocessen van één soort werk.
 definitie: 'Gemeentelijke taak rond burgerzaken: persoonsgegevens, burgerlijke stand, reisdocumenten, rijbewijzen, Nederlanderschap, kiesrecht en de VOG.'
 beschrijving:
 - 'Het college houdt de basisregistratie personen bij en verstrekt de gegevens daaruit (Wet BRP art. 1.4). De ambtenaar van de burgerlijke stand houdt de registers van de burgerlijke stand bij (BW 1 art. 16a). De burgemeester verstrekt en reikt reisdocumenten uit (Paspoortwet art. 40, 42), neemt optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst (Besluit verkrijging en verlies Nederlanderschap art. 2), verstrekt stempassen, kiezerspassen en volmachtbewijzen (Kieswet art. J 7, K 4, L 11), geeft rijbewijzen af (Wegenverkeerswet 1994 art. 116) en ontvangt de aanvraag voor een verklaring omtrent het gedrag, die de minister afgeeft (Wet justitiële en strafvorderlijke gegevens art. 30, 37). De taak groepeert de processen daarvoor, één per kernobject: Bijhouden persoonsgegevens met de ingeschreven persoon, Bijhouden burgerlijke stand met de akte van de burgerlijke stand, Beheren reisdocumenten met het reisdocument, Beheren Nederlanderschap met het Nederlanderschap, Beheren stempassen met de stempas, Beheren rijbewijzen met het rijbewijs en Afgeven verklaring omtrent het gedrag met de verklaring omtrent het gedrag als kernobject.'

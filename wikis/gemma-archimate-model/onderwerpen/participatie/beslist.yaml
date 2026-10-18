@@ -2,7 +2,7 @@
 adviesraad:
   uitkomst:
     soort: eigenschap
-    regel: 4
+    regel: 5
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
     genoemd_begrip: Betrekken inwoners bij beleid
@@ -13,16 +13,18 @@ adviesraad:
 afspraak-over-uitvoering:
   uitkomst:
     soort: element
-    regel: 36
-    toelichting: Passief, afspraak (kern ja, 2/2)
+    regel: 34
+    toelichting: Passief, afspraak (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: contract
     voorleggen: true
     redenen:
     - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
     generiek: false
-    typeregel: 18
+    typeregel: 21
   voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
@@ -33,14 +35,14 @@ afspraak-over-uitvoering:
 behandelen-verzoek-uitdaagrecht:
   uitkomst:
     soort: element
-    regel: 26
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (3 toetskenmerken ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
   - 2024-vng-implementatiehandleiding-model-participatieverordening
@@ -50,7 +52,7 @@ behandelen-verzoek-uitdaagrecht:
 beoordeling-verzoek:
   uitkomst:
     soort: onderdeel
-    regel: 5
+    regel: 6
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
     genoemd_begrip: Behandelen verzoek uitdaagrecht
@@ -61,14 +63,14 @@ beoordeling-verzoek:
 betrekken-inwoners-bij-beleid:
   uitkomst:
     soort: element
-    regel: 26
-    toelichting: Gedrag, *per keer doorlopen* (kern ja)
+    regel: 27
+    toelichting: Gedrag, *per keer doorlopen* (3 toetskenmerken ja)
     paginatype: bedrijfsproces
     archimate_type: business-process
     voorleggen: false
     procesniveau: levensloopproces
     generiek: false
-    typeregel: 16
+    typeregel: 19
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2026-rijk-gemeentewet-wettekst
@@ -78,7 +80,7 @@ betrekken-inwoners-bij-beleid:
 burgerbegroting:
   uitkomst:
     soort: eigenschap
-    regel: 4
+    regel: 5
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
     genoemd_begrip: Betrekken inwoners bij beleid
@@ -89,7 +91,7 @@ burgerbegroting:
 burgerberaad:
   uitkomst:
     soort: eigenschap
-    regel: 4
+    regel: 5
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
     genoemd_begrip: Betrekken inwoners bij beleid
@@ -99,18 +101,17 @@ burgerberaad:
   herkomst: richtlijn
 eindverslag-inwonersparticipatie:
   uitkomst:
-    soort: element
-    regel: 36
-    toelichting: 'Passief (kern ja, 1/2, ontbreekt: *levenscyclus*)'
-    paginatype: bedrijfsobject
+    soort: geen_element
+    regel: 25
+    toelichting: Toetskenmerk ontbreekt voor Bedrijfsobject
     archimate_type: business-object
     voorleggen: true
     redenen:
-    - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+    - 'levenscyclus: nee'
     generiek: false
-    typeregel: 19
+    typeregel: 22
   voor_te_leggen:
-  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  - 'levenscyclus: nee'
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2026-rijk-gemeentewet-wettekst
@@ -119,7 +120,7 @@ eindverslag-inwonersparticipatie:
 evaluatie:
   uitkomst:
     soort: onderdeel
-    regel: 5
+    regel: 6
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
     genoemd_begrip: Behandelen verzoek uitdaagrecht
@@ -130,7 +131,7 @@ evaluatie:
 experimenteerprogramma:
   uitkomst:
     soort: eigenschap
-    regel: 4
+    regel: 5
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
     genoemd_begrip: Beleidsnota
@@ -141,13 +142,13 @@ experimenteerprogramma:
 indiener:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
+    regel: 25
+    toelichting: Hoedanigheid (1 toetskenmerken ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     generiek: false
-    typeregel: 10
+    typeregel: 13
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2024-vng-model-participatieverordening
@@ -158,7 +159,7 @@ indiener:
 inspraak:
   uitkomst:
     soort: eigenschap
-    regel: 4
+    regel: 5
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
     genoemd_begrip: Betrekken inwoners bij beleid
@@ -170,13 +171,13 @@ inspraak:
 inwoner:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
+    regel: 25
+    toelichting: Handelende partij (1 toetskenmerken ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     generiek: false
-    typeregel: 9
+    typeregel: 12
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
   - 2024-vng-implementatiehandleiding-model-participatieverordening
@@ -186,7 +187,7 @@ inwoner:
 kennisgeving-van-het-ontwerp:
   uitkomst:
     soort: onderdeel
-    regel: 5
+    regel: 6
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
     genoemd_begrip: Uitvoeren uniforme openbare voorbereidingsprocedure
@@ -197,13 +198,13 @@ kennisgeving-van-het-ontwerp:
 maatschappelijke-partij:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
+    regel: 25
+    toelichting: Handelende partij (1 toetskenmerken ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     generiek: false
-    typeregel: 9
+    typeregel: 12
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2026-rijk-gemeentewet-wettekst
@@ -213,13 +214,13 @@ maatschappelijke-partij:
 model-participatieverordening:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    regel: 25
+    toelichting: Regeling als geheel, landelijk (2 toetskenmerken ja)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     generiek: false
-    typeregel: 14
+    typeregel: 17
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2026-rijk-gemeentewet-wettekst
@@ -236,7 +237,7 @@ model-participatieverordening:
 ondernemer:
   uitkomst:
     soort: verwijzing
-    regel: 6
+    regel: 4
     toelichting: Hoort bij een ander onderwerp
     voorleggen: false
     generiek: false
@@ -246,7 +247,7 @@ ondernemer:
 ondersteuning:
   uitkomst:
     soort: onderdeel
-    regel: 5
+    regel: 6
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
     genoemd_begrip: Behandelen verzoek uitdaagrecht
@@ -257,7 +258,7 @@ ondersteuning:
 ontwerp-van-het-te-nemen-besluit:
   uitkomst:
     soort: eigenschap
-    regel: 4
+    regel: 5
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
     genoemd_begrip: Besluit
@@ -280,7 +281,7 @@ participatie:
 participatiebeleid:
   uitkomst:
     soort: eigenschap
-    regel: 4
+    regel: 5
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
     genoemd_begrip: Beleidsnota
@@ -291,7 +292,7 @@ participatiebeleid:
 participatieladder:
   uitkomst:
     soort: eigenschap
-    regel: 4
+    regel: 5
     toelichting: Eigenschap, status of indeling van een ander begrip
     voorleggen: false
     genoemd_begrip: Betrekken inwoners bij beleid
@@ -302,7 +303,7 @@ participatieladder:
 participatieparagraaf:
   uitkomst:
     soort: onderdeel
-    regel: 5
+    regel: 6
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
     genoemd_begrip: Begroting
@@ -313,33 +314,34 @@ participatieparagraaf:
 participatieplan:
   uitkomst:
     soort: element
-    regel: 33
-    toelichting: Passief (kern ja, 2/2)
+    regel: 32
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: kernobject
     generiek: false
-    typeregel: 19
+    typeregel: 22
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2026-rijk-gemeentewet-wettekst
-  - 2024-vng-model-participatieverordening
   herkomst: rijksregelgeving
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieplan.md
 participatieverordening:
   uitkomst:
     soort: element
-    regel: 36
-    toelichting: Passief (kern ja, 2/2)
+    regel: 34
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: true
     redenen:
     - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   voor_te_leggen:
+  - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
+  open:
   - geen proces bepaalt de levensloop van dit object (kernobject), en het is geen deel van een object of generiek
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
@@ -350,7 +352,7 @@ participatieverordening:
 terinzagelegging:
   uitkomst:
     soort: onderdeel
-    regel: 5
+    regel: 6
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
     genoemd_begrip: Uitvoeren uniforme openbare voorbereidingsprocedure
@@ -361,7 +363,7 @@ terinzagelegging:
 verslag-van-mondelinge-zienswijzen:
   uitkomst:
     soort: onderdeel
-    regel: 5
+    regel: 6
     toelichting: Onderdeel of deelstap van een ander begrip
     voorleggen: false
     genoemd_begrip: Uitvoeren uniforme openbare voorbereidingsprocedure
@@ -372,18 +374,17 @@ verslag-van-mondelinge-zienswijzen:
 verzoek-uitdaagrecht:
   uitkomst:
     soort: element
-    regel: 33
-    toelichting: Passief (kern ja, 2/2)
+    regel: 32
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: kernobject
     generiek: false
-    typeregel: 19
+    typeregel: 22
   bronnen:
   - 2024-vng-implementatiehandleiding-model-participatieverordening
   - 2026-rijk-gemeentewet-wettekst
-  - 2024-vng-model-participatieverordening
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   herkomst: rijksregelgeving
   pad: elementpaginas/bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/verzoek-uitdaagrecht.md

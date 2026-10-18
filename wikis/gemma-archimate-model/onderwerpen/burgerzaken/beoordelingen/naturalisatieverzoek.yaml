@@ -3,23 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een in behandeling genomen verzoek met het advies van de burgemeester; het besluit neemt de minister (Besluit art. 36-38).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De verzoeker om naturalisatie, extern (Besluit art. 3; UPL nr. 263: burger).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -51,4 +34,4 @@ relaties:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-status: goedgekeurd
+status: review

@@ -1,16 +1,7 @@
 begrip: Stoffelijk overschot
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk lijk apart, met een nummer op kist en document (art. 8).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Geschouwd, begraven of gecremeerd, eventueel opgegraven (art. 3, 23, 29).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -25,18 +16,6 @@ kenmerken:
     - uitvoeren-lijkbezorging
     - verlenen-verlof-tot-ontleding
     - verzorgen-gemeentebegrafenis
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Het lichaam van een overledene of doodgeborene.
@@ -59,4 +38,6 @@ synoniemen:
   context: wet
 naamkeuze:
 - Stoffelijk overschot is de term van de Uniforme Productenlijst (2025-vng-upl-producten-en-diensten-extern, bijvoorbeeld vervoersdocumenten stoffelijk overschot) en van de praktijk (2026-rvo-aangifte-en-akte-van-overlijden). De Wet op de lijkbezorging, de beheersverordening en de VNG-bronnen spreken van lijk; dat is een synoniem met context wet.
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+status: review

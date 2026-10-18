@@ -1,37 +1,13 @@
 begrip: Joodse begraafplaats
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk exemplaar apart.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Zoals elk(e) begraafplaats.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Door de gemeente vastgesteld of verleend.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Variant van Begraafplaats: zelfde gegevens en behandeling, geen eigen levenscyclus.'
 genoemd_begrip: Begraafplaats
 toelichting: 'Specialisatie zonder pagina van Begraafplaats: deel van een gemeentelijke begraafplaats, beheerd door de besturen van die gezindte (Groningen art. 3 lid 3).'
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

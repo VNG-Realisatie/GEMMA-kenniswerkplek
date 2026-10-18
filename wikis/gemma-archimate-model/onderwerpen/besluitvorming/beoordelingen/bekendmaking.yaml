@@ -3,36 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het besluit is bekendgemaakt en treedt in werking; wie een zienswijze gaf, heeft een mededeling ontvangen (art. 3:40, 3:43).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk besluit van de gemeente.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Afdeling 3.6 Awb: toezending of uitreiking, of plaatsing volgens de Bekendmakingswet, mededeling, vermelding van bezwaar en beroep (art. 3:40–3:45).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL nr. 47): de belanghebbenden tot wie het besluit is gericht en, bij een besluit zonder geadresseerden, ieder (art. 3:41, 3:42).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
     - bekendmaken-besluit
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 47); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -51,4 +25,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2026-rijk-bekendmakingswet-wettekst
-status: goedgekeurd
+status: review

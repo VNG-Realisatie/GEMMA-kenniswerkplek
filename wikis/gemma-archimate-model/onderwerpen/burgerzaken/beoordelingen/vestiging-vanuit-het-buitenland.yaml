@@ -4,13 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke persoon die het overkomt.
-    bronnen:
-    - 2026-rvig-hup-immigratie
-    - 2026-rvig-hup-hervestiging
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -39,4 +32,4 @@ relaties:
 bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
 - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-status: goedgekeurd
+status: review

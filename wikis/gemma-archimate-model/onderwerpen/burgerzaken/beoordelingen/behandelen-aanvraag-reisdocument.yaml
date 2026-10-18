@@ -10,64 +10,18 @@ kenmerken:
     - beslisser
     - houder-van-het-reisdocument
     - ouder
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - reisdocument
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag, op afspraak aan de balie (Paspoortwet art. 27; Utrecht).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het uitgereikte reisdocument, na de verstrekking, of de weigering (Paspoortwet art. 1 onder c, d en e, 42).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Paspoortwet art. 26 tot en met 41 (bevoegdheid, identiteit, inzage van oude documenten, toestemming voor minderjarigen, termijn van vier weken); Paspoortbesluit art. 2.1, 3.1, 3.2, 3.6.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-reisdocumenten
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot de uitreiking of de weigering.
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De verstrekking of de weigering door de burgemeester (Paspoortwet art. 1 onder c en d, 40, 44, 46).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - paspoort
-    - paspoort-tweede
-    - zakenpaspoort
-    - vluchtelingenpaspoort
-    - vreemdelingenpaspoort
-    - identiteitskaart
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een paspoort, identiteitskaart of ander reisdocument, tot de uitreiking of weigering.
 beschrijving:
 - De aanvrager verschijnt persoonlijk op afspraak aan de balie, met alle huidige reisdocumenten, ook verlopen, en een pasfoto; vanaf twaalf jaar worden twee vingerafdrukken opgenomen en de rechten worden bij de aanvraag betaald (Paspoortwet art. 28, 29, 33; Paspoortbesluit art. 3.6; Utrecht). De burgemeester verschaft zich zekerheid over de identiteit en de nationaliteit, uit het overgelegde reisdocument, de basisregistratie personen en het basisregister reisdocumenten; na vermissing of diefstal zonder ander reisdocument stelt hij de identiteit eerst vast (Paspoortbesluit art. 2.1; Utrecht).
@@ -189,4 +143,8 @@ deelprocessen:
   - 2026-rijk-paspoortbesluit-bwbr0044308
   vindplaats: Paspoortwet art. 32, 42; Paspoortbesluit art. 4.6
   begrip: uitreiken-reisdocument
-status: goedgekeurd
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+- 2026-rijk-paspoortbesluit-bwbr0044308
+status: review

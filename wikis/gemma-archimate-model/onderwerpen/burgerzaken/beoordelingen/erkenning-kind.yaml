@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: 'De akte van erkenning: het kind heeft juridisch een tweede ouder (Utrecht).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-kind-erkennen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-kind-erkennen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 129): de erkenner en de moeder.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-kind-erkennen
   gerealiseerd_door:
     waarde: ja
     naar:
     - opmaken-akte-van-erkenning
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 129); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het erkennen van een kind door een man of vrouw bij de ambtenaar van de burgerlijke stand, voor of na de geboorte.
 beschrijving:
 - Op afspraak aan de balie; met erkenning voor de geboorte heeft het kind vanaf de geboorte een tweede ouder. De erkenner legt ook de achternaam en het gezag vast (Utrecht). Grondslag art. 203 BW 1 (UPL nr. 129).
@@ -48,4 +26,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-kind-erkennen
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

@@ -1,32 +1,9 @@
 begrip: Verklaring van geen bezwaar
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per overledene.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Afgegeven, bij de akte gevoegd of bewaard (art. 12, 13).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Geraadpleegd en bewaard door de ambtenaar van de burgerlijke stand (art. 12, 13).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: De officier van justitie geeft haar af; de ambtenaar van de burgerlijke stand ontvangt haar voor het verlof (art. 12).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst

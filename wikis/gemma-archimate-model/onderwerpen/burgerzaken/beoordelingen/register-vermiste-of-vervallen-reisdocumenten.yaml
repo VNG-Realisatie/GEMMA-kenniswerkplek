@@ -1,34 +1,12 @@
 begrip: Register vermiste of vervallen reisdocumenten
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Verwerken vermissing reisdocument
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Eén register van de minister (Paspoortwet art. 4a).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Niet aanwijsbaar.
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: De gemeente levert er gegevens aan door vermissing en verval te registreren (HUP Inhouding; HUP Van rechtswege vervallen).
-    bronnen:
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-    - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: De minister is verantwoordelijk voor de verwerking van de gegevens erin (Paspoortwet art. 4a lid 1).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
@@ -36,3 +14,5 @@ toelichting: 'Invoer van een andere partij: het register van de minister met ont
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rijk-paspoortbesluit-bwbr0044308
+- 2026-rvig-hup-inhouding-inlevering-vermissing
+- 2026-rvig-hup-van-rechtswege-vervallen-reisdocument

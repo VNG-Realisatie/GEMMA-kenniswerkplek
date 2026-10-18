@@ -4,36 +4,10 @@ onderwerpen:
 - besluitvorming
 - participatie
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De zienswijze is ingediend en wordt betrokken bij het besluit; bij een mondelinge zienswijze een verslag (art. 3:15, 3:17).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk ontwerpbesluit dat volgens afdeling 3.4 wordt voorbereid.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Art. 3:15–3:17: schriftelijk of mondeling, binnen zes weken, verslag van mondelinge zienswijzen.'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL nr. 497): de belanghebbende, en als dat is bepaald ook anderen (art. 3:15 lid 2).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
     - uitvoeren-uniforme-openbare-voorbereidingsprocedure
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 497); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 afnemer: extern
 domein: Bestuur
 definitie: Het schriftelijk of mondeling naar voren brengen van een mening over een ontwerpbesluit dat ter inzage ligt.
@@ -46,4 +20,4 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst Zienswijze; de Deelservice Inspraakprocedure (Vaststellen omgevingsplan) is een interne deeldienst voor het omgevingsplan. Nieuw voor GEMMA.
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

@@ -10,59 +10,15 @@ kenmerken:
     naar:
     - belanghebbende
     - beslisser
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - besluit
-    - beleidsnota
-    - aanvraag
   aanleiding:
     waarde: ja
     naar:
     - betrekken-inwoners-bij-beleid
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het besluit, genomen na de zienswijzen (art. 3:18).
+  procesniveau:
+    waarde: bedrijfsproces
+    onderbouwing: 'Bij een besluit op aanvraag loopt de procedure van de ontvangst van de aanvraag tot het besluit: het ontwerp gaat naar de aanvrager en het besluit volgt binnen zes maanden na ontvangst (art. 3:13, 3:18). Eén mutatie in de levensloop van een besluit: van ontwerp tot genomen besluit (art. 3:11, 3:18).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk besluit waarvoor een wettelijk voorschrift of het bestuursorgaan de procedure voorschrijft.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Afdeling 3.4: terinzagelegging, kennisgeving, termijn van zes weken voor zienswijzen, verslag, beslistermijn van zes maanden (art. 3:11–3:18).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - naam: Beheren besluiten
-      type: bedrijfsproces
-    onderbouwing: 'Eén mutatie in de levensloop van een besluit: van ontwerp tot genomen besluit (art. 3:11, 3:18).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  klant_tot_klant:
-    waarde: ja
-    onderbouwing: 'Bij een besluit op aanvraag loopt de procedure van de ontvangst van de aanvraag tot het besluit: het ontwerp gaat naar de aanvrager en het besluit volgt binnen zes maanden na ontvangst (art. 3:13, 3:18).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van een besluit, niet de hele levensloop.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Eindigt in het besluit van het bevoegde bestuursorgaan (art. 3:18).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - zienswijze
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 kernobject: besluit
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
@@ -128,4 +84,4 @@ besluiten:
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review

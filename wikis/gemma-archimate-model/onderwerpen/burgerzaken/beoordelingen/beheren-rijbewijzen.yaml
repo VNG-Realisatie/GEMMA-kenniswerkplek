@@ -10,54 +10,17 @@ kenmerken:
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - rijbewijs
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag van een rijbewijs, op afspraak aan de balie of online bij de RDW (Reglement rijbewijzen art. 27; Utrecht).
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
     - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een afgegeven en uitgereikt rijbewijs, of een geregistreerde vermissing (Wegenverkeerswet 1994 art. 116, 120a, 123 lid 1 onder h).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk rijbewijs dat wordt aangevraagd.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wegenverkeerswet 1994 art. 111 tot en met 123 (voorwaarden, aanvraag, afgifte, nieuw en vervangend rijbewijs, verlies van geldigheid); Reglement rijbewijzen hoofdstuk II en V.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Het levensloopproces van een kernobject; geen deel van een groter proces.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van het rijbewijs voor zover de gemeente handelt: aanvraag, afgifte, uitreiking, vervanging bij vermissing, tot het verlies van geldigheid (Wegenverkeerswet 1994 art. 113 tot en met 123).'
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar; de bedrijfsprocessen leiden tot de gebeurtenissen.
 definitie: Het behandelen van aanvragen, afgeven en uitreiken van rijbewijzen en het verwerken van de vermissing ervan.
 beschrijving:
 - De burgemeester neemt de aanvraag in ontvangst en geeft het rijbewijs af, voor wie als ingezetene met een adres in zijn gemeente in de basisregistratie personen staat; het besluit tot afgifte neemt hij na de controle van de identiteit, de bescheiden en de voorwaarden (Wegenverkeerswet 1994 art. 113, 116, 118a; Reglement rijbewijzen art. 27, 33). De gemeente stelt het tarief vast bij plaatselijke verordening en betaalt de RDW een vergoeding voor de productie en aflevering (Wegenverkeerswet 1994 art. 111 lid 5, 121).
@@ -131,4 +94,4 @@ bronnen:
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
 - 2026-rijk-reglement-rijbewijzen-bwbr0008074
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

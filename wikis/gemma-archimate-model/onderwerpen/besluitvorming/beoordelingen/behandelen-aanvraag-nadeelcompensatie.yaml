@@ -9,11 +9,6 @@ kenmerken:
     naar:
     - belanghebbende
     - beslisser
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - beschikking
-    - aanvraag
   aanleiding:
     waarde: ja
     naar:
@@ -22,49 +17,11 @@ kenmerken:
     onderbouwing: Een aanvraag van de benadeelde, met de schadeveroorzakende gebeurtenis en de schade (art. 4:127).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een beschikking die de vergoeding toekent of de aanvraag afwijst (art. 4:126, 4:130, 4:131).
+  procesniveau:
+    waarde: bedrijfsproces
+    onderbouwing: 'Loopt van de aanvraag van de benadeelde tot de beschikking aan hem (art. 4:127, 4:130). Eén mutatie in de levensloop van een beschikking: het besluit over de vergoeding (art. 4:126, 4:130).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke aanvraag om nadeelcompensatie.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Titel 4.5 Awb: inhoud van de aanvraag, recht van ten hoogste € 500, beslistermijn van acht weken of zes maanden met een adviescommissie, verdaging, verjaring (art. 4:127–4:131).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - naam: Beheren beschikkingen
-      type: bedrijfsproces
-    onderbouwing: 'Eén mutatie in de levensloop van een beschikking: het besluit over de vergoeding (art. 4:126, 4:130).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  klant_tot_klant:
-    waarde: ja
-    onderbouwing: Loopt van de aanvraag van de benadeelde tot de beschikking aan hem (art. 4:127, 4:130).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Behandelt één aanvraag; geen groepering van processen over de levensloop van een object.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Eindigt in de beschikking van het bestuursorgaan over de vergoeding (art. 4:126, 4:130).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - nadeelcompensatie
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -111,4 +68,6 @@ relaties:
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 4:127
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

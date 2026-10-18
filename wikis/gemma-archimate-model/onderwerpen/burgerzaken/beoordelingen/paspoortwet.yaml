@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: Rijksregelgeving van het Koninkrijk.
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -102,4 +97,6 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
   vindplaats: art. 9, 26, 40 (nationaal paspoort); Utrecht regel 229
-status: goedgekeurd
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+status: review

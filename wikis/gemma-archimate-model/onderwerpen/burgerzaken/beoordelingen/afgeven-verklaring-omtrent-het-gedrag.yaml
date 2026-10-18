@@ -8,54 +8,17 @@ kenmerken:
     waarde: ja
     naar:
     - ketenpartner
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - verklaring-omtrent-het-gedrag
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag om afgifte van de verklaring, aan de balie of online (Wet justitiële en strafvorderlijke gegevens art. 30; Utrecht).
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
     - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een afgegeven of geweigerde verklaring omtrent het gedrag (Wet justitiële en strafvorderlijke gegevens art. 35, 37).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet justitiële en strafvorderlijke gegevens art. 28 tot en met 39 (aanvraag, onderzoek, beslistermijn, weigering, kosten); Besluit justitiële en strafvorderlijke gegevens art. 44 tot en met 48.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Het levensloopproces van de verklaring omtrent het gedrag; geen deel van een groter proces.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van de verklaring: aanvraag, ontvangst, onderzoek, afgifte of weigering (Wet justitiële en strafvorderlijke gegevens art. 30 tot en met 37).'
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar; de bedrijfsprocessen leiden tot de gebeurtenissen.
 definitie: Het ontvangen en onderzoeken van een aanvraag voor een verklaring omtrent het gedrag en het afgeven of weigeren ervan, door gemeente en minister.
 beschrijving:
 - In het Europese deel van Nederland ontvangt de burgemeester de aanvraag van een natuurlijk persoon die als ingezetene in zijn gemeente staat, onderzoekt hij de volledigheid van de gegevens, verschaft hij zich zekerheid over de identiteit en zendt hij de aanvraag terstond door aan de minister; de gemeente kan een vergoeding verlangen en is de minister een vergoeding verschuldigd (Wet justitiële en strafvorderlijke gegevens art. 30, 39).
@@ -101,4 +64,5 @@ besluiten:
 bronnen:
 - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+- 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
+status: review

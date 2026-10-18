@@ -3,31 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De nieuwe achternaam in de geboorteakte en de BRP (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 5).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - toevoegen-latere-vermelding
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 5); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het laten opnemen van een bij koninklijk besluit gewijzigde achternaam in de geboorteakte en de basisregistratie personen.
 beschrijving:
 - Het verzoek gaat via Justis; de gemeente heeft een eigen handeling na het besluit en het product wordt daarom opgenomen. De UPL noemt een digitaal kanaal (nr. 5). Grondslag art. 7 BW 1.
@@ -42,4 +21,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

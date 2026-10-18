@@ -15,12 +15,6 @@ kenmerken:
     - behandelen-verzoek-uitdaagrecht
     - gemeentewet
     - participatieverordening
-  in_werking:
-    waarde: ja
-    onderbouwing: Actueel model van december 2024, voor de wet die sinds 1 januari 2025 geldt (Stb. 2024, 203); gemeenten vervangen hun inspraakverordening vóór 1 januari 2027.
-    bronnen:
-    - 2024-vng-model-participatieverordening
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
 synoniemen:
 - naam: VNG Model Participatieverordening 2024
   context: beleid
@@ -80,4 +74,4 @@ kwaliteitsdoelen:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review

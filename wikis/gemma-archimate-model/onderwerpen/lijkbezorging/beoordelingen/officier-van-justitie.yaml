@@ -2,30 +2,15 @@ begrip: Officier van justitie
 vak: bedrijf/actief-intern
 hoofdkenmerk: handelende_partij
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: ja
-    onderbouwing: 'Bestaat los van de lijkbezorging, met eigen taken in de strafrechtspleging (RVO: strafrechtelijk onderzoek).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  vervult_een_rol:
-    waarde: ja
-    naar:
-    - ketenpartner
   soort_partij:
     waarde: ja
     onderbouwing: Bij elke gemeente betrokken bij een niet-natuurlijke dood (art. 10, 12); een soort partij, geen individuele officier.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+  vervult_een_rol:
+    waarde: ja
+    naar:
+    - ketenpartner
 onderwerpen:
 - lijkbezorging
 definitie: Lid van het openbaar ministerie dat beslist over strafrechtelijk onderzoek, ook naar een niet-natuurlijke dood.
@@ -48,4 +33,7 @@ besluiten:
   besluit: Actor als ketenpartner in Bezorgen stoffelijk overschot (Wlb art. 10, 12), zonder eigen deelproces. Herziet de uitkomst buiten scope.
   gevolg: verwerkt
   zekerheid: kennis
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rvo-aangifte-en-akte-van-overlijden
+status: review

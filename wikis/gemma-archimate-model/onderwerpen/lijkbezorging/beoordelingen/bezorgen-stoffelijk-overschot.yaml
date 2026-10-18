@@ -8,39 +8,13 @@ kenmerken:
     waarde: ja
     naar:
     - ketenpartner
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - stoffelijk-overschot
   aanleiding:
     waarde: ja
     naar:
     - overlijden
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: 'Een bezorgd lijk: begraven, gecremeerd of ontleed, met een bestemming voor de as (art. 1, 18 lid 2, 59).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk overlijden.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Wet op de lijkbezorging art. 3–22a: schouwing, verlof, termijnen en de zorg van de burgemeester.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: Degene die in de lijkbezorging voorziet, meestal een nabestaande (art. 18).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_processen:
-    waarde: nee
-    onderbouwing: 'Aggregeert geen processen: de levensloopprocessen van de partijen bedienen de interactie (PH 146).'
-    bronnen:
-    - 2026-vng-gemma-proceshierarchie
+  interactievorm:
+    waarde: estafette
+    onderbouwing: 'Estafette: gemeente, houder en officier van justitie werken elk onder eigen verantwoordelijkheid samen, zonder aansturing van het geheel (IK 27-34; PH 144). Wordt een bedrijfsinteractie met kernobject Stoffelijk overschot, bediend door Toestaan lijkbezorging, Begraven en cremeren stoffelijk overschot en Verzorgen gemeentebegrafenis; de aggregaties worden bedieningen, Besmet stoffelijk overschot gemeld gaat naar Toestaan lijkbezorging en Overlijden start de interactie. Het object in Archi (Bezorgen lijken) vervalt: proces naar interactie is een typewijziging (regel Objectbehoud); de interactie is een nieuw object.'
 definitie: De samenwerking van gemeente, houder van begraafplaats of crematorium en officier van justitie bij de bezorging van een stoffelijk overschot.
 beschrijving:
 - Na het overlijden wordt het stoffelijk overschot geschouwd, verleent de ambtenaar van de burgerlijke stand verlof tot begraving of crematie, en wordt het binnen de wettelijke termijn begraven, gecremeerd of ontleed (Wet op de lijkbezorging art. 3, 11, 16, 67). Zorgt niemand anders voor de bezorging, dan draagt de burgemeester er zorg voor (art. 21); bij een besmet stoffelijk overschot kan hij maatregelen treffen (art. 22a). Ook een latere opgraving hoort bij de levensloop van het stoffelijk overschot (art. 29).
@@ -73,4 +47,4 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-vng-gemma-proceshierarchie
 - 2026-vng-gemma-impact-ketensamenwerking
-status: goedgekeurd
+status: review

@@ -4,9 +4,6 @@ hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: Ouder is een hoedanigheid van een persoon, geen partij los van die verantwoordelijkheid.
   voert_gedrag_uit:
     waarde: ja
     naar:
@@ -16,17 +13,6 @@ kenmerken:
     - opmaken-akte-van-naamskeuze
     - behandelen-aanvraag-reisdocument
     - verwerken-vermissing-reisdocument
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke ouder is een te onderscheiden persoon.
-    bronnen:
-    - 2026-rvig-hup-geboorte
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding bijgehouden; de afstamming is een gegeven van de ingeschreven persoon.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Hoedanigheid van wie juridisch moeder of andere ouder van een kind is, door geboorte, huwelijk, erkenning, vaststelling of adoptie.
 beschrijving:
 - 'Een kind heeft juridisch altijd een moeder, de vrouw uit wie het is geboren of de adoptiefmoeder, en hoogstens één andere ouder: de echtgenoot of partner van de moeder, de erkenner, de ouder van wie het ouderschap is vastgesteld of de adoptiefouder (BW 1 art. 198, 199; HUP Geboorte). In de gemeentelijke praktijk heet de vrouwelijke andere ouder duomoeder (Utrecht). De ouder doet aangifte van geboorte, erkent het kind, kiest samen met de andere ouder de achternaam en heeft gezag over een minderjarig kind (BW 1 art. 5, 19e, 203, 247).'
@@ -99,4 +85,4 @@ bronnen:
 - 2026-rvig-hup-geboorte
 - 2026-utrecht-burgerzaken-geboorteaangifte-doen
 - 2026-rijk-wet-brp-bwbr0033715
-status: goedgekeurd
+status: review

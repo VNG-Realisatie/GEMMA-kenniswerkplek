@@ -1,7 +1,7 @@
 begrip: Doodgeborene
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: 'Indeling van Lijk: een lijk is het lichaam van een overledene of doodgeborene (art. 2 lid 1).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -9,3 +9,5 @@ toelichting: 'Eigenschap of indeling van Lijk: Indeling van Lijk: een lijk is he
 genoemd_begrip: Stoffelijk overschot
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst

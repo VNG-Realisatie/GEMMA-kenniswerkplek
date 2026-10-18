@@ -4,67 +4,12 @@ soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: Ambtenaar van de burgerlijke stand (BW 1 art. 44 lid 1); Huwelijkszaken controleert de melding (Utrecht).
+  afhankelijkheid:
+    waarde: deelproces
+    onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: de voorbereiding van de huwelijksakte of partnerschapsakte. Nee, de start van het huwelijk of het partnerschap; de klant wil trouwen of een partnerschap laten registreren, wat pas met de voltrekking of registratie is geleverd.'
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: Raadpleegt de ingeschreven persoon voor de verificatie in de BRP en legt de gegevens vast voor de huwelijksakte of partnerschapsakte (BW 1 art. 18 lid 2, 44).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  aanleiding:
-    waarde: ja
-    onderbouwing: De melding van de aanstaande echtgenoten of partners, minstens 14 dagen en hoogstens een jaar voor de datum (BW 1 art. 44, 46; Utrecht).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een geaccepteerde kennisgeving en een vervolgafspraak, of onderzoek en weigering bij een vermoeden van een schijnhuwelijk (Utrecht; BW 1 art. 58).
-    bronnen:
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 44-62, 80a; Besluit burgerlijke stand art. 28.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    onderbouwing: 'Draagt bij aan Bijhouden burgerlijke stand: de voorbereiding van de huwelijksakte of partnerschapsakte.'
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: Nee, de start van het huwelijk of het partnerschap; de klant wil trouwen of een partnerschap laten registreren, wat pas met de voltrekking of registratie is geleverd.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De ambtenaar toetst de melding en kan bij een vermoeden van een schijnhuwelijk onderzoek instellen en weigeren mee te werken (BW 1 art. 18c, 58; Utrecht Trouwen in het buitenland).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: 'Nee, de dienst levert het bedrijfsproces waarvan dit een deelproces is: Voltrekken huwelijk en Registreren partnerschap (UPL nr. 185, 158).'
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het ontvangen en toetsen van de melding van een voorgenomen huwelijk of geregistreerd partnerschap.
 synoniemen:
 - naam: Kennisgeving van het voornemen te trouwen
@@ -83,3 +28,5 @@ besluiten:
   gevolg: verwerkt
 bronnen:
 - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
+- 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+- 2026-utrecht-burgerzaken-trouwen-in-het-buitenland

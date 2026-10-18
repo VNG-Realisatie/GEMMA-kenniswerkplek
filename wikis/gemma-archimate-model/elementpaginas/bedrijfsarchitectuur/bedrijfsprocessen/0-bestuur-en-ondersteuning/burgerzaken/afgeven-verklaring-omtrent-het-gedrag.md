@@ -2,7 +2,7 @@
 id: afgeven-verklaring-omtrent-het-gedrag
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Afgeven verklaring omtrent het gedrag
 onderwerpen:
 - burgerzaken
@@ -16,15 +16,15 @@ afnemer: extern
 bronnen:
 - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 - 2025-vng-upl-producten-en-diensten-extern
-- 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
 - 2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544
+- 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
 ---
 
 # Afgeven verklaring omtrent het gedrag
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling afgeven-verklaring-omtrent-het-gedrag.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -48,7 +48,7 @@ Infinitief met object in GEMMA-volgorde, naar de afgifte in de wet (art. 28, 37)
 
 ### Typering
 
-Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (3 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -61,19 +61,17 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 
 ### Kenmerken
 
-**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: per keer doorlopen. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: per keer doorlopen.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Ketenpartner](../../../rollen/ketenpartner.md). |
-| **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, met [Verklaring omtrent het gedrag](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-omtrent-het-gedrag.md), [Ingeschreven persoon](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/ingeschreven-persoon.md). |
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Besluit justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544.md) |
+| **procesniveau**: levensloopproces, kernobject [Verklaring omtrent het gedrag](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/verklaring-omtrent-het-gedrag.md) | Omvat de levensloop van de verklaring: aanvraag, ontvangst, onderzoek, afgifte of weigering (Wet justitiële en strafvorderlijke gegevens art. 30 tot en met 37). [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
+| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Ketenpartner](../../../rollen/ketenpartner.md). [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Besluit justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544.md) |
 | **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, de aanvraag om afgifte van de verklaring, aan de balie of online (Wet justitiële en strafvorderlijke gegevens art. 30; Utrecht). [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [Utrecht VOG aanvragen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) |
-| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, een afgegeven of geweigerde verklaring omtrent het gedrag (Wet justitiële en strafvorderlijke gegevens art. 35, 37). [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
-| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elke aanvraag. [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [Utrecht VOG aanvragen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) |
-| **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, wet justitiële en strafvorderlijke gegevens art. 28 tot en met 39 (aanvraag, onderzoek, beslistermijn, weigering, kosten); Besluit justitiële en strafvorderlijke gegevens art. 44 tot en met 48. [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [Besluit justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544.md) |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van de verklaring: aanvraag, ontvangst, onderzoek, afgifte of weigering (Wet justitiële en strafvorderlijke gegevens art. 30 tot en met 37). [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, standaard. [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md), [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md), [Besluit justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544.md) |
 
 ### Relaties
 
@@ -100,8 +98,8 @@ De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (s
 |---|---|
 | [Wet justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194.md) | Wet justitiële en strafvorderlijke gegevens |
 | [UPL-lijst extern](../../../../../modellen/upl/bronduidingen/informatiemodel/2025-vng-upl-producten-en-diensten-extern.md) | Standaard producten en dienstenlijst extern basis UPL |
-| [Utrecht VOG aanvragen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) | Gemeente Utrecht: Verklaring omtrent het gedrag (VOG) aanvragen |
 | [Besluit justitiële en strafvorderlijke gegevens](../../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-justitiele-en-strafvorderlijke-gegevens-bwbr0016544.md) | Besluit justitiële en strafvorderlijke gegevens |
+| [Utrecht VOG aanvragen](../../../../../onderwerpen/burgerzaken/bronduidingen/overig/2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog.md) | Gemeente Utrecht: Verklaring omtrent het gedrag (VOG) aanvragen |
 
 ### Afstemming met GEMMA
 

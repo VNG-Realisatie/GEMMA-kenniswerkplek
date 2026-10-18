@@ -8,60 +8,18 @@ kenmerken:
     waarde: ja
     naar:
     - aanvrager-van-de-verklaring-omtrent-het-gedrag
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - verklaring-omtrent-het-gedrag
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag, online of aan de balie op afspraak (Wet justitiële en strafvorderlijke gegevens art. 30; Utrecht).
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
     - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De ontvangen, gecontroleerde en doorgezonden aanvraag (Wet justitiële en strafvorderlijke gegevens art. 30 lid 2 en 4).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-    - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet justitiële en strafvorderlijke gegevens art. 30 tot en met 33 en 39 (indiening bij de burgemeester, volledigheid en identiteit, doorzending, vergoeding).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - afgeven-verklaring-omtrent-het-gedrag
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot de doorgezonden aanvraag, het deel van de gemeente.
     bronnen:
     - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
     - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: 'Omvat één stap in de levensloop van de verklaring: de ontvangst, het onderzoek van de volledigheid en de identiteit en de doorzending aan de minister (art. 30); de afgifte is van de minister.'
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: De beslissing over de afgifte is van de minister; de burgemeester onderzoekt alleen de volledigheid en de identiteit en zendt door (Wet justitiële en strafvorderlijke gegevens art. 30, 37).
-    bronnen:
-    - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - verklaring-omtrent-gedrag-aanvragen
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het in ontvangst nemen van een VOG-aanvraag, het controleren van de volledigheid en de identiteit en het doorzenden ervan naar de minister.
 beschrijving:
 - De aanvrager die als ingezetene in de gemeente staat, dient de aanvraag van een natuurlijk persoon in bij de burgemeester, online met een scan van het formulier van de werkgever of aan de balie op afspraak met dat formulier en een identiteitsbewijs, en betaalt direct (Wet justitiële en strafvorderlijke gegevens art. 30, 32, 33; Utrecht). De burgemeester onderzoekt de volledigheid van de gegevens, verschaft zich zekerheid over de identiteit en zendt de aanvraag terstond door aan de minister; de gemeente is de minister een vergoeding verschuldigd voor aanvragen die bij haar zijn ingediend (art. 30 lid 2 en 4, 39).
@@ -107,4 +65,4 @@ bronnen:
 - 2026-rijk-wet-justitiele-en-strafvorderlijke-gegevens-bwbr0014194
 - 2026-utrecht-burgerzaken-verklaring-omtrent-het-gedrag-aanvragen-vog
 - 2026-vng-gemma-impact-ketensamenwerking
-status: goedgekeurd
+status: review

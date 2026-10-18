@@ -3,30 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een uittreksel, gratis, of een kopie van de volledige akte (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 138): de ouders.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 138); de UPL noemt varianten apart.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het verkrijgen van een uittreksel of afschrift van de akte van een levenloos geboren kind.
 beschrijving:
 - De UPL noemt als grondslag art. 19i BW 1, het opmaken van de akte; de afnemer krijgt een uittreksel of afschrift.
@@ -40,4 +20,4 @@ beleidsdomein: Burgerzaken
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

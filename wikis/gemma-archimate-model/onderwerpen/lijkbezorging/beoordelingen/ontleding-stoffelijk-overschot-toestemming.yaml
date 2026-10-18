@@ -3,17 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Schriftelijk verlof tot ontleding, binnen drie dagen en kosteloos, met de plaats van ontleding (Wlb art. 68 lid 1).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Bedrijf (UPL): de instelling voor wetenschap of wetenschappelijk onderwijs die ontleedt (Wlb art. 67 lid 1).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -37,4 +26,4 @@ gemma_functie:
 relaties: []
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

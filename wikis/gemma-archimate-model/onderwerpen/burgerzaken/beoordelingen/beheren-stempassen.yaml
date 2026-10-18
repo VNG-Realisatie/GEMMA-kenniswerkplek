@@ -9,50 +9,16 @@ kenmerken:
     onderbouwing: 'Beslisser: de burgemeester beslist op het verzoek om volmacht (Kieswet art. L 11); Kiezer: ontvangt de stempas en doet verzoeken (art. J 8, K 3, L 8).'
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - stempas
   aanleiding:
     waarde: ja
     onderbouwing: De dag van de kandidaatstelling voor een verkiezing (Kieswet art. J 7 lid 1).
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een verstrekte stempas, kiezerspas of volmachtbewijs voor elke kiezer, en het uittreksel van ongeldige stempassen (Kieswet art. J 7, J 7a, K 4, L 11).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke verkiezing, voor elke kiezer.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Kieswet hoofdstuk J (art. J 7-J 8), K en L.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Het levensloopproces van een kernobject; geen deel van een groter proces.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van de stempas: vaststelling, verstrekking, vervanging, omzetting in kiezerspas of volmachtbewijs, ongeldigheid en vernietiging van het register (Kieswet art. J 7, J 7a, J 8, K 4, L 14).'
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 kernobject: stempas
 afnemer: extern
 definitie: Het verstrekken, vervangen en ongeldig maken van stempassen, kiezerspassen en volmachtbewijzen voor een verkiezing.
@@ -100,4 +66,4 @@ besluiten:
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

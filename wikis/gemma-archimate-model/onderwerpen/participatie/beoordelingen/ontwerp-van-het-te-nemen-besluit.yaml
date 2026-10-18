@@ -2,10 +2,12 @@ begrip: Ontwerp van het te nemen besluit
 onderwerpen:
 - participatie
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: 'Een stadium van Besluit: het ontwerp vóór de vaststelling (art. 3:11).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 genoemd_begrip: Besluit
 toelichting: 'Stadium van Besluit, geen element: het ontwerp in de uniforme openbare voorbereidingsprocedure (Awb art. 3:11).'
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst

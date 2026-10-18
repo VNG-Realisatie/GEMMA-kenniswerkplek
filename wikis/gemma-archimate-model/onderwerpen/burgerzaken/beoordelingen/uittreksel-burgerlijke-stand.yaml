@@ -3,33 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een afschrift of uittreksel van een akte van geboorte, huwelijk, partnerschap, echtscheiding of overlijden, ook meertalig (Utrecht; Besluit burgerlijke stand art. 24, 26).
-    bronnen:
-    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 23): de betrokkene of een naaste, zoals echtgenoot, kind, ouder of erfgenaam (Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
   gerealiseerd_door:
     waarde: ja
     naar:
     - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 23); de akten van geboorte en overlijden hebben in de UPL eigen producten (Geboorteakte, Overlijdensakte).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het verkrijgen van een afschrift of uittreksel van een akte van de burgerlijke stand.
 beschrijving:
 - Alleen bij de gemeente waar de gebeurtenis plaatsvond; online met vooraf betalen en verzending per post, of aan de balie op afspraak; meertalig in tien talen; Utrecht € 17,80 in 2026 (Utrecht). Een uittreksel uit de BRP, over de huidige situatie, is een andere dienst (BRP-uittreksel). Grondslag art. 23b BW 1 (UPL nr. 23).
@@ -57,4 +34,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

@@ -1,34 +1,15 @@
 begrip: Identiteitsdocument
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Inschrijven ingezetene
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk document is apart (NVVB ID-protocol 2.2).
-    bronnen:
-    - 2026-nvvb-id-protocol-medewerkers
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Niet aanwijsbaar in de bronnen.
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: De medewerker raadpleegt het bij het vaststellen van de identiteit (NVVB ID-protocol 2.2).
-    bronnen:
-    - 2026-nvvb-id-protocol-medewerkers
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: Verstrekt door de autoriteit van afgifte; de gemeente controleert het alleen (NVVB ID-protocol 2.2).
     bronnen:
     - 2026-nvvb-id-protocol-medewerkers
 toelichting: 'Invoer: een toegelaten document dat een andere autoriteit verstrekt en dat de gemeente bij de balie controleert. Geen pagina; het Nederlandse reisdocument is het element Reisdocument.'
+bronnen:
+- 2026-nvvb-id-protocol-medewerkers

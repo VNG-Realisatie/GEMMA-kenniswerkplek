@@ -1,41 +1,14 @@
 begrip: Participatieverordening
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - participatie
 kenmerken:
-  afspraak:
-    waarde: nee
-    onderbouwing: Een regeling van de raad, geen overeenkomst.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen vorm van een ander begrip.
   wordt_bewerkt:
     waarde: ja
     naar:
     - behandelen-verzoek-uitdaagrecht
     - betrekken-inwoners-bij-beleid
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke gemeente heeft haar eigen verordening, met de citeertitel Participatieverordening [naam gemeente, jaartal] (var. 1 art. [14] lid 2).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Vastgesteld door de raad, in werking op een datum, en ingetrokken als een nieuwe verordening haar vervangt, met overgangsrecht (var. 1 art. [13]–[14]).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeenteraad stelt haar zelf vast (art. 150 lid 1).
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Specialisatie van Regeling die de gemeente anders behandelt; elke gemeente moet haar vaststellen, met door de wet voorgeschreven inhoud (regels over het betrekken bij voorbereiding, uitvoering en evaluatie van beleid, voorwaarden voor het uitdaagrecht), en de processen van participatie volgen haar regels (art. 150 lid 1–3). Keten Regeling → Participatieverordening.
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-model-participatieverordening
 synoniemen:
 - naam: Verordening over betrekken bij beleid
   context: wet
@@ -81,4 +54,4 @@ beleidsdomein: Participatie
 bronnen:
 - 2026-rijk-gemeentewet-wettekst
 - 2024-vng-implementatiehandleiding-model-participatieverordening
-status: goedgekeurd
+status: review

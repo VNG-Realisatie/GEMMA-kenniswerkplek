@@ -3,31 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Opname van het kind in de BRP bij de ouder (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 90): een ouder.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - inschrijven-levenloos-geboren-kind
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 90), apart van de BRP-inschrijving; geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het laten opnemen van de gegevens van een levenloos geboren kind in de basisregistratie personen.
 beschrijving:
 - Op verzoek van een ouder, met een formulier, online met DigiD of aan de balie (Utrecht). Grondslag art. 2.56a Wet BRP (UPL nr. 90).
@@ -45,4 +24,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
 - 2026-rijk-wet-brp-bwbr0033715
-status: goedgekeurd
+status: review

@@ -4,12 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke persoon die het overkomt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-emigratie-doorgeven
-    - 2026-rvig-hup-emigratie
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -33,4 +27,7 @@ relaties:
   - 2026-utrecht-burgerzaken-emigratie-doorgeven
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: inleiding; Wet BRP art. 2.43 lid 1
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-emigratie-doorgeven
+- 2026-rvig-hup-emigratie
+status: review

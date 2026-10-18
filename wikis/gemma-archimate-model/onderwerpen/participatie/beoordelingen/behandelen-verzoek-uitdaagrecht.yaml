@@ -10,12 +10,6 @@ kenmerken:
     naar:
     - beslisser
     - indiener
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - verzoek-uitdaagrecht
-    - afspraak-over-uitvoering
-    - participatieverordening
   aanleiding:
     waarde: ja
     naar:
@@ -24,44 +18,11 @@ kenmerken:
     onderbouwing: Het verzoek dat inwoners of maatschappelijke partijen bij het college indienen (var. 1 art. 6 lid 1; var. 2 art. [11] lid 1).
     bronnen:
     - 2024-vng-model-participatieverordening
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De onderbouwde en openbaar gemaakte reactie van het bevoegde bestuursorgaan (toewijzing of afwijzing), en bij toewijzing de afspraken over de uitvoering met de indiener (var. 1 art. [8] lid 6, art. [9]; var. 2 art. [13] lid 6, art. [14]).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk verzoek van een inwoner of maatschappelijke partij (var. 1 art. 6 lid 1; var. 2 art. [11] lid 1).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  eigen_normering:
-    waarde: ja
-    onderbouwing: De verordening van de raad bepaalt de voorwaarden waaronder ingezetenen en maatschappelijke partijen gemeentelijke taken kunnen uitvoeren (Gemeentewet art. 150 lid 3). De VNG-modelverordening regelt de indieningsvereisten, de afwijzingsgronden, een reactietermijn (voorbeeldwaarde vier weken, eenmaal te verdagen) en de openbaarmaking (var. 1 art. 6, [8]; var. 2 art. [11], [13]).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-model-participatieverordening
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Een eigen levensloopproces met kernobject Verzoek uitdaagrecht; geen deel van een groter proces.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van het Verzoek uitdaagrecht: indienen bij het college, eventueel aanvullen, doorzenden aan het bevoegde bestuursorgaan, toewijzen of afwijzen, en bij toewijzing de afspraken over de uitvoering en de evaluatie (var. 1 art. 6 lid 5, [8], [9]; var. 2 art. [11], [13], [14]).'
     bronnen:
     - 2024-vng-model-participatieverordening
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Eindigt in de reactie van het bevoegde bestuursorgaan (raad, college of burgemeester), dat het verzoek toewijst of afwijst op verplichte of facultatieve gronden (var. 1 art. [8] lid 1, 3–6; var. 2 art. [13]). Of die reactie een besluit in de zin van de Awb is, zeggen de bronnen niet (vraag bij Verzoek uitdaagrecht).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De UPL kent geen product of dienst voor het uitdaagrecht of de overheidsparticipatie; het burgerinitiatief (UPL nr. 96) is een ander begrip, met de Grondwet art. 5 en de APV als grondslag.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen toestandsverandering met een eigen naam die een ander proces start.
 synoniemen:
 - naam: Overheidsparticipatie
   context: beleid, variant 2, breder dan het uitdaagrecht
@@ -142,4 +103,4 @@ relaties:
 bronnen:
 - 2026-rijk-gemeentewet-wettekst
 - 2024-vng-implementatiehandleiding-model-participatieverordening
-status: goedgekeurd
+status: review

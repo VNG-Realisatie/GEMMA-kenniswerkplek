@@ -1,16 +1,7 @@
 begrip: Besluit
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk besluit apart.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Genomen, bekendgemaakt, in werking, ingetrokken (Awb hfst. 3).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -18,18 +9,6 @@ kenmerken:
     - bekendmaken-besluit
     - uitvoeren-uniforme-openbare-voorbereidingsprocedure
     - voeren-verweer-in-beroep
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
   generiek:
     waarde: ja
     onderbouwing: Een besluit in de zin van de Awb komt in elk onderwerp voor (Awb art. 1:3).
@@ -64,4 +43,4 @@ onderwerpen:
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

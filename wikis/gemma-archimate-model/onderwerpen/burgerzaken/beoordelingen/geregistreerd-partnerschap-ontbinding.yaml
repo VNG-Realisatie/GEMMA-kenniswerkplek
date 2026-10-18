@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De beëindiging op de partnerschapsakte en in de BRP (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 157); de stukken komen van advocaat of notaris (Utrecht).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
   gerealiseerd_door:
     waarde: ja
     naar:
     - inschrijven-ontbinding-huwelijk-of-partnerschap
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 157); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het laten inschrijven van de beëindiging van een geregistreerd partnerschap.
 beschrijving:
 - Met wederzijds goedvinden met een verklaring van advocaten of notarissen, anders via de rechtbank (BW 1 art. 80c; Utrecht). Grondslag art. 80c BW 1 (UPL nr. 157).
@@ -46,4 +24,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

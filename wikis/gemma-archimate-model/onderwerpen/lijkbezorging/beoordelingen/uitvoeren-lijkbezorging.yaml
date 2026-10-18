@@ -11,57 +11,16 @@ kenmerken:
     - houder-van-het-crematorium
     - nabestaande
     - rechthebbende-op-het-graf
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - vergunning
-    - stoffelijk-overschot
-    - graf
-    - begraafplaats
-    - crematorium
-    - urn
   aanleiding:
     waarde: ja
     naar:
     - overlijden
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Begraven of gecremeerd lijk, bijgezette of verstrooide as (art. 1, 59).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke uitvaart.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Art. 16 (termijn), 23 (graf), 49 (crematorium), 59 (bestemming as); Groningen art. 7–10 (tijden, stukken).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - begraven-en-cremeren-stoffelijk-overschot
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het overlijden en de kennisgeving tot de begraven of gecremeerde overledene en de bestemming van de as.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces levert.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -145,4 +104,7 @@ deelprocessen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 59, 62
   begrip: bijzetten-of-verstrooien-van-de-as
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+status: review

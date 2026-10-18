@@ -10,64 +10,17 @@ kenmerken:
     - beslisser
     - bijhoudingsgemeente
     - rni-loket
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Een verzoek van de ingeschrevene, een overheidsorgaan of een derde (NVVB Schema, stap 1).
     bronnen:
     - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een uittreksel, een kopie of een schriftelijke verstrekking van gegevens, of een weigering (NVVB Schema; UPL nr. 91, 93, 94).
-    bronnen:
-    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-    - 2025-vng-upl-producten-en-diensten-extern
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-    - 2025-vng-upl-producten-en-diensten-extern
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet BRP art. 2.55 (inzage, uittreksel, binnen vier weken), 3.5 tot en met 3.9 (categorieën van verzoekers), 3.11 (protocollering), 3.13 (leges); Besluit BRP art. 40 (weigering) (NVVB Schema; UPL; Besluit BRP).
-    bronnen:
-    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-besluit-brp-bwbr0034306
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de verstrekking of de weigering.
     bronnen:
     - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
     - 2025-vng-upl-producten-en-diensten-extern
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college beslist op het verzoek, na een belangenafweging bij een geregistreerde verstrekkingsbeperking, met bezwaar (NVVB Schema, Belangenafweging; Besluit BRP art. 40).
-    bronnen:
-    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-    - 2026-rijk-besluit-brp-bwbr0034306
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - brp-inzagerecht
-    - brp-uittreksel
-    - brp-uittreksel-met-gezag
-    - bewijs-van-in-leven-zijn
-    - bewijs-van-nederlanderschap
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
 definitie: Het beslissen op een verzoek om gegevens uit de basisregistratie personen en het verstrekken ervan aan de ingeschrevene of aan anderen.
 beschrijving:
 - 'Het college ontvangt verzoeken om gegevens uit de BRP: van de ingeschrevene zelf (inzage, kopie, uittreksel; art. 2.55 Wet BRP) en van overheidsorganen, bij besluit aangewezen derden, bij gemeentelijke verordening aangewezen derden en overige verzoekers (NVVB Schema; UPL). De medewerker stelt vast wie verzoekt en waarvoor, deelt het verzoek in, verstrekt de gegevens die daarbij horen en protocolleert de verstrekking; bij een geregistreerde verstrekkingsbeperking volgt een belangenafweging (NVVB Schema). Gegevens in onderzoek worden met vermelding daarvan verstrekt; verzoeken over niet-ingezetenen gaan naar een RNI-loket (NVVB Schema).'
@@ -133,4 +86,5 @@ relaties:
 bronnen:
 - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
 - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-status: goedgekeurd
+- 2026-rijk-besluit-brp-bwbr0034306
+status: review

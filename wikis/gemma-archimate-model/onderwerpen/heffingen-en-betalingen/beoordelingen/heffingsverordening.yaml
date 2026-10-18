@@ -1,16 +1,7 @@
 begrip: Heffingsverordening
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per belasting of recht en per gemeente.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Vastgesteld, gewijzigd, ingetrokken (Gemeentewet art. 216).
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -19,23 +10,6 @@ kenmerken:
     onderbouwing: Geraadpleegd voor de tarieven bij uitgifte en onderhoud (Groningen art. 8, 23, 24).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Specialisatie van Regeling met eigen gegevens (belastingplichtige, belastbaar feit, tarief, art. 217); het hoogste herkenbare niveau voor de verordening lijkbezorgingsrechten.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
   generiek:
     waarde: ja
     onderbouwing: Heffingsverordeningen komen in veel onderwerpen voor (Gemeentewet art. 216, 229).
@@ -93,4 +67,7 @@ relaties:
 onderwerpen:
 - heffingen-en-betalingen
 - lijkbezorging
-status: goedgekeurd
+bronnen:
+- 2024-rijk-gemeentewet-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+status: review

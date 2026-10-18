@@ -8,54 +8,16 @@ kenmerken:
     waarde: ja
     naar:
     - beslisser
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - vergunning
-    - crematorium
   aanleiding:
     waarde: ja
     onderbouwing: Een aanvraag om vergunning voor het vestigen, uitbreiden of wijzigen van een bijzonder crematorium (art. 53).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een vergunning voor een bijzonder crematorium (art. 53).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke vestiging, uitbreiding of wijziging van een bijzonder crematorium.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Art. 53–55: vergunningplicht, openbare kennisgeving van dertig dagen, beroep bij gedeputeerde staten.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-crematoria
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot de vergunning.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het crematorium, binnen Beheren crematoria.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college verleent de vergunning (art. 53).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De bronnen in de wiki noemen geen product of dienst.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 definitie: Het verlenen van de vergunning voor het vestigen, uitbreiden of wijzigen van een crematorium van een particuliere houder.
 beschrijving:
 - Het vestigen, uitbreiden of wijzigen van een bijzonder crematorium behoeft een vergunning van het college (Wet op de lijkbezorging art. 53). Een vergunning voor vestiging wordt pas verleend nadat het college het voornemen ten minste dertig dagen tevoren openbaar heeft gemaakt (art. 54). Belanghebbenden kunnen in beroep bij gedeputeerde staten (art. 55).
@@ -82,4 +44,6 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 53
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+status: review

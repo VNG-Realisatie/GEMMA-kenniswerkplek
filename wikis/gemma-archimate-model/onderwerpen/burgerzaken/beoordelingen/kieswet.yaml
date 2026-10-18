@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: Wet.
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht (versie 2026-10-01).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -81,4 +76,6 @@ relaties:
   bronnen:
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: art. B 5, D 1-D 7
-status: goedgekeurd
+bronnen:
+- 2026-rijk-kieswet-bwbr0004627
+status: review

@@ -7,57 +7,17 @@ kenmerken:
     naar:
     - beslisser
     - rechthebbende-op-het-graf
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - vergunning
-    - stoffelijk-overschot
   aanleiding:
     waarde: ja
     onderbouwing: Aanvraag van de rechthebbende bij de burgemeester (Groningen art. 28 lid 1).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Opgegraven lijk, met voorschriften over vervoer en bestemming (art. 29 lid 2).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor verschillende graven, op aanvraag.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Art. 29 (vergunning, toestemming rechthebbende, voorschriften); Groningen art. 28 (grafrust tien jaar).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - toestaan-lijkbezorging
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot het opgegraven lijk.
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De burgemeester verleent de vergunning tot opgraving (art. 29 lid 1).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - herbegraven-of-alsnog-cremeren
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -105,4 +65,4 @@ kernobject: stoffelijk-overschot
 afnemer: extern
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-status: goedgekeurd
+status: review

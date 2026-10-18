@@ -1,19 +1,10 @@
 begrip: Aanvraag
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - besluitvorming
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke aanvraag heeft een aanvrager, een dagtekening en een gevraagde beschikking (art. 4:2 lid 1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt ingediend, eventueel aangevuld, en eindigt in een besluit of in het niet behandelen ervan (art. 4:1, 4:5, 4:13).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -21,18 +12,6 @@ kenmerken:
     - behandelen-aanvraag-nadeelcompensatie
     - uitvoeren-uniforme-openbare-voorbereidingsprocedure
     - vaststellen-dwangsom-bij-niet-tijdig-beslissen
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Het verzoek zelf, niet de vorm; het formulier is de vorm (art. 4:4).
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van een ander object; de aanvraag gaat aan het besluit vooraf.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De aanvrager dient haar in, maar de gemeente behandelt en bewaart haar als eigen zaak (art. 4:1, 4:5).
   generiek:
     waarde: ja
     onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp waarin de gemeente op verzoek beslist (art. 1:3 lid 3).
@@ -82,4 +61,6 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'Aanvraag is de externe aanvraag volgens de Awb: het verzoek van een belanghebbende om een besluit. GGM Archief is de primaire entiteit (met het GEMMA-object Aanvraag van Archief), Diensten een duplicaat. Aanvraag in ICT is een interne aanvraag die niet tot een besluit leidt: een homoniem, met een GGM-terugmelding; het GEMMA-object Aanvraag van ICT blijft ongekoppeld. Duplicaten worden niet per geval teruggemeld.'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

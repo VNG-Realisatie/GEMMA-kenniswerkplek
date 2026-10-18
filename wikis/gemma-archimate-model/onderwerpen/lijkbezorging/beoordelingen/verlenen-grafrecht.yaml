@@ -7,60 +7,19 @@ kenmerken:
     naar:
     - beslisser
     - rechthebbende-op-het-graf
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - grafrecht
-    - graf
-    - heffing
   aanleiding:
     waarde: ja
     onderbouwing: Schriftelijke aanvraag (Groningen art. 16 lid 1; VNG-modelverordening art. 15 lid 1).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Grafrecht op een particulier graf, voor bepaalde of onbepaalde tijd (art. 28).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke uitgifte van een particulier graf, urnengraf of urnennis.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Art. 28 (schriftelijk, ten minste tien jaar, verlenging); Groningen art. 14, 16 (volgorde, termijnen).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-grafrechten
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot het verleende grafrecht.
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Beheren grafrechten.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college verleent het grafrecht op schriftelijke aanvraag (Groningen art. 16 lid 1).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - grafuitgifte
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -124,4 +83,4 @@ bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
 - 2026-vng-retributies
-status: goedgekeurd
+status: review

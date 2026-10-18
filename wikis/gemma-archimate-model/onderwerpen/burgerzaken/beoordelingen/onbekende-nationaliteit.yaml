@@ -3,10 +3,13 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Nationaliteit
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: Een waarde van het gegeven Nationaliteit (HUP Onbekende nationaliteit; HUP Nationaliteit).
     bronnen:
     - 2026-rvig-hup-onbekende-nationaliteit
     - 2026-rvig-hup-nationaliteit
 toelichting: 'Waarde van Nationaliteit, geen pagina: opgenomen als geen brondocument beschikbaar is en de nationaliteit niet van rechtswege kan worden bepaald; beëindigd als de werkelijke nationaliteit bekend wordt, bijvoorbeeld door een mededeling op grond van art. 2.17 Wet BRP, of bij verkrijging van het Nederlanderschap (HUP Onbekende nationaliteit). Een processtap van Bijhouden persoonsgegevens.'
+bronnen:
+- 2026-rvig-hup-onbekende-nationaliteit
+- 2026-rvig-hup-nationaliteit

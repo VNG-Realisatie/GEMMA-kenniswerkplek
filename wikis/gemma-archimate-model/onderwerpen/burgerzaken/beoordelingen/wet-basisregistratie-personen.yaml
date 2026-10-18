@@ -9,13 +9,6 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-brp-bwbr0033715
     - 2025-vng-upl-producten-en-diensten-extern
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht; de UPL en de HUP verwijzen naar de actuele tekst.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rvig-hup-algemeen
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -349,4 +342,4 @@ bronnen:
 - 2026-rijk-besluit-brp-bwbr0034306
 - 2026-rvig-hup-algemeen
 - 2026-rvig-hup-achtergronden-en-begrippen
-status: goedgekeurd
+status: review

@@ -1,15 +1,10 @@
 begrip: Register van ongeldige stempassen
 vak: bedrijf/passief
+hoofdkenmerk: representatie
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Stempas
-kenmerken:
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: ja
-    onderbouwing: De vorm waarin de ongeldige stempassen worden vastgelegd (Kieswet art. J 7a).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
+kenmerken: {}
 toelichting: 'Representatie, geen pagina: het register legt de ongeldige stempassen vast; de burgemeester stelt de dag voor de stemming een uittreksel vast en vernietigt het register drie maanden na de toelating van de gekozenen (Kieswet art. J 7a). Vermeld bij Stempas. Precedent: Register van begraven lijken.'
+bronnen:
+- 2026-rijk-kieswet-bwbr0004627

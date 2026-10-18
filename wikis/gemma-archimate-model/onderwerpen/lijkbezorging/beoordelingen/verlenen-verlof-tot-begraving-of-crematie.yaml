@@ -6,54 +6,16 @@ kenmerken:
     waarde: ja
     naar:
     - ambtenaar-van-de-burgerlijke-stand
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - vergunning
   aanleiding:
     waarde: ja
     naar:
     - opmaken-akte-van-overlijden
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Schriftelijk verlof tot begraving of crematie (art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke begraving of crematie.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Art. 11–14: kosteloos, alleen op grond van de verklaringen, bevoegde ambtenaar.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - toestaan-lijkbezorging
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag (Wlb art. 18) tot het verlof; een eigen aanvraag, ook al volgt zij op de aangifte van het overlijden.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rvo-aangifte-en-akte-van-overlijden
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand verleent het schriftelijk verlof (art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - verlof-tot-begraven
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -87,4 +49,7 @@ onderwerpen:
 - lijkbezorging
 kernobject: stoffelijk-overschot
 afnemer: extern
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rvo-aangifte-en-akte-van-overlijden
+status: review

@@ -9,10 +9,6 @@ kenmerken:
     naar:
     - belanghebbende
     - beslisser
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - besluit
   aanleiding:
     waarde: ja
     naar:
@@ -21,47 +17,11 @@ kenmerken:
     onderbouwing: 'Een beroep bij de bestuursrechter: de rechter zendt de gronden van het beroepschrift aan het bestuursorgaan (art. 8:42 lid 1).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het verweerschrift en de stukken voor de bestuursrechter, en na de uitspraak zo nodig een nieuw besluit (art. 8:42, 8:72 lid 4).
+  procesniveau:
+    waarde: bedrijfsproces
+    onderbouwing: 'Loopt van het beroep van de belanghebbende tot de uitvoering van de uitspraak (art. 8:42, 8:72). Eén mutatie in de levensloop van een besluit: de rechterlijke toetsing, met zo nodig een nieuw besluit (art. 8:72).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk beroep tegen een besluit van de gemeente.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Hoofdstuk 8 Awb: stukken en verweerschrift binnen vier weken, uitspraak, opdracht tot een nieuw besluit binnen een termijn (art. 8:42, 8:72).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - naam: Beheren besluiten
-      type: bedrijfsproces
-    onderbouwing: 'Eén mutatie in de levensloop van een besluit: de rechterlijke toetsing, met zo nodig een nieuw besluit (art. 8:72).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  klant_tot_klant:
-    waarde: ja
-    onderbouwing: Loopt van het beroep van de belanghebbende tot de uitvoering van de uitspraak (art. 8:42, 8:72).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Behandelt één beroep; geen groepering van processen over de levensloop van een object.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Op het beroep beslist de bestuursrechter (art. 8:72); een nieuw besluit van het bestuursorgaan volgt alleen als de rechter dat opdraagt.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - beroep
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -111,4 +71,6 @@ besluiten:
 - datum: '2026-10-12'
   besluit: 'De bestuursrechter is geen element: de gemeente is partij in het beroep, de rechter staat in de beschrijving.'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

@@ -8,63 +8,18 @@ kenmerken:
     waarde: ja
     naar:
     - ambtenaar-van-de-burgerlijke-stand
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     onderbouwing: Een verzoek om een afschrift, uittreksel of verklaring (Utrecht Uittreksel of akte aanvragen).
     bronnen:
     - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een afschrift of uittreksel, ook meertalig, of een verklaring zoals de attestatie de vita (Besluit burgerlijke stand art. 24, 26; BW 1 art. 19k).
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 19k, 23, 23b; Besluit burgerlijke stand art. 24, 26.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-burgerlijke-stand
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot het afschrift, uittreksel of de verklaring.
     bronnen:
     - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
     - 2026-rijk-burgerlijk-wetboek-boek-1
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - overlijdensakte
-    - geboorteakte
-    - geboorteakte-levenloos-kind
-    - verklaring-van-huwelijksbevoegdheid
-    - uittreksel-burgerlijke-stand
-    - bewijs-van-in-leven-zijn
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het op verzoek afgeven van afschriften en uittreksels van akten van de burgerlijke stand en van verklaringen van de ambtenaar van de burgerlijke stand.
 beschrijving:
 - Akten van de burgerlijke stand zijn openbaar, tenzij de wet anders bepaalt; een authentiek afschrift of uittreksel heeft dezelfde bewijskracht als de akte (BW 1 art. 22a, 23). Een afschrift bevat ook latere vermeldingen, een uittreksel de toestand op het moment van afgifte; meertalige uittreksels volgen de Weense overeenkomst (Besluit burgerlijke stand art. 24, 26). Utrecht verstrekt uittreksels en afschriften online, aan de balie of per post (Utrecht Uittreksel of akte aanvragen).
@@ -135,4 +90,4 @@ beleidsdomein: Burgerzaken
 bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-status: goedgekeurd
+status: review

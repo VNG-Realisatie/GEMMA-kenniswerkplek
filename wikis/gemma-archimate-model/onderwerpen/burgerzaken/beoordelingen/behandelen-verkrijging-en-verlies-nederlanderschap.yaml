@@ -9,59 +9,17 @@ kenmerken:
     onderbouwing: Beslisser (burgemeester), Optant en Verzoeker om naturalisatie (Besluit art. 7, 11, 33, 60a, 63).
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - nederlanderschap
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Een optieverklaring, naturalisatieverzoek of verklaring van afstand bij de burgemeester (Besluit art. 7, 33, 63).
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een bevestiging of weigering, een advies aan de minister, een uitreiking die de verkrijging doet ingaan, of een bevestigde afstand (Besluit art. 11, 36, 60a, 60b, 63).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke optie, naturalisatie en afstand.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Besluit verkrijging en verlies Nederlanderschap hoofdstuk II, III, IIIA en V paragraaf 1; Rijkswet op het Nederlanderschap art. 6, 7, 15.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: 'Een eigen bedrijfsproces binnen het ketenproces Beheren Nederlanderschap: het deel van de gemeente, geen deelproces.'
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_processen:
-    waarde: ja
-    naar:
-    - behandelen-optieverklaring
-    - behandelen-naturalisatieverzoek
-    - behandelen-verklaring-van-afstand
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: 'Omvat het deel van de gemeente in de levensloop van het Nederlanderschap: verkrijging door optie of naturalisatie, het in werking treden door de uitreiking, en verlies door afstand (Rijkswet art. 6, 7, 15; Besluit art. 11, 36-38, 60a, 60b, 63).'
     bronnen:
     - 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de deelprocessen.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De deelprocessen leveren het aanbod.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 definitie: Het in ontvangst nemen en onderzoeken van optie, naturalisatieverzoek en afstand van het Nederlanderschap, en het bevestigen of uitreiken door de burgemeester.
 beschrijving:
 - In het Europese deel van Nederland neemt de burgemeester optieverklaringen, naturalisatieverzoeken en verklaringen van afstand in ontvangst van wie in zijn gemeente is ingeschreven of verblijft (Besluit verkrijging en verlies Nederlanderschap art. 2, 7, 33, 63). Bij optie behandelt hij de verklaring zelf en bevestigt of weigert hij de verkrijging; bij naturalisatie onderzoekt hij het verzoek, adviseert hij de minister van Justitie en Veiligheid en reikt hij het uittreksel van het besluit uit; bij afstand neemt hij de verklaring in ontvangst en bevestigt hij haar (Rijkswet op het Nederlanderschap art. 6, 7; Besluit art. 11, 36-38, 60a, 60b, 63).
@@ -117,4 +75,7 @@ besluiten:
 - datum: '2026-10-08'
   besluit: 'Vervalt: samengevoegd in het levensloopproces Beheren Nederlanderschap, dat zijn object in Archi houdt (per kernobject één levensloopproces; geen ketensamenwerking). De eerste alinea is gelijk aan die van Beheren Nederlanderschap; de tweede, over het deel binnen het ketenproces, vervalt. Het object van dit element in Archi vervalt.'
   gevolg: afwijzen
+bronnen:
+- 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
+- 2026-rijk-rijkswet-op-het-nederlanderschap-bwbr0003738
 status: afgewezen

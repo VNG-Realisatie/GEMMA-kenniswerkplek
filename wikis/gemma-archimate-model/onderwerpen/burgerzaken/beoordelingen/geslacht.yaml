@@ -2,8 +2,8 @@ begrip: Geslacht
 onderwerpen:
 - burgerzaken
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: 'Een gegeven van de persoon: de geslachtsaanduiding in de akte en de BRP (HUP Wijziging geslachtsaanduiding).'
     bronnen:
     - 2026-rvig-hup-wijziging-geslachtsaanduiding

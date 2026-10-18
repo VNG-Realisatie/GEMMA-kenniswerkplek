@@ -9,11 +9,6 @@ kenmerken:
     naar:
     - belanghebbende
     - beslisser
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - beschikking
-    - aanvraag
   aanleiding:
     waarde: ja
     naar:
@@ -22,49 +17,11 @@ kenmerken:
     onderbouwing: Een schriftelijke ingebrekestelling door de aanvrager na het verstrijken van de beslistermijn (art. 4:17 lid 3).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De beschikking tot vaststelling van verschuldigdheid en hoogte van de dwangsom (art. 4:18).
+  procesniveau:
+    waarde: bedrijfsproces
+    onderbouwing: 'Loopt van de ingebrekestelling door de aanvrager tot de beschikking tot vaststelling aan hem (art. 4:17 lid 3, 4:18). Eén mutatie in de levensloop van een beschikking: de vaststelling van de dwangsom bij een te late beschikking (art. 4:18).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke ingebrekestelling na een te late beschikking op aanvraag.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Paragraaf 4.1.3.2 Awb: aanvang twee weken na de ingebrekestelling, bedragen per dag, ten hoogste 42 dagen, vaststelling binnen twee weken, terugvordering (art. 4:17, 4:18, 4:20).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - naam: Beheren beschikkingen
-      type: bedrijfsproces
-    onderbouwing: 'Eén mutatie in de levensloop van een beschikking: de vaststelling van de dwangsom bij een te late beschikking (art. 4:18).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  klant_tot_klant:
-    waarde: ja
-    onderbouwing: Loopt van de ingebrekestelling door de aanvrager tot de beschikking tot vaststelling aan hem (art. 4:17 lid 3, 4:18).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Stelt één dwangsom vast; geen groepering van processen over de levensloop van een object.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Eindigt in de beschikking tot vaststelling van de dwangsom van het bestuursorgaan (art. 4:18).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - dwangsom-bij-niet-tijdig-beslissen
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -111,4 +68,6 @@ besluiten:
 - datum: '2026-10-12'
   besluit: De ingebrekestelling start het proces en is geen eigen element.
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

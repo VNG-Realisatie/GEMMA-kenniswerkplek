@@ -4,13 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Gebeurt bij veel personen, elk jaar opnieuw.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-    - 2026-rvig-hup-ontkenning-ouderschap
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -35,4 +28,8 @@ relaties:
   vindplaats: art. 49-52
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+- 2026-rvig-hup-ontkenning-ouderschap
+status: review

@@ -5,34 +5,19 @@ onderwerpen:
 - burgerzaken
 - lijkbezorging
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: Ambtenaar van de burgerlijke stand (art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: Raadpleegt de verklaring van overlijden en legt het verlof vast (art. 11–13).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  stabiel_over_tijd:
-    waarde: ja
-    onderbouwing: Volgt uit de wettelijke taak van de ambtenaar van de burgerlijke stand, los van de organisatie (art. 11).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   bedient_gedrag:
     waarde: ja
     naar:
     - verlenen-verlof-tot-begraving-of-crematie
     - bijhouden-burgerlijke-stand
+  gebruikt_objecten:
+    waarde: ja
+    onderbouwing: Raadpleegt de verklaring van overlijden en legt het verlof vast (art. 11–13).
+    bronnen:
+    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   in_functie_indeling:
     waarde: ja
     onderbouwing: Onderwerp onder Producten- en dienstenrealisatie publieksdiensten (Uitvoering › Publieksdiensten) in de GEMMA-functie-indeling.
-    gemma_relatie:
-    - id-efd77657-f6f9-457c-a9e8-93d6d11647df
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Geen bredere functie in deze wiki.
     gemma_relatie:
     - id-efd77657-f6f9-457c-a9e8-93d6d11647df
 definitie: Het bijhouden van de burgerlijke staat van personen naar aanleiding van geboorte, overlijden, huwelijk en verhuizing.
@@ -237,4 +222,4 @@ beschrijving:
 - De ambtenaar van de burgerlijke stand maakt akten op van geboorte, huwelijk en overlijden en verleent het verlof tot begraving of crematie (Wet op de lijkbezorging art. 11; RVO). De functie bedient de processen daarvoor.
 bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
-status: goedgekeurd
+status: review

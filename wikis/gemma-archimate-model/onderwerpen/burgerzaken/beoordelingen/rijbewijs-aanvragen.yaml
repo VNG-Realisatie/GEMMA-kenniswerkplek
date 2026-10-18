@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De aanvrager krijgt het rijbewijs uitgereikt, voor het eerst, bij vernieuwing of ter vervanging.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De aanvrager, een inwoner (UPL: doelgroep burger).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-aanvraag-rijbewijs
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: De UPL noemt het als eigen product.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het aanvragen en ophalen van een Nederlands rijbewijs, voor het eerst, bij vernieuwing of ter vervanging van een verloren rijbewijs.
 beschrijving:
 - 'De aanvrager komt op afspraak aan de balie, met zijn vorige rijbewijs of een identiteitsbewijs en een pasfoto, en haalt het rijbewijs vijf werkdagen later persoonlijk op; per afspraak behandelt de gemeente één aanvraag en een spoedaanvraag kost extra (Utrecht). Een eerste rijbewijs vraagt een verklaring van geschiktheid en geeft een beginnersrijbewijs; een groot rijbewijs of een aanvraag vanaf 75 jaar vraagt een medische keuring (Utrecht; Reglement rijbewijzen art. 35). De gezondheidsverklaring (UPL nr. 362) is een onderdeel van deze dienst: de gemeente verkoopt haar niet, de aanvrager koopt haar bij het CBR, en de gemeente controleert bij het besluit over de aanvraag of de verklaring van geschiktheid is geregistreerd (Reglement rijbewijzen art. 35, 45, 97).'
@@ -56,4 +34,4 @@ bronnen:
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
 - 2026-utrecht-burgerzaken
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review

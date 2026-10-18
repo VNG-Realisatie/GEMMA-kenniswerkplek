@@ -2,22 +2,10 @@ begrip: Degene die in de lijkbezorging voorziet
 vak: bedrijf/actief-intern
 hoofdkenmerk: hoedanigheid
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
     naar:
     - uitvoeren-lijkbezorging
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Wie de lijkbezorging van een overledene regelt en daarvoor het verlof aanvraagt.
 beschrijving:
 - Degene die in de lijkbezorging voorziet vraagt het verlof tot begraving of crematie aan, of is redelijkerwijs in diens plaats getreden; de lijkbezorging volgt zoveel mogelijk de wens van de overledene (art. 18, 19). Op de gemeentelijke begraafplaats doet hij de kennisgeving van begraven of bijzetten en ondertekent hij zo nodig de machtiging (Groningen art. 7 lid 2, 9). In de praktijk vervult vaak de uitvaartondernemer deze rol namens de nabestaanden.
@@ -43,4 +31,4 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review

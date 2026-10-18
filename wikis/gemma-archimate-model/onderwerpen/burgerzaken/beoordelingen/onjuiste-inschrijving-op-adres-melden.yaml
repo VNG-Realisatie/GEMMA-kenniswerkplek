@@ -3,30 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een adresonderzoek en, na onderzoek, een juiste inschrijving op het adres (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
-  afnemer:
-    waarde: ja
-    onderbouwing: Bewoner die meldt dat iemand onterecht op zijn adres staat ingeschreven (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   gerealiseerd_door:
     waarde: ja
     naar:
     - uitvoeren-adresonderzoek
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product van de gemeente (Utrecht); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
 definitie: Het melden dat iemand op het eigen adres staat ingeschreven die er niet woont, of dat een briefadreshouder niet bereikbaar is.
 beschrijving:
 - De melding is gratis, via een online formulier of aan de balie; met hetzelfde formulier kan een adresonderzoek worden gestopt. Het onderzoek duurt weken tot maanden (Utrecht).
@@ -44,4 +24,4 @@ bronnen:
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
 - 2026-rijk-wet-brp-bwbr0033715
 - 2023-rvig-circulaire-adresonderzoek-brp
-status: goedgekeurd
+status: review

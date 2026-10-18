@@ -3,8 +3,8 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Reisdocument
 kenmerken:
-  eigen_identiteit:
-    waarde: nee
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: 'Een onderdeel van het reisdocument: het elektronische middel op het document (Paspoortwet art. 1 onder r, 3a).'
 toelichting: 'Onderdeel, geen pagina: het van rijkswege uitgegeven elektronische middel op het reisdocument voor authenticatie bij elektronische dienstverlening (Paspoortwet art. 1 onder r, 3a). Vermeld bij Reisdocument.'
 bronnen:

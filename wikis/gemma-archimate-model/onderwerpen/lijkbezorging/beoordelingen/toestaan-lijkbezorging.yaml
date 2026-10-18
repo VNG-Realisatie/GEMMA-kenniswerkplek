@@ -10,64 +10,18 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2025-groningen-algemene-plaatselijke-verordening
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - stoffelijk-overschot
   aanleiding:
     waarde: ja
     onderbouwing: Het overlijden en de aanvraag van het verlof door wie in de lijkbezorging voorziet (art. 3, 11, 18).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: 'Een stoffelijk overschot dat mag worden begraven, gecremeerd of ontleed: het verlof, met zo nodig een andere termijn, een laissez-passer of een maatregel (art. 11, 17, 22a, 68; Besluit op de lijkbezorging art. 11).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk overlijden.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet op de lijkbezorging art. 3–17, 22a, 29, 67–68; Besluit op de lijkbezorging art. 11.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: 'Een eigen levensloopproces: het deel van de gemeente als overheid in de levensloop van het stoffelijk overschot, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces.'
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_processen:
-    waarde: ja
-    naar:
-    - schouwen-stoffelijk-overschot
-    - verlenen-verlof-tot-begraving-of-crematie
-    - stellen-andere-termijn
-    - verlenen-verlof-tot-ontleding
-    - afgeven-laissez-passer
-    - opgraven-stoffelijk-overschot
-    - treffen-maatregel-bij-besmet-stoffelijk-overschot
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: 'Omvat, binnen de ketensamenwerking Bezorgen stoffelijk overschot, het deel van de gemeente als overheid in de levensloop van het stoffelijk overschot: de schouwing door de gemeentelijke lijkschouwer, het verlof tot begraving, crematie of ontleding, een andere termijn, het laissez-passer, een maatregel bij besmetting, de toestemming voor asverstrooiing en later de vergunning tot opgraving (art. 3, 11, 17, 22a, 29, 68; Besluit op de lijkbezorging art. 11; APV Groningen art. 5:27).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
     - 2025-groningen-algemene-plaatselijke-verordening
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De bedrijfsprocessen leveren het aanbod.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 definitie: Het schouwen van een stoffelijk overschot en het verlenen van verlof, vergunningen en toestemmingen voor de lijkbezorging, met zo nodig maatregelen.
 beschrijving:
 - 'Geen begraving, crematie of ontleding zonder schriftelijk verlof: de ambtenaar van de burgerlijke stand verleent verlof tot begraving of crematie als hij beschikt over een verklaring van overlijden van de behandelend arts of de gemeentelijke lijkschouwer, of over een verklaring van geen bezwaar van de officier van justitie; de burgemeester verleent verlof tot ontleding (Wet op de lijkbezorging art. 3, 4, 11, 12, 68). De burgemeester kan een andere termijn stellen, geeft het laissez-passer af voor vervoer naar het buitenland, treft maatregelen bij een besmet stoffelijk overschot en verleent vergunning tot opgraving; het college staat asverstrooiing toe (art. 17, 22a, 29; Besluit op de lijkbezorging art. 11; APV Groningen art. 5:27).'
@@ -157,4 +111,8 @@ besluiten:
 - datum: '2026-10-07'
   besluit: 'Afgewezen: één gemeentelijk deel met alle tien bedrijfsprocessen (bijna gelijk aan de ketensamenwerking, mengt overheid en houder) en groepen per fase (volgen de fase, niet de partij). Een groep arts vervalt: in het model schouwt alleen de gemeentelijke lijkschouwer, die de gemeente benoemt (Wlb art. 3, 4). Namen afgewezen: Toezien op lijkbezorging (homoniem met toezicht), Bezorgen en bestemmen (bijna de naam van de ketensamenwerking).'
   gevolg: verwerkt
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+- 2025-groningen-algemene-plaatselijke-verordening
+status: review

@@ -2,7 +2,7 @@
 id: behandelen-verzoek-uitdaagrecht
 type: bedrijfsproces
 archimate_type: business-process
-status: goedgekeurd
+status: review
 naam: Behandelen verzoek uitdaagrecht
 onderwerpen:
 - participatie
@@ -28,7 +28,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling behandelen-verzoek-uitdaagrecht.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -67,7 +67,7 @@ De grondslag is de Gemeentewet: de verordening van de raad bepaalt de voorwaarde
 
 ### Typering
 
-Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (kern ja).
+Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *per keer doorlopen* (3 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -79,20 +79,17 @@ Bedrijfsproces, niveau levensloopproces. Uitkomst van de beslistabel: Gedrag, *p
 
 ### Kenmerken
 
-**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: per keer doorlopen. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: bedrijfslaag, gedrag, intern (Bedrijfsproces, Bedrijfsfunctie, Gebeurtenis, Bedrijfsinteractie). **Hoofdkenmerk**: gedrag. **Soort gedrag**: per keer doorlopen.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Beslisser](../../../rollen/beslisser.md), [Indiener](../../../rollen/indiener.md). |
-| **gebruikt objecten**: Registreert, bijwerkt, beëindigt, raadpleegt, verstrekt, bewaart, brengt over of vernietigt het gedrag aanwijsbare bedrijfsobjecten? | Ja, met [Verzoek uitdaagrecht](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/verzoek-uitdaagrecht.md), [Afspraak over uitvoering](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/afspraak-over-uitvoering.md), [Participatieverordening](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/participatieverordening.md). |
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
+| **procesniveau**: levensloopproces, kernobject [Verzoek uitdaagrecht](../../../bedrijfsobjecten/0-bestuur-en-ondersteuning/participatie/verzoek-uitdaagrecht.md) | Omvat de levensloop van het Verzoek uitdaagrecht: indienen bij het college, eventueel aanvullen, doorzenden aan het bevoegde bestuursorgaan, toewijzen of afwijzen, en bij toewijzing de afspraken over de uitvoering en de evaluatie (var. 1 art. 6 lid 5, [8], [9]; var. 2 art. [11], [13], [14]). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+| **toegewezen partij**: Is een rol aanwijsbaar die het gedrag uitvoert of ervoor verantwoordelijk is? | Ja, met [Beslisser](../../../rollen/beslisser.md), [Indiener](../../../rollen/indiener.md). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
 | **aanleiding**: Start het door een aanwijsbare gebeurtenis, verzoek of termijn? | Ja, met Verzoek uitdaagrecht ingediend (gebeurtenis, nog geen element): Het verzoek dat inwoners of maatschappelijke partijen bij het college indienen (var. 1 art. 6 lid 1; var. 2 art. [11] lid 1). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
-| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, de onderbouwde en openbaar gemaakte reactie van het bevoegde bestuursorgaan (toewijzing of afwijzing), en bij toewijzing de afspraken over de uitvoering met de indiener (var. 1 art. [8] lid 6, art. [9]; var. 2 art. [13] lid 6, art. [14]). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
-| **komt herhaald voor**: Wordt het regelmatig en voor verschillende gevallen uitgevoerd, of gebeurt het voor verschillende gevallen, en is het geen eenmalig project of voorval? | Ja, voor elk verzoek van een inwoner of maatschappelijke partij (var. 1 art. 6 lid 1; var. 2 art. [11] lid 1). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
-| **eigen normering**: Gelden er eigen regels, termijnen of bevoegdheden voor uit een wet, verordening of beleidsregel? | Ja, de verordening van de raad bepaalt de voorwaarden waaronder ingezetenen en maatschappelijke partijen gemeentelijke taken kunnen uitvoeren (Gemeentewet art. 150 lid 3). De VNG-modelverordening regelt de indieningsvereisten, de afwijzingsgronden, een reactietermijn (voorbeeldwaarde vier weken, eenmaal te verdagen) en de openbaarmaking (var. 1 art. 6, [8]; var. 2 art. [11], [13]). [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
-| **omvat levensloop**: Omvat het het gedrag over de hele levensloop van één exemplaar van een bedrijfsobject, van ontstaan tot einde, of, binnen een ketensamenwerking, het deel van die levensloop dat één partij uitvoert? | Ja, omvat de levensloop van het Verzoek uitdaagrecht: indienen bij het college, eventueel aanvullen, doorzenden aan het bevoegde bestuursorgaan, toewijzen of afwijzen, en bij toewijzing de afspraken over de uitvoering en de evaluatie (var. 1 art. 6 lid 5, [8], [9]; var. 2 art. [11], [13], [14]). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
-| **eigen besluit**: Eindigt het in een besluit van een bevoegd orgaan of een mandataris? | Ja, eindigt in de reactie van het bevoegde bestuursorgaan (raad, college of burgemeester), dat het verzoek toewijst of afwijst op verplichte of facultatieve gronden (var. 1 art. [8] lid 1, 3–6; var. 2 art. [13]). Of die reactie een besluit in de zin van de Awb is, zeggen de bronnen niet (vraag bij Verzoek uitdaagrecht). [VNG Model Participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/gemeentelijke-regelgeving/2024-vng-model-participatieverordening.md) |
+| **benoembaar resultaat**: Levert het een concreet resultaat op (besluit, product, verslag, afspraak); bij een dienst of product: wat krijgt de afnemer? | Ja, standaard. [Gemeentewet](../../../../../onderwerpen/besluitvorming/bronduidingen/rijksregelgeving/2026-rijk-gemeentewet-wettekst.md), [VNG Implementatiehandleiding participatieverordening](../../../../../onderwerpen/participatie/bronduidingen/richtlijn/2024-vng-implementatiehandleiding-model-participatieverordening.md) |
 
 ### Relaties
 

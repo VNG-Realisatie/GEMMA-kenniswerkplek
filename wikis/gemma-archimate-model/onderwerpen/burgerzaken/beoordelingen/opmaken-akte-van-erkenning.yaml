@@ -9,59 +9,17 @@ kenmerken:
     naar:
     - ambtenaar-van-de-burgerlijke-stand
     - ouder
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     onderbouwing: Het verzoek van de erkenner, voor of na de geboorte (Utrecht).
     bronnen:
     - 2026-utrecht-burgerzaken-kind-erkennen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De akte van erkenning; het kind heeft dan juridisch een tweede ouder, en sinds 2023 hebben beide ouders het gezag (Utrecht; BW 1 art. 251b).
-    bronnen:
-    - 2026-utrecht-burgerzaken-kind-erkennen
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-    - 2026-utrecht-burgerzaken-kind-erkennen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 203, 204, 251b; Besluit burgerlijke stand art. 49.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-burgerlijke-stand
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek van de erkenner tot de akte.
     bronnen:
     - 2026-utrecht-burgerzaken-kind-erkennen
     - 2026-rijk-burgerlijk-wetboek-boek-1
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De ambtenaar beoordeelt of de erkenning geldig kan zijn (leeftijd, toestemming, verboden graad) en weigert de akte zo nodig (BW 1 art. 18c, 204).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - erkenning-kind
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het opnemen van de erkenning van een kind door een man of vrouw in een akte van erkenning, voor of na de geboorte.
 beschrijving:
 - 'De vader of duomoeder die niet met de moeder is getrouwd of een geregistreerd partnerschap heeft, kan het kind voor of na de geboorte erkennen. Toestemming is nodig van de moeder bij een kind jonger dan twaalf, van moeder en kind tussen twaalf en zestien, en van het kind zelf vanaf zestien (BW 1 art. 204; Utrecht). Bij de erkenning legt de erkenner de keuze van de achternaam vast en regelt hij het gezag: samen, of de verklaring dat de moeder alleen gezag heeft, die de ambtenaar aan de griffier meldt (BW 1 art. 251b; Utrecht).'
@@ -94,4 +52,4 @@ bronnen:
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
 - 2026-utrecht-burgerzaken-kind-erkennen
 - 2026-rvig-hup-erkenning
-status: goedgekeurd
+status: review

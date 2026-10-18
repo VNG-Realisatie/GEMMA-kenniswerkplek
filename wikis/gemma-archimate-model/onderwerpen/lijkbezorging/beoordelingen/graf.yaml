@@ -1,16 +1,7 @@
 begrip: Graf
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk graf heeft een eigen aanduiding met letters en nummers (Groningen art. 14 lid 3).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Uitgegeven, in gebruik, geruimd (Groningen art. 14, 27).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -18,24 +9,6 @@ kenmerken:
     - ruimen-graf
     - uitvoeren-lijkbezorging
     - verlenen-grafrecht
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Eigen behandeling (uitgifte, begraving, ruiming); de grafsoorten zijn zijn specialisaties. Geen breder herkenbaar begrip.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Plaats op een begraafplaats waarin stoffelijke overschotten worden begraven of urnen worden bijgezet.
@@ -80,4 +53,4 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review

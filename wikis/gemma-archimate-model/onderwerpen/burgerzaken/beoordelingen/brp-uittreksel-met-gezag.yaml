@@ -3,31 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een uittreksel uit de BRP met de gegevens over het gezag (UPL nr. 94).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 94).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - verstrekken-persoonsgegevens
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 94); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Een uittreksel uit de basisregistratie personen met de gegevens over het gezag over een minderjarige.
 beschrijving:
 - Grondslag is art. 2.55 Wet BRP (UPL nr. 94). De UPL noemt het apart van het BRP-uittreksel; daarom is het een eigen dienst. Het gezag zelf komt uit het gezagsregister van de rechtbank en wordt in de BRP overgenomen; een uittreksel met gezag kan alleen als een gezaghouder uit de BRP-gegevens is af te leiden (NVVB Handreiking gezag). Utrecht geeft het op afspraak af, niet via DigiD (Utrecht Ouderlijk gezag aanvragen).
@@ -42,4 +21,5 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-nvvb-handreiking-gezag
 - 2026-utrecht-burgerzaken-ouderlijk-gezag-aanvragen
-status: goedgekeurd
+- 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
+status: review

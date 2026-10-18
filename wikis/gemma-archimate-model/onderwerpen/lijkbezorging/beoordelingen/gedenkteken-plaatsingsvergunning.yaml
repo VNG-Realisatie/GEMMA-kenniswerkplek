@@ -3,17 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een schriftelijke vergunning voor het hebben van een grafbedekking (Groningen art. 22 lid 1).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger en bedrijf (UPL); de rechthebbende van een particulier graf vraagt de vergunning aan (Groningen art. 22 lid 2).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -41,4 +30,4 @@ relaties:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review

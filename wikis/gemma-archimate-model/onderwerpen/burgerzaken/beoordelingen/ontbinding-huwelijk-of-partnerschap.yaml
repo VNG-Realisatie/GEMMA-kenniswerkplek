@@ -4,12 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Gebeurt bij veel personen, elk jaar opnieuw.
-    bronnen:
-    - 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
-    - 2026-rijk-burgerlijk-wetboek-boek-1
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -34,4 +28,7 @@ relaties:
   vindplaats: Utrecht inleiding; art. 163
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-scheiden-of-geregistreerd-partnerschap-beeindigen
+- 2026-rijk-burgerlijk-wetboek-boek-1
+status: review

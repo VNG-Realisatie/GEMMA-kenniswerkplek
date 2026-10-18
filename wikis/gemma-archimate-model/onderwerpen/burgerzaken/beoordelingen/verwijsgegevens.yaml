@@ -3,8 +3,8 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: Een van de persoonslijst afgeleide verzameling gegevens die verwijst naar de volgende gemeente van inschrijving (LO BRP 4.2.2).
     bronnen:
     - 2025-rvig-logisch-ontwerp-brp-2025q1

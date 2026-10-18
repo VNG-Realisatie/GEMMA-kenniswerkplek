@@ -4,32 +4,10 @@ onderwerpen:
 - burgerzaken
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De akte van geboorte (levenloos) en een gratis uittreksel (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 118): een ouder, de uitvaartondernemer, een aanwezige of het ziekenhuis (Utrecht).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
   gerealiseerd_door:
     waarde: ja
     naar:
     - opmaken-akte-levenloos-geboren-kind
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 118); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het doen van aangifte van een levenloos geboren kind bij de gemeente van geboorte, waarna de gemeente een akte opmaakt.
 beschrijving:
 - Aangifte alleen aan de balie op afspraak, gratis (Utrecht). Heeft het kind kort geleefd, dan volgen een geboorteaangifte en een overlijdensaangifte. Opname in de BRP gebeurt alleen op verzoek (BRP-inschrijving niet in leven zijnd kind).
@@ -48,4 +26,4 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

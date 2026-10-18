@@ -3,17 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een aanwijzing van de grond en een toestemming voor de ingebruikneming (Wlb art. 40 lid 1, 41).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL): een kerkgenootschap, privaatrechtelijke rechtspersoon of natuurlijke persoon die een bijzondere begraafplaats aanlegt (Wlb art. 37).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -38,4 +27,4 @@ relaties:
   vindplaats: art. 37, 40, 41
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

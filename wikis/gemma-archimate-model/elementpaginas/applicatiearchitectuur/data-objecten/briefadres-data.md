@@ -2,7 +2,7 @@
 id: briefadres-data
 type: data-object
 archimate_type: data-object
-status: goedgekeurd
+status: review
 naam: Briefadres-data
 element: Briefadres
 relatie: realisatie
@@ -17,7 +17,7 @@ ggm_beleidsdomein: RSGBPlus
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling briefadres.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur. Volgt de status van [Briefadres](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/briefadres.md).
+**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Briefadres](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/briefadres.md).
 
 ## Betekenis
 

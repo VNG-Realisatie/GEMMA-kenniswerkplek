@@ -4,26 +4,12 @@ hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: 'Een hoedanigheid, geen partij: de persoon zelf is de ingeschreven persoon.'
   voert_gedrag_uit:
     waarde: ja
     naar:
     - behandelen-aanvraag-rijbewijs
     - behandelen-aanvraag-omwisseling-buitenlands-rijbewijs
     - verwerken-vermissing-rijbewijs
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per rijbewijs één houder (Wegenverkeerswet 1994 art. 118a, 119).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: De gegevens van de persoon horen bij Ingeschreven persoon; de rol zelf wordt niet bijgehouden.
 definitie: Hoedanigheid van degene aan wie een rijbewijs is of wordt afgegeven en die het aanvraagt, ophaalt, vermissing meldt en inlevert.
 beschrijving:
 - 'Het Reglement rijbewijzen spreekt van de aanvrager, de Wegenverkeerswet 1994 van de houder van een rijbewijs. In de gemeentelijke praktijk is het dezelfde persoon in opeenvolgende fasen: hij vraagt aan met een identiteitsbewijs en een pasfoto, haalt het nieuwe rijbewijs persoonlijk op, levert het oude in, geeft een vermissing door en levert een teruggevonden rijbewijs in (Reglement rijbewijzen art. 27, 33; Wegenverkeerswet 1994 art. 111 lid 2, 119 lid 2 en 4; Utrecht).'
@@ -72,4 +58,6 @@ relaties:
   bronnen:
   - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   vindplaats: art. 119 lid 4
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+status: review

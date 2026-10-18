@@ -10,55 +10,16 @@ kenmerken:
     - aangever
     - ambtenaar-van-de-burgerlijke-stand
     - ouder
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     naar:
     - geboorte
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De geboorteakte; de aangever krijgt een uittreksel (Utrecht).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 4, 5, 19-19e; Besluit burgerlijke stand art. 27, 43-47.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-burgerlijke-stand
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aangifte van de geboorte tot de akte.
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - geboorteaangifte
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het ontvangen van de aangifte van een geboorte en het opmaken van de geboorteakte.
 beschrijving:
 - De aangever doet binnen drie dagen aangifte in de gemeente van geboorte; verplicht is de vader of de moeder uit wie het kind niet is geboren, anders wie bij de bevalling aanwezig was of het hoofd van de instelling. Elektronisch kan alleen de moeder of de andere ouder; de ambtenaar stelt de identiteit vast en controleert de verklaring van arts of verloskundige (BW 1 art. 19e; Besluit burgerlijke stand art. 27; Utrecht). Een te late aangifte meldt hij aan het openbaar ministerie (art. 19e lid 7).
@@ -97,4 +58,8 @@ relaties:
   vindplaats: HUP Geboorte inleiding; Utrecht Na de aangifte
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-utrecht-burgerzaken-geboorteaangifte-doen
+- 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+status: review

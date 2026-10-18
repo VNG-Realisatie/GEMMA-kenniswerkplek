@@ -1,37 +1,9 @@
 begrip: Grafrechten
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk exemplaar apart.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-vng-retributies
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Zoals elk(e) heffing.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-vng-retributies
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Opgelegd bij Verlenen grafrecht (VNG retributies).
-    bronnen:
-    - 2026-vng-retributies
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Variant van Heffing: zelfde gegevens en behandeling, geen eigen levenscyclus.'
 genoemd_begrip: Heffing
 toelichting: 'Specialisatie zonder pagina van Heffing: in de UPL het product grafrechten (nr. 164, Gemeentewet art. 229), de lijkbezorgingsrechten voor de uitgifte van een graf; het tarief van de dienst Grafuitgifte. Niet te verwarren met Grafrecht, het recht op het graf zelf.'

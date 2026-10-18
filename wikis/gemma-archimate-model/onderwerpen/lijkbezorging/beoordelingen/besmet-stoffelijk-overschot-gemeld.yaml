@@ -2,11 +2,6 @@ begrip: Besmet stoffelijk overschot gemeld
 vak: bedrijf/gedrag-intern
 soort_gedrag: toestandsverandering
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk besmet lijk.
-    bronnen:
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -37,4 +32,6 @@ object_van:
   id: besmet-lijk-gemeld
   wijziging: hernoemd
   datum: '2026-10-05'
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-publieke-gezondheid-wettekst
+status: review

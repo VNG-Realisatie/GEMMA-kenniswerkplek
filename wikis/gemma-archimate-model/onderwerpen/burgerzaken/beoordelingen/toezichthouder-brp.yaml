@@ -4,22 +4,10 @@ hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: Een verantwoordelijkheid; de partij die haar vervult kan ook andere rollen hebben.
   voert_gedrag_uit:
     waarde: ja
     naar:
     - uitvoeren-adresonderzoek
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Verantwoordelijkheid voor het toezicht op de juistheid van de inschrijving in de basisregistratie personen, onder meer met een huisbezoek.
 beschrijving:
 - De toezichthouder BRP heeft de bevoegdheid inlichtingen op te vragen en legt bij een adresonderzoek huisbezoeken af; het college kan ook externen tot onbezoldigd ambtenaar en toezichthouder benoemen (Circulaire adresonderzoek 4.4, 4.5).
@@ -39,4 +27,4 @@ relaties:
   - 2023-rvig-circulaire-adresonderzoek-brp
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: 4.5; Wet BRP art. 4.2
-status: goedgekeurd
+status: review

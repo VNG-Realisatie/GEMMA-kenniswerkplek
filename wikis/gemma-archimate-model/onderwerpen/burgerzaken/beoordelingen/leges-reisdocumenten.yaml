@@ -1,38 +1,12 @@
 begrip: Leges reisdocumenten
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Heffing
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per aanvraag geheven (Paspoortwet art. 33).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Geheven en bij de indiening voldaan (Paspoortwet art. 33).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Behandelen aanvraag reisdocument int de rechten bij de indiening (Paspoortwet art. 33).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Een specialisatie van Heffing: rechten voor handelingen ten behoeve van de aanvraag, met een tarief naar leeftijd, soort document en snelheid (Paspoortwet art. 7 lid 2, 4); geen eigen gegevens of levensloop naast de heffing.'
 synoniemen:
 - naam: Rechten

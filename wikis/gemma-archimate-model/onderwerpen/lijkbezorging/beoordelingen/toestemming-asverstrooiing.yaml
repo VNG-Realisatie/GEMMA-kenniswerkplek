@@ -1,40 +1,14 @@
 begrip: Toestemming asverstrooiing
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk exemplaar apart.
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Zoals elk(e) vergunning.
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Door de gemeente verleend in Verlenen toestemming asverstrooiing.
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Variant van Vergunning: zelfde gegevens en behandeling, geen eigen levenscyclus.'
 genoemd_begrip: Vergunning
 toelichting: 'Specialisatie zonder pagina van Vergunning: ontheffing van het college van het verbod op asverstrooiing buiten de begraafplaats (APV Groningen art. 5:27 lid 3) en toestemming voor verstrooiing op een aangewezen plek op de begraafplaats (Groningen art. 21).'
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2025-groningen-algemene-plaatselijke-verordening
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

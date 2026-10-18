@@ -3,13 +3,13 @@ heffing:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-vng-retributies
@@ -54,13 +54,13 @@ heffingsverordening:
   uitkomst:
     soort: element
     regel: 30
-    toelichting: Passief (kern ja, 2/2)
+    toelichting: Passief, object (3 toetskenmerken ja)
     paginatype: bedrijfsobject
     archimate_type: business-object
     voorleggen: false
     objectniveau: generiek
     generiek: false
-    typeregel: 19
+    typeregel: 22
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

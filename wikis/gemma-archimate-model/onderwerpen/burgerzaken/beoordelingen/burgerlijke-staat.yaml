@@ -2,8 +2,8 @@ begrip: Burgerlijke staat
 onderwerpen:
 - burgerzaken
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: 'Een gegeven van de persoon: of hij gehuwd is of een geregistreerd partnerschap heeft, met wie, en de gegevens van sluiting en ontbinding (HUP Huwelijk/geregistreerd partnerschap; GGM burgerlijkeStaat, SluitingOfAangaanHuwelijkOfGeregistreerdPartnerschap, OntbindingHuwelijk/geregistreerdPartnerschap).'
     bronnen:
     - 2026-rvig-hup-huwelijkgeregistreerd-partnerschap

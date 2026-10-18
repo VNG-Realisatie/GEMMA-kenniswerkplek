@@ -1,7 +1,7 @@
 begrip: Urnenmuur
 kenmerken:
-  eigen_identiteit:
-    waarde: nee
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: 'Onderdeel van Begraafplaats: Muur met urnennissen op de begraafplaats (Groningen art. 1 z).'
 toelichting: 'Onderdeel van Begraafplaats: Muur met urnennissen op de begraafplaats (Groningen art. 1 z).'
 genoemd_begrip: Begraafplaats

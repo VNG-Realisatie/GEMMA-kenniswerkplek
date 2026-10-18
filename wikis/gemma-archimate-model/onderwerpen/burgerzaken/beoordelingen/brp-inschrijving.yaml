@@ -3,31 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een inschrijving als ingezetene met een BSN (Utrecht Inschrijven vanuit het buitenland).
-    bronnen:
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 88): wie zich vanuit het buitenland vestigt.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - inschrijven-ingezetene
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 88); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Inschrijving in de basisregistratie personen van wie zich vanuit het buitenland in de gemeente vestigt.
 beschrijving:
 - Wie vanuit het buitenland in de gemeente komt wonen, maakt binnen vijf dagen een afspraak om zich in te schrijven, met identiteitsbewijs, bewijs van verblijfsrecht en eventueel buitenlandse akten; de inschrijving kan vier weken duren en levert ook een burgerservicenummer op (Utrecht Inschrijven vanuit het buitenland). Grondslag is art. 2.38 Wet BRP (UPL nr. 88).
@@ -55,4 +34,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-inschrijven-vanuit-het-buitenland
 - 2026-rvig-hup-immigratie
-status: goedgekeurd
+status: review

@@ -9,56 +9,16 @@ kenmerken:
     naar:
     - beslisser
     - kiezer
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     naar:
     - uitsluiting-van-het-kiesrecht
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De registratie als kiezer, de mededeling of iemand is geregistreerd, en de kennisgeving van een uitsluiting (Kieswet art. B 5, D 1, D 5).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke mededeling en elk verzoek.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Kieswet art. B 1-B 5 en D 1-D 8; HUP Nederlands en Europees kiesrecht.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2026-rvig-hup-nederlands-kiesrecht
-    - 2026-rvig-hup-europees-kiesrecht
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de mededeling of het verzoek tot de registratie of de kennisgeving.
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
     - 2026-rvig-hup-europees-kiesrecht
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: B&W beslissen op een aanvraag tot wijziging van de registratie (Kieswet art. D 6 lid 1 onder a, D 7 lid 1).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - stemrecht
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 kernobject: ingeschreven-persoon
 afnemer: extern
 definitie: Het registreren van wie in de gemeente kiesgerechtigd is, met de uitsluiting van het kiesrecht en de deelname van EU-onderdanen aan de Europese verkiezingen.
@@ -97,4 +57,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rvig-hup-kiesrecht
 - 2026-rvig-hup-europees-kiesrecht
-status: goedgekeurd
+status: review

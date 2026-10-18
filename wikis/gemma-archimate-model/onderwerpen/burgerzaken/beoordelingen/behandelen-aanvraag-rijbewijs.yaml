@@ -9,61 +9,19 @@ kenmerken:
     naar:
     - beslisser
     - houder-van-het-rijbewijs
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - rijbewijs
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag, op afspraak aan de balie (Reglement rijbewijzen art. 27; Utrecht).
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
     - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het uitgereikte nieuwe, vernieuwde of vervangende rijbewijs, na het besluit tot afgifte, of de weigering (Wegenverkeerswet 1994 art. 112, 116, 118a, 119, 120).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wegenverkeerswet 1994 art. 111 tot en met 120 en Reglement rijbewijzen art. 26 tot en met 45 (bevoegde autoriteit, bescheiden, vernieuwing, vermissing).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-rijbewijzen
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot de uitreiking of de weigering.
     bronnen:
     - 2026-rijk-reglement-rijbewijzen-bwbr0008074
     - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het besluit tot afgifte of de weigering door de burgemeester (Wegenverkeerswet 1994 art. 111, 112, 116, 118a).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - rijbewijs-aanvragen
-    - rijbewijs-verlengen
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een rijbewijs, tot de uitreiking of weigering, ook bij vernieuwing of vervanging.
 beschrijving:
 - De aanvrager dient de aanvraag in bij de burgemeester van de gemeente waar hij als ingezetene staat, aan de balie op afspraak, met een ingevuld formulier, een identiteitsbewijs of eerder rijbewijs en een pasfoto; de burgemeester raadpleegt de basisregistratie personen (Wegenverkeerswet 1994 art. 113; Reglement rijbewijzen art. 27, 33; Utrecht). Verlengen en een categorie-uitbreiding kan ook online via de RDW met DigiD; de gemeente reikt het rijbewijs dan alleen uit (Utrecht). Een spoedaanvraag kost extra en levert sneller (Utrecht).
@@ -143,4 +101,4 @@ deelprocessen:
   begrip: uitreiken-rijbewijs
 bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review

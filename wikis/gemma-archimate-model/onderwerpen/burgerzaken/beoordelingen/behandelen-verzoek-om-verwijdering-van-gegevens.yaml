@@ -9,55 +9,16 @@ kenmerken:
     naar:
     - beslisser
     - bijhoudingsgemeente
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     naar:
     - adoptie
     - wijzigen-geslachtsvermelding
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Verwijderde gegevens en een mededeling aan de verzoeker (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2025-vng-upl-producten-en-diensten-extern
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet BRP art. 2.57 (UPL nr. 86).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de verwijderde gegevens en de mededeling; een eigen verzoek, ook na een geslachtswijziging.
     bronnen:
     - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college beslist binnen vier weken; bezwaar is mogelijk (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - brp-adoptie-uitschrijving
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
 definitie: Het beslissen op een verzoek om gegevens van vóór een adoptie of geslachtswijziging van de persoonslijst te verwijderen.
 beschrijving:
 - 'Na een adoptie of een wijziging van de vermelding van het geslacht kunnen de betrokkenen schriftelijk vragen de oude gegevens van de persoonslijst te verwijderen: voor een adoptiekind jonger dan 16 jaar de adoptieouders, daarna het kind zelf, en de biologische ouders voor de gegevens over het kind; bij een geslachtswijziging de ingeschrevene, of voor hem de ouder, voogd of curator (Utrecht Gegevens verwijderen). De gemeente neemt binnen vier weken een besluit waartegen bezwaar mogelijk is (Utrecht). Het afvoeren van een ten onrechte opgenomen persoonslijst is een registratiestap zonder eigen besluit (HUP Afvoeren persoonslijst).'
@@ -89,4 +50,7 @@ relaties:
   - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
   - 2026-rijk-wet-brp-bwbr0033715
   vindplaats: UPL nr. 86; Wet BRP art. 2.57
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
+- 2025-vng-upl-producten-en-diensten-extern
+status: review

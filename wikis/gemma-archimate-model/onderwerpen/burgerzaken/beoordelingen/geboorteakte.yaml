@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een uittreksel, internationaal uittreksel of afschrift van de geboorteakte; bij de aangifte gratis (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-    - 2026-utrecht-burgerzaken-uittreksel-of-akte-aanvragen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geboorteaangifte-doen
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 137).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 137), apart van de akte van de burgerlijke stand (nr. 23); de UPL noemt varianten apart.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het verkrijgen van een uittreksel of afschrift van een geboorteakte.
 beschrijving:
 - De UPL noemt als grondslag art. 19 BW 1, het opmaken van de akte van geboorte; de afnemer krijgt een uittreksel of afschrift. De akte zelf is een specialisatie van Akte van de burgerlijke stand.
@@ -48,4 +26,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-geboorteaangifte-doen
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

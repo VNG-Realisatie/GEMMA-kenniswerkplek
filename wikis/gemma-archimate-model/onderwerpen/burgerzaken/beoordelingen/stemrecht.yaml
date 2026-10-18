@@ -3,22 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De registratie als kiezer, of de mededeling of iemand is geregistreerd (Kieswet art. D 1, D 5).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-kieswet-bwbr0004627
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De kiezer, extern (UPL nr. 398: burger, SDG).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -43,4 +27,4 @@ relaties:
   vindplaats: art. D 5
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

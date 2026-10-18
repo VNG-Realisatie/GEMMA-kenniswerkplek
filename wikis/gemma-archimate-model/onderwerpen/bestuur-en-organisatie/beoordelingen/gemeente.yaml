@@ -2,16 +2,11 @@ begrip: Gemeente
 vak: bedrijf/actief-intern
 hoofdkenmerk: handelende_partij
 kenmerken:
-  los_van_verantwoordelijkheid:
+  soort_partij:
     waarde: ja
-    onderbouwing: 'Blijft bestaan als een rol wegvalt en vervult meer rollen: houder van de begraafplaats, het crematorium en een plaats van bijzetting, en kostendrager (art. 22, 33).'
+    onderbouwing: Elke gemeente; een soort partij, geen individuele gemeente.
     bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_rechtspersoon:
-    waarde: ja
-    onderbouwing: Gemeenten bezitten rechtspersoonlijkheid (BW 2 art. 1).
-    bronnen:
-    - 2026-rijk-bw2-rechtspersonen
+    - 2024-rijk-gemeentewet-wettekst
   vervult_een_rol:
     waarde: ja
     naar:
@@ -21,20 +16,6 @@ kenmerken:
     - kostendrager
     - bijhoudingsgemeente
     - rni-loket
-  soort_partij:
-    waarde: ja
-    onderbouwing: Elke gemeente; een soort partij, geen individuele gemeente.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
   generiek:
     waarde: ja
     onderbouwing: 'Komt in elk onderwerp voor: de gemeente als partij (Gemeentewet art. 6).'
@@ -138,4 +119,4 @@ homoniemen:
   betekenis: De verantwoordelijkheid die gemeenten hebben; in GEMMA de doelgroep die de applicatieservices voor de medewerkers van de gemeente ordent
   waar: GEMMA-rol, doelgroep in de Applicatieservice-indeling
   naamkeuze: 'Deze pagina heet Gemeente: de gemeente als rechtspersoon. De GEMMA-rol wordt niet gekoppeld; de verantwoordelijkheden van de gemeente zijn in de wiki eigen rollen.'
-status: goedgekeurd
+status: review

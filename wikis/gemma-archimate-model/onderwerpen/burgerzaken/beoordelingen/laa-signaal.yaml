@@ -1,33 +1,12 @@
 begrip: LAA-signaal
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Uitvoeren adresonderzoek
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per signaal (Circulaire adresonderzoek 4.1).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Niet aanwijsbaar in de bronnen.
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: De gemeente onderzoekt het en koppelt terug binnen vier weken (Circulaire adresonderzoek 4.2).
-    bronnen:
-    - 2023-rvig-circulaire-adresonderzoek-brp
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: De minister analyseert mededelingen en profielen en signaleert gemeenten (Besluit BRP art. 28a).
     bronnen:
     - 2026-rijk-besluit-brp-bwbr0034306
@@ -37,3 +16,4 @@ synoniemen:
   context: beleid
 bronnen:
 - 2026-nvvb-handreiking-adresonderzoek
+- 2023-rvig-circulaire-adresonderzoek-brp

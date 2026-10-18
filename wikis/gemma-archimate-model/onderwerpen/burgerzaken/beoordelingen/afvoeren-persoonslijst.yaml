@@ -5,57 +5,12 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Bijhouden persoonsgegevens
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: Bijhoudingsgemeente (HUP Dubbelinschrijving).
-    bronnen:
-    - 2026-rvig-hup-dubbelinschrijving
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: Schort de bijhouding van de persoonslijst op met reden F (HUP Afvoeren).
-    bronnen:
-    - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-  aanleiding:
-    waarde: ja
-    onderbouwing: Een dubbele inschrijving, gemeld via het Foutenmeldpunt BSN of de Permanente Monitor Dubbelinschrijvingen (HUP Dubbelinschrijving).
-    bronnen:
-    - 2026-rvig-hup-dubbelinschrijving
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Eén correcte persoonslijst (HUP Dubbelinschrijving).
-    bronnen:
-    - 2026-rvig-hup-dubbelinschrijving
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval.
+  afhankelijkheid:
+    waarde: deelproces
+    onderbouwing: Een stap in Bijhouden persoonsgegevens (HUP Afvoeren). Nee, een stap in het herstel van een dubbele inschrijving, geen eigen klant-tot-klantproces.
     bronnen:
     - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
     - 2026-rvig-hup-dubbelinschrijving
-  eigen_normering:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    onderbouwing: Een stap in Bijhouden persoonsgegevens (HUP Afvoeren).
-    bronnen:
-    - 2026-rvig-hup-afvoeren-van-een-ten-onrechte-opgenomen-persoonslijst
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: Nee, een stap in het herstel van een dubbele inschrijving, geen eigen klant-tot-klantproces.
-    bronnen:
-    - 2026-rvig-hup-dubbelinschrijving
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 toelichting: 'Processtap zonder pagina: een ten onrechte opgenomen persoonslijst, bijvoorbeeld na een dubbele inschrijving of identiteitsfraude, wordt opgeschort met reden F; er is geen eigen besluit of product (afbakening). Het verwijderen van een geblokkeerde persoonslijst na verhuizing of emigratie is ook een registratiestap.'
 synoniemen:
 - naam: Dubbelinschrijving afhandelen

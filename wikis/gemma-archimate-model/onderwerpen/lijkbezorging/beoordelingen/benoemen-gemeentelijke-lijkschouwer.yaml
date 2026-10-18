@@ -7,43 +7,9 @@ kenmerken:
     onderbouwing: Beslisser (college, art. 4).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gebruikt_objecten:
-    waarde: nee
-    onderbouwing: Geen bedrijfsobject in dit onderwerp.
   aanleiding:
     waarde: nee
     onderbouwing: Geen aanwijsbare gebeurtenis of verzoek in de bron.
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een benoemde gemeentelijke lijkschouwer (art. 4).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: nee
-    onderbouwing: Eenmalig of zelden; geen werkwijze voor veel gevallen.
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Art. 4, 5: alleen forensisch artsen.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen bijdrage aan een groter proces.'
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
 toelichting: 'Geen element: een zelden voorkomende benoeming zonder aanwijsbare aanleiding of objecten; de taak staat bij de rol Gemeentelijke lijkschouwer en de functie Lijkbezorging.'
 onderwerpen:
 - lijkbezorging
@@ -51,3 +17,5 @@ besluiten:
 - datum: '2026-10-01'
   besluit: 'Geen element: eenduidig uit de beslistabel (drie drempelcriteria nee).'
   gevolg: afwijzen
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst

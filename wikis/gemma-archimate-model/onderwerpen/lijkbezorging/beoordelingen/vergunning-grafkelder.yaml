@@ -1,40 +1,14 @@
 begrip: Vergunning grafkelder
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk exemplaar apart.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Zoals elk(e) vergunning.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Door de gemeente vastgesteld of verleend.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Variant van Vergunning: zelfde gegevens en behandeling, geen eigen levenscyclus.'
 genoemd_begrip: Vergunning
 toelichting: 'Specialisatie zonder pagina van Vergunning: vergunning van het college (Groningen art. 17; VNG-modelverordening art. 16).'
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2010-vng-model-beheersverordening-begraafplaatsen

@@ -4,29 +4,15 @@ hoofdkenmerk: handelende_partij
 onderwerpen:
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: ja
-    onderbouwing: Bestaat los van deze taak en voert ook andere taken uit (verblijfstitels; HUP Verblijfstitel).
-    bronnen:
-    - 2026-rvig-hup-verblijfstitel
+  soort_partij:
+    waarde: nee
+    onderbouwing: Eén organisatie van het Rijk, geen soort partij die bij elke gemeente als eigen exemplaar voorkomt (zoals de minister van BZK).
   vervult_een_rol:
     waarde: ja
     onderbouwing: Vervult de rol Ketenpartner in Beheren Nederlanderschap, als dienst van de minister van Justitie en Veiligheid (Besluit art. 37, 38; Utrecht).
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
     - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  soort_partij:
-    waarde: nee
-    onderbouwing: Eén organisatie van het Rijk, geen soort partij die bij elke gemeente als eigen exemplaar voorkomt (zoals de minister van BZK).
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 toelichting: 'Voorgelegd, samen met de minister van BZK: de IND beslist namens de minister van Justitie en Veiligheid over naturalisatie (Besluit verkrijging en verlies Nederlanderschap art. 37, 38: Onze Minister; Utrecht: de IND) en levert de verblijfstitels voor de BRP (HUP Verblijfstitel), maar is één organisatie en geen soort partij. Zolang de redacteur niet anders beslist: geen element; de rol Ketenpartner is toegewezen aan Beheren Nederlanderschap en de IND staat in de beschrijvingen.'
 synoniemen:
 - naam: IND

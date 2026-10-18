@@ -2,34 +2,15 @@ begrip: Rijk
 vak: bedrijf/actief-intern
 hoofdkenmerk: handelende_partij
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: ja
-    onderbouwing: Bestaat los van elke verantwoordelijkheid in burgerzaken, met eigen taken op vele terreinen.
-    bronnen:
-    - 2026-rijk-wet-brp-bwbr0033715
-  eigen_rechtspersoon:
-    waarde: ja
-    onderbouwing: De Staat is rechtspersoon (BW Boek 2 art. 1); de ministers zijn zijn organen.
-    bronnen:
-    - 2026-rijk-bw2-rechtspersonen
-  vervult_een_rol:
-    waarde: ja
-    naar:
-    - ketenpartner
   soort_partij:
     waarde: ja
     onderbouwing: De bestuurslaag als geheel, waarmee elke gemeente in dezelfde rol te maken heeft; zo ook Provincie en Waterschap. Afzonderlijke ministeries en rijksdiensten zijn geen eigen actor.
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
+  vervult_een_rol:
+    waarde: ja
+    naar:
+    - ketenpartner
 onderwerpen:
 - bestuur-en-organisatie
 - burgerzaken
@@ -55,4 +36,5 @@ bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rijk-wet-brp-bwbr0033715
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-status: goedgekeurd
+- 2026-rijk-bw2-rechtspersonen
+status: review

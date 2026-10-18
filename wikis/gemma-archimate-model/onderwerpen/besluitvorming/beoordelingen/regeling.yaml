@@ -1,37 +1,11 @@
 begrip: Regeling
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke regeling apart.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Vastgesteld, gewijzigd, ingetrokken (Groningen art. 31).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   wordt_bewerkt:
     waarde: ja
     naar:
     - bekendmaken-besluit
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Het hoogste herkenbare niveau voor de beheersverordening begraafplaatsen; de gemeentelijke verordening is een specialisatie.
-    bronnen:
-    - 2024-rijk-gemeentewet-wettekst
   generiek:
     waarde: ja
     onderbouwing: Regelingen komen in elk onderwerp voor; de gemeentelijke verordening op grond van de Gemeentewet (art. 147).
@@ -88,4 +62,4 @@ onderwerpen:
 bronnen:
 - 2024-rijk-gemeentewet-wettekst
 - 2026-vng-wet-op-de-lijkbezorging
-status: goedgekeurd
+status: review

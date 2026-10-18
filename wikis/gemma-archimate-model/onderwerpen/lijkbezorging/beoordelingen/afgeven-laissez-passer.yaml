@@ -8,55 +8,16 @@ kenmerken:
     waarde: ja
     naar:
     - beslisser
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - vergunning
-    - stoffelijk-overschot
   aanleiding:
     waarde: ja
     onderbouwing: Vervoer van een stoffelijk overschot naar een staat die partij is bij de Overeenkomst van Straatsburg (Besluit op de lijkbezorging art. 11 lid 1).
     bronnen:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een laissez-passer voor lijken (Besluit op de lijkbezorging art. 11 lid 1).
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk vervoer naar een verdragsstaat buiten België en Luxemburg (Besluit op de lijkbezorging art. 11 lid 1, 3).
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Besluit op de lijkbezorging art. 11: bevoegde burgemeester, verdragsstaten, uitzondering België en Luxemburg, overleggen aan de douane.'
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - toestaan-lijkbezorging
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek voor vervoer naar een verdragsstaat tot het afgegeven laissez-passer.
     bronnen:
     - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het stoffelijk overschot, binnen Bezorgen stoffelijk overschot.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De burgemeester geeft het laissez-passer af (Besluit op de lijkbezorging art. 11 lid 1).
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - vervoersdocumenten-stoffelijk-overschot
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt in een besluit, niet in een benoemde toestandsverandering.
 definitie: Het afgeven van het laissez-passer voor lijken voor vervoer van een stoffelijk overschot naar een verdragsstaat.
 beschrijving:
 - De burgemeester van de gemeente waar de akte van overlijden is ingeschreven, geeft het laissez-passer af voor vervoer naar een staat die partij is bij de Overeenkomst van Straatsburg; voor vervoer over land naar België of Luxemburg volstaat het verlof tot begraving of crematie (Besluit op de lijkbezorging art. 11 lid 1, 3). Beslisser is de burgemeester.
@@ -91,4 +52,6 @@ relaties:
   - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
   - 2025-vng-upl-producten-en-diensten-extern
   vindplaats: Besluit op de lijkbezorging art. 11; UPL nr. 445
-status: goedgekeurd
+bronnen:
+- 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+status: review

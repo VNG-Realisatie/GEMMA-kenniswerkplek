@@ -6,11 +6,6 @@ kenmerken:
     onderbouwing: VNG-modelverordening, geen regeling van één gemeente.
     bronnen:
     - 2023-vng-model-apv
-  in_werking:
-    waarde: ja
-    onderbouwing: Het model geldt; de openbare kopie is de versie van november 2023. De wijzigingen van zomer 2024 en zomer 2026 raken art. 5:35–5:37 niet. Een volledige herziening is aangekondigd voor begin 2027 (Toelichting).
-    bronnen:
-    - 2023-vng-model-apv
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -55,4 +50,6 @@ relaties:
 onderwerpen:
 - lijkbezorging
 regelgever: VNG-modelverordening
-status: goedgekeurd
+bronnen:
+- 2023-vng-model-apv
+status: review

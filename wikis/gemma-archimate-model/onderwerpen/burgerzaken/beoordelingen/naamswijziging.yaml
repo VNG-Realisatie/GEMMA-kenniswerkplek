@@ -4,12 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Gebeurt bij veel personen, elk jaar opnieuw.
-    bronnen:
-    - 2026-rvig-hup-naamswijziging-en-naamgebruik
-    - 2026-utrecht-burgerzaken-voornaam-of-achternaam-veranderen
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -51,4 +45,4 @@ bronnen:
 - 2026-rvig-hup-wijziging-geslachtsnaam
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

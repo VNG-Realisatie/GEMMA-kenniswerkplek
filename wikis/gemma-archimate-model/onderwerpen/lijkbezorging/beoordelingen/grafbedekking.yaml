@@ -1,36 +1,18 @@
 begrip: Grafbedekking
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per graf (Groningen art. 22).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Vergund, geplaatst, onderhouden, verwijderd (Groningen art. 22, 23, 26).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   wordt_bewerkt:
     waarde: ja
     onderbouwing: De gemeente vergunt, onderhoudt en verwijdert grafbedekkingen (Groningen art. 22, 23, 26; VNG-modelverordening art. 19–23).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2010-vng-model-beheersverordening-begraafplaatsen
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: ja
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: 'Een onderdeel van het graf: staat erop en wordt bij verval van het grafrecht of ruiming van het graf verwijderd (Groningen art. 1 i, 20 lid 4, 26).'
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Gedenkteken en grafbeplanting op een graf, gedenkplaats of verstrooiingsplaats.

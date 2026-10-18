@@ -1,38 +1,16 @@
 begrip: Terugmelding
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Uitvoeren adresonderzoek
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per melding in het TMV-portaal (HUP Proceduregegevens).
-    bronnen:
-    - 2026-rvig-hup-proceduregegevens
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Ontvangen, in behandeling, afgesloten (HUP Proceduregegevens).
-    bronnen:
-    - 2026-rvig-hup-proceduregegevens
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: De bijhoudingsgemeente neemt haar in behandeling en sluit haar af (HUP Proceduregegevens).
-    bronnen:
-    - 2026-rvig-hup-proceduregegevens
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: Een bestuursorgaan als afnemer doet de terugmelding (Circulaire adresonderzoek par. 2).
     bronnen:
     - 2023-rvig-circulaire-adresonderzoek-brp
 toelichting: 'Invoer van een andere partij: een afnemer meldt via de terugmeldvoorziening gerede twijfel aan een gegeven. Geen pagina; aanleiding voor Onderzoeken persoonsgegevens en Uitvoeren adresonderzoek.'
 bronnen:
 - 2023-rvig-circulaire-adresonderzoek-brp
+- 2026-rvig-hup-proceduregegevens

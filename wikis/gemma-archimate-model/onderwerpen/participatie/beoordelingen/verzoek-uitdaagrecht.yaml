@@ -1,40 +1,13 @@
 begrip: Verzoek uitdaagrecht
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - participatie
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk verzoek heeft een indiener en omschrijft de taak of de gewenste overheidsparticipatie, de reden en het beoogde resultaat (var. 1 art. 6 lid 2; var. 2 art. [11] lid 2).
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt ingediend, eventueel aangevuld, doorgezonden en toegewezen of afgewezen, met een openbare reactie (var. 1 art. 6, [8]; var. 2 art. [11], [13]).
-    bronnen:
-    - 2024-vng-model-participatieverordening
   wordt_bewerkt:
     waarde: ja
     naar:
     - behandelen-verzoek-uitdaagrecht
-  afspraak:
-    waarde: nee
-    onderbouwing: Een eenzijdig verzoek.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Het verzoek zelf, niet de vorm ervan.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Een zelfstandig verzoek, geen onderdeel van een ander object.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De indiener stelt het op, maar de gemeente behandelt het en het bevoegde bestuursorgaan beslist erop, zoals bij een aanvraag.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: 'De bronnen noemen geen breder begrip: zij spreken van een verzoek waarop het bestuursorgaan reageert en dat het toewijst of afwijst, niet van een aanvraag om een besluit (var. 1 art. [8]; Awb art. 1:3 lid 3). Of het een specialisatie van Aanvraag is, staat in de vragen.'
-    bronnen:
-    - 2024-vng-model-participatieverordening
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 synoniemen:
 - naam: Verzoek toepassing uitdaagrecht
   context: beleid, variant 1
@@ -63,4 +36,5 @@ besluiten:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

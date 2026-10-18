@@ -1,34 +1,13 @@
 begrip: Schriftelijke klacht
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - besluitvorming
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke schriftelijke klacht heeft een indiener, een dagtekening en een gedraging waarover geklaagd wordt (art. 9:4 lid 2).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt ingediend, ontvangen en bevestigd, behandeld of niet in behandeling genomen, afgehandeld en jaarlijks gepubliceerd (art. 9:6, 9:8, 9:11, 9:12a).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   wordt_bewerkt:
     waarde: ja
     naar:
     - behandelen-klacht
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: De klacht zelf, zoals de Awb haar regelt (art. 9:4); een formulier of bericht is de vorm.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van een ander object.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De klager dient haar in, maar de gemeente behandelt haar als eigen zaak en publiceert de klachten jaarlijks (art. 9:6, 9:12a).
   generiek:
     waarde: ja
     onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp, voor elk bestuursorgaan (art. 9:1, 9:4).
@@ -51,4 +30,6 @@ gemma:
 relaties: []
 naamkeuze:
 - 'Schriftelijke klacht: de gangbare term, die ook in de wet staat (Awb art. 9:2, 9:4 lid 1); de wetsterm Klaagschrift is een synoniem (regel Bronvoorrang). De naam Klacht is van de UPL-dienst.'
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

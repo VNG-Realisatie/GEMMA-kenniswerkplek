@@ -4,11 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Ja, bij elk vervallen, teruggevonden, beschadigd of te vervangen reisdocument (Paspoortwet art. 32, 54, 56).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -36,4 +31,6 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-inhouding-inlevering-vermissing
   vindplaats: Paspoortwet art. 54, 56; HUP Inhouding
-status: goedgekeurd
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+status: review

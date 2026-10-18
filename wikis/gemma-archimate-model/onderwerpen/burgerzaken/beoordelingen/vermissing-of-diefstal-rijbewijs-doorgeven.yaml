@@ -3,21 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De geregistreerde vermissing van het rijbewijs; het rijbewijs is niet meer geldig (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke gemelde vermissing.
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  afnemer:
-    waarde: ja
-    onderbouwing: De houder van het rijbewijs, een inwoner (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -40,4 +25,4 @@ domein: Publieksdiensten
 bronnen:
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review

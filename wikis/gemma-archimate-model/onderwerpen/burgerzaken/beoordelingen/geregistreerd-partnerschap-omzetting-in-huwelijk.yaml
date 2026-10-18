@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een huwelijk en de akte van omzetting (BW 1 art. 80g).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 156): de partners.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
   gerealiseerd_door:
     waarde: ja
     naar:
     - registreren-partnerschap
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 156); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het laten omzetten van een geregistreerd partnerschap in een huwelijk.
 beschrijving:
 - Zonder melding vooraf en zonder getuigen; wie in het buitenland woont laat het bij Den Haag doen (Utrecht). Grondslag art. 80g BW 1 (UPL nr. 156).
@@ -45,4 +23,4 @@ beleidsdomein: Burgerzaken
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-geregistreerd-partnerschap-aanvragen
-status: goedgekeurd
+status: review

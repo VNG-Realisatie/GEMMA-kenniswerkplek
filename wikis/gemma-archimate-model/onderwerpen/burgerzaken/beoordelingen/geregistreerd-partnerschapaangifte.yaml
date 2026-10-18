@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een geaccepteerde melding en een vervolgafspraak (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 158): de aanstaande partners.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
   gerealiseerd_door:
     waarde: ja
     naar:
     - registreren-partnerschap
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 158), apart van de huwelijksaangifte; de UPL noemt varianten apart.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het melden van een voorgenomen geregistreerd partnerschap bij de gemeente waar men het wil laten registreren.
 beschrijving:
 - Dezelfde melding als voor een huwelijk, online of aan de balie, gratis (Utrecht). Grondslag art. 80a BW 1 (UPL nr. 158).
@@ -46,4 +24,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

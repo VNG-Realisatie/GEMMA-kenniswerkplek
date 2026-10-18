@@ -6,11 +6,6 @@ kenmerken:
     onderbouwing: Rijkswet.
     bronnen:
     - 2026-rijk-bw2-rechtspersonen
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht.
-    bronnen:
-    - 2026-rijk-bw2-rechtspersonen
   is_grondslag_voor:
     waarde: nee
     onderbouwing: Levert alleen definities (rechtspersoonlijkheid van gemeenten en kerkgenootschappen, art. 2:1, 2:2); geeft de gemeente geen taak die zij in een proces of dienst van dit onderwerp uitvoert.
@@ -21,3 +16,5 @@ besluiten:
 - datum: '2026-10-01'
   besluit: 'Geen beleidskader: levert alleen definities.'
   gevolg: afwijzen
+bronnen:
+- 2026-rijk-bw2-rechtspersonen

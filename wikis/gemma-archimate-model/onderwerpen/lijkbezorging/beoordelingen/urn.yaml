@@ -1,34 +1,13 @@
 begrip: Urn
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke asbus met naam en nummer (art. 58 lid 2).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Geborgen, bewaard, bijgezet of verstrooid, geruimd (art. 58, 59, 66).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   wordt_bewerkt:
     waarde: ja
     naar:
     - ruimen-graf
     - uitvoeren-lijkbezorging
     - verlenen-toestemming-asverstrooiing
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: 'Geen deel van het stoffelijk overschot: de as is dat deel, de urn (asbus) is de houder waarin de as wordt geborgen (art. 58), met een eigen levensloop van bijzetting, bewaring en ruiming en een eigen register (art. 59, 62, 65, 66).'
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Houder waarin de as van een overledene wordt geborgen en wordt bewaard, bijgezet of verstrooid.
@@ -81,4 +60,4 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-retributies
-status: goedgekeurd
+status: review

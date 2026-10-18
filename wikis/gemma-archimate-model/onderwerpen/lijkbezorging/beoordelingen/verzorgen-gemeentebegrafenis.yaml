@@ -7,51 +7,16 @@ kenmerken:
     naar:
     - beslisser
     - kostendrager
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - stoffelijk-overschot
-    - gemeentebegrafenis
   aanleiding:
     waarde: ja
     onderbouwing: Melding dat niemand in de lijkbezorging voorziet, uiterlijk de derde dag na het overlijden (art. 20).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een gemeentebegrafenis, met kostenverhaal (art. 21, 22).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk overlijden waarbij niemand in de lijkbezorging voorziet.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Art. 20–22: melding, zorgplicht, kostenverhaal; art. 21 lid 3–6 bij onbekende identiteit.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Een eigen levensloopproces met kernobject Gemeentebegrafenis, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van de gemeentebegrafenis: de melding dat niemand in de lijkbezorging voorziet (art. 20), de zorg door de burgemeester (art. 21), het kostenverhaal (art. 22) en de afdoening (GGM-attributen datumGemeld, datumBegrafenis, verhaaldBedrag, datumAfgedaan).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces levert.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -89,4 +54,6 @@ onderwerpen:
 - lijkbezorging
 kernobject: gemeentebegrafenis
 afnemer: extern
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+status: review

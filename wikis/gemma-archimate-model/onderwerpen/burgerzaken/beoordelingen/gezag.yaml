@@ -1,35 +1,11 @@
 begrip: Gezag
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per minderjarige een gezagsverhouding met een of twee gezaghouders (HUP Gezag over een minderjarige).
-    bronnen:
-    - 2026-rvig-hup-gezag-over-een-minderjarige
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Ontstaat (van rechtswege of door een beschikking), wijzigt en eindigt, uiterlijk bij meerderjarigheid (HUP Gezag over een minderjarige).
-    bronnen:
-    - 2026-rvig-hup-gezag-over-een-minderjarige
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: De gemeente registreert, wijzigt en beëindigt het gezag in de BRP op een uittreksel uit het centraal gezagsregister en verstrekt het (HUP Gezag over een minderjarige; NVVB Handreiking gezag).
-    bronnen:
-    - 2026-rvig-hup-gezag-over-een-minderjarige
-    - 2026-nvvb-handreiking-gezag
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: Het gezag ontstaat van rechtswege of door een beschikking van de rechtbank en wordt aangetekend in het gezagsregister van de rechtbank, dat de griffier bijhoudt; de gemeente neemt het alleen over in de BRP (BW 1 art. 244, 252; HUP Gezag over een minderjarige; Utrecht).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1

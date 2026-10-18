@@ -9,55 +9,16 @@ kenmerken:
     naar:
     - aangever
     - ambtenaar-van-de-burgerlijke-stand
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     naar:
     - levenloze-geboorte
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De akte van geboorte (levenloos); de aangever krijgt gratis een uittreksel (Utrecht).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 19i; Besluit burgerlijke stand art. 66.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-burgerlijke-stand
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aangifte tot de akte.
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - doodgeboren-kind-aangifte
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het ontvangen van de aangifte van een levenloos geboren kind en het opmaken van de akte daarvan.
 beschrijving:
 - De akte heet akte van geboorte (levenloos) en wordt opgenomen in het register van overlijden; geslachtsnaam en voornamen worden alleen vermeld als de ouders dat willen. De ambtenaar meldt gegevens aan het CBS (BW 1 art. 19i; Besluit burgerlijke stand art. 66). Aangifte alleen aan de balie; een late aangifte of een aanvulling van de voornaam kan nog (Utrecht). Opname in de BRP is een apart verzoek.
@@ -86,4 +47,8 @@ relaties:
   vindplaats: UPL nr. 118
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-utrecht-burgerzaken-levenloos-geboren-kind-of-overleden-pasgeboren-kind-aangifte-doen
+- 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+status: review

@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: Algemene maatregel van rijksbestuur.
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -82,4 +77,4 @@ bronnen:
 - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
-status: goedgekeurd
+status: review

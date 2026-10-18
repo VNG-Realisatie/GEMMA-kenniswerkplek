@@ -3,31 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een verklaring onder eed of belofte waaraan de gemeente gegevens ontleent (HUP Immigratie).
-    bronnen:
-    - 2026-rvig-hup-immigratie
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rvig-hup-immigratie
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 335): wie geen brondocument kan overleggen.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - inschrijven-ingezetene
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 335); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het afleggen van een verklaring onder eed of belofte over eigen persoonsgegevens als een brondocument ontbreekt.
 beschrijving:
 - Kan een persoon bij de inschrijving een gegeven, zoals de geslachtsaanduiding, niet met een brondocument aantonen, dan neemt de gemeente een verklaring onder eed of belofte af en ontleent zij het gegeven daaraan (HUP Immigratie). Grondslag is art. 2.8 Wet BRP; verschijnen in persoon is nodig (UPL nr. 335).
@@ -40,4 +19,4 @@ afnemer: extern
 domein: Publieksdiensten
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

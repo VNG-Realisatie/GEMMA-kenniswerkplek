@@ -9,10 +9,6 @@ kenmerken:
     naar:
     - beslisser
     - klager
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - schriftelijke-klacht
   aanleiding:
     waarde: ja
     naar:
@@ -21,47 +17,11 @@ kenmerken:
     onderbouwing: Een klacht over een gedraging van het bestuursorgaan, voor de procedure van afdeling 9.1.2 een schriftelijke klacht (art. 9:1, 9:4).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een schriftelijke en gemotiveerde kennisgeving aan de klager van de bevindingen, het oordeel en de conclusies (art. 9:12).
+  procesniveau:
+    waarde: bedrijfsproces
+    onderbouwing: Loopt van de klacht van de klager tot de kennisgeving van het oordeel aan hem (art. 9:4, 9:12). Eén afhandeling binnen de klachtbehandeling van het bestuursorgaan, dat alle schriftelijke klachten bijhoudt en jaarlijks publiceert (art. 9:2, 9:12a).
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke klacht over een gedraging.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Titel 9.1 Awb: ontvangstbevestiging, behandeling door iemand die niet bij de gedraging betrokken was, horen met verslag, afhandeling binnen zes of tien weken, jaarlijkse publicatie (art. 9:6, 9:7, 9:10, 9:11, 9:12a).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - naam: Beheren schriftelijke klachten
-      type: bedrijfsproces
-    onderbouwing: Eén afhandeling binnen de klachtbehandeling van het bestuursorgaan, dat alle schriftelijke klachten bijhoudt en jaarlijks publiceert (art. 9:2, 9:12a).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  klant_tot_klant:
-    waarde: ja
-    onderbouwing: Loopt van de klacht van de klager tot de kennisgeving van het oordeel aan hem (art. 9:4, 9:12).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Behandelt één klacht tot het oordeel; geen groepering van processen over de levensloop van een object.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt in een oordeel over de klacht, niet in een besluit waartegen beroep openstaat (art. 9:3, 9:12).
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - klacht
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 afnemer: extern
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Besluitvorming
@@ -102,4 +62,6 @@ relaties:
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 9:4, 9:6, 9:12a
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

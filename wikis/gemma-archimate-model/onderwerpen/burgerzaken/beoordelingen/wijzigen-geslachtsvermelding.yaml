@@ -9,59 +9,18 @@ kenmerken:
     naar:
     - aangever
     - ambtenaar-van-de-burgerlijke-stand
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     onderbouwing: De aangifte van de persoon, met een deskundigenverklaring van hoogstens zes maanden oud (BW 1 art. 28, 28a).
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een latere vermelding van het gewijzigde geslacht; documenten met oude gegevens zijn niet meer geldig (Utrecht; HUP Geslachtswijziging).
-    bronnen:
-    - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
-    - 2026-rvig-hup-geslachtswijziging
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 28-28c.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-burgerlijke-stand
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aangifte tot de latere vermelding.
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
     - 2026-rvig-hup-geslachtswijziging
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De ambtenaar toetst de voorwaarden (leeftijd, nationaliteit of verblijf, deskundigenverklaring) en weigert de latere vermelding zo nodig (BW 1 art. 28, 28a, 18c).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - geslachtswijzigingsaangifte
-  leidt_tot_gebeurtenis:
-    waarde: ja
-    naar:
-    - verval-van-het-reisdocument
 definitie: Het ontvangen van de aangifte van een wijziging van het geslacht en het toevoegen daarvan als latere vermelding aan de geboorteakte.
 beschrijving:
 - Aangifte kan een Nederlander van zestien jaar of ouder, of iemand met een verblijfstitel die een jaar in Nederland woont, bij de gemeente van geboorte; bij geboorte in het buitenland bij Den Haag. Alleen van man naar vrouw of omgekeerd; een non-binaire vermelding spreekt de rechter uit (BW 1 art. 28; Utrecht; HUP Geslachtswijziging). Op afspraak aan de balie, gratis (Utrecht).
@@ -116,4 +75,8 @@ besluiten:
   besluit: 'Leidt tot gebeurtenis is ja: de triggering naar verval-van-het-reisdocument staat met bron en vindplaats in de beoordeling; de nee was een vergissing (omzetting naar de ArchiMate-indeling).'
   gevolg: verwerkt
   zekerheid: logica
-status: goedgekeurd
+bronnen:
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
+- 2026-rvig-hup-geslachtswijziging
+status: review

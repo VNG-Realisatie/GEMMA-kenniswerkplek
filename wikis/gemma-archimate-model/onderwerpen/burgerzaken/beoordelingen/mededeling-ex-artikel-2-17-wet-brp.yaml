@@ -1,34 +1,15 @@
 begrip: Mededeling ex artikel 2.17 Wet BRP
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Inschrijven ingezetene
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per aanvraag en per vreemdeling (NVVB mededeling art. 2.17).
-    bronnen:
-    - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Niet aanwijsbaar in de bronnen.
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: De gemeente vraagt haar aan en ontleent er gegevens aan (stap 1, 5).
-    bronnen:
-    - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: De minister van Justitie en Veiligheid doet de mededeling via de IND (Trigger, stap 4).
     bronnen:
     - 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp
 toelichting: 'Invoer van een andere partij: de minister (via de IND) doet de mededeling over geboortedatum of nationaliteit van een vreemdeling; de gemeente ontleent de gegevens eraan zonder onderzoek. Geen pagina; vermeld bij Inschrijven ingezetene.'
+bronnen:
+- 2025-nvvb-proces-aanvraag-mededeling-art-2-17-wet-brp

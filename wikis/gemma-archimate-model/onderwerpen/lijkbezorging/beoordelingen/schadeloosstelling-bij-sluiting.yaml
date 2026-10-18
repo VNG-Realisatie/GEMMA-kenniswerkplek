@@ -1,29 +1,13 @@
 begrip: Schadeloosstelling bij sluiting
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per rechthebbende.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Eenmalig vastgesteld; geen levenscyclus.
   wordt_bewerkt:
     waarde: nee
     onderbouwing: Gedeputeerde staten stellen haar vast (art. 45 lid 2); de gemeente betaalt alleen.
-  afspraak:
+  levenscyclus:
     waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst geen_element).'
+    onderbouwing: Eenmalig vastgesteld; geen levenscyclus.
 toelichting: 'Geen element: gedeputeerde staten stellen de schadeloosstelling vast; de gemeente draagt alleen de kosten (art. 45 lid 2).'
 onderwerpen:
 - lijkbezorging
@@ -32,3 +16,5 @@ besluiten:
   besluit: 'Geen element: gedeputeerde staten stellen haar vast; de gemeente betaalt alleen.'
   gevolg: afwijzen
   zekerheid: kennis
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst

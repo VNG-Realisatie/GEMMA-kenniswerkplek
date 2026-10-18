@@ -2,7 +2,7 @@
 id: akte-van-de-burgerlijke-stand-data
 type: data-object
 archimate_type: data-object
-status: goedgekeurd
+status: review
 naam: Akte van de burgerlijke stand-data
 element: Akte van de burgerlijke stand
 relatie: realisatie
@@ -14,7 +14,7 @@ match:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling akte-van-de-burgerlijke-stand.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur. Volgt de status van [Akte van de burgerlijke stand](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md).
+**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Akte van de burgerlijke stand](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/akte-van-de-burgerlijke-stand.md).
 
 ## Betekenis
 

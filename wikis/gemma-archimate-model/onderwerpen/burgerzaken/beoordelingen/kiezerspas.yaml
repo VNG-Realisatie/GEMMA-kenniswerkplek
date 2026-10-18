@@ -3,22 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een kiezerspas waarmee de kiezer in een stembureau naar keuze kan stemmen (Kieswet art. K 1, K 4).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-kieswet-bwbr0004627
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De kiezer, extern (UPL nr. 208: burger).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -49,4 +33,4 @@ relaties:
   vindplaats: art. K 3
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

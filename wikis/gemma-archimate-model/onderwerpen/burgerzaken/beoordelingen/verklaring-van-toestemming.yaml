@@ -1,36 +1,12 @@
 begrip: Verklaring van toestemming
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Behandelen aanvraag reisdocument
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per aanvraag en per gezaghebber een verklaring (Paspoortwet art. 34).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Drie maanden geldig, intrekbaar; bij intrekking vervalt het reisdocument van rechtswege (Utrecht; Paspoortwet art. 48).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: 'Raadplegen: Behandelen aanvraag reisdocument toetst de toestemming (Paspoortwet art. 34).'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: ja
+  afhankelijkheid:
+    waarde: invoer_van_een_ander
     onderbouwing: Iedere persoon die het gezag uitoefent geeft haar, online met DigiD of op een ondertekend formulier; de rechter kan haar vervangen (Paspoortwet art. 34; Utrecht).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
@@ -39,3 +15,6 @@ synoniemen:
 - naam: Toestemmingsverklaring
   context: beleid
 toelichting: 'Invoer van een andere partij: de ouder of andere gezaghebber geeft de verklaring, de gemeente ontvangt en toetst haar bij de aanvraag voor een kind jonger dan achttien jaar (paspoort) of twaalf jaar (identiteitskaart). Geen pagina; vermeld bij Behandelen aanvraag reisdocument (Paspoortwet art. 34; Utrecht).'
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen

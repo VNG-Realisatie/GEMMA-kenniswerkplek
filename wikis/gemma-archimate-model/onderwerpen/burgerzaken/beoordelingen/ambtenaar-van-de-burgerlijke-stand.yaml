@@ -2,9 +2,6 @@ begrip: Ambtenaar van de burgerlijke stand
 vak: bedrijf/actief-intern
 hoofdkenmerk: hoedanigheid
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
     naar:
@@ -21,15 +18,6 @@ kenmerken:
     - voltrekken-huwelijk
     - registreren-partnerschap
     - inschrijven-ontbinding-huwelijk-of-partnerschap
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Ambtenaar die bevoegd is akten van de burgerlijke stand op te maken.
 beschrijving:
 - De ambtenaar van de burgerlijke stand maakt de akten van de burgerlijke stand op, waaronder de akte van overlijden na aangifte bij de gemeente waar iemand is overleden (Wet op de lijkbezorging art. 13, 14; Ondernemersplein).
@@ -145,4 +133,4 @@ specialisaties:
 bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rvo-aangifte-en-akte-van-overlijden
-status: goedgekeurd
+status: review

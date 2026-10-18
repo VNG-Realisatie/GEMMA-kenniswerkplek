@@ -4,29 +4,15 @@ hoofdkenmerk: handelende_partij
 onderwerpen:
 - participatie
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: ja
-    onderbouwing: Verenigingen, stichtingen en buurtcomités bestaan los van participatie; zij kunnen ook andere rollen vervullen, zoals indiener van een verzoek.
-    bronnen:
-    - 2024-vng-model-participatieverordening
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  vervult_een_rol:
-    waarde: ja
-    naar:
-    - indiener
   soort_partij:
     waarde: ja
     onderbouwing: In elke gemeente kunnen maatschappelijke partijen gemeentelijke taken uitvoeren onder de voorwaarden van de verordening (art. 150 lid 3).
     bronnen:
     - 2026-rijk-gemeentewet-wettekst
+  vervult_een_rol:
+    waarde: ja
+    naar:
+    - indiener
 doelgroep: inwoners en ondernemers
 relaties:
 - soort: toewijzing
@@ -49,4 +35,4 @@ gemma:
 bronnen:
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-gemeentewet-wettekst
-status: goedgekeurd
+status: review

@@ -4,11 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke uitspraak tot ontzetting.
-    bronnen:
-    - 2026-rvig-hup-nederlands-kiesrecht
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -35,4 +30,4 @@ relaties:
   vindplaats: Kieswet art. B 5 lid 3; HUP Nederlands kiesrecht
 bronnen:
 - 2026-rijk-kieswet-bwbr0004627
-status: goedgekeurd
+status: review

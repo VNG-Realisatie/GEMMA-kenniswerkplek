@@ -4,9 +4,6 @@ hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: 'Een hoedanigheid, geen partij: de persoon zelf is de ingeschreven persoon.'
   voert_gedrag_uit:
     waarde: ja
     naar:
@@ -14,17 +11,6 @@ kenmerken:
     - verwerken-vermissing-reisdocument
     - inhouden-reisdocument
     - behandelen-aanvraag-reisdocument-niet-ingezetene
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per reisdocument één houder (Paspoortwet art. 1 onder f).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: De gegevens van de persoon horen bij Ingeschreven persoon; de rol zelf wordt niet bijgehouden.
 definitie: Hoedanigheid van degene op wiens naam een reisdocument is of wordt gesteld en die het aanvraagt, ophaalt, vermissing meldt en inlevert.
 beschrijving:
 - 'De wet onderscheidt de aanvrager, die een aanvraag indient of op wie zij betrekking heeft, en de houder, op wiens naam het reisdocument is gesteld en voor wie het is uitgereikt (Paspoortwet art. 1 onder b en f). In de gemeentelijke praktijk is het dezelfde persoon in opeenvolgende fasen: hij verschijnt persoonlijk bij de aanvraag, legt al zijn reisdocumenten over, haalt het nieuwe document op en levert de oude in, meldt een vermissing en levert een vervallen of teruggevonden document in (art. 28, 29, 32, 56; Utrecht). Voor een minderjarige vraagt de ouder of voogd aan en geeft de toestemming (art. 34).'
@@ -83,4 +69,4 @@ relaties:
 bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rvig-hup-inhouding-inlevering-vermissing
-status: goedgekeurd
+status: review

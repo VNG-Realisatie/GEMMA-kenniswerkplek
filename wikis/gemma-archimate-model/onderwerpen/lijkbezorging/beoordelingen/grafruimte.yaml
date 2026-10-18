@@ -1,7 +1,7 @@
 begrip: Grafruimte
 kenmerken:
-  eigen_identiteit:
-    waarde: nee
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: 'Onderdeel van Graf: Ruimte binnen een graf (Groningen art. 1 h, k).'
 toelichting: 'Onderdeel van Graf: Ruimte binnen een graf (Groningen art. 1 h, k).'
 genoemd_begrip: Graf

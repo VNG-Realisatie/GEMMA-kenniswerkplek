@@ -2,8 +2,8 @@ begrip: Inspraak
 onderwerpen:
 - participatie
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: De tweede trede van de participatieladder, een vorm van inwonersparticipatie; het gedrag is de uniforme openbare voorbereidingsprocedure (art. 150 lid 2; bijlage 4).
     bronnen:
     - 2026-rijk-gemeentewet-wettekst
@@ -14,3 +14,6 @@ besluiten:
 - datum: '2026-10-15'
   besluit: 'Geen eigen element: een vorm van inwonersparticipatie; Uitvoeren inwonersparticipatie krijgt bij inspraak een relatie naar Uitvoeren uniforme openbare voorbereidingsprocedure.'
   gevolg: verwerkt
+bronnen:
+- 2026-rijk-gemeentewet-wettekst
+- 2024-vng-implementatiehandleiding-model-participatieverordening

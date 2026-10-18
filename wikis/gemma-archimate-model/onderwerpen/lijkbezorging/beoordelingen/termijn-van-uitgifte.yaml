@@ -1,7 +1,7 @@
 begrip: Termijn van uitgifte
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: 'Eigenschap van het grafrecht en het algemeen graf: looptijd waarvan het verstrijken vooraf wordt meegedeeld (art. 27a, 28 lid 2; Groningen art. 16).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -10,3 +10,6 @@ toelichting: 'Eigenschap of indeling van Grafrecht: Eigenschap van het grafrecht
 genoemd_begrip: Grafrecht
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

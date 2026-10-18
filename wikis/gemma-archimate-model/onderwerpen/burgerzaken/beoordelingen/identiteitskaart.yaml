@@ -3,34 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De aanvrager krijgt het reisdocument uitgereikt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De aanvrager, een inwoner (UPL: doelgroep burger).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-aanvraag-reisdocument
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: De UPL noemt het als eigen product.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het aanvragen en ophalen van een Nederlandse identiteitskaart, waarmee een Nederlander zich identificeert en naar een deel van de landen kan reizen.
 beschrijving:
 - Een ID-kaart is goedkoper dan een paspoort, maar niet voor alle landen geldig; ze kan naast een paspoort bestaan. Een kind jonger dan twaalf jaar heeft toestemming van de ouders of gezaghebbers nodig (Utrecht; Wet op de Nederlandse identiteitskaart art. 22). Sinds 2026-10-01 regelt de Wet op de Nederlandse identiteitskaart de aanvraag, verstrekking, uitreiking, weigering, het verval en de inhouding van de kaart (art. 11, 15-39); de Paspoortwet levert de registers van de minister (Paspoortwet art. 1 onder u, 4a, 25). De UPL noemt als grondslag art. 16a Paspoortwet (UPL nr. 186); die paragraaf is per 2026-10-01 vervallen, zie de terugmelding over de grondslag.
@@ -52,4 +28,8 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+status: review

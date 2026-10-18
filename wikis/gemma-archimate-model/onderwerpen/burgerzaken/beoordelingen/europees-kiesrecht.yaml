@@ -3,10 +3,13 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: Een aanduiding in de categorie kiesrecht van de persoonslijst (HUP Europees kiesrecht; HUP Kiesrecht).
     bronnen:
     - 2026-rvig-hup-europees-kiesrecht
     - 2026-rvig-hup-kiesrecht
 toelichting: 'Eigenschap van Ingeschreven persoon, geen pagina: de aanduiding dat een EU-onderdaan aan de verkiezing van het Europees Parlement in Nederland deelneemt, op zijn verzoek met formulier Y32; zij eindigt op verzoek, bij vertrek of bij verkrijging van het Nederlanderschap (HUP Europees kiesrecht). Een processtap van Registreren kiesgerechtigdheid.'
+bronnen:
+- 2026-rvig-hup-europees-kiesrecht
+- 2026-rvig-hup-kiesrecht

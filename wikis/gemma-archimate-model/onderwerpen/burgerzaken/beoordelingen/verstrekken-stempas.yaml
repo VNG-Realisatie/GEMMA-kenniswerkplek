@@ -8,53 +8,16 @@ kenmerken:
     waarde: ja
     naar:
     - kiezer
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - stempas
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De dag van de kandidaatstelling, en voor een nieuwe stempas het verzoek van de kiezer (Kieswet art. J 7 lid 1, J 8 lid 2).
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een stempas met volgnummer bij elke kiezer, ten minste veertien dagen voor de stemming, of een vervangende stempas (Kieswet art. J 7 lid 2, J 8 lid 1).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke verkiezing.
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Kieswet art. J 7, J 7a, J 8: veertien dagen voor de stemming, verzoek tot de vijfde dag of tot de dag voor de stemming om twaalf uur, kopie identiteitsbewijs, geen vervanging van een ongeldige stempas.'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-stempassen
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de termijn (de dag van de kandidaatstelling) of het verzoek tot de stempas.
     bronnen:
     - 2026-rijk-kieswet-bwbr0004627
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: De verstrekking volgt uit de registratie als kiezer; de bron noemt geen besluit.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - stempas-ontvangen
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 kernobject: stempas
 afnemer: extern
 definitie: Het vaststellen, personaliseren en toezenden van stempassen aan de kiezers, en het uitreiken van een nieuwe stempas op verzoek.
@@ -88,4 +51,6 @@ relaties:
   - 2025-vng-upl-producten-en-diensten-extern
   - 2026-rijk-kieswet-bwbr0004627
   vindplaats: UPL nr. 397
-status: goedgekeurd
+bronnen:
+- 2026-rijk-kieswet-bwbr0004627
+status: review

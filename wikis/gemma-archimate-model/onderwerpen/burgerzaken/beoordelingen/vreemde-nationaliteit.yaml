@@ -3,8 +3,8 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Nationaliteit
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: Een soort, en daarmee een waarde, van het gegeven Nationaliteit (HUP Nationaliteit).
     bronnen:
     - 2026-rvig-hup-nationaliteit

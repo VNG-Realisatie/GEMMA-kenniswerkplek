@@ -1,7 +1,7 @@
 begrip: Lijst historische graven
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: Indeling van graven naar historische betekenis of opvallende grafbedekking (VNG-modelverordening art. 26).
     bronnen:
     - 2010-vng-model-beheersverordening-begraafplaatsen
@@ -9,3 +9,5 @@ toelichting: 'Eigenschap of indeling van Graf: Indeling van graven naar historis
 genoemd_begrip: Graf
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2010-vng-model-beheersverordening-begraafplaatsen

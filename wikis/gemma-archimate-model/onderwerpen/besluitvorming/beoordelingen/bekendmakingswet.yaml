@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: Rijkswet.
     bronnen:
     - 2026-rijk-bekendmakingswet-wettekst
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht, versie vanaf 1 januari 2024, opgehaald op 2026-10-12.
-    bronnen:
-    - 2026-rijk-bekendmakingswet-wettekst
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -42,4 +37,4 @@ relaties:
 bronnen:
 - 2026-rijk-bekendmakingswet-wettekst
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

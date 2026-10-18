@@ -9,11 +9,6 @@ kenmerken:
     onderbouwing: Rijkswet.
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht, opgehaald op 2026-09-30.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -109,4 +104,4 @@ besluiten:
 bronnen:
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

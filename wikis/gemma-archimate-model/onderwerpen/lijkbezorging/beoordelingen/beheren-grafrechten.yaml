@@ -10,63 +10,17 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - grafrecht
   aanleiding:
     waarde: ja
     onderbouwing: Schriftelijke aanvraag van een graf (Groningen art. 16 lid 1).
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een verleend, verlengd, overgeschreven of vervallen grafrecht (art. 28; Groningen art. 16–20).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk particulier graf, urnengraf of urnennis.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet op de lijkbezorging art. 28; Groningen art. 16–20.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afnemer:
-    waarde: ja
-    onderbouwing: Rechthebbende op het graf (art. 28).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Levert zelf het eindresultaat voor zijn kernobject; geen deel van een groter proces.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_processen:
-    waarde: ja
-    naar:
-    - verlenen-grafrecht
-    - vervallen-verklaren-grafrecht
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: Omvat de levensloop van het grafrecht, van verlening via verlenging en overschrijving tot verval (art. 28; Groningen art. 16–20).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: 'De bedrijfsprocessen leveren het aanbod (Verlenen grafrecht: Grafuitgifte).'
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Het verval van het grafrecht volgt uit het bedrijfsproces Vervallen verklaren grafrecht.
 definitie: 'Het beheer van een grafrecht over de hele looptijd: verlenen, verlengen, overschrijven en vervallen.'
 beschrijving:
 - Het grafrecht wordt schriftelijk gevestigd voor onbepaalde tijd of voor ten minste tien jaar, en op verzoek verlengd (Wet op de lijkbezorging art. 28 lid 1–3). Het college verleent het recht op aanvraag, schrijft het over en kan het vervallen verklaren; het recht vervalt ook als na een verklaring van verwaarlozing niet alsnog in het onderhoud is voorzien (Groningen art. 16–20; art. 28 lid 4–7).
@@ -113,4 +67,4 @@ relaties:
 bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review

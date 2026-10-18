@@ -2,7 +2,7 @@
 id: rijbewijs-data
 type: data-object
 archimate_type: data-object
-status: goedgekeurd
+status: review
 naam: Rijbewijs-data
 element: Rijbewijs
 relatie: realisatie
@@ -14,7 +14,7 @@ match:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling rijbewijs.yaml (de GGM-match). Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur. Volgt de status van [Rijbewijs](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs.md).
+**Status: review.** Wacht op het akkoord van de redacteur. Volgt de status van [Rijbewijs](../../bedrijfsarchitectuur/bedrijfsobjecten/0-bestuur-en-ondersteuning/burgerzaken/rijbewijs.md).
 
 ## Betekenis
 

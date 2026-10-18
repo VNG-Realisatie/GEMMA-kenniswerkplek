@@ -7,59 +7,18 @@ kenmerken:
     naar:
     - beslisser
     - houder-van-de-begraafplaats
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - grafrecht
-    - beschikking
   aanleiding:
     waarde: ja
     onderbouwing: Verwaarlozing van het graf, wanbetaling, verzuim of het uitblijven van overschrijving binnen de termijn na overlijden van de rechthebbende (art. 28 lid 4; Groningen art. 18 lid 4, 20 lid 2).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een vervallen grafrecht; daarna kunnen grafbedekking en graf worden geruimd (Groningen art. 20 lid 4, 26).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk graf waarvoor een van de gronden zich voordoet.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Art. 28 lid 4–7 (verklaring van verwaarlozing, termijnen van één of vijf jaar); Groningen art. 20; VNG-modelverordening art. 17 lid 3.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-grafrechten
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, ambtshalve, van de verwaarlozing, wanbetaling of het verzuim tot het vervallen grafrecht.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Beheren grafrechten.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college verklaart het grafrecht vervallen (Groningen art. 20 lid 2).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces levert.
-  leidt_tot_gebeurtenis:
-    waarde: ja
-    naar:
-    - verval-van-het-grafrecht
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -97,4 +56,8 @@ onderwerpen:
 - lijkbezorging
 kernobject: grafrecht
 afnemer: extern
-status: goedgekeurd
+bronnen:
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2010-vng-model-beheersverordening-begraafplaatsen
+status: review

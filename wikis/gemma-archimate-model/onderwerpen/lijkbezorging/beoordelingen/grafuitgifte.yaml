@@ -3,18 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het uitsluitend recht op een particulier graf voor een vaste termijn (VNG-modelverordening art. 15; Groningen art. 16).
-    bronnen:
-    - 2010-vng-model-beheersverordening-begraafplaatsen
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger en bedrijf (UPL); wie een graf wil en daarna rechthebbende op het graf is (Groningen art. 16).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -61,4 +49,4 @@ bronnen:
 - 2010-vng-model-beheersverordening-begraafplaatsen
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-retributies
-status: goedgekeurd
+status: review

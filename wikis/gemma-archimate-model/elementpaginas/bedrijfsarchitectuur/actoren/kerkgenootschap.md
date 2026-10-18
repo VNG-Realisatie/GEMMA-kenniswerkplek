@@ -2,7 +2,7 @@
 id: kerkgenootschap
 type: actor
 archimate_type: business-actor
-status: goedgekeurd
+status: review
 naam: Kerkgenootschap
 onderwerpen:
 - lijkbezorging
@@ -21,7 +21,7 @@ bronnen:
 
 <!-- Gegenereerd door tools/render.py uit de beoordeling kerkgenootschap.yaml. Wijzig de beoordeling, niet deze pagina. -->
 
-**Status: goedgekeurd** door de redacteur.
+**Status: review.** Wacht op het akkoord van de redacteur.
 
 ## Betekenis
 
@@ -49,7 +49,7 @@ Een kerkgenootschap kan een bijzondere begraafplaats of een bijzonder crematoriu
 
 ### Typering
 
-Actor. Uitkomst van de beslistabel: Handelende partij (kern ja).
+Actor. Uitkomst van de beslistabel: Handelende partij (1 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -57,16 +57,15 @@ Actor. Uitkomst van de beslistabel: Handelende partij (kern ja).
 
 ### Kenmerken
 
-**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: handelende partij. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: bedrijfslaag, actief, intern (Actor, Rol, Bedrijfssamenwerking). **Hoofdkenmerk**: handelende partij.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
-| **los van verantwoordelijkheid**: Blijft de partij bestaan als deze verantwoordelijkheid wegvalt, zodat zij ook andere rollen kan vervullen? | Ja, bestaat los van het houderschap van een begraafplaats. [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md) |
-| **eigen rechtspersoon**: Heeft het verband of de organisatie eigen rechtspersoonlijkheid (openbaar lichaam, stichting, vennootschap)? | Ja, kerkgenootschappen, hun zelfstandige onderdelen en lichamen waarin zij zijn verenigd, bezitten rechtspersoonlijkheid (art. 2:2). [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md) |
-| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, met [Houder van de begraafplaats](../rollen/houder-van-de-begraafplaats.md), [Houder van het crematorium](../rollen/houder-van-het-crematorium.md). |
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md), [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 | **soort partij**: Heeft elke gemeente met deze partij te maken in dezelfde rol, zodat het element voor alle gemeenten geldt? Het criterium sluit uit wat bij één of enkele gemeenten hoort, niet een partij die landelijk maar één keer bestaat. | Ja, een soort partij die in elke gemeente houder van een bijzondere begraafplaats of crematorium kan zijn (art. 37, 52); geen individueel kerkgenootschap. [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
+| **vervult een rol**: Vervult de partij aanwijsbaar een rol in gemeentelijk gedrag? | Ja, met [Houder van de begraafplaats](../rollen/houder-van-de-begraafplaats.md), [Houder van het crematorium](../rollen/houder-van-het-crematorium.md). [BW Boek 2](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-bw2-rechtspersonen.md), [Wet op de lijkbezorging](../../../onderwerpen/lijkbezorging/bronduidingen/rijksregelgeving/2026-rijk-wet-op-de-lijkbezorging-wettekst.md) |
 
 ### Relaties
 

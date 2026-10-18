@@ -1,18 +1,9 @@
 begrip: Beleidsregel
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - besluitvorming
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per bevoegdheid een eigen beleidsregel, vastgesteld bij besluit (art. 1:3 lid 4, 4:81).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt bij besluit vastgesteld en bekendgemaakt, en geldt tot zij wordt gewijzigd of ingetrokken (art. 1:3 lid 4, 3:42, 4:83).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -22,18 +13,6 @@ kenmerken:
     onderbouwing: 'Het bestuursorgaan stelt haar vast (art. 4:81), maakt haar bekend (art. 3:42, 4:83) en past haar toe bij het nemen van besluiten: het handelt ernaar en mag ernaar verwijzen ter motivering (art. 4:82, 4:84).'
     bronnen:
     - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: De regel zelf; geen vorm van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van een ander object.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: Het bestuursorgaan stelt haar zelf vast (art. 4:81).
   generiek:
     waarde: ja
     onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp waarin een bestuursorgaan een bevoegdheid heeft.
@@ -56,4 +35,6 @@ besluiten:
   besluit: 'Eigen generiek bedrijfsobject naast Regeling en Beleidsnota: een besluit van algemene strekking dat alleen het bestuursorgaan bindt (Awb art. 1:3 lid 4, 4:84), geen algemeen verbindend voorschrift en geen beleidsnota.'
   gevolg: verwerkt
   zekerheid: kennis
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

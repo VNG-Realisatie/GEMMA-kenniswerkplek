@@ -1,23 +1,10 @@
 begrip: Register paspoortsignaleringen
 vak: bedrijf/passief
+hoofdkenmerk: representatie
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Signalering
-kenmerken:
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Raadplegen via de mededelingen van de minister (Paspoortwet art. 25 lid 4).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: ja
-    onderbouwing: Het register waarin de signaleringen zijn vastgelegd (Paspoortwet art. 25 lid 3; Paspoortbesluit art. 1.1).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
+kenmerken: {}
 synoniemen:
 - naam: RPS
   context: dagelijks gebruik
@@ -25,3 +12,4 @@ toelichting: 'Representatie, geen pagina: het register van de minister met de pe
 bronnen:
 - 2026-rijk-paspoortbesluit-bwbr0044308
 - 2026-rvig-hup-signalering-verstrekking-reisdocument
+- 2026-rijk-paspoortwet-bwbr0005212

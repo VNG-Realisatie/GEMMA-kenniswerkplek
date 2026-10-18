@@ -2,58 +2,12 @@ begrip: Nader onderzoek
 vak: bedrijf/gedrag-intern
 soort_gedrag: per_keer_doorlopen
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: Gemeentelijke lijkschouwer (art. 10a).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: Zoals het bredere proces.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  aanleiding:
-    waarde: ja
-    onderbouwing: Zoals het bredere proces.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Zoals het bredere proces.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij veel gevallen.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Eigen artikel: onderzoek naar de doodsoorzaak van een minderjarige (art. 10a).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen bijdrage aan een groter proces.'
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Variant van Schouwen stoffelijk overschot: zelfde gegevens en behandeling, geen eigen levenscyclus.'
 genoemd_begrip: Schouwen stoffelijk overschot
 toelichting: 'Specialisatie zonder pagina van Schouwen stoffelijk overschot: onderzoek naar de doodsoorzaak van een minderjarige (art. 10a).'
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst

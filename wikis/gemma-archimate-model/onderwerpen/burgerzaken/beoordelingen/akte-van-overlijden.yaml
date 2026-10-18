@@ -1,39 +1,12 @@
 begrip: Akte van overlijden
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 - lijkbezorging
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Eén akte per overlijden, in het register van overlijden van de gemeente van overlijden (BW 1 art. 17, 19f).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt opgemaakt en kan latere vermeldingen krijgen (BW 1 art. 19f, 20).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: De ambtenaar van de burgerlijke stand maakt haar op na de aangifte (BW 1 art. 19f, 19h); de woongemeente verwerkt haar in de BRP (HUP Overlijden in Nederland).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rvig-hup-overlijden-nederland
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Specialisatie van Akte van de burgerlijke stand: dezelfde levensloop in hetzelfde proces, alleen andere gegevens per aktesoort (Besluit burgerlijke stand art. 61-65); GEMMA kent geen akten per soort.'
 genoemd_begrip: Akte van de burgerlijke stand
 toelichting: 'Specialisatie zonder pagina van Akte van de burgerlijke stand (Besluit burgerlijke stand art. 61-65); de relaties gaan naar de akte. Ook bij lijkvinding wordt een akte van overlijden opgemaakt (art. 62). In de UPL is overlijdensakte (nr. 316, BW 1 art. 19f) de dienst Overlijdensakte: een uittreksel of afschrift van deze akte. Tot 2026-10-07 een verwijzing vanuit Lijkbezorging.'
@@ -50,3 +23,5 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2026-rvo-aangifte-en-akte-van-overlijden
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+- 2026-rijk-burgerlijk-wetboek-boek-1
+- 2026-rvig-hup-overlijden-nederland

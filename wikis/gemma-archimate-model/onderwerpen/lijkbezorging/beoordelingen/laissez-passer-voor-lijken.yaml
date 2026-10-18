@@ -1,37 +1,9 @@
 begrip: Laissez-passer voor lijken
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk exemplaar apart.
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Zoals elk(e) vergunning.
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-    - 2025-vng-upl-producten-en-diensten-extern
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Door de gemeente afgegeven in Afgeven laissez-passer.
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: Niet bij dit begrip aanwijsbaar.
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Variant van Vergunning: zelfde gegevens en behandeling, geen eigen levenscyclus.'
 genoemd_begrip: Vergunning
 toelichting: 'Specialisatie zonder pagina van Vergunning: het document van de burgemeester waarmee een stoffelijk overschot ongehinderd naar een verdragsstaat van de Overeenkomst van Straatsburg wordt vervoerd (Besluit op de lijkbezorging art. 11 lid 1).'
@@ -43,3 +15,6 @@ homoniemen:
   element: vervoersdocumenten-stoffelijk-overschot
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-besluit-op-de-lijkbezorging-wettekst
+- 2025-vng-upl-producten-en-diensten-extern

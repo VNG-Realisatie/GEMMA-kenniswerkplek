@@ -4,34 +4,10 @@ onderwerpen:
 - burgerzaken
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De akte van overlijden; daarna het verlof tot begraving of crematie (Utrecht inleiding; RVO).
-    bronnen:
-    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL nr. 315): nabestaanden en de uitvaartondernemer (Utrecht inleiding).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-overlijden-aangifte-doen
   gerealiseerd_door:
     waarde: ja
     naar:
     - opmaken-akte-van-overlijden
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 315); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het doen van aangifte van een overlijden bij de gemeente waar iemand is overleden, waarna de gemeente een akte van overlijden opmaakt.
 beschrijving:
 - Aangifte doet wie het overlijden uit eigen wetenschap kent; degene die de lijkbezorging regelt kan een gemachtigde aanwijzen, meestal de uitvaartondernemer, ook elektronisch (BW 1 art. 19h). Voor de aangifte is een verklaring van overlijden van de behandelend arts of de gemeentelijke lijkschouwer nodig (Utrecht; RVO). De aangifte is gratis (Utrecht).
@@ -59,4 +35,4 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

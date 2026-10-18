@@ -9,54 +9,16 @@ kenmerken:
     - houder-van-de-begraafplaats
     - houder-van-een-plaats-van-bijzetting
     - rechthebbende-op-het-graf
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - graf
-    - urn
   aanleiding:
     waarde: ja
     naar:
     - verval-van-het-grafrecht
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een geruimd graf; resten herbegraven, as verstrooid (art. 31 lid 3; Groningen art. 27 lid 3).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Regelmatig, voor veel graven.
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Art. 31 (tien jaar grafrust, toestemming rechthebbende, melding graf van een onbekende); Groningen art. 27 (aankondiging een jaar vooraf).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-graven
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, ambtshalve, van het verval van het grafrecht of het einde van de termijn tot het geruimde graf.
     bronnen:
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Beheren graven.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: De houder geeft last tot ruiming en het college kondigt die aan (art. 31 lid 2; Groningen art. 27); de bronnen noemen geen besluit van een bevoegd orgaan.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces levert.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -92,4 +54,4 @@ onderwerpen:
 - lijkbezorging
 kernobject: graf
 afnemer: extern
-status: goedgekeurd
+status: review

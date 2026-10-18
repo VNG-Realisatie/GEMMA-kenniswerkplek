@@ -8,17 +8,6 @@ homoniemen:
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een laissez-passer voor lijken (Besluit op de lijkbezorging art. 11 lid 1).
-    bronnen:
-    - 2026-rijk-besluit-op-de-lijkbezorging-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL): wie het vervoer regelt, meestal de uitvaartondernemer (RVO).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rvo-aangifte-en-akte-van-overlijden
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -52,4 +41,4 @@ relaties:
   vindplaats: UPL nr. 445; RVO, Zie ook
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

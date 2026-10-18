@@ -3,23 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een volmachtbewijs voor de gemachtigde (Kieswet art. L 6, L 11).
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-kieswet-bwbr0004627
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De kiezer als volmachtgever, extern (Kieswet art. L 8; UPL nr. 453: burger).'
-    bronnen:
-    - 2026-rijk-kieswet-bwbr0004627
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -47,4 +30,4 @@ relaties:
   vindplaats: art. L 8
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

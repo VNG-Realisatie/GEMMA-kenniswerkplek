@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een goedgekeurde locatie voor de voltrekking (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL nr. 414): het paar en de eigenaar van een locatie.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
   gerealiseerd_door:
     waarde: ja
     naar:
     - voltrekken-huwelijk
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 414); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het kiezen of laten goedkeuren van de locatie waar een huwelijk of partnerschap wordt voltrokken.
 beschrijving:
 - 'Drie soorten: eigen locaties van de gemeente, vaste door de gemeente goedgekeurde trouwlocaties en een locatie naar keuze binnen de gemeente, aan te vragen uiterlijk zes weken voor de datum (Utrecht). De individuele locaties zijn lokaal. Grondslag art. 63 BW 1; digitaal kanaal (UPL nr. 414).'
@@ -43,4 +21,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-trouwlocaties-in-utrecht
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

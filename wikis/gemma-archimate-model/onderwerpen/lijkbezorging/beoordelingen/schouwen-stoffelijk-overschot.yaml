@@ -7,50 +7,15 @@ kenmerken:
     naar:
     - gemeentelijke-lijkschouwer
     - ketenpartner
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - stoffelijk-overschot
   aanleiding:
     waarde: ja
     naar:
     - overlijden
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Verklaring van overlijden, of een verslag aan de officier van justitie (art. 7, 10).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk overlijden waarbij de lijkschouwer schouwt.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Art. 3–10a: wie schouwt, wanneer, en wat bij een niet-natuurlijke dood.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - toestaan-lijkbezorging
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het overlijden tot de verklaring van overlijden of het verslag aan de officier van justitie; het volgt niet op een ander gemeentelijk proces.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: De verklaring van overlijden is een verklaring van een arts, geen besluit van een bestuursorgaan (art. 7).
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Levert geen product of dienst aan een afnemer; de verklaring van overlijden is invoer voor het verlof (art. 12).
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt in een verklaring of een verslag, niet in een benoemde toestandsverandering.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -90,4 +55,6 @@ object_van:
   datum: '2026-10-05'
 kernobject: stoffelijk-overschot
 afnemer: extern
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+status: review

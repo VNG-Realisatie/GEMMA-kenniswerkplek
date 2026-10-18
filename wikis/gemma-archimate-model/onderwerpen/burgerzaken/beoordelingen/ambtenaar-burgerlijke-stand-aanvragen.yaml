@@ -3,33 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De aanwijzing van een gekozen persoon tot buitengewoon ambtenaar voor één dag (Utrecht; BW 1 art. 16).
-    bronnen:
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 28): het paar.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-utrecht
   gerealiseerd_door:
     waarde: ja
     naar:
     - voltrekken-huwelijk
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 28); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het laten aanwijzen van een eigen trouwambtenaar voor één dag, voor de voltrekking van het eigen huwelijk of partnerschap.
 beschrijving:
 - 'Utrecht: € 313,45 in 2026. Grondslag art. 16 BW 1 (UPL nr. 28).'
@@ -53,4 +30,4 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

@@ -3,36 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een gemotiveerde beslissing op het bezwaar; zo nodig is het besluit herroepen en vervangen door een nieuw besluit (art. 7:11, 7:12).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk besluit waartegen een belanghebbende bezwaar maakt.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Hoofdstuk 6 en 7 Awb: bezwaarschrift met eisen aan de inhoud, termijn van zes weken, horen, beslistermijn van zes of twaalf weken (art. 6:5, 6:7, 7:2, 7:10).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL nr. 64): de belanghebbende bij het besluit (art. 6:4, 8:1).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-bezwaar
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 64); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -48,4 +22,4 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst bezwaar; wel het bedrijfsproces Behandelen bezwaar, dat de wiki koppelt aan het realiserende proces. Nieuw voor GEMMA.
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

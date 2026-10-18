@@ -38,7 +38,7 @@ In de processen is het vaststellen van de identiteit een processtap zonder pagin
 
 ### Typering
 
-Capability. Uitkomst van de beslistabel: Vermogen (kern ja).
+Capability. Uitkomst van de beslistabel: Vermogen (4 toetskenmerken ja).
 
 ### Plaats in de indelingen
 
@@ -49,16 +49,17 @@ Capability. Uitkomst van de beslistabel: Vermogen (kern ja).
 
 ### Kenmerken
 
-**Vak**: strategielaag, gedrag (Capability). **Hoofdkenmerk**: vermogen. De poort is doorlopen (herkenbaar, gemeentelijk, eigen identiteit, betekenis in dit onderwerp); dat steunt op de bronnen onder Herkomst.
+**Vak**: strategielaag, gedrag (Capability). **Hoofdkenmerk**: vermogen.
 
-De kenmerken met ja; de andere zijn nee, behalve *zelfstandige specialisatie* (standaard ja).
+De scope is doorlopen (herkenbaar, gemeentelijk, binnen dit model, betekenis in dit onderwerp) en alle toetskenmerken van het type zijn ja; een antwoord zonder eigen onderbouwing steunt op de bronnen van de beoordeling.
 
 | Kenmerk | Onderbouwing |
 |---|---|
+| **afhankelijkheid**: zelfstandig | Zelfstandig, standaard. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
+| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert, of een bedrijfsfunctie die het vermogen realiseert? | Ja, met [Officiële documenten verstrekking](../../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md), [Bevolkingsadministratie bijhouding](../../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md), [Nederlanderschap diensten](../../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/nederlanderschap-diensten.md). [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
+| **beoordeelbaar**: Kun je er volwassenheid of ontwikkelbehoefte van bepalen en er apart in investeren? | Ja, de gemeente kan de volwassenheid bepalen aan hoe betrouwbaar zij identiteitsfraude herkent, en investeren in documentcontrole, gezichtsvergelijking en de opname van biometrie bij de aanvraag van een reisdocument (Paspoortwet art. 3). [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
+| **onderscheidend**: Is het af te grenzen van de andere capabilities, zonder dat een functie er voor een deel in valt? | Ja, naaste capability is Personen registreren. Identiteit vaststellen controleert bij een aanvraag, aangifte of verklaring dat iemand is wie hij zegt te zijn; Personen registreren legt de gegevens van die persoon vast. Drie functies komen erin samen, die de functie-indeling elk in een eigen tak zet. [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
 | **stabiel over tijd**: Blijft het bestaan als de organisatie, de werkwijze of de systemen veranderen, en is het geen opgave met een einde? | Ja, de wet verlangt de vaststelling van de identiteit bij de inschrijving in de BRP, de aanvraag van een reisdocument en de afstand van het Nederlanderschap, los van de organisatie of het systeem (Wet BRP art. 2.4 lid 3; Paspoortwet art. 28 lid 1; Besluit verkrijging en verlies Nederlanderschap art. 63 lid 2). [Wet BRP](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-wet-brp-bwbr0033715.md), [Paspoortwet](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-paspoortwet-bwbr0005212.md), [Besluit verkrijging en verlies Nederlanderschap](../../../../onderwerpen/burgerzaken/bronduidingen/rijksregelgeving/2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605.md) |
-| **gerealiseerd door**: Is er een proces of functie aanwijsbaar dat de dienst uitvoert, of een bedrijfsfunctie die het vermogen realiseert? | Ja, met [Officiële documenten verstrekking](../../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/officiele-documenten-verstrekking.md), [Bevolkingsadministratie bijhouding](../../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/bevolkingsadministratie-bijhouding.md), [Nederlanderschap diensten](../../../bedrijfsarchitectuur/bedrijfsfuncties/publieksdiensten/nederlanderschap-diensten.md). |
-| **beoordeelbaar**: Kun je er volwassenheid of ontwikkelbehoefte van bepalen en er apart in investeren? | Ja, de gemeente kan de volwassenheid bepalen aan hoe betrouwbaar zij identiteitsfraude herkent, en investeren in documentcontrole, gezichtsvergelijking en de opname van biometrie bij de aanvraag van een reisdocument (Paspoortwet art. 3). |
-| **onderscheidend**: Is het af te grenzen van de andere capabilities, zonder dat een functie er voor een deel in valt? | Ja, naaste capability is Personen registreren. Identiteit vaststellen controleert bij een aanvraag, aangifte of verklaring dat iemand is wie hij zegt te zijn; Personen registreren legt de gegevens van die persoon vast. Drie functies komen erin samen, die de functie-indeling elk in een eigen tak zet. |
 
 ### Relaties
 

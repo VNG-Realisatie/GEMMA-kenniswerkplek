@@ -1,38 +1,9 @@
 begrip: Andere termijn
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk exemplaar apart.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Zoals elk(e) beschikking.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Door de gemeente vastgesteld of verleend.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rvo-aangifte-en-akte-van-overlijden
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: geen element (uitkomst specialisatie).'
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: 'Variant van Beschikking: zelfde gegevens en behandeling, geen eigen levenscyclus.'
 genoemd_begrip: Beschikking
 toelichting: 'Specialisatie zonder pagina van Beschikking: door de burgemeester gestelde afwijkende termijn voor begraving of crematie (art. 17); gangbaar vervroegen of uitstellen van de uitvaart.'
@@ -44,3 +15,6 @@ homoniemen:
   element: uitvaart-vervroegen-of-uitstellen
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rvo-aangifte-en-akte-van-overlijden

@@ -3,8 +3,8 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: 'Een aantekening op de persoonslijst van de ingeschreven persoon (HUP Verstrekkingsbeperking: indicatie geheim).'
     bronnen:
     - 2026-rvig-hup-verstrekkingsbeperking

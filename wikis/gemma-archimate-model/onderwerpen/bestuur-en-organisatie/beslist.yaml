@@ -2,13 +2,13 @@
 beslisser:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Hoedanigheid (kern ja)
+    regel: 25
+    toelichting: Hoedanigheid (1 toetskenmerken ja)
     paginatype: rol
     archimate_type: business-role
     voorleggen: false
     generiek: false
-    typeregel: 10
+    typeregel: 13
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
@@ -47,13 +47,13 @@ beslisser:
 burgemeester:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
+    regel: 25
+    toelichting: Handelende partij (1 toetskenmerken ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     generiek: false
-    typeregel: 9
+    typeregel: 12
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -65,13 +65,13 @@ burgemeester:
 college-van-b-w:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
+    regel: 25
+    toelichting: Handelende partij (1 toetskenmerken ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     generiek: false
-    typeregel: 9
+    typeregel: 12
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -88,13 +88,13 @@ college-van-b-w:
 gemeente:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
+    regel: 25
+    toelichting: Handelende partij (1 toetskenmerken ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     generiek: false
-    typeregel: 9
+    typeregel: 12
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -107,13 +107,13 @@ gemeente:
 gemeenteraad:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
+    regel: 25
+    toelichting: Handelende partij (1 toetskenmerken ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     generiek: false
-    typeregel: 9
+    typeregel: 12
   bronnen:
   - 2024-rijk-gemeentewet-wettekst
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
@@ -129,13 +129,13 @@ gemeenteraad:
 gemeentewet:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Regeling als geheel, landelijk (kern ja, 1/1)
+    regel: 25
+    toelichting: Regeling als geheel, landelijk (2 toetskenmerken ja)
     paginatype: beleidskader
     archimate_type: driver
     voorleggen: false
     generiek: false
-    typeregel: 14
+    typeregel: 17
   bronnen:
   - 2026-rijk-gemeentewet-wettekst
   - 2024-rijk-gemeentewet-wettekst
@@ -144,13 +144,13 @@ gemeentewet:
 rijk:
   uitkomst:
     soort: element
-    regel: 24
-    toelichting: Handelende partij (kern ja)
+    regel: 25
+    toelichting: Handelende partij (1 toetskenmerken ja)
     paginatype: actor
     archimate_type: business-actor
     voorleggen: false
     generiek: false
-    typeregel: 9
+    typeregel: 12
   bronnen:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rijk-wet-brp-bwbr0033715

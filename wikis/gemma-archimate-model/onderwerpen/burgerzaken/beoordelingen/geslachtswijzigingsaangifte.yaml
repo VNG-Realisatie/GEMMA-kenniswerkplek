@@ -3,31 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een latere vermelding op de geboorteakte en een aanpassing in de BRP, eventueel met nieuwe voornamen (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 159).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - wijzigen-geslachtsvermelding
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 159); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het doen van aangifte van de wijziging van de vermelding van het geslacht in de geboorteakte.
 beschrijving:
 - Op afspraak aan de balie, gratis; Utrecht vergoedt inwoners de kosten van de deskundigenverklaring en van nieuwe identiteitsdocumenten (Utrecht). Grondslag art. 28 BW 1 (UPL nr. 159).
@@ -45,4 +24,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-geslacht-vermelding-aanpassen
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

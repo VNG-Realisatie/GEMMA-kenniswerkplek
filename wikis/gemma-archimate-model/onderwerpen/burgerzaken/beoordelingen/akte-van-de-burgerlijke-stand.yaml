@@ -1,18 +1,9 @@
 begrip: Akte van de burgerlijke stand
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke akte staat in een register van de gemeente, per soort (BW 1 art. 16a, 17).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt opgemaakt, krijgt latere vermeldingen en kan worden aangevuld of verbeterd (BW 1 art. 18, 20, 24).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -30,18 +21,6 @@ kenmerken:
     - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
     - voltrekken-huwelijk
     - wijzigen-geslachtsvermelding
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
 definitie: Akte die de ambtenaar van de burgerlijke stand opmaakt over een geboorte, huwelijk, partnerschap, overlijden of ander feit van de burgerlijke stand.
 beschrijving:
 - De ambtenaar van de burgerlijke stand neemt de akten en latere vermeldingen op in de registers van geboorten, huwelijken, geregistreerde partnerschappen en overlijden van de gemeente; een akte bevat alleen de gegevens die de wet vraagt en heeft de bewijskracht van een authentieke akte (BW 1 art. 16a, 18, 22). Het Besluit burgerlijke stand regelt per aktesoort de inhoud (hoofdstuk 2).
@@ -88,4 +67,4 @@ homoniemen:
 bronnen:
 - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
 - 2026-rvig-hup-algemeen
-status: goedgekeurd
+status: review

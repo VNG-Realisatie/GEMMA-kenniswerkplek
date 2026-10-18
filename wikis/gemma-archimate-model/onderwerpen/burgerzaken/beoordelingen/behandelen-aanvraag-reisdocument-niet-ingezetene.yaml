@@ -9,65 +9,18 @@ kenmerken:
     naar:
     - beslisser
     - houder-van-het-reisdocument
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - reisdocument
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: De aanvraag, op afspraak aan de balie (Paspoortwet art. 27; Utrecht).
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het uitgereikte reisdocument, na de verstrekking, of de weigering (Paspoortwet art. 1 onder c, d en e, 42).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Een eigen bevoegdheid voor alleen de aangewezen gemeenten en alleen voor personen die niet als ingezetene in de BRP staan (Paspoortbesluit art. 3.2, 4.2); verder gelden de regels van de Paspoortwet voor de aanvraag (art. 26-41).
-    bronnen:
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-rijk-paspoortwet-bwbr0005212
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-reisdocumenten
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aanvraag tot de uitreiking of de weigering.
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De verstrekking of de weigering door de burgemeester van de aangewezen gemeente (Paspoortbesluit art. 4.2; Paspoortwet art. 40, 44).
-    bronnen:
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-rijk-paspoortwet-bwbr0005212
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - reisdocument-niet-ingezetene
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Specialisatie van Behandelen aanvraag reisdocument met een eigen bevoegdheid, een eigen doelgroep en een taak die alleen aangewezen gemeenten uitvoeren (Paspoortbesluit art. 3.2, 4.2).
-    bronnen:
-    - 2026-rijk-paspoortbesluit-bwbr0044308
 definitie: Het in ontvangst nemen en beoordelen van een aanvraag voor een reisdocument van iemand die niet als ingezetene in de BRP staat, tot de uitreiking of weigering.
 beschrijving:
 - 'Alleen de burgemeester van een bij ministeriële regeling aangewezen gemeente is bevoegd aanvragen in ontvangst te nemen en reisdocumenten te verstrekken voor personen die niet als ingezetene in de basisregistratie personen zijn ingeschreven: het nationaal paspoort, de reisdocumenten voor vluchtelingen en voor vreemdelingen en het nooddocument (Paspoortbesluit art. 3.2, 4.2; Paspoortwet art. 2 lid 1 onder a, d, e en g). Het document is hetzelfde Reisdocument als bij een ingezetene; bijzonder zijn de bevoegde gemeente en de aanvrager. Verder volgt de behandeling Behandelen aanvraag reisdocument.'
@@ -139,4 +92,4 @@ deelprocessen:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-paspoortbesluit-bwbr0044308
-status: goedgekeurd
+status: review

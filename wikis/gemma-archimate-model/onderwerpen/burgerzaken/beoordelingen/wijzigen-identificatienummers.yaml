@@ -9,58 +9,18 @@ kenmerken:
     naar:
     - beslisser
     - bijhoudingsgemeente
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Een dubbele inschrijving of een foutvermoeden in het Foutenmeldpunt BSN, of meer personen met hetzelfde A-nummer (HUP Wijzigen BSN; HUP Wijzigen administratienummer).
     bronnen:
     - 2026-rvig-hup-wijzigen-bsn
     - 2026-rvig-hup-wijzigen-administratienummer
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een gewijzigd BSN of A-nummer en een geïnformeerde persoon (HUP Wijzigen BSN).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-bsn
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rvig-hup-wijzigen-identificatienummers
-    - 2026-rvig-hup-wijzigen-bsn
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet BRP over het BSN en de afweging van belangen; nooit als correctie maar altijd als actualisering (HUP Wijzigen BSN; HUP Wijzigen administratienummer).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-bsn
-    - 2026-rvig-hup-wijzigen-administratienummer
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, ambtshalve, van de melding van de dubbele inschrijving of de fout tot het gewijzigde nummer.
     bronnen:
     - 2026-rvig-hup-wijzigen-bsn
     - 2026-rvig-hup-wijzigen-administratienummer
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college van de bijhoudingsgemeente besluit tot wijziging van het BSN, na afweging van het belang van de persoon (HUP Wijzigen BSN).
-    bronnen:
-    - 2026-rvig-hup-wijzigen-bsn
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Levert geen product of dienst aan een afnemer.
-  leidt_tot_gebeurtenis:
-    waarde: ja
-    naar:
-    - verval-van-het-reisdocument
 definitie: Het wijzigen van het burgerservicenummer of het administratienummer van een ingeschreven persoon.
 beschrijving:
 - Het BSN wordt gewijzigd bij een dubbele inschrijving, zodat één juiste persoonslijst overblijft; het college van de bijhoudingsgemeente besluit, weegt de belangen van de persoon af (toeslagen, pensioen) en informeert hem; een geldig reisdocument vervalt dan van rechtswege (HUP Wijzigen BSN). Het A-nummer wordt gewijzigd als meer personen hetzelfde nummer hebben gekregen; de gemeente kent dan nieuwe nummers toe en meldt dat aan de andere gemeenten, de RNI en de BRP-verstrekkingsvoorziening (HUP Wijzigen administratienummer).
@@ -100,4 +60,4 @@ besluiten:
   besluit: 'Leidt tot gebeurtenis is ja: de triggering naar verval-van-het-reisdocument staat met bron en vindplaats in de beoordeling; de nee was een vergissing (omzetting naar de ArchiMate-indeling).'
   gevolg: verwerkt
   zekerheid: logica
-status: goedgekeurd
+status: review

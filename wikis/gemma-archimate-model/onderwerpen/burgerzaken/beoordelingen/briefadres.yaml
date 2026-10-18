@@ -1,44 +1,19 @@
 begrip: Briefadres
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk briefadres hoort bij één persoon en heeft een briefadresgever (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Begint met de aangifte of ambtshalve registratie en eindigt als de persoon weer een woonadres heeft of na adresonderzoek (HUP Verblijfplaats; Utrecht Onjuiste inschrijving).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-    - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
   wordt_bewerkt:
     waarde: ja
     naar:
     - inschrijven-op-briefadres
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: ja
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: 'Een vorm van de verblijfplaats van één ingeschreven persoon (HUP Verblijfplaats: functie adres B).'
     bronnen:
     - 2026-rvig-hup-verblijfplaats
     - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: 'Specialisatie van Verblijfplaats die de gemeente anders behandelt: eigen voorwaarden, een briefadresgever en een eigen besluit (HUP Verblijfplaats; NVVB Beleidsregel briefadres); GGM en GEMMA kennen het als eigen begrip.'
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-    - 2026-nvvb-beleidsregel-briefadres
 definitie: Adres waar post voor een ingeschreven persoon zonder woonadres in ontvangst wordt genomen door een briefadresgever.
 beschrijving:
 - Een briefadres vereist een briefadresgever die schriftelijk instemt en de post doorgeeft; dat is een natuurlijk persoon of een door het college aangewezen rechtspersoon (HUP Verblijfplaats). Een briefadres wordt geregistreerd als iemand geen woonadres heeft, in een aangewezen instelling verblijft of als opneming van het woonadres om veiligheidsredenen niet wenselijk is (HUP Verblijfplaats). Sinds 1 januari 2022 registreert de gemeente iemand zonder woonadres die geen aangifte doet ambtshalve op een briefadres; zonder briefadresgever op een adres van de gemeente (NVVB Beleidsregel briefadres; HUP Verblijfplaats).
@@ -73,4 +48,4 @@ bronnen:
 - 2026-nvvb-beleidsregel-briefadres
 - 2026-utrecht-burgerzaken-onjuiste-inschrijving-op-uw-adres-melding-doen-adresonderzoek
 - 2023-rvig-circulaire-adresonderzoek-brp
-status: goedgekeurd
+status: review

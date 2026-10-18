@@ -3,8 +3,8 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: Een identificatienummer van de ingeschreven persoon; in het GGM een attribuut (anummer) van IngeschrevenPersoon (HUP Wijzigen identificatienummers).
     bronnen:
     - 2026-rvig-hup-wijzigen-identificatienummers
@@ -13,3 +13,6 @@ toelichting: 'Eigenschap van Ingeschreven persoon: zijn identificatienummer in d
 synoniemen:
 - naam: A-nummer
   context: dagelijks gebruik
+bronnen:
+- 2026-rvig-hup-wijzigen-identificatienummers
+- 2026-rvig-hup-wijzigen-administratienummer

@@ -4,60 +4,11 @@ soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: 'Beslisser: de burgemeester (Paspoortwet art. 44 lid 1).'
+  afhankelijkheid:
+    waarde: deelproces
+    onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het einde van het reisdocument. Nee, volgt op de inhouding na een signalering, voor hetzelfde geval (Paspoortwet art. 44 lid 2, 53).'
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: Beëindigt het reisdocument (vervallen verklaard) of geeft het terug (Paspoortwet art. 45).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  aanleiding:
-    waarde: ja
-    onderbouwing: Een ingehouden reisdocument van een persoon over wie de minister een mededeling heeft gedaan op verzoek van een tot signalering bevoegd orgaan (Paspoortwet art. 25 lid 4, 44 lid 2, 52, 53).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De beschikking tot vervallenverklaring, of de teruggave of een document met beperkte geldigheid (Paspoortwet art. 45, 46).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk ingehouden reisdocument met een signalering.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Paspoortwet art. 44 tot en met 46b (voornemen, aanhouding van acht weken, termijn van vier weken, mededeling aan de minister).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    onderbouwing: 'Draagt bij aan Beheren reisdocumenten: het einde van het reisdocument.'
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: Nee, volgt op de inhouding na een signalering, voor hetzelfde geval (Paspoortwet art. 44 lid 2, 53).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De beschikking tot vervallenverklaring van de burgemeester (Paspoortwet art. 1 onder i, 44, 46).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Levert geen product of dienst uit de UPL.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het beslissen dat een ingehouden reisdocument ongeldig is, omdat een tot signalering bevoegd orgaan daar gronden voor heeft.
 synoniemen:
 - naam: Vervallenverklaring
@@ -68,3 +19,5 @@ gemma:
 genoemd_begrip: Inhouden reisdocument
 toelichting: 'Deelproces zonder pagina van Inhouden reisdocument: het beslissen dat een ingehouden reisdocument ongeldig is, omdat een tot signalering bevoegd orgaan daar gronden voor heeft.'
 relaties: []
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212

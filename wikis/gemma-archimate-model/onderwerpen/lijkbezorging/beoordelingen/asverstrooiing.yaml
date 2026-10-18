@@ -3,18 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een ontheffing van het verbod of een toestemming om op een aangewezen plek te verstrooien (APV Groningen art. 5:27 lid 3; Groningen art. 21 lid 2).
-    bronnen:
-    - 2025-groningen-algemene-plaatselijke-verordening
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger en bedrijf (UPL); de nabestaande die zorgdraagt voor de asbus vraagt de ontheffing aan (APV Groningen art. 5:27 lid 3).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2025-groningen-algemene-plaatselijke-verordening
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -43,4 +31,4 @@ relaties:
   vindplaats: Model-APV art. 5:36 lid 3; Groningen art. 5:27 lid 3
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

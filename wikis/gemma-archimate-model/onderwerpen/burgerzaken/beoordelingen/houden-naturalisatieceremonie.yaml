@@ -4,64 +4,12 @@ soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - burgerzaken
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: 'Optant en Verzoeker om naturalisatie: verschijnen op oproeping en leggen de verklaring van verbondenheid af (Besluit art. 60a lid 2 en 4, 60b lid 2 en 4).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: 'Registreert het Nederlanderschap: de bevestiging of het besluit treedt door de uitreiking in werking (Besluit art. 60a lid 1, 60b lid 1).'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  aanleiding:
-    waarde: ja
-    onderbouwing: De vaststelling dat aan de optievereisten is voldaan, of het uittreksel van het naturalisatiebesluit dat de minister ter bekendmaking toezendt (Besluit art. 38, 60a lid 7, 60b lid 2).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: 'De uitgereikte bevestiging of het uitgereikte uittreksel, na de verklaring van verbondenheid: de persoon is Nederlander (Besluit art. 60a, 60b; Utrecht).'
+  afhankelijkheid:
+    waarde: deelproces
+    onderbouwing: 'Draagt bij aan het levensloopproces Beheren Nederlanderschap: het in werking treden van de verkrijging. Nee, volgt op het naturalisatieverzoek of de optieverklaring, voor hetzelfde geval; de verkrijging gaat pas in na de ceremonie.'
     bronnen:
     - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
     - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke bevestigde optie en elke naturalisatie.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Besluit art. 60a en 60b: uitreiking binnen negen weken na vaststelling (optie), oproeping binnen zes weken na dagtekening (naturalisatie), verklaring van verbondenheid mondeling of schriftelijk, verval na een jaar.'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    onderbouwing: 'Draagt bij aan het levensloopproces Beheren Nederlanderschap: het in werking treden van de verkrijging.'
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: Nee, volgt op het naturalisatieverzoek of de optieverklaring, voor hetzelfde geval; de verkrijging gaat pas in na de ceremonie.
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-    - 2026-utrecht-burgerzaken-nederlander-worden-door-naturalisatie-of-optie
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: De uitreiking maakt een eerder besluit bekend; de burgemeester bepaalt alleen de wijze van bekendmaking en van het afleggen van de verklaring (Besluit art. 60a lid 4-5, 9).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: 'Nee, de dienst levert het bedrijfsproces waarvan dit een deelproces is: Behandelen naturalisatieverzoek en Behandelen optieverklaring (UPL nr. 261).'
-  leidt_tot_gebeurtenis:
-    waarde: ja
-    onderbouwing: Verkrijging van het Nederlanderschap (Besluit art. 60a lid 1, 60b lid 1).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
 definitie: Het oproepen van nieuwe Nederlanders en het uitreiken van de bevestiging of het naturalisatiebesluit, na de verklaring van verbondenheid.
 synoniemen:
 - naam: Uitreiken bevestiging of uittreksel

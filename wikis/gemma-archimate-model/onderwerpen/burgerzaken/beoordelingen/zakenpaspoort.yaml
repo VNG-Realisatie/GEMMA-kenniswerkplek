@@ -3,34 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De aanvrager krijgt het reisdocument uitgereikt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-    - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De aanvrager, een inwoner (UPL: doelgroep burger).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-aanvraag-reisdocument
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: De UPL noemt het als eigen product.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het aanvragen en ophalen van een nationaal paspoort met 66 in plaats van 34 bladzijden.
 beschrijving:
 - Een zakenpaspoort is een gewoon paspoort met extra bladzijden; het kan niet naast een normaal paspoort worden aangevraagd en kost hetzelfde (Utrecht). De Paspoortwet kent het niet als eigen soort; in het documentnummer heeft het de letter B (HUP Uitreiking). De UPL noemt als grondslag art. 3 Paspoortuitvoeringsregeling Buitenland 2001 (UPL nr. 494); zie de terugmelding over de grondslag.
@@ -47,4 +23,4 @@ bronnen:
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
 - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
 - 2026-rijk-paspoortwet-bwbr0005212
-status: goedgekeurd
+status: review

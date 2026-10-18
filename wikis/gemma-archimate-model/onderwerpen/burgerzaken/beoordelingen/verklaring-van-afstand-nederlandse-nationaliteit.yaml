@@ -3,23 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een bevestiging van de afstand (Besluit art. 63 lid 3).
-    bronnen:
-    - 2026-rijk-besluit-verkrijging-verlies-nederlanderschap-bwbr0013605
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De meerderjarige Nederlander met een andere nationaliteit, extern (Utrecht; UPL nr. 436: burger).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -40,4 +23,4 @@ gemma:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-nederlandse-nationaliteit-opgeven-of-verliezen
-status: goedgekeurd
+status: review

@@ -3,8 +3,8 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: Een identificatienummer van de ingeschreven persoon; in het GGM een attribuut van NatuurlijkPersoon (HUP Wijzigen identificatienummers).
     bronnen:
     - 2026-rvig-hup-wijzigen-identificatienummers

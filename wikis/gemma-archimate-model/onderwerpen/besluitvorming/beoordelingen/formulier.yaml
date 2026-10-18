@@ -1,15 +1,10 @@
 begrip: Formulier
 vak: bedrijf/passief
+hoofdkenmerk: representatie
 onderwerpen:
 - besluitvorming
-kenmerken:
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: ja
-    onderbouwing: 'De vorm waarin de aanvraag en de gegevens worden ingediend: noemt het begrip Aanvraag (art. 4:4 lid 1).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
+kenmerken: {}
 genoemd_begrip: Aanvraag
 toelichting: 'Representatie van de aanvraag, geen pagina: het bestuursorgaan kan voor het indienen van aanvragen en het verstrekken van gegevens een formulier vaststellen, zonder gegevens te vragen die niet nodig zijn (Awb art. 4:4).'
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst

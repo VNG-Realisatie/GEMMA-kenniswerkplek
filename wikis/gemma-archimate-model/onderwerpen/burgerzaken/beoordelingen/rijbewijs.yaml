@@ -1,39 +1,15 @@
 begrip: Rijbewijs
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk rijbewijs is afgegeven aan één houder voor een of meer categorieën, met een afgiftedatum (Wegenverkeerswet 1994 art. 118, 118a).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt afgegeven en uitgereikt, vernieuwd of vervangen, en verliest zijn geldigheid door het verstrijken van de geldigheidsduur, omwisseling, overlijden of aangifte van vermissing (Wegenverkeerswet 1994 art. 119, 120, 122, 123).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
   wordt_bewerkt:
     waarde: ja
     naar:
     - behandelen-aanvraag-rijbewijs
     - beheren-rijbewijzen
     - verwerken-vermissing-rijbewijs
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: 'Geen vorm van een ander begrip: het rijbewijs is zelf het bewijs van rijbevoegdheid.'
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De burgemeester geeft het rijbewijs af; de RDW produceert het in opdracht en beheert het register (Wegenverkeerswet 1994 art. 116, 126; Reglement rijbewijzen art. 119).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
 definitie: Bewijs van rijbevoegdheid op naam van een persoon, afgegeven voor het besturen van motorrijtuigen van een of meer categorieën.
 beschrijving:
 - Het rijbewijs wordt op aanvraag en tegen betaling afgegeven door de burgemeester van de gemeente waar de aanvrager als ingezetene met een adres in de basisregistratie personen staat, of in de bij algemene maatregel van bestuur bepaalde gevallen door de RDW, voor een of meer categorieën motorrijtuigen (Wegenverkeerswet 1994 art. 111, 116, 118; Reglement rijbewijzen art. 27, 105). De afgifte steunt op een onderzoek naar rijvaardigheid en geschiktheid of op een eerder rijbewijs (art. 111 lid 1).
@@ -80,4 +56,5 @@ bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-status: goedgekeurd
+- 2026-rijk-reglement-rijbewijzen-bwbr0008074
+status: review

@@ -2,22 +2,10 @@ begrip: Gemeentelijke lijkschouwer
 vak: bedrijf/actief-intern
 hoofdkenmerk: hoedanigheid
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: De rol bestaat alleen zolang deze verantwoordelijkheid bestaat; wie haar vervult, kan wisselen.
   voert_gedrag_uit:
     waarde: ja
     naar:
     - schouwen-stoffelijk-overschot
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Arts die door het college is benoemd om stoffelijke overschotten te schouwen.
 beschrijving:
 - Burgemeester en wethouders benoemen een of meer gemeentelijke lijkschouwers, uitsluitend forensisch artsen (art. 4, 5). Normaal schouwt de behandelend arts het stoffelijk overschot; de gemeentelijke lijkschouwer is de uitzondering en schouwt alleen als de behandelend arts dat niet doet, geeft een verklaring van overlijden af of waarschuwt bij een niet-natuurlijke dood de officier van justitie en de ambtenaar van de burgerlijke stand, en leidt het nader onderzoek bij een minderjarige (art. 3, 7, 10, 10a). Hij kan de elektronische weg openstellen voor mededelingen van de behandelend arts (art. 7 lid 3).
@@ -35,4 +23,4 @@ relaties:
 onderwerpen:
 - lijkbezorging
 doelgroep: gemeente
-status: goedgekeurd
+status: review

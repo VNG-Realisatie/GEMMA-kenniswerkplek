@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De akte van naamskeuze (BW 1 art. 5).
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 258): de ouders.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
   gerealiseerd_door:
     waarde: ja
     naar:
     - opmaken-akte-van-naamskeuze
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 258); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het vastleggen van de keuze van de ouders voor de achternaam van hun kind bij de ambtenaar van de burgerlijke stand.
 beschrijving:
 - Aan de balie op afspraak of via telefoon 14 030, met beide ouders, vóór de geboorte, bij de erkenning of uiterlijk bij de geboorteaangifte (Utrecht). Grondslag art. 5 BW 1 (UPL nr. 258).
@@ -47,4 +25,4 @@ beleidsdomein: Burgerzaken
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-achternaam-kind-kiezen
-status: goedgekeurd
+status: review

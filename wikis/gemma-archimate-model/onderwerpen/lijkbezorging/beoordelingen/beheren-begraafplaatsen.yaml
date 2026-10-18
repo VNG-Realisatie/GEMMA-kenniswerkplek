@@ -8,60 +8,16 @@ kenmerken:
     waarde: ja
     naar:
     - houder-van-de-begraafplaats
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - begraafplaats
   aanleiding:
     waarde: ja
     onderbouwing: Het voornemen tot aanleg of uitbreiding, of een verzoek om toestemming (art. 36, 40, 41).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een begraafplaats die in gebruik is, en na sluiting en opheffing niet meer bestaat (art. 41, 43, 47).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke begraafplaats, gemeentelijk of bijzonder.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet op de lijkbezorging art. 33–47.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: Houders van bijzondere begraafplaatsen, rechthebbenden en nabestaanden (art. 37, 45).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: Levert zelf het eindresultaat voor zijn kernobject; geen deel van een groter proces.
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_processen:
-    waarde: ja
-    naar:
-    - verlenen-toestemming-bijzondere-begraafplaats
-    - sluiten-begraafplaats
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: 'Omvat de levensloop van de begraafplaats: aanleg of uitbreiding, ingebruikneming, sluiting en opheffing (art. 36, 40, 41, 43, 44, 47).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt niet in één besluit; de besluiten vallen in de bedrijfsprocessen.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De bedrijfsprocessen leveren het aanbod.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt in een opgeheven begraafplaats, niet in een benoemde toestandsverandering.
 definitie: 'Het beheer van een begraafplaats over de hele levensloop: aanleggen, in gebruik nemen, sluiten en opheffen.'
 beschrijving:
 - Elke gemeente heeft ten minste één gemeentelijke begraafplaats, alleen of samen met andere gemeenten; voor aanleg op het grondgebied van een andere gemeente is toestemming van de raad van die gemeente nodig (Wet op de lijkbezorging art. 33, 36). Voor een bijzondere begraafplaats wijst de raad de grond aan en geeft het college toestemming voor de ingebruikneming (art. 40, 41). Het college kan een gemeentelijke begraafplaats sluiten, of gesloten verklaren als er tien jaar niet is begraven (art. 43, 44). Een begraafplaats houdt op te bestaan als de grond die bestemming verloor en er geen graf meer is (art. 47).
@@ -94,4 +50,6 @@ relaties:
   bronnen:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 33, 36, 43, 47
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+status: review

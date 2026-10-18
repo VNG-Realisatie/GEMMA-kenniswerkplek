@@ -3,36 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een beschikking over de vergoeding, in geld of in een andere vorm, met de kosten en wettelijke rente (art. 4:126 lid 4, 4:129).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke aanvraag om nadeelcompensatie.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Titel 4.5 Awb: criteria, inhoud van de aanvraag, recht van ten hoogste € 500, beslistermijn van acht weken of zes maanden, verjaring (art. 4:126–4:131).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL nr. 260): de benadeelde (art. 4:126 lid 1).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-aanvraag-nadeelcompensatie
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 260); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -45,4 +19,4 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst of proces voor nadeelcompensatie; alleen de functie Schade gerelateerde diensten. Nieuw voor GEMMA.
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

@@ -3,36 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een beschikking, ook als die de aanvraag afwijst (art. 1:3 lid 2).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke aanvraag om een beschikking.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Afdeling 4.1 Awb: indieningseisen, aanvullen, zienswijze bij een voorgenomen afwijzing, beslistermijn van ten hoogste acht weken (art. 4:1–4:15).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL nr. 55): de aanvrager, een belanghebbende (art. 1:3 lid 3).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-aanvraag-beschikking
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 55); de generieke dienst waarvan de diensten op aanvraag in de onderwerpen gevallen zijn; geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -61,4 +35,4 @@ besluiten:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-logius-upl-actueel
-status: goedgekeurd
+status: review

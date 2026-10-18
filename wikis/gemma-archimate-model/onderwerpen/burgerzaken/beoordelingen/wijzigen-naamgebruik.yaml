@@ -9,58 +9,18 @@ kenmerken:
     naar:
     - beslisser
     - bijhoudingsgemeente
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Een schriftelijk verzoek van een (voormalig) gehuwde of geregistreerde partner, online, aan de balie of met een formulier (HUP Wijziging naamgebruik; Utrecht).
     bronnen:
     - 2026-rvig-hup-wijziging-naamgebruik
     - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een gewijzigde aanduiding naamgebruik in de BRP, of een besluit tot weigering (HUP Wijziging naamgebruik).
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Wet BRP art. 2.56, 2.60; BW 1 art. 9 (HUP Wijziging naamgebruik); UPL: art. 2.25 Wet BRP.'
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-    - 2025-vng-upl-producten-en-diensten-extern
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek tot de gewijzigde aanduiding of de weigering.
     bronnen:
     - 2026-rvig-hup-wijziging-naamgebruik
     - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college beslist; weigeren is gelijkgesteld aan een Awb-besluit (Wet BRP art. 2.60; HUP Wijziging naamgebruik).
-    bronnen:
-    - 2026-rvig-hup-wijziging-naamgebruik
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - naamgebruik-verzoek-aanduiding
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het beslissen op een verzoek van een (voormalig) gehuwde of geregistreerde partner welke achternaam de overheid voor hem gebruikt.
 beschrijving:
 - Wie getrouwd of geregistreerd partner is of was, kiest de eigen naam, de naam van de partner of een combinatie in beide volgorden (BW 1 art. 9; Utrecht). Het college geeft binnen vier weken gevolg; weigeren is gelijkgesteld aan een Awb-besluit (Wet BRP art. 2.60; HUP Wijziging naamgebruik). De keuze gaat naar andere overheidsorganisaties; op een paspoort of rijbewijs staat altijd de eigen achternaam (Utrecht).
@@ -92,4 +52,8 @@ relaties:
   vindplaats: UPL nr. 257; Wet BRP art. 2.25
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-rvig-hup-wijziging-naamgebruik
+- 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
+- 2025-vng-upl-producten-en-diensten-extern
+status: review

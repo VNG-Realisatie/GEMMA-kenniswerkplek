@@ -3,34 +3,11 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een bewijs van in leven zijn (uittreksel BRP, Nederlands) of een attestatie de vita (internationaal, meertalig, zes maanden geldig) (Utrecht; BW 1 art. 19k).
-    bronnen:
-    - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 61); de vraag komt vaak van een pensioenfonds (Utrecht).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-bewijs-van-in-leven-zijn-of-attestatie-de-vita-aanvragen
   gerealiseerd_door:
     waarde: ja
     naar:
     - verstrekken-persoonsgegevens
     - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 61); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het verkrijgen van een bewijs dat iemand in leven is, als uittreksel uit de BRP of als internationale attestatie de vita.
 beschrijving:
 - Het bewijs van in leven zijn is een uittreksel uit de BRP bij de gemeente van inschrijving, ook met DigiD of een machtiging; de attestatie de vita is internationaal, ook bij een andere gemeente te krijgen, en alleen persoonlijk aan de balie aan te vragen, zonder machtiging (Utrecht; BW 1 art. 19k). Gratis voor een pensioenregeling; anders Utrecht € 21,20 of € 17,80 in 2026 (Utrecht). Grondslag art. 19k BW 1 (UPL nr. 61).
@@ -46,4 +23,4 @@ taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

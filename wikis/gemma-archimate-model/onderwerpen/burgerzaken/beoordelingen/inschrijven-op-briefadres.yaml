@@ -11,59 +11,18 @@ kenmerken:
     - beslisser
     - bijhoudingsgemeente
     - briefadresgever
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - briefadres
   aanleiding:
     waarde: ja
     onderbouwing: Aangifte van een briefadres door wie geen woonadres heeft, of ambtshalve als die aangifte uitblijft (HUP Verblijfplaats; NVVB Beleidsregel briefadres).
     bronnen:
     - 2026-rvig-hup-verblijfplaats
     - 2026-nvvb-beleidsregel-briefadres
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een inschrijving op een briefadres (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-    - 2026-nvvb-beleidsregel-briefadres
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet BRP art. 2.23, 2.40, 2.41 en 2.45 (UPL nr. 85; HUP Verblijfplaats); gemeentelijke beleidsregel naar het NVVB-model (NVVB Beleidsregel briefadres).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rvig-hup-verblijfplaats
-    - 2026-nvvb-beleidsregel-briefadres
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aangifte, of ambtshalve, tot de inschrijving op het briefadres.
     bronnen:
     - 2026-rvig-hup-verblijfplaats
     - 2026-nvvb-beleidsregel-briefadres
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: Het college beoordeelt of de aangifte van een briefadres kan worden ingewilligd (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - briefadres-aanvragen
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
 definitie: Het beoordelen van een aangifte van een briefadres en het inschrijven van een persoon zonder woonadres op een briefadres.
 beschrijving:
 - Een briefadres wordt geregistreerd als iemand geen woonadres heeft, in een aangewezen instelling verblijft of als de burgemeester opneming van het woonadres om veiligheidsredenen niet wenselijk vindt; de briefadresgever stemt schriftelijk in (HUP Verblijfplaats). Het college beoordeelt of de aangifte kan worden ingewilligd en wijst zo nodig een rechtspersoon als briefadresgever aan (HUP Verblijfplaats). Sinds 1 januari 2022 registreert de gemeente iemand zonder woonadres die geen aangifte doet ambtshalve op een briefadres; de NVVB heeft daarvoor een modelregeling met een aanvraagformulier, een toestemmingsverklaring en een beheerregeling (NVVB Beleidsregel briefadres).
@@ -101,4 +60,4 @@ relaties:
 bronnen:
 - 2026-nvvb-beleidsregel-briefadres
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

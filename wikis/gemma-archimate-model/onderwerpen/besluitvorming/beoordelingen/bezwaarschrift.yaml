@@ -1,34 +1,13 @@
 begrip: Bezwaarschrift
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - besluitvorming
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk bezwaarschrift heeft een indiener, een dagtekening, een bestreden besluit en gronden (art. 6:5 lid 1).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt ingediend, eventueel hersteld, ter inzage gelegd bij het horen, en eindigt in de beslissing op bezwaar of de niet-ontvankelijkverklaring (art. 6:6, 7:4, 7:11).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   wordt_bewerkt:
     waarde: ja
     naar:
     - behandelen-bezwaar
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: 'Het bezwaar zelf, zoals de Awb het regelt: bezwaar maken is een bezwaarschrift indienen (art. 6:4 lid 1); een formulier of bericht is de vorm.'
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van een ander object; het is gericht tegen een besluit, maar ontstaat en eindigt niet met dat besluit.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De belanghebbende dient het in, maar de gemeente behandelt het als eigen zaak, legt het ter inzage en beslist erop (art. 7:4, 7:11).
   generiek:
     waarde: ja
     onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp waarin de gemeente besluiten neemt (art. 6:4, 7:1).
@@ -53,4 +32,6 @@ relaties:
   bronnen:
   - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   vindplaats: art. 6:5 lid 1 onder c, 7:11
-status: goedgekeurd
+bronnen:
+- 2026-rijk-algemene-wet-bestuursrecht-wettekst
+status: review

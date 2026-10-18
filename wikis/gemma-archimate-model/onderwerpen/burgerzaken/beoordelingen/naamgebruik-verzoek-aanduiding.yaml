@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Het gekozen naamgebruik in de BRP, binnen vijf werkdagen verwerkt (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 257): wie getrouwd of geregistreerd partner is of was.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
   gerealiseerd_door:
     waarde: ja
     naar:
     - wijzigen-naamgebruik
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 257); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: 'Het kiezen welke achternaam de overheid gebruikt na een huwelijk of geregistreerd partnerschap: de eigen, die van de partner of een combinatie.'
 beschrijving:
 - 'Online, aan de balie op afspraak of schriftelijk met het formulier Verzoek naamgebruik (Utrecht). Grondslag in de UPL: art. 2.25 Wet BRP (nr. 257); het naamgebruik zelf regelt BW 1 art. 9.'
@@ -46,4 +24,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-achternaamgebruik-veranderen
 - 2026-rvig-hup-wijziging-naamgebruik
-status: goedgekeurd
+status: review

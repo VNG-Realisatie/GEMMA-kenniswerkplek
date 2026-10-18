@@ -6,9 +6,6 @@ onderwerpen:
 - lijkbezorging
 - participatie
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: 'Een verantwoordelijkheid of hoedanigheid tegenover een besluit, geen zelfstandige partij: wie belanghebbende is, verschilt per besluit (Awb art. 1:2).'
   voert_gedrag_uit:
     waarde: ja
     naar:
@@ -19,15 +16,6 @@ kenmerken:
     - vaststellen-dwangsom-bij-niet-tijdig-beslissen
     - behandelen-aanvraag-nadeelcompensatie
     - behandelen-aanvraag-beschikking
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld; het GGM kent wel een entiteit Belanghebbende (Musea), maar de bronnen noemen geen gegevens die de gemeente over belanghebbenden vastlegt.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 doelgroep: inwoners en ondernemers
 definitie: Hoedanigheid van degene wiens belang rechtstreeks bij een besluit van een bestuursorgaan is betrokken.
 beschrijving:
@@ -99,4 +87,4 @@ besluiten:
 - datum: '2026-10-11'
   besluit: Aanvrager (Awb art. 1:3 lid 3, 4:2) is een specialisatie zonder pagina; in een onderwerp heet de rol naar het object, zoals Houder van het reisdocument.
   gevolg: verwerkt
-status: goedgekeurd
+status: review

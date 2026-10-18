@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een inschrijving op een briefadres (HUP Verblijfplaats).
-    bronnen:
-    - 2026-rvig-hup-verblijfplaats
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-nvvb-beleidsregel-briefadres
-    - 2026-rvig-hup-verblijfplaats
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 85): wie geen woonadres heeft.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - inschrijven-op-briefadres
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 85); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het aanvragen van een inschrijving op een briefadres door iemand die geen woonadres heeft.
 beschrijving:
 - Wie geen woonadres heeft, vraagt een briefadres aan; daarvoor is een briefadresgever nodig die schriftelijk instemt (HUP Verblijfplaats). De NVVB-modelregeling kent een vragenformulier voor de aanvraag en een verklaring van toestemming (NVVB Beleidsregel briefadres). Grondslag is art. 2.23 Wet BRP; de aanvraag kan digitaal (UPL nr. 85).
@@ -66,4 +44,4 @@ besluiten:
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-nvvb-beleidsregel-briefadres
-status: goedgekeurd
+status: review

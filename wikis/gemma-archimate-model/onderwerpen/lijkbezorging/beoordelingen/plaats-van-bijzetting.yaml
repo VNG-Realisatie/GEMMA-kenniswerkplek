@@ -1,36 +1,18 @@
 begrip: Plaats van bijzetting
 vak: bedrijf/passief
+hoofdkenmerk: object
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke plaats apart, met eigen register (art. 65).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levenscyclus:
-    waarde: ja
-    onderbouwing: In gebruik genomen (vergunning), opgeheven (art. 64, 65 lid 3).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   wordt_bewerkt:
     waarde: ja
     onderbouwing: De gemeente vergunt een bewaarplaats en houdt urnengraven en urnennissen op de gemeentelijke begraafplaats (art. 64; Groningen art. 1 u, v).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: ja
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: Een deel van een begraafplaats, een crematorium of een graf (art. 62 lid 1 a, b); de bewaarplaats buiten crematorium of begraafplaats is de uitzondering (art. 62 lid 1 c, 64). Geen eigen proces.
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Plaats waar urnen worden bijgezet, zoals een urnengraf, urnennis, crematorium of bewaarplaats.
@@ -52,3 +34,6 @@ besluiten:
 onderwerpen:
 - lijkbezorging
 genoemd_begrip: Begraafplaats
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

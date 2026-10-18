@@ -3,36 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De aanvrager krijgt het reisdocument uitgereikt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De aanvrager, een Nederlander (UPL: doelgroep burger en bedrijf).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-aanvraag-reisdocument
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: De UPL noemt het als eigen product.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het aanvragen en ophalen van een nationaal paspoort, waarmee een Nederlander naar alle landen kan reizen.
 beschrijving:
 - Iedere Nederlander heeft recht op een nationaal paspoort, geldig voor alle landen, tien jaar en tot achttien jaar vijf jaar (Paspoortwet art. 9; Paspoortbesluit art. 2.2). Aanvragen op afspraak aan de balie, ophalen na zes werkdagen of laten bezorgen; ook met spoed (Utrecht). Grondslag art. 26 Paspoortwet; doelgroep burger en bedrijf; niet digitaal, bewijs in persoon (UPL nr. 329).
@@ -52,4 +26,9 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst voor dit begrip; nieuw voor GEMMA.
 afnemer: extern
 domein: Publieksdiensten
-status: goedgekeurd
+bronnen:
+- 2025-vng-upl-producten-en-diensten-extern
+- 2026-rijk-paspoortwet-bwbr0005212
+- 2026-rijk-paspoortbesluit-bwbr0044308
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+status: review

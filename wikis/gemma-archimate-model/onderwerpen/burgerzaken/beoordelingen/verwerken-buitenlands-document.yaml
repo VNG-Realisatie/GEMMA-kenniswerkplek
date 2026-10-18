@@ -9,60 +9,18 @@ kenmerken:
     naar:
     - beslisser
     - bijhoudingsgemeente
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - ingeschreven-persoon
   aanleiding:
     waarde: ja
     onderbouwing: Het verzoek van de ingeschrevene met het buitenlandse document (Utrecht), of een melding van een gebeurtenis in het buitenland (HUP Overlijden buitenland).
     bronnen:
     - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
     - 2026-rvig-hup-overlijden-buitenland
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De verwerking in de BRP met een bevestiging per brief, of een besluit dat het document niet volstaat (Utrecht; HUP Overlijden buitenland).
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-    - 2026-rvig-hup-overlijden-buitenland
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-    - 2026-rvig-hup-overlijden-buitenland
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Wet BRP art. 2.8, 2.51 (HUP Overlijden buitenland); BW 1 art. 25 (Utrecht); UPL: art. 2.38 Wet BRP.'
-    bronnen:
-    - 2026-rvig-hup-overlijden-buitenland
-    - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
-    - 2025-vng-upl-producten-en-diensten-extern
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van het verzoek of de melding tot de verwerking of het besluit.
     bronnen:
     - 2026-utrecht-burgerzaken-buitenlandse-documenten-inschrijven
     - 2026-rvig-hup-overlijden-buitenland
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De gemeente beoordeelt per geval of het document volstaat (Wet BRP art. 2.8, 2.51; HUP Overlijden buitenland).
-    bronnen:
-    - 2026-rvig-hup-overlijden-buitenland
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - brp-inschrijving-buitenlandse-akte
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het beoordelen van een buitenlands document over een gebeurtenis van de burgerlijke staat en het verwerken daarvan in de basisregistratie personen.
 beschrijving:
 - Het document moet gelegaliseerd en zo nodig vertaald zijn; de gemeente beoordeelt per geval of het volstaat en kan om andere stukken vragen; ontbreekt een akte, dan kan een lager brondocument dienen (Wet BRP art. 2.8, 2.51; HUP Overlijden buitenland; Utrecht). Een huwelijk of echtscheiding in strijd met de Nederlandse openbare orde wordt niet opgenomen (HUP Huwelijk/geregistreerd partnerschap). Een registratie van een in het buitenland gesloten huwelijk is verplicht; bij een vermoeden van een schijnhuwelijk stelt de gemeente onderzoek in (Utrecht Trouwen in het buitenland).
@@ -100,4 +58,4 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

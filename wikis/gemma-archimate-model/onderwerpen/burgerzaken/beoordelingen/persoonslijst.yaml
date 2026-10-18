@@ -1,19 +1,14 @@
 begrip: Persoonslijst
 vak: bedrijf/passief
+hoofdkenmerk: representatie
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Ingeschreven persoon
-kenmerken:
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: ja
-    onderbouwing: 'Het geheel van persoonsgegevens dat over een persoon in de BRP is opgenomen (LO BRP 4.2.1): de vorm van de gegevens van Ingeschreven persoon.'
-    bronnen:
-    - 2025-rvig-logisch-ontwerp-brp-2025q1
-    - 2026-rvig-hup-achtergronden-en-begrippen
+kenmerken: {}
 toelichting: 'De vorm (representatie) waarin de gegevens van de ingeschreven persoon in de BRP worden bijgehouden: geen pagina, vermeld bij Ingeschreven persoon.'
 synoniemen:
 - naam: PL
   context: dagelijks gebruik
+bronnen:
+- 2025-rvig-logisch-ontwerp-brp-2025q1
+- 2026-rvig-hup-achtergronden-en-begrippen

@@ -1,8 +1,8 @@
 begrip: Kostenverhaal lijkbezorging
 hoofdkenmerk: gedrag
 kenmerken:
-  eigen_identiteit:
-    waarde: nee
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: 'Onderdeel van Verzorgen gemeentebegrafenis: Stap in Verzorgen gemeentebegrafenis (art. 22).'
 toelichting: 'Onderdeel van Verzorgen gemeentebegrafenis: Stap in Verzorgen gemeentebegrafenis (art. 22).'
 genoemd_begrip: Verzorgen gemeentebegrafenis

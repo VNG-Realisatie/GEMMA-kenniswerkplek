@@ -1,40 +1,20 @@
 begrip: Verblijfplaats
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elke verblijfplaats heeft een adres en een datum aanvang adreshouding (HUP Binnengemeentelijke adreswijziging).
-    bronnen:
-    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Begint bij inschrijving of verhuizing en eindigt bij de volgende adreswijziging of emigratie (HUP Binnengemeentelijke en Intergemeentelijke adreswijziging; HUP Emigratie).
-    bronnen:
-    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-    - 2026-rvig-hup-intergemeentelijke-adreswijziging
-    - 2026-rvig-hup-emigratie
   wordt_bewerkt:
     waarde: ja
     naar:
     - inschrijven-ingezetene
     - uitvoeren-adresonderzoek
     - verwerken-adreswijziging
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: ja
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: Een groep gegevens van de ingeschreven persoon (categorie 08 op de persoonslijst); bestaat niet zonder die persoon (LO BRP 4.4).
     bronnen:
     - 2025-rvig-logisch-ontwerp-brp-2025q1
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
 definitie: Het adres waar een ingeschreven persoon woont of, zonder woonadres, zijn post ontvangt, met de periode waarin dat adres geldt.
 beschrijving:
 - De verblijfplaats is een woonadres of een briefadres (HUP Verblijfplaats). Een woonadres is het adres waar iemand woont, in een woning of op een vaste stand- of ligplaats; bij wisselend verblijf het adres waar hij in een half jaar de meeste malen overnacht. Wie geen woonadres heeft, wordt ingeschreven op een briefadres. Het actuele adres in de BRP verwijst sinds 1 januari 2024 verplicht naar een adres in de BAG (HUP Verblijfplaats).
@@ -77,4 +57,4 @@ bronnen:
 - 2026-rvig-hup-intergemeentelijke-adreswijziging
 - 2026-rvig-hup-emigratie
 - 2023-rvig-circulaire-adresonderzoek-brp
-status: goedgekeurd
+status: review

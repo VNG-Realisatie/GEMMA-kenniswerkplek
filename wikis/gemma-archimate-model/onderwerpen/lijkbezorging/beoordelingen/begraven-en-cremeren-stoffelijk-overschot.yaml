@@ -10,56 +10,17 @@ kenmerken:
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - stoffelijk-overschot
   aanleiding:
     waarde: ja
     onderbouwing: De kennisgeving door wie de uitvaart regelt, met het verlof tot begraving of crematie (art. 11; Groningen art. 7).
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
     - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een begraven of gecremeerd stoffelijk overschot en een bestemming voor de as (art. 1, 59).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke begraving of crematie.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wet op de lijkbezorging hoofdstuk III en IV (art. 23–66b); beheersverordening Groningen art. 7, 21.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  bijdrage_aan_groter_proces:
-    waarde: nee
-    onderbouwing: 'Een eigen levensloopproces: het deel van de houder van de begraafplaats of het crematorium in de levensloop van het stoffelijk overschot, dat de ketensamenwerking Bezorgen stoffelijk overschot bedient; geen deel van een groter proces.'
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: 'Niet van toepassing: levensloopproces.'
-  omvat_processen:
-    waarde: ja
-    naar:
-    - uitvoeren-lijkbezorging
-  omvat_levensloop:
-    waarde: ja
+  procesniveau:
+    waarde: levensloopproces
     onderbouwing: 'Omvat, binnen de ketensamenwerking Bezorgen stoffelijk overschot, het deel van de houder in de levensloop van het stoffelijk overschot: de begraving of crematie, het register, de bewaring van de asbus en de bestemming van de as (art. 23, 50, 59, 62–66a).'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces zelf levert.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 definitie: Het begraven of cremeren van een stoffelijk overschot door de houder van een begraafplaats of crematorium, tot en met de bestemming van de as.
 beschrijving:
 - 'Begraving geschiedt op een begraafplaats, crematie in een crematorium (Wet op de lijkbezorging art. 23, 49). Op de gemeentelijke begraafplaats bepaalt de beheerder tijd en plaats in overleg met de uitvaartondernemer, na kennisgeving door wie de uitvaart regelt (Groningen art. 7). De houder van een crematorium houdt een register bij, bewaart de asbus minimaal een maand en zorgt daarna voor de bestemming van de as: bijzetting, verstrooiing of meegeven aan de nabestaande (art. 50, 59, 62).'
@@ -96,4 +57,7 @@ relaties:
   - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   vindplaats: art. 23, 49
 vragen: []
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+status: review

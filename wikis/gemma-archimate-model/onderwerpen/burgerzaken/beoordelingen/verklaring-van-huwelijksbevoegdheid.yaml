@@ -3,31 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De verklaring, zes maanden geldig (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-trouwen-in-het-buitenland
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 437).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - verstrekken-uittreksels-en-verklaringen-burgerlijke-stand
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 437); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het verkrijgen van een internationaal document waaruit blijkt dat iemand mag trouwen, voor een huwelijk in het buitenland.
 beschrijving:
 - 'Utrecht: € 31,10 in 2026; daarnaast kan een ongehuwdverklaring nodig zijn, een internationaal uittreksel BRP met de burgerlijke staat (BRP-uittreksel). Grondslag: de Overeenkomst van München van 5 september 1980 (UPL nr. 437; 1980-munchen-overeenkomst-verklaring-huwelijksbevoegdheid-bwbv0003766, art. 1): elke verdragsstaat geeft zijn onderdaan die in het buitenland wil trouwen een verklaring volgens een meertalig model, zes maanden geldig en vrijgesteld van legalisatie (art. 7, 10). Het verdrag is bron en geen beleidskader: de Nederlandse uitvoering staat in het Burgerlijk Wetboek boek 1 art. 49a (2026-rijk-burgerlijk-wetboek-boek-1) en het Besluit burgerlijke stand 1994, die beleidskader zijn. De ambtenaar van de burgerlijke stand van de woonplaats geeft de verklaring af, na verificatie dat naar Nederlands recht geen beletselen tegen het huwelijk bestaan (art. 49a lid 2 en 3). Digitaal kanaal (UPL nr. 437).'
@@ -46,4 +25,4 @@ besluiten:
   zekerheid: kennis
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

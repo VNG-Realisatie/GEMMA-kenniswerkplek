@@ -8,11 +8,6 @@ kenmerken:
     onderbouwing: AMvB van het Rijk (BWBR0006493).
     bronnen:
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  in_werking:
-    waarde: ja
-    onderbouwing: Geldend recht.
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
   is_grondslag_voor:
     waarde: ja
     naar:
@@ -58,4 +53,6 @@ relaties:
   vindplaats: art. 24, 26
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+bronnen:
+- 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
+status: review

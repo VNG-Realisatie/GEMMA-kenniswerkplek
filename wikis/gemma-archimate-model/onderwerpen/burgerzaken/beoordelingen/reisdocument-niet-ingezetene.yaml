@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De aanvrager krijgt het reisdocument uitgereikt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke aanvraag.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  afnemer:
-    waarde: ja
-    onderbouwing: 'De aanvrager, een Nederlander die niet als ingezetene in de BRP staat (UPL: doelgroep burger).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-aanvraag-reisdocument-niet-ingezetene
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: De UPL noemt het als eigen product.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het aanvragen van een paspoort of ander reisdocument door iemand die niet als ingezetene in de BRP staat, bij een daartoe aangewezen gemeente.
 beschrijving:
 - De burgemeester van een bij ministeriële regeling aangewezen gemeente neemt ook aanvragen in ontvangst en verstrekt nationale paspoorten, reisdocumenten voor vluchtelingen en voor vreemdelingen en nooddocumenten voor personen die niet als ingezetene in de basisregistratie personen staan (Paspoortbesluit art. 3.2, 4.2). Het document is hetzelfde reisdocument als voor een ingezetene; bijzonder is de bevoegde gemeente. Grondslag art. 4.2 Paspoortbesluit (UPL nr. 357). De UPL noemt met dezelfde grondslag en zonder doelgroep ook het product reisdocument (nr. 356); dat valt samen met deze dienst.
@@ -56,4 +34,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-rijk-paspoortbesluit-bwbr0044308
 - 2026-rijk-paspoortwet-bwbr0005212
-status: goedgekeurd
+status: review

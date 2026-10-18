@@ -1,16 +1,6 @@
 begrip: Grafonderhoud
 vak: bedrijf/gedrag-extern
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een onderhouden graf (Groningen art. 23 lid 3).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  afnemer:
-    waarde: ja
-    onderbouwing: Rechthebbende op het graf (Groningen art. 23, 24 lid 3).
-    bronnen:
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -48,4 +38,4 @@ bronnen:
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2026-vng-retributies
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+status: review

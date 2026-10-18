@@ -2,8 +2,8 @@ begrip: Geslachtsnaam
 onderwerpen:
 - burgerzaken
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: 'Een gegeven van de persoon: zijn achternaam, met voornamen en eventuele adellijke titel (BW 1 art. 4, 5; HUP Vaststelling geslachtsnaam). GGM: NaamNatuurlijkPersoon bij de persoon.'
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1

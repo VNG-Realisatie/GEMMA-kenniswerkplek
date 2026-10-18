@@ -3,21 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: De vermissing is geregistreerd en het document is ongeldig, zodat misbruik wordt voorkomen (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke vermissing.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  afnemer:
-    waarde: ja
-    onderbouwing: De houder van het reisdocument, of een ouder voor een kind (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -40,4 +25,4 @@ domein: Publieksdiensten
 bronnen:
 - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
 - 2026-rvig-hup-inhouding-inlevering-vermissing
-status: goedgekeurd
+status: review

@@ -1,37 +1,15 @@
 begrip: Beleidsnota
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - besluitvorming
 - participatie
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per onderwerp een eigen beleid, zoals het participatiebeleid (VNG-implementatiehandleiding, bijlage 2).
-    bronnen:
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Wordt voorbereid, vastgesteld, uitgevoerd en geëvalueerd (Gemeentewet art. 150 lid 1).
-    bronnen:
-    - 2026-rijk-gemeentewet-wettekst
-    - 2024-vng-implementatiehandleiding-model-participatieverordening
   wordt_bewerkt:
     waarde: ja
     naar:
     - betrekken-inwoners-bij-beleid
     - uitvoeren-uniforme-openbare-voorbereidingsprocedure
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Het vastgelegde beleid zelf; geen vorm van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van een ander object.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente stelt het zelf op en vast.
   generiek:
     waarde: ja
     onderbouwing: Komt met dezelfde betekenis voor in elk onderwerp waarvoor de gemeente beleid vaststelt.
@@ -59,4 +37,4 @@ bronnen:
 - 2026-rijk-gemeentewet-wettekst
 - 2024-vng-implementatiehandleiding-model-participatieverordening
 - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-status: goedgekeurd
+status: review

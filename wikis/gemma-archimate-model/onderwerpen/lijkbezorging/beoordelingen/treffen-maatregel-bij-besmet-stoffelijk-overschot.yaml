@@ -7,55 +7,16 @@ kenmerken:
     naar:
     - adviseur
     - beslisser
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - beschikking
-    - stoffelijk-overschot
   aanleiding:
     waarde: ja
     naar:
     - besmet-stoffelijk-overschot-gemeld
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Maatregel om het gevaar voor de volksgezondheid af te wenden (art. 22a).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elk besmet lijk met ernstig gevaar voor de volksgezondheid.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2026-rijk-wet-publieke-gezondheid-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Art. 22a: na advies van de GGD; toezicht door de Inspectie gezondheidszorg en jeugd.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - toestaan-lijkbezorging
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de melding van de GGD tot de maatregel.
     bronnen:
     - 2026-rijk-wet-publieke-gezondheid-wettekst
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het kernobject, binnen Bezorgen stoffelijk overschot.
-  eigen_besluit:
-    waarde: ja
-    onderbouwing: De burgemeester treft de maatregel, na advies van de GGD (art. 22a lid 1).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen product of dienst dat dit bedrijfsproces levert.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 gemma:
@@ -94,4 +55,7 @@ gemma_generiek:
 synoniemen:
 - naam: Treffen maatregel bij besmet lijk
   context: wet
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2026-rijk-wet-publieke-gezondheid-wettekst
+status: review

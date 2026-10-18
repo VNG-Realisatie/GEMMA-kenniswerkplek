@@ -3,36 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - besluitvorming
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een schriftelijke en gemotiveerde kennisgeving van de bevindingen, het oordeel en de conclusies, met de mogelijkheid van de ombudsman (art. 9:12).
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke klacht over een gedraging van een bestuursorgaan.
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Hoofdstuk 9 Awb: schriftelijke klacht met eisen aan de inhoud, ontvangstbevestiging, horen, afhandeling binnen zes of tien weken, jaarlijkse publicatie (art. 9:4, 9:6, 9:10, 9:11, 9:12a).'
-    bronnen:
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger en bedrijf (UPL nr. 212): een ieder, over een gedraging jegens hem of een ander (art. 9:1).'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-algemene-wet-bestuursrecht-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-klacht
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 212); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 afnemer: extern
 domein: Bestuur
 taakveld: 0 Bestuur en Ondersteuning
@@ -48,4 +22,4 @@ gemma:
   onderbouwing: Het GEMMA-model kent geen dienst klacht; wel het bedrijfsproces Behandelen klacht, dat de wiki koppelt aan het realiserende proces. Nieuw voor GEMMA.
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

@@ -4,9 +4,6 @@ hoofdkenmerk: hoedanigheid
 onderwerpen:
 - burgerzaken
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: Een verantwoordelijkheid; de partij die haar vervult kan ook andere rollen hebben.
   voert_gedrag_uit:
     waarde: ja
     naar:
@@ -24,15 +21,6 @@ kenmerken:
     - wijzigen-identificatienummers
     - wijzigen-naamgebruik
     - verwerken-buitenlands-document
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 definitie: Verantwoordelijkheid van een gemeente voor de bijhouding van de gegevens van de ingezetenen die er hun adres hebben.
 beschrijving:
 - Het college van de gemeente waar een ingezetene zijn adres heeft, is verantwoordelijk voor de bijhouding van zijn gegevens (HUP Achtergronden). Bij een verhuizing naar een andere gemeente wordt die de nieuwe bijhoudingsgemeente; na emigratie blijft de laatste bijhoudingsgemeente verantwoordelijk voor rechtsfeiten van voor de emigratie (HUP Intergemeentelijke adreswijziging; HUP Emigratie).
@@ -156,4 +144,4 @@ bronnen:
 - 2026-rvig-hup-intergemeentelijke-adreswijziging
 - 2026-rvig-hup-emigratie
 - 2026-rvig-hup-wijzigen-bsn
-status: goedgekeurd
+status: review

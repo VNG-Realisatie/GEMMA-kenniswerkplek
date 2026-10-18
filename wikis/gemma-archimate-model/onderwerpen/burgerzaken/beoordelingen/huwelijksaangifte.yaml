@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een geaccepteerde melding en een vervolgafspraak voor datum, locatie en getuigen (Utrecht).
-    bronnen:
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 185): de aanstaande echtgenoten.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
   gerealiseerd_door:
     waarde: ja
     naar:
     - voltrekken-huwelijk
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (nr. 185); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het melden van een voorgenomen huwelijk bij de gemeente waar men wil trouwen.
 beschrijving:
 - Minimaal 14 dagen en hoogstens een jaar voor het huwelijk, online met DigiD of aan de balie, gratis (Utrecht). Grondslag art. 44 BW 1; digitaal kanaal (UPL nr. 185).
@@ -46,4 +24,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2026-utrecht-burgerzaken-voorgenomen-huwelijk-of-geregistreerd-partnerschap-melden
 - 2026-rijk-burgerlijk-wetboek-boek-1
-status: goedgekeurd
+status: review

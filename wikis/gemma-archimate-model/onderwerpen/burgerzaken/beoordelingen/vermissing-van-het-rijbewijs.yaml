@@ -4,11 +4,6 @@ soort_gedrag: toestandsverandering
 onderwerpen:
 - burgerzaken
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk rijbewijs dat kwijtraakt of wordt gestolen.
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -35,4 +30,4 @@ relaties:
   vindplaats: WVW art. 123 lid 1 onder h; Utrecht regel 126-140
 bronnen:
 - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-status: goedgekeurd
+status: review

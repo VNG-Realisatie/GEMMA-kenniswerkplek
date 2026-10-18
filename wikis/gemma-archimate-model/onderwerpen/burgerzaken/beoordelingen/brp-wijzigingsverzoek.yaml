@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Gecorrigeerde gegevens of een gemotiveerde weigering (Utrecht; NVVB Identiteitswijziging).
-    bronnen:
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-    - 2018-nvvb-stappenplan-identiteitswijziging-brp
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-opvragen-of-aanpassen-brp
-  afnemer:
-    waarde: ja
-    onderbouwing: Burger (UPL nr. 95).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - behandelen-verzoek-om-correctie
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 95); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Het verzoek om onjuiste eigen gegevens in de basisregistratie personen te laten corrigeren.
 beschrijving:
 - Adresgegevens aanpassen kan online of per post, persoonsgegevens zoals naam, geslacht en geboortedatum alleen persoonlijk of per post, met bewijsstukken (Utrecht Persoonsgegevens aanpassen). Grondslag is art. 2.58 Wet BRP; de aanvraag kan digitaal (UPL nr. 95).
@@ -46,4 +24,4 @@ afnemer: extern
 domein: Publieksdiensten
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

@@ -9,52 +9,15 @@ kenmerken:
     naar:
     - beslisser
     - houder-van-het-reisdocument
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - reisdocument
   aanleiding:
     waarde: ja
     naar:
     - inlevering-van-het-reisdocument
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een ingehouden reisdocument dat definitief aan het verkeer is onttrokken, vervallen is verklaard of is teruggegeven (Paspoortwet art. 44, 45, 53, 54).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk vervallen, beschadigd of teruggevonden reisdocument.
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Paspoortwet art. 50b tot en met 57 (bevoegdheid, gronden, kennisgeving aan de minister, inlevering); Paspoortbesluit art. 6.1 (mededeling bij niet inleveren) en 7.1 (onttrekking aan het verkeer).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-    - 2026-rijk-paspoortbesluit-bwbr0044308
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-reisdocumenten
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de inlevering of het aantreffen van het document tot de onttrekking aan het verkeer, de vervallenverklaring of de teruggave.
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Inhouding is het feitelijk onttrekken aan de houder (Paspoortwet art. 1 onder h); het besluit tot vervallenverklaring valt in Vervallen verklaren reisdocument.
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: Levert geen product of dienst uit de UPL.
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het innemen van een ingeleverd of in te houden reisdocument, zo nodig het vervallen verklaren ervan, tot de onttrekking aan het verkeer of de teruggave.
 beschrijving:
 - Een reisdocument wordt ingehouden als het van rechtswege is vervallen, zo is beschadigd dat beveiligingskenmerken zijn aangetast of gegevens onleesbaar zijn, onbevoegd is gewijzigd, de gezichtsopname niet meer lijkt of er fouten in staan (Paspoortwet art. 54 lid 1). Een document dat vervallen kan worden verklaard, houdt de burgemeester in na een mededeling van de minister en hij beslist daarna over de vervallenverklaring (art. 44 lid 2, 53). Ook de politie en de grensbewaking zijn bevoegd tot inhouding (art. 50b).
@@ -119,4 +82,4 @@ bronnen:
 - 2026-rijk-paspoortwet-bwbr0005212
 - 2026-rvig-hup-inhouding-inlevering-vermissing
 - 2026-rvig-hup-van-rechtswege-vervallen-reisdocument
-status: goedgekeurd
+status: review

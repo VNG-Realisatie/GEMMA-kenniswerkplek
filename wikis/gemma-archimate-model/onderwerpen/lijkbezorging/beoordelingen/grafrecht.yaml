@@ -1,40 +1,13 @@
 begrip: Grafrecht
 vak: bedrijf/passief
+hoofdkenmerk: afspraak
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Per particulier graf, op naam van een rechthebbende (art. 28; Groningen art. 1 w).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Gevestigd, verlengd, overgeschreven, vervallen (art. 28; Groningen art. 16, 18–20).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
   wordt_bewerkt:
     waarde: ja
     naar:
     - beheren-grafrechten
     - verlenen-grafrecht
     - vervallen-verklaren-grafrecht
-  afspraak:
-    waarde: ja
-    onderbouwing: Tweezijdige afspraak tussen houder en rechthebbende met rechten en plichten (onderhoud, betaling, bepalen wie begraven wordt), ook als de gemeente het als besluit op aanvraag verleent (tweewegenleer, VNG retributies).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-    - 2026-vng-retributies
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Geen document, formulier, register of bericht van een ander begrip.
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
 taakveld: 7 Volksgezondheid en Milieu
 beleidsdomein: Begraafplaatsen en crematoria
 definitie: Uitsluitend recht om in een particulier graf stoffelijke overschotten te laten begraven of urnen te laten bijzetten, voor bepaalde of onbepaalde tijd.
@@ -74,4 +47,5 @@ bronnen:
 - 2026-rijk-wet-op-de-lijkbezorging-wettekst
 - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
 - 2010-vng-model-beheersverordening-begraafplaatsen
-status: goedgekeurd
+- 2026-vng-retributies
+status: review

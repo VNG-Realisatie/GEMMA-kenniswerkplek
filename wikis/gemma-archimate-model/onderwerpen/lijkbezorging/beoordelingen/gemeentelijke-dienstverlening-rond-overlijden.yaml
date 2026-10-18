@@ -10,3 +10,5 @@ toelichting: 'Buiten dit model (Grouping): Verzamelterm in de VNG-bron voor de d
 archimate_buiten_model: Grouping
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-vng-wet-op-de-lijkbezorging

@@ -1,20 +1,10 @@
 begrip: Reisdocumentenadministratie
 vak: bedrijf/passief
+hoofdkenmerk: representatie
 onderwerpen:
 - burgerzaken
 genoemd_begrip: Reisdocument
-kenmerken:
-  wordt_bewerkt:
-    waarde: ja
-    onderbouwing: Aanvraag, verstrekking en uitreiking worden erin vastgelegd (Paspoortwet art. 3 lid 8).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: ja
-    onderbouwing: De administratie waarin de gegevens van de reisdocumenten worden vastgelegd, op naam en documentnummer toegankelijk (Paspoortwet art. 3 lid 8).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
+kenmerken: {}
 toelichting: 'Representatie, geen pagina: de administratie van de uitreikende autoriteit met de gegevens over aanvraag, verstrekking en uitreiking van de reisdocumenten (Paspoortwet art. 3 lid 8). Vermeld bij Reisdocument; precedent Register van de burgerlijke stand.'
+bronnen:
+- 2026-rijk-paspoortwet-bwbr0005212

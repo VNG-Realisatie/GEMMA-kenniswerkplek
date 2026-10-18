@@ -5,17 +5,9 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Vestiging vanuit het buitenland
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke persoon die het overkomt.
-    bronnen:
-    - 2026-rvig-hup-hervestiging
-  leidt_tot_gedrag:
-    waarde: ja
-    onderbouwing: Start Inschrijven ingezetene.
-    bronnen:
-    - 2026-rvig-hup-hervestiging
-  zelfstandige_specialisatie:
-    waarde: nee
+  afhankelijkheid:
+    waarde: variant
     onderbouwing: Een soort vestiging vanuit het buitenland die tot hetzelfde bedrijfsproces leidt.
 toelichting: 'Specialisatie zonder pagina van Vestiging vanuit het buitenland: een persoon uit de RNI vestigt zich weer als ingezetene (HUP Hervestiging).'
+bronnen:
+- 2026-rvig-hup-hervestiging

@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Inzage in of een kopie van de eigen persoonsgegevens (UPL nr. 91; Utrecht Persoonsgegevens bekijken).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-persoonsgegevens-brp-bekijken-en-overzicht-aanvragen
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 91): de ingeschrevene.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
   gerealiseerd_door:
     waarde: ja
     naar:
     - verstrekken-persoonsgegevens
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 91); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Inzage voor de ingeschrevene in zijn eigen gegevens in de basisregistratie personen.
 beschrijving:
 - De ingeschrevene kan zijn gegevens ook zelf bekijken op MijnOverheid, een landelijke voorziening (Utrecht Persoonsgegevens bekijken). Grondslag is art. 2.55 Wet BRP; het college voldoet binnen vier weken aan het verzoek (UPL nr. 91).
@@ -46,4 +24,4 @@ bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
 - 2024-nvvb-schema-schriftelijke-gegevensverstrekking-brp
 - 2026-rijk-besluit-brp-bwbr0034306
-status: goedgekeurd
+status: review

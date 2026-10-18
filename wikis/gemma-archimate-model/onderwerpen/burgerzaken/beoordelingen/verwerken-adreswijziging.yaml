@@ -9,54 +9,15 @@ kenmerken:
     naar:
     - aangever
     - bijhoudingsgemeente
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - verblijfplaats
   aanleiding:
     waarde: ja
     naar:
     - verhuizing
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een nieuwe verblijfplaats met datum aanvang adreshouding (HUP Binnengemeentelijke adreswijziging).
-    bronnen:
-    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-    - 2026-rvig-hup-intergemeentelijke-adreswijziging
-    - 2026-utrecht-burgerzaken-verhuizing-doorgeven
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Aangifte vanaf vier weken voor tot de vijfde dag na de verhuizing; bij latere aangifte geldt de ontvangstdatum (art. 2.39 Wet BRP; HUP Binnengemeentelijke adreswijziging; UPL nr. 424).
-    bronnen:
-    - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-    - 2025-vng-upl-producten-en-diensten-extern
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-persoonsgegevens
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de aangifte, of ambtshalve, tot de nieuwe verblijfplaats.
     bronnen:
     - 2026-rvig-hup-binnengemeentelijke-adreswijziging
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Doet één mutatie in het kernobject, niet de hele levensloop.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: De bronnen noemen geen apart besluit bij de verwerking van de aangifte; de ambtshalve wijziging volgt uit het adresonderzoek.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - verhuismelding
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt niet in een benoemde toestandsverandering die een ander proces start.
 definitie: Het verwerken van een verhuizing binnen of naar de gemeente in de verblijfplaats van de ingeschreven persoon.
 beschrijving:
 - Wie binnen of naar de gemeente verhuist, doet aangifte van adreswijziging, vanaf vier weken voor tot de vijfde dag na de verhuizing; alle verhuizende personen ondertekenen, de aangifte kan schriftelijk of digitaal met DigiD en de gemeente kan de betrouwbaarheid controleren (HUP Binnengemeentelijke adreswijziging; Utrecht Verhuizing doorgeven). Bij een verhuizing vanuit een andere gemeente wordt de nieuwe gemeente bijhoudingsgemeente en neemt zij de persoonslijst over, met openstaande onderzoeken (HUP Intergemeentelijke adreswijziging). Wie bij iemand anders gaat wonen, levert een verklaring van inwoning van de hoofdbewoner (Utrecht).
@@ -96,4 +57,5 @@ relaties:
   vindplaats: UPL nr. 424; Wet BRP art. 2.39
 bronnen:
 - 2026-utrecht-burgerzaken-verhuizing-doorgeven
-status: goedgekeurd
+- 2026-rvig-hup-intergemeentelijke-adreswijziging
+status: review

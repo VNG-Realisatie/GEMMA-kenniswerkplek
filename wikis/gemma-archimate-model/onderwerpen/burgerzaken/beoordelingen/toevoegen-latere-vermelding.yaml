@@ -8,10 +8,6 @@ kenmerken:
     waarde: ja
     naar:
     - ambtenaar-van-de-burgerlijke-stand
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - akte-van-de-burgerlijke-stand
   aanleiding:
     waarde: ja
     naar:
@@ -19,48 +15,13 @@ kenmerken:
     - naamswijziging
     - ontkenning-ouderschap
     - vaststelling-ouderschap
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een latere vermelding op de akte, maandelijks doorgestuurd naar de centrale bewaarplaats (Besluit burgerlijke stand art. 31).
-    bronnen:
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elk geval dat zich voordoet.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  eigen_normering:
-    waarde: ja
-    onderbouwing: BW 1 art. 20, 20a; Besluit burgerlijke stand art. 15-17, 31, 53, 54.
-    bronnen:
-    - 2026-rijk-burgerlijk-wetboek-boek-1
-    - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - bijhouden-burgerlijke-stand
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de uitspraak of het besluit dat de staat verandert tot de latere vermelding.
     bronnen:
     - 2026-rijk-burgerlijk-wetboek-boek-1
     - 2026-rijk-besluit-burgerlijke-stand-1994-bwbr0006493
     - 2026-rvig-hup-adoptie
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - achternaamwijziging
-    - voornaamwijziging
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
 definitie: Het toevoegen van een rechterlijke uitspraak of een besluit over de staat van een persoon aan een akte als latere vermelding.
 beschrijving:
 - 'Een latere vermelding legt een verandering vast die na het opmaken van de akte is ontstaan: een adoptie of herroeping daarvan, een ontkenning of gerechtelijke vaststelling van het ouderschap, een vernietigde erkenning, of een wijziging van de voornaam (rechtbank) of geslachtsnaam (Koning) (BW 1 art. 4, 7, 20; Besluit burgerlijke stand art. 53, 54; HUP Adoptie; HUP Vaststelling ouderschap). De gemeente waar de akte berust, voegt de vermelding toe; de woongemeente verwerkt de wijziging in de BRP.'
@@ -103,4 +64,4 @@ bronnen:
 - 2026-rijk-burgerlijk-wetboek-boek-1
 taakveld: 0 Bestuur en Ondersteuning
 beleidsdomein: Burgerzaken
-status: goedgekeurd
+status: review

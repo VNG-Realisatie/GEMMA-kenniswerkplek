@@ -3,10 +3,13 @@ onderwerpen:
 - burgerzaken
 genoemd_begrip: Behandelen aanvraag reisdocument
 kenmerken:
-  slechts_eigenschap:
-    waarde: ja
+  afhankelijkheid:
+    waarde: eigenschap
     onderbouwing: Een variant van de aanvraag met kortere levertijd en een hoger tarief; de wet laat het tarief verschillen naar de snelheid van uitreiking (Utrecht; Paspoortwet art. 7 lid 2).
     bronnen:
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
     - 2026-rijk-paspoortwet-bwbr0005212
 toelichting: 'Eigenschap van de aanvraag: dezelfde aanvraag met een kortere levertijd tegen een toeslag; ophalen de werkdag erna, bezorgen kan dan niet (Utrecht). Geen pagina; vermeld bij Behandelen aanvraag reisdocument.'
+bronnen:
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-aanvragen
+- 2026-rijk-paspoortwet-bwbr0005212

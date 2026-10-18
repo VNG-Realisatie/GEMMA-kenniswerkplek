@@ -1,7 +1,7 @@
 begrip: As
 kenmerken:
-  eigen_identiteit:
-    waarde: nee
+  afhankelijkheid:
+    waarde: onderdeel
     onderbouwing: 'Onderdeel van Urn: De inhoud van de urn (art. 58).'
 toelichting: 'Onderdeel van Urn: De inhoud van de urn (art. 58).'
 genoemd_begrip: Urn

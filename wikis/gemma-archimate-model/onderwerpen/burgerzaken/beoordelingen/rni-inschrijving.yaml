@@ -3,32 +3,10 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - burgerzaken
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een inschrijving in de RNI met een BSN (Utrecht RNI).
-    bronnen:
-    - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke afnemer die erom vraagt.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
-  afnemer:
-    waarde: ja
-    onderbouwing: 'Burger (UPL nr. 369): wie niet in Nederland woont maar een relatie heeft met de Nederlandse overheid.'
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-utrecht-burgerzaken-registratie-niet-ingezetenen-rni-inschrijven
   gerealiseerd_door:
     waarde: ja
     naar:
     - inschrijven-niet-ingezetene
-  zelfstandige_specialisatie:
-    waarde: ja
-    onderbouwing: Een eigen product in de UPL (UPL nr. 369); geen bredere dienst in deze wiki.
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
 definitie: Inschrijving in de registratie niet-ingezetenen van wie niet in Nederland woont maar wel een relatie heeft met de Nederlandse overheid.
 beschrijving:
 - De inschrijving is gratis en op afspraak; de persoon krijgt aan de balie een BSN en een afschrift van de opgenomen gegevens (Utrecht RNI). Grondslag is art. 2.66 Wet BRP (UPL nr. 369).
@@ -47,4 +25,4 @@ specialisaties:
   omschrijving: 'Wijziging van het buitenlandse adres van wie in de RNI staat, online, aan de balie of per post (Utrecht RNI). Geen eigen pagina: de UPL noemt het niet apart.'
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review

@@ -4,62 +4,17 @@ soort_gedrag: per_keer_doorlopen
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  toegewezen_partij:
-    waarde: ja
-    onderbouwing: Houder van het crematorium (art. 59), Houder van een plaats van bijzetting (art. 63, 65) en Nabestaande, die opdracht geeft (art. 62 lid 2).
+  afhankelijkheid:
+    waarde: deelproces
+    onderbouwing: 'Draagt bij aan het levensloopproces Begraven en cremeren stoffelijk overschot: de bestemming van de as hoort bij de lijkbezorging (art. 1, 18 lid 2, 59). Nee, volgt op de crematie in Uitvoeren lijkbezorging, voor hetzelfde stoffelijk overschot en door dezelfde houder.'
     bronnen:
     - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  gebruikt_objecten:
-    waarde: ja
-    onderbouwing: 'Werkt de urn bij: bewaren, bijzetten, ter beschikking stellen of verstrooien (art. 59, 62, 63, 66a).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  aanleiding:
-    waarde: ja
-    onderbouwing: 'De crematie: de houder van het crematorium bewaart de asbus minimaal een maand en zorgt daarna voor de bestemming (art. 59 lid 1, 2).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Een bijgezette, verstrooide, aan de nabestaande meegegeven of naar het buitenland gezonden asbus (art. 59 lid 2).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Na elke crematie.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  eigen_normering:
-    waarde: ja
-    onderbouwing: 'Art. 59–66b: termijn van een maand, toestemming van de rechthebbende bij een particulier graf, register, verstrooiing op een bestemd terrein of in open zee; Groningen art. 21.'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    onderbouwing: 'Draagt bij aan het levensloopproces Begraven en cremeren stoffelijk overschot: de bestemming van de as hoort bij de lijkbezorging (art. 1, 18 lid 2, 59).'
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  klant_tot_klant:
-    waarde: nee
-    onderbouwing: Nee, volgt op de crematie in Uitvoeren lijkbezorging, voor hetzelfde stoffelijk overschot en door dezelfde houder.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Eén mutatie in de levensloop van het lijk, binnen Bezorgen stoffelijk overschot.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: Eindigt niet in een besluit van een bevoegd orgaan; alleen voor incidentele asverstrooiing is toestemming van het college nodig (Groningen art. 21).
-  levert_aanbod:
-    waarde: nee
-    onderbouwing: De bronnen in de wiki noemen geen product of dienst; de UPL noemt asverstrooiing (model-APV, nog geen bron).
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Eindigt in een bijgezette, verstrooide of meegegeven asbus, niet in een benoemde toestandsverandering.
 definitie: 'Het geven van een bestemming aan de as na een crematie: bijzetten van de urn, verstrooien van de as of meegeven aan de nabestaande.'
 gemma:
   sterkte: geen
   onderbouwing: Het GEMMA-model kent geen element voor dit begrip; nieuw voor GEMMA.
 genoemd_begrip: Uitvoeren lijkbezorging
 toelichting: 'Deelproces zonder pagina van Uitvoeren lijkbezorging: het geven van een bestemming aan de as na een crematie: bijzetten van de urn, verstrooien van de as of meegeven aan de nabestaande.'
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

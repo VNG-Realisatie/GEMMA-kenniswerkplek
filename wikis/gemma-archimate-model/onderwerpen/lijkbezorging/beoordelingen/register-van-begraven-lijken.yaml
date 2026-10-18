@@ -1,15 +1,7 @@
 begrip: Register van begraven lijken
 vak: bedrijf/passief
-kenmerken:
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: ja
-    onderbouwing: De vorm waarin de gegevens van graven en begraven lijken worden bijgehouden (art. 27; Groningen art. 30).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-    - 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen
+hoofdkenmerk: representatie
+kenmerken: {}
 toelichting: 'Representatie van Graf: De vorm waarin de gegevens van graven en begraven lijken worden bijgehouden (art. 27; Groningen art. 30).'
 genoemd_begrip: Graf
 besluiten:
@@ -19,3 +11,6 @@ besluiten:
   zekerheid: indruk
 onderwerpen:
 - lijkbezorging
+bronnen:
+- 2026-rijk-wet-op-de-lijkbezorging-wettekst
+- 2023-groningen-beheersverordening-gemeentelijke-begraafplaatsen

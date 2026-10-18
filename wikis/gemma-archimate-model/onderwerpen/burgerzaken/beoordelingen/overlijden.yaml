@@ -2,11 +2,6 @@ begrip: Overlijden
 vak: bedrijf/gedrag-intern
 soort_gedrag: toestandsverandering
 kenmerken:
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Bij elke overledene.
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   leidt_tot_gedrag:
     waarde: ja
     naar:
@@ -85,4 +80,4 @@ bronnen:
 - 2026-rvo-aangifte-en-akte-van-overlijden
 - 2026-rijk-burgerlijk-wetboek-boek-1
 - 2026-rvig-hup-overlijden-nederland
-status: goedgekeurd
+status: review

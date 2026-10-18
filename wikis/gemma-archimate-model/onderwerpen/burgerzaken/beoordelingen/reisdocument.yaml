@@ -1,18 +1,9 @@
 begrip: Reisdocument
 vak: bedrijf/passief
+hoofdkenmerk: object
 onderwerpen:
 - burgerzaken
 kenmerken:
-  onderscheidbare_exemplaren:
-    waarde: ja
-    onderbouwing: Elk reisdocument heeft een documentnummer en een houder (Paspoortwet art. 1, 3).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  levenscyclus:
-    waarde: ja
-    onderbouwing: Aanvraag, verstrekking, uitreiking, wijziging, en verval van rechtswege, vervallenverklaring, inhouding of vermissing, tot definitieve onttrekking aan het verkeer (Paspoortwet art. 1, 44, 47, 54).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
   wordt_bewerkt:
     waarde: ja
     naar:
@@ -21,18 +12,6 @@ kenmerken:
     - beheren-reisdocumenten
     - inhouden-reisdocument
     - verwerken-vermissing-reisdocument
-  afspraak:
-    waarde: nee
-    onderbouwing: Geen overeenkomst tussen partijen.
-  waarneembare_vorm:
-    waarde: nee
-    onderbouwing: Het document is zelf het object met een eigen levensloop (verstrekking, uitreiking, verval), niet alleen de vorm van gegevens van een ander begrip (Paspoortwet art. 1).
-  deel_van_object:
-    waarde: nee
-    onderbouwing: Geen onderdeel van één ander object dat ermee ontstaat en eindigt.
-  invoer_van_een_ander:
-    waarde: nee
-    onderbouwing: De gemeente maakt en bewerkt het zelf; ze ontvangt het niet alleen van een andere partij.
 definitie: Document van het Koninkrijk op naam van een persoon waarmee hij kan reizen en zich kan identificeren, zoals een paspoort of identiteitskaart.
 definitie_formeel: 'Reisdocumenten van het Koninkrijk der Nederlanden zijn: nationaal paspoort; diplomatiek paspoort; dienstpaspoort; reisdocument voor vluchtelingen; reisdocument voor vreemdelingen; nooddocument: laissez-passer of noodpaspoort; andere reisdocumenten, bij of krachtens algemene maatregel van rijksbestuur vast te stellen.'
 definitie_formeel_bron:
@@ -86,4 +65,4 @@ bronnen:
 - 2025-rvig-logisch-ontwerp-brp-2025q1
 - 2026-rvig-hup-reisdocument
 - 2026-rvig-hup-uitreiking-registreren-van-een-reisdocument
-status: goedgekeurd
+status: review

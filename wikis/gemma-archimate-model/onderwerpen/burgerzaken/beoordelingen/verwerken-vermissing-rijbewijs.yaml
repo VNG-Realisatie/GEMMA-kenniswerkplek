@@ -8,58 +8,16 @@ kenmerken:
     waarde: ja
     naar:
     - houder-van-het-rijbewijs
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - rijbewijs
   aanleiding:
     waarde: ja
     naar:
     - vermissing-van-het-rijbewijs
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: 'De geregistreerde vermissing: het rijbewijs is niet meer geldig (Utrecht; Wegenverkeerswet 1994 art. 123).'
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke gemelde vermissing.
-    bronnen:
-    - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Wegenverkeerswet 1994 art. 123 lid 1 onder h (verlies van geldigheid door aangifte van vermissing), art. 119 lid 4 en 120 lid 3 (inlevering van een teruggevonden rijbewijs); Reglement rijbewijzen art. 39.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-    - 2026-rijk-reglement-rijbewijzen-bwbr0008074
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-rijbewijzen
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de melding van de vermissing tot de registratie.
     bronnen:
     - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
     - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: De registratie volgt direct op de verklaring; het verlies van geldigheid treedt in door de aangifte (Wegenverkeerswet 1994 art. 123 lid 1 onder h).
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - vermissing-of-diefstal-rijbewijs-doorgeven
-  leidt_tot_gebeurtenis:
-    waarde: nee
-    onderbouwing: Het rijbewijs wordt ongeldig door de aangifte (Wegenverkeerswet 1994 art. 123 lid 1 onder h); een eigen gebeurtenis voor het verval is niet opgenomen, omdat de bronnen geen gemeentelijke handeling erna beschrijven.
-    bronnen:
-    - 2026-rijk-wegenverkeerswet-1994-bwbr0006622
 definitie: Het ontvangen en vastleggen van de verklaring dat een rijbewijs kwijt of gestolen is, waardoor het rijbewijs ongeldig wordt.
 beschrijving:
 - De houder geeft de vermissing online door aan de RDW met DigiD, waar ze direct wordt geregistreerd, of aan de balie van de gemeente, waar hij de vermissingsverklaring invult bij een nieuwe aanvraag of in een eigen afspraak (Utrecht). Een rijbewijs verliest zijn geldigheid door aangifte van vermissing; wie het terugvindt, levert het in bij degene die het nieuwe rijbewijs afgaf (Wegenverkeerswet 1994 art. 123 lid 1 onder h, 119 lid 4, 120 lid 3).
@@ -93,4 +51,8 @@ relaties:
   bronnen:
   - 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
   vindplaats: Utrecht regel 134-140
-status: goedgekeurd
+bronnen:
+- 2026-rijk-wegenverkeerswet-1994-bwbr0006622
+- 2026-utrecht-burgerzaken-rijbewijs-aanvragen-of-verlengen
+- 2026-rijk-reglement-rijbewijzen-bwbr0008074
+status: review

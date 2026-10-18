@@ -9,55 +9,17 @@ kenmerken:
     naar:
     - houder-van-het-reisdocument
     - ouder
-  gebruikt_objecten:
-    waarde: ja
-    naar:
-    - reisdocument
   aanleiding:
     waarde: ja
     naar:
     - vermissing-van-het-reisdocument
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: 'De geregistreerde vermissing: het document is niet meer geldig, ook niet als het terugkomt (Utrecht; HUP Inhouding).'
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-    - 2026-rvig-hup-inhouding-inlevering-vermissing
-  komt_herhaald_voor:
-    waarde: ja
-    onderbouwing: Voor elke gemelde vermissing.
-    bronnen:
-    - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
-  eigen_normering:
-    waarde: ja
-    onderbouwing: Paspoortwet art. 4a (register vermiste of vervallen reisdocumenten), 5a (melding), 31 lid 1 (melding bij een nieuwe aanvraag) en 47 lid 1 onder j (verval door de verklaring).
-    bronnen:
-    - 2026-rijk-paspoortwet-bwbr0005212
-  bijdrage_aan_groter_proces:
-    waarde: ja
-    naar:
-    - beheren-reisdocumenten
-  klant_tot_klant:
-    waarde: ja
+  procesniveau:
+    waarde: bedrijfsproces
     onderbouwing: Ja, van de melding van de vermissing tot de registratie en het verval van rechtswege.
     bronnen:
     - 2026-rijk-paspoortwet-bwbr0005212
     - 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
     - 2026-rvig-hup-inhouding-inlevering-vermissing
-  omvat_levensloop:
-    waarde: nee
-    onderbouwing: Niet bij dit gedrag aanwijsbaar.
-  eigen_besluit:
-    waarde: nee
-    onderbouwing: De registratie volgt direct op de verklaring; het verval treedt van rechtswege in (HUP Inhouding; Paspoortwet art. 47 lid 1 onder j).
-  levert_aanbod:
-    waarde: ja
-    naar:
-    - vermissing-of-diefstal-reisdocument-doorgeven
-  leidt_tot_gebeurtenis:
-    waarde: ja
-    naar:
-    - verval-van-het-reisdocument
 definitie: Het ontvangen en registreren van de melding dat een reisdocument kwijt of gestolen is, waardoor het document ongeldig wordt.
 beschrijving:
 - De houder meldt de vermissing per document, online en gratis; de gemeente registreert de schriftelijke verklaring van vermissing direct (Utrecht; HUP Inhouding). Met de registratie wordt het document in het basisregister reisdocumenten automatisch ongeldig en vervalt het van rechtswege (HUP Inhouding; Paspoortwet art. 47 lid 1 onder j). De minister vermeldt vermiste reisdocumenten in het register vermiste of vervallen reisdocumenten, ter voorkoming van fraude (art. 4a).
@@ -107,4 +69,8 @@ relaties:
   - 2026-rijk-paspoortwet-bwbr0005212
   - 2026-rvig-hup-inhouding-inlevering-vermissing
   vindplaats: Paspoortwet art. 47 lid 1 onder j; HUP Inhouding
-status: goedgekeurd
+bronnen:
+- 2026-utrecht-burgerzaken-paspoort-of-identiteitskaart-vermissing-of-diefstal-doorgeven
+- 2026-rvig-hup-inhouding-inlevering-vermissing
+- 2026-rijk-paspoortwet-bwbr0005212
+status: review

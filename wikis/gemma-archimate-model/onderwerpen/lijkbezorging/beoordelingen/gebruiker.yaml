@@ -2,21 +2,9 @@ begrip: Gebruiker
 vak: bedrijf/actief-intern
 hoofdkenmerk: hoedanigheid
 kenmerken:
-  los_van_verantwoordelijkheid:
-    waarde: nee
-    onderbouwing: Niet van toepassing.
   voert_gedrag_uit:
     waarde: nee
     onderbouwing: Onderhoudt de grafbedekking voor eigen rekening (art. 21); niet toegewezen aan gemeentelijk gedrag.
-  onderscheidbare_exemplaren:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  levenscyclus:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
-  wordt_bewerkt:
-    waarde: nee
-    onderbouwing: Wordt niet als ding behandeld.
 toelichting: 'Geen element: de gebruiker van een algemeen graf heeft plichten, maar is niet aan gemeentelijk gedrag toegewezen (VNG-modelverordening art. 1 p, 21).'
 onderwerpen:
 - lijkbezorging

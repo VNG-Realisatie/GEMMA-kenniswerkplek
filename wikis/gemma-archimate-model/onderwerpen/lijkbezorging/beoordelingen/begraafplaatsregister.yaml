@@ -3,17 +3,6 @@ vak: bedrijf/gedrag-extern
 onderwerpen:
 - lijkbezorging
 kenmerken:
-  benoembaar_resultaat:
-    waarde: ja
-    onderbouwing: Inzage in of gegevens uit het register van alle daar begraven stoffelijke overschotten, met de plaats waar zij begraven zijn (Wlb art. 27).
-    bronnen:
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
-  afnemer:
-    waarde: ja
-    onderbouwing: Bedrijf (UPL); het register is openbaar, dus ook voor anderen (Wlb art. 27 lid 2).
-    bronnen:
-    - 2025-vng-upl-producten-en-diensten-extern
-    - 2026-rijk-wet-op-de-lijkbezorging-wettekst
   gerealiseerd_door:
     waarde: ja
     naar:
@@ -37,4 +26,4 @@ gemma_functie:
 relaties: []
 bronnen:
 - 2025-vng-upl-producten-en-diensten-extern
-status: goedgekeurd
+status: review
