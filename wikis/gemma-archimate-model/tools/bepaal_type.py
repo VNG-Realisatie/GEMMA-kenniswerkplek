@@ -108,7 +108,7 @@ KENMERKEN: list[Kenmerk] = [
             "ArchiMate (definitie Bedrijfssamenwerking)"),
     Kenmerk("toegangspunt", "toegangspunt", "Hoofdkenmerk",
             "Is het een communicatiekanaal waarlangs een dienst beschikbaar komt?",
-            "publieksbalie; gemeentelijke website", "klantcontact", "NORA (definitie Kanaal)"),
+            "publieksbalie; gemeentelijke website", "klantcontact", "NORA (Kanalen)"),
     Kenmerk("plaats", "plaats", "Hoofdkenmerk",
             "Is het een fysieke plaats als zodanig, en geen gebiedsindeling als gegeven?",
             "stadskantoor als vestigingsplaats", "wijk (indeling)", "ArchiMate (Location)"),
@@ -166,7 +166,7 @@ KENMERKEN: list[Kenmerk] = [
     Kenmerk("aangeboden_gedrag", "aangeboden gedrag", "Soort gedrag",
             "Is het een afgebakende prestatie die de gemeente aan haar omgeving aanbiedt, beschreven vanuit de "
             "behoefte van de afnemer en los van hoe zij wordt uitgevoerd?",
-            "melding openbare ruimte doen", "melding afhandelen", "NORA (definitie Dienst)", GEDRAG_BIJ),
+            "melding openbare ruimte doen", "melding afhandelen", "NORA (Dienstverlening)", GEDRAG_BIJ),
     Kenmerk("gezamenlijk_gedrag", "gezamenlijk gedrag", "Soort gedrag",
             "Kan het alleen door twee of meer partijen samen worden uitgevoerd, zoals een ketensamenwerking waarin de "
             "bedrijfsprocessen van de partijen samenkomen?",
@@ -261,7 +261,7 @@ KENMERKEN: list[Kenmerk] = [
     Kenmerk("afnemer", "afnemer", "Toets",
             "Is er een afnemer buiten de uitvoerder aanwijsbaar, een klant intern of extern? Noem die.",
             "melding openbare ruimte doen (inwoner)", "interne registratiestap",
-            "NORA (definitie Dienst); GEMMA (definitie Product, rol Klant)", _bij("gedrag", "aanbod_als_geheel")),
+            "NORA (Dienstverlening); GEMMA (definitie Product, rol Klant)", _bij("gedrag", "aanbod_als_geheel")),
     Kenmerk("omvat_diensten_en_afspraken", "omvat diensten en afspraken", "Toets",
             "Bestaat het aanbod uit aanwijsbare diensten en de afspraken die erbij horen? Noem ze.",
             "parkeervergunning (dienst parkeren, voorwaarden)", "losse dienst",
@@ -1547,6 +1547,31 @@ def _cel(tekst: str) -> str:
     return tekst.replace("|", "\\|")
 
 
+# De bronduiding (laag 3) van de bronnen van de aanpak, waar de herkomst van een kenmerk naar linkt (A5): de naam in de
+# herkomst, en bij NORA het woord erachter. ArchiMate en UPL hebben (nog) geen bronduiding: die blijven tekst.
+HERKOMST_BRON = (("GEMMA Online, Proceshiërarchie", None, "2026-vng-gemma-proceshierarchie"),
+                 ("GEMMA Online, Impact ketensamenwerking", None, "2026-vng-gemma-impact-ketensamenwerking"),
+                 ("GEMMA", None, "2026-vng-over-gemma"),
+                 ("NORA", "Kanalen", "2026-noraonline-kanalen"),
+                 ("NORA", "Dienstverlening", "2026-noraonline-dienstverlening"))
+BRONDUIDING_MAP = "modellen/gemma/bronduidingen/overig"
+
+
+def herkomst_tekst(herkomst: str, van: str = "kennismodel") -> str:
+    """De herkomst van een kenmerk, met de naam van elke bron als link naar haar bronduiding en de vindplaats erachter.
+    `van` is de map van de pagina, relatief aan de wiki."""
+    uit = []
+    for deel in herkomst.split("; "):
+        naam, _, rest = deel.partition(" (")
+        for n, woord, bron in HERKOMST_BRON:
+            pad = WIKI_ROOT / BRONDUIDING_MAP / f"{bron}.md"
+            if naam == n and (woord is None or rest.startswith(woord)) and pad.exists():
+                deel = f"[{naam}]({'../' * (van.count('/') + 1)}{BRONDUIDING_MAP}/{bron}.md)" + (f" ({rest}" if rest else "")
+                break
+        uit.append(deel)
+    return "; ".join(uit)
+
+
 def doc_stap0() -> list[str]:
     return ["### Stap 0: welk begrip?", "",
             "Vóór de kenmerken: bepaal welk begrip bedoeld is. Synoniemen en homoniemen zijn geen kenmerken van een "
@@ -1615,7 +1640,7 @@ def doc_keuzekenmerken() -> list[str]:
               "het vak, het hoofdkenmerk en de soort gedrag zijn keuzevelden bovenaan). De waarde *zelfstandig* is het "
               "standaardantwoord.", ""]
     for k in KEUZEKENMERKEN:
-        regels += [f"**{k.naam}** (stap {k.stap}). {_cel(k.vraag)} Herkomst: {_cel(k.herkomst)}.", "",
+        regels += [f"**{k.naam}** (stap {k.stap}). {_cel(k.vraag)} Herkomst: {_cel(herkomst_tekst(k.herkomst))}.", "",
                    "| Waarde | Criterium |", "|---|---|", *[f"| `{w}` | {_cel(c)} |" for w, c in k.waarden], ""]
     return regels
 
@@ -1632,7 +1657,7 @@ def doc_vragentabel() -> list[str]:
             naam = f"*{km_.naam}*" + (" †" if km_.sleutel in RELATIONEEL else "") + (
                 " (standaard ja)" if STANDAARD.get(km_.sleutel) == "ja" else "")
             regels.append(f"| {nr} | {naam} | {_cel(km_.vraag)} | {_cel(km_.ja)} | {_cel(km_.nee)} | "
-                          f"{_cel(km_.herkomst)} |")
+                          f"{_cel(herkomst_tekst(km_.herkomst))} |")
         regels.append("")
     return regels
 
