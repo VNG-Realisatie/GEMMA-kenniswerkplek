@@ -11,6 +11,10 @@ De uitkomst staat in [plannen/2026-10-15-lichtere-werkwijze.md](plannen/2026-10-
 - **`tools/bronduiding.py citaat` leest geen bron met varianten en artikelnummers tussen haken** (de VNG-modelverordening Participatie): de citaten zijn overgetypt en met `controleer` nagekeken.
 - **Beoordelingsagenten lezen precedenten buiten hun opdracht** (bestaande beoordelingen en code, 3.500 à 5.000 woorden). Sinds het opschonen van de besluiten staan brede besluiten als regel in het kennismodel; meet bij het volgende onderwerp met agenten of het lezen buiten de opdracht afneemt.
 
+## Gedeelde Archi-sync en een apart wiki-gemma-kennismodel (plan 2026-11-03)
+
+Uitvoering volgens [plannen/2026-11-03-archi-sync-en-kennismodel.md](plannen/2026-11-03-archi-sync-en-kennismodel.md): de sync naar archi-scripts met één conventie (exportdatum, herkomst, vorige naam en definitie), het kennismodel naar een eigen Archi-model naast Over GEMMA, en de overgang in GEMMA. Het plan is nog niet goedgekeurd; eerst de open punten 1 tot en met 4.
+
 ## ArchiMate-indeling, lichtere kenmerken, data-object en capability (plan 2026-10-15)
 
 Uitvoering volgens [plannen/2026-10-15-archimate-indeling.md](plannen/2026-10-15-archimate-indeling.md): deel 1 (matrix en lichtere kenmerken), deel 2 (data-object als element), deel 3 (Capability, eerst samen bepalen). Deel 1 en 2 zijn omgezet (Uitkomst stap 3–7 en 8–11). Deel 3 is uitgevoerd: de besluiten over Capability (Uitkomst stap 12 en 13), het bouwen en de eerste drie capabilities (Uitkomst stap 14).
