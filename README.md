@@ -109,7 +109,7 @@ uv run python -m llmwiki --version
 ### Python-omgeving
 
 - **Altijd via `python -m`.** De CLI en de tests draaien als `uv run python -m llmwiki …` en `uv run python -m pytest`, niet als `uv run llmwiki`. De programma's die `uv` in `.venv\Scripts` aanmaakt (zoals `llmwiki.exe`) zijn lokaal gemaakt en niet ondertekend; op beheerde Windows-laptops kan beveiligingsbeleid ze blokkeren. `python.exe` is wel ondertekend. De permissies in `.claude/settings.json` en de pre-commit-hooks gaan van deze vorm uit.
-- **Alles in één keer.** `uv sync` installeert alle onderdelen, ook de groepen `mediawiki` (pywikibot) en `pdf` (pdf-conversie); zie `[tool.uv] default-groups` in `pyproject.toml`. Een latere `uv sync` haalt er dus niets van weg.
+- **Alles in één keer.** `uv sync` installeert alle onderdelen, ook de groepen `mediawiki` (pywikibot) en `documenten` (pdf- en docx-conversie); zie `[tool.uv] default-groups` in `pyproject.toml`. Een latere `uv sync` haalt er dus niets van weg.
 - **Geen C-compiler nodig.** pywikibot gebruikt `mwparserfromhell`. Daarvan bestaat niet voor elke Python-versie een kant-en-klaar pakket (bijvoorbeeld nog niet voor Python 3.14 op Windows); zelf bouwen vraagt dan de Microsoft C++ Build Tools. `pyproject.toml` zet daarom `WITH_EXTENSION=0` voor dit pakket (`[tool.uv.extra-build-variables]`): uv bouwt dan de variant in puur Python. Komt er een kant-en-klaar pakket, dan gebruikt uv dat en doet de instelling niets. De Python-versie zelf zetten we bewust niet vast: een door uv gedownloade Python is niet ondertekend en loopt op beheerde laptops tegen hetzelfde beveiligingsbeleid aan.
 
 ### Windows

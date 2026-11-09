@@ -79,12 +79,25 @@ def test_failed_pdf_conversion_leaves_nothing_in_raw(tmp_path, repo, monkeypatch
     original.write_bytes(b"%PDF-1.4 niet echt")
 
     def kapot(_path):
-        raise sources.ConversionError("geen pdf-extra")
+        raise sources.ConversionError("geen documentconversie")
 
-    monkeypatch.setattr(sources, "_convert_pdf", kapot)
+    monkeypatch.setattr(sources, "_convert_document", kapot)
     with pytest.raises(sources.ConversionError):
         sources.add(root, "2026-x-pdf", original, titel="x", tags=["demo"])
     assert not list((root / "sources" / "raw").glob("2026-x-pdf*"))
+
+
+def test_broken_pdf_gives_conversion_error(tmp_path):
+    original = tmp_path / "doc.pdf"
+    original.write_bytes(b"%PDF-1.4 niet echt")
+    with pytest.raises(sources.ConversionError, match="doc.pdf"):
+        sources._convert_document(original)
+
+
+def test_unknown_format_is_left_to_pandoc(tmp_path):
+    original = tmp_path / "doc.tex"
+    original.write_text("\\section{x}", encoding="utf-8")
+    assert sources._convert_document(original) is None
 
 
 def test_add_from_url_uses_fetched_content(tmp_path, repo, monkeypatch):

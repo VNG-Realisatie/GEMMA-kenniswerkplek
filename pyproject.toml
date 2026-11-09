@@ -26,13 +26,13 @@ dev = [
 mediawiki = [
     "pywikibot>=9.0",
 ]
-pdf = [
-    "pymupdf4llm>=0.0.17",
+documenten = [
+    "firecrawl-anydoc>=0.2.4",
 ]
 
 [tool.uv]
 # Alles standaard installeren: een gewone `uv sync` haalt dan niets weg.
-default-groups = ["dev", "mediawiki", "pdf"]
+default-groups = ["dev", "mediawiki", "documenten"]
 
 # mwparserfromhell (via pywikibot) heeft niet voor elke Python-versie een kant-en-klaar pakket; bouwen vraagt
 # dan een C-compiler. WITH_EXTENSION=0 bouwt de variant in puur Python. Zodra er een kant-en-klaar pakket is,

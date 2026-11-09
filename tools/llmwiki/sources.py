@@ -41,15 +41,27 @@ BRONTYPEN = ("europese-regelgeving", "rijksregelgeving", "informatiemodel", "ric
              "overig", "model")
 
 
-def _convert_pdf(original: Path) -> str:
+def _convert_document(original: Path) -> str | None:
+    """Zet een kantoordocument of pdf om met anydoc; None als anydoc het formaat niet kent. Altijd lokaal: tekstherkenning
+    via de dienst van Firecrawl (`ocr="hosted"`) zou het hele document van de machine sturen."""
     try:
-        import pymupdf4llm
+        import anydoc
     except ImportError as exc:
         raise ConversionError(
-            "Pdf-conversie vereist de groep 'pdf': draai 'uv sync', "
+            "Documentconversie vereist de groep 'documenten': draai 'uv sync', "
             "of lever zelf een Markdown-versie aan met --markdown <pad>."
         ) from exc
-    return pymupdf4llm.to_markdown(str(original))
+    if anydoc.format_from_extension(original.suffix.lstrip(".").lower()) is None:
+        return None
+    try:
+        return anydoc.to_markdown(original, ocr="reject")
+    except anydoc.NeedsOcrError as exc:
+        raise ConversionError(
+            f"{original.name} bevat gescande pagina's zonder tekstlaag; lever zelf een Markdown-versie aan met "
+            "--markdown <pad>."
+        ) from exc
+    except anydoc.ConvertError as exc:
+        raise ConversionError(f"anydoc kon {original.name} niet converteren: {exc}") from exc
 
 
 def _convert_to_markdown(original: Path, url: str = "") -> str:
@@ -60,8 +72,9 @@ def _convert_to_markdown(original: Path, url: str = "") -> str:
         from . import fetch
 
         return fetch.html_to_markdown(original.read_text(encoding="utf-8", errors="replace"), url)
-    if suffix == ".pdf":
-        return _convert_pdf(original)
+    md_text = _convert_document(original)
+    if md_text is not None:
+        return md_text
     if shutil.which("pandoc"):
         result = subprocess.run(
             ["pandoc", str(original), "-t", "markdown"],
